@@ -36,8 +36,9 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td>Mi nombre es <strong>Natalia Roman</strong>, tengo 20 años y me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Desde los primeros ciclos me ha apasionado la programación, siendo los lenguajes que mejor manejo java, javascript, C++ y C#, y me he centrado en aprender lo más posible en cuanto a optimización de procesos y nuevas tecnologías. Me interesa aprender sobre elementos IoT para poder integrarlos en nuevos proyectos.</td>
   </tr>
   <tr>
-  <td><img src="public/assets/images/integrantes/Henry.jpg"alt="..." width="200"> </td>
-    <td>Mi nombre es <strong>...</strong>, ...</td>
+  <td><img src="public/assets/images/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
+    <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
+</td>
   </tr>
   <tr> 
     <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
