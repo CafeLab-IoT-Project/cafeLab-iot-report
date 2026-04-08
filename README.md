@@ -424,5 +424,210 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 
 # Capítulo III: Requirements Specification
 ## 3.1. User Stories.
+## 3.1. User Stories
+
+Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben ser considerados durante el desarrollo de la plataforma. Para el proyecto CaféLab IoT, se presenta un conjunto de user stories y technical stories que guían el desarrollo del sistema de monitoreo ambiental TrackSilo, incluyendo la gestión de lecturas del sensor, activación de actuadores y visualización de condiciones de almacenamiento del café verde.
+
+<table border="1">
+<tr>
+<th>Epic/User Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+
+<!-- ==================== EP08 ==================== -->
+
+<tr>
+<td>US27</td>
+<td>Visualización de condiciones del almacén en tiempo real</td>
+<td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde.</td>
+<td>
+<strong>Escenario 1:</strong> Visualización de datos actuales.<br>
+<strong>Dado que</strong> el sensor TrackSilo está activo y conectado<br>
+<strong>Cuando</strong> el usuario accede al panel de monitoreo<br>
+<strong>Entonces</strong> el sistema muestra la temperatura y humedad actuales del almacén junto con su estado (óptimo, alerta, peligro).<br><br>
+<strong>Escenario 2:</strong> Sensor sin señal.<br>
+<strong>Dado que</strong> el TrackSilo ha dejado de enviar lecturas<br>
+<strong>Cuando</strong> el usuario accede al panel de monitoreo<br>
+<strong>Entonces</strong> el sistema muestra un aviso indicando que el sensor no responde desde hace X minutos.
+</td>
+<td>EP08</td>
+</tr>
+
+<tr>
+<td>US28</td>
+<td>Consulta de historial ambiental por lote</td>
+<td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado.</td>
+<td>
+<strong>Escenario 1:</strong> Consulta exitosa de historial.<br>
+<strong>Dado que</strong> el lote tiene lecturas ambientales registradas durante su período de almacenamiento<br>
+<strong>Cuando</strong> el usuario selecciona un lote y accede a su historial ambiental<br>
+<strong>Entonces</strong> el sistema muestra un gráfico de temperatura y humedad en el tiempo con marcadores de eventos y alertas ocurridas.<br><br>
+<strong>Escenario 2:</strong> Lote sin datos ambientales.<br>
+<strong>Dado que</strong> el lote fue registrado antes de que el TrackSilo estuviera activo<br>
+<strong>Cuando</strong> el usuario intenta consultar el historial ambiental<br>
+<strong>Entonces</strong> el sistema informa que no hay datos de monitoreo para ese período.
+</td>
+<td>EP08</td>
+</tr>
+
+<tr>
+<td>US29</td>
+<td>Recepción de alertas por condiciones fuera de rango</td>
+<td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado.</td>
+<td>
+<strong>Escenario 1:</strong> Alerta por humedad elevada.<br>
+<strong>Dado que</strong> el TrackSilo detecta humedad relativa superior al 65%<br>
+<strong>Cuando</strong> la lectura supera el umbral configurado<br>
+<strong>Entonces</strong> el sistema envía una notificación por email al dueño indicando el valor registrado, el umbral superado y la hora del evento.<br><br>
+<strong>Escenario 2:</strong> Alerta por temperatura elevada.<br>
+<strong>Dado que</strong> el TrackSilo detecta temperatura superior a 22°C<br>
+<strong>Cuando</strong> la lectura supera el umbral configurado<br>
+<strong>Entonces</strong> el sistema envía una notificación por email indicando el valor registrado y activa la señal del actuador de ventilación.
+</td>
+<td>EP08</td>
+</tr>
+
+<tr>
+<td>US30</td>
+<td>Configuración de umbrales de monitoreo</td>
+<td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades.</td>
+<td>
+<strong>Escenario 1:</strong> Configuración exitosa de umbrales.<br>
+<strong>Dado que</strong> el usuario accede a la configuración del TrackSilo<br>
+<strong>Cuando</strong> ingresa valores de umbral válidos para temperatura (entre 10°C y 30°C) y humedad (entre 40% y 80%)<br>
+<strong>Entonces</strong> el sistema guarda la configuración y la aplica a las lecturas futuras del sensor.<br><br>
+<strong>Escenario 2:</strong> Valores fuera del rango permitido.<br>
+<strong>Dado que</strong> el usuario intenta guardar valores de umbral inválidos<br>
+<strong>Cuando</strong> ingresa un valor fuera del rango aceptable<br>
+<strong>Entonces</strong> el sistema muestra un mensaje de error indicando el rango permitido y no guarda los cambios.
+</td>
+<td>EP08</td>
+</tr>
+
+<tr>
+<td>US31</td>
+<td>Indicador de estado ambiental por lote</td>
+<td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar.</td>
+<td>
+<strong>Escenario 1:</strong> Lote en condiciones óptimas.<br>
+<strong>Dado que</strong> el lote activo fue almacenado dentro de los rangos de temperatura y humedad recomendados<br>
+<strong>Cuando</strong> el barista consulta el lote en el sistema<br>
+<strong>Entonces</strong> el sistema muestra un indicador verde con el resumen de condiciones de almacenamiento.<br><br>
+<strong>Escenario 2:</strong> Lote con desvíos registrados.<br>
+<strong>Dado que</strong> el lote activo registró al menos un período fuera de los rangos óptimos durante su almacenamiento<br>
+<strong>Cuando</strong> el barista consulta el lote<br>
+<strong>Entonces</strong> el sistema muestra un indicador amarillo o rojo con el detalle de los períodos y valores fuera de rango.
+</td>
+<td>EP08</td>
+</tr>
+
+<tr>
+<td>US32</td>
+<td>Activación automática del actuador de ventilación</td>
+<td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de ventilación cuando las condiciones del almacén lo requieran para no depender de intervención manual.</td>
+<td>
+<strong>Escenario 1:</strong> Activación por condiciones fuera de rango.<br>
+<strong>Dado que</strong> el sensor detecta temperatura superior a 22°C o humedad superior al 65%<br>
+<strong>Cuando</strong> se supera el umbral configurado<br>
+<strong>Entonces</strong> el sistema activa la señal del actuador (LED de ventilación en simulación) y registra el evento con hora de inicio.<br><br>
+<strong>Escenario 2:</strong> Desactivación al recuperar condiciones normales.<br>
+<strong>Dado que</strong> el actuador de ventilación está activo<br>
+<strong>Cuando</strong> la temperatura baja de 20°C y la humedad baja del 60% durante al menos 5 minutos consecutivos<br>
+<strong>Entonces</strong> el sistema desactiva el actuador y registra la hora de fin del evento.
+</td>
+<td>EP08</td>
+</tr>
+
+<!-- ==================== EP09 ==================== -->
+
+<tr>
+<td>TS24</td>
+<td>POST API SensorReadings</td>
+<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos.</td>
+<td>
+<strong>Escenario 1:</strong> Lectura válida registrada.<br>
+<strong>Dado que</strong> el ESP32 tiene acceso al endpoint de lecturas<br>
+<strong>Cuando</strong> envía una lectura con temperatura y humedad dentro de rangos físicamente posibles<br>
+<strong>Entonces</strong> el sistema registra la lectura con timestamp y devuelve confirmación 201.<br><br>
+<strong>Escenario 2:</strong> Lectura con datos inválidos.<br>
+<strong>Dado que</strong> el ESP32 envía una lectura con valores fuera de rango físico<br>
+<strong>Cuando</strong> el sistema valida los datos<br>
+<strong>Entonces</strong> devuelve un error 400 indicando los campos inválidos y no almacena la lectura.
+</td>
+<td>EP09</td>
+</tr>
+
+<tr>
+<td>TS25</td>
+<td>GET API SensorReadings</td>
+<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard.</td>
+<td>
+<strong>Escenario 1:</strong> Consulta con rango de fechas.<br>
+<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
+<strong>Cuando</strong> solicito lecturas filtrando por fecha de inicio y fin<br>
+<strong>Entonces</strong> recibo el listado paginado de lecturas ordenadas cronológicamente.<br><br>
+<strong>Escenario 2:</strong> Consulta sin parámetros.<br>
+<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
+<strong>Cuando</strong> solicito lecturas sin especificar filtros<br>
+<strong>Entonces</strong> recibo las últimas 100 lecturas por defecto.
+</td>
+<td>EP09</td>
+</tr>
+
+<tr>
+<td>TS26</td>
+<td>GET API SensorStatus</td>
+<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado.</td>
+<td>
+<strong>Escenario 1:</strong> Sensor activo.<br>
+<strong>Dado que</strong> el TrackSilo ha enviado al menos una lectura en los últimos 2 minutos<br>
+<strong>Cuando</strong> se consulta el estado del sensor<br>
+<strong>Entonces</strong> el sistema devuelve estado "online" con la última lectura registrada.<br><br>
+<strong>Escenario 2:</strong> Sensor sin respuesta.<br>
+<strong>Dado que</strong> el TrackSilo no ha enviado lecturas en más de 2 minutos<br>
+<strong>Cuando</strong> se consulta el estado<br>
+<strong>Entonces</strong> el sistema devuelve estado "offline" con la marca de tiempo de la última lectura recibida.
+</td>
+<td>EP09</td>
+</tr>
+
+<tr>
+<td>TS27</td>
+<td>POST API ActuatorEvents</td>
+<td>Como desarrollador, quiero registrar eventos de activación y desactivación del actuador de ventilación mediante una API para mantener el historial de intervenciones del sistema.</td>
+<td>
+<strong>Escenario 1:</strong> Registro de activación.<br>
+<strong>Dado que</strong> el sistema detecta condiciones fuera de rango<br>
+<strong>Cuando</strong> se activa el actuador<br>
+<strong>Entonces</strong> el sistema registra un evento con tipo "ACTIVATE", timestamp y los valores del sensor que lo dispararon, devolviendo 201.<br><br>
+<strong>Escenario 2:</strong> Registro de desactivación.<br>
+<strong>Dado que</strong> el actuador está activo y las condiciones vuelven a rango óptimo<br>
+<strong>Cuando</strong> el sistema desactiva el actuador<br>
+<strong>Entonces</strong> registra un evento "DEACTIVATE" con timestamp y calcula la duración del ciclo de ventilación.
+</td>
+<td>EP09</td>
+</tr>
+
+<tr>
+<td>TS28</td>
+<td>POST API AlertNotifications</td>
+<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real.</td>
+<td>
+<strong>Escenario 1:</strong> Notificación enviada correctamente.<br>
+<strong>Dado que</strong> el sistema detecta una lectura fuera del umbral configurado<br>
+<strong>Cuando</strong> se activa el servicio de notificaciones<br>
+<strong>Entonces</strong> se envía un email al dueño con el tipo de alerta, valor registrado, umbral superado y timestamp, y se registra el envío en la base de datos.<br><br>
+<strong>Escenario 2:</strong> Error en el envío.<br>
+<strong>Dado que</strong> el servicio de email no está disponible<br>
+<strong>Cuando</strong> el sistema intenta enviar la notificación<br>
+<strong>Entonces</strong> registra el intento fallido y lo encola para reintento en los próximos 5 minutos.
+</td>
+<td>EP09</td>
+</tr>
+
+</table>
 ## 3.2. Impact Mapping.
 ## 3.3. Product Backlog.
