@@ -128,9 +128,9 @@ Hemos observado que el producto no está cumpliendo completamente con estos obje
     <th style="border: 1px solid #000;"></th>
     <th style="text-align:center; border: 1px solid #000;">Criterio</th>
     <th style="text-align:center; border: 1px solid #000;">CaféLab<img src="public\assets\images\styleGuidelines\Logo.jpg" alt="Logo Café Lab" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public\assets\images\Competidores\cropster.jpg" alt="Logo Crospter" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public\assets\images\Competidores\artisan.png" alt="Logo Artisan" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public\assets\images\Competidores\roastlog.png" alt="Logo Roastlog" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public\assets\images\competidores\cropster.jpg" alt="Logo Crospter" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public\assets\images\competidores\artisan.png" alt="Logo Artisan" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public\assets\images\competidores\roastlog.png" alt="Logo Roastlog" width="150"></th>
   </tr>
 
 
@@ -360,10 +360,10 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 **Administradores y dueños de cafeterias de especialidad**
-<td><img src="public\assets\images\UserPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
+<td><img src="public\assets\images\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
 
 **Barista Profesional**
-<td><img src="public\assets\images\UserPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
+<td><img src="public\assets\images\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
 
 
 
