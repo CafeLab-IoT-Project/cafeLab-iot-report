@@ -95,3 +95,23 @@ Nuestro sistema para baristas y cafeterías de especialidad fue diseñado para l
 Hemos observado que el producto no está cumpliendo completamente con estos objetivos, ya que los procesos están desarticulados, no hay conexión entre etapas como el almacenamiento, el tueste y la extracción, la conservación del grano no se realiza adecuadamente, y muchos datos importantes se pierden o no quedan registrados. Esto provoca errores, variabilidad en la calidad, pérdida de información y poca confianza del cliente final.
 
 ¿Cómo podríamos mejorar la plataforma para que los usuarios sean más exitosos mediante una integración real de procesos, alertas en tiempo real sobre el estado del grano, cuidado de la conservación del grano automatizada y herramientas que permitan ver y comparar datos técnicos y sensoriales, basándonos en métricas como consistencia en recetas, reducción de pérdidas y mejora en la trazabilidad?
+
+# Capítulo II:  Requirements Elicitation & Analysis
+## 2.3 Needfinding
+### 2.3.3 User Journey Mapping
+**Administradores y dueños de cafeterias de especialidad**
+![Journey Map Fernando](<public/assets/images/journeymapping/Fernando.png>)
+**Barista Profesional**
+![Journey Map Valeria](<public/assets/images/journeymapping/Valeria.png>)
+
+### 2.3.4. Empathy Mapping.
+**Administradores y dueños de cafeterias de especialidad**
+![Empathy Map dueño](<public/assets/images/empathymapping/Empathy map Dueños.png>)
+**Barista Profesional**
+![Barista](<public/assets/images/empathymapping/Empathy Map Barista Professional.png>)
+## 2.4. Big Picture EventStorming.
+
+# Capítulo III: Requirements Specification
+## 3.1. User Stories.
+## 3.2. Impact Mapping.
+## 3.3. Product Backlog.
