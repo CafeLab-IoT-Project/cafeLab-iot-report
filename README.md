@@ -23,3 +23,32 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 #### Logo, isotipo y logotipo de Café Lab:
 <img src="public/assets/images/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
 
+### 1.1.2. Perfiles de integrantes del equipo
+<table border="1">
+  <tr>
+    <td><img src="public/assets/images/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
+    <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 19 
+    años y actualmente estoy cursando el quinto ciclo de la 
+    carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
+  </tr>
+  <tr>
+    <td><img src="public/assets/images/integrantes/natalia-roman.png" alt="Guillermo Tantaleán" width="200"> </td>
+    <td>Mi nombre es <strong>Natalia Roman</strong>, tengo 20 años y me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Desde los primeros ciclos me ha apasionado la programación, siendo los lenguajes que mejor manejo java, javascript, C++ y C#, y me he centrado en aprender lo más posible en cuanto a optimización de procesos y nuevas tecnologías. Me interesa aprender sobre elementos IoT para poder integrarlos en nuevos proyectos.</td>
+  </tr>
+  <tr>
+  <td><img src="public/assets/images/integrantes/Henry.jpg"alt="..." width="200"> </td>
+    <td>Mi nombre es <strong>...</strong>, ...</td>
+  </tr>
+  <tr> 
+    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
+  </tr>
+  <tr> 
+    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
+  </tr>
+  <tr> 
+    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>...</strong>, ... </td>
+  </tr>
+</table>
