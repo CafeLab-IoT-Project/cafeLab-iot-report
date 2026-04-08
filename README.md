@@ -19,3 +19,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 **Misión**: Elevar la calidad y consistencia del café, documentando cada etapa del proceso y gestionando una correcta conservación del grano para garantizar resultados excepcionales y sostenibles.
 
 **Visión**: Ser líder a nivel nacional en el estándar tecnológico que revoluciona la industria del café de especialidad.
+
+#### Logo, isotipo y logotipo de Café Lab:
+<img src="public/assets/images/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+
