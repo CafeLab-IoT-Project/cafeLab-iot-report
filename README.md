@@ -1,4 +1,159 @@
-﻿# cafeLaf-iot-report
+﻿<!--Titulo principal-->
+<h1 align="center">Informe de Trabajo Final</h1>
+
+<!--Nombre de la universidad-->
+<h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
+
+<!--Carrera-->
+<h3 align="center"> Ingeniería de software - 2610</h3>
+
+<!--Logo de  la universidad-->
+<p align="center">
+    <img style="width:20%" src="public/assets/images/cover/logo_upc.png"></img>
+</p>
+
+<!-- Código del curso -->
+<h4 align="center"> Código del curso: 1ASI0572</h4>
+
+<!--Nombre del curso-->
+<h4 align="center"> Nombre del curso: Desarrollo de Soluciones IOT</h4>
+
+<!--NRC del curso-->
+<h4 align="center">NRC: 6776</h4>
+
+
+<p align="left" style="margin-left: 10%;">
+    <!--Docente-->
+    <strong>Docente: </strong>Marco Antonio Leon Baca<br>
+    <!--Startup-->
+    <strong>Startup: </strong>Café Metrix<br>
+    <!--Producto-->
+    <strong>Producto: </strong>Café Lab<br>
+</p>
+
+<!--Integrantes del grupo-->
+<p align="left" style="margin-left: 10%;">
+    <strong>Integrantes del grupo: </strong><br>
+    <ul align="left" style="margin-left: 10%;">
+        <li>Donayre Alvarez, Adrian Ricardo - U202310187</li>
+        <li>Fernandez Camayo, Carlos Fredy - U202320083</li>
+        <li>Julca Minaya, Sergio Gino - U202318274</li>
+        <li>Roman Cruz, Natalia Bertha - U202310148 </li>
+        <li>Yum Gonzales, Jorge Suin - U202210838</li>
+    </ul>
+</p>
+
+
+<!--Ciclo-->
+<div align="center" style="font-weight: bold;">Abril de 2026</div>
+
+<!--ÍNDICE-->
+# Contenido 
+[Student Outcome](#student-outcome)
+
+[Capítulo I: Introducción](#capítulo-i-introducción)
+- [1.1. Startup Profile](#11-startup-profile)
+  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+- [1.2. Solution Profile](#12-solution-profile)
+  - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+  - [1.2.2 Lean UX Process](#122-lean-ux-process)
+    - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+    - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+    - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+    - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+- [1.3. Segmentos objetivos](#13-segmentos-objetivos)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+  - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
+  - [2.5. Ubiquitous Language](#25-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1. User Stories](#31-user-stories)
+  - [3.2. Impact Mapping](#32-impact-mapping)
+  - [3.3. Product Backlog](#33-product-backlog)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+  - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+    - [4.1.1. Design-Level EventStorming](#411-design-level-eventstorming)
+      - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+      - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+      - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+    - [4.1.2. Context Mapping](#412-context-mapping)
+    - [4.1.3. Software Architecture](#413-software-architecture)
+      - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+      - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+      - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+      - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+  - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+    - [4.2.1. Bounded Context: Coffees](#421-bounded-context-coffees)
+      - [4.2.1.1. Domain Layer](#4211-domain-layer)
+      - [4.2.1.2. Interface Layer](#4212-interface-layer)
+      - [4.2.1.3. Application Layer](#4213-application-layer)
+      - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+      - [4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#4216-bounded-context-domain-layer-class-diagrams)
+        - [4.2.1.6.2. Bounded Context Database Design Diagram](#4216-bounded-context-database-design-diagram)
+    - [4.2.2. Bounded Context: Cupping sessions](#422-bounded-context-cupping-sessions)
+      - [4.2.2.1. Domain Layer](#4221-domain-layer)
+      - [4.2.2.2. Interface Layer](#4222-interface-layer)
+      - [4.2.2.3. Application Layer](#4223-application-layer)
+      - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+      - [4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#4226-bounded-context-domain-layer-class-diagrams)
+        - [4.2.2.6.2. Bounded Context Database Design Diagram](#4226-bounded-context-database-design-diagram)
+    - [4.2.3. Bounded Context: IAM](#423-bounded-context-iam)
+      - [4.2.3.1. Domain Layer](#4231-domain-layer)
+      - [4.2.3.2. Interface Layer](#4232-interface-layer)
+      - [4.2.3.3. Application Layer](#4233-application-layer)
+      - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+      - [4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#4236-bounded-context-domain-layer-class-diagrams)
+        - [4.2.3.6.2. Bounded Context Database Design Diagram](#4236-bounded-context-database-design-diagram)
+    - [4.2.4. Bounded Context: Management](#424-bounded-context-management)
+      - [4.2.4.1. Domain Layer](#4241-domain-layer)
+      - [4.2.4.2. Interface Layer](#4242-interface-layer)
+      - [4.2.4.3. Application Layer](#4243-application-layer)
+      - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+      - [4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#4246-bounded-context-domain-layer-class-diagrams)
+        - [4.2.4.6.2. Bounded Context Database Design Diagram](#4246-bounded-context-database-design-diagram)
+    - [4.2.5. Bounded Context: Preparation](#425-bounded-context-preparation)
+      - [4.2.5.1. Domain Layer](#4251-domain-layer)
+      - [4.2.5.2. Interface Layer](#4252-interface-layer)
+      - [4.2.5.3. Application Layer](#4253-application-layer)
+      - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+      - [4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#4256-bounded-context-domain-layer-class-diagrams)
+        - [4.2.5.6.2. Bounded Context Database Design Diagram](#4256-bounded-context-database-design-diagram)
+    - [4.2.6. Bounded Context: Profiles](#426-bounded-context-profiles)
+      - [4.2.6.1. Domain Layer](#4261-domain-layer)
+      - [4.2.6.2. Interface Layer](#4262-interface-layer)
+      - [4.2.6.3. Application Layer](#4263-application-layer)
+      - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
+      - [4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#4266-bounded-context-domain-layer-class-diagrams)
+        - [4.2.6.6.2. Bounded Context Database Design Diagram](#4266-bounded-context-database-design-diagram)
+
+[Conclusiones](#conclusiones)
+[Bibliografía](#bibliografia)
+[Anexos](#anexos)
+
 
 # Capítulo I: Introducción
 
@@ -21,35 +176,35 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 **Visión**: Ser líder a nivel nacional en el estándar tecnológico que revoluciona la industria del café de especialidad.
 
 #### Logo, isotipo y logotipo de Café Lab:
-<img src="public/assets/images/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+<img src="public/assets/images/chapter-2/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-    <td><img src="public/assets/images/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
+    <td><img src="public/assets/images/chapter-1/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
     <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 19 
     años y actualmente estoy cursando el quinto ciclo de la 
     carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
   </tr>
   <tr>
-    <td><img src="public/assets/images/integrantes/natalia-roman.png" alt="Natalia Roman" width="200"> </td>
+    <td><img src="public/assets/images/chapter-1/integrantes/natalia-roman.png" alt="Natalia Roman" width="200"> </td>
     <td>Mi nombre es <strong>Natalia Roman</strong>, tengo 20 años y me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Desde los primeros ciclos me ha apasionado la programación, siendo los lenguajes que mejor manejo java, javascript, C++ y C#, y me he centrado en aprender lo más posible en cuanto a optimización de procesos y nuevas tecnologías. Me interesa aprender sobre elementos IoT para poder integrarlos en nuevos proyectos.</td>
   </tr>
   <tr>
-  <td><img src="public/assets/images/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
+  <td><img src="public/assets/images/chapter-1/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
     <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
 </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.png"alt="..." width="200">  </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.png"alt="..." width="200">  </td>
     <td> Mi nombre es <strong>Carlos Fredy Fernandez Camayo</strong>.Soy estudiante de ingenieria de software. Tengo experiencia en desarrollo de proyectos Frontend y Backend con Angular y Spring boot, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.  </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/sergio_julca.png"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>Sergio Gino Julca Minaya</strong>, soy estudiante de Ingeniería de software. Tengo experiencia desarrollando proyectos de automatización con diferentes frameworks y tecnologías. Del mismo modo, me considero una persona competitiva, responsable y comprometida. Estoy interesado en conocer todas las áreas posibles desde desarrollo de software hasta el desarrollo de IA. Mi objetivo en el equipo es contribuir activamente. </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.jpeg"alt="..." width="200">  </td>
     <td> Mi nombre es <strong>...</strong>, ... </td>
   </tr>
 </table>
@@ -152,6 +307,12 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
 
 # Capítulo II:  Requirements Elicitation & Analysis
 
+#### 1.2.2.3. Lean UX Hypothesis Statements
+#### 1.2.2.4. Lean UX Canvas
+## 1.3. Segmentos objetivos
+
+# Capítulo II: Requirements Elicitation & Analysis
+## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
 
 #### Competitive Analysis
@@ -180,10 +341,10 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
   <tr>
     <th style="border: 1px solid #000;"></th>
     <th style="text-align:center; border: 1px solid #000;">Criterio</th>
-    <th style="text-align:center; border: 1px solid #000;">CaféLab<img src="public\assets\images\styleGuidelines\Logo.jpg" alt="Logo Café Lab" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public\assets\images\competidores\cropster.jpg" alt="Logo Crospter" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public\assets\images\competidores\artisan.png" alt="Logo Artisan" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public\assets\images\competidores\roastlog.png" alt="Logo Roastlog" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">CaféLab<img src="public/assets/images/chapter-2/styleGuidelines/Logo.jpg" alt="Logo Café Lab" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public/assets/images/chapter-2/competidores/cropster.jpg" alt="Logo Crospter" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public/assets/images/chapter-2/competidores/artisan.png" alt="Logo Artisan" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public/assets/images/chapter-2/competidores/roastlog.png" alt="Logo Roastlog" width="150"></th>
   </tr>
 
 <!-- PERFIL -->
@@ -300,7 +461,7 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
 </tr>
 </table>
 
-### 2.1.2. Estrategias y tácticas frente a competidores (CaféLab)
+### 2.1.2. Estrategias y tácticas frente a competidores
 
 En base al análisis competitivo realizado, se identificaron las principales fortalezas, debilidades, oportunidades y amenazas de plataformas como Cropster, Artisan y RoastLog.
 
@@ -407,14 +568,18 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 - Realizar encuestas y validaciones continuas con usuarios del sector.
 
 
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
+### 2.2.2. Registro de entrevistas
+### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 **Administradores y dueños de cafeterias de especialidad**
-<td><img src="public\assets\images\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
+<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
 
 **Barista Profesional**
-<td><img src="public\assets\images\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
+<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
 
 
 
@@ -462,17 +627,19 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 
 ### 2.3.3 User Journey Mapping
 **Administradores y dueños de cafeterias de especialidad**
-![Journey Map Fernando](<public/assets/images/journeymapping/Fernando.png>)
+![Journey Map Fernando](<public/assets/images/chapter-2/journeymapping/Fernando.png>)
 **Barista Profesional**
-![Journey Map Valeria](<public/assets/images/journeymapping/Valeria.png>)
+![Journey Map Valeria](<public/assets/images/chapter-2/journeymapping/Valeria.png>)
 
-### 2.3.4. Empathy Mapping.
+### 2.3.4. Empathy Mapping
 **Administradores y dueños de cafeterias de especialidad**
-![Empathy Map dueño](<public/assets/images/empathymapping/Empathy map Dueños.png>)
+![Empathy Map dueño](<public/assets/images/chapter-2/empathymapping/Empathy map Dueños.png>)
 **Barista Profesional**
-![Barista](<public/assets/images/empathymapping/Empathy Map Barista Professional.png>)
+![Barista](<public/assets/images/chapter-2/empathymapping/Empathy Map Barista Professional.png>)
 
-## 2.4. Big Picture EventStorming.
+## 2.4. Big Picture EventStorming
+
+## 2.5. Ubiquitous Language
 
 # Capítulo III: Requirements Specification
 
@@ -1074,6 +1241,77 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 </table>
 
-## 3.2. Impact Mapping.  
 
-## 3.3. Product Backlog.
+## 3.2. Impact Mapping
+## 3.3. Product Backlog
+# Capítulo IV: Solution Software Design
+## 4.1. Strategic-Level Domain-Driven Design
+### 4.1.1. Design-Level EventStorming
+#### 4.1.1.1. Candidate Context Discovery
+#### 4.1.1.2. Domain Message Flows Modeling
+#### 4.1.1.3. Bounded Context Canvases
+### 4.1.2. Context Mapping
+### 4.1.3. Software Architecture
+#### 4.1.3.1. Software Architecture System Landscape Diagram
+#### 4.1.3.2. Software Architecture Context Level Diagrams
+#### 4.1.3.3. Software Architecture Container Level Diagrams
+#### 4.1.3.4. Software Architecture Deployment Diagrams
+## 4.2. Tactical-Level Domain-Driven Design
+### 4.2.1. Bounded Context: Coffees
+#### 4.2.1.1. Domain Layer
+#### 4.2.1.2. Interface Layer
+#### 4.2.1.3. Application Layer
+#### 4.2.1.4. Infrastructure Layer
+#### 4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+### 4.2.2. Bounded Context: Cupping sessions
+#### 4.2.2.1. Domain Layer
+#### 4.2.2.2. Interface Layer
+#### 4.2.2.3. Application Layer
+#### 4.2.2.4. Infrastructure Layer
+#### 4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+### 4.2.3. Bounded Context: IAM
+#### 4.2.3.1. Domain Layer
+#### 4.2.3.2. Interface Layer
+#### 4.2.3.3. Application Layer
+#### 4.2.3.4. Infrastructure Layer
+#### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+### 4.2.4. Bounded Context: Management
+#### 4.2.4.1. Domain Layer
+#### 4.2.4.2. Interface Layer
+#### 4.2.4.3. Application Layer
+#### 4.2.4.4. Infrastructure Layer
+#### 4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+### 4.2.5. Bounded Context: Preparation
+#### 4.2.5.1. Domain Layer
+#### 4.2.5.2. Interface Layer
+#### 4.2.5.3. Application Layer
+#### 4.2.5.4. Infrastructure Layer
+#### 4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+### 4.2.6. Bounded Context: Profiles
+#### 4.2.6.1. Domain Layer
+#### 4.2.6.2. Interface Layer
+#### 4.2.6.3. Application Layer
+#### 4.2.6.4. Infrastructure Layer
+#### 4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+# Conclusiones
+# Bibliografía
+# Anexos
