@@ -8,13 +8,13 @@ En esta sección se brinda la descripción de nuestra startup, nuestro producto 
 
 ### 1.1.1. Descripción de la Startup
 
-**Café Metrix** es una startup enfocada en desarrollar soluciones tecnológicas para la industria del café de especialidad. Así, nace de la pasión por combinar tecnología accesible con el arte del café para lograr una mejor conservación y preparación del mismo, apuntando a la comodidad tanto de los baristas y demás profecionales como del consumidor final.
+**Café Metrix** es una startup enfocada en desarrollar soluciones tecnológicas para la industria del café de especialidad. Así, nace de la pasión por combinar tecnología accesible con el arte del café para lograr una mejor conservación y preparación del mismo, apuntando a la comodidad tanto de los baristas y demás profesionales como del consumidor final.
 
 De esta manera, llega **Café Lab**, el cual es un sistema integral diseñado para baristas profesionales y cafeterías de especialidad que busca resolver dos problemas fundamentales en la industria: la falta de herramientas integradas para documentar, replicar y compartir procesos clave del café, y la desarticulación entre el tueste del grano y la experiencia final en taza.
 
 La solución consiste en una plataforma dual que combina software y componentes IoT, proporcionando control total sobre el café desde el grano verde hasta la preparación final. Permite documentar perfiles de tueste, controlar el almacenamiento del café verde mientras mantiene un monitoreo de su estado, asegurar su óptima conservación, digitalizar procesos de calibración, conectar la forma en que tuestan el café con cómo sabe finalmente (alineando parámetros técnicos del tostado con el perfil en taza) y reforzar la transparencia de la cadena productiva (mostrando de dónde viene el café y cómo se ha procesado en cada etapa).
 
-Con esto, aseguramos que el proceso será mucho más claro para ambas partes y se logrará tanto facilitar el monitoreo del proceso con registro de acciones y posibles errores como proteger la calidad del grano mediante nuestro sistema de detección de humedad y regulación de tempratura mediante deshumidificación.
+Con esto, aseguramos que el proceso será mucho más claro para ambas partes y se logrará tanto facilitar el monitoreo del proceso con registro de acciones y posibles errores como proteger la calidad del grano mediante nuestro sistema de detección de humedad y regulación de temperatura mediante deshumidificación.
 
 **Misión**: Elevar la calidad y consistencia del café, documentando cada etapa del proceso y gestionando una correcta conservación del grano para garantizar resultados excepcionales y sostenibles.
 
@@ -68,7 +68,7 @@ Actualmente, la mayoría de cafeterías de especialidad utilizan herramientas ma
 
 **When (¿Cuándo ocurre?):**
 
-Los problemas detectados suelen surigr cuando se intenta replicar perfiles de tueste, preparar recetas específicas o cumplir con estándares de calidad de forma profesional sin contar con herramientas digitales adaptadas al rubro que faciliten el control y desarrollo de los procesos.
+Los problemas detectados suelen surgir cuando se intenta replicar perfiles de tueste, preparar recetas específicas o cumplir con estándares de calidad de forma profesional sin contar con herramientas digitales adaptadas al rubro que faciliten el control y desarrollo de los procesos.
 
 **Where (¿Dónde ocurre?):**
 
@@ -76,7 +76,7 @@ Esto ocurre en laboratorios de café, tostadores pequeños, cafeterías urbanas 
 
 **Why (¿Por qué es un problema?):**
 
-Esto es porblema dado que existe una falta de integración entre los procesos técnicos (almacenamiento, tueste, calibración, cata, extracción) que dificulta la estandarización, dificulta la conservación del café, reduce la calidad percibida y limita la posibilidad de crecer o competir en el mercado de cafés de especialidad.
+Esto es problema dado que existe una falta de integración entre los procesos técnicos (almacenamiento, tueste, calibración, cata, extracción) que dificulta la estandarización, dificulta la conservación del café, reduce la calidad percibida y limita la posibilidad de crecer o competir en el mercado de cafés de especialidad.
 
 **How (¿Cómo lo solucionan hoy?):**
 
@@ -90,17 +90,17 @@ Al no tomar acciones para implementar una solución, se genera pérdida de reput
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-Nuestro sistema para baristas y cafeterías de especialidad fue diseñado para lograr que los usuarios puedan documentar, replicar y mejorar procesos como el tueste, la preparación y la cata, además de asegurar trazabilidad y control desde el grano verde hasta la taza.
+Nuestro sistema para baristas y cafeterías de especialidad fue diseñado para lograr que los usuarios puedan documentar, replicar y mejorar procesos como el tueste, la preparación y la cata de café, además de asegurar trazabilidad y control desde el grano verde hasta la taza y automatizar procesos como el control de la conservación del grano en cuanto a niveles de humedad y temperatura.
 
-Hemos observado que el producto no está cumpliendo completamente con estos objetivos, ya que los procesos están desarticulados, no hay conexión entre etapas como el almacenamiento, el tueste y la extracción, la conservación del grano no se realiza adecuadamente, y muchos datos importantes se pierden o no quedan registrados. Esto provoca errores, variabilidad en la calidad, pérdida de información y poca confianza del cliente final.
+Hemos observado que, actualmente, el café como producto ofrecido no está cumpliendo completamente con sus objetivos de calidad, ya que los procesos están desarticulados, no hay conexión entre etapas como el almacenamiento, el tueste y la extracción, la conservación del grano no se realiza adecuadamente, y muchos datos importantes se pierden o no quedan registrados. Esto provoca errores, variabilidad en la calidad, pérdida de información y poca confianza del cliente final, así como puede dificultar el crecimiento de las cafeterías y sus baristas.
 
-¿Cómo podríamos mejorar la plataforma para que los usuarios sean más exitosos mediante una integración real de procesos, alertas en tiempo real sobre el estado del grano, cuidado de la conservación del grano automatizada y herramientas que permitan ver y comparar datos técnicos y sensoriales, basándonos en métricas como consistencia en recetas, reducción de pérdidas y mejora en la trazabilidad?
+¿Cómo podríamos mejorar la situación para que los baristas y cafeterías de especialidad sigan los procesos del café con más facilidad logrando una integración real de los mismo, alertas en tiempo real sobre el estado del grano, cuidado de la conservación del grano automatizada y herramientas que permitan ver y comparar datos técnicos y sensoriales, basándonos en métricas como consistencia en recetas, reducción de pérdidas y mejora en la trazabilidad?
 
 #### 1.2.2.2. Lean UX Assumptions
 
 **¿Quién es el usuario?**
 
-El usuario principal de este producto son baristas profesionales y los de encargados de cafeterías de especialidad. Los baristas profesionales se encargan de gestionar todo el proceso del café, desde la compra del café verde hasta su preparación en taza. Ellos buscan consistencia, calidad y trazabilidad para ofrecer un café superior, ya sea en competencias, consultorías o para clientes exigentes. Por otro lado, las cafeterías de especialidad se enfocan en ofrecer cafés de origen con características únicas y diferenciadas. Estas cafeterías necesitan herramientas para asegurar la calidad y correcta conservación del café, cumplir con certificaciones y fidelizar a sus clientes a través de la transparencia y el seguimiento de cada etapa del proceso.
+El usuario principal de este producto son baristas profesionales y los encargados de cafeterías de especialidad. Los baristas profesionales se encargan de gestionar todo el proceso del café, desde la compra del café verde hasta su preparación en taza. Ellos buscan consistencia, calidad y trazabilidad para ofrecer un café superior, ya sea en competencias, consultorías o para clientes exigentes. Por otro lado, las cafeterías de especialidad se enfocan en ofrecer cafés de origen con características únicas y diferenciadas. Estas cafeterías necesitan herramientas para asegurar la calidad y correcta conservación del café, cumplir con certificaciones y fidelizar a sus clientes a través de la transparencia y el seguimiento de cada etapa del proceso.
 
 **¿Dónde encaja nuestro producto en su vida?**
 
@@ -109,6 +109,7 @@ El producto encaja perfectamente en el flujo de trabajo diario de los baristas y
 **¿Qué problemas tiene nuestro producto y cómo se pueden resolver?**
 
 Un problema que podría presentar nuestro producto es que necesita conexión a internet, electricidad y ciertos elementos tecnológicos para su funcionamiento completo. Esto podría ser un limitante para las cafeterías con menor presupuesto, espacios menos preparados o de lugares lejanos en los que la señal de internet no es la ideal todo el tiempo. La solución que podemos ofrecer es recortar funcionalidades como el monitoreo de conservación con IoT para las áreas en las que el uso de elementos IoT se dificulte, de forma en que las demás funcionalidades sigan estando disponibles. Asimismo, intentaremos ofrecer un producto de bajo costo pero alta calidad considerando tanto la aplicación como los elementos IoT de forma en que sea más accesible para todas las cafeterías.
+
 Por otro lado, podría ser complicado para personas mayores comprender y adaptarse a la aplicación y sus funcionalidades en un principio, por lo que dentro del sistema ofrecemos una guía de uso detallada y nos aseguramos de hacer la UI lo más intuitiva posible.
 
 **¿Cuándo y cómo se usará nuestro producto?**
@@ -122,6 +123,32 @@ Las características clave de nuestro producto incluyen una interfaz intuitiva, 
 **¿Cómo debe verse nuestro producto y cómo debe comportarse?**
 
 Visualmente, el producto debe ser claro, moderno y profesional, con un diseño minimalista que facilite la comprensión de los datos. La interfaz debe incluir gráficos fáciles de interpretar y una visualización intuitiva de los diferentes parámetros del proceso de café, como las curvas de tueste, los parámetros de extracción y los perfiles sensoriales. En cuanto a su comportamiento, la plataforma debe ser rápida y confiable, con tiempos de respuesta mínimos para que los usuarios puedan tomar decisiones en tiempo real. Las alertas automáticas deben ser precisas y oportunas, mientras que la navegación debe ser fluida tanto en la aplicación web como móvil. Además, el sistema debe permitir una rápida configuración de los perfiles de tueste, calibraciones y ajustes según las necesidades de cada usuario.
+
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hypothesis Statement 1:**  
+
+**Creemos que si** CaféLab proporciona a baristas y cafeterías una plataforma digital que permita documentar, replicar y compartir procesos clave como el tueste, la calibración del molino, la cata y la preparación estos usuarios se sentirán satisfechos, sus procesos tendrán una mejor calidad y seguirán usando y recomendando la aplicación.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** la consistencia del café mejore en un 40% y la satisfacción del cliente aumente en un 30%.
+
+**Hypothesis Statement 2:**  
+
+**Creemos que si** CaféLab implementa un módulo que alinee los parámetros técnicos del tueste (como humedad, temperatura de carga y curva de tueste) con el perfil final en taza las inconsistencias en la extracción disminuirán y las cafeterías podrán sacar un mejor provecho.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** los baristas reduzcan las inconsistencias en la extracción en un 35% y disminuyan las pérdidas de calidad en un 25%.
+
+**Hypothesis Statement 3:**  
+
+**Creemos que si** CaféLab integra el sensor IoT TrackSilo para monitorear en tiempo real la temperatura y la humedad del café verde durante su almacenamiento, con alertas tempranas y registro por lote entonces el café tendrá una mejor calidad y menos producto sufrirá daños durante la primera etapa.
+
+**Sabremos** que hemos tenido éxito.
+
+**Cuando** los usuarios reduzcan las pérdidas de calidad por mala conservación en un 30% y mejoren los resultados del tueste en un 20%.
 
 # Capítulo II:  Requirements Elicitation & Analysis
 
