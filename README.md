@@ -1,4 +1,51 @@
-﻿# cafeLaf-iot-report
+<!--Titulo principal-->
+<h1 align="center">Informe de Trabajo Final</h1>
+
+<!--Nombre de la universidad-->
+<h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
+
+<!--Carrera-->
+<h3 align="center"> Ingeniería de software - 2610</h3>
+
+<!--Logo de  la universidad-->
+<p align="center">
+    <img style="width:30%" src="public/assets/images/cover/logo_upc.png"></img>
+</p>
+
+<!-- Código del curso -->
+<h4 align="center"> Código del curso: 1ASI0572</h4>
+
+<!--Nombre del curso-->
+<h4 align="center"> Nombre del curso: Desarrollo de Soluciones IOT</h4>
+
+<!--NRC del curso-->
+<h4 align="center">NRC: 6776</h4>
+
+
+<p align="left" style="margin-left: 10%;">
+    <!--Docente-->
+    <strong>Docente: </strong>Marco Antonio Leon Baca<br>
+    <!--Startup-->
+    <strong>Startup: </strong>Café Metrix<br>
+    <!--Producto-->
+    <strong>Producto: </strong>Café Lab<br>
+</p>
+
+<!--Integrantes del grupo-->
+<p align="left" style="margin-left: 10%;">
+    <strong>Integrantes del grupo: </strong><br>
+    <ul align="left" style="margin-left: 10%;">
+        <li>Donayre Alvarez, Adrian Ricardo - U202310187</li>
+        <li>Fernandez Camayo, Carlos Fredy - U202320083</li>
+        <li>Julca Minaya, Sergio Gino - U202318274</li>
+        <li>Roman Cruz, Natalia Bertha - U202310148 </li>
+        <li>Yum Gonzales, Jorge Suin - U202210838</li>
+    </ul>
+</p>
+
+
+<!--Ciclo-->
+<div align="center" style="font-weight: bold;">Abril de 2026</div><br>
 
 # Capítulo I: Introducción
 
@@ -21,35 +68,35 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 **Visión**: Ser líder a nivel nacional en el estándar tecnológico que revoluciona la industria del café de especialidad.
 
 #### Logo, isotipo y logotipo de Café Lab:
-<img src="public/assets/images/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+<img src="public/assets/images/chapter-1/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-    <td><img src="public/assets/images/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
+    <td><img src="public/assets/images/chapter-1/integrantes/adriand.jpeg" alt="Adrian Donayre" width="150"></td>
     <td>Mi nombre es <strong>Adrian Donayre</strong>, tengo 19 
     años y actualmente estoy cursando el quinto ciclo de la 
     carrera de Ingeniería de Software en la UPC. Tengo habilidad en los lenguajes C++ y javascript. Así mismo, cuento con experiencia en monitoreo de infraestructura en herramientas como Azure, NR y Kemp. Personalmente, opino que lo que hagamos en la universidad se verá reflejado en nuestra vida profesional. Por ello me esfuerzo en ampliar mis conocimientos y conseguir nuevas experiencias que me sumen para seguir mejorando.</td>
   </tr>
   <tr>
-    <td><img src="public/assets/images/integrantes/natalia-roman.png" alt="Natalia Roman" width="200"> </td>
+    <td><img src="public/assets/images/chapter-1/integrantes/natalia-roman.png" alt="Natalia Roman" width="200"> </td>
     <td>Mi nombre es <strong>Natalia Roman</strong>, tengo 20 años y me encuentro cursando el séptimo ciclo de la carrera de ingeniería de software. Desde los primeros ciclos me ha apasionado la programación, siendo los lenguajes que mejor manejo java, javascript, C++ y C#, y me he centrado en aprender lo más posible en cuanto a optimización de procesos y nuevas tecnologías. Me interesa aprender sobre elementos IoT para poder integrarlos en nuevos proyectos.</td>
   </tr>
   <tr>
-  <td><img src="public/assets/images/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
+  <td><img src="public/assets/images/chapter-1/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
     <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
 </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.png"alt="..." width="200">  </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.png"alt="..." width="200">  </td>
     <td> Mi nombre es <strong>Carlos Fredy Fernandez Camayo</strong>.Soy estudiante de ingenieria de software. Tengo experiencia en desarrollo de proyectos Frontend y Backend con Angular y Spring boot, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.  </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/sergio_julca.png"alt="..." width="200">  </td>
+    <td> Mi nombre es <strong>Sergio Gino Julca Minaya</strong>, soy estudiante de Ingeniería de software. Tengo experiencia desarrollando proyectos de automatización con diferentes frameworks y tecnologías. Del mismo modo, me considero una persona competitiva, responsable y comprometida. Estoy interesado en conocer todas las áreas posibles desde desarrollo de software hasta el desarrollo de IA. Mi objetivo en el equipo es contribuir activamente. </td>
   </tr>
   <tr> 
-    <td> <img src="public/assets/images/integrantes/fredy.jpeg"alt="..." width="200">  </td>
+    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.jpeg"alt="..." width="200">  </td>
     <td> Mi nombre es <strong>...</strong>, ... </td>
   </tr>
 </table>
@@ -153,10 +200,10 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
   <tr>
     <th style="border: 1px solid #000;"></th>
     <th style="text-align:center; border: 1px solid #000;">Criterio</th>
-    <th style="text-align:center; border: 1px solid #000;">CaféLab<img src="public\assets\images\styleGuidelines\Logo.jpg" alt="Logo Café Lab" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public\assets\images\competidores\cropster.jpg" alt="Logo Crospter" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public\assets\images\competidores\artisan.png" alt="Logo Artisan" width="150"></th>
-    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public\assets\images\competidores\roastlog.png" alt="Logo Roastlog" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">CaféLab<img src="public/assets/images/chapter-2/styleGuidelines/Logo.jpg" alt="Logo Café Lab" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Cropster<img src="public/assets/images/chapter-2/competidores/cropster.jpg" alt="Logo Crospter" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">Artisan<img src="public/assets/images/chapter-2/competidores/artisan.png" alt="Logo Artisan" width="150"></th>
+    <th style="text-align:center; border: 1px solid #000;">RoastLog<img src="public/assets/images/chapter-2/competidores/roastlog.png" alt="Logo Roastlog" width="150"></th>
   </tr>
 
 <!-- PERFIL -->
@@ -384,10 +431,10 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 **Administradores y dueños de cafeterias de especialidad**
-<td><img src="public\assets\images\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
+<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_FernandoGoijman.png" alt="Fernando Goijman"></td>
 
 **Barista Profesional**
-<td><img src="public\assets\images\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
+<td><img src="public\assets\images\chapter-2\userPersonas\UserPersona_ValeriaRamos.png" alt="Valeria Ramos"></td>
 
 
 
@@ -435,15 +482,15 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 
 ### 2.3.3 User Journey Mapping
 **Administradores y dueños de cafeterias de especialidad**
-![Journey Map Fernando](<public/assets/images/journeymapping/Fernando.png>)
+![Journey Map Fernando](<public/assets/images/chapter-2/journeymapping/Fernando.png>)
 **Barista Profesional**
-![Journey Map Valeria](<public/assets/images/journeymapping/Valeria.png>)
+![Journey Map Valeria](<public/assets/images/chapter-2/journeymapping/Valeria.png>)
 
 ### 2.3.4. Empathy Mapping.
 **Administradores y dueños de cafeterias de especialidad**
-![Empathy Map dueño](<public/assets/images/empathymapping/Empathy map Dueños.png>)
+![Empathy Map dueño](<public/assets/images/chapter-2/empathymapping/Empathy map Dueños.png>)
 **Barista Profesional**
-![Barista](<public/assets/images/empathymapping/Empathy Map Barista Professional.png>)
+![Barista](<public/assets/images/chapter-2/empathymapping/Empathy Map Barista Professional.png>)
 
 ## 2.4. Big Picture EventStorming.
 
@@ -1050,3 +1097,4 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 ## 3.2. Impact Mapping.  
 
 ## 3.3. Product Backlog.
+=======
