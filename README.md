@@ -630,4 +630,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 </table>
 ## 3.2. Impact Mapping.
+
+![Freddy](<public/assets/images/impactmapping/Impact map 1.png>)
+![alt text](<public/assets/images/impactmapping/Valeria Ramos.png>)
 ## 3.3. Product Backlog.
