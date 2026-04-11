@@ -178,9 +178,62 @@
         - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#4266-bounded-context-domain-layer-class-diagrams)
         - [4.2.6.6.2. Bounded Context Database Design Diagram](#4266-bounded-context-database-design-diagram)
 
-[Conclusiones](#conclusiones)
-[Bibliografía](#bibliografia)
-[Anexos](#anexos)
+[Conclusiones](#conclusiones) <br>
+[Bibliografía](#bibliografia) <br>
+[Anexos](#anexos) <br>
+
+# Student Outcome
+<table>
+  <tr>
+    <td><strong>Criterio específico</strong></td>
+    <td><strong>Acciones realizadas</strong></td>
+    <td><strong>Conclusiones</strong></td>
+  </tr>
+  <tr>
+    <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+    <td>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
+      <br>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+    </td>
+    <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
+  </tr>
+  <tr>
+    <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+    <td>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
+      <br>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>
+    </td>
+    <td>
+      El equipo logró establecer un entorno colaborativo e inclusivo, donde cada integrante se sintió valorado y escuchado. Se establecieron metas claras y se planificaron tareas de manera efectiva, lo que permitió cumplir con los objetivos establecidos en cada fase del proyecto.
+    </td>
+  </tr>
+</table>
 
 
 # Capítulo I: Introducción
