@@ -86,34 +86,34 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la tb1</td>
   </tr>
   <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Descripción de actividades</strong></td>
-    <td><strong>Evidencias</strong></td>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Evidencias</strong></td>
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
     <td>Participé activamente en la elaboración del informe, contribuyendo a la redacción de secciones clave como el diseño de entrevistas, el análisis de entrevistas y la validación del ubiquitous language. Además, colaboré en la revisión y optimización de los lean ux problem statements y assumptions para asegurar que reflejaran adecuadamente los desafíos y oportunidades identificados en nuestro proyecto.</td>
-    <td><a href="">Registro de commits en GitHub</a></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Roman Cruz, Natalia Bertha</strong></td>
     <td>Contribuí significativamente a la descripción detallada de la startup y a la recopilación de perfiles de los integrantes del equipo. Además, me encargué de recopilar antecedentes y problemáticas relevantes para nuestro proyecto, lo que nos permitió tener una base sólida para el desarrollo de nuestras soluciones.</td>
-    <td><a href="">Registro de commits en GitHub</a></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
-    <td><strong>Jyum Gonzales, orge Suin</strong></td>
+    <td><strong>Jyum Gonzales, Jorge Suin</strong></td>
     <td>Me enfoqué en la actualización de la user journey mapping y en la validación del impact mapping. Trabajé en estrecha colaboración con el equipo para asegurar que estas herramientas reflejaran de manera precisa las experiencias y necesidades de nuestros usuarios, lo que nos permitió diseñar soluciones más efectivas.</td>
-    <td><a href="">Registro de commits en GitHub</a></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
     <td>Realicé un análisis exhaustivo de la competitividad en el mercado, lo que nos permitió identificar oportunidades y desafíos clave para nuestro proyecto. Además, colaboré en la creación de estrategias y tácticas frente a competidores, asegurando que nuestras soluciones fueran diferenciadoras y competitivas.</td>
-    <td><a href="">Registro de commits en GitHub</a></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
     <td>Contribuí a la creación del registro de versiones del informe, asegurando que cada modificación estuviera documentada de manera clara y precisa. Además, participé en la refactorización de la tabla de contenido y en la optimización de los lean ux hypothesis statements y canvas para mejorar la claridad y coherencia del informe.</td>
-    <td><a href="">Registro de commits en GitHub</a></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Conclusión</strong></td>
