@@ -186,7 +186,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [3.2. Impact Mapping.](#32-impact-mapping)
     - [3.2.1. Mapa de impacto de Freddy, el dueño de cafeteria.](#321-mapa-de-impacto-de-freddy-el-dueño-de-cafeteria)
     - [3.2.2. Mapa de impacto de Valeria, barrista.](#322-mapa-de-impacto-de-valeria-barrista)
-  - [3.3. Product Backlog.](#33-product-backlog)
+  - [3.3. Product Backlog](#33-product-backlog)
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
   - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
     - [4.1.1. Design-Level EventStorming](#411-design-level-eventstorming)
@@ -1408,7 +1408,435 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 ### 3.2.2. Mapa de impacto de Valeria, barrista.
 ![alt text](<public/assets/images/impactmapping/Valeria Ramos.png>)
 
-## 3.3. Product Backlog.
+## 3.3. Product Backlog
+
+<table border="1">
+<tr>
+<th>#</th>
+<th>User Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Story Points</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>US16</td>
+<td>Información del Producto</td>
+<td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>US17</td>
+<td>Secciones Específicas por Segmento</td>
+<td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>US18</td>
+<td>Contacto con Equipo</td>
+<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>US19</td>
+<td>Acceso directo a plataforma</td>
+<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>US20</td>
+<td>Registro y Autenticación (Usuarios)</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>US21</td>
+<td>Perfil Personalizado</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>US22</td>
+<td>Selección de Plan</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>US01</td>
+<td>Registro de Proveedores</td>
+<td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>US02</td>
+<td>Gestión de Lotes de Café Verde</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>US23</td>
+<td>Visualización de condiciones del almacén en tiempo real</td>
+<td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>US25</td>
+<td>Recepción de alertas por condiciones fuera de rango</td>
+<td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>US28</td>
+<td>Activación automática del deshumedecedor</td>
+<td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran para no depender de intervención manual</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>US26</td>
+<td>Configuración de umbrales de monitoreo</td>
+<td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>US24</td>
+<td>Consulta de historial ambiental por lote</td>
+<td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>US27</td>
+<td>Indicador de estado ambiental por lote</td>
+<td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>US11</td>
+<td>Control de Inventario Integrado</td>
+<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td>US03</td>
+<td>Creación de Perfil de Tueste</td>
+<td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td>US05</td>
+<td>Cata Digital Estructurada</td>
+<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td>US07</td>
+<td>Creación de Recetas de Preparación</td>
+<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>US14</td>
+<td>Análisis de Eficiencia y Rendimiento</td>
+<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>US12</td>
+<td>Correlación Tueste-Sabor</td>
+<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td>US10</td>
+<td>Visualización de Perfiles Sensoriales</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>US15</td>
+<td>Reportes de Trazabilidad</td>
+<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td>US08</td>
+<td>Calibración de Molienda</td>
+<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td>US06</td>
+<td>Análisis Comparativo de Tuestes</td>
+<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td>US13</td>
+<td>Compartir Recetas</td>
+<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td>US04</td>
+<td>Biblioteca de Defectos de Tueste</td>
+<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td>US09</td>
+<td>Portafolio de Bebidas</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td>TS20</td>
+<td>POST HTTPS Usuarios</td>
+<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td>TS21</td>
+<td>POST HTTPS Autenticación</td>
+<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td>TS22</td>
+<td>GET HTTPS Planes</td>
+<td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td>TS23</td>
+<td>POST HTTPS Planes</td>
+<td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>33</td>
+<td>TS03</td>
+<td>POST HTTPS Lotes</td>
+<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>34</td>
+<td>TS04</td>
+<td>PATCH HTTPS Lotes</td>
+<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>35</td>
+<td>TS24</td>
+<td>POST API SensorReadings</td>
+<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>36</td>
+<td>TS25</td>
+<td>GET API SensorReadings</td>
+<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>37</td>
+<td>TS26</td>
+<td>GET API SensorStatus</td>
+<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td>TS27</td>
+<td>POST API ActuatorEvents</td>
+<td>Como desarrollador, quiero registrar eventos de activación y desactivación del deshumedecedor mediante una API para mantener el historial de intervenciones del sistema</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>39</td>
+<td>TS28</td>
+<td>POST API AlertNotifications</td>
+<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td>TS07</td>
+<td>POST HTTPS Catas</td>
+<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>41</td>
+<td>TS08</td>
+<td>GET HTTPS PerfilesSensoriales</td>
+<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>42</td>
+<td>TS05</td>
+<td>POST HTTPS Perfiles-Tueste</td>
+<td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td>TS09</td>
+<td>POST HTTPS Recetas</td>
+<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td>TS17</td>
+<td>GET HTTPS Inventario</td>
+<td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>45</td>
+<td>TS18</td>
+<td>PATCH HTTPS Inventario</td>
+<td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>46</td>
+<td>TS14</td>
+<td>GET HTTPS Correlaciones</td>
+<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
+<td>3</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td>TS10</td>
+<td>GET HTTPS Análisis-Tueste</td>
+<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td>TS01</td>
+<td>POST HTTPS Proveedores</td>
+<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>49</td>
+<td>TS02</td>
+<td>GET HTTPS Proveedores</td>
+<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td>TS10</td>
+<td>POST HTTPS Calibraciones</td>
+<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td>TS11</td>
+<td>GET HTTPS DefectosTueste</td>
+<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td>TS19</td>
+<td>POST HTTPS Contacto</td>
+<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
+<td>1</td>
+</tr>
+
+</table>
+
 # Capítulo IV: Solution Software Design
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. Design-Level EventStorming
