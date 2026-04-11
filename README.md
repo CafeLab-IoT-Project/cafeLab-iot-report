@@ -47,6 +47,34 @@
 <!--Ciclo-->
 <div align="center" style="font-weight: bold;">Abril de 2026</div>
 
+<!-- Registro de versiones -->
+# Registro de versiones
+
+| Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
+|---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
+| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del documento, estructura del informe y carátula                          |
+| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del registro de versiones y project collaboration insights                |
+| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino            | Refactorización de tabla de contenido y redirecciones                              |
+| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino            | Actualización de lean ux hypothesis statements y canvas                            |
+| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino            | Validación de segmentos objetivos                                                  |
+| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha           | Descripción detallada de la startup y recopilación de perfiles de los integrantes  |
+| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Recopilación de antecendentes y problemáticas                                      |
+| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Optimización de lean ux problem statements y assumptions                           |
+| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Análisis e invetigación de competitividad                                          |
+| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Creación de estrategias y tácticas frente a competidores                           |
+| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo      | Diseño de entrevistas                                                              |
+| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez            | Registro y análisis de entrevistas.                                                |
+| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Actualización de user personas                                                     |
+| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Evaluación de user task matrix                                                     |
+| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Actualización de user journey mapping                                              |
+| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Evaluación del empathy mapping                                                     |
+| 1.16    | 09/04/2026  | Roman, Yum, Donayre                  | Creación de big picture storming                                                   |
+| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo      | Validación del ubiquitous language                                                 |
+| 1.18    | 10/04/2026  | Roman, Yum                           | Revisión de user stories                                                           |
+| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin             | Validación del impact mapping                                                      |
+| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin             | Actualización del product backlog                                                  |
+
+
 <!--ÍNDICE-->
 # Contenido 
 [Student Outcome](#student-outcome)
