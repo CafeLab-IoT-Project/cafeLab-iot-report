@@ -9,7 +9,7 @@
 
 <!--Logo de  la universidad-->
 <p align="center">
-    <img style="width:20%" src="public/assets/images/cover/logo_upc.png"></img>
+    <img style="width:20%" src="public/assets/images/cover/logo/logo_upc.png"></img>
 </p>
 
 <!-- Código del curso -->
@@ -48,7 +48,7 @@
 <div align="center" style="font-weight: bold;">Abril de 2026</div>
 
 <!-- Registro de versiones -->
-# Registro de versiones
+# Registro de versiones del informe
 
 | Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
 |---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
@@ -73,6 +73,59 @@
 | 1.18    | 10/04/2026  | Roman, Yum                           | Revisión de user stories                                                           |
 | 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin             | Validación del impact mapping                                                      |
 | 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin             | Actualización del product backlog                                                  |
+
+# Project Report Collaboration Insights
+En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
+
+Link del project report: [https://github.com/CafeLab-IoT-Project](https://github.com/CafeLab-IoT-Project)
+
+<!--Explicacion por integrante acerca de como se ha desarrollado las actividades de elaboración de informe, capturas de imagen analitico y commits en el informe
+Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGISTRO DE VERSIOENS DE INFORME-->
+<table>
+  <tr>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la tb1</td>
+  </tr>
+  <tr>
+    <td><strong>Integrante</strong></td>
+    <td><strong>Descripción de actividades</strong></td>
+    <td><strong>Evidencias</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Participé activamente en la elaboración del informe, contribuyendo a la redacción de secciones clave como el diseño de entrevistas, el análisis de entrevistas y la validación del ubiquitous language. Además, colaboré en la revisión y optimización de los lean ux problem statements y assumptions para asegurar que reflejaran adecuadamente los desafíos y oportunidades identificados en nuestro proyecto.</td>
+    <td><a href="">Registro de commits en GitHub</a></td>
+  </tr>
+  <tr>
+    <td><strong>Roman Cruz, Natalia Bertha</strong></td>
+    <td>Contribuí significativamente a la descripción detallada de la startup y a la recopilación de perfiles de los integrantes del equipo. Además, me encargué de recopilar antecedentes y problemáticas relevantes para nuestro proyecto, lo que nos permitió tener una base sólida para el desarrollo de nuestras soluciones.</td>
+    <td><a href="">Registro de commits en GitHub</a></td>
+  </tr>
+  <tr>
+    <td><strong>Jyum Gonzales, orge Suin</strong></td>
+    <td>Me enfoqué en la actualización de la user journey mapping y en la validación del impact mapping. Trabajé en estrecha colaboración con el equipo para asegurar que estas herramientas reflejaran de manera precisa las experiencias y necesidades de nuestros usuarios, lo que nos permitió diseñar soluciones más efectivas.</td>
+    <td><a href="">Registro de commits en GitHub</a></td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td>Realicé un análisis exhaustivo de la competitividad en el mercado, lo que nos permitió identificar oportunidades y desafíos clave para nuestro proyecto. Además, colaboré en la creación de estrategias y tácticas frente a competidores, asegurando que nuestras soluciones fueran diferenciadoras y competitivas.</td>
+    <td><a href="">Registro de commits en GitHub</a></td>
+  </tr>
+  <tr>
+    <td><strong>Julca Minaya, Sergio Gino</strong></td>
+    <td>Contribuí a la creación del registro de versiones del informe, asegurando que cada modificación estuviera documentada de manera clara y precisa. Además, participé en la refactorización de la tabla de contenido y en la optimización de los lean ux hypothesis statements y canvas para mejorar la claridad y coherencia del informe.</td>
+    <td><a href="">Registro de commits en GitHub</a></td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">En general, todos los integrantes del equipo han demostrado una participación activa y comprometida en la elaboración del informe, contribuyendo con sus habilidades y conocimientos para asegurar que el documento refleje de manera precisa y completa el desarrollo de nuestro proyecto. La colaboración efectiva entre los miembros del equipo ha sido fundamental para el éxito de esta etapa del proyecto.</td>
+  </tr>
+    <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    <img src="public/assets/images/cover/insights/commit-por-integrante.png" alt="Evidencia">
+    <img src="public/assets/images/cover/insights/commits-grupal.png" alt="Evidencia"></td>
+  </tr>
+</table>
 
 
 <!--ÍNDICE-->
