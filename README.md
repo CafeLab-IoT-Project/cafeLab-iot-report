@@ -1072,6 +1072,92 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 ## 2.4. Big Picture EventStorming
 
 ## 2.5. Ubiquitous Language
+En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
+
+**Glosario de Términos:**
+
+<table border = 1>
+  <thead>
+    <tr>
+      <th>Término (Inglés)</th>
+      <th>Término (Español)</th>
+      <th>Definición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coffee Lot</strong></td>
+      <td>Lote de Café</td>
+      <td>Conjunto de granos de café que comparten origen, variedad, proceso y cosecha.</td>
+    </tr>
+    <tr>
+      <td><strong>Storage Conditions</strong></td>
+      <td>Condiciones de Almacenamiento</td>
+      <td>Parámetros ambientales (temperatura y humedad relativa) que afectan la calidad del grano de café verde y que deben mantenerse dentro de rangos óptimos.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Profile</strong></td>
+      <td>Perfil de Tueste</td>
+      <td>Conjunto de parámetros que describen cómo se ha tostado un lote de café.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Curve</strong></td>
+      <td>Curva de Tueste</td>
+      <td>Gráfica que muestra la evolución de temperatura del grano y del ambiente durante el proceso de tueste.</td>
+    </tr>
+    <tr>
+      <td><strong>Calibration</strong></td>
+      <td>Calibración</td>
+      <td>Ajuste de variables en la preparación para estandarizar resultados sensoriales de una bebida.</td>
+    </tr>
+    <tr>
+      <td><strong>Traceability</strong></td>
+      <td>Trazabilidad</td>
+      <td>Capacidad de seguir el recorrido del café desde su origen hasta la taza, incluyendo certificaciones y condiciones.</td>
+    </tr>
+    <tr>
+      <td><strong>Cupping</strong></td>
+      <td>Cata</td>
+      <td>Evaluación sensorial del café basada en atributos como acidez, cuerpo, aroma y sabor.</td>
+    </tr>
+    <tr>
+      <td><strong>Sensory Hexagon</strong></td>
+      <td>Hexágono Sensorial</td>
+      <td>Visualización gráfica, en un hexágono de radar,  de los atributos sensoriales del café, útil para comparar cafés según su perfil en taza.</td>
+    </tr>
+    <tr>
+      <td><strong>Recipe Portfolio</strong></td>
+      <td>Portafolio de Recetas</td>
+      <td>Colección digital de recetas vinculadas a métodos, bebidas, clientes o competencias.</td>
+    </tr>
+    <tr>
+      <td><strong>Green Inventory</strong></td>
+      <td>Inventario de Café Verde</td>
+      <td>Registro y control del café sin tostar, incluyendo lotes, estado y trazabilidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Roasted Inventory</strong></td>
+      <td>Inventario de Café Tostado</td>
+      <td>Registro del café ya tostado disponible, asociado a sus respectivos perfiles y lotes.</td>
+    </tr>
+    <tr>
+      <td><strong>Certification</strong></td>
+      <td>Certificación</td>
+      <td>Documentación que acredita prácticas éticas o sostenibles de cada lote, tales como orgánico, comercio justo, etc.</td>
+    </tr>
+    <tr>
+      <td><strong>TrackSilo</strong></td>
+      <td>TrackSilo</td>
+      <td>Dispositivo IoT que monitorea temperatura y humedad de los sacos de café verde, y alerta sobre condiciones fuera del rango óptimo.</td>
+    </tr>
+    <tr>
+      <td><strong>Yield Analysis</strong></td>
+      <td>Análisis de Rendimiento</td>
+      <td>Cálculo de pérdida de peso tras el tueste y análisis económico del proceso.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 # Capítulo III: Requirements Specification
 
