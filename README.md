@@ -2313,7 +2313,21 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </table>
 
 # Capítulo IV: Solution Software Design
+
 ## 4.1. Strategic-Level Domain-Driven Design
+
+<p>
+Luego de haber desarrollado el Big Picture Event Storming, el equipo procedió a realizar el Design-Level Event Storming con el objetivo de profundizar en el comportamiento del sistema y definir con mayor precisión la lógica del dominio. Esta etapa también se llevó a cabo de manera colaborativa en una video llamada en la aplicación Discord, permitiendo que todos aportáramos desde nuestro entendimiento del negocio y del sistema, construyendo en conjunto un modelo más estructurado y alineado.
+</p>
+
+<p>
+Identificamos las interacciones entre los distintos elementos del sistema, tales como comandos, eventos, políticas y modelos de lectura. A través de discusiones y validaciones grupales, se logró consensuar cómo deberían comportarse los procesos dentro de la solución, considerando tanto las necesidades del usuario como las restricciones del negocio.
+</p>
+
+<p>
+Este enfoque permitió pasar de una visión exploratoria a una más técnica y organizada, sentando las bases para la implementación del sistema y facilitando la posterior identificación de agregados y bounded contexts.
+</p>
+
 ### 4.1.1. Design-Level EventStorming
 #### 4.1.1.1. Candidate Context Discovery
 #### 4.1.1.2. Domain Message Flows Modeling
