@@ -1115,6 +1115,79 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 ![Barista](<public/assets/images/chapter-2/empathymapping/Empathy Map Barista Professional.png>)
 
 ## 2.4. Big Picture EventStorming
+En esta etapa, el equipo se enfocó en explorar el comportamiento del negocio desde una perspectiva de alto nivel, sin entrar aún en detalles técnicos, con el objetivo de construir una visión compartida del flujo de procesos y detectar oportunidades de mejora.
+
+En el contexto del proyecto CaféLab, esta dinámica permitió identificar los principales procesos relacionados con la gestión del café, desde el registro de perfiles de tueste, manejo de lotes, proveedores, sensores IoT y control de condiciones ambientales, hasta la generación de información para la toma de decisiones. Asimismo, se lograron evidenciar problemas existentes en los procesos actuales, lo cual sirvió como base para el diseño de la solución propuesta.
+
+A continuación, se presentan las etapas desarrolladas durante la sesión de Big Picture Event Storming.
+
+---
+
+<h3>Step 1: Unstructured Exploration</h3>
+<p>
+En esta primera etapa, el equipo realizó una exploración libre del dominio, identificando todos los eventos relevantes sin seguir una estructura específica. El objetivo principal fue capturar la mayor cantidad de información posible acerca de lo que ocurre en el negocio, enfocándose en los hechos significativos que representan cambios de estado dentro del sistema.
+</p>
+
+<p>
+Durante esta fase se identificaron eventos relacionados con múltiples áreas del sistema, tales como la gestión de perfiles de tueste, el registro y actualización de proveedores, la administración de lotes de café, el monitoreo de sensores IoT, la gestión de recetas y calibraciones, así como las sesiones de cata. Asimismo, se incluyeron eventos vinculados a validaciones de datos, errores detectados y acciones del usuario.
+</p>
+
+<p>
+Esta etapa permitió obtener una visión amplia del dominio, evidenciando la complejidad del sistema y la diversidad de procesos involucrados. Además, facilitó la identificación de redundancias, inconsistencias y posibles puntos de mejora en etapas posteriores.
+</p>
+
+![Paso 1: Unstructured Exploration](<public/assets/images/chapter-2/eventStorming/Step1-UnstructuredExploration.jpeg>)
+
+---
+
+<h3>Step 2: Timelines</h3>
+<p>
+En la segunda etapa, los eventos identificados previamente fueron organizados en líneas de tiempo, permitiendo estructurar el flujo lógico de los procesos del negocio. Este ordenamiento facilitó la comprensión de cómo se desarrollan las actividades dentro del sistema y cómo los eventos se relacionan entre sí de forma secuencial.
+</p>
+
+<p>
+A través de esta organización, se pudieron identificar diferentes flujos dentro del sistema, tales como el proceso de creación y gestión de perfiles de tueste, el registro y actualización de proveedores, la gestión de lotes de café, así como el monitoreo de variables ambientales mediante sensores IoT. También se observaron flujos asociados a la detección de errores, validación de datos y generación de alertas.
+</p>
+
+<p>
+El uso de timelines permitió visualizar de manera más clara el comportamiento del negocio, identificar dependencias entre procesos y comprender cómo las acciones de los usuarios y del sistema desencadenan distintos eventos a lo largo del tiempo.
+</p>
+
+![Paso 2: Timelines](<public/assets/images/chapter-2/eventStorming/Step2-Timelines.jpeg>)
+
+---
+
+<h3>Step 3: Pain Points</h3>
+<p>
+En esta etapa, el equipo analizó los flujos previamente definidos con el objetivo de identificar los principales problemas o puntos de dolor dentro del sistema. Estos pain points representan situaciones que afectan negativamente la eficiencia, precisión o experiencia del usuario.
+</p>
+
+<p>
+Entre los principales problemas detectados, identificamos deficiencias en la validación de datos, lo que genera inconsistencias en la información registrada. Asimismo, se evidenció la falta de automatización en el monitoreo de condiciones ambientales, lo que obliga a realizar procesos manuales propensos a errores. También se detectaron dificultades en la gestión y actualización de información relacionada con proveedores y lotes, así como en la trazabilidad de los procesos.
+</p>
+
+<p>
+Adicionalmente, se identificaron problemas en la detección y manejo de errores, así como en la generación de alertas oportunas ante condiciones críticas. Estos hallazgos permitieron comprender mejor las necesidades del negocio y sirvieron como base para la definición de soluciones en etapas posteriores.
+</p>
+
+![Paso 3: Pain Points](<public/assets/images/chapter-2/eventStorming/Step3-PainPoints.jpeg>)
+
+---
+
+<h3>Step 4: Pivotal Points</h3>
+<p>
+En esta etapa se identificaron los puntos clave o eventos críticos dentro del sistema, conocidos como pivotal points. Estos representan momentos decisivos en los flujos del negocio, donde se producen cambios significativos o se requiere la toma de decisiones importantes.
+</p>
+
+<p>
+En el caso de CaféLab, se identificaron como puntos clave aquellos relacionados con la validación de datos, la detección de condiciones anómalas en sensores IoT, la generación de alertas, así como la activación o desactivación de actuadores. También se consideraron eventos importantes aquellos asociados a la selección de perfiles, gestión de lotes y registro de información relevante para el análisis del café.
+</p>
+
+<p>
+La identificación de estos puntos permitió enfocar la atención en los aspectos más críticos del sistema, los cuales tendrán un impacto directo en el diseño de la solución, la definición de reglas de negocio y la posterior segmentación en bounded contexts.
+</p>
+
+![Paso 4: Pivotal Points](<public/assets/images/chapter-2/eventStorming/Step4-PivotalPoint.jpeg>)
 
 ## 2.5. Ubiquitous Language
 En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
