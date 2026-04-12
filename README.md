@@ -932,8 +932,35 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td><img src="public\assets\images\chapter-2\interviews\patricia.png" alt="Foto de Patricia Alvarez" width="7000"></td>
-    <td>Patricia maneja su cafetería con procesos parcialmente estandarizados, pero aún depende mucho de la experiencia del equipo, lo que genera variabilidad en la calidad. Utiliza métodos básicos para comunicar el café y registrar proveedores, pero reconoce que la información no está centralizada ni conectada. El mayor problema está en el almacenamiento del café verde, donde el control de temperatura y humedad es empírico y sin datos registrados. Por ello, considera muy útil un dispositivo IoT que monitoree estas condiciones en tiempo real e incluso automatice acciones como la ventilación, aunque prefiere mantener cierto control manual.Además, identifica debilidades en la documentación del conocimiento, la trazabilidad y el cálculo de rentabilidad, que actualmente son poco precisos y mayormente manuales. Su principal necesidad es una plataforma integral que conecte todo el proceso desde el almacenamiento hasta la taza, automatice el registro de datos y mejore la consistencia y toma de decisiones en el negocio.
-</td>
+    <td>Patricia maneja su cafetería con procesos parcialmente estandarizados, pero aún depende mucho de la experiencia del equipo, lo que genera variabilidad en la calidad. Utiliza métodos básicos para comunicar el café y registrar proveedores, pero reconoce que la información no está centralizada ni conectada. El mayor problema está en el almacenamiento del café verde, donde el control de temperatura y humedad es empírico y sin datos registrados. Por ello, considera muy útil un dispositivo IoT que monitoree estas condiciones en tiempo real e incluso automatice acciones como la ventilación, aunque prefiere mantener cierto control manual.Además, identifica debilidades en la documentación del conocimiento, la trazabilidad y el cálculo de rentabilidad, que actualmente son poco precisos y mayormente manuales. Su principal necesidad es una plataforma integral que conecte todo el proceso desde el almacenamiento hasta la taza, automatice el registro de datos y mejore la consistencia y toma de decisiones en el negocio.</td>
+  </tr>
+  <tr>
+    <td>Timing:</td>
+    <td>    <a href="">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 4</td>
+    <td>Cesar Costa</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>La Molina</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\cesar.png" alt="Foto de Cesar Costa" width="1000"></td>
+    <td></td>
   </tr>
   <tr>
     <td>Timing:</td>
@@ -943,6 +970,40 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 </table>
 
 ### 2.2.3. Análisis de entrevistas
+<h4>Análisis del segmento de administradores o dueños de cafeterías de especialidad</h4>
+
+<p>
+Los entrevistados en este segmento presentan un perfil técnico sólido y participan activamente en todo el proceso del café de especialidad. Sin embargo, coinciden en que, aunque utilizan herramientas como Excel y WhatsApp para registrar información, muchos procesos siguen siendo manuales, desorganizados y poco confiables, lo que dificulta la trazabilidad y la consistencia en la calidad.
+</p>
+
+<p>
+En relación al almacenamiento del café verde, se identificó como un punto crítico: la mayoría no cuenta con un control preciso de temperatura y humedad, y varios han experimentado pérdidas de calidad por estas condiciones. En este contexto, existe una percepción claramente positiva hacia un dispositivo IoT que permita monitorear estas variables en tiempo real. Los entrevistados consideran que este tipo de solución sería especialmente útil para prevenir deterioro del grano, reducir la dependencia de la supervisión manual y tomar decisiones más informadas.
+</p>
+
+<p>
+Además, valoran no solo la capacidad de monitoreo, sino también la posibilidad de recibir alertas e incluso automatizar acciones como la ventilación, aunque prefieren mantener cierto control sobre estas decisiones. Este interés refleja una necesidad concreta de pasar de un manejo empírico a uno basado en datos.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó interés en una plataforma integral que centralice la información y conecte todas las etapas del proceso. Dentro de esta solución, el componente IoT es percibido como una pieza clave para mejorar la trazabilidad, optimizar la conservación del café y garantizar mayor consistencia en la calidad final del producto.
+</p>
+<h4>Análisis del segmento de baristas profesionales</h4>
+
+<p>
+Los baristas entrevistados muestran un alto nivel técnico y compromiso con la calidad, pero enfrentan dificultades para estandarizar procesos y documentar información clave como recetas, perfiles de tueste y ajustes de molienda, los cuales actualmente se registran de forma manual o informal. Esto genera variabilidad en los resultados y limita la replicabilidad del café.
+</p>
+
+<p>
+En cuanto al almacenamiento del café, se identifica que no siempre se controla bajo condiciones óptimas, lo que puede afectar directamente la calidad del grano. Frente a esto, los entrevistados ven con buenos ojos la implementación de un dispositivo IoT que permita monitorear temperatura y humedad de forma constante, ya que ayudaría a reducir riesgos, mejorar la conservación y disminuir la dependencia de controles empíricos.
+</p>
+
+<p>
+Además, existe interés en que este tipo de tecnología no solo registre datos, sino que los integre con otros aspectos del proceso, como el tueste y la evaluación sensorial. La posibilidad de contar con alertas y cierto nivel de automatización es valorada, siempre que se mantenga control sobre las decisiones.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó la necesidad de una plataforma digital integral que conecte todas las etapas del café. Dentro de esta solución, el componente IoT es percibido como un elemento clave para mejorar la trazabilidad, profesionalizar el trabajo del barista y lograr mayor consistencia en la calidad del producto final.
+</p>
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
