@@ -2433,7 +2433,7 @@ En el sistema CaféLab, se identificaron varios bounded contexts principales. En
 </p>
 
 <p>
-Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. La definición de bounded contexts constituye un paso fundamental para el diseño de la arquitectura del sistema, ya que establece las bases para la implementación de microservicios o módulos independientes, alineados con las necesidades del negocio y preparados para escalar de manera eficiente.
+Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. Asimismo, se evaluaron las interacciones entre bounded contexts, identificando posibles dependencias y puntos de integración. Esto permitió detectar oportunidades para desacoplar componentes y definir límites más claros, evitando que un contexto asuma responsabilidades que no le corresponden.
 </p>
 
 ![Step 10: Bounded Contexts](<public/assets/images/chapter-2/eventStorming/Step10-BoundedContexts.jpeg>)
