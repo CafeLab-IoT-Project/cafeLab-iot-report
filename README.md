@@ -2395,6 +2395,53 @@ Esta etapa nos permitió delimitar claramente qué componentes pertenecen al sis
 ![Step 8: External Systems](<public/assets/images/chapter-2/eventStorming/Step8-ExternalSystems.jpeg>)
 
 #### 4.1.1.1. Candidate Context Discovery
+
+<p>
+Luego de haber definido el comportamiento del sistema a través del Design-Level Event Storming, el equipo procedió a realizar el Candidate Context Discovery con el objetivo de identificar y delimitar los diferentes bounded contexts dentro del dominio de CaféLab. Esta etapa nos permitió organizar el sistema en módulos coherentes, cada uno con responsabilidades claramente definidas, facilitando su diseño, desarrollo y escalabilidad.
+</p>
+
+<p>
+Este proceso permitió transformar el conocimiento del dominio en una estructura arquitectónica sólida, alineada con los principios de Domain-Driven Design (DDD).
+</p>
+
+---
+
+<h3>Step 9: Aggregates</h3>
+<p>
+En esta etapa, el equipo identificó los aggregates, los cuales representan agrupaciones de entidades y reglas de negocio que deben mantenerse consistentes dentro de un mismo límite transaccional. Cada aggregate define un conjunto de datos y comportamientos que se gestionan como una unidad dentro del sistema.
+</p>
+
+<p>
+Identificamos aggregates relacionados con las principales áreas del dominio, tales como la gestión de perfiles de tueste, proveedores, lotes de café, recetas, calibraciones y sesiones de cata. Asimismo, consideramos aggregates vinculados al monitoreo de sensores IoT, donde se agrupan datos de lecturas, umbrales y estados de los dispositivos.
+</p>
+
+<p>
+Cada uno de estos aggregates encapsula su propia lógica de negocio, asegurando la integridad de los datos y definiendo cómo se deben procesar las operaciones internas. Esta identificación nos permitió estructurar mejor el dominio y establecer límites claros para la gestión de la información.
+</p>
+
+![Step 9: Aggregates](<public/assets/images/chapter-2/eventStorming/Step9-Aggregates.jpeg>)
+
+---
+
+<h3>Step 10: Bounded Contexts</h3>
+<p>
+Finalmente, a partir de los aggregates identificados, se definieron los bounded contexts, los cuales representan divisiones del sistema donde un modelo de dominio específico es válido y consistente. Cada bounded context agrupa uno o más aggregates relacionados, así como también define un lenguaje común.
+</p>
+
+<p>
+En el sistema CaféLab, se identificaron varios bounded contexts principales. Entre ellos, se encuentran el contexto de gestión, que abarca los perfiles de tueste, proveedores de café y lotes. También está el contexto de procedimiento, encargado de las sesiones de cata, calibraciones, recetario y libro de defectos. Así mismo tenemos el contexto IAM, encargado de la seguridad de cada cuenta registrada. Además del contexto de costeo, el cual abarca el registro de los constos involucrados en un lote. Y el contexto de monitoreo IoT, enfocado en la recolección y análisis de datos de sensores.
+</p>
+
+<p>
+Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. La definición de bounded contexts constituye un paso fundamental para el diseño de la arquitectura del sistema, ya que establece las bases para la implementación de microservicios o módulos independientes, alineados con las necesidades del negocio y preparados para escalar de manera eficiente.
+</p>
+
+![Step 10: Bounded Contexts](<public/assets/images/chapter-2/eventStorming/Step10-BoundedContexts.jpeg>)
+
+<p>
+El Candidate Context Discovery nos permitió transformar el conocimiento obtenido en etapas anteriores en una estructura clara y organizada del sistema. La identificación de aggregates y bounded contexts nos facilitó la comprensión de los límites del dominio, permitiendo diseñar una solución modular, escalable y alineada con los principios de Domain-Driven Design. Este resultado constituye la base sólida necesaria para la implementación técnica de nuestro sistema.
+</p>
+
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
 ### 4.1.2. Context Mapping
