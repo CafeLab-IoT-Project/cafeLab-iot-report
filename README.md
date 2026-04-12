@@ -466,11 +466,56 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
 
 **Cuando** los usuarios reduzcan las pérdidas de calidad por mala conservación en un 30% y mejoren los resultados del tueste en un 20%.
 
-# Capítulo II:  Requirements Elicitation & Analysis
-
-#### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
+A partir de lo recopilado se propopone una plataforma dual software + iot que automatiza variables críticas comno temperatura y humedad. De este modo, se presenta el Lean UX Canvas, el cual articula los siguientes componentes clave:
+
+<ul>
+
+<li> 
+  Problem Statement: Se identifica un gap crítico: la falta de conexión técnica entre el tueste y la experiencia en taza, lo que genera inconsistencia y pérdida de calidad.
+</li>
+
+<li> 
+  Customer Segments & Outcomes: El modelo se enfoca inicialmente en baristas profesionales y cafeterías de especialidad, buscando como resultado principal la reducción de mermas y el incremento de la fidelización mediante la consistencia del café.
+</li>
+
+<li>
+  Assumptions e Hypothesis Statements: Basándonos en la metodología Lean, hemos transformado nuestras suposiciones en hipótesis verificables. Por ejemplo: "Creemos que si proporcionamos herramientas para registrar curvas de tueste, los baristas mejorarán la consistencia de su producto".
+</li>
+</ul>
+
+<td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
+
+Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+
 ## 1.3. Segmentos objetivos
+CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
+
+<h4>Segmento 1: Baristas Profesionales</h4>
+Este segmento está compuesto por especialistas enfocados en la ejecución técnica y la excelencia sensorial. Representan el motor operativo que garantiza la calidad final del producto.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+  - Edad: Predominantemente entre 25 y 40 años (SCA, 2022).
+  - Crecimiento: El volumen de baristas certificados en la región (Perú, Colombia, México) presenta un incremento anual del 15% al 20% desde 2018 (SCA, 2023).
+  - Dispositivos: Uso intensivo de dispositivos móviles (iOS/Android) para la captura rápida de datos en barra.
+
+- <strong>Características del Dominio:</strong>
+  - Pain Point Crítico: Registro manual de aromas y curvas de tueste rompe el flujo de trabajo y genera pérdida de información valiosa.
+  - Necesidad: Requieren herramientas que eliminen la dependencia de la memoria y el "ensayo y error" mediante la automatización de variables como temperatura y humedad.
+  - Objetivo: Lograr la repetibilidad de perfiles de tueste y la profesionalización de consultorías mediante datos técnicos exportables.
+
+<h4>Segmento 2: Cafeterías de Especialidad (Dueños y Administradores)</h4>
+Este segmento representa la capa estratégica y de toma de decisiones. Su enfoque principal es la rentabilidad, la consistencia de la marca y la sostenibilidad del suministro.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+  - Edad: Emprendedores de 30 a 50 años con formación en gestión o gastronomía.
+  - Mercado: El mercado de café de especialidad en Latam crece a una tasa del 9.4% anual (Euromonitor, 2023).
+  - Escalabilidad: Más del 70% de estos negocios se ubican en zonas urbanas dinámicas y gestionan equipos de 3 a 10 colaboradores.
+
+- <strong>Características del Dominio:</strong>
+  - Pain Point Crítico: Cálculo manual de la merma y la inconsistencia entre baristas como un riesgo directo para la utilidad neta.
+  - Necesidad: Una plataforma de seguimiento total que integre el inventario con el monitoreo en tiempo real de los granos almacenados.
+  - Objetivo: Fortalecer la fidelización del cliente mediante una "narrativa de origen" verificable con datos reales de trazabilidad, asegurando que cada taza servida mantenga el estándar de calidad de la marca.
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
@@ -731,8 +776,279 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+#### Preguntas dirigidas a baristas profesionales:
+
+**Preguntas principales:**
+
+1. ¿Qué aspecto de tu método actual para registrar tus perfiles de tueste y recetas te gustaría que fuera más eficiente o preciso? ¿Hay alguna información valiosa que actualmente sea difícil de capturar o que lleve demasiado tiempo documentar?
+2. ¿Qué sistema has desarrollado para capturar y gestionar toda la información sobre origen, altitud, variedad y procesamiento? ¿Hay algún dato que te gustaría replicar más veces pero es complicado hacerlo con tus métodos actuales?
+3. ¿Qué sistema has empleado para capturar y gestionar toda la información sobre origen, altitud, variedad y procesamiento? ¿Hay algún dato que te gustaría registrar pero es complicado hacerlo con tus métodos actuales?
+4. ¿Qué estrategia has desarrollado para documentar y ajustar los parámetros de molienda para tus diferentes métodos de preparación? ¿Cuál es el desafío más frustrante que enfrentas al intentar mantener esta precisión?
+5. ¿Qué método has encontrado más efectivo para registrar tus evaluaciones sensoriales y conectarlas directamente con tus perfiles de tueste?
+6. ¿Qué tipo de información te han solicitado jueces o clientes sofisticados que te haya costado proporcionar de manera profesional? ¿Cómo has resuelto este desafío?
+7. ¿Qué sistema has desarrollado para transportar todo tu conocimiento técnico y artístico en competencias, consultorías o colaboraciones? ¿Cuál es el punto débil de este proceso que te gustaría resolver?
+8. ¿Qué metodología has implementado para rastrear el estado de tu café verde y tostado a lo largo del tiempo? ¿Qué información adicional sobre tus lotes te ayudaría a tomar decisiones más precisas sobre su uso óptimo?
+9. ¿Cuáles son esos puntos críticos que encuentras más desafiantes al intentar documentar y reproducir una curva de tueste específica? ¿Qué soluciones creativas has desarrollado para superar estas limitaciones?
+10. ¿Qué herramientas digitales has incorporado que realmente han transformado algún aspecto de tu proceso? ¿Dónde sientes que la tecnología actual todavía te deja con necesidades sin resolver?
+11. Si existiera una plataforma integral que conectara cada fase del proceso —desde la recepción del grano verde hasta la experiencia final en taza—, ¿qué funcionalidades específicas considerarías absolutamente esenciales? Considerando el impacto en tu eficiencia y calidad.
+
+---
+
+#### Preguntas dirigidas a dueños/administradores de cafeterías de especialidad:
+
+**Preguntas principales:**
+
+1. ¿Qué estrategias implementas para mantener la consistencia en la calidad del café servido cuando cuentas con diferentes baristas en tu equipo?
+2. ¿Cómo comunicas a tus clientes la información sobre las características especiales del café que ofreces? ¿Cuál es la información más solicitada por ellos?
+3. ¿Cómo registras y evalúas a tus proveedores de café verde? ¿Qué datos son cruciales para tu proceso de selección?
+4. ¿Cómo monitoreas actualmente la temperatura y humedad en el almacenamiento del café verde?  ¿Utilizas algún instrumento (termómetro, higrómetro) o es un control manual?
+5. ¿Qué tan útil te parecería contar con un dispositivo que mida automáticamente la humedad y temperatura del café verde y registre esos datos en tiempo real? ¿En qué situaciones crees que más te ayudaría?
+6. ¿Preferirías que el sistema solo te alerte cuando haya condiciones inadecuadas o que también actúe automáticamente (por ejemplo, activando ventilación)? ¿Por qué?
+7. ¿Cómo documentas y transmites el conocimiento técnico sobre tus cafés a tu equipo? ¿Qué herramientas utilizas para este proceso?
+8. ¿Cómo calculan actualmente el rendimiento y la rentabilidad por lote de café? ¿Qué métricas te gustaría poder medir con más precisión?
+9. ¿Qué información consideras fundamental para garantizar la trazabilidad completa desde el origen hasta la taza? ¿Cómo la organizas actualmente?
+10. ¿Qué herramientas digitales utilizas actualmente para la gestión de tu cafetería? ¿Qué procesos siguen siendo principalmente manuales o análogos?
+11. Si existiera una plataforma integral que conectara cada fase del proceso —desde la recepción del grano verde hasta la experiencia final en taza—, ¿qué funcionalidades específicas considerarías absolutamente esenciales? Considerando el impacto en tu eficiencia y calidad.
+
+---
 ### 2.2.2. Registro de entrevistas
+
+#### Entrevistas a baristas profesionales
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Alejandra Avellaneda</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\alejandra.png" alt="Foto de Alejandra Avellaneda" width="4000"></td>
+    <td>Alejandra trabaja en el área operativa de una cadena de cafeterías, donde se encarga de estandarizar las recetas y asegurar la consistencia en la calidad del café entre tiendas. Tiene conocimientos técnicos sobre calibración, evaluación sensorial y trazabilidad del grano, y maneja protocolos detallados para eventos fuera del entorno habitual. Utiliza balanzas de precisión y máquinas programables como parte de sus herramientas diarias. Si bien reconoce que ciertos datos sensibles no pueden compartirse por temas de confidencialidad, considera que una plataforma digital que integre información de trazabilidad, tueste y calidad sensorial podría ser de gran valor para su operación.</td>
+  </tr>
+  <tr>
+    <td>Timing: 00:00 - 06:48</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Ranferi Valdivia</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Juan de Lurigancho</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\ranferi-valdivia.png" alt="Foto de Ranferi Valdivia" width="9000"></td>
+    <td>Ranferi Valdivia representa al segmento de baristas profesionales. Como usuario de 25 años con preferencia por iPhone, requiere una interfaz móvil rápida e intuitiva. El principal hallazgo es que procesos críticos como la molienda y el tueste dependen de prueba y error influenciada por factores externos (clima, humedad, máquina), generando frustración por falta de repetibilidad. La información está altamente fragmentada (notas, audios, fotos, cuadernos), dificultando la elaboración de reportes y la organización del conocimiento. Además, existe una desconexión entre la experiencia sensorial y su registro, ya que muchas decisiones dependen de la memoria y no de datos estructurados. Entre los puntos clave: la anotación manual interrumpe el flujo de trabajo, es difícil reproducir perfiles por falta de control ambiental, y existe una fuerte demanda por una plataforma integral que conecte todo el proceso. También se identifica la necesidad de automatizar la captura de datos (incluyendo variables ambientales con IoT) y mejorar la presentación profesional de la información para clientes y consultorías.</td>
+  </tr>
+  <tr>
+    <td>Timing: 06:48 - 14:31</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 3</td>
+    <td>Anyela Guillermo</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\anyela.png" alt="Foto de Anyela Guillermo" width="7000"></td>
+    <td>Anyela es una barista con 3 años de experiencia en café de especialidad y participante en competencias de latte art. Sus principales desafíos incluyen mantener la consistencia entre baristas, documentar recetas, encontrar temperaturas ideales para métodos filtrados, preservar propiedades del café mediante almacenamiento adecuado y lograr precisión en calibraciones. Aunque utiliza registros manuales, identifica la necesidad de herramientas tecnológicas para evaluación del café, análisis de variedades y monitoreo de almacenamiento. Considera valioso implementar una plataforma integral que conecte todo el proceso del café y espacios tipo laboratorio que integren teoría y práctica, desde el cultivo hasta la taza final.</td>
+  </tr>
+  <tr>
+    <td>Timing: 14:31 - 20:51</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+</tr>
+</table>
+
+#### Entrevistas a dueños o administradores de cafeterías de especialidad
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Raul Donayre</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>42</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\raul.png" alt="Foto de Raul Donayre" width="7000"></td>
+    <td>Raul describió sus principales desafíos operativos y necesidades tecnológicas. Actualmente maneja de forma manual y desorganizada aspectos cruciales como certificaciones, información de proveedores y trazabilidad del café, lo que dificulta responder ágilmente a los clientes. Utiliza métodos básicos para comunicar las características especiales del café, incluyendo tarjetas informativas, aunque reconoce que necesita algo más visual y atractivo. Para mantener la consistencia entre baristas, implementa un sistema de mentoría y reuniones semanales de cata, pero admite que su documentación y capacitación necesitan actualización. En cuanto a tecnología, usa principalmente Excel, una caja registradora digital y aplicaciones básicas de tueste, pero carece de un sistema integral. Su principal necesidad es una plataforma que mejore la eficiencia operativa y la experiencia del cliente, permitiendo mostrar el valor agregado de sus productos para justificar precios más altos y aumentar la rentabilidad del negocio. El dueño enfatiza que cualquier solución debe ser tangible y visible para los clientes, ayudando a gestionar todo el proceso desde la recepción del grano hasta la taza final.</td>
+  </tr>
+  <tr>
+    <td>Timing: 20:51 - 27:02</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Omar Ortiz</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>47</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\omar.png" alt="Foto de Omar Ortiz" width="5000"></td>
+    <td>Omar cuenta con una certificación internacional como barista por la SCA y actualmente es dueño de una cafetería especializada. Tiene un conocimiento sólido sobre los procesos del café, desde la selección del grano y sus características (como altura, proceso y humedad), hasta el control del tueste y la calibración diaria de las bebidas. Se encarga personalmente del almacenamiento y monitoreo del grano, utilizando herramientas como Excel para llevar registros de peso, rendimiento y trazabilidad. Aunque se maneja bien con herramientas digitales básicas, reconoce que ciertos procesos manuales podrían optimizarse mediante una plataforma digital especializada. Publica contenido educativo sobre café en LinkedIn, lo cual también refuerza su rol como formador dentro del rubro.</td>
+  </tr>
+  <tr>
+    <td>Timing: 27:02 - 33:21</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistada 3</td>
+    <td>Patricia Alvarez</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\patricia.png" alt="Foto de Patricia Alvarez" width="7000"></td>
+    <td>Patricia maneja su cafetería con procesos parcialmente estandarizados, pero aún depende mucho de la experiencia del equipo, lo que genera variabilidad en la calidad. Utiliza métodos básicos para comunicar el café y registrar proveedores, pero reconoce que la información no está centralizada ni conectada. El mayor problema está en el almacenamiento del café verde, donde el control de temperatura y humedad es empírico y sin datos registrados. Por ello, considera muy útil un dispositivo IoT que monitoree estas condiciones en tiempo real e incluso automatice acciones como la ventilación, aunque prefiere mantener cierto control manual.Además, identifica debilidades en la documentación del conocimiento, la trazabilidad y el cálculo de rentabilidad, que actualmente son poco precisos y mayormente manuales. Su principal necesidad es una plataforma integral que conecte todo el proceso desde el almacenamiento hasta la taza, automatice el registro de datos y mejore la consistencia y toma de decisiones en el negocio.</td>
+  </tr>
+  <tr>
+    <td>Timing: 33:21 - 37:39</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 4</td>
+    <td>Cesar Costa</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>La Molina</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\chapter-2\interviews\cesar.png" alt="Foto de Cesar Costa" width="9000"></td>
+    <td>César Costa, dueño de una cafetería de especialidad, tiene un enfoque orientado a la rentabilidad y la estandarización, utilizando principalmente celular y laptop para la gestión. Actualmente, el monitoreo de temperatura y humedad es totalmente manual mediante instrumentos básicos, lo que implica dependencia constante y riesgo de errores. Además, aunque registra métricas como costos y rendimiento, la información está dispersa en sistemas poco eficientes. Entre sus principales necesidades, destaca la estandarización entre baristas, que hoy depende del ensayo y error, y una mejor gestión de proveedores basada en consistencia. Muestra una alta apertura hacia soluciones IoT, considerando que el monitoreo en tiempo real ayudaría a resolver la falta de datos precisos, especialmente en cambios de temporada. Finalmente, aunque existe documentación interna, el aprendizaje sigue siendo empírico, por lo que valora herramientas que automaticen el control (como ventilación y alertas) y reduzcan la carga operativa del equipo, mejorando la eficiencia y la toma de decisiones.</td>
+  </tr>
+  <tr>
+    <td>Timing: 37:39 - 43:11</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
+        Ver grabación</td>
+  </tr>
+</table>
+
 ### 2.2.3. Análisis de entrevistas
+<h4>Análisis del segmento de administradores o dueños de cafeterías de especialidad</h4>
+
+<p>
+Los entrevistados en este segmento presentan un perfil técnico sólido y participan activamente en todo el proceso del café de especialidad. Sin embargo, coinciden en que, aunque utilizan herramientas como Excel y WhatsApp para registrar información, muchos procesos siguen siendo manuales, desorganizados y poco confiables, lo que dificulta la trazabilidad y la consistencia en la calidad.
+</p>
+
+<p>
+En relación al almacenamiento del café verde, se identificó como un punto crítico: la mayoría no cuenta con un control preciso de temperatura y humedad, y varios han experimentado pérdidas de calidad por estas condiciones. En este contexto, existe una percepción claramente positiva hacia un dispositivo IoT que permita monitorear estas variables en tiempo real. Los entrevistados consideran que este tipo de solución sería especialmente útil para prevenir deterioro del grano, reducir la dependencia de la supervisión manual y tomar decisiones más informadas.
+</p>
+
+<p>
+Además, valoran no solo la capacidad de monitoreo, sino también la posibilidad de recibir alertas e incluso automatizar acciones como la ventilación, aunque prefieren mantener cierto control sobre estas decisiones. Este interés refleja una necesidad concreta de pasar de un manejo empírico a uno basado en datos.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó interés en una plataforma integral que centralice la información y conecte todas las etapas del proceso. Dentro de esta solución, el componente IoT es percibido como una pieza clave para mejorar la trazabilidad, optimizar la conservación del café y garantizar mayor consistencia en la calidad final del producto.
+</p>
+<h4>Análisis del segmento de baristas profesionales</h4>
+
+<p>
+Los baristas entrevistados muestran un alto nivel técnico y compromiso con la calidad, pero enfrentan dificultades para estandarizar procesos y documentar información clave como recetas, perfiles de tueste y ajustes de molienda, los cuales actualmente se registran de forma manual o informal. Esto genera variabilidad en los resultados y limita la replicabilidad del café.
+</p>
+
+<p>
+En cuanto al almacenamiento del café, se identifica que no siempre se controla bajo condiciones óptimas, lo que puede afectar directamente la calidad del grano. Frente a esto, los entrevistados ven con buenos ojos la implementación de un dispositivo IoT que permita monitorear temperatura y humedad de forma constante, ya que ayudaría a reducir riesgos, mejorar la conservación y disminuir la dependencia de controles empíricos.
+</p>
+
+<p>
+Además, existe interés en que este tipo de tecnología no solo registre datos, sino que los integre con otros aspectos del proceso, como el tueste y la evaluación sensorial. La posibilidad de contar con alertas y cierto nivel de automatización es valorada, siempre que se mantenga control sobre las decisiones.
+</p>
+
+<p>
+Finalmente, el 100% de los entrevistados expresó la necesidad de una plataforma digital integral que conecte todas las etapas del café. Dentro de esta solución, el componente IoT es percibido como un elemento clave para mejorar la trazabilidad, profesionalizar el trabajo del barista y lograr mayor consistencia en la calidad del producto final.
+</p>
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
@@ -799,8 +1115,167 @@ En este contexto, CaféLab se posiciona como una solución que permite integrar 
 ![Barista](<public/assets/images/chapter-2/empathymapping/Empathy Map Barista Professional.png>)
 
 ## 2.4. Big Picture EventStorming
+En esta etapa, el equipo se enfocó en explorar el comportamiento del negocio desde una perspectiva de alto nivel, sin entrar aún en detalles técnicos, con el objetivo de construir una visión compartida del flujo de procesos y detectar oportunidades de mejora.
+
+En el contexto del proyecto CaféLab, esta dinámica permitió identificar los principales procesos relacionados con la gestión del café, desde el registro de perfiles de tueste, manejo de lotes, proveedores, sensores IoT y control de condiciones ambientales, hasta la generación de información para la toma de decisiones. Asimismo, se lograron evidenciar problemas existentes en los procesos actuales, lo cual sirvió como base para el diseño de la solución propuesta.
+
+A continuación, se presentan las etapas desarrolladas durante la sesión de Big Picture Event Storming.
+
+---
+
+<h3>Step 1: Unstructured Exploration</h3>
+<p>
+En esta primera etapa, el equipo realizó una exploración libre del dominio, identificando todos los eventos relevantes sin seguir una estructura específica. El objetivo principal fue capturar la mayor cantidad de información posible acerca de lo que ocurre en el negocio, enfocándose en los hechos significativos que representan cambios de estado dentro del sistema.
+</p>
+
+<p>
+Durante esta fase se identificaron eventos relacionados con múltiples áreas del sistema, tales como la gestión de perfiles de tueste, el registro y actualización de proveedores, la administración de lotes de café, el monitoreo de sensores IoT, la gestión de recetas y calibraciones, así como las sesiones de cata. Asimismo, se incluyeron eventos vinculados a validaciones de datos, errores detectados y acciones del usuario.
+</p>
+
+<p>
+Esta etapa permitió obtener una visión amplia del dominio, evidenciando la complejidad del sistema y la diversidad de procesos involucrados. Además, facilitó la identificación de redundancias, inconsistencias y posibles puntos de mejora en etapas posteriores.
+</p>
+
+![Step 1: Unstructured Exploration](<public/assets/images/chapter-2/eventStorming/Step1-UnstructuredExploration.jpeg>)
+
+---
+
+<h3>Step 2: Timelines</h3>
+<p>
+En la segunda etapa, los eventos identificados previamente fueron organizados en líneas de tiempo, permitiendo estructurar el flujo lógico de los procesos del negocio. Este ordenamiento facilitó la comprensión de cómo se desarrollan las actividades dentro del sistema y cómo los eventos se relacionan entre sí de forma secuencial.
+</p>
+
+<p>
+A través de esta organización, se pudieron identificar diferentes flujos dentro del sistema, tales como el proceso de creación y gestión de perfiles de tueste, el registro y actualización de proveedores, la gestión de lotes de café, así como el monitoreo de variables ambientales mediante sensores IoT. También se observaron flujos asociados a la detección de errores, validación de datos y generación de alertas.
+</p>
+
+<p>
+El uso de timelines permitió visualizar de manera más clara el comportamiento del negocio, identificar dependencias entre procesos y comprender cómo las acciones de los usuarios y del sistema desencadenan distintos eventos a lo largo del tiempo.
+</p>
+
+![Step 2: Timelines](<public/assets/images/chapter-2/eventStorming/Step2-Timelines.jpeg>)
+
+---
+
+<h3>Step 3: Pain Points</h3>
+<p>
+En esta etapa, el equipo analizó los flujos previamente definidos con el objetivo de identificar los principales problemas o puntos de dolor dentro del sistema. Estos pain points representan situaciones que afectan negativamente la eficiencia, precisión o experiencia del usuario.
+</p>
+
+<p>
+Entre los principales problemas detectados, identificamos deficiencias en la validación de datos, lo que genera inconsistencias en la información registrada. Asimismo, se evidenció la falta de automatización en el monitoreo de condiciones ambientales, lo que obliga a realizar procesos manuales propensos a errores. También se detectaron dificultades en la gestión y actualización de información relacionada con proveedores y lotes, así como en la trazabilidad de los procesos.
+</p>
+
+<p>
+Adicionalmente, se identificaron problemas en la detección y manejo de errores, así como en la generación de alertas oportunas ante condiciones críticas. Estos hallazgos permitieron comprender mejor las necesidades del negocio y sirvieron como base para la definición de soluciones en etapas posteriores.
+</p>
+
+![Step 3: Pain Points](<public/assets/images/chapter-2/eventStorming/Step3-PainPoints.jpeg>)
+
+---
+
+<h3>Step 4: Pivotal Points</h3>
+<p>
+En esta etapa se identificaron los puntos clave o eventos críticos dentro del sistema, conocidos como pivotal points. Estos representan momentos decisivos en los flujos del negocio, donde se producen cambios significativos o se requiere la toma de decisiones importantes.
+</p>
+
+<p>
+En el caso de CaféLab, se identificaron como puntos clave aquellos relacionados con la validación de datos, la detección de condiciones anómalas en sensores IoT, la generación de alertas, así como la activación o desactivación de actuadores. También se consideraron eventos importantes aquellos asociados a la selección de perfiles, gestión de lotes y registro de información relevante para el análisis del café.
+</p>
+
+<p>
+La identificación de estos puntos permitió enfocar la atención en los aspectos más críticos del sistema, los cuales tendrán un impacto directo en el diseño de la solución, la definición de reglas de negocio y la posterior segmentación en bounded contexts.
+</p>
+
+![Step 4: Pivotal Points](<public/assets/images/chapter-2/eventStorming/Step4-PivotalPoint.jpeg>)
 
 ## 2.5. Ubiquitous Language
+En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
+
+**Glosario de Términos:**
+
+<table border = 1>
+  <thead>
+    <tr>
+      <th>Término (Inglés)</th>
+      <th>Término (Español)</th>
+      <th>Definición</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coffee Lot</strong></td>
+      <td>Lote de Café</td>
+      <td>Conjunto de granos de café que comparten origen, variedad, proceso y cosecha.</td>
+    </tr>
+    <tr>
+      <td><strong>Storage Conditions</strong></td>
+      <td>Condiciones de Almacenamiento</td>
+      <td>Parámetros ambientales (temperatura y humedad relativa) que afectan la calidad del grano de café verde y que deben mantenerse dentro de rangos óptimos.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Profile</strong></td>
+      <td>Perfil de Tueste</td>
+      <td>Conjunto de parámetros que describen cómo se ha tostado un lote de café.</td>
+    </tr>
+    <tr>
+      <td><strong>Roast Curve</strong></td>
+      <td>Curva de Tueste</td>
+      <td>Gráfica que muestra la evolución de temperatura del grano y del ambiente durante el proceso de tueste.</td>
+    </tr>
+    <tr>
+      <td><strong>Calibration</strong></td>
+      <td>Calibración</td>
+      <td>Ajuste de variables en la preparación para estandarizar resultados sensoriales de una bebida.</td>
+    </tr>
+    <tr>
+      <td><strong>Traceability</strong></td>
+      <td>Trazabilidad</td>
+      <td>Capacidad de seguir el recorrido del café desde su origen hasta la taza, incluyendo certificaciones y condiciones.</td>
+    </tr>
+    <tr>
+      <td><strong>Cupping</strong></td>
+      <td>Cata</td>
+      <td>Evaluación sensorial del café basada en atributos como acidez, cuerpo, aroma y sabor.</td>
+    </tr>
+    <tr>
+      <td><strong>Sensory Hexagon</strong></td>
+      <td>Hexágono Sensorial</td>
+      <td>Visualización gráfica, en un hexágono de radar,  de los atributos sensoriales del café, útil para comparar cafés según su perfil en taza.</td>
+    </tr>
+    <tr>
+      <td><strong>Recipe Portfolio</strong></td>
+      <td>Portafolio de Recetas</td>
+      <td>Colección digital de recetas vinculadas a métodos, bebidas, clientes o competencias.</td>
+    </tr>
+    <tr>
+      <td><strong>Green Inventory</strong></td>
+      <td>Inventario de Café Verde</td>
+      <td>Registro y control del café sin tostar, incluyendo lotes, estado y trazabilidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Roasted Inventory</strong></td>
+      <td>Inventario de Café Tostado</td>
+      <td>Registro del café ya tostado disponible, asociado a sus respectivos perfiles y lotes.</td>
+    </tr>
+    <tr>
+      <td><strong>Certification</strong></td>
+      <td>Certificación</td>
+      <td>Documentación que acredita prácticas éticas o sostenibles de cada lote, tales como orgánico, comercio justo, etc.</td>
+    </tr>
+    <tr>
+      <td><strong>TrackSilo</strong></td>
+      <td>TrackSilo</td>
+      <td>Dispositivo IoT que monitorea temperatura y humedad de los sacos de café verde, y alerta sobre condiciones fuera del rango óptimo.</td>
+    </tr>
+    <tr>
+      <td><strong>Yield Analysis</strong></td>
+      <td>Análisis de Rendimiento</td>
+      <td>Cálculo de pérdida de peso tras el tueste y análisis económico del proceso.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 # Capítulo III: Requirements Specification
 
@@ -1838,9 +2313,135 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </table>
 
 # Capítulo IV: Solution Software Design
+
 ## 4.1. Strategic-Level Domain-Driven Design
+
+<p>
+Posteriormente de haber desarrollado el Big Picture Event Storming, nuestro equipo procedió a realizar el Design-Level Event Storming con el objetivo de profundizar en el comportamiento del sistema y definir con mayor precisión la lógica del dominio. Esta etapa también se llevó a cabo de manera colaborativa en una video llamada en la aplicación Discord, permitiendo que todos aportáramos desde nuestro entendimiento del negocio y del sistema, construyendo en conjunto un modelo más estructurado y alineado.
+</p>
+
+<p>
+Identificamos las interacciones entre los distintos elementos del sistema, tales como comandos, eventos, políticas y modelos de lectura. A través de discusiones y validaciones grupales, se logró consensuar cómo deberían comportarse los procesos dentro de la solución, considerando tanto las necesidades del usuario como las restricciones del negocio.
+</p>
+
+<p>
+Con este enfoque transitamos de una visión exploratoria a una más técnica y organizada, sentando las bases para la implementación del sistema y facilitando la posterior identificación de agregados y bounded contexts.
+</p>
+
 ### 4.1.1. Design-Level EventStorming
+
+---
+
+<h3>Step 5: Commands</h3>
+<p>
+En esta etapa, nuestro equipo identificó los comandos que representan las acciones iniciadas por los usuarios o sistemas externos sobre el dominio. Los comandos constituyen la intención de realizar una operación específica y son el punto de partida para la generación de eventos dentro del sistema.
+</p>
+
+<p>
+Durante el análisis, se definieron comandos asociados a múltiples funcionalidades, como la creación y actualización de perfiles de tueste, el registro y edición de proveedores, la gestión de lotes de café, la selección de recetas, así como el ingreso de datos provenientes de sensores IoT. También se identificaron comandos relacionados con la autenticación de usuarios, selección de planes y gestión de información financiera.
+</p>
+
+<p>
+Esta etapa nos permitió estructurar las interacciones del usuario con el sistema, clarificando qué acciones son posibles y cómo estas desencadenan cambios dentro del dominio.
+</p>
+
+![Step 5: Commands](<public/assets/images/chapter-2/eventStorming/Step5-Commands.jpeg>)
+
+---
+
+<h3>Step 6: Policies</h3>
+<p>
+Posteriormente, identificamos las políticas del sistema, las cuales representan reglas de negocio que definen cómo reaccionar ante determinados eventos. Estas políticas permiten automatizar decisiones dentro de nuestro sistema, conectando eventos con nuevos comandos o acciones.
+</p>
+
+<p>
+En el caso de CaféLab, definimos políticas relacionadas con la validación de datos ingresados, la detección de condiciones anómalas en los sensores, la generación de alertas cuando se superan ciertos umbrales y la activación o desactivación de actuadores. Asimismo, consideramos reglas para el manejo de errores, control de sesiones y procesamiento de información.
+</p>
+
+![Step 6: Policies](<public/assets/images/chapter-2/eventStorming/Step6-Policies.jpeg>)
+
+---
+
+<h3>Step 7: Read Models</h3>
+<p>
+En esta fase, se definieron los modelos de lectura o read models, los cuales representan la información que el sistema expone a los usuarios para su consulta. Estos modelos están optimizados para la visualización y no necesariamente reflejan la estructura interna del dominio.
+</p>
+
+<p>
+Identificamos diferentes tipos de información relevante para los usuarios, tales como reportes de consumo de lotes, resúmenes de costos, visualización de datos de sensores, gráficos de temperatura y humedad, historial de eventos, así como resultados de sesiones de cata y comparaciones de perfiles de tueste.
+</p>
+
+<p>
+La definición de estos modelos nos clarificó qué información es crítica para la toma de decisiones y cómo debe ser presentada de manera clara y eficiente al usuario final.
+</p>
+
+![Step 7: Read Models](<public/assets/images/chapter-2/eventStorming/Step7-ReadModels.jpeg>)
+
+---
+
+<h3>Step 8: External Systems</h3>
+<p>
+En esta etapa, identificamos los sistemas externos con los cuales interactúa nuestra solución. Estos representan dependencias fuera del dominio principal, pero que son necesarias para el correcto funcionamiento del sistema.
+</p>
+
+<p>
+Consideramos como sistemas externos los sensores IoT encargados de medir variables ambientales, servicios de notificación para el envío de alertas, así como posibles integraciones con plataformas de procesamiento de datos. Así mismo, se contemplaron servicios relacionados con la autenticación de usuarios y gestión de pagos en caso de suscripciones.
+</p>
+
+<p>
+Esta etapa nos permitió delimitar claramente qué componentes pertenecen al sistema y cuáles pueden dependen de terceros, facilitando el diseño de una arquitectura más modular y escalable.
+</p>
+
+![Step 8: External Systems](<public/assets/images/chapter-2/eventStorming/Step8-ExternalSystems.jpeg>)
+
 #### 4.1.1.1. Candidate Context Discovery
+
+<p>
+Luego de haber definido el comportamiento del sistema a través del Design-Level Event Storming, el equipo procedió a realizar el Candidate Context Discovery con el objetivo de identificar y delimitar los diferentes bounded contexts dentro del dominio de CaféLab. Esta etapa nos permitió organizar el sistema en módulos coherentes, cada uno con responsabilidades claramente definidas, facilitando su diseño, desarrollo y escalabilidad.
+</p>
+
+<p>
+Este proceso permitió transformar el conocimiento del dominio en una estructura arquitectónica sólida, alineada con los principios de Domain-Driven Design (DDD).
+</p>
+
+---
+
+<h3>Step 9: Aggregates</h3>
+<p>
+En esta etapa, el equipo identificó los aggregates, los cuales representan agrupaciones de entidades y reglas de negocio que deben mantenerse consistentes dentro de un mismo límite transaccional. Cada aggregate define un conjunto de datos y comportamientos que se gestionan como una unidad dentro del sistema.
+</p>
+
+<p>
+Identificamos aggregates relacionados con las principales áreas del dominio, tales como la gestión de perfiles de tueste, proveedores, lotes de café, recetas, calibraciones y sesiones de cata. Asimismo, consideramos aggregates vinculados al monitoreo de sensores IoT, donde se agrupan datos de lecturas, umbrales y estados de los dispositivos.
+</p>
+
+<p>
+Cada uno de estos aggregates encapsula su propia lógica de negocio, asegurando la integridad de los datos y definiendo cómo se deben procesar las operaciones internas. Esta identificación nos permitió estructurar mejor el dominio y establecer límites claros para la gestión de la información.
+</p>
+
+![Step 9: Aggregates](<public/assets/images/chapter-2/eventStorming/Step9-Aggregates.jpeg>)
+
+---
+
+<h3>Step 10: Bounded Contexts</h3>
+<p>
+Finalmente, a partir de los aggregates identificados, se definieron los bounded contexts, los cuales representan divisiones del sistema donde un modelo de dominio específico es válido y consistente. Cada bounded context agrupa uno o más aggregates relacionados, así como también define un lenguaje común.
+</p>
+
+<p>
+En el sistema CaféLab, se identificaron varios bounded contexts principales. Entre ellos, se encuentran el contexto de gestión, que abarca los perfiles de tueste, proveedores de café y lotes. También está el contexto de procedimiento, encargado de las sesiones de cata, calibraciones, recetario y libro de defectos. Así mismo tenemos el contexto IAM, encargado de la seguridad de cada cuenta registrada. Además del contexto de costeo, el cual abarca el registro de los constos involucrados en un lote. Y el contexto de monitoreo IoT, enfocado en la recolección y análisis de datos de sensores.
+</p>
+
+<p>
+Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. Asimismo, se evaluaron las interacciones entre bounded contexts, identificando posibles dependencias y puntos de integración. Esto permitió detectar oportunidades para desacoplar componentes y definir límites más claros, evitando que un contexto asuma responsabilidades que no le corresponden.
+</p>
+
+![Step 10: Bounded Contexts](<public/assets/images/chapter-2/eventStorming/Step10-BoundedContexts.jpeg>)
+
+<p>
+El Candidate Context Discovery nos permitió transformar el conocimiento obtenido en etapas anteriores en una estructura clara y organizada del sistema. La identificación de aggregates y bounded contexts nos facilitó la comprensión de los límites del dominio, permitiendo diseñar una solución modular, escalable y alineada con los principios de Domain-Driven Design. Este resultado constituye la base sólida necesaria para la implementación técnica de nuestro sistema.
+</p>
+
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
 ### 4.1.2. Context Mapping
