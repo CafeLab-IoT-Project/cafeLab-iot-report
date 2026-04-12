@@ -1136,7 +1136,7 @@ Durante esta fase se identificaron eventos relacionados con múltiples áreas de
 Esta etapa permitió obtener una visión amplia del dominio, evidenciando la complejidad del sistema y la diversidad de procesos involucrados. Además, facilitó la identificación de redundancias, inconsistencias y posibles puntos de mejora en etapas posteriores.
 </p>
 
-![Paso 1: Unstructured Exploration](<public/assets/images/chapter-2/eventStorming/Step1-UnstructuredExploration.jpeg>)
+![Step 1: Unstructured Exploration](<public/assets/images/chapter-2/eventStorming/Step1-UnstructuredExploration.jpeg>)
 
 ---
 
@@ -1153,7 +1153,7 @@ A través de esta organización, se pudieron identificar diferentes flujos dentr
 El uso de timelines permitió visualizar de manera más clara el comportamiento del negocio, identificar dependencias entre procesos y comprender cómo las acciones de los usuarios y del sistema desencadenan distintos eventos a lo largo del tiempo.
 </p>
 
-![Paso 2: Timelines](<public/assets/images/chapter-2/eventStorming/Step2-Timelines.jpeg>)
+![Step 2: Timelines](<public/assets/images/chapter-2/eventStorming/Step2-Timelines.jpeg>)
 
 ---
 
@@ -1170,7 +1170,7 @@ Entre los principales problemas detectados, identificamos deficiencias en la val
 Adicionalmente, se identificaron problemas en la detección y manejo de errores, así como en la generación de alertas oportunas ante condiciones críticas. Estos hallazgos permitieron comprender mejor las necesidades del negocio y sirvieron como base para la definición de soluciones en etapas posteriores.
 </p>
 
-![Paso 3: Pain Points](<public/assets/images/chapter-2/eventStorming/Step3-PainPoints.jpeg>)
+![Step 3: Pain Points](<public/assets/images/chapter-2/eventStorming/Step3-PainPoints.jpeg>)
 
 ---
 
@@ -1187,7 +1187,7 @@ En el caso de CaféLab, se identificaron como puntos clave aquellos relacionados
 La identificación de estos puntos permitió enfocar la atención en los aspectos más críticos del sistema, los cuales tendrán un impacto directo en el diseño de la solución, la definición de reglas de negocio y la posterior segmentación en bounded contexts.
 </p>
 
-![Paso 4: Pivotal Points](<public/assets/images/chapter-2/eventStorming/Step4-PivotalPoint.jpeg>)
+![Step 4: Pivotal Points](<public/assets/images/chapter-2/eventStorming/Step4-PivotalPoint.jpeg>)
 
 ## 2.5. Ubiquitous Language
 En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
@@ -2317,7 +2317,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 ## 4.1. Strategic-Level Domain-Driven Design
 
 <p>
-Luego de haber desarrollado el Big Picture Event Storming, el equipo procedió a realizar el Design-Level Event Storming con el objetivo de profundizar en el comportamiento del sistema y definir con mayor precisión la lógica del dominio. Esta etapa también se llevó a cabo de manera colaborativa en una video llamada en la aplicación Discord, permitiendo que todos aportáramos desde nuestro entendimiento del negocio y del sistema, construyendo en conjunto un modelo más estructurado y alineado.
+Posteriormente de haber desarrollado el Big Picture Event Storming, nuestro equipo procedió a realizar el Design-Level Event Storming con el objetivo de profundizar en el comportamiento del sistema y definir con mayor precisión la lógica del dominio. Esta etapa también se llevó a cabo de manera colaborativa en una video llamada en la aplicación Discord, permitiendo que todos aportáramos desde nuestro entendimiento del negocio y del sistema, construyendo en conjunto un modelo más estructurado y alineado.
 </p>
 
 <p>
@@ -2325,10 +2325,75 @@ Identificamos las interacciones entre los distintos elementos del sistema, tales
 </p>
 
 <p>
-Este enfoque permitió pasar de una visión exploratoria a una más técnica y organizada, sentando las bases para la implementación del sistema y facilitando la posterior identificación de agregados y bounded contexts.
+Con este enfoque transitamos de una visión exploratoria a una más técnica y organizada, sentando las bases para la implementación del sistema y facilitando la posterior identificación de agregados y bounded contexts.
 </p>
 
 ### 4.1.1. Design-Level EventStorming
+
+---
+
+<h3>Step 5: Commands</h3>
+<p>
+En esta etapa, nuestro equipo identificó los comandos que representan las acciones iniciadas por los usuarios o sistemas externos sobre el dominio. Los comandos constituyen la intención de realizar una operación específica y son el punto de partida para la generación de eventos dentro del sistema.
+</p>
+
+<p>
+Durante el análisis, se definieron comandos asociados a múltiples funcionalidades, como la creación y actualización de perfiles de tueste, el registro y edición de proveedores, la gestión de lotes de café, la selección de recetas, así como el ingreso de datos provenientes de sensores IoT. También se identificaron comandos relacionados con la autenticación de usuarios, selección de planes y gestión de información financiera.
+</p>
+
+<p>
+Esta etapa nos permitió estructurar las interacciones del usuario con el sistema, clarificando qué acciones son posibles y cómo estas desencadenan cambios dentro del dominio.
+</p>
+
+![Step 5: Commands](<public/assets/images/chapter-2/eventStorming/Step5-Commands.jpeg>)
+
+---
+
+<h3>Step 6: Policies</h3>
+<p>
+Posteriormente, identificamos las políticas del sistema, las cuales representan reglas de negocio que definen cómo reaccionar ante determinados eventos. Estas políticas permiten automatizar decisiones dentro de nuestro sistema, conectando eventos con nuevos comandos o acciones.
+</p>
+
+<p>
+En el caso de CaféLab, definimos políticas relacionadas con la validación de datos ingresados, la detección de condiciones anómalas en los sensores, la generación de alertas cuando se superan ciertos umbrales y la activación o desactivación de actuadores. Asimismo, consideramos reglas para el manejo de errores, control de sesiones y procesamiento de información.
+</p>
+
+![Step 6: Policies](<public/assets/images/chapter-2/eventStorming/Step6-Policies.jpeg>)
+
+---
+
+<h3>Step 7: Read Models</h3>
+<p>
+En esta fase, se definieron los modelos de lectura o read models, los cuales representan la información que el sistema expone a los usuarios para su consulta. Estos modelos están optimizados para la visualización y no necesariamente reflejan la estructura interna del dominio.
+</p>
+
+<p>
+Identificamos diferentes tipos de información relevante para los usuarios, tales como reportes de consumo de lotes, resúmenes de costos, visualización de datos de sensores, gráficos de temperatura y humedad, historial de eventos, así como resultados de sesiones de cata y comparaciones de perfiles de tueste.
+</p>
+
+<p>
+La definición de estos modelos nos clarificó qué información es crítica para la toma de decisiones y cómo debe ser presentada de manera clara y eficiente al usuario final.
+</p>
+
+![Step 7: Read Models](<public/assets/images/chapter-2/eventStorming/Step7-ReadModels.jpeg>)
+
+---
+
+<h3>Step 8: External Systems</h3>
+<p>
+En esta etapa, identificamos los sistemas externos con los cuales interactúa nuestra solución. Estos representan dependencias fuera del dominio principal, pero que son necesarias para el correcto funcionamiento del sistema.
+</p>
+
+<p>
+Consideramos como sistemas externos los sensores IoT encargados de medir variables ambientales, servicios de notificación para el envío de alertas, así como posibles integraciones con plataformas de procesamiento de datos. Así mismo, se contemplaron servicios relacionados con la autenticación de usuarios y gestión de pagos en caso de suscripciones.
+</p>
+
+<p>
+Esta etapa nos permitió delimitar claramente qué componentes pertenecen al sistema y cuáles pueden dependen de terceros, facilitando el diseño de una arquitectura más modular y escalable.
+</p>
+
+![Step 8: External Systems](<public/assets/images/chapter-2/eventStorming/Step8-ExternalSystems.jpeg>)
+
 #### 4.1.1.1. Candidate Context Discovery
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
