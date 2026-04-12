@@ -466,11 +466,56 @@ Visualmente, el producto debe ser claro, moderno y profesional, con un diseño m
 
 **Cuando** los usuarios reduzcan las pérdidas de calidad por mala conservación en un 30% y mejoren los resultados del tueste en un 20%.
 
-# Capítulo II:  Requirements Elicitation & Analysis
-
-#### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
+A partir de lo recopilado se propopone una plataforma dual software + iot que automatiza variables críticas comno temperatura y humedad. De este modo, se presenta el Lean UX Canvas, el cual articula los siguientes componentes clave:
+
+<ul>
+
+<li> 
+  Problem Statement: Se identifica un gap crítico: la falta de conexión técnica entre el tueste y la experiencia en taza, lo que genera inconsistencia y pérdida de calidad.
+</li>
+
+<li> 
+  Customer Segments & Outcomes: El modelo se enfoca inicialmente en baristas profesionales y cafeterías de especialidad, buscando como resultado principal la reducción de mermas y el incremento de la fidelización mediante la consistencia del café.
+</li>
+
+<li>
+  Assumptions e Hypothesis Statements: Basándonos en la metodología Lean, hemos transformado nuestras suposiciones en hipótesis verificables. Por ejemplo: "Creemos que si proporcionamos herramientas para registrar curvas de tueste, los baristas mejorarán la consistencia de su producto".
+</li>
+</ul>
+
+<td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
+
+Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+
 ## 1.3. Segmentos objetivos
+CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
+
+<h4>Segmento 1: Baristas Profesionales</h4>
+Este segmento está compuesto por especialistas enfocados en la ejecución técnica y la excelencia sensorial. Representan el motor operativo que garantiza la calidad final del producto.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+  - Edad: Predominantemente entre 25 y 40 años (SCA, 2022).
+  - Crecimiento: El volumen de baristas certificados en la región (Perú, Colombia, México) presenta un incremento anual del 15% al 20% desde 2018 (SCA, 2023).
+  - Dispositivos: Uso intensivo de dispositivos móviles (iOS/Android) para la captura rápida de datos en barra.
+
+- <strong>Características del Dominio:</strong>
+  - Pain Point Crítico: Registro manual de aromas y curvas de tueste rompe el flujo de trabajo y genera pérdida de información valiosa.
+  - Necesidad: Requieren herramientas que eliminen la dependencia de la memoria y el "ensayo y error" mediante la automatización de variables como temperatura y humedad.
+  - Objetivo: Lograr la repetibilidad de perfiles de tueste y la profesionalización de consultorías mediante datos técnicos exportables.
+
+<h4>Segmento 2: Cafeterías de Especialidad (Dueños y Administradores)</h4>
+Este segmento representa la capa estratégica y de toma de decisiones. Su enfoque principal es la rentabilidad, la consistencia de la marca y la sostenibilidad del suministro.
+
+- <strong>Perfil Demográfico y Estadístico:</strong>
+  - Edad: Emprendedores de 30 a 50 años con formación en gestión o gastronomía.
+  - Mercado: El mercado de café de especialidad en Latam crece a una tasa del 9.4% anual (Euromonitor, 2023).
+  - Escalabilidad: Más del 70% de estos negocios se ubican en zonas urbanas dinámicas y gestionan equipos de 3 a 10 colaboradores.
+
+- <strong>Características del Dominio:</strong>
+  - Pain Point Crítico: Cálculo manual de la merma y la inconsistencia entre baristas como un riesgo directo para la utilidad neta.
+  - Necesidad: Una plataforma de seguimiento total que integre el inventario con el monitoreo en tiempo real de los granos almacenados.
+  - Objetivo: Fortalecer la fidelización del cliente mediante una "narrativa de origen" verificable con datos reales de trazabilidad, asegurando que cada taza servida mantenga el estándar de calidad de la marca.
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
