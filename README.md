@@ -793,8 +793,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td>Alejandra trabaja en el área operativa de una cadena de cafeterías, donde se encarga de estandarizar las recetas y asegurar la consistencia en la calidad del café entre tiendas. Tiene conocimientos técnicos sobre calibración, evaluación sensorial y trazabilidad del grano, y maneja protocolos detallados para eventos fuera del entorno habitual. Utiliza balanzas de precisión y máquinas programables como parte de sus herramientas diarias. Si bien reconoce que ciertos datos sensibles no pueden compartirse por temas de confidencialidad, considera que una plataforma digital que integre información de trazabilidad, tueste y calidad sensorial podría ser de gran valor para su operación.</td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 00:00 - 06:48</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
@@ -822,8 +822,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td></td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 06:48 - 14:31</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
@@ -850,8 +850,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td>Anyela es una barista con 3 años de experiencia en café de especialidad y participante en competencias de latte art. Sus principales desafíos incluyen mantener la consistencia entre baristas, documentar recetas, encontrar temperaturas ideales para métodos filtrados, preservar propiedades del café mediante almacenamiento adecuado y lograr precisión en calibraciones. Aunque utiliza registros manuales, identifica la necesidad de herramientas tecnológicas para evaluación del café, análisis de variedades y monitoreo de almacenamiento. Considera valioso implementar una plataforma integral que conecte todo el proceso del café y espacios tipo laboratorio que integren teoría y práctica, desde el cultivo hasta la taza final.</td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 14:31 - 20:51</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
 </tr>
 </table>
@@ -879,8 +879,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td>Raul describió sus principales desafíos operativos y necesidades tecnológicas. Actualmente maneja de forma manual y desorganizada aspectos cruciales como certificaciones, información de proveedores y trazabilidad del café, lo que dificulta responder ágilmente a los clientes. Utiliza métodos básicos para comunicar las características especiales del café, incluyendo tarjetas informativas, aunque reconoce que necesita algo más visual y atractivo. Para mantener la consistencia entre baristas, implementa un sistema de mentoría y reuniones semanales de cata, pero admite que su documentación y capacitación necesitan actualización. En cuanto a tecnología, usa principalmente Excel, una caja registradora digital y aplicaciones básicas de tueste, pero carece de un sistema integral. Su principal necesidad es una plataforma que mejore la eficiencia operativa y la experiencia del cliente, permitiendo mostrar el valor agregado de sus productos para justificar precios más altos y aumentar la rentabilidad del negocio. El dueño enfatiza que cualquier solución debe ser tangible y visible para los clientes, ayudando a gestionar todo el proceso desde la recepción del grano hasta la taza final.</td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="aqui va el link del video">
+    <td>Timing: 20:51 - 27:02</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
@@ -907,8 +907,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td>Omar cuenta con una certificación internacional como barista por la SCA y actualmente es dueño de una cafetería especializada. Tiene un conocimiento sólido sobre los procesos del café, desde la selección del grano y sus características (como altura, proceso y humedad), hasta el control del tueste y la calibración diaria de las bebidas. Se encarga personalmente del almacenamiento y monitoreo del grano, utilizando herramientas como Excel para llevar registros de peso, rendimiento y trazabilidad. Aunque se maneja bien con herramientas digitales básicas, reconoce que ciertos procesos manuales podrían optimizarse mediante una plataforma digital especializada. Publica contenido educativo sobre café en LinkedIn, lo cual también refuerza su rol como formador dentro del rubro.</td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 27:02 - 33:21</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
@@ -935,8 +935,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td>Patricia maneja su cafetería con procesos parcialmente estandarizados, pero aún depende mucho de la experiencia del equipo, lo que genera variabilidad en la calidad. Utiliza métodos básicos para comunicar el café y registrar proveedores, pero reconoce que la información no está centralizada ni conectada. El mayor problema está en el almacenamiento del café verde, donde el control de temperatura y humedad es empírico y sin datos registrados. Por ello, considera muy útil un dispositivo IoT que monitoree estas condiciones en tiempo real e incluso automatice acciones como la ventilación, aunque prefiere mantener cierto control manual.Además, identifica debilidades en la documentación del conocimiento, la trazabilidad y el cálculo de rentabilidad, que actualmente son poco precisos y mayormente manuales. Su principal necesidad es una plataforma integral que conecte todo el proceso desde el almacenamiento hasta la taza, automatice el registro de datos y mejore la consistencia y toma de decisiones en el negocio.</td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 33:21 - 37:39</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
@@ -963,8 +963,8 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
     <td></td>
   </tr>
   <tr>
-    <td>Timing:</td>
-    <td>    <a href="">
+    <td>Timing: 37:39 - 43:11</td>
+    <td>    <a href="https://youtu.be/eJOE34HVgzc">
         Ver grabación</td>
   </tr>
 </table>
