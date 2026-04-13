@@ -2458,6 +2458,59 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.1.1.2. Domain Message Flows Modeling
 #### 4.1.1.3. Bounded Context Canvases
 ### 4.1.2. Context Mapping
+En esta sección desarrollamos un conjunto de Context Maps para visualizar cómo se relacionan los bounded contexts identificados en Cafelab.
+A partir del análisis del dominio, exploramos distintas alternativas de diseño evaluando cómo cambiaría la arquitectura si movemos, agrupamos o dividimos capacidades entre contextos.
+Finalmente, analizamos cada propuesta considerando patrones de Domain-Driven Design como Customer/Supplier, Conformist, Shared Kernel y Anti-Corruption Layer, con el fin de definir la mejor aproximación arquitectónica.
+
+Los bounded contexts definidos para Cafelab son:
+
+- IAM – Registro, autenticación, login y gestión de planes.
+- Management – Proveedores, lotes de café, perfiles de tueste, inventario.
+- Costing – Gestión y cálculo de costos.
+- Procedure – Sesiones de cata, calibración de molienda, recetas, defectos.
+- IoT Monitoring – Monitoreo ambiental: SensorReading, Alert Management, Storage Monitor
+
+#### Opción 1
+
+En esta primera alternativa mantenemos los cinco bounded contexts completamente separados, cada uno con responsabilidades claramente delimitadas. IAM se encarga exclusivamente de autenticación y gestión de usuarios; Management administra proveedores, lotes, inventario y perfiles de tueste; Costing procesa los cálculos financieros; Procedure gestiona sesiones de cata, calibraciones y recetas; mientras que IoT Monitoring controla sensores ambientales y alertas.
+La principal ventaja de esta estructura radica en la clara separación de responsabilidades, ya que cada contexto se concentra en una parte específica del negocio y puede evolucionar de manera independiente. Esto favorece el mantenimiento y permite escalar módulos concretos sin afectar al resto del sistema. Sin embargo, una desventaja importante es la mayor complejidad en la sincronización entre contextos, debido a la gran cantidad de interacciones necesarias para compartir información, especialmente entre Management, Costing, Procedure e IoT Monitoring.
+
+<td><img src="public\assets\images\chapter-4\context-mapping-option1.png" alt="option 1"></td>
+
+#### Opción 2
+
+Esta alternativa propone integrar los bounded contexts de Management y Costing en un único contexto denominado Resource Management. De esta manera, toda la información relacionada con proveedores, inventario, lotes, perfiles de tueste y costos quedaría centralizada en un solo módulo.
+Esta combinación presenta ventajas como una arquitectura más simple, al reducir el número total de bounded contexts y disminuir la necesidad de comunicación externa entre inventario y costos. Además, permite una relación más directa entre el registro de lotes y el cálculo de márgenes financieros.
+No obstante, esta propuesta también presenta desventajas. Al unir responsabilidades operativas y financieras dentro de un mismo contexto, se incrementa el riesgo de sobrecarga funcional, dificultando su mantenimiento a largo plazo. Además, se pierde independencia evolutiva, ya que cualquier cambio en costos podría impactar directamente la lógica de gestión operativa.
+
+<td><img src="public\assets\images\chapter-4\context-mapping-option2.png" alt="option 1"></td>
+
+#### Opción 3
+
+Esta alternativa propone una arquitectura compuesta por cinco bounded contexts bien definidos, manteniendo separados los dominios principales pero estableciendo relaciones estratégicas claras entre ellos. La estructura busca equilibrar la separación de responsabilidades para permitir que el sistema escale y se mantenga con facilidad, al mismo tiempo que facilita la integración tecnológica entre módulos especializados.
+
+IAM se comunica con todos los demás bounded contexts proporcionando autenticación, registro y validación de usuarios. En este caso, la relación es de tipo Customer/Supplier, donde IAM actúa como proveedor de identidad para Management, Costing, Procedure e IoT Monitoring.
+
+Management se relaciona con Costing mediante una relación Customer/Supplier, ya que provee información de proveedores, lotes e inventario que Costing necesita para calcular costos por lote, producción y márgenes.
+
+Management y Procedure comparten entidades comunes como lote de café y perfil de tueste. Por ello, entre ambos existe una relación de tipo Shared Kernel, lo que garantiza consistencia en el uso de conceptos compartidos y evita duplicidad de modelos.
+
+Procedure también depende de los datos maestros definidos por Management, particularmente en la información de lotes. En este caso, la relación es Conformist, ya que Procedure adopta el modelo definido por Management sin modificarlo.
+
+IoT Monitoring se conecta con Management mediante una Anti-Corruption Layer, que traduce los datos técnicos provenientes de sensores como temperatura, humedad y ventilación a un formato comprensible para la lógica de negocio. Esto protege al contexto Management de la complejidad técnica del hardware IoT y desacopla el sistema central de detalles de infraestructura.
+
+Esta alternativa ofrece una arquitectura balanceada, donde cada bounded context conserva autonomía, pero las relaciones entre ellos aseguran integración coherente y escalabilidad futura.
+
+<td><img src="public\assets\images\chapter-4\context-mapping-option3.png" alt="option 1"></td>
+
+#### Elección 3
+
+Elegimos la opción 3, ya que proporciona el mejor equilibrio entre separación de responsabilidades, escalabilidad e integración tecnológica.
+
+Al definir cinco bounded contexts con relaciones claras, Cafelab permite la evolución independiente de cada módulo, mejorando la mantenibilidad del sistema y reduciendo riesgos de acoplamiento excesivo. Además, el uso de patrones como Anti-Corruption Layer protege la lógica central frente a la complejidad del monitoreo IoT, mientras que Shared Kernel y Customer/Supplier aseguran consistencia e interoperabilidad entre procesos clave.
+
+Asimismo, esta estructura facilita futuras ampliaciones, como nuevos dispositivos IoT, módulos analíticos avanzados o integraciones externas, garantizando una arquitectura sólida y adaptable al crecimiento del negocio.
+
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 
@@ -3903,4 +3956,5 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 # Conclusiones
 # Bibliografía
 # Anexos
+
 
