@@ -2489,6 +2489,446 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
 
 #### 4.2.4.1. Domain Layer
 
+##### Aggregates
+
+1. **CuppingSession**
+
+- **Propósito:**  
+  El agregado principal es la sesión de cata (`CuppingSession`), que encapsula los datos de una cata documentada: identificación del café evaluado, fecha de la sesión, si está marcada como favorita, resultados estructurados en JSON y notas de tueste, asociados al usuario propietario.
+
+- **Atributos:**
+  - `userId`: Identificador del perfil/usuario dueño de la sesión; mapeado en BD como `profile_id` (`Long`).
+  - `name`: Nombre o etiqueta de la sesión o del lote evaluado (`String`, hasta 255 caracteres).
+  - `origin`: Origen del café (`String`, hasta 255 caracteres).
+  - `variety`: Variedad botánica o comercial del café (`String`, hasta 255 caracteres).
+  - `processing`: Proceso de beneficio o postcosecha (`String`, hasta 120 caracteres).
+  - `sessionDate`: Fecha en que se realizó la sesión de cupping (`LocalDate`).
+  - `favorite`: Indica si la sesión está marcada como favorita (`boolean`).
+  - `resultsJson`: Resultados de la cata en formato JSON serializado (`String` almacenado como `LONGTEXT`).
+  - `roastStyleNotes`: Notas libres sobre estilo de tueste u observaciones (`String` como `TEXT`).
+
+- **Métodos:**
+  - `CuppingSession()`: Constructor sin argumentos.
+  - `CuppingSession(CreateCuppingSessionCommand c)`: Crea la sesión a partir del comando de creación y asigna campos.
+  - `applyUpdate(UpdateCuppingSessionCommand c)`: Aplica los cambios del comando de actualización sobre la sesión existente, con la misma normalización de textos opcionales.
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<CuppingSession>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+  - Se encarga principalmente del registro y actualización de datos de las sesiones de cata, así como de la normalización de cadenas vacías a `null` mediante un método privado auxiliar. 
+
+2. **Recipe**
+
+- **Propósito:**  
+  El agregado principal es la receta de preparación (`Recipe`), que encapsula cómo se prepara un café: nombre, imagen, método y categoría de extracción, proporción, tiempos y pasos, opcionalmente enlazada a una sesión de cata y/o a un portafolio, siempre asociada al usuario propietario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario dueño de la receta; persiste como `user_id` y referencia el perfil en BD (`Long`).
+  - `name`: Nombre corto de la receta, validado y acotado (`RecipeName` embebido, columna `name`, hasta 20 caracteres).
+  - `imageUrl`: URL de la imagen representativa de la receta (`String`, obligatorio).
+  - `extractionMethod`: Método de preparación (espresso, pour-over, etc.) (`ExtractionMethod`, persistido con conversor JPA).
+  - `extractionCategory`: Categoría de la extracción (p. ej. café filtrado vs espresso) (`ExtractionCategory`, persistido con conversor JPA).
+  - `ratio`: Proporción café/agua u otra convención de la receta (`String`, hasta 10 caracteres).
+  - `cuppingSessionId`: Referencia opcional a una sesión de cata vinculada (`Long`, nullable).
+  - `portfolioId`: Referencia opcional a un ítem de portafolio (`Long`, nullable).
+  - `preparationTime`: Tiempo de preparación en la unidad acordada por el dominio (`Integer`, obligatorio).
+  - `steps`: Pasos de la preparación (`String` como `TEXT`, obligatorio).
+  - `tips`: Consejos u observaciones adicionales (`String` como `TEXT`).
+  - `cupping`: Etiqueta o resumen corto relacionado con la cata asociada (`String`, hasta 20 caracteres).
+  - `grindSize`: Tamaño de molido indicado para la receta (`String`, hasta 20 caracteres).
+
+- **Métodos:**
+  - `Recipe(Long userId, String name, String imageUrl, ...)`: Construye la receta a partir de primitivos/cadenas; instancia `RecipeName` y resuelve `ExtractionMethod` y `ExtractionCategory` desde texto.
+  - `Recipe(CreateRecipeCommand command)`: Crea la receta a partir del comando de creación y asigna todos los campos.
+  - `update(UpdateRecipeCommand command)`: Aplica el comando de actualización y devuelve la misma instancia (`this`) con el estado actualizado con los nuevos datos.
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<Recipe>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+  - Centraliza el alta y la actualización coherentes de una receta.
+
+3. **Ingredient**
+
+- **Propósito:**  
+  El agregado representa un **ingrediente** asociado a una receta de preparación (`Ingredient`): nombre del insumo, cantidad y unidad, siempre ligado a la receta (`recipeId`) de la que forma parte.
+
+- **Atributos:**
+  - `recipeId`: Identificador de la receta a la que pertenece el ingrediente; persiste como `recipe_id` (`Long`, obligatorio).
+  - `name`: Denominación del ingrediente, con reglas de dominio sobre nulidad, vacío y longitud (`IngredientName` embebido, columna `name`, hasta 100 caracteres).
+  - `amount`: Cantidad numérica del ingrediente en la receta (`Double`, obligatorio).
+  - `unit`: Unidad de medida de la cantidad (`String`, hasta 10 caracteres, obligatorio).
+
+- **Métodos:**
+  - `Ingredient(Long recipeId, String name, Double amount, String unit)`: Construye el ingrediente a partir de valores ingresados.
+  - `Ingredient(CreateIngredientCommand command)`: Crea el ingrediente desde el comando de creación y asigna todos los campos.
+  - `update(UpdateIngredientCommand command)`: Aplica el comando de actualización y devuelve la misma instancia (`this`) con el estado actualizado.
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<Ingredient>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+  - Centraliza alta y actualización coherentes del ingrediente.
+
+4. **Portfolio**
+
+- **Propósito:**  
+  El agregado principal es el **portafolio** (`Portfolio`), que agrupa la información mínima de una entrada de portafolio del usuario: titular (`userId`) y nombre visible, para gestionar colecciones o ítems de preparación asociados al perfil.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario dueño del portafolio; persiste como `user_id` y referencia el perfil en BD (`Long`, obligatorio).
+  - `name`: Nombre o título del portafolio (`String`, hasta 100 caracteres, obligatorio).
+
+- **Métodos:**
+  - `Portfolio(Long userId, String name)`: Construye el portafolio con usuario y nombre.
+  - `Portfolio(CreatePortfolioCommand command)`: Crea el portafolio desde el comando de creación.
+  - `update(UpdatePortfolioCommand command)`: Actualiza el nombre según el comando y devuelve la misma instancia (`this`).
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<Portfolio>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+
+5. **GrindCalibration**
+
+- **Propósito:**  
+  El agregado principal es el registro de **calibración de molienda** (`GrindCalibration`), mismo que lleva el registro de datos de cada calibración realizada, siempre asociados al usuario propietario.
+
+- **Atributos:**
+  - `userId`: Identificador del perfil/usuario dueño del registro; persiste como `profile_id` (`Long`, obligatorio).
+  - `name`: Nombre o etiqueta de la calibración (`String`, hasta 255 caracteres).
+  - `method`: Método de preparación o contexto en el que se calibró el molido (`String`, hasta 120 caracteres).
+  - `equipment`: Equipo o molino utilizado (`String`, hasta 120 caracteres).
+  - `grindNumber`: Ajuste o número de molido en la escala del equipo (`String`, hasta 64 caracteres, columna `grind_number`).
+  - `aperture`: Valor de apertura o parámetro asociado al ajuste (`Double`, obligatorio).
+  - `cupVolume`: Volumen de la taza o etapa intermedia de referencia (`Double`, obligatorio).
+  - `finalVolume`: Volumen final de referencia de la calibración (`Double`, obligatorio).
+  - `calibrationDate`: Fecha en que se realizó la calibración (`LocalDate`).
+  - `comments`: Comentarios breves u observaciones (`String` como `TEXT`).
+  - `notes`: Notas ampliadas o registro libre (`String` como `TEXT`).
+  - `sampleImage`: Imagen de muestra o referencia visual, almacenada como contenido largo (`String` como `LONGTEXT`).
+
+- **Métodos:**
+  - `GrindCalibration(CreateGrindCalibrationCommand c)`: Crea el registro a partir del comando de creación; recorta cadenas obligatorias y normaliza textos opcionales vacíos.
+  - `applyUpdate(UpdateGrindCalibrationCommand c)`: Actualiza los cambios cuando se requiere evitando conflictos por campos vacíos.
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<GrindCalibration>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+  - La lógica explícita del agregado se centra en construcción desde comando, actualización coherente y normalización de cadenas.
+
+6. **Defect**
+
+- **Propósito:**  
+  El agregado principal es el **defecto** registrado en una cata o control de calidad (`Defect`), el cual guarda el registro de cual error, problema, inconveniente o peculiaridad ocurrida durante cualquier fase de la preparación de forma en que el barista evita repetirlo y lleva nota de cómo evitarlo.
+
+- **Atributos:**
+  - `userId`: Usuario propietario o autor del registro (`Long`).
+  - `coffeeDisplayName`: Nombre comercial o etiqueta visible del café evaluado (`String`).
+  - `coffeeRegion`: Región de origen del café (`String`).
+  - `coffeeVariety`: Variedad del café (`String`).
+  - `coffeeTotalWeight`: Peso total de la muestra o lote considerado (`Double`).
+  - `name`: Denominación del defecto con validación de dominio (`DefectName`).
+  - `defectType`: Clasificación textual del tipo de defecto (`DefectType`).
+  - `defectWeight`: Peso atribuido al defecto en la muestra (`Double`).
+  - `percentage`: Porcentaje del defecto respecto al total (`Double`).
+  - `probableCause`: Hipótesis de causa del defecto (`ProbableCause`).
+  - `suggestedSolution`: Propuesta de corrección o mejora (`SuggestedSolution`).
+
+- **Métodos:**
+  - `Defect(CreateDefectCommand command)`: Crea el defecto desde el comando considerando los valores enviados.
+
+- **Características:**
+  - Extiende `AuditableAbstractAggregateRoot<Defect>`, por lo que hereda auditoría y el modelo de agregado raíz compartido del bounded context.
+
+##### Value Objects
+
+1. **ExtractionMethod**
+
+- **Propósito:**  
+  Enumera los métodos de extracción o de preparación de café admitidos en el dominio de recetas.
+
+- **Valores:**
+  - **ESPRESSO:** Preparación bajo presión con máquina de espresso.
+  - **POUR_OVER:** Vertido manual sobre filtro, método pour-over genérico.
+  - **FRENCH_PRESS:** Émbolo o prensa francesa.
+  - **COLD_BREW:** Extracción en frío.
+  - **AEROPRESS:** Cafetera de émbolo por presión Aeropress.
+  - **CHEMEX:** Filtro de cuello ancho Chemex.
+  - **V60:** Cono dripper V60.
+  - **CLEVER:** Dripper híbrido inmersión/vertido Clever.
+
+2. **ExtractionCategory**
+
+- **Propósito:**  
+  Clasifica la receta en una de dos categorías de extracción: café filtrado o expresso.
+
+- **Valores:**
+  - **COFFEE:** Métodos de café filtrado u otros distintos del espresso de barra.
+  - **ESPRESSO:** Preparación y recetas del ámbito espresso / máquina de presión.
+
+##### Commands
+
+1. **CreateDefectCommand**
+
+- **Propósito:** Comando para registrar un nuevo defecto de calidad asociado a un café y a un usuario.
+
+- **Atributos:**
+  - `userId`: Usuario que crea o posee el registro.
+  - `coffeeDisplayName`: Nombre o etiqueta del café evaluado.
+  - `coffeeRegion`: Región del café.
+  - `coffeeVariety`: Variedad del café.
+  - `coffeeTotalWeight`: Peso total de la muestra o lote considerado.
+  - `name`: Nombre del defecto.
+  - `defectType`: Tipo de defecto.
+  - `defectWeight`: Peso atribuido al defecto.
+  - `percentage`: Porcentaje del defecto sobre el total.
+  - `probableCause`: Causa probable.
+  - `suggestedSolution`: Solución sugerida.
+
+2. **CreateGrindCalibrationCommand**
+
+- **Propósito:** Comando para crear un nuevo registro de calibración de molienda.
+
+- **Atributos:**
+  - `userId`: Usuario propietario del registro.
+  - `name`: Nombre o etiqueta de la calibración.
+  - `method`: Método o contexto de preparación.
+  - `equipment`: Equipo o molino utilizado.
+  - `grindNumber`: Ajuste o número de molido.
+  - `aperture`: Valor de apertura o parámetro de ajuste.
+  - `cupVolume`: Volumen de taza o etapa de referencia.
+  - `finalVolume`: Volumen final de referencia.
+  - `calibrationDate`: Fecha de la calibración.
+  - `comments`: Comentarios opcionales.
+  - `notes`: Notas opcionales.
+  - `sampleImage`: Imagen de muestra opcional.
+
+3. **UpdateGrindCalibrationCommand**
+
+- **Propósito:** Comando para actualizar una calibración de molienda existente.
+
+- **Atributos:**
+  - `calibrationId`: Identificador de la calibración a actualizar.
+  - `userId`: Usuario propietario del registro.
+  - `name`: Nombre o etiqueta de la calibración.
+  - `method`: Método o contexto de preparación.
+  - `equipment`: Equipo o molino utilizado.
+  - `grindNumber`: Ajuste o número de molido.
+  - `aperture`: Valor de apertura o parámetro de ajuste.
+  - `cupVolume`: Volumen de taza o etapa de referencia.
+  - `finalVolume`: Volumen final de referencia.
+  - `calibrationDate`: Fecha de la calibración.
+  - `comments`: Comentarios opcionales.
+  - `notes`: Notas opcionales.
+  - `sampleImage`: Imagen de muestra opcional.
+
+4. **CreateRecipeCommand**
+
+- **Propósito:** Comando para crear una nueva receta de preparación.
+
+- **Atributos:**
+  - `userId`: Usuario dueño de la receta.
+  - `name`: Nombre de la receta.
+  - `imageUrl`: URL de la imagen.
+  - `extractionMethod`: Método de extracción.
+  - `extractionCategory`: Categoría de extracción.
+  - `ratio`: Proporción café/agua u otra convención.
+  - `cuppingSessionId`: Sesión de cata vinculada, si aplica.
+  - `portfolioId`: Portafolio vinculado, si aplica.
+  - `preparationTime`: Tiempo de preparación.
+  - `steps`: Pasos de la preparación.
+  - `tips`: Consejos u observaciones.
+  - `cupping`: Etiqueta o dato corto de cata.
+  - `grindSize`: Tamaño de molido indicado.
+
+5. **UpdateRecipeCommand**
+
+- **Propósito:** Comando para actualizar una receta existente.
+
+- **Atributos:**
+  - `userId`: Usuario que realiza la operación o dueño contextual.
+  - `recipeId`: Identificador de la receta a actualizar.
+  - `name`: Nombre de la receta.
+  - `imageUrl`: URL de la imagen.
+  - `extractionMethod`: Método de extracción.
+  - `extractionCategory`: Categoría de extracción.
+  - `ratio`: Proporción.
+  - `cuppingSessionId`: Sesión de cata vinculada, si aplica.
+  - `portfolioId`: Portafolio vinculado, si aplica.
+  - `preparationTime`: Tiempo de preparación.
+  - `steps`: Pasos de la preparación.
+  - `tips`: Consejos u observaciones.
+  - `cupping`: Etiqueta o dato corto de cata.
+  - `grindSize`: Tamaño de molido indicado.
+
+6. **DeleteRecipeCommand**
+
+- **Propósito:** Comando para eliminar una receta existente.
+
+- **Atributos:**
+  - `recipeId`: Identificador de la receta a eliminar.
+  - `userId`: Usuario autorizado asociado a la operación.
+
+7. **CreateIngredientCommand**
+
+- **Propósito:** Comando para añadir un ingrediente a una receta.
+
+- **Atributos:**
+  - `recipeId`: Receta a la que pertenece el ingrediente.
+  - `name`: Nombre del ingrediente.
+  - `amount`: Cantidad.
+  - `unit`: Unidad de medida.
+
+8. **UpdateIngredientCommand**
+
+- **Propósito:** Comando para actualizar un ingrediente existente.
+
+- **Atributos:**
+  - `ingredientId`: Identificador del ingrediente a actualizar.
+  - `name`: Nombre del ingrediente.
+  - `amount`: Cantidad.
+  - `unit`: Unidad de medida.
+
+9. **DeleteIngredientCommand**
+
+- **Propósito:** Comando para eliminar un ingrediente existente.
+
+- **Atributos:**
+  - `ingredientId`: Identificador del ingrediente a eliminar.
+
+10. **CreatePortfolioCommand**
+
+- **Propósito:** Comando para crear un nuevo portafolio.
+
+- **Atributos:**
+  - `userId`: Usuario dueño del portafolio.
+  - `name`: Nombre del portafolio.
+
+11. **UpdatePortfolioCommand**
+
+- **Propósito:** Comando para actualizar un portafolio existente.
+
+- **Atributos:**
+  - `userId`: Usuario dueño o que ejecuta la actualización.
+  - `portfolioId`: Identificador del portafolio a actualizar.
+  - `name`: Nuevo nombre del portafolio.
+
+12. **DeletePortfolioCommand**
+
+- **Propósito:** Comando para eliminar un portafolio existente.
+
+- **Atributos:**
+  - `portfolioId`: Identificador del portafolio a eliminar.
+  - `userId`: Usuario asociado a la operación de borrado.
+
+13. **CreateCuppingSessionCommand**
+
+- **Propósito:** Comando para crear una nueva sesión de cata.
+
+- **Atributos:**
+  - `userId`: Usuario propietario de la sesión.
+  - `name`: Nombre o etiqueta de la sesión.
+  - `origin`: Origen del café.
+  - `variety`: Variedad del café.
+  - `processing`: Proceso de beneficio.
+  - `sessionDate`: Fecha de la sesión.
+  - `favorite`: Indica si se marca como favorita.
+  - `resultsJson`: Resultados en JSON.
+  - `roastStyleNotes`: Notas de tueste u observaciones.
+
+14. **UpdateCuppingSessionCommand**
+
+- **Propósito:** Comando para actualizar una sesión de cata existente.
+
+- **Atributos:**
+  - `sessionId`: Identificador de la sesión a actualizar.
+  - `userId`: Usuario propietario de la sesión.
+  - `name`: Nombre o etiqueta de la sesión.
+  - `origin`: Origen del café.
+  - `variety`: Variedad del café.
+  - `processing`: Proceso de beneficio.
+  - `sessionDate`: Fecha de la sesión.
+  - `favorite`: Indica si se marca como favorita.
+  - `resultsJson`: Resultados en JSON.
+  - `roastStyleNotes`: Notas de tueste u observaciones.
+
+##### Quries
+
+1. **GetDefectByIdForUserQuery**
+
+- **Propósito:** Recupera un defecto concreto validando que pertenezca al usuario indicado.
+
+- **Atributos:**
+  - `defectId`: Identificador del defecto a consultar.
+  - `userId`: Identificador del usuario para comprobar titularidad o visibilidad.
+
+2. **GetDefectsByUserIdQuery**
+
+- **Propósito:** Recupera todos los defectos registrados por un usuario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario cuyos defectos se listan.
+
+3. **GetGrindCalibrationByIdForUserQuery**
+
+- **Propósito:** Recupera una calibración de molienda por identificador, acotada al usuario indicado.
+
+- **Atributos:**
+  - `calibrationId`: Identificador de la calibración a consultar.
+  - `userId`: Identificador del usuario propietario del registro.
+
+4. **GetGrindCalibrationsByUserIdQuery**
+
+- **Propósito:** Recupera todas las calibraciones de molienda de un usuario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario cuyas calibraciones se listan.
+
+5. **GetRecipeByIdForUserQuery**
+
+- **Propósito:** Recupera una receta por identificador, restringida al usuario indicado.
+
+- **Atributos:**
+  - `recipeId`: Identificador de la receta a consultar.
+  - `userId`: Identificador del usuario autorizado.
+
+6. **GetRecipesByUserIdQuery**
+
+- **Propósito:** Recupera todas las recetas de un usuario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario cuyas recetas se listan.
+
+7. **GetIngredientsByRecipeIdQuery**
+
+- **Propósito:** Recupera todos los ingredientes asociados a una receta.
+
+- **Atributos:**
+  - `recipeId`: Identificador de la receta cuyos ingredientes se listan.
+
+8. **GetPortfolioByIdForUserQuery**
+
+- **Propósito:** Recupera un portafolio por identificador, restringido al usuario indicado.
+
+- **Atributos:**
+  - `portfolioId`: Identificador del portafolio a consultar.
+  - `userId`: Identificador del usuario autorizado.
+
+9. **GetPortfoliosByUserIdQuery**
+
+- **Propósito:** Recupera todos los portafolios de un usuario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario cuyos portafolios se listan.
+
+10. **GetCuppingSessionByIdForUserQuery**
+
+- **Propósito:** Recupera una sesión de cata por identificador, acotada al usuario indicado.
+
+- **Atributos:**
+  - `sessionId`: Identificador de la sesión a consultar.
+  - `userId`: Identificador del usuario propietario de la sesión.
+
+11. **GetCuppingSessionsByUserIdQuery**
+
+- **Propósito:** Recupera todas las sesiones de cata de un usuario.
+
+- **Atributos:**
+  - `userId`: Identificador del usuario cuyas sesiones se listan.
+
 
 
 #### 4.2.4.2. Interface Layer
