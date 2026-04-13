@@ -3627,7 +3627,32 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
 
 #### 4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams
 
+En este sección, se pressentará el diagrama de componentes del Procedure Bounded Context, en el cual se detallan los principañes módules y sus interacciones dentro de su contexto, lo que ofrece una mayor claridad de la estructura.
 
+![Component View: CaféLab](<public/assets/images/C4/Component-procedure-component.png>)
+
+El **Procedure Bounded Context** está compuesto por los siguientes módulos principales:
+
+**1. Application Layer**
+
+- Coordina las operaciones de negocio relacionadas con los **procedimientos del café**.
+- Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+- Orquesta flujos de creación, actualización o consulta de procedimientos sin duplicar las reglas que pertenecen al dominio.
+
+**2. Interface Layer**
+
+- Expone los puntos de entrada al sistema a través de **controladores REST**.
+- Incluye **recursos** y **transformadores** que aseguran una representación adecuada de los datos y su conversión entre la API HTTP y la capa de aplicación.
+
+**3. Domain Layer**
+
+- Encapsula la lógica de negocio relacionada con los **procedimientos del café**.
+- Define los **agregados**, entidades y objetos de valor que representan los conceptos clave del dominio en este contexto centrados en los procedimientos.
+
+**4. Infrastructure Layer**
+
+- Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema (persistencia y acceso a datos).
+- Incluye **repositorios** y componentes que conectan la lógica de negocio con recursos externos, en particular la **base de datos** donde se almacenan las entidades de procedimiento.
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
