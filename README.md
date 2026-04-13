@@ -249,9 +249,19 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
         - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
     - [4.2.6. Bounded Context: IoT Monitoring](#426-bounded-context-iot-monitoring)
       - [4.2.6.1. Domain Layer](#4261-domain-layer)
+        - [Aggregates (`domain/model/aggregates`)](#aggregates-domainmodelaggregates)
+        - [Commands (`domain/model/commands`)](#commands-domainmodelcommands)
+        - [Queries (`domain/model/queries`)](#queries-domainmodelqueries)
+        - [Value Objects (`domain/model/valueobjects`)](#value-objects-domainmodelvalueobjects)
+        - [Services (`domain/services`)](#services-domainservices)
       - [4.2.6.2. Interface Layer](#4262-interface-layer)
+        - [Controllers (`interfaces.rest`)](#controllers-interfacesrest)
       - [4.2.6.3. Application Layer](#4263-application-layer)
+        - [Command Services (`application.internal/commandservices`)](#command-services-applicationinternalcommandservices)
+        - [Query Services (`application.internal/queryservices`)](#query-services-applicationinternalqueryservices)
       - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
+        - [Repositories (`infrastructure/persistence.jpa.repositories`)](#repositories-infrastructurepersistencejparepositories)
+        - [External Services (`infrastructure/external`)](#external-services-infrastructureexternal)
       - [4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams](#4265--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
@@ -2505,15 +2515,228 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 ### 4.2.6. Bounded Context: IoT Monitoring
+Este Bounded Context es responsable del monitoreo ambiental del almacén de café verde mediante el sensor TrackSilo. Gestiona la recepción y persistencia de lecturas de humedad, la verificación automática de umbrales configurados por el dueño, la activación del actuador de deshumidificación y el envío de alertas por email cuando las condiciones salen del rango óptimo. También provee el historial ambiental por lote para que baristas y dueños puedan tomar decisiones informadas.
 #### 4.2.6.1. Domain Layer
+
+El Domain Layer del bounded context IoT Monitoring define las reglas de negocio relacionadas con la conservación ambiental del almacén de café verde. Se organiza en aggregates, commands, queries, value objects e interfaces de servicios de dominio.
+ 
+##### Aggregates (`domain/model/aggregates`)
+ 
+**Sensor**
+- Aggregate que representa el dispositivo TrackSilo registrado en el sistema. Es el punto de referencia central del bounded context — todas las lecturas, eventos y umbrales están asociados a un sensor específico.
+- Atributos: `id`, `userId`, `name`, `location`, `createdAt`.
+- Referencia a `userId` como identificador del dueño gestionado por el bounded context IAM.
+ 
+**SensorReading**
+- Aggregate que representa una lectura de humedad registrada por el sensor TrackSilo en un momento específico.
+- Atributos: `id`, `sensorId`, `humidity`, `isValid`, `recordedAt`.
+- Referencia a `sensorId` como FK al aggregate `Sensor`.
+- Garantiza que solo las lecturas dentro de rangos físicamente posibles sean persistidas.
+ 
+**ActuatorEvent**
+- Aggregate que representa un evento de activación o desactivación del actuador de deshumidificación.
+- Atributos: `id`, `sensorId`, `eventType`, `triggeredAt`, `resolvedAt`, `cycleDuration`.
+- Referencia a `sensorId` como FK al aggregate `Sensor`.
+- Registra el historial completo de intervenciones del sistema sobre el almacén y calcula la duración de cada ciclo.
+ 
+**StorageThresholds**
+- Aggregate que representa los umbrales de humedad configurados por el dueño de la cafetería para un sensor específico.
+- Atributos: `id`, `sensorId`, `maxHumidity`, `minHumidity`, `isCurrent`, `createdAt`.
+- Referencia a `sensorId` como FK al aggregate `Sensor`.
+- El flag `isCurrent` indica cuál es la configuración vigente — cada cambio genera una nueva instancia.
+ 
+##### Commands (`domain/model/commands`)
+ 
+**RegisterSensorReadingCommand**
+- Comando para registrar una nueva lectura de humedad enviada por el Edge.
+- Atributos: `sensorId`, `humidity`, `recordedAt`.
+ 
+**UpdateStorageThresholdsCommand**
+- Comando para actualizar los umbrales de humedad configurados por el dueño.
+- Atributos: `sensorId`, `maxHumidity`, `minHumidity`.
+ 
+**ActivateActuatorCommand**
+- Comando para activar el actuador de deshumidificación cuando se supera el umbral.
+- Atributos: `sensorId`, `triggeredAt`.
+ 
+**DeactivateActuatorCommand**
+- Comando para desactivar el actuador cuando las condiciones vuelven al rango óptimo.
+- Atributos: `sensorId`, `resolvedAt`.
+ 
+**CreateSensorCommand**
+- Comando para registrar un nuevo sensor TrackSilo asociado a la cuenta del dueño.
+- Atributos: `userId`, `name`, `location`.
+ 
+##### Queries (`domain/model/queries`)
+ 
+**GetLatestSensorReadingQuery**
+- Query para obtener la lectura de humedad más reciente de un sensor.
+- Atributos: `sensorId`.
+ 
+**GetSensorReadingsByTimeRangeQuery**
+- Query para obtener el historial de lecturas de humedad en un rango de tiempo.
+- Atributos: `sensorId`, `from`, `to`.
+ 
+**GetSensorStatusQuery**
+- Query para obtener el estado de conectividad actual de un sensor.
+- Atributos: `sensorId`.
+ 
+**GetActuatorEventsByTimeRangeQuery**
+- Query para obtener el historial de eventos del actuador en un rango de tiempo.
+- Atributos: `sensorId`, `from`, `to`.
+ 
+**GetCurrentStorageThresholdsQuery**
+- Query para obtener los umbrales de humedad actualmente configurados para un sensor.
+- Atributos: `sensorId`.
+ 
+**GetSensorByUserIdQuery**
+- Query para obtener el sensor registrado asociado a la cuenta de un usuario.
+- Atributos: `userId`.
+ 
+##### Value Objects (`domain/model/valueobjects`)
+ 
+**SensorStatus**
+- Representa el estado de conectividad del sensor TrackSilo calculado en base al tiempo transcurrido desde la última lectura recibida.
+- Atributos: `lastReadingTimestamp`, `connectionStatus`.
+- No tiene tabla propia — es calculado en tiempo de ejecución.
+ 
+**StorageConditionStatus (Enum)**
+- Enumera los posibles estados ambientales del almacén: `OPTIMAL`, `WARNING`, `DANGER`.
+- Calculado comparando la lectura de humedad actual con los umbrales configurados.
+ 
+**ActuatorEventType (Enum)**
+- Enumera los tipos de evento del actuador: `ACTIVATE`, `DEACTIVATE`.
+ 
+**ConnectionStatus (Enum)**
+- Enumera los estados de conectividad del sensor: `ONLINE`, `OFFLINE`.
+ 
+##### Services (`domain/services`)
+ 
+**SensorCommandService**
+- Interfaz que define el contrato para registrar un nuevo sensor.
+- Métodos: `handle(CreateSensorCommand command): Optional<Sensor>`.
+ 
+**SensorReadingCommandService**
+- Interfaz que define el contrato para registrar lecturas y gestionar el actuador.
+- Métodos: `handle(RegisterSensorReadingCommand command): Optional<SensorReading>`, `handle(ActivateActuatorCommand command): Optional<ActuatorEvent>`, `handle(DeactivateActuatorCommand command): Optional<ActuatorEvent>`.
+ 
+**SensorReadingQueryService**
+- Interfaz que define el contrato para consultar lecturas del sensor.
+- Métodos: `handle(GetLatestSensorReadingQuery query): Optional<SensorReading>`, `handle(GetSensorReadingsByTimeRangeQuery query): List<SensorReading>`.
+ 
+**StorageThresholdsCommandService**
+- Interfaz que define el contrato para actualizar los umbrales de humedad.
+- Métodos: `handle(UpdateStorageThresholdsCommand command): Optional<StorageThresholds>`.
+ 
+**StorageThresholdsQueryService**
+- Interfaz que define el contrato para consultar los umbrales vigentes.
+- Métodos: `handle(GetCurrentStorageThresholdsQuery query): Optional<StorageThresholds>`.
+ 
+**ActuatorEventQueryService**
+- Interfaz que define el contrato para consultar el historial del actuador y el estado del sensor.
+- Métodos: `handle(GetActuatorEventsByTimeRangeQuery query): List<ActuatorEvent>`, `handle(GetSensorStatusQuery query): Optional<SensorStatus>`, `handle(GetSensorByUserIdQuery query): Optional<Sensor>`.
+  
 #### 4.2.6.2. Interface Layer
+La Interface Layer del bounded context IoT Monitoring expone los endpoints REST del sistema. Se organiza en recursos, transformadores, DTOs de control de acceso y controllers.
+ 
+
+##### Controllers (`interfaces.rest`)
+ 
+**SensorReadingController**
+- Controller del aggregate `SensorReading`. Expone los endpoints REST para el registro de lecturas del sensor enviadas por el Edge y la consulta del historial de humedad.
+- Endpoints:
+  - `POST /api/v1/sensor-readings` — registra una nueva lectura de humedad
+  - `GET /api/v1/sensor-readings?from=&to=` — consulta el historial por rango de tiempo
+  - `GET /api/v1/sensor-readings/latest` — obtiene la lectura más reciente
+ 
+**StorageMonitorController**
+- Controller del aggregate `StorageMonitor`. Expone los endpoints REST para el monitoreo en tiempo real, gestión de umbrales, estado del sensor e historial del actuador.
+- Endpoints:
+  - `GET /api/v1/storage-monitor/conditions` — retorna las condiciones actuales del almacén
+  - `GET /api/v1/storage-monitor/sensor-status` — retorna el estado de conectividad del sensor
+  - `GET /api/v1/storage-monitor/thresholds` — retorna los umbrales actualmente configurados
+  - `PUT /api/v1/storage-monitor/thresholds` — actualiza los umbrales de humedad
+  - `GET /api/v1/storage-monitor/actuator-events?from=&to=` — consulta el historial del actuador
+  
 #### 4.2.6.3. Application Layer
+La Application Layer del bounded context IoT Monitoring implementa las interfaces de servicio definidas en el Domain Layer. Se organiza en command services y query services dentro del paquete `application.internal`.
+ 
+##### Command Services (`application.internal/commandservices`)
+ 
+**SensorCommandServiceImpl**
+- Implementa `SensorCommandService`.
+- Gestiona el registro de un nuevo sensor TrackSilo asociado a la cuenta del dueño.
+- Métodos: `handle(CreateSensorCommand command): Optional<Sensor>`.
+ 
+**SensorReadingCommandServiceImpl**
+- Implementa `SensorReadingCommandService`.
+- Gestiona el flujo de recepción de lecturas del sensor: valida que el valor de humedad esté dentro de rangos físicamente posibles y persiste la lectura.
+- Verifica si el valor supera los umbrales configurados en `StorageThresholds`. Si las condiciones están fuera de rango, envía la señal de activación al Edge via `EdgeActuatorClient` y notifica al dueño via `BrevoEmailNotificationService`.
+- Aplica la regla de histéresis de 5 minutos consecutivos en rango óptimo antes de desactivar el actuador.
+- Métodos: `handle(RegisterSensorReadingCommand command): Optional<SensorReading>`, `handle(ActivateActuatorCommand command): Optional<ActuatorEvent>`, `handle(DeactivateActuatorCommand command): Optional<ActuatorEvent>`.
+ 
+**StorageThresholdsCommandServiceImpl**
+- Implementa `StorageThresholdsCommandService`.
+- Valida y persiste los nuevos umbrales de humedad configurados por el dueño, verificando que estén dentro del rango permitido (40%–80% HR). Marca el threshold anterior como no vigente antes de persistir el nuevo.
+- Métodos: `handle(UpdateStorageThresholdsCommand command): Optional<StorageThresholds>`.
+ 
+##### Query Services (`application.internal/queryservices`)
+ 
+**SensorReadingQueryServiceImpl**
+- Implementa `SensorReadingQueryService`.
+- Consulta el repositorio para obtener la lectura más reciente o el historial de lecturas por rango de tiempo para un sensor específico.
+- Métodos: `handle(GetLatestSensorReadingQuery query): Optional<SensorReading>`, `handle(GetSensorReadingsByTimeRangeQuery query): List<SensorReading>`.
+ 
+**StorageThresholdsQueryServiceImpl**
+- Implementa `StorageThresholdsQueryService`.
+- Consulta el repositorio para obtener los umbrales de humedad actualmente vigentes para un sensor específico.
+- Métodos: `handle(GetCurrentStorageThresholdsQuery query): Optional<StorageThresholds>`.
+ 
+**ActuatorEventQueryServiceImpl**
+- Implementa `ActuatorEventQueryService`.
+- Consulta el historial de eventos del actuador por rango de tiempo.
+- Calcula el estado de conectividad del sensor comparando el timestamp de la última lectura con el tiempo actual — si han pasado más de 2 minutos, el sensor se considera `OFFLINE`.
+- Métodos: `handle(GetActuatorEventsByTimeRangeQuery query): List<ActuatorEvent>`, `handle(GetSensorStatusQuery query): Optional<SensorStatus>`, `handle(GetSensorByUserIdQuery query): Optional<Sensor>`.
+ 
+  
 #### 4.2.6.4. Infrastructure Layer
+La Infrastructure Layer del bounded context IoT Monitoring provee las implementaciones concretas de persistencia e integración con servicios externos. Un Repository por cada Aggregate del bounded context.
+ 
+##### Repositories (`infrastructure/persistence.jpa.repositories`)
+ 
+**SensorRepository**
+- Implementa la persistencia del aggregate `Sensor` en MySQL via Spring Data JPA.
+- Métodos: `save(Sensor sensor)`, `findById(Long id)`, `findByUserId(Long userId)`.
+ 
+**SensorReadingRepository**
+- Implementa la persistencia del aggregate `SensorReading` en MySQL via Spring Data JPA.
+- Métodos: `save(SensorReading reading)`, `findBySensorIdAndRecordedAtBetween(Long sensorId, LocalDateTime from, LocalDateTime to)`, `findTopBySensorIdOrderByRecordedAtDesc(Long sensorId)`.
+ 
+**ActuatorEventRepository**
+- Implementa la persistencia del aggregate `ActuatorEvent` en MySQL via Spring Data JPA.
+- Métodos: `save(ActuatorEvent event)`, `findTopBySensorIdOrderByTriggeredAtDesc(Long sensorId)`, `findBySensorIdAndTriggeredAtBetween(Long sensorId, LocalDateTime from, LocalDateTime to)`.
+ 
+**StorageThresholdsRepository**
+- Implementa la persistencia del aggregate `StorageThresholds` en MySQL via Spring Data JPA.
+- Métodos: `save(StorageThresholds thresholds)`, `findBySensorIdAndIsCurrentTrue(Long sensorId)`.
+ 
+##### External Services (`infrastructure/external`)
+ 
+**EdgeActuatorClient** (`infrastructure/external.edge`)
+- Envía señales HTTP de activación y desactivación al IoT Edge (Raspberry Pi / PC) para controlar el actuador de deshumidificación.
+- Métodos: `sendActivationSignal(Long sensorId): void`, `sendDeactivationSignal(Long sensorId): void`.
+ 
+**BrevoEmailNotificationServiceImpl** (`infrastructure/external.brevo`)
+- Envía alertas por email al dueño de la cafetería via API de Brevo cuando se superan umbrales o el sensor se desconecta.
+- Métodos: `sendThresholdAlert(String email, double humidity, LocalDateTime timestamp): void`, `sendDisconnectionAlert(String email, LocalDateTime lastSeenAt): void`.
 #### 4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams
+![alt text](public/assets/images/iotmonitoring/IoTMonitoring-Components-dark.png)
+
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+![alt text](<public/assets/images/iotmonitoring/class diagram.png>)
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
-
+![alt text](public/assets/images/iotmonitoring/database.png)
 # Conclusiones
 # Bibliografía
 # Anexos
