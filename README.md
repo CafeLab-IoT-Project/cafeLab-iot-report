@@ -3550,7 +3550,85 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
   - `CuppingSessionRepository`: Persistencia y consultas por usuario e id.
 
 #### 4.2.4.4. Infrastructure Layer
+
+##### Repositories
+
+1. **DefectRepository**
+
+- **Propósito:** Abstrae el acceso a datos del agregado defecto (`Defect`) en la base de datos.
+
+- **Métodos principales:**
+  - `findByUserIdOrderByCreatedAtDesc(Long userId)`: Devuelve todos los defectos de un usuario ordenados por fecha de creación descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: Devuelve un defecto por id solo si coincide con el usuario indicado.
+
+- **Características:**
+  - Extiende `JpaRepository<Defect, Long>`, lo que habilita operaciones CRUD estándar sobre la entidad.
+  - Expone consultas derivadas por nombre para listado por perfil y lectura segura por id y titular.
+
+2. **GrindCalibrationRepository**
+
+- **Propósito:** Abstrae el acceso a datos de las calibraciones de molienda (`GrindCalibration`).
+
+- **Métodos principales:**
+  - `findByUserIdOrderByCreatedAtDesc(Long userId)`: Lista las calibraciones del usuario ordenadas por fecha de creación descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: Obtiene una calibración por id acotada al usuario.
+
+- **Características:**
+  - Extiende `JpaRepository<GrindCalibration, Long>` para persistencia y borrado genéricos.
+  - Complementa el CRUD con métodos de filtrado por usuario y ordenación temporal.
+
+3. **RecipeRepository**
+
+- **Propósito:** Abstrae el acceso a datos de las recetas de preparación (`Recipe`).
+
+- **Métodos principales:**
+  - `findByUserIdOrderByCreatedAtDesc(Long userId)`: Lista las recetas del usuario ordenadas por fecha de creación descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: Obtiene una receta por id si pertenece al usuario.
+  - `findByPortfolioId(Long portfolioId)`: Lista recetas vinculadas a un portafolio concreto.
+
+- **Características:**
+  - Extiende `JpaRepository<Recipe, Long>` con operaciones CRUD sobre la entidad.
+  - Incluye consulta por portafolio además de los patrones por usuario e id compuesto lógico.
+
+4. **IngredientRepository**
+
+- **Propósito:** Abstrae el acceso a datos de los ingredientes (`Ingredient`) asociados a recetas.
+
+- **Métodos principales:**
+  - `findByRecipeId(Long recipeId)`: Devuelve todos los ingredientes de una receta.
+
+- **Características:**
+  - Extiende `JpaRepository<Ingredient, Long>` para el ciclo de vida básico de filas de ingrediente.
+  - Modela la relación receta–ingredientes mediante un método de búsqueda por clave foránea lógica.
+
+5. **PortfolioRepository**
+
+- **Propósito:** Abstrae el acceso a datos de los portafolios (`Portfolio`).
+
+- **Métodos principales:**
+  - `findByUserIdOrderByCreatedAtDesc(Long userId)`: Lista los portafolios del usuario ordenados por fecha de creación descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: Obtiene un portafolio por id si pertenece al usuario.
+
+- **Características:**
+  - Extiende `JpaRepository<Portfolio, Long>` con CRUD estándar.
+  - Encapsula consultas por titular y ordenación por auditoría de creación.
+
+6. **CuppingSessionRepository**
+
+- **Propósito:** Abstrae el acceso a datos de las sesiones de cata (`CuppingSession`).
+
+- **Métodos principales:**
+  - `findByUserIdOrderBySessionDateDescCreatedAtDesc(Long userId)`: Lista las sesiones del usuario ordenadas primero por fecha de sesión y luego por creación, ambas descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: Obtiene una sesión por id si pertenece al usuario.
+
+- **Características:**
+  - Extiende `JpaRepository<CuppingSession, Long>` para persistencia y eliminación estándar.
+  - Prioriza el orden cronológico de negocio (fecha de cata) en el listado por usuario.
+
 #### 4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams
+
+
+
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
