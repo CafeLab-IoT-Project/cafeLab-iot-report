@@ -2449,7 +2449,13 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+
+![Landscape View: CaféLab](<public/assets/images/C4/Landscape-diagram.png>)
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+
+![Landscape View: CaféLab](<public/assets/images/C4/Context-diagram.png>)
+
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 
 ![Container View: CaféLab](<public/assets/images/C4/Contenedores-dark.png>)
