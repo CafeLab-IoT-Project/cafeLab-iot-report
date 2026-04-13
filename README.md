@@ -202,7 +202,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
       - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-    - [4.2.1. Bounded Context: Coffees](#421-bounded-context-coffees)
+    - [4.2.1. Bounded Context: IAM](#421-bounded-context-iam)
       - [4.2.1.1. Domain Layer](#4211-domain-layer)
       - [4.2.1.2. Interface Layer](#4212-interface-layer)
       - [4.2.1.3. Application Layer](#4213-application-layer)
@@ -211,7 +211,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
         - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-    - [4.2.2. Bounded Context: Cupping sessions](#422-bounded-context-cupping-sessions)
+    - [4.2.2. Bounded Context: Management](#422-bounded-context-management)
       - [4.2.2.1. Domain Layer](#4221-domain-layer)
       - [4.2.2.2. Interface Layer](#4222-interface-layer)
       - [4.2.2.3. Application Layer](#4223-application-layer)
@@ -220,7 +220,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
         - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-    - [4.2.3. Bounded Context: IAM](#423-bounded-context-iam)
+    - [4.2.3. Bounded Context: Costing](#423-bounded-context-costing)
       - [4.2.3.1. Domain Layer](#4231-domain-layer)
       - [4.2.3.2. Interface Layer](#4232-interface-layer)
       - [4.2.3.3. Application Layer](#4233-application-layer)
@@ -229,7 +229,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
         - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-    - [4.2.4. Bounded Context: Management](#424-bounded-context-management)
+    - [4.2.4. Bounded Context: Procedure](#424-bounded-context-procedure)
       - [4.2.4.1. Domain Layer](#4241-domain-layer)
       - [4.2.4.2. Interface Layer](#4242-interface-layer)
       - [4.2.4.3. Application Layer](#4243-application-layer)
@@ -238,7 +238,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-    - [4.2.5. Bounded Context: Preparation](#425-bounded-context-preparation)
+    - [4.2.5. Bounded Context: IoT Monitoring](#425-bounded-context-iot-monitoring)
       - [4.2.5.1. Domain Layer](#4251-domain-layer)
       - [4.2.5.2. Interface Layer](#4252-interface-layer)
       - [4.2.5.3. Application Layer](#4253-application-layer)
@@ -247,15 +247,6 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
         - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-    - [4.2.6. Bounded Context: IoT Monitoring](#426-bounded-context-iot-monitoring)
-      - [4.2.6.1. Domain Layer](#4261-domain-layer)
-      - [4.2.6.2. Interface Layer](#4262-interface-layer)
-      - [4.2.6.3. Application Layer](#4263-application-layer)
-      - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
-      - [4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams](#4265--bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
-        - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-        - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -2465,7 +2456,7 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 
 ![Deployment View: CaféLab](<public/assets/images/C4/CafeLab-Deployment-dark.png>)
 ## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.1. Bounded Context: Coffees
+### 4.2.1. Bounded Context: IAM
 #### 4.2.1.1. Domain Layer
 #### 4.2.1.2. Interface Layer
 #### 4.2.1.3. Application Layer
@@ -2474,7 +2465,7 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
-### 4.2.2. Bounded Context: Cupping sessions
+### 4.2.2. Bounded Context: Management
 #### 4.2.2.1. Domain Layer
 #### 4.2.2.2. Interface Layer
 #### 4.2.2.3. Application Layer
@@ -2483,7 +2474,7 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
-### 4.2.3. Bounded Context: IAM
+### 4.2.3. Bounded Context: Costing
 #### 4.2.3.1. Domain Layer
 #### 4.2.3.2. Interface Layer
 #### 4.2.3.3. Application Layer
@@ -2492,8 +2483,14 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
-### 4.2.4. Bounded Context: Management
+### 4.2.4. Bounded Context: Procedure
+
+El __Procedure Bounded Context__ es responsable de la gestión de todos los procedimientos que logran llevar el café de grano a un exquisito café de especialidad. Dentro de esto, se ve el registro de la calibración del café, a continuación se registran las recetas, mismas que pueden ser guardadas denteo de portafolios y por último, se lleva la gestión de las sesiones de cata, en donde se registra tanto la perspectiva del barista como las opiniones de los consumidos. Por último, se incluye una seccion de defectos, en donde se lleva el registro de los incidentes o resultados negativos obtenidos. Esta sección es el núcleo que permite llevar a cabo una preparación ordena y mejor que la anterior.
+
 #### 4.2.4.1. Domain Layer
+
+
+
 #### 4.2.4.2. Interface Layer
 #### 4.2.4.3. Application Layer
 #### 4.2.4.4. Infrastructure Layer
@@ -2501,7 +2498,7 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
-### 4.2.5. Bounded Context: Preparation
+### 4.2.5. Bounded Context: IoT Monitoring
 #### 4.2.5.1. Domain Layer
 #### 4.2.5.2. Interface Layer
 #### 4.2.5.3. Application Layer
@@ -2510,15 +2507,6 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
-### 4.2.6. Bounded Context: IoT Monitoring
-#### 4.2.6.1. Domain Layer
-#### 4.2.6.2. Interface Layer
-#### 4.2.6.3. Application Layer
-#### 4.2.6.4. Infrastructure Layer
-#### 4.2.6.5.  Bounded Context Software Architecture Component Level Diagrams
-#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
-##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
-##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 # Conclusiones
 # Bibliografía
