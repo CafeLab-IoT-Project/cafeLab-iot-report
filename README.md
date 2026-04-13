@@ -247,7 +247,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
         - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-    - [4.2.6. Bounded Context: Profiles](#426-bounded-context-profiles)
+    - [4.2.6. Bounded Context: IoT Monitoring](#426-bounded-context-iot-monitoring)
       - [4.2.6.1. Domain Layer](#4261-domain-layer)
       - [4.2.6.2. Interface Layer](#4262-interface-layer)
       - [4.2.6.3. Application Layer](#4263-application-layer)
@@ -2504,7 +2504,7 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
-### 4.2.6. Bounded Context: Profiles
+### 4.2.6. Bounded Context: IoT Monitoring
 #### 4.2.6.1. Domain Layer
 #### 4.2.6.2. Interface Layer
 #### 4.2.6.3. Application Layer
