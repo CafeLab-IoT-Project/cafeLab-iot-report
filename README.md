@@ -148,8 +148,6 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-- [Capítulo II:  Requirements Elicitation \& Analysis](#capítulo-ii--requirements-elicitation--analysis)
-      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements-1)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivos](#13-segmentos-objetivos)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
@@ -171,7 +169,11 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [Tácticas](#tácticas-3)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+      - [Preguntas dirigidas a baristas profesionales:](#preguntas-dirigidas-a-baristas-profesionales)
+      - [Preguntas dirigidas a dueños/administradores de cafeterías de especialidad:](#preguntas-dirigidas-a-dueñosadministradores-de-cafeterías-de-especialidad)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+      - [Entrevistas a baristas profesionales](#entrevistas-a-baristas-profesionales)
+      - [Entrevistas a dueños o administradores de cafeterías de especialidad](#entrevistas-a-dueños-o-administradores-de-cafeterías-de-especialidad)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
@@ -2449,7 +2451,13 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+
+![Container View: CaféLab](<public/assets/images/C4/Contenedores-dark.png>)
+
+
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+
+![Deployment View: CaféLab](<public/assets/images/C4/CafeLab-Deployment-dark.png>)
 ## 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.1. Bounded Context: Coffees
 #### 4.2.1.1. Domain Layer
