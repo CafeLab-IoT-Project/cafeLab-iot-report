@@ -3386,7 +3386,168 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
 
 #### 4.2.4.3. Application Layer
 
+##### Command Services
 
+1. **DefectCommandServiceImpl**
+
+- **Propósito:** Ejecuta la creación de defectos de calidad persistiendo el agregado resultante.
+
+- **Métodos principales:**
+  - `handle(CreateDefectCommand command)`: Instancia `Defect` desde el comando, lo guarda y devuelve el agregado creado.
+
+- **Validaciones:**
+  - Delega las reglas de entrada en el constructor del agregado y en los records de comando/recurso; el servicio no añade comprobaciones adicionales antes de persistir.
+
+- **Dependencias:**
+  - `DefectRepository`: Persistencia del agregado `Defect`.
+
+2. **GrindCalibrationCommandServiceImpl**
+
+- **Propósito:** Gestiona la creación y actualización de calibraciones de molienda del usuario.
+
+- **Métodos principales:**
+  - `handle(CreateGrindCalibrationCommand command)`: Crea y persiste una nueva `GrindCalibration`.
+  - `handle(UpdateGrindCalibrationCommand command)`: Localiza la calibración por id y usuario, aplica el comando y guarda.
+
+- **Validaciones:**
+  - En actualización solo modifica si existe registro con `calibrationId` y `userId` coincidentes (`findByIdAndUserId`).
+
+- **Dependencias:**
+  - `GrindCalibrationRepository`: Consulta y persistencia de calibraciones.
+
+3. **RecipeCommandServiceImpl**
+
+- **Propósito:** Gestiona creación, actualización y borrado de recetas, incluyendo reglas sobre sesiones de cata y portafolios vinculados y borrado en cascada de ingredientes.
+
+- **Métodos principales:**
+  - `handle(CreateRecipeCommand command)`: Valida referencias opcionales, crea `Recipe` y la persiste.
+  - `handle(UpdateRecipeCommand command)`: Busca la receta por id y usuario; valida referencias; aplica `update` y persiste.
+  - `handle(DeleteRecipeCommand command)`: Si la receta existe para el usuario, elimina todos sus ingredientes y luego la receta.
+
+- **Validaciones:**
+  - Si `cuppingSessionId` no es nulo, comprueba que la sesión exista y pertenezca al usuario mediante `CuppingSessionQueryService` y `GetCuppingSessionByIdForUserQuery`.
+  - Si `portfolioId` no es nulo, comprueba que el portafolio exista y sea del usuario (`PortfolioRepository.findByIdAndUserId`).
+  - En actualización y borrado exige que la receta exista para el par `recipeId` / `userId`.
+  - Ante fallos de persistencia genéricos envuelve el error en mensajes de negocio legibles.
+
+- **Dependencias:**
+  - `RecipeRepository`: Persistencia y búsqueda de recetas por id y usuario.
+  - `IngredientRepository`: Borrado de ingredientes asociados a la receta al eliminar.
+  - `PortfolioRepository`: Comprobación de titularidad del portafolio opcional.
+  - `CuppingSessionQueryService`: Comprobación de titularidad de la sesión de cata opcional.
+
+4. **PortfolioCommandServiceImpl**
+
+- **Propósito:** Gestiona creación, actualización y eliminación de portafolios por usuario.
+
+- **Métodos principales:**
+  - `handle(CreatePortfolioCommand command)`: Crea `Portfolio`, persiste y devuelve el id generado.
+  - `handle(UpdatePortfolioCommand command)`: Busca por id y usuario, aplica `update` y persiste.
+  - `handle(DeletePortfolioCommand command)`: Elimina el portafolio si existe para el usuario.
+
+- **Validaciones:**
+  - Actualización y borrado solo proceden si `findByIdAndUserId` devuelve entidad; en error de persistencia la actualización devuelve vacío.
+
+- **Dependencias:**
+  - `PortfolioRepository`: Consulta por id y usuario y operaciones CRUD.
+
+5. **IngredientCommandServiceImpl**
+
+- **Propósito:** Gestiona alta, actualización y baja de ingredientes en base de datos.
+
+- **Métodos principales:**
+  - `handle(CreateIngredientCommand command)`: Crea `Ingredient` desde el comando y lo persiste.
+  - `handle(UpdateIngredientCommand command)`: Busca por id de ingrediente, aplica `update` y guarda.
+  - `handle(DeleteIngredientCommand command)`: Borra por id si existe.
+
+- **Validaciones:**
+  - La titularidad respecto a la receta no se valida aquí: el controlador / facade acota el acceso; el servicio confía en el id de ingrediente y en la integridad de persistencia.
+  - Ante excepciones en creación o actualización devuelve `Optional.empty()`; en borrado devuelve `false`.
+
+- **Dependencias:**
+  - `IngredientRepository`: Persistencia y existencia por id.
+
+6. **CuppingSessionCommandServiceImpl**
+
+- **Propósito:** Gestiona creación, actualización y eliminación de sesiones de cata del usuario.
+
+- **Métodos principales:**
+  - `handle(CreateCuppingSessionCommand command)`: Persiste una nueva `CuppingSession`.
+  - `handle(UpdateCuppingSessionCommand command)`: Busca por id de sesión y usuario, aplica `applyUpdate` y guarda.
+  - `delete(Long sessionId, Long userId)`: Elimina la sesión solo si existe para ese par id/usuario (no usa un `DeleteCommand` separado).
+
+- **Validaciones:**
+  - Actualización y borrado requieren coincidencia de `sessionId` y `userId` en repositorio (`findByIdAndUserId`).
+
+- **Dependencias:**
+  - `CuppingSessionRepository`: Consulta por id y usuario y operaciones de guardado y borrado.
+
+##### Query Services
+
+1. **DefectQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de defectos de calidad asociados a un usuario.
+
+- **Métodos principales:**
+  - `handle(GetDefectsByUserIdQuery query)`: Recupera todos los defectos del usuario, ordenados por fecha de creación descendente.
+  - `handle(GetDefectByIdForUserQuery query)`: Recupera un defecto por id solo si pertenece al usuario indicado.
+
+- **Dependencias:**
+  - `DefectRepository`: Persistencia y consultas de defectos por usuario e id.
+
+2. **GrindCalibrationQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de calibraciones de molienda por perfil.
+
+- **Métodos principales:**
+  - `handle(GetGrindCalibrationsByUserIdQuery query)`: Recupera todas las calibraciones del usuario, ordenadas por fecha de creación descendente.
+  - `handle(GetGrindCalibrationByIdForUserQuery query)`: Recupera una calibración por id solo si pertenece al usuario indicado.
+
+- **Dependencias:**
+  - `GrindCalibrationRepository`: Persistencia y consultas por usuario e id.
+
+3. **RecipeQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de recetas de preparación por usuario.
+
+- **Métodos principales:**
+  - `handle(GetRecipesByUserIdQuery query)`: Recupera todas las recetas del usuario, ordenadas por fecha de creación descendente.
+  - `handle(GetRecipeByIdForUserQuery query)`: Recupera una receta por id solo si pertenece al usuario indicado.
+
+- **Dependencias:**
+  - `RecipeRepository`: Persistencia y consultas de recetas por usuario e id.
+
+4. **IngredientQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de ingredientes asociados a una receta.
+
+- **Métodos principales:**
+  - `handle(GetIngredientsByRecipeIdQuery query)`: Recupera todos los ingredientes de la receta indicada.
+
+- **Dependencias:**
+  - `IngredientRepository`: Persistencia y consulta de ingredientes por id de receta.
+
+5. **PortfolioQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de portafolios por usuario.
+
+- **Métodos principales:**
+  - `handle(GetPortfoliosByUserIdQuery query)`: Recupera todos los portafolios del usuario, ordenados por fecha de creación descendente.
+  - `handle(GetPortfolioByIdForUserQuery query)`: Recupera un portafolio por id solo si pertenece al usuario indicado.
+
+- **Dependencias:**
+  - `PortfolioRepository`: Persistencia y consultas por usuario e id.
+
+6. **CuppingSessionQueryServiceImpl**
+
+- **Propósito:** Gestiona las consultas de sesiones de cata por usuario.
+
+- **Métodos principales:**
+  - `handle(GetCuppingSessionsByUserIdQuery query)`: Recupera todas las sesiones del usuario, ordenadas por fecha de sesión y creación descendente.
+  - `handle(GetCuppingSessionByIdForUserQuery query)`: Recupera una sesión por id solo si pertenece al usuario indicado.
+
+- **Dependencias:**
+  - `CuppingSessionRepository`: Persistencia y consultas por usuario e id.
 
 #### 4.2.4.4. Infrastructure Layer
 #### 4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams
