@@ -2845,7 +2845,7 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
   - `resultsJson`: Resultados en JSON.
   - `roastStyleNotes`: Notas de tueste u observaciones.
 
-##### Quries
+##### Queries
 
 1. **GetDefectByIdForUserQuery**
 
@@ -2929,10 +2929,465 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
 - **Atributos:**
   - `userId`: Identificador del usuario cuyas sesiones se listan.
 
-
-
 #### 4.2.4.2. Interface Layer
+
+##### Controllers
+
+1. **DefectsController**
+
+- **Propósito:** Expone la API de registro y consulta de defectos de calidad asociados al perfil autenticado.
+
+- **Endpoints:**
+  - `POST /api/v1/defects`: Crea un defecto; el `userId` se toma del JWT.
+  - `GET /api/v1/defects`: Lista todos los defectos del perfil autenticado.
+  - `GET /api/v1/defects/{defectId}`: Obtiene un defecto por id solo si pertenece al perfil.
+
+- **Dependencias:**
+  - `DefectCommandService`: Ejecuta el comando de creación de defectos.
+  - `DefectQueryService`: Resuelve las consultas por usuario y por id acotado al usuario.
+  - `CurrentProfileIdResolver`: Obtiene el id de perfil del usuario autenticado.
+
+2. **CalibrationsController**
+
+- **Propósito:** Gestiona las operaciones HTTP de calibraciones de molienda del perfil autenticado.
+
+- **Endpoints:**
+  - `POST /api/v1/calibrations`: Crea una calibración; el usuario se toma del JWT.
+  - `GET /api/v1/calibrations`: Lista las calibraciones del perfil autenticado.
+  - `GET /api/v1/calibrations/{calibrationId}`: Obtiene una calibración por id si pertenece al perfil.
+  - `PUT /api/v1/calibrations/{calibrationId}`: Actualiza una calibración del propio perfil.
+
+- **Dependencias:**
+  - `GrindCalibrationCommandService`: Alta y actualización de calibraciones.
+  - `GrindCalibrationQueryService`: Listado y detalle por usuario.
+  - `CurrentProfileIdResolver`: Resuelve el id de perfil del usuario autenticado.
+
+3. **RecipesController**
+
+- **Propósito:** Gestiona recetas de preparación del perfil autenticado, incluyendo ingredientes en listado y detalle.
+
+- **Endpoints:**
+  - `POST /api/v1/recipes`: Crea una receta; el dueño se infiere del JWT.
+  - `GET /api/v1/recipes`: Lista las recetas del perfil con sus ingredientes.
+  - `GET /api/v1/recipes/{recipeId}`: Obtiene una receta por id si pertenece al perfil, con ingredientes.
+  - `PUT /api/v1/recipes/{recipeId}`: Actualiza una receta del perfil.
+  - `DELETE /api/v1/recipes/{recipeId}`: Elimina una receta del perfil.
+
+- **Dependencias:**
+  - `RecipeCommandService`: Orquesta creación, actualización y borrado de recetas.
+  - `RecipeQueryService`: Controla el listado y detalle de las recetas.
+  - `CurrentProfileIdResolver`: Identifica el perfil autenticado para autorización y filtrado.
+
+4. **IngredientsController**
+
+- **Propósito:** Gestiona ingredientes bajo una receta concreta, verificando que la receta pertenezca al perfil autenticado.
+
+- **Endpoints:**
+  - `POST /api/v1/recipes/{recipeId}/ingredients`: Añade un ingrediente a la receta indicada.
+  - `GET /api/v1/recipes/{recipeId}/ingredients`: Lista los ingredientes de esa receta.
+  - `PUT /api/v1/recipes/{recipeId}/ingredients/{ingredientId}`: Actualiza un ingrediente de la receta.
+  - `DELETE /api/v1/recipes/{recipeId}/ingredients/{ingredientId}`: Elimina un ingrediente de la receta.
+
+- **Dependencias:**
+  - `RecipeCommandService`: Orquesta creación, actualización y borrado de ingredientes.
+  - `RecipeQueryService`: Controla el listado y detalle de los ingredientes.
+  - `CurrentProfileIdResolver`: Perfil autenticado para las comprobaciones de acceso.
+
+5. **PortfoliosController**
+
+- **Propósito:** Expone el CRUD de portafolios del perfil autenticado.
+
+- **Endpoints:**
+  - `POST /api/v1/portfolios`: Crea un portafolio; el usuario se toma del JWT.
+  - `GET /api/v1/portfolios`: Lista los portafolios del perfil.
+  - `GET /api/v1/portfolios/{portfolioId}`: Obtiene un portafolio por id si pertenece al perfil.
+  - `PUT /api/v1/portfolios/{portfolioId}`: Actualiza un portafolio del perfil.
+  - `DELETE /api/v1/portfolios/{portfolioId}`: Elimina un portafolio del perfil.
+
+- **Dependencias:**
+  - `RecipeCommandService`: Orquesta creación y borrado de portafolios.
+  - `RecipeQueryService`: Controla el listado de los portafolios.
+  - `CurrentProfileIdResolver`: Perfil autenticado para crear, listar y acotar por usuario.
+
+6. **CuppingSessionsController**
+
+- **Propósito:** Gestiona sesiones de cata del perfil autenticado (alta, listado, detalle, actualización y baja).
+
+- **Endpoints:**
+  - `POST /api/v1/cupping-sessions`: Crea una sesión de cata.
+  - `GET /api/v1/cupping-sessions`: Lista las sesiones del perfil.
+  - `GET /api/v1/cupping-sessions/{sessionId}`: Obtiene una sesión por id del propio perfil.
+  - `PUT /api/v1/cupping-sessions/{sessionId}`: Actualiza una sesión.
+  - `DELETE /api/v1/cupping-sessions/{sessionId}`: Elimina una sesión (respuesta 204 sin cuerpo).
+
+- **Dependencias:**
+  - `CuppingSessionCommandService`: Creación, actualización y borrado de sesiones.
+  - `CuppingSessionQueryService`: Listado y detalle por usuario.
+  - `CurrentProfileIdResolver`: Perfil autenticado para todas las operaciones.
+
+##### Resources
+
+1. **CreateDefectResource**
+
+- **Propósito:** Representa el cuerpo de la petición para registrar un nuevo defecto de calidad.
+
+- **Atributos:**
+  - `coffeeDisplayName`: Nombre o etiqueta del café evaluado.
+  - `coffeeRegion`: Región del café.
+  - `coffeeVariety`: Variedad del café.
+  - `coffeeTotalWeight`: Peso total de la muestra o lote (opcional en creación; no puede ser negativo si se envía).
+  - `name`: Nombre del defecto.
+  - `defectType`: Tipo de defecto.
+  - `defectWeight`: Peso atribuido al defecto.
+  - `percentage`: Porcentaje del defecto sobre el total.
+  - `probableCause`: Causa probable.
+  - `suggestedSolution`: Solución sugerida.
+
+2. **DefectResource**
+
+- **Propósito:** Representa un defecto persistido.
+
+- **Atributos:**
+  - `id`: Identificador único del defecto.
+  - `userId`: Identificador del usuario asociado al registro.
+  - `coffeeDisplayName`: Nombre o etiqueta del café evaluado.
+  - `coffeeRegion`: Región del café.
+  - `coffeeVariety`: Variedad del café.
+  - `coffeeTotalWeight`: Peso total considerado.
+  - `name`: Nombre del defecto.
+  - `defectType`: Tipo de defecto.
+  - `defectWeight`: Peso del defecto.
+  - `percentage`: Porcentaje del defecto.
+  - `probableCause`: Causa probable.
+  - `suggestedSolution`: Solución sugerida.
+
+3. **CreateGrindCalibrationResource**
+
+- **Propósito:** Representa los datos para crear un registro de calibración de molienda.
+
+- **Atributos:**
+  - `name`: Nombre o etiqueta de la calibración.
+  - `method`: Método o contexto de preparación.
+  - `equipment`: Equipo o molino.
+  - `grindNumber`: Ajuste o número de molido.
+  - `aperture`: Valor de apertura o parámetro de ajuste.
+  - `cupVolume`: Volumen de taza o etapa de referencia.
+  - `finalVolume`: Volumen final de referencia.
+  - `calibrationDate`: Fecha de la calibración.
+  - `comments`: Comentarios opcionales.
+  - `notes`: Notas opcionales.
+  - `sampleImage`: Imagen de muestra opcional.
+
+4. **GrindCalibrationResource**
+
+- **Propósito:** Representa una calibración de molienda.
+
+- **Atributos:**
+  - `id`: Identificador único del registro.
+  - `userId`: Usuario propietario de la calibración.
+  - `name`: Nombre o etiqueta de la calibración.
+  - `method`: Método o contexto de preparación.
+  - `equipment`: Equipo o molino.
+  - `grindNumber`: Ajuste o número de molido.
+  - `aperture`: Apertura o parámetro de ajuste.
+  - `cupVolume`: Volumen de taza o etapa de referencia.
+  - `finalVolume`: Volumen final de referencia.
+  - `calibrationDate`: Fecha de la calibración.
+  - `comments`: Comentarios.
+  - `notes`: Notas.
+  - `sampleImage`: Imagen de muestra.
+
+5. **UpdateGrindCalibrationResource**
+
+- **Propósito:** Representa los datos para actualizar una calibración de molienda existente.
+
+- **Atributos:**
+  - `name`: Nombre o etiqueta de la calibración.
+  - `method`: Método o contexto de preparación.
+  - `equipment`: Equipo o molino.
+  - `grindNumber`: Ajuste o número de molido.
+  - `aperture`: Valor de apertura o parámetro de ajuste.
+  - `cupVolume`: Volumen de taza o etapa de referencia.
+  - `finalVolume`: Volumen final de referencia.
+  - `calibrationDate`: Fecha de la calibración.
+  - `comments`: Comentarios opcionales.
+  - `notes`: Notas opcionales.
+  - `sampleImage`: Imagen de muestra opcional.
+
+6. **CreateRecipeResource**
+
+- **Propósito:** Representa los datos para crear una nueva receta de preparación.
+
+- **Atributos:**
+  - `name`: Nombre de la receta.
+  - `imageUrl`: URL de la imagen.
+  - `extractionMethod`: Método de extracción en texto.
+  - `extractionCategory`: Categoría de extracción en texto.
+  - `ratio`: Proporción café/agua u otra convención.
+  - `cuppingSessionId`: Identificador de sesión de cata vinculada, si aplica.
+  - `portfolioId`: Identificador de portafolio vinculado, si aplica.
+  - `preparationTime`: Tiempo de preparación.
+  - `steps`: Pasos de la preparación.
+  - `tips`: Consejos u observaciones (puede normalizarse a cadena vacía).
+  - `cupping`: Texto corto de cata (puede normalizarse a cadena vacía).
+  - `grindSize`: Tamaño de molido (puede normalizarse a valor por defecto si viene vacío).
+
+7. **RecipeResource**
+
+- **Propósito:** Representa una receta guardada, incluyendo ingredientes y metadatos de exposición.
+
+- **Atributos:**
+  - `id`: Identificador único de la receta.
+  - `userId`: Usuario dueño de la receta.
+  - `name`: Nombre de la receta.
+  - `imageUrl`: URL de la imagen.
+  - `extractionMethod`: Método de extracción.
+  - `extractionCategory`: Categoría de extracción.
+  - `ratio`: Proporción.
+  - `cuppingSessionId`: Sesión de cata vinculada, si existe.
+  - `portfolioId`: Portafolio vinculado, si existe.
+  - `preparationTime`: Tiempo de preparación.
+  - `steps`: Pasos de la preparación.
+  - `tips`: Consejos u observaciones.
+  - `cupping`: Texto corto de cata.
+  - `grindSize`: Tamaño de molido.
+  - `createdAt`: Marca temporal de creación expuesta por la API.
+  - `ingredients`: Lista de ingredientes de la receta.
+
+8. **UpdateRecipeResource**
+
+- **Propósito:** Representa los datos para actualizar una receta existente.
+
+- **Atributos:**
+  - `name`: Nombre de la receta.
+  - `imageUrl`: URL de la imagen.
+  - `extractionMethod`: Método de extracción en texto.
+  - `extractionCategory`: Categoría de extracción en texto.
+  - `ratio`: Proporción.
+  - `cuppingSessionId`: Sesión de cata vinculada, si aplica.
+  - `portfolioId`: Portafolio vinculado, si aplica.
+  - `preparationTime`: Tiempo de preparación.
+  - `steps`: Pasos de la preparación.
+  - `tips`: Consejos u observaciones (puede normalizarse a cadena vacía).
+  - `cupping`: Texto corto de cata (puede normalizarse a cadena vacía).
+  - `grindSize`: Tamaño de molido (puede normalizarse a valor por defecto si viene vacío).
+
+9. **CreateIngredientResource**
+
+- **Propósito:** Representa los datos para añadir un ingrediente a una receta (debe coincidir con el `recipeId` de la ruta).
+
+- **Atributos:**
+  - `recipeId`: Identificador de la receta.
+  - `name`: Nombre del ingrediente.
+  - `amount`: Cantidad.
+  - `unit`: Unidad de medida.
+
+10. **IngredientResource**
+
+- **Propósito:** Representa un ingrediente guardado.
+
+- **Atributos:**
+  - `id`: Identificador único del ingrediente.
+  - `recipeId`: Receta a la que pertenece.
+  - `name`: Nombre del ingrediente.
+  - `amount`: Cantidad.
+  - `unit`: Unidad de medida.
+
+11. **UpdateIngredientResource**
+
+- **Propósito:** Representa los datos para actualizar un ingrediente existente.
+
+- **Atributos:**
+  - `name`: Nombre del ingrediente.
+  - `amount`: Cantidad.
+  - `unit`: Unidad de medida.
+
+12. **CreatePortfolioResource**
+
+- **Propósito:** Representa los datos para crear un portafolio (el usuario se toma del JWT en el controlador).
+
+- **Atributos:**
+  - `name`: Nombre del portafolio.
+
+13. **PortfolioResource**
+
+- **Propósito:** Representa un portafolio existente en el sistema.
+
+- **Atributos:**
+  - `id`: Identificador único del portafolio.
+  - `userId`: Usuario dueño del portafolio.
+  - `name`: Nombre del portafolio.
+  - `createdAt`: Marca temporal de creación expuesta por la API.
+
+14. **UpdatePortfolioResource**
+
+- **Propósito:** Representa los datos para actualizar el nombre de un portafolio.
+
+- **Atributos:**
+  - `name`: Nuevo nombre del portafolio.
+
+15. **CreateCuppingSessionResource**
+
+- **Propósito:** Representa los datos para crear una sesión de cata.
+
+- **Atributos:**
+  - `name`: Nombre o etiqueta de la sesión.
+  - `origin`: Origen del café.
+  - `variety`: Variedad del café.
+  - `processing`: Proceso de beneficio.
+  - `sessionDate`: Fecha de la sesión.
+  - `favorite`: Indica si se marca como favorita (puede ser nula y tratarse como falsa por defecto).
+  - `resultsJson`: Resultados en JSON.
+  - `roastStyleNotes`: Notas de tueste u observaciones.
+
+16. **CuppingSessionResource**
+
+- **Propósito:** Representa una sesión de cata guardada en el sistema.
+
+- **Atributos:**
+  - `id`: Identificador único de la sesión.
+  - `userId`: Usuario propietario de la sesión.
+  - `name`: Nombre o etiqueta de la sesión.
+  - `origin`: Origen del café.
+  - `variety`: Variedad del café.
+  - `processing`: Proceso de beneficio.
+  - `sessionDate`: Fecha de la sesión.
+  - `favorite`: Indica si está marcada como favorita.
+  - `resultsJson`: Resultados en JSON.
+  - `roastStyleNotes`: Notas de tueste u observaciones.
+
+17. **UpdateCuppingSessionResource**
+
+- **Propósito:** Representa los datos para actualizar una sesión de cata existente.
+
+- **Atributos:**
+  - `name`: Nombre o etiqueta de la sesión.
+  - `origin`: Origen del café.
+  - `variety`: Variedad del café.
+  - `processing`: Proceso de beneficio.
+  - `sessionDate`: Fecha de la sesión.
+  - `favorite`: Indica si está marcada como favorita.
+  - `resultsJson`: Resultados en JSON.
+  - `roastStyleNotes`: Notas de tueste u observaciones.
+
+##### Transformers
+
+1. **CreateDefectCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreateDefectResource` más el identificador de usuario en un `CreateDefectCommand` del dominio.
+
+- **Método principal:**
+  - `toCommandFromResource(Long userId, CreateDefectResource resource)`: Arma el comando de creación; normaliza cadenas opcionales vacías a nulo en región y variedad.
+
+2. **DefectResourceFromEntityAssembler**
+
+- **Propósito:** Convierte el agregado `Defect` en un `DefectResource` para la respuesta HTTP.
+
+- **Método principal:**
+  - `toResourceFromEntity(Defect entity)`: Mapea identificador, usuario y todos los campos expuestos del defecto al recurso.
+
+3. **CreateGrindCalibrationCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreateGrindCalibrationResource` y el `userId` en un `CreateGrindCalibrationCommand`.
+
+- **Método principal:**
+  - `toCommand(Long userId, CreateGrindCalibrationResource resource)`: Construye el comando de alta de calibración con los campos del recurso.
+
+4. **UpdateGrindCalibrationCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `UpdateGrindCalibrationResource` en un `UpdateGrindCalibrationCommand`, incluyendo ids de calibración y usuario.
+
+- **Método principal:**
+  - `toCommand(Long calibrationId, Long userId, UpdateGrindCalibrationResource resource)`: Construye el comando de actualización a partir del cuerpo de la petición y la ruta.
+
+5. **GrindCalibrationResourceFromEntityAssembler**
+
+- **Propósito:** Convierte el agregado `GrindCalibration` en un `GrindCalibrationResource`.
+
+- **Método principal:**
+  - `toResourceFromEntity(GrindCalibration e)`: Mapea el estado persistido del agregado al DTO de salida.
+
+6. **CreateRecipeCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreateRecipeResource` y el `userId` en un `CreateRecipeCommand`.
+
+- **Método principal:**
+  - `toCommand(Long userId, CreateRecipeResource resource)`: Construye el comando de creación de receta con todos los campos del recurso.
+
+7. **UpdateRecipeCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `UpdateRecipeResource` en un `UpdateRecipeCommand` asociando usuario e id de receta.
+
+- **Método principal:**
+  - `toCommandFromResource(Long userId, Long recipeId, UpdateRecipeResource resource)`: Construye el comando de actualización para la receta indicada.
+
+8. **RecipeResourceFromEntityAssembler**
+
+- **Propósito:** Convierte el agregado `Recipe` y la lista de `Ingredient` en un `RecipeResource` (incluye conversión de enums a texto y fecha de creación).
+
+- **Método principal:**
+  - `toResourceFromEntity(Recipe entity, List<Ingredient> ingredients)`: Arma el recurso de receta y anida los ingredientes como `IngredientResource`.
+
+9. **CreateIngredientCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreateIngredientResource` en un `CreateIngredientCommand`.
+
+- **Método principal:**
+  - `toCommandFromResource(CreateIngredientResource resource)`: Construye el comando de creación a partir del cuerpo de la petición.
+
+10. **UpdateIngredientCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `UpdateIngredientResource` y el id de ingrediente en un `UpdateIngredientCommand`.
+
+- **Método principal:**
+  - `toCommandFromResource(Long ingredientId, UpdateIngredientResource resource)`: Construye el comando de actualización del ingrediente.
+
+11. **CreatePortfolioCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreatePortfolioResource` y el `userId` en un `CreatePortfolioCommand`.
+
+- **Método principal:**
+  - `toCommand(Long userId, CreatePortfolioResource resource)`: Construye el comando de creación de portafolio.
+
+12. **UpdatePortfolioCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `UpdatePortfolioResource` en un `UpdatePortfolioCommand` con usuario e id de portafolio.
+
+- **Método principal:**
+  - `toCommandFromResource(Long userId, Long portfolioId, UpdatePortfolioResource resource)`: Construye el comando de actualización del portafolio.
+
+13. **PortfolioResourceFromEntityAssembler**
+
+- **Propósito:** Convierte el agregado `Portfolio` en un `PortfolioResource`.
+
+- **Método principal:**
+  - `toResourceFromEntity(Portfolio entity)`: Mapea id, usuario, nombre y fecha de creación al recurso de salida.
+
+14. **CreateCuppingSessionCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `CreateCuppingSessionResource` y el `userId` en un `CreateCuppingSessionCommand`.
+
+- **Método principal:**
+  - `toCommand(Long userId, CreateCuppingSessionResource r)`: Construye el comando aplicando el valor por defecto de favorito cuando el recurso lo trae nulo.
+
+15. **UpdateCuppingSessionCommandFromResourceAssembler**
+
+- **Propósito:** Convierte un `UpdateCuppingSessionResource` en un `UpdateCuppingSessionCommand` con ids de sesión y usuario.
+
+- **Método principal:**
+  - `toCommand(Long sessionId, Long userId, UpdateCuppingSessionResource r)`: Construye el comando de actualización de la sesión de cata.
+
+16. **CuppingSessionResourceFromEntityAssembler**
+
+- **Propósito:** Convierte el agregado `CuppingSession` en un `CuppingSessionResource`.
+
+- **Método principal:**
+  - `toResource(CuppingSession e)`: Mapea el agregado al recurso de respuesta de la API.
+
 #### 4.2.4.3. Application Layer
+
+
+
 #### 4.2.4.4. Infrastructure Layer
 #### 4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
