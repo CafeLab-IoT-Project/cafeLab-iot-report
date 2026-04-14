@@ -2469,8 +2469,6 @@ El barista se autentica en IAM (paso 1) y crea un perfil de tueste en Management
 Un usuario nuevo se registra en IAM (paso 1) y selecciona un plan de suscripción (paso 2). IAM coordina el proceso de pago con la pasarela de pago externa (paso 3-4). Una vez confirmado el pago, IAM activa la suscripción y emite un JWT que incluye los roles y el plan activo del usuario (paso 5). A partir de ese momento, los bounded contexts Management (paso 6) y Procedure (paso 7) validan el JWT en cada request para habilitar o restringir funcionalidades según el plan contratado. El usuario recibe acceso concedido a las funcionalidades correspondientes (paso 8).
 
 
-*[Insertar aquí las capturas de pantalla de los diagramas de Domain Storytelling elaborados en la herramienta de modelado del equipo]*
-
 ---
 
 #### 4.1.1.3. Bounded Context Canvases
