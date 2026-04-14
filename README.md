@@ -2492,11 +2492,11 @@ Este contexto depende de datos provenientes de Management y Procedure, consolida
 <h3>IoT Monitoring Context</h3>
 
 <p>
-El Monitoreo IoT Context se encarga de la recolección, procesamiento y análisis de datos provenientes de sensores. Su objetivo es supervisar condiciones ambientales como temperatura y humedad, permitiendo detectar anomalías y generar alertas.
+El IoT Monitoring Context es el componente responsable de la recolección, procesamiento y supervisión continua de datos provenientes del dispositivo IoT desplegado en el almacenamiento del café verde. Su función principal es transformar variables físicas de temperatura y humedad en información accionable para la toma de decisiones, evaluándolas frente a umbrales predefinidos para la detección temprana de anomalías. Ante cualquier desviación de las condiciones óptimas de conservación, se activan alertas y acciones correctivas como notificaciones o actuadores.
 </p>
 
 <p>
-Este contexto es fundamental para automatizar el control del proceso y se integra con Procedure para ajustar parámetros en tiempo real.
+El sistema también gestiona la validación de datos, la persistencia de históricos y el manejo de errores en sensores, facilitando auditorías y reportes. En definitiva, este contexto facilita la transición hacia un modelo automatizado y basado en datos, minimizando el riesgo humano y garantizando las condiciones ideales en la cadena de almacenamiento.
 </p>
 
 ![Context: IoT Monitoring](<public/assets/images/chapter-4/contexts-discovery/monitoreoiot.jpeg>)
