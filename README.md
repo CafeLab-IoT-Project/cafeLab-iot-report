@@ -2456,7 +2456,105 @@ El Candidate Context Discovery nos permitió transformar el conocimiento obtenid
 </p>
 
 #### 4.1.1.2. Domain Message Flows Modeling
+
+Para visualizar cómo colaboran los bounded contexts del sistema CafeLab, se aplicó la técnica de **Domain Storytelling**. Esta técnica permite narrar los flujos de mensajes desde la perspectiva de los actores del dominio (Dueño de Cafetería y Barista Profesional), identificando qué contexto emite un mensaje, cuál lo recibe y qué evento o comando genera. Se modelaron tres flujos principales de negocio:
+
+**Flujo 1 — Registro de lote y monitoreo IoT:**
+El dueño se autentica en IAM, que valida sus credenciales y emite un JWT con su rol (paso 1). Con el token validado, el dueño registra un nuevo lote de café verde en el bounded context Management (paso 2). Management notifica al bounded context Costing para inicializar el registro de costos del lote (paso 3). De forma paralela e independiente, el sensor TrackSilo envía lecturas continuas de temperatura y humedad al bounded context IoT Monitoring (paso 4). Cuando una lectura supera los umbrales configurados, IoT Monitoring emite un evento que activa el envío de una alerta por email al dueño via Brevo (paso 5) y envía la señal de activación al actuador deshumedecedor via EdgeActuatorClient (paso 6).
+
+**Flujo 2 — Barista registra perfil de tueste y sesión de cata:**
+El barista se autentica en IAM (paso 1) y crea un perfil de tueste en Management vinculado a un lote existente (paso 2-3). Luego inicia una sesión de cata estructurada en el bounded context Procedure (paso 4), registrando notas sensoriales. Al completar la sesión, Procedure publica un evento que Management consume para establecer la correlación tueste-sabor (paso 5). Simultáneamente, Costing actualiza el costo de producción del lote (paso 6). El barista puede visualizar el perfil sensorial generado con el resultado de la correlación (paso 7).
+
+**Flujo 3 — Registro, suscripción y control de acceso por plan:**
+Un usuario nuevo se registra en IAM (paso 1) y selecciona un plan de suscripción (paso 2). IAM coordina el proceso de pago con la pasarela de pago externa (paso 3-4). Una vez confirmado el pago, IAM activa la suscripción y emite un JWT que incluye los roles y el plan activo del usuario (paso 5). A partir de ese momento, los bounded contexts Management (paso 6) y Procedure (paso 7) validan el JWT en cada request para habilitar o restringir funcionalidades según el plan contratado. El usuario recibe acceso concedido a las funcionalidades correspondientes (paso 8).
+
+
+*[Insertar aquí las capturas de pantalla de los diagramas de Domain Storytelling elaborados en la herramienta de modelado del equipo]*
+
+---
+
 #### 4.1.1.3. Bounded Context Canvases
+
+El equipo diseñó el Bounded Context Canvas para cada uno de los cinco bounded contexts identificados en CafeLab, siguiendo el proceso iterativo de: Context Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, Capability Analysis, Capability Layering, Dependencies Capture y Design Critique. De esta manera, los bounded contexts se presentan en orden de importancia de dominio.
+
+---
+
+**BC-01: IAM — Identity & Access Management**
+*Clasificación: Supporting Subdomain*
+
+- **Descripción:** Gestiona la identidad digital de todos los actores del sistema. Emite y valida tokens JWT. Controla el acceso según el plan de suscripción activo del usuario. Actúa como Customer/Supplier upstream para todos los demás bounded contexts.
+- **Reglas de negocio clave:** Un usuario debe tener una suscripción activa para acceder a módulos premium. Los tokens JWT expiran cada 24 h. El rol (Dueño / Barista) determina permisos dentro de cada bounded context. No se permite el registro sin email verificado.
+- **Lenguaje ubicuo:** User, Credential, JWT Token, Role, Plan, Subscription, Permission, Scope.
+- **Capacidades:** Registro e inicio de sesión, emisión de JWT con roles, gestión de suscripciones, validación de acceso por plan.
+- **Capas:** Core (Authn/Authz), Soporte (Plan lookup), Infraestructura (JWT, Bcrypt, DB).
+- **Mensajes entrantes:** `RegisterUserCommand`, `LoginCommand`, `SubscribeToPlanCommand`.
+- **Mensajes salientes:** `UserRegisteredEvent`, `UserAuthenticatedEvent`, `SubscriptionActivatedEvent`.
+- **Dependencias upstream:** Pasarela de Pago (externo). **Downstream:** Management, Procedure, Costing, IoT Monitoring.
+
+<img src="public/assets/images/chapter-4/bounded-context-canvases/bc_iam.png"/>
+
+
+---
+
+**BC-02: Management — Gestión de Recursos del Café**
+*Clasificación: Core Domain*
+
+- **Descripción:** Corazón operativo de CafeLab. Gestiona toda la trazabilidad del café: desde el ingreso del proveedor y el lote de café verde, pasando por el proceso de tueste, hasta el inventario de café tostado disponible.
+- **Reglas de negocio clave:** Un lote debe estar asociado a un proveedor registrado. El perfil de tueste solo puede vincularse a un lote activo. El inventario se actualiza automáticamente al registrar una sesión de cata o tueste. Un lote puede tener múltiples perfiles de tueste asociados.
+- **Lenguaje ubicuo:** Supplier, CoffeeBatch, RoastProfile, Inventory, StockEntry, Origin, Processing.
+- **Capacidades:** Registro de proveedores, trazabilidad de lotes, gestión de perfiles de tueste, control de inventario, reportes de trazabilidad.
+- **Capas:** Core (Lotes y tueste), Soporte (Proveedores, inventario), Infraestructura (JPA, MySQL).
+- **Mensajes entrantes:** `RegisterSupplierCommand`, `RegisterBatchCommand`, `CreateRoastProfileCommand`, `UpdateInventoryCommand`.
+- **Mensajes salientes:** `BatchRegisteredEvent`, `RoastProfileCreatedEvent`, `InventoryUpdatedEvent`.
+- **Dependencias:** IAM (validar JWT/roles), IoT Monitoring (condiciones del lote via ACL). **Downstream:** Procedure (Shared Kernel: Batch), Costing (Customer/Supplier).
+
+<img src="public/assets/images/chapter-4/bounded-context-canvases/bc_management.png"/>
+---
+
+**BC-03: IoT Monitoring — Monitoreo Ambiental TrackSilo**
+*Clasificación: Core Domain*
+
+- **Descripción:** Gestiona el ciclo completo de monitoreo ambiental del almacén de café. Recibe lecturas del sensor TrackSilo (ESP32), compara con umbrales configurados, activa el actuador de deshumidificación si es necesario y notifica al dueño por email via Brevo.
+- **Reglas de negocio clave:** Si humedad supera el umbral → activar actuador. Desactivar actuador solo si condiciones óptimas por 5 minutos consecutivos (histéresis). Sensor considerado OFFLINE si no envía lecturas en más de 2 minutos. Umbrales válidos: HR entre 40%–80%.
+- **Lenguaje ubicuo:** Sensor, SensorReading, StorageThresholds, StorageMonitor, ActuatorEvent, SensorStatus (ONLINE/OFFLINE), HumidityLevel.
+- **Capacidades:** Ingesta de lecturas de sensor, evaluación de umbrales, activación de actuador, notificación por email, historial ambiental, estado de conectividad.
+- **Capas:** Core (evaluación de umbrales y control de actuador), Soporte (notificaciones), Infraestructura (EdgeActuatorClient, Brevo API, JPA).
+- **Mensajes entrantes:** `RegisterSensorReadingCommand`, `UpdateStorageThresholdsCommand`, `CreateSensorCommand`.
+- **Mensajes salientes:** `ThresholdExceededEvent`, `ActuatorActivatedEvent`, `SensorOfflineEvent`.
+- **Dependencias externas:** TrackSilo/ESP32 (lectura), EdgeActuatorClient / Raspberry Pi (actuador), Brevo Email API, IAM (JWT). **Downstream:** Management (condiciones del lote).
+<img src="public/assets/images/chapter-4/bounded-context-canvases/bc_monitoring.png"/>
+---
+
+**BC-04: Procedure — Ejecución Técnica del Café**
+*Clasificación: Core Domain*
+
+- **Descripción:** Gestiona todos los procesos técnicos de ejecución del barista: sesiones de cata estructuradas (SCA), calibraciones de molienda, recetas de preparación y biblioteca de defectos de tueste. Adopta el modelo de Lote definido en Management bajo el patrón Conformist.
+- **Reglas de negocio clave:** Una sesión de cata debe estar asociada a un lote activo. Las recetas deben referenciar un método de preparación válido. La calibración de molienda se vincula a un equipo y un perfil de tueste. El barista solo puede editar sus propias sesiones de cata.
+- **Lenguaje ubicuo:** CuppingSession, TastingNote, SensoryProfile, GrindCalibration, Recipe, BrewMethod, RoastDefect.
+- **Capacidades:** Sesiones de cata SCA, registro de calibraciones, gestión de recetas, biblioteca de defectos, correlación tueste-sabor.
+- **Capas:** Core (Cata y recetas), Soporte (Defectos, calibración), Infraestructura (JPA, MySQL).
+- **Mensajes entrantes:** `StartCuppingSessionCommand`, `RegisterTastingNoteCommand`, `CreateRecipeCommand`.
+- **Mensajes salientes:** `CuppingSessionCompletedEvent`, `SensoryProfileGeneratedEvent`.
+- **Dependencias:** Management – Conformist (CoffeeBatch, RoastProfile), IAM (JWT/roles).
+
+<img src="public/assets/images/chapter-4/bounded-context-canvases/bc_procedure.png"/>
+
+---
+
+**BC-05: Costing — Gestión de Costos y Rentabilidad**
+*Clasificación: Supporting Subdomain*
+
+- **Descripción:** Calcula y registra los costos asociados a cada lote y sesión de tueste. Analiza la merma producida y genera reportes de rentabilidad para el dueño. Recibe datos de Management como Customer en la relación Customer/Supplier.
+- **Reglas de negocio clave:** El costo de un lote incluye precio de compra + costo de tueste + merma. La merma se calcula como: (peso verde – peso tostado) / peso verde × 100. Un margen negativo genera una alerta de rentabilidad. Los costos no pueden modificarse una vez cerrado el lote.
+- **Lenguaje ubicuo:** CostRecord, BatchCost, WastageRate, ProfitMargin, ProductionCost, EfficiencyReport.
+- **Capacidades:** Registro de costos de lote, cálculo de merma, análisis de eficiencia, reportes de rentabilidad.
+- **Capas:** Core (Cálculo de costos), Soporte (Reportes y alertas), Infraestructura (JPA, MySQL).
+- **Mensajes entrantes:** `RegisterBatchCostCommand`, `UpdateWastageCommand`.
+- **Mensajes salientes:** `CostCalculatedEvent`, `LowMarginAlertEvent`.
+- **Dependencias:** Management – Customer/Supplier (datos de lote), IAM (JWT/roles).
+
+<img src="public/assets/images/chapter-4/bounded-context-canvases/bc_costing.png"/>
+
 ### 4.1.2. Context Mapping
 En esta sección desarrollamos un conjunto de Context Maps para visualizar cómo se relacionan los bounded contexts identificados en Cafelab.
 A partir del análisis del dominio, exploramos distintas alternativas de diseño evaluando cómo cambiaría la arquitectura si movemos, agrupamos o dividimos capacidades entre contextos.
