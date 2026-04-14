@@ -3728,8 +3728,13 @@ El **Procedure Bounded Context** está compuesto por los siguientes módulos pri
 - Incluye **repositorios** y componentes que conectan la lógica de negocio con recursos externos, en particular la **base de datos** donde se almacenan las entidades de procedimiento.
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+![alt text](<public/assets/images/C4/domain-layer-procedure.jpg>)
+
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
+
 ### 4.2.5. Bounded Context: IoT Monitoring
 Este Bounded Context es responsable del monitoreo ambiental del almacén de café verde mediante el sensor TrackSilo. Gestiona la recepción y persistencia de lecturas de humedad, la verificación automática de umbrales configurados por el dueño, la activación del actuador de deshumidificación y el envío de alertas por email cuando las condiciones salen del rango óptimo. También provee el historial ambiental por lote para que baristas y dueños puedan tomar decisiones informadas.
 #### 4.2.5.1. Domain Layer
