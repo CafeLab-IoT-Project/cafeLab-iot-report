@@ -2444,19 +2444,76 @@ Con este enfoque transitamos de una visión exploratoria a una más técnica y o
 #### 4.1.1.1. Candidate Context Discovery
 
 <p>
-Luego de haber definido el comportamiento del sistema a través del Design-Level Event Storming, el equipo procedió a realizar el Candidate Context Discovery con el objetivo de identificar y delimitar los diferentes bounded contexts dentro del dominio de CaféLab. Esta etapa nos permitió organizar el sistema en módulos coherentes, cada uno con responsabilidades claramente definidas, facilitando su diseño, desarrollo y escalabilidad.
+Se analizó el modelo de dominio obtenido a partir del Big Picture Event Storming con el objetivo de identificar y delimitar los bounded contexts de nuestro sistema. Para ello, aplicamos la técnica start-with-value y así reconocimos las áreas del dominio con mayor valor para el negocio. A partir de este análisis, se lograron agrupar los elementos del dominio en bounded contexts claramente definidos, los cuales representan distintas áreas funcionales del sistema.
+</p>
+
+<h3>Management Context</h3>
+
+<p>
+Este bounded context agrupa todas las funcionalidades relacionadas con la gestión general del sistema, incluyendo la administración de proveedores, lotes de café y configuraciones generales. Su responsabilidad principal es centralizar la información base del negocio, permitiendo su correcta organización y mantenimiento.
 </p>
 
 <p>
-Este proceso permitió transformar el conocimiento del dominio en una estructura arquitectónica sólida, alineada con los principios de Domain-Driven Design (DDD).
+Este contexto interactúa con otros como Procedure y Costing debido a que proporciona información necesaria para la ejecución de procesos y el cálculo de costos.
 </p>
 
+![Context: Management](<public/assets/images/chapter-4/contexts-discovery/management.jpeg>)
 
+---
 
+<h3>Procedure Context</h3>
 
 <p>
-El Candidate Context Discovery nos permitió transformar el conocimiento obtenido en etapas anteriores en una estructura clara y organizada del sistema. La identificación de aggregates y bounded contexts nos facilitó la comprensión de los límites del dominio, permitiendo diseñar una solución modular, escalable y alineada con los principios de Domain-Driven Design. Este resultado constituye la base sólida necesaria para la implementación técnica de nuestro sistema.
+El Procedure Context se enfoca en la ejecución de procesos operativos del negocio, tales como la creación y gestión de perfiles de tueste, recetas y calibraciones. Este contexto representa el core operativo del sistema, donde se definen y ejecutan los procedimientos relacionados con el tratamiento del café.
 </p>
+
+<p>
+Se relaciona directamente con Monitoreo IoT para obtener datos en tiempo real y con Costing para evaluar el impacto económico de los procesos.
+</p>
+
+![Context: Procedure](<public/assets/images/chapter-4/contexts-discovery/procedure.jpeg>)
+
+---
+
+<h3>Costing Context</h3>
+
+<p>
+Nuestro Costing Context está orientado al análisis y cálculo de costos asociados a los procesos del negocio. Incluye la evaluación de merma, costos por lote y precio en taza, proporcionando información clave para la toma de decisiones.
+</p>
+
+<p>
+Este contexto depende de datos provenientes de Management y Procedure, consolidando información para generar métricas y reportes.
+</p>
+
+![Context: Costing](<public/assets/images/chapter-4/contexts-discovery/costing.jpeg>)
+
+---
+
+<h3>IoT Monitoring Context</h3>
+
+<p>
+El Monitoreo IoT Context se encarga de la recolección, procesamiento y análisis de datos provenientes de sensores. Su objetivo es supervisar condiciones ambientales como temperatura y humedad, permitiendo detectar anomalías y generar alertas.
+</p>
+
+<p>
+Este contexto es fundamental para automatizar el control del proceso y se integra con Procedure para ajustar parámetros en tiempo real.
+</p>
+
+![Context: IoT Monitoring](<public/assets/images/chapter-4/contexts-discovery/monitoreoiot.jpeg>)
+
+---
+
+<h3>IAM Context</h3>
+
+<p>
+Este bounded context gestiona la autenticación y autorización de usuarios dentro del sistema. Incluye funcionalidades como registro, inicio de sesión y control de acceso, garantizando la seguridad y privacidad de la información.
+</p>
+
+<p>
+IAM actúa como un contexto transversal que interactúa con todos los demás, controlando qué acciones puede realizar cada tipo de usuario.
+</p>
+
+![Context: IAM](<public/assets/images/chapter-4/contexts-discovery/iam.jpeg>)
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
@@ -2471,8 +2528,6 @@ El barista se autentica en IAM (paso 1) y crea un perfil de tueste en Management
 **Flujo 3 — Registro, suscripción y control de acceso por plan:**
 Un usuario nuevo se registra en IAM (paso 1) y selecciona un plan de suscripción (paso 2). IAM coordina el proceso de pago con la pasarela de pago externa (paso 3-4). Una vez confirmado el pago, IAM activa la suscripción y emite un JWT que incluye los roles y el plan activo del usuario (paso 5). A partir de ese momento, los bounded contexts Management (paso 6) y Procedure (paso 7) validan el JWT en cada request para habilitar o restringir funcionalidades según el plan contratado. El usuario recibe acceso concedido a las funcionalidades correspondientes (paso 8).
 
-
----
 
 #### 4.1.1.3. Bounded Context Canvases
 
@@ -2510,6 +2565,7 @@ El equipo diseñó el Bounded Context Canvas para cada uno de los cinco bounded 
 - **Dependencias:** IAM (validar JWT/roles), IoT Monitoring (condiciones del lote via ACL). **Downstream:** Procedure (Shared Kernel: Batch), Costing (Customer/Supplier).
 
 <img src="public/assets/images/chapter-4/bounded-context-canvases/bc_management.png"/>
+
 ---
 
 **BC-03: IoT Monitoring — Monitoreo Ambiental TrackSilo**
@@ -2524,6 +2580,7 @@ El equipo diseñó el Bounded Context Canvas para cada uno de los cinco bounded 
 - **Mensajes salientes:** `ThresholdExceededEvent`, `ActuatorActivatedEvent`, `SensorOfflineEvent`.
 - **Dependencias externas:** TrackSilo/ESP32 (lectura), EdgeActuatorClient / Raspberry Pi (actuador), Brevo Email API, IAM (JWT). **Downstream:** Management (condiciones del lote).
 <img src="public/assets/images/chapter-4/bounded-context-canvases/bc_monitoring.png"/>
+
 ---
 
 **BC-04: Procedure — Ejecución Técnica del Café**
