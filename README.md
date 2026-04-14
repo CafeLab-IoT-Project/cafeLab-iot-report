@@ -1202,6 +1202,104 @@ La identificación de estos puntos permitió enfocar la atención en los aspecto
 
 ![Step 4: Pivotal Points](<public/assets/images/chapter-2/eventStorming/Step4-PivotalPoint.jpeg>)
 
+---
+
+<h3>Step 5: Commands</h3>
+<p>
+En esta etapa, nuestro equipo identificó los comandos que representan las acciones iniciadas por los usuarios o sistemas externos sobre el dominio. Los comandos constituyen la intención de realizar una operación específica y son el punto de partida para la generación de eventos dentro del sistema.
+</p>
+
+<p>
+Durante el análisis, se definieron comandos asociados a múltiples funcionalidades, como la creación y actualización de perfiles de tueste, el registro y edición de proveedores, la gestión de lotes de café, la selección de recetas, así como el ingreso de datos provenientes de sensores IoT. También se identificaron comandos relacionados con la autenticación de usuarios, selección de planes y gestión de información financiera.
+</p>
+
+<p>
+Esta etapa nos permitió estructurar las interacciones del usuario con el sistema, clarificando qué acciones son posibles y cómo estas desencadenan cambios dentro del dominio.
+</p>
+
+![Step 5: Commands](<public/assets/images/chapter-2/eventStorming/Step5-Commands.jpeg>)
+
+---
+
+<h3>Step 6: Policies</h3>
+<p>
+Posteriormente, identificamos las políticas del sistema, las cuales representan reglas de negocio que definen cómo reaccionar ante determinados eventos. Estas políticas permiten automatizar decisiones dentro de nuestro sistema, conectando eventos con nuevos comandos o acciones.
+</p>
+
+<p>
+En el caso de CaféLab, definimos políticas relacionadas con la validación de datos ingresados, la detección de condiciones anómalas en los sensores, la generación de alertas cuando se superan ciertos umbrales y la activación o desactivación de actuadores. Asimismo, consideramos reglas para el manejo de errores, control de sesiones y procesamiento de información.
+</p>
+
+![Step 6: Policies](<public/assets/images/chapter-2/eventStorming/Step6-Policies.jpeg>)
+
+---
+
+<h3>Step 7: Read Models</h3>
+<p>
+En esta fase, se definieron los modelos de lectura o read models, los cuales representan la información que el sistema expone a los usuarios para su consulta. Estos modelos están optimizados para la visualización y no necesariamente reflejan la estructura interna del dominio.
+</p>
+
+<p>
+Identificamos diferentes tipos de información relevante para los usuarios, tales como reportes de consumo de lotes, resúmenes de costos, visualización de datos de sensores, gráficos de temperatura y humedad, historial de eventos, así como resultados de sesiones de cata y comparaciones de perfiles de tueste.
+</p>
+
+<p>
+La definición de estos modelos nos clarificó qué información es crítica para la toma de decisiones y cómo debe ser presentada de manera clara y eficiente al usuario final.
+</p>
+
+![Step 7: Read Models](<public/assets/images/chapter-2/eventStorming/Step7-ReadModels.jpeg>)
+
+---
+
+<h3>Step 8: External Systems</h3>
+<p>
+En esta etapa, identificamos los sistemas externos con los cuales interactúa nuestra solución. Estos representan dependencias fuera del dominio principal, pero que son necesarias para el correcto funcionamiento del sistema.
+</p>
+
+<p>
+Consideramos como sistemas externos los sensores IoT encargados de medir variables ambientales, servicios de notificación para el envío de alertas, así como posibles integraciones con plataformas de procesamiento de datos. Así mismo, se contemplaron servicios relacionados con la autenticación de usuarios y gestión de pagos en caso de suscripciones.
+</p>
+
+<p>
+Esta etapa nos permitió delimitar claramente qué componentes pertenecen al sistema y cuáles pueden dependen de terceros, facilitando el diseño de una arquitectura más modular y escalable.
+</p>
+
+![Step 8: External Systems](<public/assets/images/chapter-2/eventStorming/Step8-ExternalSystems.jpeg>)
+
+---
+
+<h3>Step 9: Aggregates</h3>
+<p>
+En esta etapa, el equipo identificó los aggregates, los cuales representan agrupaciones de entidades y reglas de negocio que deben mantenerse consistentes dentro de un mismo límite transaccional. Cada aggregate define un conjunto de datos y comportamientos que se gestionan como una unidad dentro del sistema.
+</p>
+
+<p>
+Identificamos aggregates relacionados con las principales áreas del dominio, tales como la gestión de perfiles de tueste, proveedores, lotes de café, recetas, calibraciones y sesiones de cata. Asimismo, consideramos aggregates vinculados al monitoreo de sensores IoT, donde se agrupan datos de lecturas, umbrales y estados de los dispositivos.
+</p>
+
+<p>
+Cada uno de estos aggregates encapsula su propia lógica de negocio, asegurando la integridad de los datos y definiendo cómo se deben procesar las operaciones internas. Esta identificación nos permitió estructurar mejor el dominio y establecer límites claros para la gestión de la información.
+</p>
+
+![Step 9: Aggregates](<public/assets/images/chapter-2/eventStorming/Step9-Aggregates.jpeg>)
+
+---
+
+<h3>Step 10: Bounded Contexts</h3>
+<p>
+Finalmente, a partir de los aggregates identificados, se definieron los bounded contexts, los cuales representan divisiones del sistema donde un modelo de dominio específico es válido y consistente. Cada bounded context agrupa uno o más aggregates relacionados, así como también define un lenguaje común.
+</p>
+
+<p>
+En el sistema CaféLab, se identificaron varios bounded contexts principales. Entre ellos, se encuentran el contexto de gestión, que abarca los perfiles de tueste, proveedores de café y lotes. También está el contexto de procedimiento, encargado de las sesiones de cata, calibraciones, recetario y libro de defectos. Así mismo tenemos el contexto IAM, encargado de la seguridad de cada cuenta registrada. Además del contexto de costeo, el cual abarca el registro de los constos involucrados en un lote. Y el contexto de monitoreo IoT, enfocado en la recolección y análisis de datos de sensores.
+</p>
+
+<p>
+Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. Asimismo, se evaluaron las interacciones entre bounded contexts, identificando posibles dependencias y puntos de integración. Esto permitió detectar oportunidades para desacoplar componentes y definir límites más claros, evitando que un contexto asuma responsabilidades que no le corresponden.
+</p>
+
+![Step 10: Bounded Contexts](<public/assets/images/chapter-2/eventStorming/Step10-BoundedContexts.jpeg>)
+
 ## 2.5. Ubiquitous Language
 En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el desarrollo de software con la realidad del negocio del café de especialidad. Uno de los pilares de DDD es el Lenguaje Ubicuo (Ubiquitous Language), el cual es un conjunto de términos compartidos que se construyen en colaboración entre desarrolladores, diseñadores y expertos del dominio, en nuestro caso, entre los desarrolladores, baristas y administradores de cafeterías.
 
@@ -2343,70 +2441,6 @@ Con este enfoque transitamos de una visión exploratoria a una más técnica y o
 
 ### 4.1.1. Design-Level EventStorming
 
----
-
-<h3>Step 5: Commands</h3>
-<p>
-En esta etapa, nuestro equipo identificó los comandos que representan las acciones iniciadas por los usuarios o sistemas externos sobre el dominio. Los comandos constituyen la intención de realizar una operación específica y son el punto de partida para la generación de eventos dentro del sistema.
-</p>
-
-<p>
-Durante el análisis, se definieron comandos asociados a múltiples funcionalidades, como la creación y actualización de perfiles de tueste, el registro y edición de proveedores, la gestión de lotes de café, la selección de recetas, así como el ingreso de datos provenientes de sensores IoT. También se identificaron comandos relacionados con la autenticación de usuarios, selección de planes y gestión de información financiera.
-</p>
-
-<p>
-Esta etapa nos permitió estructurar las interacciones del usuario con el sistema, clarificando qué acciones son posibles y cómo estas desencadenan cambios dentro del dominio.
-</p>
-
-![Step 5: Commands](<public/assets/images/chapter-2/eventStorming/Step5-Commands.jpeg>)
-
----
-
-<h3>Step 6: Policies</h3>
-<p>
-Posteriormente, identificamos las políticas del sistema, las cuales representan reglas de negocio que definen cómo reaccionar ante determinados eventos. Estas políticas permiten automatizar decisiones dentro de nuestro sistema, conectando eventos con nuevos comandos o acciones.
-</p>
-
-<p>
-En el caso de CaféLab, definimos políticas relacionadas con la validación de datos ingresados, la detección de condiciones anómalas en los sensores, la generación de alertas cuando se superan ciertos umbrales y la activación o desactivación de actuadores. Asimismo, consideramos reglas para el manejo de errores, control de sesiones y procesamiento de información.
-</p>
-
-![Step 6: Policies](<public/assets/images/chapter-2/eventStorming/Step6-Policies.jpeg>)
-
----
-
-<h3>Step 7: Read Models</h3>
-<p>
-En esta fase, se definieron los modelos de lectura o read models, los cuales representan la información que el sistema expone a los usuarios para su consulta. Estos modelos están optimizados para la visualización y no necesariamente reflejan la estructura interna del dominio.
-</p>
-
-<p>
-Identificamos diferentes tipos de información relevante para los usuarios, tales como reportes de consumo de lotes, resúmenes de costos, visualización de datos de sensores, gráficos de temperatura y humedad, historial de eventos, así como resultados de sesiones de cata y comparaciones de perfiles de tueste.
-</p>
-
-<p>
-La definición de estos modelos nos clarificó qué información es crítica para la toma de decisiones y cómo debe ser presentada de manera clara y eficiente al usuario final.
-</p>
-
-![Step 7: Read Models](<public/assets/images/chapter-2/eventStorming/Step7-ReadModels.jpeg>)
-
----
-
-<h3>Step 8: External Systems</h3>
-<p>
-En esta etapa, identificamos los sistemas externos con los cuales interactúa nuestra solución. Estos representan dependencias fuera del dominio principal, pero que son necesarias para el correcto funcionamiento del sistema.
-</p>
-
-<p>
-Consideramos como sistemas externos los sensores IoT encargados de medir variables ambientales, servicios de notificación para el envío de alertas, así como posibles integraciones con plataformas de procesamiento de datos. Así mismo, se contemplaron servicios relacionados con la autenticación de usuarios y gestión de pagos en caso de suscripciones.
-</p>
-
-<p>
-Esta etapa nos permitió delimitar claramente qué componentes pertenecen al sistema y cuáles pueden dependen de terceros, facilitando el diseño de una arquitectura más modular y escalable.
-</p>
-
-![Step 8: External Systems](<public/assets/images/chapter-2/eventStorming/Step8-ExternalSystems.jpeg>)
-
 #### 4.1.1.1. Candidate Context Discovery
 
 <p>
@@ -2417,39 +2451,8 @@ Luego de haber definido el comportamiento del sistema a través del Design-Level
 Este proceso permitió transformar el conocimiento del dominio en una estructura arquitectónica sólida, alineada con los principios de Domain-Driven Design (DDD).
 </p>
 
----
 
-<h3>Step 9: Aggregates</h3>
-<p>
-En esta etapa, el equipo identificó los aggregates, los cuales representan agrupaciones de entidades y reglas de negocio que deben mantenerse consistentes dentro de un mismo límite transaccional. Cada aggregate define un conjunto de datos y comportamientos que se gestionan como una unidad dentro del sistema.
-</p>
 
-<p>
-Identificamos aggregates relacionados con las principales áreas del dominio, tales como la gestión de perfiles de tueste, proveedores, lotes de café, recetas, calibraciones y sesiones de cata. Asimismo, consideramos aggregates vinculados al monitoreo de sensores IoT, donde se agrupan datos de lecturas, umbrales y estados de los dispositivos.
-</p>
-
-<p>
-Cada uno de estos aggregates encapsula su propia lógica de negocio, asegurando la integridad de los datos y definiendo cómo se deben procesar las operaciones internas. Esta identificación nos permitió estructurar mejor el dominio y establecer límites claros para la gestión de la información.
-</p>
-
-![Step 9: Aggregates](<public/assets/images/chapter-2/eventStorming/Step9-Aggregates.jpeg>)
-
----
-
-<h3>Step 10: Bounded Contexts</h3>
-<p>
-Finalmente, a partir de los aggregates identificados, se definieron los bounded contexts, los cuales representan divisiones del sistema donde un modelo de dominio específico es válido y consistente. Cada bounded context agrupa uno o más aggregates relacionados, así como también define un lenguaje común.
-</p>
-
-<p>
-En el sistema CaféLab, se identificaron varios bounded contexts principales. Entre ellos, se encuentran el contexto de gestión, que abarca los perfiles de tueste, proveedores de café y lotes. También está el contexto de procedimiento, encargado de las sesiones de cata, calibraciones, recetario y libro de defectos. Así mismo tenemos el contexto IAM, encargado de la seguridad de cada cuenta registrada. Además del contexto de costeo, el cual abarca el registro de los constos involucrados en un lote. Y el contexto de monitoreo IoT, enfocado en la recolección y análisis de datos de sensores.
-</p>
-
-<p>
-Esta separación permite que cada contexto evolucione de manera independiente, manteniendo bajo acoplamiento y alta cohesión. Asimismo, se evaluaron las interacciones entre bounded contexts, identificando posibles dependencias y puntos de integración. Esto permitió detectar oportunidades para desacoplar componentes y definir límites más claros, evitando que un contexto asuma responsabilidades que no le corresponden.
-</p>
-
-![Step 10: Bounded Contexts](<public/assets/images/chapter-2/eventStorming/Step10-BoundedContexts.jpeg>)
 
 <p>
 El Candidate Context Discovery nos permitió transformar el conocimiento obtenido en etapas anteriores en una estructura clara y organizada del sistema. La identificación de aggregates y bounded contexts nos facilitó la comprensión de los límites del dominio, permitiendo diseñar una solución modular, escalable y alineada con los principios de Domain-Driven Design. Este resultado constituye la base sólida necesaria para la implementación técnica de nuestro sistema.
