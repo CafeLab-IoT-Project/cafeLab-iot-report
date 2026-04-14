@@ -2700,16 +2700,201 @@ Asimismo, esta estructura facilita futuras ampliaciones, como nuevos dispositivo
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ![Deployment View: CaféLab](<public/assets/images/C4/CafeLab-Deployment-dark.png>)
+
 ## 4.2. Tactical-Level Domain-Driven Design
+
 ### 4.2.1. Bounded Context: IAM
+
+El bounded context IAM (Identity and Access Management) es responsable de la identidad de acceso al sistema:
+registro e inicio de sesión con email y contraseña, almacenamiento seguro del secreto (hash), emisión y validación de
+tokens JWT para sesiones sin estado, e integración con el perfil de aplicación (profiles) mediante el vínculo
+iam_user_id y la resolución del perfil actual a partir del sujeto del token. Es el núcleo que permite que el resto de
+los contextos acoten operaciones al usuario autenticado y a su profile_id.
+
+
 #### 4.2.1.1. Domain Layer
+
+##### Aggregates
+
+##### User
+
+**Propósito:**  
+Agregado raíz que representa una **cuenta de acceso IAM**: credenciales (email como identificador de login, contraseña persistida hasheada) y rol opcional, alineado al modelo MediTrack (la columna JPA `username` conserva el nombre histórico en BD; el valor almacenado es el **email**).
+
+**Atributos:**
+
+- `id`: Identificador técnico (heredado de `AuditableAbstractAggregateRoot`).
+- `createdAt` / `updatedAt`: Auditoría de creación y última modificación.
+- `email`: Email de acceso; mapeado en BD como columna `username` (String, hasta 100 caracteres, único, obligatorio).
+- `password`: Hash de contraseña (String, hasta 120 caracteres, obligatorio).
+- `role`: Rol textual opcional (String, nullable).
+
+**Métodos:**
+
+- `User()`: Constructor sin argumentos (JPA).
+- `User(String email, String password)`: Construye usuario validando que email y contraseña no sean nulos ni en blanco.
+- `User(String email, String password, String role)`: Igual que el anterior asignando rol.
+- `updateEmail(String email)`: Actualiza el email con validación.
+- `updatePassword(String password)`: Actualiza la contraseña (valor ya hasheado en flujo de aplicación) con validación.
+- `updateRole(String role)`: Actualiza el rol.
+
+**Características:**
+
+- Extiende `AuditableAbstractAggregateRoot<User>` (auditoría y raíz de agregado compartida con otros contextos).
+- Entidad JPA (`@Entity`); la convención física de tablas del proyecto pluraliza el nombre → tabla **`users`**.
+
+En este contexto no hay otros agregados ni value objects explícitos en `domain.model.valueobjects`; los comandos son records y las excepciones de dominio cubren fallos de autenticación/registro expuestos por la API.
+
+##### Commands
+
+**SignUpCommand**  
+**Propósito:** Comando para registrar un nuevo usuario IAM.  
+**Atributos:** `email`, `password`, `role` (opcional; constructor de dos argumentos delega con `role = null`).
+
+**SignInCommand**  
+**Propósito:** Comando para autenticar con email y contraseña.  
+**Atributos:** `email`, `password`.
+
+##### Domain services
+
+**UserCommandService**  
+**Propósito:** Contrato que define las operaciones de **sign-in** (devuelve usuario + token) y **sign-up** (devuelve usuario creado).
+
+##### Exceptions
+
+**SignInFailedException** / **SignUpFailedException**  
+**Propósito:** Señalizar fallos de autenticación o registro en la capa de interfaces (mensajes en español para respuesta HTTP).
+
+
 #### 4.2.1.2. Interface Layer
+
+##### Controllers
+
+**AuthenticationController**  
+**Propósito:** Expone la API REST de autenticación (email + JWT).
+
+**Endpoints:**
+
+- `POST /api/v1/authentication/sign-in`: Inicio de sesión; cuerpo `SignInResource`; respuesta `AuthenticatedUserResource`.
+- `POST /api/v1/authentication/sign-up`: Registro; tras crear usuario ejecuta sign-in implícito y devuelve `AuthenticatedUserResource` con **201 Created**.
+
+**Dependencias:**
+
+- `UserCommandService`: Ejecuta comandos de registro e inicio de sesión.
+- Ensambladores estáticos: `SignInCommandFromResourceAssembler`, `SignUpCommandFromResourceAssembler`, `AuthenticatedUserResourceFromEntityAssembler`.
+
+**IamExceptionHandler**  
+**Propósito:** `@RestControllerAdvice` acotado al paquete REST de IAM; traduce `SignInFailedException` → **404** y `SignUpFailedException` → **400** con `MessageResource`.
+
+##### Resources
+
+- **SignInResource:** `email`, `password`.
+- **SignUpResource:** `email`, `password`, `role` (opcional con constructor de dos argumentos).
+- **AuthenticatedUserResource:** `id`, `email`, `role`, `token` (respuesta de sign-in/sign-up).
+- **UserResource:** `userId`, `email`, `role`, `createdAt`, `updatedAt` (DTO con auditoría; ensamblador disponible; el flujo principal usa `AuthenticatedUserResource`).
+
+##### Transformers
+
+- **SignInCommandFromResourceAssembler:** `toCommandFromResource(SignInResource)` → `SignInCommand`.
+- **SignUpCommandFromResourceAssembler:** `toCommandFromResource(SignUpResource)` → `SignUpCommand`.
+- **AuthenticatedUserResourceFromEntityAssembler:** `toResourceFromEntity(User, String token)` → recurso autenticado.
+- **UserResourceFromEntityAssembler:** `toResourceFromEntity(User)` → `UserResource`.
+
 #### 4.2.1.3. Application Layer
+
+##### Command services
+
+**UserCommandServiceImpl**  
+**Propósito:** Implementa el registro y la autenticación coordinando persistencia, hash y token.
+
+**Métodos principales:**
+
+- `handle(SignInCommand)`: Busca usuario por email, verifica contraseña con `HashingService`, genera JWT con `TokenService`, devuelve `Optional` de par `(User, token)`.
+- `handle(SignUpCommand)`: Comprueba unicidad de email, codifica contraseña, persiste `User` con rol indicado.
+
+**Validaciones:**
+
+- Sign-up: `existsByEmail` antes de crear; duplicado lanza excepción en tiempo de ejecución.
+- Sign-in: usuario inexistente o contraseña incorrecta lanza excepción en tiempo de ejecución.
+
+**Dependencias:**
+
+- `UserRepository`, `HashingService`, `TokenService`.
+
+##### Outbound service ports
+
+- **HashingService:** `encode`, `matches`.
+- **TokenService:** `generateToken(String)`, `getUsernameFromToken`, `validateToken`.
+
+##### Event handlers
+
+**ProfileCreatedEventHandler**  
+**Propósito:** Escucha `ProfileCreatedEvent` del contexto **Profiles**: crea usuario IAM vía `SignUpCommand(email, password)` y, si procede, asigna `profile.iamUserId` buscando el perfil por email normalizado.
+
+
 #### 4.2.1.4. Infrastructure Layer
+##### Persistence
+
+**UserRepository**  
+**Propósito:** Acceso JPA al agregado `User`.
+
+**Métodos principales:**
+
+- `findByEmail`, `findByEmailIgnoreCase`, `existsByEmail`.
+- Hereda `JpaRepository<User, Long>`.
+
+**ProfileIamUserLinkBackfill** (`ApplicationRunner`)  
+**Propósito:** Al arranque, para perfiles sin `iam_user_id`, intenta enlazar por coincidencia de email con filas en `users`.
+
+##### Hashing
+
+- **BCryptHashingService:** Interfaz que extiende `HashingService` y `PasswordEncoder` de Spring Security.
+- **HashingServiceImpl:** Implementación con `BCryptPasswordEncoder`.
+
+##### Tokens JWT
+
+- **BearerTokenService:** Extiende `TokenService` con `getBearerTokenFrom(HttpServletRequest)` y `generateToken(Authentication)`.
+- **TokenServiceImpl:** Construcción/validación JJWT; subject del token = email; clave y caducidad desde `authorization.jwt.*`.
+
+##### Authorization (Spring Security)
+
+- **WebSecurityConfiguration:** Cadena **stateless**, CORS, rutas públicas (`/api/v1/authentication/**`, perfiles, OpenAPI/Swagger), resto **authenticated**; filtro JWT antes de `UsernamePasswordAuthenticationFilter`; `DaoAuthenticationProvider` con `UserDetailsService` y `PasswordEncoder`.
+- **BearerAuthorizationRequestFilter:** Extrae Bearer, valida token, carga `UserDetails` por email del subject y fija el `SecurityContext`.
+- **UserDetailsServiceImpl** (`defaultUserDetailsService`): Carga `User` por email y construye `UserDetailsImpl`.
+- **UserDetailsImpl:** Adaptador Spring Security desde `User`.
+- **UsernamePasswordAuthenticationTokenBuilder:** Arma el token de autenticación de Spring con detalles de petición.
+- **UnauthorizedRequestHandlerEntryPoint:** Respuesta JSON **401** para peticiones no autenticadas.
+
+##### Support cross-context
+
+**CurrentProfileIdResolver**  
+**Propósito:** A partir del principal autenticado (`UserDetailsImpl` → email), resuelve `profiles.id` consultando por `iam_user_id` o por email del perfil.
+
 #### 4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams
+En esta sección se presenta el diagrama de componentes del IAM Bounded Context, con los módulos principales y sus interacciones.
+##### Component View: CaféLab – IAM
+1. Interface Layer
+Expone AuthenticationController y el manejo de excepciones IAM; traduce JSON ↔ comandos/recursos.
+2. Application Layer
+UserCommandServiceImpl orquesta registro e inicio de sesión; puertos HashingService y TokenService; ProfileCreatedEventHandler reacciona a eventos del contexto Profiles.
+3. Domain Layer
+Agregado User, comandos SignUpCommand / SignInCommand, contrato UserCommandService, excepciones de dominio IAM.
+4. Infrastructure Layer
+UserRepository, servicios BCrypt y JWT, configuración y filtros de Spring Security, UserDetailsServiceImpl, utilidades de arranque y resolución de perfil.
+
+![alt text](public/assets/images/iam/Component-iam-component.png)
+
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+![alt text](public/assets/images/iam/Class-diagram-iam.png)
+
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+![alt text](public/assets/images/iam/Database-diagram-iam.png)
+
+
 ### 4.2.2. Bounded Context: Management
 #### 4.2.2.1. Domain Layer
 #### 4.2.2.2. Interface Layer
