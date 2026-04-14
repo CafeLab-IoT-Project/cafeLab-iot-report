@@ -2450,11 +2450,15 @@ Se analizó el modelo de dominio obtenido a partir del Big Picture Event Stormin
 <h3>Management Context</h3>
 
 <p>
-Este bounded context agrupa todas las funcionalidades relacionadas con la gestión general del sistema, incluyendo la administración de proveedores, lotes de café y configuraciones generales. Su responsabilidad principal es centralizar la información base del negocio, permitiendo su correcta organización y mantenimiento.
+El Management Context es responsable de la administración y mantenimiento de la información, cumpliendo un rol fundamental, ya que gestiona elementos como proveedores, lotes de café, información de origen, características del grano y configuraciones generales del sistema. Estos datos representan la información que no necesariamente cambia de manera continua, pero que es esencial para el funcionamiento del resto de contextos.
 </p>
 
 <p>
-Este contexto interactúa con otros como Procedure y Costing debido a que proporciona información necesaria para la ejecución de procesos y el cálculo de costos.
+Estos eventos son fundamentales, ya que desencadenan procesos en otros contextos, por ejemplo, el Procedure Context, que requiere información de lotes para ejecutar procesos, así como el Costing Context que utiliza estos datos para realizar cálculos financieros.
+</p>
+
+<p>
+Es así que el Management Context mantiene una relación de dependencia con múltiples bounded contexts, identificándose como proveedor de información. Sin embargo, su diseño busca minimizar el acoplamiento, evitando que contenga lógica de negocio que pertenezca a otros contextos. Esto asegura que su responsabilidad se mantenga enfocada en la gestión de datos y no en la ejecución de procesos.
 </p>
 
 ![Context: Management](<public/assets/images/chapter-4/contexts-discovery/management.jpeg>)
