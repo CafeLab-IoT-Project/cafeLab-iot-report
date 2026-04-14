@@ -2464,11 +2464,23 @@ Este contexto interactúa con otros como Procedure y Costing debido a que propor
 <h3>Procedure Context</h3>
 
 <p>
-El Procedure Context se enfoca en la ejecución de procesos operativos del negocio, tales como la creación y gestión de perfiles de tueste, recetas y calibraciones. Este contexto representa el core operativo del sistema, donde se definen y ejecutan los procedimientos relacionados con el tratamiento del café.
+El Procedure Context representa el núcleo operativo de CaféLab, siendo responsable de la definición, ejecución y control de los procesos relacionados con el tratamiento del café. Este bounded context encapsula toda la lógica de negocio vinculada a la creación y gestión de perfiles de tueste, recetas, configuraciones y calibraciones, asegurando que dichos procedimientos se ejecuten de manera consistente y controlada.
 </p>
 
 <p>
-Se relaciona directamente con Monitoreo IoT para obtener datos en tiempo real y con Costing para evaluar el impacto económico de los procesos.
+Dentro de este contexto se gestionan los flujos que transforman el estado del café a lo largo del proceso, desde la selección de un perfil hasta la ejecución de parámetros específicos que definen el resultado final. En este sentido, el Procedure Context no solo almacena configuraciones, sino que también modela cómo deben ejecutarse los procesos, bajo qué condiciones y con qué restricciones.
+</p>
+
+<p>
+Una de sus principales responsabilidades es garantizar la estandarización y reproducibilidad de los procesos, lo cual es fundamental en el dominio del café de especialidad. Para ello, se encarga de estructurar los procedimientos en pasos definidos, parametrizados y reutilizables, permitiendo que los usuarios puedan replicar resultados de manera consistente.
+</p>
+
+<p>
+Asimismo, este contexto gestiona eventos relacionados con la ejecución de procedimientos, como la selección de recetas, inicio de procesos y ajustes de parámetros. Estos permiten mantener trazabilidad sobre lo ocurrido en cada proceso, facilitando su análisis posterior.
+</p>
+
+<p>
+En conjunto, el Procedure Context permite convertir el conocimiento técnico del proceso del café en lógica estructurada dentro del sistema, habilitando una operación más precisa, repetible y basada en datos.
 </p>
 
 ![Context: Procedure](<public/assets/images/chapter-4/contexts-discovery/procedure.jpeg>)
