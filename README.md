@@ -2976,24 +2976,24 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   Representa el detalle técnico de cada componente que interviene en el análisis de costos del lote.
 
 - **Atributos:**
-  - `costoKgCafeVerde`
-  - `cantidadCafeVerde`
-  - `horasTrabajadas`
-  - `costoPorHora`
-  - `numeroTrabajadores`
-  - `costoTransporteKgCafeVerde`
-  - `cantidadTransporteCafeVerde`
-  - `energiaElectrica`
-  - `mantenimientoMaquinaria`
-  - `insumosProcesamiento`
-  - `aguaUtilizada`
-  - `depreciacionEquipos`
-  - `diasAlmacen`
-  - `costoDiarioAlmacen`
-  - `controlCalidad`
-  - `certificaciones`
-  - `seguros`
-  - `gastosAdministrativos`
+  - `costoKgCafeVerde`: Costo unitario por kilogramo del café verde adquirido.
+  - `cantidadCafeVerde`: Cantidad total de café verde utilizada para el lote (en kilogramos).
+  - `horasTrabajadas`: Número total de horas invertidas en el proceso productivo del lote.
+  - `costoPorHora`: Costo asociado a una hora de trabajo por operario.
+  - `numeroTrabajadores`: Cantidad de trabajadores involucrados en el proceso.
+  - `costoTransporteKgCafeVerde`: Costo de transporte por kilogramo de café verde.
+  - `cantidadTransporteCafeVerde`: Cantidad de café verde transportado (en kilogramos).
+  - `energiaElectrica`: Costo total de energía eléctrica consumida durante el procesamiento.
+  - `mantenimientoMaquinaria`: Costo asociado al mantenimiento de maquinaria utilizada.
+  - `insumosProcesamiento`: Costo de insumos adicionales requeridos en el procesamiento (filtros, químicos, etc.).
+  - `aguaUtilizada`: Costo del consumo de agua durante el procesamiento del lote.
+  - `depreciacionEquipos`: Costo estimado por depreciación de equipos utilizados.
+  - `diasAlmacen`: Número de días que el lote permanece almacenado.
+  - `costoDiarioAlmacen`: Costo diario asociado al almacenamiento del lote.
+  - `controlCalidad`: Costo asociado a actividades de control de calidad del café.
+  - `certificaciones`: Costos relacionados con certificaciones del producto (orgánico, fair trade, etc.).
+  - `seguros`: Costos asociados a seguros del lote o del proceso productivo.
+  - `gastosAdministrativos`: Costos administrativos indirectos relacionados con la operación.
 
 - **Características:**
   - Es inmutable a nivel conceptual y solo tiene sentido dentro del análisis de costos.
@@ -3040,16 +3040,16 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   Comando para registrar un nuevo análisis de costos de un lote.
 
 - **Atributos:**
-  - `userId`
-  - `fecha`
-  - `lote`
-  - `materiaPrima`
-  - `manoObra`
-  - `transporte`
-  - `almacenamiento`
-  - `procesamiento`
-  - `otrosCostos`
-  - `detalle`
+  - `userId`: Identificador del usuario que crea el registro de costos.
+  - `fecha`: Fecha en la que se realiza el registro del análisis de costos.
+  - `lote`: Identificador o nombre del lote al que se le realiza el análisis.
+  - `materiaPrima`: Monto total calculado correspondiente a la materia prima utilizada.
+  - `manoObra`: Monto total calculado correspondiente a la mano de obra.
+  - `transporte`: Monto total calculado correspondiente al transporte del café verde.
+  - `almacenamiento`: Monto total calculado correspondiente al almacenamiento del lote.
+  - `procesamiento`: Monto total calculado correspondiente al procesamiento del café.
+  - `otrosCostos`: Monto total calculado correspondiente a costos indirectos adicionales.
+  - `detalle`: Objeto `CostBreakdown` que contiene el desglose completo de todos los costos que originan los totales.
 
 2. **UpdateCostRecordCommand**
 
@@ -3057,16 +3057,16 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   Comando para actualizar un registro de costos previamente creado.
 
 - **Atributos:**
-  - `costRecordId`
-  - `userId`
-  - `lote`
-  - `materiaPrima`
-  - `manoObra`
-  - `transporte`
-  - `almacenamiento`
-  - `procesamiento`
-  - `otrosCostos`
-  - `detalle`
+  - `costRecordId`: Identificador único del registro de costos que se desea actualizar.
+  - `userId`: Identificador del usuario propietario del registro.
+  - `lote`: Identificador o nombre del lote asociado al registro actualizado.
+  - `materiaPrima`: Nuevo monto total correspondiente a la materia prima.
+  - `manoObra`: Nuevo monto total correspondiente a la mano de obra.
+  - `transporte`: Nuevo monto total correspondiente al transporte.
+  - `almacenamiento`: Nuevo monto total correspondiente al almacenamiento.
+  - `procesamiento`: Nuevo monto total correspondiente al procesamiento.
+  - `otrosCostos`: Nuevo monto total correspondiente a otros costos indirectos.
+  - `detalle`: Objeto `CostBreakdown` actualizado con el nuevo desglose de costos.
 
 3. **CalculateCostSummaryCommand**
 
