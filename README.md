@@ -3359,6 +3359,111 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   - `toResourceFromProjection(CostReportProjection projection)`: transforma la estructura interna del reporte en un recurso apto para la API.
 
 #### 4.2.3.3. Application Layer
+
+##### Command Services
+
+1. **CostRecordCommandServiceImpl**
+
+- **Propósito:**
+  Gestiona la creación, actualización y eliminación de registros de costos asociados a lotes de café del usuario autenticado.
+
+- **Métodos principales:**
+  - `handle(CreateCostRecordCommand command)`: crea un nuevo `CostRecord`, calcula sus totales iniciales y lo persiste.
+  - `handle(UpdateCostRecordCommand command)`: localiza el registro de costos por id y usuario, actualiza su desglose y recalcula los totales.
+  - `handle(DeleteCostRecordCommand command)`: elimina el registro de costos si existe y pertenece al usuario indicado.
+
+- **Validaciones:**
+  - Verifica que el lote referenciado exista o sea válido dentro del sistema antes de registrar el análisis.
+  - En actualización y eliminación, exige que el registro exista para el par `costRecordId` / `userId`.
+  - Asegura que los valores monetarios y cantidades no sean negativos.
+  - Recalcula los totales del lote luego de cualquier cambio en el desglose de costos.
+
+- **Dependencias:**
+  - `CostRecordRepository`: persistencia y búsqueda de registros de costos.
+  - `CoffeeLotQueryService`: validación del lote seleccionado.
+  - `CostSummaryCommandService`: actualización o regeneración del resumen consolidado luego de guardar cambios.
+
+2. **CostSummaryCommandServiceImpl**
+
+- **Propósito:**
+  Gestiona la generación y recalculación del resumen consolidado de costos a partir de un registro de costos ya existente.
+
+- **Métodos principales:**
+  - `handle(CalculateCostSummaryCommand command)`: recalcula el resumen de costos del registro indicado.
+  - `generateFromCostRecord(CostRecord costRecord)`: construye un nuevo `CostSummary` a partir de la información consolidada del registro.
+  - `updateRecommendations(CostSummary summary)`: recalcula recomendaciones y distribución porcentual de costos.
+
+- **Validaciones:**
+  - Requiere que exista un `CostRecord` válido y accesible por el usuario.
+  - Verifica que el registro tenga totales calculables antes de generar el resumen.
+  - Asegura coherencia entre el detalle de costos y los indicadores del resumen.
+
+- **Dependencias:**
+  - `CostRecordRepository`: recuperación del registro base para el cálculo.
+  - `CostSummaryRepository`: persistencia del resumen consolidado si se modela como entidad persistente.
+
+3. **CostReportCommandServiceImpl**
+
+- **Propósito:**
+  Gestiona la generación del modelo de reporte de costos, incluyendo su versión imprimible o exportable.
+
+- **Métodos principales:**
+  - `handle(GenerateCostReportCommand command)`: genera el reporte del registro de costos en el formato solicitado.
+  - `buildPrintableModel(CostRecord costRecord, CostSummary summary)`: construye el modelo estructurado para impresión o exportación.
+  - `exportReport(CostReport report, String outputFormat)`: transforma el modelo del reporte al formato de salida solicitado, como PDF.
+
+- **Validaciones:**
+  - Verifica que el registro de costos exista y pertenezca al usuario.
+  - Verifica que el resumen del costo esté disponible o pueda recalcularse antes de exportar el reporte.
+  - Asegura que el formato solicitado sea soportado por el sistema.
+
+- **Dependencias:**
+  - `CostRecordRepository`: recuperación del registro base.
+  - `CostSummaryQueryService`: obtención del resumen consolidado.
+  - `ReportGenerationService`: servicio especializado para producir el archivo imprimible o exportable.
+
+##### Query Services
+
+1. **CostRecordQueryServiceImpl**
+
+- **Propósito:**
+  Gestiona las consultas de registros de costos asociados al usuario autenticado.
+
+- **Métodos principales:**
+  - `handle(GetCostRecordsByUserIdQuery query)`: recupera todos los registros de costos del usuario, normalmente ordenados por fecha descendente.
+  - `handle(GetCostRecordByIdForUserQuery query)`: recupera un registro de costos por id solo si pertenece al usuario indicado.
+  - `handle(GetCostRecordsByLotQuery query)`: recupera los registros de costos asociados a un lote específico del usuario.
+
+- **Dependencias:**
+  - `CostRecordRepository`: persistencia y consultas de registros de costos por usuario, id y lote.
+
+2. **CostSummaryQueryServiceImpl**
+
+- **Propósito:**
+  Gestiona las consultas del resumen consolidado de costos generado para un registro específico.
+
+- **Métodos principales:**
+  - `handle(GetCostSummaryByRecordIdQuery query)`: recupera el resumen de costos asociado a un registro concreto y validado por usuario.
+  - `buildIfMissing(Long costRecordId, Long userId)`: genera el resumen en tiempo de consulta si este aún no ha sido persistido y la política del sistema lo permite.
+
+- **Dependencias:**
+  - `CostSummaryRepository`: recuperación del resumen consolidado persistido.
+  - `CostRecordRepository`: acceso al registro de costos base cuando el resumen deba recalcularse.
+
+3. **CostReportQueryServiceImpl**
+
+- **Propósito:**
+  Gestiona la consulta del modelo de reporte de costos listo para visualización, vista previa o impresión.
+
+- **Métodos principales:**
+  - `handle(GetPrintableCostReportQuery query)`: recupera el modelo de reporte asociado a un registro de costos del usuario.
+  - `buildPreview(Long costRecordId, Long userId)`: construye una vista previa del reporte utilizando el registro y el resumen del costo.
+
+- **Dependencias:**
+  - `CostRecordRepository`: recuperación del registro de costos.
+  - `CostSummaryQueryService`: obtención del resumen consolidado necesario para el reporte.
+  - `CostReportProjectionFactory`: ensamblado del modelo final de reporte.
+
 #### 4.2.3.4. Infrastructure Layer
 #### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
