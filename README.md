@@ -1,51 +1,61 @@
-﻿<!--Titulo principal-->
-<h1 align="center">Informe de Trabajo Final</h1>
-
-<!--Nombre de la universidad-->
-<h3 align="center"> Universidad Peruana de Ciencias Aplicadas</h3>
-
-<!--Carrera-->
-<h3 align="center"> Ingeniería de software - 2610</h3>
-
-<!--Logo de  la universidad-->
-<p align="center">
-    <img style="width:20%" src="public/assets/images/cover/logo/logo_upc.png"></img>
+﻿<p align="center">
+<img style="width:10%;" src="public/assets/images/cover/logo/logo_upc.png" alt="Logo UPC">
 </p>
 
-<!-- Código del curso -->
-<h4 align="center"> Código del curso: 1ASI0572</h4>
+<p align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
+<strong>Facultad de Ingeniería</strong></p>
 
-<!--Nombre del curso-->
-<h4 align="center"> Nombre del curso: Desarrollo de Soluciones IOT</h4>
-
-<!--NRC del curso-->
-<h4 align="center">NRC: 6776</h4>
-
-
-<p align="left" style="margin-left: 10%;">
-    <!--Docente-->
-    <strong>Docente: </strong>Marco Antonio Leon Baca<br>
-    <!--Startup-->
-    <strong>Startup: </strong>Café Metrix<br>
-    <!--Producto-->
-    <strong>Producto: </strong>Café Lab<br>
-</p>
-
-<!--Integrantes del grupo-->
-<p align="left" style="margin-left: 10%;">
-    <strong>Integrantes del grupo: </strong><br>
-    <ul align="left" style="margin-left: 10%;">
-        <li>Donayre Alvarez, Adrian Ricardo - U202310187</li>
-        <li>Fernandez Camayo, Carlos Fredy - U202320083</li>
-        <li>Julca Minaya, Sergio Gino - U202318274</li>
-        <li>Roman Cruz, Natalia Bertha - U202310148 </li>
-        <li>Yum Gonzales, Jorge Suin - U202210838</li>
-    </ul>
+<p align="left" style="margin:1.25em auto 0;max-width:34em;padding:0 1em;">
+<strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IOT<br>
+<strong>NRC:</strong> 6776 <br>
+<br>
+<strong>Nombre del profesor:</strong> Marco Antonio León Baca
 </p>
 
 
-<!--Ciclo-->
-<div align="center" style="font-weight: bold;">Abril de 2026</div>
+
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
+
+<p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
+<strong>Nombre del grupo:</strong> Café Metrix<br>
+<strong>Nombre del producto:</strong> Café Lab
+</p>
+
+<p align="center" style="margin-top:4em;"><strong>Integrantes:</strong></p>
+
+<div style="max-width:34em;margin:0.5em auto 0;border:1px solid #bbb;box-sizing:border-box;">
+<div style="display:flex;font-weight:bold;border-bottom:1px solid #bbb;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">Código</span>
+<span align="center" style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Apellidos y Nombres</span>
+</div>
+<div style="display:flex;border-bottom:1px solid #bbb;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202310187</span>
+<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Donayre Alvarez, Adrian Ricardo</span>
+</div>
+<div style="display:flex;border-bottom:1px solid #bbb;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202320083</span>
+<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Fernandez Camayo, Carlos Fredy</span>
+</div>
+<div style="display:flex;border-bottom:1px solid #bbb;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202318274</span>
+<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Julca Minaya, Sergio Gino</span>
+</div>
+<div style="display:flex;border-bottom:1px solid #bbb;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202310148</span>
+<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Roman Cruz, Natalia Bertha</span>
+</div>
+<div style="display:flex;">
+<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202210838</span>
+<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Yum Gonzales, Jorge Suin</span>
+</div>
+</div>
+
+<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Abril 2026</p>
+
+
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
+
+
 
 <!-- Registro de versiones -->
 # Registro de versiones del informe
