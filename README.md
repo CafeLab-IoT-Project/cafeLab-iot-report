@@ -2904,15 +2904,239 @@ UserRepository, servicios BCrypt y JWT, configuración y filtros de Spring Secur
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
+
 ### 4.2.3. Bounded Context: Costing
+
+El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro, consulta y presentación del costo total asociado a un lote de café. Su objetivo es consolidar los costos directos e indirectos vinculados a un lote específico y transformar estos datos en métricas útiles para la toma de decisiones como el costo por kilogramo, costo por taza y precio sugerido para así generar un resumen imprimible del análisis de costos.
+
 #### 4.2.3.1. Domain Layer
+
+##### Aggregates
+
+1. **CostRecord**
+
+- **Propósito:** 
+  El agregado fundamental del contexto es (`CostRecord`), que representa el registro integral de costos de un lote de café. Encapsula tanto la referencia al lote seleccionado como los costos directos, indirectos, el detalle de cada cálculo y los resultados consolidados del análisis económico.
+
+- **Atributos:**
+  - `id`: Identificador único del registro de costos.
+  - `userId`: Identificador del usuario o dueño que registra el análisis.
+  - `fecha`: Fecha en la que se genera el registro de costos.
+  - `lote`: Identificador o nombre del lote seleccionado para el análisis.
+  - `materiaPrima`: Monto total asociado a la materia prima.
+  - `manoObra`: Monto total asociado a la mano de obra.
+  - `transporte`: Monto total asociado al transporte del café verde.
+  - `almacenamiento`: Monto total asociado al almacenamiento.
+  - `procesamiento`: Monto total asociado al procesamiento del lote.
+  - `otrosCostos`: Monto total asociado a otros costos indirectos.
+  - `totales`: Objeto consolidado de resultados del análisis.
+  - `detalle`: Objeto que almacena el desglose técnico de cada componente de costo.
+
+- **Métodos:**
+  - `CostRecord(CreateCostRecordCommand command)`: Crea un registro de costos a partir de los datos ingresados por el usuario.
+  - `calculateTotals()`: Calcula el total del lote, el costo por kilogramo y el costo por taza.
+  - `updateCostBreakdown(UpdateCostRecordCommand command)`: Actualiza el detalle y los montos globales del registro.
+  - `generateSummary()`: Consolida el análisis para exponerlo como resumen de costos.
+  - `generatePrintModel()`: Prepara la información del registro en formato apto para impresión o exportación.
+
+- **Características:**
+  - Actúa como raíz del agregado porque concentra toda la consistencia del análisis de costos.
+  - Garantiza que los resultados consolidados ((`totalLote`), (`costPerKg`), (`costPerCup`)) siempre se encuentren alineados con el detalle ingresado.
+
+2. **CostSummary**
+
+- **Propósito:** 
+  El agregado (`CostSummary`) representa la vista consolidada del análisis económico de un lote, enfocada en mostrar el peso porcentual de cada categoría de costo y apoyar decisiones de rentabilidad.
+
+- **Atributos:**
+  - `costRecordId`: Identificador del registro de costos del cual se deriva el resumen.
+  - `totalLote`: Costo total acumulado del lote.
+  - `costPerKg`: Costo unitario por kilogramo.
+  - `costPerCup`: Costo unitario por taza.
+  - `margenPotencial`: Margen estimado calculado para fines de evaluación comercial.
+  - `precioSugerido`: Precio sugerido de venta por kilogramo.
+  - `recommendations`: Recomendaciones generadas a partir de reglas simples de negocio.
+  - `distribution`: Distribución porcentual de cada categoría de costo.
+
+- **Métodos:**
+  - `CostSummary(CostRecord costRecord)`: Construye el resumen a partir de un registro de costos consolidado.
+  - `calculateDistribution()`: Calcula el porcentaje de participación de cada rubro dentro del total.
+  - `calculateSuggestedPrice()`: Estima un precio sugerido a partir del costo por kilogramo y el margen definido.
+  - `generateRecommendations()`: Emite observaciones sobre materia prima, transporte y margen comercial.
+
+- **Características:**
+  - Se enfoca en la interpretación de los resultados del cálculo.
+  - Permite que el dominio no solo registre costos, sino que también entregue información útil para la toma de decisiones.
+
+##### Value Objects
+
+1. **CostBreakDown**
+
+- **Propósito:** 
+  Representa el detalle técnico de cada componente que interviene en el análisis de costos del lote.
+
+- **Atributos:**
+  - `costoKgCafeVerde`
+  - `cantidadCafeVerde`
+  - `horasTrabajadas`
+  - `costoPorHora`
+  - `numeroTrabajadores`
+  - `costoTransporteKgCafeVerde`
+  - `cantidadTransporteCafeVerde`
+  - `energiaElectrica`
+  - `mantenimientoMaquinaria`
+  - `insumosProcesamiento`
+  - `aguaUtilizada`
+  - `depreciacionEquipos`
+  - `diasAlmacen`
+  - `costoDiarioAlmacen`
+  - `controlCalidad`
+  - `certificaciones`
+  - `seguros`
+  - `gastosAdministrativos`
+
+- **Características:**
+  - Es inmutable a nivel conceptual y solo tiene sentido dentro del análisis de costos.
+  - Agrupa el detalle numérico que da origen a los montos globales.
+
+2. **CostTotals**
+
+- **Propósito:** 
+  Encapsula los resultados consolidados de un análisis de costos.
+
+- **Atributos:** `totalLote`, `costPerKg`, `costPerCup`.
+
+- **Características:**
+  - Evita dispersar los resultados calculados en múltiples propiedades primitivas.
+  - Hace explícito que estos valores dependen del cálculo del agregado principal.
+
+3. **LotReference**
+
+- **Propósito:** 
+  Representa la referencia de negocio al lote seleccionado para el cálculo.
+
+- **Atributos:** `lotId`, `lotName`.
+
+- **Características:**
+  - Permite desacoplar el bounded context de costos del bounded context que administra los lotes.
+  - Su función es identificar el lote sin duplicar toda su información productiva.
+
+4. **Money**
+
+- **Propósito:** 
+  Representa una cantidad monetaria del dominio con reglas homogéneas de validación y precisión decimal.
+
+- **Atributos:** `amount`, `currency`.
+
+- **Características:**
+  - Se utiliza para modelar consistentemente todos los montos del contexto.
+  - Evita errores de interpretación en cálculos de costos y presentación de resultados.
+
+##### Commands
+
+1. **CreateCostRecordCommand**
+
+- **Propósito:** 
+  Comando para registrar un nuevo análisis de costos de un lote.
+
+- **Atributos:**
+  - `userId`
+  - `fecha`
+  - `lote`
+  - `materiaPrima`
+  - `manoObra`
+  - `transporte`
+  - `almacenamiento`
+  - `procesamiento`
+  - `otrosCostos`
+  - `detalle`
+
+2. **UpdateCostRecordCommand**
+
+- **Propósito:** 
+  Comando para actualizar un registro de costos previamente creado.
+
+- **Atributos:**
+  - `costRecordId`
+  - `userId`
+  - `lote`
+  - `materiaPrima`
+  - `manoObra`
+  - `transporte`
+  - `almacenamiento`
+  - `procesamiento`
+  - `otrosCostos`
+  - `detalle`
+
+3. **CalculateCostSummaryCommand**
+
+- **Propósito:** 
+  Comando para generar el resumen de costos de un lote a partir del registro consolidado.
+
+- **Atributos:** `costRecordId`, `userId`.
+
+4. **GenerateCostReportCommand**
+
+- **Propósito:** 
+  Comando para generar la versión imprimible del análisis de costos.
+
+- **Atributos:** `costRecordId`, `userId`, `outputFormat`.
+
+5. **DeleteCostRecordCommand**
+
+- **Propósito:** 
+  Comando para eliminar un registro de costos existente.
+
+- **Atributos:** `costRecordId`, `userId`.
+
+##### Queries
+
+1. **GetCostRecordByIdForUserQuery**
+
+- **Propósito:** 
+  Recupera un registro de costos específico validando que pertenezca al usuario indicado.
+
+- **Atributos:** `costRecordId`, `userId`.
+
+2. **GetCostRecordsByUserIdQuery**
+
+- **Propósito:** 
+  Recupera todos los registros de costos creados por un usuario.
+
+- **Atributos:** `userId`.
+
+3. **GetCostSummaryByRecordIdQuery**
+
+- **Propósito:** 
+  Recupera el resumen consolidado de un registro de costos específico.
+
+- **Atributos:** `costRecordId`, `userId`.
+
+4. **GetPrintableCostReportQuery**
+
+- **Propósito:** 
+  Recupera el modelo de datos necesario para mostrar o exportar el reporte imprimible de costos.
+
+- **Atributos:** `costRecordId`, `userId`.
+
+5. **GetCostRecordsByLotQuery**
+
+- **Propósito:** 
+  Recupera los registros de costos asociados a un lote determinado.
+
+- **Atributos:** `lotId`, `userId`.
+
 #### 4.2.3.2. Interface Layer
+
+
+
 #### 4.2.3.3. Application Layer
 #### 4.2.3.4. Infrastructure Layer
 #### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
 ### 4.2.4. Bounded Context: Procedure
 
 El __Procedure Bounded Context__ es responsable de la gestión de todos los procedimientos que logran llevar el café de grano a un exquisito café de especialidad. Dentro de esto, se ve el registro de la calibración del café, a continuación se registran las recetas, mismas que pueden ser guardadas denteo de portafolios y por último, se lleva la gestión de las sesiones de cata, en donde se registra tanto la perspectiva del barista como las opiniones de los consumidos. Por último, se incluye una seccion de defectos, en donde se lleva el registro de los incidentes o resultados negativos obtenidos. Esta sección es el núcleo que permite llevar a cabo una preparación ordena y mejor que la anterior.
