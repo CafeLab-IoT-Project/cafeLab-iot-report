@@ -3546,7 +3546,11 @@ El **Costing Bounded Context** está compuesto por los siguientes módulos princ
 - Incluye el repositorio principal de costos y los servicios externos que permiten **validar lotes y generar reportes imprimibles**, conectando así la lógica del contexto con recursos externos.
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+![bounded context: costing](<public/assets/images/costing/domain-layer-class-diagram.png>)
+
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
 ### 4.2.4. Bounded Context: Procedure
