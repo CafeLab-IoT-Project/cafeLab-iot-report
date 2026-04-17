@@ -3128,7 +3128,235 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
 
 #### 4.2.3.2. Interface Layer
 
+##### Controllers
 
+1. **CostRecordsController**
+
+- **Propósito:**
+  Expone la API principal del bounded context `Costing`, permitiendo registrar, consultar, actualizar y eliminar análisis de costos asociados a lotes de café del perfil autenticado.
+
+- **Endpoints:**
+  - `POST /api/v1/cost-records`: crea un nuevo registro de costos para un lote seleccionado.
+  - `GET /api/v1/cost-records`: lista todos los registros de costos del usuario autenticado.
+  - `GET /api/v1/cost-records/{costRecordId}`: obtiene un registro de costos específico si pertenece al usuario.
+  - `PUT /api/v1/cost-records/{costRecordId}`: actualiza un registro de costos existente del usuario.
+  - `DELETE /api/v1/cost-records/{costRecordId}`: elimina un registro de costos del usuario autenticado.
+
+- **Dependencias:**
+  - `CostRecordCommandService`: ejecuta operaciones de creación, actualización y eliminación.
+  - `CostRecordQueryService`: resuelve consultas de listado y detalle.
+  - `CurrentProfileIdResolver`: obtiene el identificador del perfil autenticado desde el contexto de seguridad.
+
+2. **CostSummariesController**
+
+- **Propósito:**
+  Gestiona la exposición del resumen consolidado de costos de un lote, incluyendo métricas agregadas como costo total, costo por kilogramo, costo por taza, margen potencial y precio sugerido.
+
+- **Endpoints:**
+  - `GET /api/v1/cost-records/{costRecordId}/summary`: obtiene el resumen consolidado del registro de costos indicado.
+  - `POST /api/v1/cost-records/{costRecordId}/summary/recalculate`: recalcula el resumen de costos con base en la información actual del registro.
+
+- **Dependencias:**
+  - `CostSummaryQueryService`: recupera la información consolidada del resumen.
+  - `CostSummaryCommandService`: ejecuta la recalculación del resumen cuando se solicita.
+  - `CurrentProfileIdResolver`: asegura que el usuario autenticado solo acceda a sus propios registros.
+
+3. **CostReportsController**
+
+- **Propósito:**
+  Expone la funcionalidad relacionada con la generación y visualización del modelo de impresión o exportación del análisis de costos.
+
+- **Endpoints:**
+  - `GET /api/v1/cost-records/{costRecordId}/report`: obtiene el modelo de reporte listo para visualización o impresión.
+  - `POST /api/v1/cost-records/{costRecordId}/report`: genera el reporte de costos en un formato determinado, como PDF.
+  - `GET /api/v1/cost-records/{costRecordId}/report/preview`: muestra una vista previa del reporte imprimible del análisis de costos.
+
+- **Dependencias:**
+  - `CostReportCommandService`: genera el reporte exportable o imprimible.
+  - `CostReportQueryService`: obtiene la información estructurada del reporte.
+  - `CurrentProfileIdResolver`: controla el acceso seguro por usuario.
+
+##### Resources
+
+1. **CreateCostRecordResource**
+
+- **Propósito:**
+  Representa el cuerpo de la petición para registrar un nuevo análisis de costos de un lote.
+
+- **Atributos:**
+  - `fecha`: fecha en la que se genera el registro.
+  - `lote`: identificador o nombre del lote seleccionado.
+  - `materiaPrima`: monto total de materia prima.
+  - `manoObra`: monto total de mano de obra.
+  - `transporte`: monto total de transporte.
+  - `almacenamiento`: monto total de almacenamiento.
+  - `procesamiento`: monto total de procesamiento.
+  - `otrosCostos`: monto total de otros costos indirectos.
+  - `detalle`: desglose completo de costos del lote.
+
+2. **UpdateCostRecordResource**
+
+- **Propósito:**
+  Representa los datos necesarios para actualizar un registro de costos existente.
+
+- **Atributos:**
+  - `lote`: identificador o nombre del lote.
+  - `materiaPrima`: nuevo monto total de materia prima.
+  - `manoObra`: nuevo monto total de mano de obra.
+  - `transporte`: nuevo monto total de transporte.
+  - `almacenamiento`: nuevo monto total de almacenamiento.
+  - `procesamiento`: nuevo monto total de procesamiento.
+  - `otrosCostos`: nuevo monto total de otros costos indirectos.
+  - `detalle`: nuevo desglose detallado de costos.
+
+3. **CostRecordResource**
+
+- **Propósito:**
+  Representa un registro de costos persistido y expuesto por la API.
+
+- **Atributos:**
+  - `id`: identificador único del registro.
+  - `userId`: identificador del usuario dueño del registro.
+  - `fecha`: fecha de creación del análisis.
+  - `lote`: identificador o nombre del lote analizado.
+  - `materiaPrima`: monto total de materia prima.
+  - `manoObra`: monto total de mano de obra.
+  - `transporte`: monto total de transporte.
+  - `almacenamiento`: monto total de almacenamiento.
+  - `procesamiento`: monto total de procesamiento.
+  - `otrosCostos`: monto total de otros costos indirectos.
+  - `totales`: objeto con los resultados consolidados del cálculo.
+  - `detalle`: objeto con el desglose técnico de costos.
+
+4. **CostBreakdownResource**
+
+- **Propósito:**
+  Representa el detalle completo de costos utilizado dentro de un registro de costos.
+
+- **Atributos:**
+  - `costoKgCafeVerde`: costo por kilogramo de café verde.
+  - `cantidadCafeVerde`: cantidad de café verde utilizada.
+  - `horasTrabajadas`: número de horas trabajadas.
+  - `costoPorHora`: costo por hora de trabajo.
+  - `numeroTrabajadores`: cantidad de trabajadores involucrados.
+  - `costoTransporteKgCafeVerde`: costo de transporte por kilogramo.
+  - `cantidadTransporteCafeVerde`: cantidad transportada de café verde.
+  - `energiaElectrica`: costo de energía eléctrica.
+  - `mantenimientoMaquinaria`: costo de mantenimiento de maquinaria.
+  - `insumosProcesamiento`: costo de insumos de procesamiento.
+  - `aguaUtilizada`: costo del agua utilizada.
+  - `depreciacionEquipos`: costo de depreciación de equipos.
+  - `diasAlmacen`: número de días de almacenamiento.
+  - `costoDiarioAlmacen`: costo diario de almacenamiento.
+  - `controlCalidad`: costo de control de calidad.
+  - `certificaciones`: costo de certificaciones.
+  - `seguros`: costo de seguros.
+  - `gastosAdministrativos`: costo de gastos administrativos.
+
+5. **CostTotalsResource**
+
+- **Propósito:**
+  Representa los resultados consolidados del análisis de costos.
+
+- **Atributos:**
+  - `totalLote`: costo total acumulado del lote.
+  - `costPerKg`: costo calculado por kilogramo.
+  - `costPerCup`: costo calculado por taza.
+
+6. **CostSummaryResource**
+
+- **Propósito:**
+  Representa el resumen analítico de costos mostrado al usuario después de consolidar los datos registrados.
+
+- **Atributos:**
+  - `costRecordId`: identificador del registro de costos asociado.
+  - `totalLote`: costo total del lote.
+  - `costPerKg`: costo unitario por kilogramo.
+  - `costPerCup`: costo unitario por taza.
+  - `margenPotencial`: margen potencial estimado.
+  - `precioSugerido`: precio sugerido de venta.
+  - `recommendations`: lista de recomendaciones generadas a partir de reglas de negocio.
+  - `distribution`: distribución porcentual de cada categoría de costo.
+
+7. **CostReportResource**
+
+- **Propósito:**
+  Representa el modelo de datos preparado para visualización, impresión o exportación del reporte de costos.
+
+- **Atributos:**
+  - `costRecordId`: identificador del registro de costos.
+  - `fecha`: fecha del análisis.
+  - `lote`: lote analizado.
+  - `summary`: resumen general del costo.
+  - `breakdown`: detalle completo de costos.
+  - `formattedTotals`: totales presentados en formato listo para reporte.
+  - `outputFormat`: formato de salida solicitado para el reporte.
+
+##### Transformers
+
+1. **CreateCostRecordCommandFromResourceAssembler**
+
+- **Propósito:**
+  Convierte un `CreateCostRecordResource` más el identificador del usuario autenticado en un `CreateCostRecordCommand` del dominio.
+
+- **Método principal:**
+  - `toCommand(Long userId, CreateCostRecordResource resource)`: construye el comando de creación del registro de costos con los datos del recurso y el usuario autenticado.
+
+2. **UpdateCostRecordCommandFromResourceAssembler**
+
+- **Propósito:**
+  Convierte un `UpdateCostRecordResource` en un `UpdateCostRecordCommand`, asociando el identificador del registro y el usuario autenticado.
+
+- **Método principal:**
+  - `toCommand(Long costRecordId, Long userId, UpdateCostRecordResource resource)`: construye el comando de actualización del registro de costos.
+
+3. **CostRecordResourceFromEntityAssembler**
+
+- **Propósito:**
+  Convierte el agregado `CostRecord` en un `CostRecordResource` para la respuesta HTTP.
+
+- **Método principal:**
+  - `toResourceFromEntity(CostRecord entity)`: mapea el estado persistido del agregado al recurso expuesto por la API.
+
+4. **CostBreakdownResourceFromValueObjectAssembler**
+
+- **Propósito:**
+  Convierte el value object `CostBreakdown` en un `CostBreakdownResource` de salida.
+
+- **Método principal:**
+  - `toResourceFromValueObject(CostBreakdown valueObject)`: transforma el desglose técnico del dominio a un recurso serializable.
+
+5. **CostTotalsResourceFromValueObjectAssembler**
+
+- **Propósito:**
+  Convierte el value object `CostTotals` en un `CostTotalsResource`.
+
+- **Método principal:**
+  - `toResourceFromValueObject(CostTotals valueObject)`: construye el recurso de totales consolidados a partir del value object del dominio.
+
+6. **CostSummaryResourceFromEntityAssembler**
+
+- **Propósito:**
+  Convierte el agregado o proyección `CostSummary` en un `CostSummaryResource` para exponer el resumen analítico al cliente.
+
+- **Método principal:**
+  - `toResourceFromEntity(CostSummary entity)`: mapea los indicadores calculados y las recomendaciones hacia el recurso de salida.
+
+7. **GenerateCostReportCommandFromResourceAssembler**
+
+- **Propósito:**
+  Convierte los parámetros de generación de reporte en un `GenerateCostReportCommand`.
+
+- **Método principal:**
+  - `toCommand(Long costRecordId, Long userId, GenerateCostReportResource resource)`: construye el comando para generar el reporte exportable o imprimible.
+
+8. **CostReportResourceFromProjectionAssembler**
+
+- **Propósito:**
+  Convierte la proyección o modelo de reporte de costos en un `CostReportResource`.
+
+- **Método principal:**
+  - `toResourceFromProjection(CostReportProjection projection)`: transforma la estructura interna del reporte en un recurso apto para la API.
 
 #### 4.2.3.3. Application Layer
 #### 4.2.3.4. Infrastructure Layer
