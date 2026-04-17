@@ -3519,6 +3519,32 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   - Soporta el caso de uso identificado en el event storming relacionado con la generación de un reporte o PDF para impresión.
 
 #### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
+
+A continuación, se presenta el diagrama de componentes del Costing Bounded Context. Este permite visualizar cómo se organiza la solución a nivel de capas y cómo fluye la información desde los puntos de entrada del sistema hasta la persistencia en base de datos.
+
+![component level diagram: costing](<public/assets/images/costing/component-level-diagram.jpeg>)
+
+El **Costing Bounded Context** está compuesto por los siguientes módulos principales:
+
+**1. Application Layer**
+
+- Actúa como intermediario entre la capa de interfaz, la capa de dominio y la capa de infraestructura.
+- Incluye los command services y query services que orquestan los casos de uso del contexto de costos, como registrar costos de un lote, recalcular resúmenes, consultar registros existentes y generar reportes.
+
+**2. Interface Layer**
+
+- Coordina la entrada de solicitudes al sistema a través de **controladores REST**.
+- Incluye los controllers, resources y transformers que reciben los datos enviados desde el frontend, los convierten en comandos o queries del dominio y exponen las respuestas en un formato adecuado para la API.
+
+**3. Domain Layer**
+
+- Encapsula la lógica de negocio relacionada con el **análisis y registro de costos** de los lotes de café.
+- Define los aggregates, value objects, commands y queries que representan los conceptos centrales del contexto, como el registro de costos, el detalle de costos y los cálculos consolidados.
+
+**4. Infrastructure Layer**
+
+- Incluye el repositorio principal de costos y los servicios externos que permiten **validar lotes y generar reportes imprimibles**, conectando así la lógica del contexto con recursos externos.
+
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
