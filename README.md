@@ -3465,6 +3465,59 @@ El __Costing Bounded Context__ es responsable de gestionar el cálculo, registro
   - `CostReportProjectionFactory`: ensamblado del modelo final de reporte.
 
 #### 4.2.3.4. Infrastructure Layer
+
+##### Repositories
+
+1. **CostRecordRepository**
+
+- **Propósito:**
+  Abstrae el acceso a datos del agregado `CostRecord`, permitiendo persistir y recuperar registros de costos asociados a usuarios y lotes.
+
+- **Métodos principales:**
+  - `findByUserIdOrderByFechaDesc(Long userId)`: devuelve todos los registros de costos del usuario ordenados por fecha descendente.
+  - `findByIdAndUserId(Long id, Long userId)`: obtiene un registro de costos por id solo si pertenece al usuario indicado.
+  - `findByLoteAndUserId(String lote, Long userId)`: recupera todos los registros de costos asociados a un lote específico del usuario.
+
+- **Características:**
+  - Extiende `JpaRepository<CostRecord, Long>`, habilitando operaciones CRUD estándar.
+  - Permite consultas seguras acotadas por usuario para evitar accesos indebidos.
+  - Modela la persistencia principal del bounded context Costing.
+  - Al concentrar en `CostRecord` tanto los datos base como los totales calculados, evita fragmentar innecesariamente la persistencia del contexto.
+
+##### External Services
+
+1. **CoffeeLotExternalService**
+
+- **Propósito:**
+  Permite la integración con el bounded context encargado de la gestión de lotes de café, validando y obteniendo información relevante del lote seleccionado antes de registrar o consultar costos.
+
+- **Métodos principales:**
+  - `getLotById(String lotId)`: obtiene la información de un lote específico.
+  - `validateLotExists(String lotId)`: verifica que el lote exista antes de registrar costos.
+  - `getLotBasicData(String lotId)`: recupera datos básicos del lote requeridos por el contexto de costos.
+
+- **Características:**
+  - Representa una dependencia externa al bounded context Costing.
+  - Evita duplicar información del lote dentro del contexto de costos.
+  - Mantiene el desacoplamiento entre la gestión productiva del lote y la gestión económica del costo.
+  - Se alinea con el flujo del frontend donde el usuario selecciona un lote previamente existente antes de continuar con el registro de costos. 
+
+2. **ReportGenerationService**
+
+- **Propósito:**
+  Servicio técnico encargado de generar reportes de costos en formatos exportables o imprimibles, a partir de la información consolidada de un `CostRecord`.
+
+- **Métodos principales:**
+  - `generatePdf(CostRecord costRecord)`: genera un archivo PDF del reporte de costos.
+  - `generatePreview(CostRecord costRecord)`: genera una vista previa del reporte para visualización en el sistema.
+  - `buildPrintableModel(CostRecord costRecord)`: construye el modelo estructurado necesario para impresión o exportación.
+
+- **Características:**
+  - Se encarga de transformar la información del dominio a formatos de salida utilizables por el usuario final.
+  - No persiste reportes como entidades independientes, sino que los genera bajo demanda a partir del registro de costos.
+  - Puede integrarse con librerías externas de generación de documentos.
+  - Soporta el caso de uso identificado en el event storming relacionado con la generación de un reporte o PDF para impresión.
+
 #### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
