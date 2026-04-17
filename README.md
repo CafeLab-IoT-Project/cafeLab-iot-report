@@ -3553,6 +3553,8 @@ El **Costing Bounded Context** está compuesto por los siguientes módulos princ
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
+![bounded context: costing](<public/assets/images/costing/database-design-diagram.png>)
+
 ### 4.2.4. Bounded Context: Procedure
 
 El __Procedure Bounded Context__ es responsable de la gestión de todos los procedimientos que logran llevar el café de grano a un exquisito café de especialidad. Dentro de esto, se ve el registro de la calibración del café, a continuación se registran las recetas, mismas que pueden ser guardadas denteo de portafolios y por último, se lleva la gestión de las sesiones de cata, en donde se registra tanto la perspectiva del barista como las opiniones de los consumidos. Por último, se incluye una seccion de defectos, en donde se lleva el registro de los incidentes o resultados negativos obtenidos. Esta sección es el núcleo que permite llevar a cabo una preparación ordena y mejor que la anterior.
