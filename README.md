@@ -2936,13 +2936,265 @@ UserRepository, servicios BCrypt y JWT, configuración y filtros de Spring Secur
 
 ### 4.2.2. Bounded Context: Management
 #### 4.2.2.1. Domain Layer
+## Aggregates
+
+#### 1. Supplier
+
+**Propósito:**  
+Representa un proveedor de café verde registrado en el sistema. Es el punto de origen de la cadena de trazabilidad.
+
+**Atributos:**
+
+- id: Identificador único del proveedor.  
+- userId: Identificador del dueño que registra el proveedor.  
+- name: Nombre o razón social del proveedor.  
+- country: País de origen del proveedor.  
+- region: Región o departamento del proveedor.  
+- contactName: Nombre del contacto principal.  
+- contactEmail: Email de contacto.  
+- contactPhone: Teléfono de contacto.  
+- notes: Observaciones adicionales sobre el proveedor.  
+
+**Métodos:**
+
+- Supplier(CreateSupplierCommand command): Crea el proveedor desde el comando de creación.  
+- update(UpdateSupplierCommand command): Aplica los cambios del comando de actualización.  
+
+**Características:**  
+Actúa como raíz del agregado. Un lote de café siempre debe referenciar un proveedor registrado.
+
+---
+
+#### 2. CoffeeBatch
+
+**Propósito:**  
+Representa un lote de café verde recibido de un proveedor. Es la entidad central de trazabilidad del sistema y el Shared Kernel con Procedure.
+
+**Atributos:**
+
+- id: Identificador único del lote.  
+- userId: Identificador del dueño del lote.  
+- supplierId: Referencia al proveedor del lote.  
+- name: Nombre o código identificador del lote.  
+- origin: País o región de origen del café.  
+- variety: Variedad botánica del café (Typica, Bourbon, Gesha, etc.).  
+- process: Proceso de beneficio (Lavado, Natural, Honey).  
+- harvestDate: Fecha de cosecha del café.  
+- receptionDate: Fecha de recepción del lote.  
+- greenWeightKg: Peso del café verde recibido en kilogramos.  
+- purchasePricePerKg: Precio de compra por kilogramo.  
+- status: Estado actual del lote (RECEIVED, STORED, ROASTING, FINISHED).  
+- certifications: Lista de certificaciones del café (orgánico, fair trade, etc.).  
+- notes: Observaciones adicionales del lote.  
+
+**Métodos:**
+
+- CoffeeBatch(CreateCoffeeBatchCommand command): Crea el lote desde el comando.  
+- update(UpdateCoffeeBatchCommand command): Aplica actualizaciones al lote.  
+- updateStatus(UpdateBatchStatusCommand command): Cambia el estado del lote siguiendo las transiciones válidas del dominio.  
+
+**Características:**  
+Es el Shared Kernel compartido con Procedure. Procedure adopta el modelo de CoffeeBatch como Conformist.
+
+---
+
+#### 3. RoastProfile
+
+**Propósito:**  
+Representa un perfil de tueste registrado para un lote específico, documentando los parámetros técnicos del proceso de tostado.
+
+**Atributos:**
+
+- id: Identificador único del perfil de tueste.  
+- userId: Identificador del barista o dueño que crea el perfil.  
+- batchId: Referencia al lote de café verde tostado.  
+- name: Nombre descriptivo del perfil de tueste.  
+- roastLevel: Nivel de tueste (LIGHT, MEDIUM, MEDIUM_DARK, DARK).  
+- startTemperatureCelsius: Temperatura inicial del proceso en °C.  
+- endTemperatureCelsius: Temperatura final del proceso en °C.  
+- roastDurationMinutes: Duración total del tueste en minutos.  
+- greenWeightKg: Peso del café verde ingresado al tostador.  
+- roastedWeightKg: Peso del café tostado resultante.  
+- wastagePercent: Porcentaje de merma calculado automáticamente.  
+- roastDate: Fecha en que se realizó el tueste.  
+- curveSummary: Resumen descriptivo de la curva de tueste.  
+- notes: Observaciones adicionales del perfil.  
+
+**Métodos:**
+
+- RoastProfile(CreateRoastProfileCommand command): Crea el perfil desde el comando.  
+- update(UpdateRoastProfileCommand command): Aplica actualizaciones al perfil.  
+- calculateWastage(): Calcula automáticamente el porcentaje de merma a partir de los pesos ingresados.  
+
+**Características:**  
+Publica RoastProfileCreatedEvent que Procedure consume para habilitar sesiones de cata y Costing para actualizar costos de producción.
+
+---
+
+#### 4. InventoryEntry
+
+**Propósito:**  
+Representa una entrada de inventario que registra el stock actual de café (verde o tostado) disponible para un usuario.
+
+**Atributos:**
+
+- id: Identificador único de la entrada de inventario.  
+- userId: Identificador del dueño del inventario.  
+- batchId: Referencia al lote asociado a esta entrada.  
+- coffeeType: Tipo de café almacenado (GREEN, ROASTED).  
+- quantityKg: Cantidad disponible en kilogramos.  
+- lastUpdated: Fecha y hora de la última actualización del stock.  
+- notes: Observaciones sobre el estado del stock.  
+
+**Métodos:**
+
+- InventoryEntry(CreateInventoryEntryCommand command): Crea la entrada de inventario.  
+- updateQuantity(UpdateInventoryQuantityCommand command): Ajusta la cantidad disponible y registra el movimiento.  
+
+**Características:**  
+Publica InventoryUpdatedEvent que Costing consume para calcular merma real.
+
+---
+
+### Value Objects
+
+#### 1. RoastLevel (Enum)
+
+Valores: LIGHT, MEDIUM, MEDIUM_DARK, DARK.  
+Representa el nivel de tueste del café con sus características sensoriales asociadas.
+
+### 2. BatchStatus (Enum)
+
+Valores: RECEIVED, STORED, ROASTING, FINISHED.  
+Define el ciclo de vida de un lote dentro del sistema.
+
+#### 3. CoffeeType (Enum)
+
+Valores: GREEN, ROASTED.  
+Distingue el tipo de café almacenado en inventario.
+
+#### 4. OriginInfo
+
+Atributos: country, region, variety, process.  
+Agrupa la información de origen y procesamiento del café para evitar dispersión en el agregado CoffeeBatch.
+
+#### 5. WeightMeasurement
+
+Atributos: valueKg.  
+Representa un peso en kilogramos con validación de valores positivos.
+
+---
+
+###### Commands
+
+- CreateSupplierCommand — userId, name, country, region, contactName, contactEmail, contactPhone, notes  
+- UpdateSupplierCommand — supplierId, userId, name, country, region, contactName, contactEmail, contactPhone, notes  
+- DeleteSupplierCommand — supplierId, userId  
+- CreateCoffeeBatchCommand — userId, supplierId, name, origin, variety, process, harvestDate, receptionDate, greenWeightKg, purchasePricePerKg, certifications, notes  
+- UpdateCoffeeBatchCommand — batchId, userId, todos los campos actualizables  
+- UpdateBatchStatusCommand — batchId, userId, newStatus  
+- DeleteCoffeeBatchCommand — batchId, userId  
+- CreateRoastProfileCommand — userId, batchId, name, roastLevel, startTemperatureCelsius, endTemperatureCelsius, roastDurationMinutes, greenWeightKg, roastedWeightKg, roastDate, curveSummary, notes  
+- UpdateRoastProfileCommand — roastProfileId, userId, todos los campos actualizables  
+- DeleteRoastProfileCommand — roastProfileId, userId  
+- CreateInventoryEntryCommand — userId, batchId, coffeeType, quantityKg, notes  
+- UpdateInventoryQuantityCommand — inventoryEntryId, userId, quantityKg, notes  
+
+---
+
+###### Queries
+
+- GetSupplierByIdForUserQuery — supplierId, userId  
+- GetSuppliersByUserIdQuery — userId  
+- GetCoffeeBatchByIdForUserQuery — batchId, userId  
+- GetCoffeeBatchesByUserIdQuery — userId  
+- GetCoffeeBatchesBySupplierQuery — supplierId, userId  
+- GetRoastProfileByIdForUserQuery — roastProfileId, userId  
+- GetRoastProfilesByBatchIdQuery — batchId, userId  
+- GetRoastProfilesByUserIdQuery — userId  
+- GetInventoryByUserIdQuery — userId  
+- GetInventoryByBatchIdQuery — batchId, userId  
+
 #### 4.2.2.2. Interface Layer
+##### Controllers
+
+###### 1. SuppliersController
+
+**Endpoints:**  
+POST /api/v1/suppliers, GET /api/v1/suppliers, GET /api/v1/suppliers/{supplierId}, PUT /api/v1/suppliers/{supplierId}, DELETE /api/v1/suppliers/{supplierId}  
+
+**Dependencias:**  
+SupplierCommandService, SupplierQueryService, CurrentProfileIdResolver  
+
+---
+
+###### 2. CoffeeBatchesController
+
+**Endpoints:**  
+POST /api/v1/coffee-batches, GET /api/v1/coffee-batches, GET /api/v1/coffee-batches/{batchId}, PUT /api/v1/coffee-batches/{batchId}, PATCH /api/v1/coffee-batches/{batchId}/status, DELETE /api/v1/coffee-batches/{batchId}  
+
+**Dependencias:**  
+CoffeeBatchCommandService, CoffeeBatchQueryService, CurrentProfileIdResolver  
+
+---
+
+###### 3. RoastProfilesController
+
+**Endpoints:**  
+POST /api/v1/roast-profiles, GET /api/v1/roast-profiles, GET /api/v1/roast-profiles/{roastProfileId}, PUT /api/v1/roast-profiles/{roastProfileId}, DELETE /api/v1/roast-profiles/{roastProfileId}  
+
+**Dependencias:**  
+RoastProfileCommandService, RoastProfileQueryService, CurrentProfileIdResolver  
+
+---
+
+###### 4. InventoryController
+
+**Endpoints:**  
+GET /api/v1/inventory, GET /api/v1/inventory/{inventoryEntryId}, PATCH /api/v1/inventory/{inventoryEntryId}/quantity  
+
+**Dependencias:**  
+InventoryCommandService, InventoryQueryService, CurrentProfileIdResolver  
+
 #### 4.2.2.3. Application Layer
+
+###### Command Services
+
+- **SupplierCommandServiceImpl** — Gestiona creación, actualización y eliminación de proveedores. Valida unicidad de nombre por usuario antes de crear.  
+
+- **CoffeeBatchCommandServiceImpl** — Gestiona el ciclo de vida de lotes. Valida que el supplierId exista y pertenezca al usuario. Controla transiciones de estado válidas. Publica BatchRegisteredEvent al crear.  
+
+- **RoastProfileCommandServiceImpl** — Gestiona perfiles de tueste. Valida que el batchId exista y esté en estado STORED o ROASTING. Calcula wastagePercent automáticamente. Publica RoastProfileCreatedEvent al crear.  
+
+- **InventoryCommandServiceImpl** — Gestiona entradas de inventario. Se actualiza automáticamente al registrar un perfil de tueste. Publica InventoryUpdatedEvent al modificar cantidad.  
+
+---
+
+###### Query Services
+
+- **SupplierQueryServiceImpl**, **CoffeeBatchQueryServiceImpl**, **RoastProfileQueryServiceImpl**, **InventoryQueryServiceImpl** — Cada uno resuelve las queries del agregado correspondiente, acotando siempre por userId.  
+
 #### 4.2.2.4. Infrastructure Layer
+
+###### Repositories
+
+- **SupplierRepository** — findByUserIdOrderByCreatedAtDesc(Long userId), findByIdAndUserId(Long id, Long userId)  
+
+- **CoffeeBatchRepository** — findByUserIdOrderByReceptionDateDesc(Long userId), findByIdAndUserId(Long id, Long userId), findBySupplierId(Long supplierId)  
+
+- **RoastProfileRepository** — findByUserIdOrderByRoastDateDesc(Long userId), findByIdAndUserId(Long id, Long userId), findByBatchId(Long batchId)  
+
+- **InventoryEntryRepository** — findByUserId(Long userId), findByBatchIdAndUserId(Long batchId, Long userId), findByIdAndUserId(Long id, Long userId)  
+
 #### 4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams
+<img src="public/assets/images/chapter-4/management/bounded-context-software-architecture-component-level-diagrams.png"/>
+
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+<img src="public/assets/images/chapter-4/management/bounded-context-domain-layer-class-diagrams.png"/>
+
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
+<img src="public/assets/images/chapter-4/management/bounded-context-database-design-diagram.png"/>
 
 ### 4.2.3. Bounded Context: Costing
 
