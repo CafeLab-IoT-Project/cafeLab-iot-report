@@ -2545,15 +2545,44 @@ IAM actúa como un contexto transversal que interactúa con todos los demás, co
 
 Para visualizar cómo colaboran los bounded contexts del sistema CafeLab, se aplicó la técnica de **Domain Storytelling**. Esta técnica permite narrar los flujos de mensajes desde la perspectiva de los actores del dominio (Dueño de Cafetería y Barista Profesional), identificando qué contexto emite un mensaje, cuál lo recibe y qué evento o comando genera. Se modelaron tres flujos principales de negocio:
 
-**Flujo 1 — Registro de lote y monitoreo IoT:**
-El dueño se autentica en IAM, que valida sus credenciales y emite un JWT con su rol (paso 1). Con el token validado, el dueño registra un nuevo lote de café verde en el bounded context Management (paso 2). Management notifica al bounded context Costing para inicializar el registro de costos del lote (paso 3). De forma paralela e independiente, el sensor TrackSilo envía lecturas continuas de temperatura y humedad al bounded context IoT Monitoring (paso 4). Cuando una lectura supera los umbrales configurados, IoT Monitoring emite un evento que activa el envío de una alerta por email al dueño via Brevo (paso 5) y envía la señal de activación al actuador deshumedecedor via EdgeActuatorClient (paso 6).
+**1. Conexión IAM - MANAGEMENT :: Registro de lotes y proveedores:**
+1. El usuario se registra, se autentica con jwt y selecciona un plan de suscripción (IAM).
+2. Se habilita el acceso al módulo de gestión (Management).
+3. El usuario registra un nuevo proveedor (Management).
+4. El usuario registra un nuevo lote de café verde asociado al proveedor (Management).
 
-**Flujo 2 — Barista registra perfil de tueste y sesión de cata:**
-El barista se autentica en IAM (paso 1) y crea un perfil de tueste en Management vinculado a un lote existente (paso 2-3). Luego inicia una sesión de cata estructurada en el bounded context Procedure (paso 4), registrando notas sensoriales. Al completar la sesión, Procedure publica un evento que Management consume para establecer la correlación tueste-sabor (paso 5). Simultáneamente, Costing actualiza el costo de producción del lote (paso 6). El barista puede visualizar el perfil sensorial generado con el resultado de la correlación (paso 7).
+<img src="public/assets/images/chapter-4/domain-message-flows-modeling/iam-management.png"/>
 
-**Flujo 3 — Registro, suscripción y control de acceso por plan:**
-Un usuario nuevo se registra en IAM (paso 1) y selecciona un plan de suscripción (paso 2). IAM coordina el proceso de pago con la pasarela de pago externa (paso 3-4). Una vez confirmado el pago, IAM activa la suscripción y emite un JWT que incluye los roles y el plan activo del usuario (paso 5). A partir de ese momento, los bounded contexts Management (paso 6) y Procedure (paso 7) validan el JWT en cada request para habilitar o restringir funcionalidades según el plan contratado. El usuario recibe acceso concedido a las funcionalidades correspondientes (paso 8).
+**2. Conexión IAM - PROCEDURE :: Creación de Cupping Sessions, calibration, recipes y defectos:**
+1. El usuario se registra, se autentica con jwt y selecciona un plan de suscripción (IAM).
+2. Se habilita el acceso al módulo de procedimientos (Procedure).
+3. El usuario crea una nueva sesión de cata (Procedure).
+4. El usuario registra una nueva calibración de molienda (Procedure).
+5. El usuario crea una nueva receta de preparación (Procedure).
+6. El usuario registra un nuevo defecto de tueste (Procedure).
 
+<img src="public/assets/images/chapter-4/domain-message-flows-modeling/iam-procedure.png"/>
+
+**3. Conexión Management - Procedure :: Manejo de datos y consumo**
+1. Management emite eventos de registro de lote y actualización de inventario.
+2. Procedure consume eventos de lote registrado y actualización de inventario para mantener su información actualizada.
+3. Procedure emite eventos de creación de perfil de tueste, sesión de cata y receta creada.
+4. Management consume eventos de perfil de tueste creado, sesión de cata creada y receta creada para actualizar trazabilidad e inventario.
+<img src="public/assets/images/chapter-4/domain-message-flows-modeling/management-procedure.png"/>
+
+**4. Conexión Management - Costing :: Análisis de costos y rendimiento**
+1. Management emite eventos de registro de lote, actualización de inventario y creación de perfil de tueste.
+2. Costing consume eventos de lote registrado, actualización de inventario y perfil de tueste creado para realizar cálculos de costos y rendimiento.
+3. Costing emite eventos de costo por lote calculado y rendimiento por lote calculado.
+4. Management consume eventos de costo por lote calculado y rendimiento por lote calculado para actualizar reportes de trazabilidad y eficiencia.
+<img src="public/assets/images/chapter-4/domain-message-flows-modeling/management-costing.png"/>
+
+
+**5. Monitoreo IoT - Management :: Monitoreo ambiental y trazabilidad**
+1. IoT Monitoring recibe lecturas del sensor TrackSilo (temperatura y humedad).
+2. IoT Monitoring evalúa las lecturas contra umbrales configurados y emite eventos de umbral superado o condiciones óptimas.
+3. Management consume eventos de umbral superado y condiciones óptimas para actualizar el estado ambiental del lote asociado y generar alertas o reportes de trazabilidad.
+<img src="public/assets/images/chapter-4/domain-message-flows-modeling/monitoring-management.png"/>
 
 #### 4.1.1.3. Bounded Context Canvases
 
@@ -3547,7 +3576,7 @@ El **Costing Bounded Context** está compuesto por los siguientes módulos princ
 - Incluye los controllers, resources y transformers que reciben los datos enviados desde el frontend, los convierten en comandos o queries del dominio y exponen las respuestas en un formato adecuado para la API.
 
 **3. Domain Layer**
-
+domain
 - Encapsula la lógica de negocio relacionada con el **análisis y registro de costos** de los lotes de café.
 - Define los aggregates, value objects, commands y queries que representan los conceptos centrales del contexto, como el registro de costos, el detalle de costos y los cálculos consolidados.
 
