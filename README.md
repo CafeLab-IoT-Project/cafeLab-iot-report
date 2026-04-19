@@ -4992,7 +4992,7 @@ El __Procedure Bounded Context__ es responsable de la gestión de todos los proc
 
 En este sección, se pressentará el diagrama de componentes del Procedure Bounded Context, en el cual se detallan los principañes módules y sus interacciones dentro de su contexto, lo que ofrece una mayor claridad de la estructura.
 
-![Component View: CaféLab](<public/assets/images/C4/Component-procedure-component.png>)
+![Component View: CaféLab](<public/assets/images/C4/procedure-components.png>)
 
 El **Procedure Bounded Context** está compuesto por los siguientes módulos principales:
 
