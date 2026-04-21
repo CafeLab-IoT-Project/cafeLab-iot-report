@@ -1179,13 +1179,13 @@ Ambos perfiles coinciden en la importancia de las catas sensoriales, el uso de h
 En este contexto, CaféLab se posiciona como una solución que permite integrar las tareas técnicas y estratégicas mediante el uso de software y dispositivos IoT, facilitando el monitoreo en tiempo real, la trazabilidad completa y la toma de decisiones informadas para mejorar la calidad del café desde el almacenamiento hasta la taza.
 
 ### 2.3.3 User Journey Mapping
-**Administradores y dueños de cafeterias de especialidad**
+**Administradores y dueños de cafeterías de especialidad**
 ![Journey Map Fernando](<public/assets/images/chapter-2/journeymapping/Fernando.png>)
 **Barista Profesional**
 ![Journey Map Valeria](<public/assets/images/chapter-2/journeymapping/Valeria.png>)
 
 ### 2.3.4. Empathy Mapping
-**Administradores y dueños de cafeterias de especialidad**
+**Administradores y dueños de cafeterías de especialidad**
 ![Empathy Map dueño](<public/assets/images/chapter-2/empathymapping/Empathy map Dueños.png>)
 **Barista Profesional**
 ![Barista](<public/assets/images/chapter-2/empathymapping/Empathy Map Barista Professional.png>)
@@ -1455,7 +1455,7 @@ En este proyecto, el uso de **Domain-Driven Design (DDD)** permite alinear el de
 
 ## 3.1. User Stories
 
-Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben ser considerados durante el desarrollo de la plataforma. Para el proyecto CaféLab IoT, se presenta un conjunto de user stories y technical stories que guían el desarrollo del sistema de monitoreo ambiental TrackSilo, incluyendo la gestión de lecturas del sensor, activación de actuadores y visualización de condiciones de almacenamiento del café verde.
+Las user stories son una forma de convertir el lenguaje informal de los usuarios del sistema en requerimientos de software que deben considerarse durante el desarrollo de la plataforma. Para el proyecto CaféLab IoT, se presenta un conjunto de user stories y technical stories que guían el desarrollo del sistema de monitoreo ambiental TrackSilo, incluyendo la gestión de lecturas del sensor, la activación de actuadores y la visualización de las condiciones de almacenamiento del café verde.
 
 <table border="1">
 <tr>
@@ -1470,7 +1470,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>US01</td>
 <td>Registro de Proveedores</td>
 <td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
-<td><strong>Escenario 1:</strong> Creación de nuevo proveedor.<br><strong>Dado que</strong> se establece relación con un nuevo proveedor de café<br><strong>Cuando</strong> el usuario inresa los datos completos (nombre, ubicación, contacto, tipos de café)<br><strong>Entonces</strong> el sistema registra la información y genera un perfil de proveedor.<br><br><strong>Escenario 2:</strong> Evaluación de proveedor.<br><strong>Dado que</strong> se han recibido lotes de un proveedor específico<br><strong>Cuando</strong> el usuario completa el formulario de evaluación con criterios definidos<br><strong>Entonces</strong> el sistema guarda la evaluación en el historial del proveedor.</td>
+<td><strong>Escenario 1:</strong> Creación de nuevo proveedor.<br><strong>Dado que</strong> se establece relación con un nuevo proveedor de café<br><strong>Cuando</strong> el usuario ingresa los datos completos (nombre, ubicación, contacto, tipos de café)<br><strong>Entonces</strong> el sistema registra la información y genera un perfil de proveedor.<br><br><strong>Escenario 2:</strong> Evaluación de proveedor.<br><strong>Dado que</strong> se han recibido lotes de un proveedor específico<br><strong>Cuando</strong> el usuario completa el formulario de evaluación con criterios definidos<br><strong>Entonces</strong> el sistema guarda la evaluación en el historial del proveedor.</td>
 <td>EP02</td>
 </tr>
 
@@ -1617,8 +1617,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <tr>
 <td>US19</td>
 <td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
+<td>Como visitante de la landing page, quiero redirigirme a la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navega por la landing page y pulsa el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulsa el botón de acceso en la landing page y existe un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
 <td>EP07</td>
 </tr>
 
@@ -2052,9 +2052,9 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </table>
 
 ## 3.2. Impact Mapping.
-### 3.2.1. Mapa de impacto de Freddy, el dueño de cafeteria.
+### 3.2.1. Mapa de impacto de Freddy, el dueño de cafetería
 ![Freddy](<public/assets/images/impactmapping/Impact map 1.png>)
-### 3.2.2. Mapa de impacto de Valeria, barrista.
+### 3.2.2. Mapa de impacto de Valeria, barista
 ![alt text](<public/assets/images/impactmapping/Valeria Ramos.png>)
 
 ## 3.3. Product Backlog
@@ -2096,7 +2096,7 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td>4</td>
 <td>US19</td>
 <td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+<td>Como visitante de la landing page, quiero redirigirme a la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
 <td>2</td>
 </tr>
 
