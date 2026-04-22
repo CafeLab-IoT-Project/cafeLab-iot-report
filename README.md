@@ -352,7 +352,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       lorem ipsum dolor sit amet, consectetur adipiscing elit.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
@@ -373,7 +373,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       lorem ipsum dolor sit amet, consectetur adipiscing elit.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
@@ -440,10 +440,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
     <td> <img src="public/assets/images/chapter-1/integrantes/sergio_julca.png"alt="..." width="200">  </td>
     <td> Mi nombre es <strong>Sergio Gino Julca Minaya</strong>, soy estudiante de Ingeniería de software. Tengo experiencia desarrollando proyectos de automatización con diferentes frameworks y tecnologías. Del mismo modo, me considero una persona competitiva, responsable y comprometida. Estoy interesado en conocer todas las áreas posibles desde desarrollo de software hasta el desarrollo de IA. Mi objetivo en el equipo es contribuir activamente. </td>
   </tr>
-  <tr> 
-    <td> <img src="public/assets/images/chapter-1/integrantes/fredy.jpeg"alt="..." width="200">  </td>
-    <td> Mi nombre es <strong>...</strong>, ... </td>
-  </tr>
+
 </table>
 
 ## 1.2. Solution Profile
