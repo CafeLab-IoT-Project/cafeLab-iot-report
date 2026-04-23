@@ -483,7 +483,7 @@ Nuestro sistema para baristas y cafeterías de especialidad fue diseñado para l
 
 Hemos observado que, actualmente, el café como producto ofrecido no está cumpliendo completamente con sus objetivos de calidad, ya que los procesos están desarticulados, no hay conexión entre etapas como el almacenamiento, el tueste y la extracción, la conservación del grano no se realiza adecuadamente, y muchos datos importantes se pierden o no quedan registrados. Esto provoca errores, variabilidad en la calidad, pérdida de información y poca confianza del cliente final, así como puede dificultar el crecimiento de las cafeterías y sus baristas.
 
-¿Cómo podríamos mejorar la situación para que los baristas y cafeterías de especialidad sigan los procesos del café con más facilidad logrando una integración real de los mismo, alertas en tiempo real sobre el estado del grano, cuidado de la conservación del grano automatizada y herramientas que permitan ver y comparar datos técnicos y sensoriales, basándonos en métricas como consistencia en recetas, reducción de pérdidas y mejora en la trazabilidad?
+¿Cómo podríamos mejorar la situación para que los baristas y cafeterías de especialidad sigan los procesos del café con más facilidad logrando una integración real de los mismo, posean alertas en tiempo real sobre el estado del grano, mantengan cuidado de la conservación del grano automatizada y utilicen herramientas que permitan ver y comparar datos técnicos y sensoriales, basándonos en métricas como consistencia en recetas, reducción de pérdidas y mejora en la trazabilidad?
 
 #### 1.2.2.2. Lean UX Assumptions
 
