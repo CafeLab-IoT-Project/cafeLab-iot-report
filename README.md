@@ -349,7 +349,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
     <td>
       <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Participó activamente en el equipo aportando liderazgo compartido en distintas etapas del proyecto. Contribuyó en el diseño, registro y análisis de entrevistas, lo que permitió tomar decisiones basadas en datos reales. Así mismo, colaboró en el Big Picture Event Storming para estructurar el dominio y posteriormente desarrolló el bounded context Costing, definiendo su arquitectura y diagramas, asegurando coherencia técnica e integración con el sistema.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
@@ -370,7 +370,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
     <td>
       <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Participó de un entorno colaborativo mediante la definición del Ubiquitous Language, alineando la comunicación del equipo. Participó en la planificación y ejecución de entrevistas, Event Storming y Candidate Context Discovery, asegurando orden y claridad en cada etapa. En el bounded context de Costing, trabajó de forma estructurada para cumplir los objetivos y entregables del proyecto.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
