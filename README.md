@@ -5304,6 +5304,8 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 
 1. Al haber realizado la primera entrega podemos concluir que el emplear la técnica Lean UX nos ayudó a poder comprender mejor el problema que estamos tratando así como a las personas afectadas, lo que desean y como podemos ofrecérselos utilizando herramientas tecnológicas. Además, nos brindó claridad como equipo y nos hizo abordar los puntos más críticos considerando diferentes perspectivas.
 
+2. Asimismo, el desarrollo de los artefactos de análisis, especificación de requerimientos y diseño de arquitectura permitió consolidar una visión más completa de Café Lab como solución IoT orientada al café de especialidad. La definición de bounded contexts, user stories, product backlog y diagramas de arquitectura ayudó a organizar las responsabilidades del sistema, reducir ambigüedades y establecer una base técnica más sólida para implementar una plataforma capaz de integrar trazabilidad, control de procesos, análisis de costos y monitoreo ambiental en una misma propuesta de valor.
+
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
 - **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
