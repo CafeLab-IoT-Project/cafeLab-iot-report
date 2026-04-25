@@ -132,8 +132,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <tr>
     <td><strong>Evidencia</strong></td>
     <td colspan="2">
-    <img src="public/assets/images/cover/insights/commit-por-integrante.png" alt="Evidencia">
-    <img src="public/assets/images/cover/insights/commits-grupal.png" alt="Evidencia"></td>
+    <img src="public/assets/images/cover/insights/project-report-collaboration-insights.png" alt="Evidencia de commits del equipo"></td>
   </tr>
 </table>
 
@@ -196,8 +195,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
   - [3.1. User Stories](#31-user-stories)
   - [3.2. Impact Mapping.](#32-impact-mapping)
-    - [3.2.1. Mapa de impacto de Freddy, el dueño de cafeteria.](#321-mapa-de-impacto-de-freddy-el-dueño-de-cafeteria)
-    - [3.2.2. Mapa de impacto de Valeria, barrista.](#322-mapa-de-impacto-de-valeria-barrista)
+    - [3.2.1. Mapa de impacto de Freddy, el dueño de cafetería](#321-mapa-de-impacto-de-freddy-el-dueño-de-cafetería)
+    - [3.2.2. Mapa de impacto de Valeria, barista](#322-mapa-de-impacto-de-valeria-barista)
   - [3.3. Product Backlog](#33-product-backlog)
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
   - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
@@ -5306,7 +5305,20 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 1. Al haber realizado la primera entrega podemos concluir que el emplear la técnica Lean UX nos ayudó a poder comprender mejor el problema que estamos tratando así como a las personas afectadas, lo que desean y como podemos ofrecérselos utilizando herramientas tecnológicas. Además, nos brindó claridad como equipo y nos hizo abordar los puntos más críticos considerando diferentes perspectivas.
 
 # Bibliografía
+- **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
+- **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
+- **Allied Market Research.** (2022). *Specialty Coffee Market by Product Type and Distribution Channel: Global Opportunity Analysis and Industry Forecast, 2021–2027*. [https://www.alliedmarketresearch.com](https://www.alliedmarketresearch.com)
+- **International Coffee Organization (ICO).** (2023). *World Coffee Consumption Statistics*. [https://www.ico.org](https://www.ico.org)
+- **Khononov, V.** (2022). *Learning Domain-Driven Design*. O’Reilly Media, Inc.[https://dl.ebooksworld.ir/books/Learning.Domain-Driven.Design.9781098100131.EBooksWorld.ir.pdf](https://dl.ebooksworld.ir/books/Learning.Domain-Driven.Design.9781098100131.EBooksWorld.ir.pdf)
+- **Evans, E.** (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Domain Language.[https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
+- **Teams, A** (s, f.).  Angular material. Angular Material. [https://material.angular.dev/](https://material.angular.dev/)
+- **Vernon, V.** (2016). Domain-Driven Design Distilled. [https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
 
 # Anexos
+
+- Repositorio del informe: [https://github.com/CafeLab-IoT-Project/cafeLaf-iot-report](https://github.com/CafeLab-IoT-Project/cafeLaf-iot-report)
+- Organización del proyecto en GitHub: [https://github.com/CafeLab-IoT-Project](https://github.com/CafeLab-IoT-Project)
+- Lean UX Canvas en Mural: [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949)
+- Video de entrevistas en YouTube: [https://youtu.be/eJOE34HVgzc](https://youtu.be/eJOE34HVgzc)
 
 
