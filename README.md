@@ -358,7 +358,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
@@ -379,7 +379,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
       <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
-      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
       <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
