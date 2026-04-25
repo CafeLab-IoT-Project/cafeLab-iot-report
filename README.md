@@ -5306,6 +5306,10 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 
 2. Asimismo, el desarrollo de los artefactos de análisis, especificación de requerimientos y diseño de arquitectura permitió consolidar una visión más completa de Café Lab como solución IoT orientada al café de especialidad. La definición de bounded contexts, user stories, product backlog y diagramas de arquitectura ayudó a organizar las responsabilidades del sistema, reducir ambigüedades y establecer una base técnica más sólida para implementar una plataforma capaz de integrar trazabilidad, control de procesos, análisis de costos y monitoreo ambiental en una misma propuesta de valor.
 
+3. Las entrevistas con los siete usuarios reales —baristas profesionales y dueños de cafeterías— confirmaron que el problema de conservación del grano es operativo y no solo percibido, validando la necesidad del componente TrackSilo (ESP32 + DHT22) con umbrales de 18–22°C y 55–65% de humedad. Este hallazgo orientó la definición de las User Stories IoT (US23–US28) y las Technical Stories (TS24–TS28), logrando criterios de aceptación concretos y verificables alineados con las hipótesis del Lean UX Canvas.
+
+4. La aplicación de Domain-Driven Design produjo cinco bounded contexts bien delimitados (IAM, Management, Costing, Procedure e IoT Monitoring) con patrones de integración claros como Anti-Corruption Layer, Customer/Supplier y Conformist. Esta arquitectura garantiza que el componente IoT sea un elemento central del dominio y no un módulo aislado, sentando las bases técnicas para que las siguientes entregas puedan implementar la trazabilidad completa del café desde el almacén hasta la taza.
+
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
 - **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
