@@ -5300,8 +5300,13 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 ![alt text](<public/assets/images/iotmonitoring/class diagram.png>)
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 ![alt text](public/assets/images/iotmonitoring/database.png)
+
 # Conclusiones
+
+1. Al haber realizado la primera entrega podemos concluir que el emplear la técnica Lean UX nos ayudó a poder comprender mejor el problema que estamos tratando así como a las personas afectadas, lo que desean y como podemos ofrecérselos utilizando herramientas tecnológicas. Además, nos brindó claridad como equipo y nos hizo abordar los puntos más críticos considerando diferentes perspectivas.
+
 # Bibliografía
+
 # Anexos
 
 
