@@ -5326,5 +5326,6 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 - Organización del proyecto en GitHub: [https://github.com/CafeLab-IoT-Project](https://github.com/CafeLab-IoT-Project)
 - Lean UX Canvas en Mural: [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949)
 - Video de entrevistas en YouTube: [https://youtu.be/eJOE34HVgzc](https://youtu.be/eJOE34HVgzc)
+- Video de presentación en MicrosoftStream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210838_upc_edu_pe/IQDI9_AGxPTfTpv1d379RsU7Aer0uiZ6_G6R8RSC4L1-mb4?e=rpyqKp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210838_upc_edu_pe/IQDI9_AGxPTfTpv1d379RsU7Aer0uiZ6_G6R8RSC4L1-mb4?e=rpyqKp)
 
 
