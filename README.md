@@ -5721,5 +5721,5 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 - Organización del proyecto en GitHub: [https://github.com/CafeLab-IoT-Project](https://github.com/CafeLab-IoT-Project)
 - Lean UX Canvas en Mural: [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949)
 - Video de entrevistas en YouTube: [https://youtu.be/eJOE34HVgzc](https://youtu.be/eJOE34HVgzc)
-
-
+- Link de landing page: [https://cafelab-iot-project.github.io/cafeLab-landingPage/](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
+- Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
