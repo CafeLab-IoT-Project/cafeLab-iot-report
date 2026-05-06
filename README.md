@@ -329,6 +329,74 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
         - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+  - [5.1. Style Guidelines.](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture.](#52-information-architecture)
+    - [5.2.1. Organization Systems.](#521-organization-systems)
+    - [5.2.2. Labeling Systems.](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems.](#524-searching-systems)
+    - [5.2.5. Navigation Systems.](#525-navigation-systems)
+  - [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+    - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
+    - [5.4.2. Applications Mock-ups.](#542-applications-mock-ups)
+    - [5.4.3. Applications User Flow Diagrams.](#543-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping.](#55-applications-prototyping)
+  - [5.6. IoT Device Design.](#56-iot-device-design)
+    - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
+    - [Diseño Físico del Dispositivo (Physical Design)](#diseño-físico-del-dispositivo-physical-design)
+    - [Diseño de Circuito (Circuit Design)](#diseño-de-circuito-circuit-design)
+      - [Código IoT (Arduino / ESP32)](#código-iot-arduino--esp32)
+      - [Diagrama de configuración Wokwi (diagram.json)](#diagrama-de-configuración-wokwi-diagramjson)
+    - [Flujos de Interacción del Prototipo IoT](#flujos-de-interacción-del-prototipo-iot)
+      - [Flujo 1: Monitoreo Pasivo y Reporte Nominal (US23)](#flujo-1-monitoreo-pasivo-y-reporte-nominal-us23)
+      - [Flujo 2: Detección de Anomalía y Activación de Actuador (US25 y US28)](#flujo-2-detección-de-anomalía-y-activación-de-actuador-us25-y-us28)
+      - [Flujo 3: Restablecimiento de Condiciones (Histéresis)](#flujo-3-restablecimiento-de-condiciones-histéresis)
+- [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management.](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [Project Management](#project-management)
+      - [Product UX/UI Design:](#product-uxui-design)
+      - [Software Development:](#software-development)
+      - [Software Documentation:](#software-documentation)
+    - [6.1.2. Source Code Management.](#612-source-code-management)
+  - [Flujo de trabajo GitFlow:](#flujo-de-trabajo-gitflow)
+      - [Main branch](#main-branch)
+      - [Develop branch](#develop-branch)
+      - [Release branch](#release-branch)
+      - [Feature branch](#feature-branch)
+      - [Hotfix branch](#hotfix-branch)
+  - [Conventional Commits](#conventional-commits)
+  - [Tipos De Conventional Commits](#tipos-de-conventional-commits)
+    - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#javascript)
+  - [Lenguaje Gherkin](#lenguaje-gherkin)
+    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+      - [Landing Page Deployment](#landing-page-deployment)
+  - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+    - [6.2.X. Sprint n](#62x-sprint-n)
+      - [6.2.X.1. Sprint Planning n.](#62x1-sprint-planning-n)
+      - [6.2.X.2. Aspect Leaders and Collaborators.](#62x2-aspect-leaders-and-collaborators)
+      - [6.2.X.3. Sprint Backlog n.](#62x3-sprint-backlog-n)
+      - [6.2.X.4. Development Evidence for Sprint Review.](#62x4-development-evidence-for-sprint-review)
+      - [6.2.X.5. Testing Suite Evidence for Sprint Review.](#62x5-testing-suite-evidence-for-sprint-review)
+      - [6.2.X.6. Execution Evidence for Sprint Review.](#62x6-execution-evidence-for-sprint-review)
+      - [6.2.X.7. Services Documentation Evidence for Sprint Review.](#62x7-services-documentation-evidence-for-sprint-review)
+      - [6.2.X.8. Software Deployment Evidence for Sprint Review.](#62x8-software-deployment-evidence-for-sprint-review)
+      - [6.2.X.9. Team Collaboration Insights during Sprint.](#62x9-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product.](#64-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -5299,6 +5367,339 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 ![alt text](<public/assets/images/iotmonitoring/class diagram.png>)
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 ![alt text](public/assets/images/iotmonitoring/database.png)
+
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Style Guidelines.
+
+### 5.1.1. General Style Guidelines.
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines.
+
+## 5.2. Information Architecture.
+
+### 5.2.1. Organization Systems.
+
+### 5.2.2. Labeling Systems.
+
+### 5.2.3. SEO Tags and Meta Tags
+
+### 5.2.4. Searching Systems.
+
+### 5.2.5. Navigation Systems.
+
+## 5.3. Landing Page UI Design.
+
+### 5.3.1. Landing Page Wireframe.
+
+### 5.3.2. Landing Page Mock-up.
+
+## 5.4. Applications UX/UI Design.
+
+### 5.4.1. Applications Wireframes.
+
+### 5.4.2. Applications Wireflow Diagrams.
+
+### 5.4.2. Applications Mock-ups.
+
+### 5.4.3. Applications User Flow Diagrams.
+
+## 5.5. Applications Prototyping.
+
+## 5.6. IoT Device Design.
+
+En esta sección se detalla la propuesta de diseño físico y de circuito para TrackSilo, el dispositivo IoT fundamental del ecosistema de Café Lab encargado del monitoreo ambiental en los almacenes de café verde.
+
+### Introducción y Criterios de Diseño
+El diseño de TrackSilo se rige por tres criterios principales: precisión ambiental, autonomía operativa y claridad visual. Dado que el dispositivo operará en almacenes donde el café verde es susceptible a cambios sutiles de humedad y temperatura, el hardware debe ser capaz de tomar lecturas precisas sin interferir en el entorno, actuando de manera pasiva hasta que los umbrales de riesgo se superen.
+
+**Relación con la Arquitectura de la Información (IA):**
+El diseño físico del dispositivo responde directamente a la IA del sistema. TrackSilo es el punto de entrada físico de los datos que alimentan el Dashboard de Monitoreo IoT. Cada lectura del sensor (SensorReading) y cada activación del deshumedecedor (ActuatorEvent) son jerarquizados y enviados mediante la API REST para ser visualizados en tiempo real por el dueño de la cafetería. La falta de pantallas complejas en el dispositivo físico es intencional, ya que la IA delega la visualización analítica a la aplicación web, manteniendo el hardware enfocado en la recolección pura de datos.
+
+**Relación con la Guía de Estilos (IoT Device Physical Interfaces):**
+La interfaz física del dispositivo sigue las convenciones visuales definidas en la guía de estilos de Café Lab. Se traslada el sistema de estados de la UI web al mundo físico mediante indicadores LED:
+- **Verde**: Condiciones óptimas (alineado con los indicadores de estado de lote en la aplicación).
+- **Ámbar/Rojo**: Condiciones fuera de rango o peligro.
+- **Azul**: Actuador (deshumedecedor) en funcionamiento.
+
+### Diseño Físico del Dispositivo (Physical Design)
+El diseño físico de TrackSilo está pensado para ser compacto, modular y resistente a entornos de almacenamiento de granos.
+
+- **Carcasa**: Una estructura que protege el microcontrolador (ESP32) del polvo y partículas de los sacos de café, pero que cuenta con ranuras de ventilación específicas para exponer el sensor DHT22 al ambiente real sin retener calor interno que pueda alterar la lectura.
+- **Interfaz visual**: Se opta por un diseño minimalista sin pantallas LCD para reducir el consumo energético. La interacción física se limita a un panel de luces LED que indica el estado actual del entorno y la actividad del deshumedecedor.
+- **Conectividad y Energía**: El dispositivo cuenta con un puerto de alimentación continua y un módulo de conexión para el relé que da la señal de encendido al equipo de deshumidificación externo.
+### Diseño de Circuito (Circuit Design)
+Para validar la viabilidad del dispositivo, se desarrolló el diseño del circuito y su simulación utilizando la herramienta Wokwi.
+
+El circuito está compuesto por:
+- **Microcontrolador ESP32**: Actúa como el cerebro del dispositivo (Edge), encargado de leer el sensor, procesar la lógica de activación local (histéresis) y conectarse mediante WiFi a la API de Café Lab.
+- **Sensor DHT22**: Periférico encargado de la lectura precisa de temperatura y humedad relativa del almacén.
+- **Actuador (Simulado por LED / Relé)**: Representado visualmente por un LED azul, este componente simula el envío de la señal de 3.3V o 5V hacia un relé que encendería el deshumedecedor industrial.
+
+![Diagrama de circuito de TrackSilo simulado en Wokwi](public/assets/images/iotmonitoring/wokwi-diagram.png)
+
+*Figura: Diagrama de circuito de TrackSilo simulado en Wokwi.*
+
+#### Código IoT (Arduino / ESP32)
+```cpp
+#include "DHT.h"
+
+#define DHTPIN 15      // Pin donde está conectado el sensor DHT22
+#define DHTTYPE DHT22  // Tipo de sensor
+#define ACTUATOR_PIN 2 // Pin del LED (Simulador del deshumedecedor)
+
+DHT dht(DHTPIN, DHTTYPE);
+
+// Umbrales basados en el informe de Café Lab
+const float MAX_TEMP = 22.0;
+const float MAX_HUMIDITY = 65.0;
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Café Lab - TrackSilo Iniciado");
+  
+  pinMode(ACTUATOR_PIN, OUTPUT);
+  digitalWrite(ACTUATOR_PIN, LOW); // Apagado por defecto
+  
+  dht.begin();
+}
+
+void loop() {
+  // Esperar 2 segundos entre lecturas
+  delay(2000);
+
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+
+  // Comprobar si hubo un error de lectura
+  if (isnan(h) || isnan(t)) {
+    Serial.println("¡Error al leer el sensor DHT!");
+    return;
+  }
+
+  Serial.print("Humedad: ");
+  Serial.print(h);
+  Serial.print("%  |  Temperatura: ");
+  Serial.print(t);
+  Serial.println("°C");
+
+  // Lógica de alerta y activación
+  if (h > MAX_HUMIDITY || t > MAX_TEMP) {
+    Serial.println("¡ALERTA! Condiciones fuera de rango. Activando deshumedecedor...");
+    digitalWrite(ACTUATOR_PIN, HIGH); // Encender LED
+  } else {
+    digitalWrite(ACTUATOR_PIN, LOW);  // Apagar LED
+  }
+}
+```
+
+#### Diagrama de configuración Wokwi (diagram.json)
+```json
+{
+  "version": 1,
+  "author": "Café Lab - TrackSilo Prototype",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -114.9, "left": -111, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 63.6,
+      "left": 253.4,
+      "attrs": { "color": "blue", "label": "Deshumedecedor" }
+    },
+    { "type": "wokwi-resistor", "id": "r1", "top": 100, "left": 140, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:3V3", "dht1:VCC", "red", [ "v-30", "h40" ] ],
+    [ "esp:GND.1", "dht1:GND", "black", [ "v-20", "h60" ] ],
+    [ "esp:15", "dht1:SDA", "green", [ "v-10", "h80" ] ],
+    [ "esp:2", "r1:1", "blue", [ "v20", "h30" ] ],
+    [ "r1:2", "led1:A", "green", [ "v0" ] ],
+    [ "esp:GND.2", "led1:C", "black", [ "v30", "h-70" ] ]
+  ],
+  "dependencies": {}
+}
+```
+
+### Flujos de Interacción del Prototipo IoT
+El prototipo diseñado en Wokwi cubre y demuestra los siguientes flujos de interacción principales, alineados con las User Stories del EP08:
+
+#### Flujo 1: Monitoreo Pasivo y Reporte Nominal (US23)
+- **Trigger**: El ESP32 consulta el sensor DHT22 en intervalos regulares (ej. cada 2 segundos en simulación).
+- **Procesamiento**: El dispositivo verifica que las lecturas de humedad (ej. 55%) y temperatura (ej. 20°C) estén dentro de los umbrales óptimos.
+- **Acción Física**: Los indicadores de alerta se mantienen apagados.
+- **Sincronización**: El dispositivo empaqueta el SensorReading y lo envía a la nube mediante la API REST (POST /api/v1/sensor-readings).
+
+#### Flujo 2: Detección de Anomalía y Activación de Actuador (US25 y US28)
+- **Trigger**: El sensor DHT22 detecta un incremento drástico en la humedad (ej. > 65%) debido a un cambio en el ambiente del almacén.
+- **Procesamiento**: La lógica en el ESP32 detecta que el valor ha superado el umbral máximo permitido (MAX_HUMIDITY).
+- **Acción Física**: El ESP32 envía un pulso HIGH al pin del actuador (encendiendo el LED azul representativo del deshumedecedor) para iniciar la estabilización del ambiente de forma local y sin latencia.
+- **Sincronización**: El dispositivo envía el evento de activación (POST /api/v1/storage-monitor/actuator-events) a Café Lab, lo que dispara internamente el envío de una alerta por correo electrónico al dueño de la cafetería.
+
+#### Flujo 3: Restablecimiento de Condiciones (Histéresis)
+- **Trigger**: Con el deshumedecedor activo, la humedad comienza a descender hasta volver al 60%.
+- **Procesamiento**: El dispositivo no apaga el actuador inmediatamente al tocar el 64%, sino que exige que las condiciones óptimas se mantengan estables (simulación de tiempo de histéresis) para evitar encendidos y apagados constantes.
+- **Acción Física**: Al confirmarse la estabilidad, el ESP32 envía un pulso LOW apagando el actuador.
+- **Sincronización**: Se registra el evento de finalización del ciclo en el sistema para permitir cálculos de duración y eficiencia energética en el Dashboard.
+
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management.
+
+### 6.1.1. Software Development Environment Configuration.
+#### Project Management
+1. Trello: Para gestión general los sprints, tareas del equipo, etc.
+  - Link: [Trello](https://trello.com/b/diGtoNBa/sprint-1)
+
+#### Product UX/UI Design:
+1. Figma: Para diseños como Wireframes, Mockups, Prototypes, etc.
+  - Link: [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1)
+2. Vertabelo: Para diagramas de base de datos (ERD, diagramas de clases, etc.)
+  - Link: [Vertabelo](https://vertabelo.com/)
+
+#### Software Development:
+1. Visual Studio Code: Para el desarrollo de la Landing Page del proyecto.
+  - Link: [LandingPage](https://cafelanding-60903.web.app/)
+
+#### Software Documentation:
+1. Visual Studio Code: Para la documentación de CaféLab se utilizó Visual Studio Code para el desarrollo de los capítulos en formato Markdown.
+  - Link: [Documentation](Documentation)
+
+### 6.1.2. Source Code Management.
+Para todo el desarrollo de CaféLab se usará el flujo de trabajo de Gitflow.
+
+## Flujo de trabajo GitFlow:
+El flujo de trabajo Git Flow fue planteado por Vincent Driessen en "A successful Git branching model".
+
+#### Main branch
+La rama principal (main) es donde se mantiene el código más estable y desplegado.
+
+#### Develop branch
+La rama develop actúa como el área principal donde se integran los últimos avances y correcciones antes de hacerles merge a master.
+
+#### Release branch
+Las ramas release facilitan la preparación para una nueva versión del producto. Nos permiten aplicar correcciones menores en caso de imprevistos mientras develop sigue recibiendo nuevas funcionalidades.
+- Deriva de: develop
+- Se fusiona en: develop y master
+
+#### Feature branch
+Las ramas feature son utilizadas para desarrollar nuevas funcionalidades o mejoras específicas. Cada característica se desarrolla de forma aislada hasta estar lista para integrarse.
+- Deriva de: develop
+- Se fusiona de regreso a: develop
+
+#### Hotfix branch
+Las ramas hotfix se crean para corregir errores críticos detectados en producción, asegurando una reacción rápida sin interrumpir el trabajo de desarrollo continuo.
+- Deriva de: master.
+- Se fusiona en: master y develop.
+
+## Conventional Commits
+Aplicamos la convención Conventional Commits para redactar mensajes de commit claros, consistentes y semánticos. Esta práctica facilita el rastreo de cambios, la generación automática de registros de cambios y mejora la colaboración en equipo.
+
+## Tipos De Conventional Commits
+
+1. feat: Para introducir una nueva funcionalidad.
+2. fix: Para corregir un error existente.
+3. docs: Cambios relacionados a la documentación.
+4. style: Modificaciones de formato que no afectan el comportamiento del código.
+5. refactor: Reestructuraciones internas sin cambios funcionales o correcciones de errores.
+6. test: Agregado o modificación de pruebas.
+7. chore: Tareas de mantenimiento o cambios que no afectan el código de producción.
+8. perf: Mejoras de rendimiento.
+
+### 6.1.3. Source Code Style Guide & Conventions.
+Todo el código de la solución deberá ser escrito completamente en inglés para mantener la consistencia internacional y facilitar su mantenimiento.
+
+## HTML
+- Emplear nombres de etiquetas y atributos en minúscula.
+- Cerrar correctamente todas las etiquetas HTML.
+- Especificar siempre los atributos alt, width, y height para imágenes para mejorar la accesibilidad.
+- Evitar espacios innecesarios en los atributos HTML.
+
+## CSS
+- Asignar nombres de IDs y clases descriptivos que reflejen el propósito del elemento.
+- Utilizar nombres cortos pero claros para IDs y clases.
+- Aplicar propiedades abreviadas cuando sea posible para optimizar el código.
+- Evitar el uso de unidades después de valores de cero (0).
+- Ordenar las declaraciones CSS en orden alfabético para facilitar su lectura.
+
+## JavaScript
+- Mantener una sintaxis expandida: llaves de apertura en la misma línea de la declaración, cierre en línea nueva.
+- Aplicar lowerCamelCase en el nombramiento de variables y funciones.
+- Usar let y const para declarar variables en lugar de var.
+- Asegurar que los nombres de las funciones sean descriptivos y en lowerCamelCase.
+
+## Lenguaje Gherkin
+- Redactar títulos descriptivos y concisos para escenarios (Feature, Scenario).
+- Respetar estrictamente la estructura Given-When-Then.
+- Usar un lenguaje orientado al negocio, entendible para todos los stakeholders, evitando detalles técnicos.
+- Implementar Scenario Outline cuando existan múltiples casos similares.
+- Agregar comentarios cuando se requiera contexto o explicaciones adicionales.
+
+### 6.1.4. Software Deployment Configuration.
+#### Landing Page Deployment
+Para desplegar la landing page, es necesario contar con una cuenta de GitHub y tener acceso como administrador al repositorio del proyecto. A partir de ahí, se pueden cargar los documentos desde un entorno local al repositorio y proceder con el despliegue. A continuación, se describen los pasos seguidos:
+
+1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto Angular de forma organizada y sin generar conflictos en la rama principal.
+2. **Estructura del proyecto**: Se define una estructura clara:
+   - Carpeta `src/public/components`: para los componentes principales.
+   - Carpeta `public`: para las imágenes y configuración i18n.
+   - Carpeta `src/core/services`: para los servicios para implementar el i18n.
+3. **Subida de archivos al repositorio**:
+   - Instalación de Git.
+   - Configuración del repositorio remoto.
+   - Uso de comandos Git para hacer commit y push de los cambios.
+4. **Configuración para despliegue**:
+   - Instalación de Firebase CLI con el comando **npm install -g firebase-tools**
+   - Nos autenticamos en Firebase con el comando **firebase login**.
+   - Inicialización del proyecto Firebase en el directorio del proyecto Angular con el comando **firebase init**.
+   - Seleccionamos Hosting.
+   - Elegimos el proyecto Firebase creado previamente.
+   - Indicamos como carpeta de despliegue dist/nombre-del-proyecto.
+   - Realizamos el build del proyecto con **ng build** para luego hacer el deploy con **firebase deploy**.
+
+5. **Resolución de conflictos**:
+   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.
+   - Se verifica que los conflictos hayan sido solucionados correctamente.
+
+Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, permitiendo actualizaciones automáticas tras nuevas versiones y asegurando un entorno estable para el front-end.
+
+## 6.2. Landing Page, Services & Applications Implementation.
+
+### 6.2.X. Sprint n
+
+#### 6.2.X.1. Sprint Planning n.
+
+#### 6.2.X.2. Aspect Leaders and Collaborators.
+
+#### 6.2.X.3. Sprint Backlog n.
+
+#### 6.2.X.4. Development Evidence for Sprint Review.
+
+#### 6.2.X.5. Testing Suite Evidence for Sprint Review.
+
+#### 6.2.X.6. Execution Evidence for Sprint Review.
+
+#### 6.2.X.7. Services Documentation Evidence for Sprint Review.
+
+#### 6.2.X.8. Software Deployment Evidence for Sprint Review.
+
+#### 6.2.X.9. Team Collaboration Insights during Sprint.
+
+## 6.3. Validation Interviews.
+
+### 6.3.1. Diseño de Entrevistas.
+
+### 6.3.2. Registro de Entrevistas.
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+## 6.4. Video About-the-Product.
+
+
 
 # Conclusiones
 
