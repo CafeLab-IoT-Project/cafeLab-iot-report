@@ -5791,7 +5791,7 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Natalia Roman, Christian Inga, Kalet Esteban, Gabriel Sánchez, Adrian Donayre</td>
+            <td>Natalia Roman, Fredy Fernández, Kalet Esteban, Gabriel Sánchez, Adrian Donayre</td>
         </tr>
         <tr>
             <th>Sprint 0 Review Summary</th>
@@ -5824,6 +5824,77 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 </table>
 
 #### 6.2.1.2. Aspect Leaders and Collaborators.
+
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
+
+Para este Sprint, los aspectos principales corresponden a las User Stories que definen el primer alcance funcional de nuestra landing page: Registro de Proveedores (US01), Creación de Perfil de Tueste (US03), Biblioteca de Defectos de Tueste (US04), Análisis Comparativo de Tuestes (US06), Creación de Recetas de Preparación (US07), Calibración de Molienda (US08) y Análisis de Eficiencia y Rendimiento (US14). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+
+<table border="1">
+<tr>
+<th>Aspecto / US</th>
+<th>Roman, Natalia (natRC2005)</th>
+<th>Sánchez, Gabriel (yigabriel)</th>
+<th>Esteban, Henry (kalet123-commit)</th>
+<th>Fernández, Fredy (u202320083)</th>
+<th>Donayre, Adrian (adriandonayredev)</th>
+</tr>
+<tr>
+<td>Registro de Proveedores (US01)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Creación de Perfil de Tueste (US03)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Biblioteca de Defectos de Tueste (US04)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Análisis Comparativo de Tuestes (US06)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Creación de Recetas de Preparación (US07)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Calibración de Molienda (US08)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Análisis de Eficiencia y Rendimiento (US14)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+</table>
 
 #### 6.2.1.3. Sprint Backlog 1.
 
