@@ -5827,7 +5827,7 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
 
-Para este Sprint, los aspectos principales corresponden a las User Stories que definen el primer alcance funcional de nuestra landing page: Registro de Proveedores (US01), Creación de Perfil de Tueste (US03), Biblioteca de Defectos de Tueste (US04), Análisis Comparativo de Tuestes (US06), Creación de Recetas de Preparación (US07), Calibración de Molienda (US08) y Análisis de Eficiencia y Rendimiento (US14). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+Para este Sprint, los aspectos principales corresponden a las User Stories que definen el primer alcance funcional de nuestra landing page: Registro de Proveedores (US01), Creación de Perfil de Tueste (US03), Biblioteca de Defectos de Tueste (US04), Análisis Comparativo de Tuestes (US06), Creación de Recetas de Preparación (US07), Calibración de Molienda (US08) y Control de Inventario Integrado (US11). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
 
 <table border="1">
 <tr>
@@ -5887,7 +5887,7 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 </tr>
 <tr>
-<td>Análisis de Eficiencia y Rendimiento (US14)</td>
+<td>Control de Inventario Integrado (US11)</td>
 <td>C</td>
 <td>C</td>
 <td>C</td>
@@ -5897,6 +5897,155 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 </table>
 
 #### 6.2.1.3. Sprint Backlog 1.
+Durante el Sprint 1, el equipo se enfocó en construir la primera versión funcional de CaféLab, integrando los elementos principales de presentación, navegación, gestión de información y funcionalidades base del sistema. El objetivo de este sprint fue permitir que nuestros usuarios puedan conocer la propuesta de valor del producto, acceder a la plataforma y utilizar módulos iniciales relacionados con la gestión del café de especialidad.
+
+El alcance del sprint incluyó el desarrollo de la landing page, la implementación de las primeras vistas de la aplicación web, la creación de funcionalidades principales del frontend y la integración inicial con servicios backend. Asimismo, se priorizaron funcionalidades relacionadas con la gestión de proveedores, perfiles de tueste, biblioteca de defectos, análisis comparativo de tuestes, recetas de preparación, calibración de molienda y control de inventario.
+
+Estas funcionalidades fueron seleccionadas debido a que representan procesos clave para los segmentos objetivo del sistema: baristas profesionales y dueños o administradores de cafeterías de especialidad. Además, permiten preparar la base funcional sobre la cual posteriormente se integrará el componente IoT TrackSilo, encargado del monitoreo de temperatura y humedad en el almacenamiento del café.
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>User Story / Technical Story</th>
+      <th>Work-Item / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01 - Registro de Proveedores</td>
+      <td>Implementar vista de registro de proveedores</td>
+      <td>Desarrollar la interfaz para registrar proveedores de café, considerando datos necesarios para mantener control de calidad y trazabilidad de origen.</td>
+      <td>4</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS01 - POST HTTPS Proveedores</td>
+      <td>Implementar servicio de creación de proveedores</td>
+      <td>Crear el endpoint para registrar nuevos proveedores mediante una API y permitir ampliar la red de suministro.</td>
+      <td>3</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS02 - GET HTTPS Proveedores</td>
+      <td>Implementar servicio de consulta de proveedores</td>
+      <td>Crear el endpoint para consultar proveedores registrados y mostrar opciones disponibles en la aplicación.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US03 - Creación de Perfil de Tueste</td>
+      <td>Implementar módulo de perfiles de tueste</td>
+      <td>Desarrollar la funcionalidad para que el barista registre perfiles de tueste personalizados y documente parámetros técnicos del proceso.</td>
+      <td>5</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS05 - POST HTTPS Perfiles-Tueste</td>
+      <td>Implementar servicio de creación de perfiles de tueste</td>
+      <td>Crear el endpoint para registrar perfiles de tueste mediante una API y estandarizar procesos dentro de la plataforma.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04 - Biblioteca de Defectos de Tueste</td>
+      <td>Implementar biblioteca de defectos de tueste</td>
+      <td>Crear una sección para consultar defectos comunes de tueste, incluyendo causas probables y recomendaciones para corregir problemas.</td>
+      <td>4</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS11 - GET HTTPS DefectosTueste</td>
+      <td>Implementar servicio de consulta de defectos de tueste</td>
+      <td>Crear el endpoint para consultar defectos comunes en tueste mediante una API y asistir en el diagnóstico de problemas.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US06 - Análisis Comparativo de Tuestes</td>
+      <td>Implementar módulo de análisis comparativo de tuestes</td>
+      <td>Desarrollar la funcionalidad para comparar diferentes sesiones de tueste, identificar patrones y apoyar la optimización de resultados.</td>
+      <td>5</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS10 - GET HTTPS Análisis-Tueste</td>
+      <td>Implementar servicio de análisis comparativo de tuestes</td>
+      <td>Crear el endpoint para obtener análisis comparativo de tuestes mediante una API e identificar patrones relevantes.</td>
+      <td>4</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US07 - Creación de Recetas de Preparación</td>
+      <td>Implementar módulo de recetas de preparación</td>
+      <td>Desarrollar la funcionalidad para registrar recetas detalladas según método de preparación, parámetros técnicos y tipo de café.</td>
+      <td>5</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS09 - POST HTTPS Recetas</td>
+      <td>Implementar servicio de registro de recetas</td>
+      <td>Crear el endpoint para registrar recetas de preparación mediante una API y documentar métodos óptimos.</td>
+      <td>3</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US08 - Calibración de Molienda</td>
+      <td>Implementar módulo de calibración de molienda</td>
+      <td>Desarrollar la funcionalidad para documentar configuraciones de molienda según equipo, método y parámetros de preparación.</td>
+      <td>4</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS10 - POST HTTPS Calibraciones</td>
+      <td>Implementar servicio de registro de calibraciones</td>
+      <td>Crear el endpoint para registrar calibraciones de molienda mediante una API y mantener consistencia entre preparaciones.</td>
+      <td>3</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US11 - Control de Inventario Integrado</td>
+      <td>Implementar módulo de inventario integrado</td>
+      <td>Desarrollar la funcionalidad para gestionar el inventario de café verde y tostado, permitiendo visualizar existencias, movimientos recientes y alertas activas.</td>
+      <td>4</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS17 - GET HTTPS Inventario</td>
+      <td>Implementar servicio de consulta de inventario</td>
+      <td>Crear el endpoint para consultar el inventario integrado mediante una API y visualizar las existencias disponibles.</td>
+      <td>3</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS18 - PATCH HTTPS Inventario</td>
+      <td>Implementar servicio de actualización de inventario</td>
+      <td>Crear el endpoint para actualizar el consumo de inventario mediante una API y mantener las existencias actualizadas.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
