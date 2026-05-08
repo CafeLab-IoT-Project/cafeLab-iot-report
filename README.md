@@ -5463,6 +5463,12 @@ Etiqueta que nos permite registrar la autoría de la página.
 
 ### 5.2.4. Searching Systems.
 
+Los sistemas de búsqueda de Cafelab están diseñados para que el usuario pueda encontrar información específica de manera ágil, incluso dentro de grandes volúmenes de datos históricos o múltiples lotes activos.
+- Búsqueda por texto: En tuestes, recetas, catas y lotes.
+- Filtros combinables: Método de preparación, origen del grano, fecha, variedad.
+- Resultados con etiquetas visuales (tipo de café, método, fecha) y opciones para ordenar y comparar.
+- Presentación de información en gráficos (historial de humedad y temperatura del grano en conservación).
+
 ### 5.2.5. Navigation Systems.
 
 ## 5.3. Landing Page UI Design.
