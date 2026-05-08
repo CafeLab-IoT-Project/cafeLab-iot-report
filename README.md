@@ -5412,7 +5412,15 @@ Esta combinación de sistemas de organización permite que Cafelab ofrezca una e
 
 ### 5.2.2. Labeling Systems.
 
+El sistema de etiquetado de Cafelab busca maximizar la claridad y minimizar la carga cognitiva del usuario mediante un lenguaje directo, técnico y específico del rubro cafetalero.
+
+Uso de etiquetas precisas, técnicas y consistentes: "Curva de Tueste", "Perfil Sensorial", "Lote #xxx", "Ratio", "Taza".
+- Etiquetas breves en menús: `Inicio`, `Tueste`, `Cata`, `Recetas`, `Inventario`, `Monitoreo`.
+- Tarjetas y gráficos etiquetados con íconos + texto para facilitar el reconocimiento visual.
+
 ### 5.2.3. SEO Tags and Meta Tags
+
+
 
 ### 5.2.4. Searching Systems.
 
