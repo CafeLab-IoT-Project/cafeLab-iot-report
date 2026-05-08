@@ -5471,6 +5471,15 @@ Los sistemas de búsqueda de Cafelab están diseñados para que el usuario pueda
 
 ### 5.2.5. Navigation Systems.
 
+Los sistemas de navegación de Cafelab permiten al usuario recorrer los diferentes módulos y procesos de forma estructurada, intuitiva y adaptativa al dispositivo utilizado.
+
+- Menú lateral fijo (web desktop): Accesos a los principales módulos.
+- Menú hamburguesa (responsive): Versión simplificada para móviles.
+- Barra superior contextual: Con accesos rápidos a perfil, notificaciones, ayuda.
+- Flujo secuencial: Registro paso a paso para tuestes y catas.
+- Breadcrumbs: En vistas de detalle, para mantener contexto.
+- Call To Action claros: “Registrar nuevo tueste”, “Crear receta”, “Ver historial”. "Guardar".
+
 ## 5.3. Landing Page UI Design.
 
 ### 5.3.1. Landing Page Wireframe.
