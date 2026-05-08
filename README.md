@@ -5420,7 +5420,46 @@ Uso de etiquetas precisas, técnicas y consistentes: "Curva de Tueste", "Perfil 
 
 ### 5.2.3. SEO Tags and Meta Tags
 
+Los meta tags y SEO tags son elementos clave para mejorar el posicionamiento de la aplicación en motores de búsqueda, facilitar la indexación y enriquecer la experiencia en plataformas de redirección o previsualización (como redes sociales y navegadores). En Cafelab, estos elementos están optimizados tanto para la Landing Page como para la Web App una vez iniciada sesión.
 
+**Landing Page:**
+- Etiqueta de título: 
+Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<title>Cafelab – Dominio total sobre tu café</title>
+```
+```html
+<title>Cafelab | Panel de Control</title>
+```
+- Etiqueta configuración de caracteres: 
+Muestra correctamente los caracteres del alfabeto castellano.
+```html
+<meta charset="utf-8">
+```
+- Etiqueta de descripción: 
+Nos sirve para que el motor de búsqueda tenga un resumen del contenido de la página. 
+
+```html
+<meta name="description" content="Plataforma integral para baristas y cafeterías que conecta el café verde con la taza final. Documenta, calibra, monitorea la conservación y escala tu calidad.">
+```
+```html
+<meta name="description" content="Gestión completa de tus tuestes, recetas y procesos desde un solo lugar.">
+
+```
+- Etiqueta de palabras clave: 
+Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<meta name="keywords" content="café de especialidad, barista, tueste, cata, trazabilidad, calibración, cafelab, monitoreo de grano">
+```
+```html
+<meta name="keywords" content="panel de tueste, perfil sensorial, barista app, café verde, recetas de café, conservación del grano">
+```
+-  Etiqueta de autor y derechos de autor: 
+Etiqueta que nos permite registrar la autoría de la página.
+```html
+<meta name="author" content="Equipo Cafelab - CafeMetrix">
+<meta name="copyright" content="cafelab"/>
+```
 
 ### 5.2.4. Searching Systems.
 
