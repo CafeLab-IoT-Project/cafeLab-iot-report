@@ -496,7 +496,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
   <tr>
   <td><img src="public/assets/images/chapter-1/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
-    <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
+    <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo de la carrera Ingenieria De Software, con 21 años de edad. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
 </td>
   </tr>
   <tr> 
