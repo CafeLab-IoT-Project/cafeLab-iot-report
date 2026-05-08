@@ -5760,25 +5760,84 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
-### 6.2.X. Sprint n
+### 6.2.1. Sprint 1
 
-#### 6.2.X.1. Sprint Planning n.
+#### 6.2.1.1. Sprint Planning 1.
 
-#### 6.2.X.2. Aspect Leaders and Collaborators.
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>05/05/2026</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Natalia Roman</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Natalia Roman, Christian Inga, Kalet Esteban, Gabriel Sánchez, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Review Summary</th>
+            <td>
+                Se completaron las actividades de preparación inicial, como la definición del alcance, la formación del equipo y la configuración de las herramientas. Se resalta que el equipo mostró compromiso y buena organización en la etapa previa al inicio formal del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Retrospective Summary</th>
+            <td>
+                El equipo destacó la claridad en los roles y la importancia de la comunicación continua. Se identificó como mejora futura documentar los acuerdos tomados y realizar reuniones breves de seguimiento semanalmente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 1 Goal</th>
+            <td>Implementar una landing page que refleje la propuesta de valor de Café Metrix así como la primera versión del frontend y backend logrando proporcionar al usuario acceso a las primeras funciones</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Velocity</th>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
 
-#### 6.2.X.3. Sprint Backlog n.
+#### 6.2.1.2. Aspect Leaders and Collaborators.
 
-#### 6.2.X.4. Development Evidence for Sprint Review.
+#### 6.2.1.3. Sprint Backlog 1.
 
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review.
+#### 6.2.1.4. Development Evidence for Sprint Review.
 
-#### 6.2.X.6. Execution Evidence for Sprint Review.
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review.
+#### 6.2.1.6. Execution Evidence for Sprint Review.
 
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review.
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
-#### 6.2.X.9. Team Collaboration Insights during Sprint.
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
 
 ## 6.3. Validation Interviews.
 
