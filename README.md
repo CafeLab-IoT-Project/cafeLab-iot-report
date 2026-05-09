@@ -514,6 +514,12 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 
 ### 1.2.1 Antecedentes y problemática
 
+Actualmente, múltiples cafeterías de especialidad en Perú enfrentan un problema de falta de organización en sus procesos así como dificultad para monitorear el grano que poseen en conservación. De acuerdo a una investigación realizada por la Pontificia Universidad Católica del Perú, la pérdida de producto causada por un mal seguimiento de los procesos o una conservación deficiente se encuentra entre las principales causas por las que las cafeterías pierden parte de su producto, lo que repercute en dificultades para crecer o, en situaciones más extremas, seguir operando.
+
+Por otro lado, la Universidad Agraria La Molina encontró que, durante la conservación del grano para la elaboración del café de especialidad, los principales factores que desgastan su calidad suelen ser la humedad y la falta de ventilación. En el caso del primer factor, este influye directamente sobre las propiedades físicas, químicas, sensoriales y microbiológicas del café, por lo que al existir demasiada humedad el grano baja su calidad y pierde su sabor característico. En ocasiones, cuando no se toman acciones para reducir la humedad, surge la aparición de hongos, dañando por completo el grano y causando una pérdida alta a la cafetería. En cuanto a la ventilación, es necesario poseer un ambiente preparado para que exista circulación del aire y un deshumedecedor. Ambos son útiles para mantener un ambiente de conservación adecuado, mas, por supuesto, no suficientes, por lo que este debe ser constantemente vigilado y evaluado.
+
+En el estudio de la PUCP, también se encontró que para muchas cafeterías de especialidad era complicado organizar sus procesos tanto internos de registro de inventario como de procesos realizados. La mayoría prefería opciones tradicionales como apuntar con papel y lápiz o simplemente recordar ciertos datos, mas esto ocasiona confusiones más adelante y permite, al no registrarse, que los errores tiendan a repetirse.
+
 **Who (¿Quiénes?):** 
 
 Nuestros principales usuarios serán baristas profesionales y dueños de cafeterías de especialidad que manejan procesos desde el tueste hasta la preparación, así como emprendedores del rubro que buscan escalar su operación manteniendo la calidad e integrando elementos tecnológicos.
@@ -6085,6 +6091,8 @@ Estas funcionalidades fueron seleccionadas debido a que representan procesos cla
 - **Evans, E.** (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Domain Language.[https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
 - **Teams, A** (s, f.).  Angular material. Angular Material. [https://material.angular.dev/](https://material.angular.dev/)
 - **Vernon, V.** (2016). Domain-Driven Design Distilled. [https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
+- **Díaz Simeón, D. C.** (2018). *Tipo de empaque y contenido de humedad en la conservación de la calidad de cafés especiales*. [https://alicia.concytec.gob.pe/vufind/Record/UNAL_fa17113e622fcf6a28b499b2607970a9](https://alicia.concytec.gob.pe/vufind/Record/UNAL_fa17113e622fcf6a28b499b2607970a9)
+- **Vera Aguilar, A. M.** (2019). *Estudio de prefactibilidad de una empresa productora de bebidas listas para tomar a base de café peruano en Lima Metropolitana*. [https://tesis.pucp.edu.pe/items/0ec378d5-27b4-46a0-89e1-470591f7003a](https://tesis.pucp.edu.pe/items/0ec378d5-27b4-46a0-89e1-470591f7003a)
 
 # Anexos
 
