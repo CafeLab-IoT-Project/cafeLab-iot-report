@@ -7213,6 +7213,14 @@ El resultado final de la ejecución fue de 59 pruebas exitosas.
 
 #### Pruebas de Frontend realizadas
 
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre componentes individuales del frontend para validar comportamientos específicos, como creación de componentes, validación de formularios, renderizado de datos y actualización de estados internos.
+
+#### Integration Tests
+
+Los Integration Tests frontend validaron la interacción entre componentes y servicios mockeados. Estos tests simularon respuestas mediante mocks para comprobar que la interfaz reacciona correctamente ante los datos esperados.
+
 <table border="1">
   <tr>
     <th>Test File</th>
@@ -7281,6 +7289,8 @@ El resultado final de la ejecución fue de 59 pruebas exitosas.
 
 #### Acceptance Tests BDD
 
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog. Su propósito es representar, en lenguaje comprensible para el equipo, el comportamiento esperado de las funcionalidades principales del Sprint.
+
 <table border="1">
   <tr>
     <th>Feature File</th>
@@ -7314,17 +7324,10 @@ El resultado final de la ejecución fue de 59 pruebas exitosas.
   </tr>
 </table>
 
-#### Unit Tests
+#### Test Execution Evidence
 
-Los Unit Tests fueron aplicados sobre componentes individuales del frontend para validar comportamientos específicos, como creación de componentes, validación de formularios, renderizado de datos y actualización de estados internos.
+![Frontend Test Execution Evidence](public/assets/images/chapter-6/sprint-1/evidence/frontTesting1.png)
 
-#### Integration Tests
-
-Los Integration Tests frontend validaron la interacción entre componentes y servicios mockeados. Estos tests no realizaron llamadas reales al backend, sino que simularon respuestas mediante mocks para comprobar que la interfaz reacciona correctamente ante los datos esperados.
-
-#### Acceptance Tests
-
-Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog. Su propósito es representar, en lenguaje comprensible para el equipo, el comportamiento esperado de las funcionalidades principales del Sprint.
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
