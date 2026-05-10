@@ -6974,6 +6974,42 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Sergio Gino Julca Minaya</td>
+    <td>
+      Desarrolló y actualizó secciones relacionadas con el diseño UI/UX del proyecto, incluyendo Landing Page Wireframe, Landing Page Mock-up, Applications Wireframes, Applications Wireflow Diagrams, Applications Mock-ups y Applications User Flow Diagrams. Además, colaboró en la incorporación de pantallas de visualización de datos y control IoT dentro de los artefactos de diseño.
+    </td>
+  </tr>
+  <tr>
+    <td>Jorge Suin Yum Gonzales</td>
+    <td>
+      Actualizó la sección de Software Configuration Management, incluyendo Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions y Software Deployment Configuration. También participó en el diseño del dispositivo IoT, actualización de collaboration con screenshots de GitHub, despliegue de landing page, despliegue de frontend y documentación de enlaces de deployment en anexos.
+    </td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>
+      Actualizó las secciones del Sprint 1, incluyendo Sprint Backlog 1, Development Evidence for Sprint Review, Testing Suite Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Además, trabajó en la modificación de la landing page, el diseño mobile frontend y la actualización de user stories, technical stories y product backlog del informe.
+    </td>
+  </tr>
+  <tr>
+    <td>Natalia Bertha Roman Cruz</td>
+    <td>
+      Actualizó secciones de Information Architecture, incluyendo Organization Systems, Labeling Systems, SEO Tags and Meta Tags, Searching Systems y Navigation Systems. También participó en Sprint Planning 1, Aspect Leaders and Collaborators, antecedentes, lectura de APIs, conclusiones y recomendaciones del informe.
+    </td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>
+      Actualizó las secciones de Style Guidelines, incluyendo General Style Guidelines y Web, Mobile and IoT Style Guidelines. Además, colaboró en Applications UX/UI Design, Applications Wireframes, Applications Wireflow Diagrams, Applications Mock-ups, Applications User Flow Diagrams, Applications Prototyping y revisión/modificación del frontend.
+    </td>
+  </tr>
+</table>
 
 ## 6.3. Validation Interviews.
 
