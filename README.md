@@ -6117,6 +6117,232 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
 
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committer on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>08e0410</td>
+    <td>fix: replace absolute asset paths with relative paths for GitHub Pages</td>
+    <td>fix: replace absolute asset paths with relative paths for GitHub Pages</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>e8934d2</td>
+    <td>fix: asset paths</td>
+    <td>fix: asset paths</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>99aae21</td>
+    <td>fix</td>
+    <td>fix</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>70a32b8</td>
+    <td>fix: add write permissions to github pages workflow</td>
+    <td>fix: add write permissions to github pages workflow</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>cb9535f</td>
+    <td>feat: added github pages workflow</td>
+    <td>feat: added github pages workflow</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>2de468f</td>
+    <td>change in backend api</td>
+    <td>change in backend api</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>6cd3ab4</td>
+    <td>Update README.md</td>
+    <td>Update README.md</td>
+    <td>May 6, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>9e9462e</td>
+    <td>fix security</td>
+    <td>fix security</td>
+    <td>May 5, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>c2262e5</td>
+    <td>docs: change interviews links</td>
+    <td>docs: change interviews links</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>28931b2</td>
+    <td>docs: Style Guidelines</td>
+    <td>docs: Style Guidelines</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>ae0c401</td>
+    <td>docs: Jorge Sudent Outcome</td>
+    <td>docs: Jorge Sudent Outcome</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>9740f0e</td>
+    <td>docs: update sprint backlog</td>
+    <td>docs: update sprint backlog</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>5cbc141</td>
+    <td>docs(chapter 3): update user stories and product backlog</td>
+    <td>docs(chapter 3): update user stories and product backlog</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>149804c</td>
+    <td>add antescedentes</td>
+    <td>add antescedentes</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>0ac8a05</td>
+    <td>docs: context diagram</td>
+    <td>docs: context diagram</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>ce28b36</td>
+    <td>Update Jorge Suin Yum Gonzales' introduction</td>
+    <td>Update Jorge Suin Yum Gonzales' introduction</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>d64ee93</td>
+    <td>docs(sprint 1): add sprint backlog</td>
+    <td>docs(sprint 1): add sprint backlog</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>debe1dc</td>
+    <td>docs: update sprint section links in index</td>
+    <td>docs: update sprint section links in index</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>2102512</td>
+    <td>add Aspect Leaders and Collaborators for sprint 1</td>
+    <td>add Aspect Leaders and Collaborators for sprint 1</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>831ee3d</td>
+    <td>add Sprint Planning 1</td>
+    <td>add Sprint Planning 1</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>3800286</td>
+    <td>add Navigation Systems</td>
+    <td>add Navigation Systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>875ec4e</td>
+    <td>add Searching Systems</td>
+    <td>add Searching Systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>b053daf</td>
+    <td>add SEO Tags and Meta Tags</td>
+    <td>add SEO Tags and Meta Tags</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>3171239</td>
+    <td>add Labelling systems</td>
+    <td>add Labelling systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>9b740eb</td>
+    <td>add organization systems</td>
+    <td>add organization systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>5228d28</td>
+    <td>docs: Links de deployment de landing page y frontend en anexos</td>
+    <td>docs: Links de deployment de landing page y frontend en anexos</td>
+    <td>May 6, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>d51e64f</td>
+    <td>iot mock up</td>
+    <td>iot mock up</td>
+    <td>May 6, 2026</td>
+  </tr>
+</table>
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
