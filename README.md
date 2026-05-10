@@ -6914,6 +6914,21 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
+#### Landing page: Sección diferenciación de segmentos objetivo
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing1.png" alt="Evidencia 1">
+</figure>
+
+#### Landing page: Sección módulos a ofrecer
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing2.png" alt="Evidencia 2">
+</figure>
+
+#### Landing page: Sección elección de suscripción
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing3.png" alt="Evidencia 3">
+</figure>
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
