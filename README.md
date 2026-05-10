@@ -425,17 +425,6 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
       - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
-      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
-      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
-      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
-      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
-      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
-      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
-      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
-      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
-      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
-      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
-      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
@@ -7122,6 +7111,220 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
 </table>
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+### Frontend Testing Suite Evidence
+
+Para el repositorio frontend se implementó una suite de pruebas automatizadas orientada a validar las funcionalidades incluidas en el Sprint Backlog. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-frontend` del repositorio `cafeLab-frontend`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-frontend.git  
+Branch: feature/testing-suite-frontend  
+
+La suite incluyó Unit Tests, Component Tests, Integration Tests con servicios mockeados y Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Los tests fueron ejecutados localmente con Angular/Karma usando el comando:
+
+`npm test -- --watch=false`
+
+Para evitar dependencias con el backend desplegado, las pruebas frontend utilizaron mocks de servicios. De esta forma, se validó el comportamiento de los componentes, formularios, renderizado de información e interacción esperada sin realizar llamadas reales a servicios externos.
+
+El resultado final de la ejecución fue de 59 pruebas exitosas.
+
+#### Tabla de commits relacionados al frontend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>a1de5eb</td>
+    <td>test: add login form tests for US17</td>
+    <td>Added frontend tests for login form validation and mocked authentication behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>fbf8316</td>
+    <td>test: add plan selection tests for US19</td>
+    <td>Added tests for plan rendering and plan selection using mocked user service.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>3d6cd82</td>
+    <td>test: add supplier management tests for US01</td>
+    <td>Added tests for supplier page and supplier list behavior using mocked data.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>a634b61</td>
+    <td>test: add coffee lot tests for US02</td>
+    <td>Added tests for coffee lot page and lot list component behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>892e149</td>
+    <td>test: add recipe creation tests for US07</td>
+    <td>Added tests for recipe creation dialog and recipe list behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>f60cdaa</td>
+    <td>test: add calibration tests for US08</td>
+    <td>Added tests for calibration creation and calibration page behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>bd58b04</td>
+    <td>test: add inventory tests for US10</td>
+    <td>Added tests for inventory view, consumption table and consumption registration dialog.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>03dc69e</td>
+    <td>test: add production cost tests for US13</td>
+    <td>Added tests for production cost management, lot selection, direct costs, indirect costs and metrics card components.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>32bcf98</td>
+    <td>test: add BDD feature files for sprint acceptance tests</td>
+    <td>Added Gherkin feature files for authentication, suppliers, coffee lots, inventory and costing acceptance scenarios.</td>
+    <td>10/05/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Frontend realizadas
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>login-form.component.spec.ts</td>
+    <td>Unit Test / Integration Test</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Valida la creación del formulario de login, campos obligatorios, email inválido y autenticación mediante servicio mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>select-plan.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US19 - Selección de Plan</td>
+    <td>Valida la visualización de planes y la selección de un plan mediante servicio mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>supplier-list.component.spec.ts / supply-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Valida la visualización de proveedores y la interacción con datos mockeados sin consumir el backend real.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>lot-list.component.spec.ts / lots.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Valida la vista de lotes de café y el renderizado de información mockeada.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>add-recipe-dialog.component.spec.ts / recipe-list.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US07 - Creación de Recetas</td>
+    <td>Valida el comportamiento de creación y listado de recetas dentro del frontend.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>add-new-calibration.component.spec.ts / add-calibration-page.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US08 - Calibración de Molienda</td>
+    <td>Valida el comportamiento de los componentes relacionados con el registro de calibraciones.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>inventary.component.spec.ts / consumption-table.component.spec.ts / register-consumption-dialog.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Valida la vista de inventario, tabla de consumos y diálogo de registro de consumo con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>production-cost-management.component.spec.ts / step-direct-costs.component.spec.ts / step-indirect-costs.component.spec.ts / step-lot-selection.component.spec.ts / metrics-card.component.spec.ts</td>
+    <td>Unit Test / Component Test / Integration Test</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Valida los componentes de gestión de costos, selección de lote, costos directos, costos indirectos y métricas.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>authentication.feature</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Describe escenarios de aceptación para inicio de sesión, validación de credenciales y comportamiento esperado del flujo de autenticación.</td>
+  </tr>
+  <tr>
+    <td>supplier-management.feature</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Describe escenarios de aceptación para visualización y gestión de proveedores.</td>
+  </tr>
+  <tr>
+    <td>coffee-lot-management.feature</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Describe escenarios de aceptación para consulta y gestión de lotes de café verde.</td>
+  </tr>
+  <tr>
+    <td>inventory-management.feature</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Describe escenarios de aceptación para visualización de inventario y registro de consumos.</td>
+  </tr>
+  <tr>
+    <td>costing-management.feature</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Describe escenarios de aceptación para selección de lote, registro de costos y visualización de métricas.</td>
+  </tr>
+</table>
+
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre componentes individuales del frontend para validar comportamientos específicos, como creación de componentes, validación de formularios, renderizado de datos y actualización de estados internos.
+
+#### Integration Tests
+
+Los Integration Tests frontend validaron la interacción entre componentes y servicios mockeados. Estos tests no realizaron llamadas reales al backend, sino que simularon respuestas mediante mocks para comprobar que la interfaz reacciona correctamente ante los datos esperados.
+
+#### Acceptance Tests
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog. Su propósito es representar, en lenguaje comprensible para el equipo, el comportamiento esperado de las funcionalidades principales del Sprint.
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
