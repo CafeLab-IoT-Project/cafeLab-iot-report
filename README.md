@@ -86,6 +86,7 @@
 | 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
 | 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
 | 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
+| 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -5810,6 +5811,7 @@ Se toma un diseño que pueda adaptarse a los dispositivos del usuario, de esta f
 Los mensajes mostrados son claros, entendibles y universales en la pagina, de esta forma el usuario no tiene que procesar mayo informacion de forma irrelevante para su experiencia en la plataforma
 ![Prototipo](public/assets/images/chapter-5/UserFlowDiagram/prototipoCafe.png)
 
+![Prototipo](public/assets/images/chapter-5/MobileMockups/prototipo-mobile.png)
 
 Enlace para acceder al video de [WEB Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
