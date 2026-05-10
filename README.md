@@ -6929,24 +6929,44 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
     <img src="public/assets/images/chapter-6/sprint-1/evidence/landing3.png" alt="Evidencia 3">
 </figure>
 
-#### Sección dashboard de dueño
+#### Frontend: Sección dashboard de dueño
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-1/evidence/front1.png" alt="Evidencia 4">
 </figure>
 
-#### Sección proveedores
+#### Frontend: Sección proveedores
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-1/evidence/front2.png" alt="Evidencia 5">
 </figure>
 
-#### Sección registro de nuevo proveedor
+#### Frontend: Sección registro de nuevo proveedor
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-1/evidence/front3.png" alt="Evidencia 6">
 </figure>
 
-#### Sección iniciar sesión
+#### Frontend: Sección iniciar sesión
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-1/evidence/front4.png" alt="Evidencia 7">
+</figure>
+
+#### Backend: Registro de un proveedor
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back1.jpeg" alt="Evidencia 8">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back2.jpeg" alt="Evidencia 9">
+</figure>
+
+#### Backend: Registro de un lote de café
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back3.jpeg" alt="Evidencia 10">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back4.jpeg" alt="Evidencia 11">
 </figure>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
