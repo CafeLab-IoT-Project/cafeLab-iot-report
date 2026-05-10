@@ -994,8 +994,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 00:00 - 06:48</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 </table>
@@ -1023,8 +1022,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 06:48 - 14:31</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1051,8 +1049,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 14:31 - 20:51</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
 </tr>
 </table>
 
@@ -1080,8 +1077,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 20:51 - 27:02</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1108,8 +1104,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 27:02 - 33:21</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1136,8 +1131,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 33:21 - 37:39</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1164,8 +1158,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 37:39 - 43:11</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
