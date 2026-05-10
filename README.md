@@ -60,31 +60,32 @@
 <!-- Registro de versiones -->
 # Registro de versiones del informe
 
-| Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
-|---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
-| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del documento, estructura del informe y carátula                          |
-| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del registro de versiones y project collaboration insights                |
-| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino            | Refactorización de tabla de contenido y redirecciones                              |
-| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino            | Actualización de lean ux hypothesis statements y canvas                            |
-| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino            | Validación de segmentos objetivos                                                  |
-| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha           | Descripción detallada de la startup y recopilación de perfiles de los integrantes  |
-| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Recopilación de antecendentes y problemáticas                                      |
-| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Optimización de lean ux problem statements y assumptions                           |
-| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Análisis e invetigación de competitividad                                          |
-| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Creación de estrategias y tácticas frente a competidores                           |
-| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo      | Diseño de entrevistas                                                              |
-| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez            | Registro y análisis de entrevistas.                                                |
-| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Actualización de user personas                                                     |
-| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Evaluación de user task matrix                                                     |
-| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Actualización de user journey mapping                                              |
-| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Evaluación del empathy mapping                                                     |
-| 1.16    | 09/04/2026  | Roman, Yum, Donayre                  | Creación de big picture storming                                                   |
-| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo      | Validación del ubiquitous language                                                 |
-| 1.18    | 10/04/2026  | Roman, Yum                           | Revisión de user stories                                                           |
-| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin             | Validación del impact mapping                                                      |
-| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin             | Actualización del product backlog                                                  |
-| 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo      | Depuración de US y actualización de product backlog                                |
-| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo      | Actualización del sprint backlog y aspect leaders and collaborators                |
+| Versión | Fecha       | Autor                           | Descripción de Modificación                                                       |
+|---------|-------------|---------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
+| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
+| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
+| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
+| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
+| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
+| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
+| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
+| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
+| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
+| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
+| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
+| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
+| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
+| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
+| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
+| 1.16    | 09/04/2026  | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
+| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
+| 1.18    | 10/04/2026  | Roman, Yum                      | Revisión de user stories                                                          |
+| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
+| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
+| 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
+| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
+| 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -5050,7 +5051,97 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 
 ### 5.1.1. General Style Guidelines.
 
+Los "style guideline" son un conjunto de principios visuales y comunicacionales que permite mantener coherencia y claridad en la interfaz del producto. En el caso de **Cafelab**, esta guía busca comunicar profesionalismo, precisión técnica y una identidad cercana al rubro del café de especialidad.
+
+**Branding:**
+**Nombre de marca:**  
+Cafelab representa un laboratorio digital para baristas y cafeterías de especialidad. El nombre fusiona la precisión técnica ("lab") con la calidez y cultura del café.
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+
+**Misión:**  
+Brindar herramientas digitales que profesionalicen el trabajo del barista, integrando tecnología con el arte de la preparación del café.
+
+**Visión:**  
+Ser la plataforma líder en documentación, calibración y trazabilidad para negocios de café de especialidad en Latinoamérica.
+
+**Colores:**
+- **Primario:**
+Verde Oliva `#618985`
+- **Secundarios:** 
+Negro Oliva `#414535` 
+León `#C19875`
+- **Terciarios:** 
+Hueso `#f8f7f2`  - Fondo 
+Gris Ceniza `#96BBBB`
+
+Color de Texto: 
+- Sobre fondo oscuro: `#FFFFFF`
+- Sobre fondo claro: `#414535`
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Colors.png" alt="Distribucion de paleta de colores" width="7000">
+
+- Color de Botones: 
+Oscuro:
+`#414535` 
+Claro:
+`#F8F8F8` 
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Buttons.png" alt="Distribucion de botones" width="7000">
+
+**Tipografía:**
+
+La tipografía define la jerarquía visual y la legibilidad de la plataforma. Se han definido los siguientes estilos:
+
+- **Heading 01:** Montserrat SemiBold – 52px
+- **Heading 02:** Montserrat Medium – 36px
+- **Heading 03:** Arial Nova Bold – 24px
+- **Heading 04:** Arial Nova Regular – 18px
+- **Texto principal:** Arial Nova Regular – 16px
+- **Texto técnico:** Roboto Mono – 14px
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Heading.png" alt="Tipografía principal" width="7000">
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Body.png" alt="Tipografía secundaria" width="7000">
+
+**Tono de comunicación:**
+- Profesional pero cercano.
+- Técnico, sin perder accesibilidad.
+- Entusiasta y claro.
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines.
+
+El enfoque de diseño web de Cafelab es limpio, moderno y centrado en la eficiencia operativa. El estilo busca balancear datos técnicos complejos con una experiencia visualmente amigable.
+
+**Tarjetas y visualizaciones:**
+
+- Se usan componentes visuales como "cards" para representar lotes, tuestes, recetas y catas.
+- Visualizaciones clave como curvas de tueste y hexágonos sensoriales están integradas con alto contraste y claridad.
+- Cada módulo se presenta con íconos representativos del proceso (tueste, molienda, método, etc.).
+
+**Botones:**
+
+- Botones primarios: Redondeados, fondo color negro oliva, texto blanco.
+- Botones secundarios: Bordeados, fondo transparente, texto café.
+- Uso de color rojo `#D32F2F` para acciones destructivas (eliminar lote, cancelar proceso).
+
+**Tablas:**
+
+- Las tablas muestran listas de lotes, tuestes, recetas o usuarios.
+- Diseño limpio, encabezados destacados, intercalado de filas para facilitar la lectura.
+- Columnas ordenables y con íconos de filtrado.
+
+**Pantallas emergentes:**
+
+- Pop-ups propios (no de navegador) para confirmación de acciones importantes.
+- Fondo oscuro atenuado y foco visual centrado.
+- Botones de acción y cierre claramente visibles.
+
+Por parte del IOT style guideline, extendemos nuestros lineamientos a dispositivos IoT garantizando una interfaz funcional e intuitiva.
+Desarrollamos los diseños visualmente claro y compacto, siguiente lo planteado en el espacio de la version web.
+
+<img src="public/assets/images/chapter-2/styleGuidelines/StyleGuidelinesIot.png" alt="StyleGuidelinesIot" width="7000">
+
 
 ## 5.2. Information Architecture.
 
