@@ -88,6 +88,8 @@
 | 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
 | 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
 | 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
+| 2.05    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
+| 2.06    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -340,6 +342,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
   - [5.2. Information Architecture.](#52-information-architecture)
     - [5.2.1. Organization Systems.](#521-organization-systems)
+      - [Organización jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
+      - [Organización secuencial (Step-by-step)](#organización-secuencial-step-by-step)
+      - [Organización matricial](#organización-matricial)
+      - [Categorización del contenido](#categorización-del-contenido)
     - [5.2.2. Labeling Systems.](#522-labeling-systems)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
     - [5.2.4. Searching Systems.](#524-searching-systems)
@@ -349,27 +355,48 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
     - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+      - [Web Application para Mobile Web Browser](#web-application-para-mobile-webbrowser)
     - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
     - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+      - [Mock-ups for Desktops](#mock-ups-for-desktops)
+      - [Mock-ups for Mobiles](#mock-ups-for-mobiles)
     - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
+    - [Web application prototyping](#web-application-prototyping)
+      - [Facilidad de reconocimiento](#facilidad-de-reconocimiento)
+      - [Diseño responsive](#diseño-responsive)
+      - [Informacion clara](#informacion-clara)
   - [5.6. IoT Device Design.](#56-iot-device-design)
+  - [5.6. IoT Device Design.](#56-iot-device-design-1)
     - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
-    - [Diseño Físico del Dispositivo (Physical Design)](#diseño-físico-del-dispositivo-physical-design)
-    - [Diseño de Circuito (Circuit Design)](#diseño-de-circuito-circuit-design)
-      - [Código IoT (Arduino / ESP32)](#código-iot-arduino--esp32)
-      - [Diagrama de configuración Wokwi (diagram.json)](#diagrama-de-configuración-wokwi-diagramjson)
+    - [Relación con la Arquitectura de Información](#relación-con-la-arquitectura-de-información)
+    - [Guía de Interfaz Física IoT](#guía-de-interfaz-física-iot)
+    - [Diseño Físico del Dispositivo](#diseño-físico-del-dispositivo)
+    - [Diseño de Circuito](#diseño-de-circuito)
+    - [Prototipo en Wokwi](#prototipo-en-wokwi)
+    - [Flujo Arquitectónico del Prototipo](#flujo-arquitectónico-del-prototipo)
+    - [Edge Prototype API](#edge-prototype-api)
+      - [Endpoints principales](#endpoints-principales)
+      - [Request para actualizar umbrales](#request-para-actualizar-umbrales)
+      - [Request para registrar lectura](#request-para-registrar-lectura)
+      - [Response esperado con humedad elevada](#response-esperado-con-humedad-elevada)
+      - [Response esperado con temperatura elevada, pero humedad normal](#response-esperado-con-temperatura-elevada-pero-humedad-normal)
+    - [Requests de Prueba](#requests-de-prueba)
+      - [Consultar umbrales](#consultar-umbrales)
+      - [Actualizar umbrales](#actualizar-umbrales)
+      - [Registrar lectura con humedad elevada](#registrar-lectura-con-humedad-elevada)
+      - [Registrar lectura con temperatura elevada, pero humedad normal](#registrar-lectura-con-temperatura-elevada-pero-humedad-normal)
     - [Flujos de Interacción del Prototipo IoT](#flujos-de-interacción-del-prototipo-iot)
-      - [Flujo 1: Monitoreo Pasivo y Reporte Nominal (US23)](#flujo-1-monitoreo-pasivo-y-reporte-nominal-us23)
-      - [Flujo 2: Detección de Anomalía y Activación de Actuador (US25 y US28)](#flujo-2-detección-de-anomalía-y-activación-de-actuador-us25-y-us28)
-      - [Flujo 3: Restablecimiento de Condiciones (Histéresis)](#flujo-3-restablecimiento-de-condiciones-histéresis)
+    - [Conclusión del Diseño IoT](#conclusión-del-diseño-iot)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management.](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
       - [Project Management](#project-management)
-      - [Product UX/UI Design:](#product-uxui-design)
-      - [Software Development:](#software-development)
-      - [Software Documentation:](#software-documentation)
+      - [Product UX/UI Design](#product-uxui-design)
+      - [Software Development](#software-development)
+      - [IoT Development](#iot-development)
+      - [Software Testing](#software-testing)
+      - [Software Documentation](#software-documentation)
     - [6.1.2. Source Code Management.](#612-source-code-management)
   - [Flujo de trabajo GitFlow:](#flujo-de-trabajo-gitflow)
       - [Main branch](#main-branch)
@@ -382,7 +409,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
   - [HTML](#html)
   - [CSS](#css)
-  - [JavaScript](#javascript)
+  - [TypeScript y Angular](#typescript-y-angular)
+  - [Java y Spring Boot](#java-y-spring-boot)
+  - [Kotlin y Android](#kotlin-y-android)
   - [Lenguaje Gherkin](#lenguaje-gherkin)
     - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
       - [Landing Page Deployment](#landing-page-deployment)
@@ -390,15 +419,26 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [Backend Deployment](#backend-deployment)
   - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
-    - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
-    - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
-    - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
-    - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
-    - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
-    - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
-    - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
-    - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
-    - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+      - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
+      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
+      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
+      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
+      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
+      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
+      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
+      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
+      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews.](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -5828,142 +5868,217 @@ Enlace del prototipo mobile [Figma mobile---](https://www.figma.com/proto/ac0fpd
 
 ## 5.6. IoT Device Design.
 
-En esta sección se detalla la propuesta de diseño físico y de circuito para TrackSilo, el dispositivo IoT fundamental del ecosistema de Café Lab encargado del monitoreo ambiental en los almacenes de café verde.
+## 5.6. IoT Device Design.
+
+Esta sección presenta el diseño del dispositivo IoT **TrackSilo**, encargado de monitorear las condiciones ambientales del almacenamiento de café verde. El prototipo utiliza un **ESP32**, un sensor **DHT22** para medir temperatura y humedad, y un **LED azul** que simula la activación del deshumedecedor.
+
+El diseño se alinea con la arquitectura IoT de CaféLab: el ESP32 ejecuta una **Embedded Application**, se comunica con un **Edge Prototype API**, y este actúa como capa intermedia antes de la sincronización con el backend cloud y la visualización en la aplicación web/mobile.
 
 ### Introducción y Criterios de Diseño
-El diseño de TrackSilo se rige por tres criterios principales: precisión ambiental, autonomía operativa y claridad visual. Dado que el dispositivo operará en almacenes donde el café verde es susceptible a cambios sutiles de humedad y temperatura, el hardware debe ser capaz de tomar lecturas precisas sin interferir en el entorno, actuando de manera pasiva hasta que los umbrales de riesgo se superen.
 
-**Relación con la Arquitectura de la Información (IA):**
-El diseño físico del dispositivo responde directamente a la IA del sistema. TrackSilo es el punto de entrada físico de los datos que alimentan el Dashboard de Monitoreo IoT. Cada lectura del sensor (SensorReading) y cada activación del deshumedecedor (ActuatorEvent) son jerarquizados y enviados mediante la API REST para ser visualizados en tiempo real por el dueño de la cafetería. La falta de pantallas complejas en el dispositivo físico es intencional, ya que la IA delega la visualización analítica a la aplicación web, manteniendo el hardware enfocado en la recolección pura de datos.
+TrackSilo fue diseñado para capturar datos ambientales relevantes para la conservación del café verde. La **temperatura** se utiliza únicamente para monitoreo, historial y visualización en dashboard. La **humedad** es la única variable que puede activar físicamente el actuador, ya que el deshumedecedor solo puede corregir condiciones de humedad elevada.
 
-**Relación con la Guía de Estilos (IoT Device Physical Interfaces):**
-La interfaz física del dispositivo sigue las convenciones visuales definidas en la guía de estilos de Café Lab. Se traslada el sistema de estados de la UI web al mundo físico mediante indicadores LED:
-- **Verde**: Condiciones óptimas (alineado con los indicadores de estado de lote en la aplicación).
-- **Ámbar/Rojo**: Condiciones fuera de rango o peligro.
-- **Azul**: Actuador (deshumedecedor) en funcionamiento.
+En el prototipo Wokwi, el ESP32 realiza lecturas cada **5 segundos** y sincroniza umbrales desde el Edge API cada **30 segundos**. En una implementación real, estos intervalos podrían ajustarse a varios minutos según la operación del almacén.
 
-### Diseño Físico del Dispositivo (Physical Design)
-El diseño físico de TrackSilo está pensado para ser compacto, modular y resistente a entornos de almacenamiento de granos.
+### Relación con la Arquitectura de Información
 
-- **Carcasa**: Una estructura que protege el microcontrolador (ESP32) del polvo y partículas de los sacos de café, pero que cuenta con ranuras de ventilación específicas para exponer el sensor DHT22 al ambiente real sin retener calor interno que pueda alterar la lectura.
-- **Interfaz visual**: Se opta por un diseño minimalista sin pantallas LCD para reducir el consumo energético. La interacción física se limita a un panel de luces LED que indica el estado actual del entorno y la actividad del deshumedecedor.
-- **Conectividad y Energía**: El dispositivo cuenta con un puerto de alimentación continua y un módulo de conexión para el relé que da la señal de encendido al equipo de deshumidificación externo.
-### Diseño de Circuito (Circuit Design)
-Para validar la viabilidad del dispositivo, se desarrolló el diseño del circuito y su simulación utilizando la herramienta Wokwi.
+Cada lectura generada por TrackSilo se representa como un **SensorReading**, compuesto por temperatura, humedad, identificador del dispositivo y fecha de captura. Estos datos alimentan el módulo de **IoT Monitoring**, donde se visualizan condiciones actuales, historial ambiental y estados como `OPTIMAL`, `WARNING` o `DANGER`.
 
-El circuito está compuesto por:
-- **Microcontrolador ESP32**: Actúa como el cerebro del dispositivo (Edge), encargado de leer el sensor, procesar la lógica de activación local (histéresis) y conectarse mediante WiFi a la API de Café Lab.
-- **Sensor DHT22**: Periférico encargado de la lectura precisa de temperatura y humedad relativa del almacén.
-- **Actuador (Simulado por LED / Relé)**: Representado visualmente por un LED azul, este componente simula el envío de la señal de 3.3V o 5V hacia un relé que encendería el deshumedecedor industrial.
+El comando `actuatorCommand` representa la acción física del sistema. Cuando la humedad supera el umbral máximo configurado, el Edge API responde `ACTIVATE`, y el ESP32 enciende el LED azul. Si solo la temperatura está elevada, el estado puede mostrarse como alerta en dashboard, pero el actuador permanece apagado.
+
+### Guía de Interfaz Física IoT
+
+La interfaz física del dispositivo es minimalista. No se incluyen LEDs verde, amarillo o rojo para representar estados ambientales, porque esos estados se muestran en la interfaz web/mobile. El prototipo físico solo representa la activación del deshumedecedor.
+
+| Elemento físico | Estado | Significado |
+|---|---|---|
+| LED azul apagado | Actuador inactivo | El deshumedecedor no está funcionando |
+| LED azul encendido | Actuador activo | El deshumedecedor fue activado por humedad elevada |
+
+### Diseño Físico del Dispositivo
+
+TrackSilo se plantea como un dispositivo compacto para almacenes de café verde. La carcasa protege el ESP32 del polvo, pero permite exposición del sensor DHT22 mediante ranuras de ventilación. El dispositivo no incluye pantalla física, ya que la interpretación de datos se realiza desde el dashboard. En una implementación real, el LED azul sería reemplazado o complementado por un relé conectado al deshumedecedor.
+
+### Diseño de Circuito
+
+El circuito simulado en Wokwi está compuesto por:
+
+| Componente | Función |
+|---|---|
+| ESP32 DevKit | Ejecuta la Embedded Application |
+| DHT22 | Mide temperatura y humedad relativa |
+| LED azul | Simula la activación del deshumedecedor |
+| Resistencia 220Ω | Protege el LED |
+| WiFi | Permite comunicación HTTP con el Edge Prototype API |
+
+**Insertar imagen del circuito aquí:**
 
 ![Diagrama de circuito de TrackSilo simulado en Wokwi](public/assets/images/iotmonitoring/wokwi-diagram.png)
 
-*Figura: Diagrama de circuito de TrackSilo simulado en Wokwi.*
+### Prototipo en Wokwi
 
-#### Código IoT (Arduino / ESP32)
-```cpp
-#include "DHT.h"
+El prototipo del dispositivo TrackSilo puede revisarse en el siguiente enlace:
 
-#define DHTPIN 15      // Pin donde está conectado el sensor DHT22
-#define DHTTYPE DHT22  // Tipo de sensor
-#define ACTUATOR_PIN 2 // Pin del LED (Simulador del deshumedecedor)
+https://wokwi.com/projects/463670098452378625
 
-DHT dht(DHTPIN, DHTTYPE);
+El proyecto incluye el código Arduino, el `diagram.json`, el ESP32, el sensor DHT22 y el LED azul que simula el deshumedecedor.
 
-// Umbrales basados en el informe de Café Lab
-const float MAX_TEMP = 22.0;
-const float MAX_HUMIDITY = 65.0;
+### Flujo Arquitectónico del Prototipo
 
-void setup() {
-  Serial.begin(115200);
-  Serial.println("Café Lab - TrackSilo Iniciado");
-  
-  pinMode(ACTUATOR_PIN, OUTPUT);
-  digitalWrite(ACTUATOR_PIN, LOW); // Apagado por defecto
-  
-  dht.begin();
-}
+```text
+DHT22 Sensor
+   ↓
+ESP32 / Embedded Application
+   ↓ HTTP
+Edge Prototype API / Edge Computing
+   ↓
+Cloud RESTful API / CaféLab Backend
+   ↓
+Web & Mobile Dashboard
+```
 
-void loop() {
-  // Esperar 2 segundos entre lecturas
-  delay(2000);
+En una implementación real, el Edge API se ejecutaría localmente en una Raspberry Pi, mini PC o servidor edge dentro del almacén. Para la simulación con Wokwi, el Edge Prototype API fue desplegado temporalmente en Azure App Service para contar con una URL pública accesible.
 
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
+### Edge Prototype API
 
-  // Comprobar si hubo un error de lectura
-  if (isnan(h) || isnan(t)) {
-    Serial.println("¡Error al leer el sensor DHT!");
-    return;
-  }
+El Edge Prototype API permite que el ESP32 consulte umbrales, envíe lecturas ambientales y reciba una respuesta con el estado ambiental y el comando del actuador.
 
-  Serial.print("Humedad: ");
-  Serial.print(h);
-  Serial.print("%  |  Temperatura: ");
-  Serial.print(t);
-  Serial.println("°C");
+**Base URL:**
 
-  // Lógica de alerta y activación
-  if (h > MAX_HUMIDITY || t > MAX_TEMP) {
-    Serial.println("¡ALERTA! Condiciones fuera de rango. Activando deshumedecedor...");
-    digitalWrite(ACTUATOR_PIN, HIGH); // Encender LED
-  } else {
-    digitalWrite(ACTUATOR_PIN, LOW);  // Apagar LED
-  }
+```text
+https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net
+```
+
+#### Endpoints principales
+
+| Método | Endpoint | Función |
+|---|---|---|
+| GET | `/` | Verifica que la API esté activa |
+| GET | `/api/v1/edge/thresholds` | Obtiene los umbrales actuales |
+| PUT | `/api/v1/edge/thresholds` | Actualiza umbrales sin modificar el firmware |
+| POST | `/api/v1/edge/readings` | Registra una lectura del ESP32 y devuelve estado/comando |
+| GET | `/api/v1/edge/readings/latest` | Devuelve la última lectura registrada |
+| GET | `/api/v1/edge/readings?limit=10` | Devuelve historial reciente de lecturas |
+
+#### Request para actualizar umbrales
+
+```json
+{
+  "deviceId": "tracksilo-001",
+  "minTemperature": 10,
+  "maxTemperature": 24,
+  "minHumidity": 40,
+  "maxHumidity": 68
 }
 ```
 
-#### Diagrama de configuración Wokwi (diagram.json)
+#### Request para registrar lectura
+
 ```json
 {
-  "version": 1,
-  "author": "Café Lab - TrackSilo Prototype",
-  "editor": "wokwi",
-  "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
-    { "type": "wokwi-dht22", "id": "dht1", "top": -114.9, "left": -111, "attrs": {} },
-    {
-      "type": "wokwi-led",
-      "id": "led1",
-      "top": 63.6,
-      "left": 253.4,
-      "attrs": { "color": "blue", "label": "Deshumedecedor" }
-    },
-    { "type": "wokwi-resistor", "id": "r1", "top": 100, "left": 140, "attrs": { "value": "220" } }
-  ],
-  "connections": [
-    [ "esp:3V3", "dht1:VCC", "red", [ "v-30", "h40" ] ],
-    [ "esp:GND.1", "dht1:GND", "black", [ "v-20", "h60" ] ],
-    [ "esp:15", "dht1:SDA", "green", [ "v-10", "h80" ] ],
-    [ "esp:2", "r1:1", "blue", [ "v20", "h30" ] ],
-    [ "r1:2", "led1:A", "green", [ "v0" ] ],
-    [ "esp:GND.2", "led1:C", "black", [ "v30", "h-70" ] ]
-  ],
-  "dependencies": {}
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 70.2
 }
+```
+
+#### Response esperado con humedad elevada
+
+```json
+{
+  "readingId": 1,
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 70.2,
+  "status": "DANGER",
+  "actuatorCommand": "ACTIVATE",
+  "recordedAt": "2026-05-10T20:50:29.352572"
+}
+```
+
+#### Response esperado con temperatura elevada, pero humedad normal
+
+```json
+{
+  "readingId": 2,
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 55.0,
+  "status": "DANGER",
+  "actuatorCommand": "NONE",
+  "recordedAt": "2026-05-10T20:55:00.000000"
+}
+```
+
+### Requests de Prueba
+
+#### Consultar umbrales
+
+```powershell
+Invoke-RestMethod -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/thresholds"
+```
+
+#### Actualizar umbrales
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/thresholds" `
+  -Method Put `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "minTemperature": 10,
+    "maxTemperature": 24,
+    "minHumidity": 40,
+    "maxHumidity": 68
+  }'
+```
+
+#### Registrar lectura con humedad elevada
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/readings" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "temperature": 25.5,
+    "humidity": 70.2
+  }'
+```
+
+#### Registrar lectura con temperatura elevada, pero humedad normal
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/readings" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "temperature": 25.5,
+    "humidity": 55.0
+  }'
 ```
 
 ### Flujos de Interacción del Prototipo IoT
-El prototipo diseñado en Wokwi cubre y demuestra los siguientes flujos de interacción principales, alineados con las User Stories del EP08:
 
-#### Flujo 1: Monitoreo Pasivo y Reporte Nominal (US23)
-- **Trigger**: El ESP32 consulta el sensor DHT22 en intervalos regulares (ej. cada 2 segundos en simulación).
-- **Procesamiento**: El dispositivo verifica que las lecturas de humedad (ej. 55%) y temperatura (ej. 20°C) estén dentro de los umbrales óptimos.
-- **Acción Física**: Los indicadores de alerta se mantienen apagados.
-- **Sincronización**: El dispositivo empaqueta el SensorReading y lo envía a la nube mediante la API REST (POST /api/v1/sensor-readings).
+**Flujo 1: Monitoreo periódico**  
+El ESP32 lee el DHT22 cada 5 segundos, envía temperatura y humedad al Edge API, y el sistema registra la lectura para visualización en dashboard.
 
-#### Flujo 2: Detección de Anomalía y Activación de Actuador (US25 y US28)
-- **Trigger**: El sensor DHT22 detecta un incremento drástico en la humedad (ej. > 65%) debido a un cambio en el ambiente del almacén.
-- **Procesamiento**: La lógica en el ESP32 detecta que el valor ha superado el umbral máximo permitido (MAX_HUMIDITY).
-- **Acción Física**: El ESP32 envía un pulso HIGH al pin del actuador (encendiendo el LED azul representativo del deshumedecedor) para iniciar la estabilización del ambiente de forma local y sin latencia.
-- **Sincronización**: El dispositivo envía el evento de activación (POST /api/v1/storage-monitor/actuator-events) a Café Lab, lo que dispara internamente el envío de una alerta por correo electrónico al dueño de la cafetería.
+**Flujo 2: Humedad elevada**  
+Si la humedad supera el umbral máximo, el Edge API responde `actuatorCommand = ACTIVATE`. El ESP32 enciende el LED azul, simulando la activación del deshumedecedor.
 
-#### Flujo 3: Restablecimiento de Condiciones (Histéresis)
-- **Trigger**: Con el deshumedecedor activo, la humedad comienza a descender hasta volver al 60%.
-- **Procesamiento**: El dispositivo no apaga el actuador inmediatamente al tocar el 64%, sino que exige que las condiciones óptimas se mantengan estables (simulación de tiempo de histéresis) para evitar encendidos y apagados constantes.
-- **Acción Física**: Al confirmarse la estabilidad, el ESP32 envía un pulso LOW apagando el actuador.
-- **Sincronización**: Se registra el evento de finalización del ciclo en el sistema para permitir cálculos de duración y eficiencia energética en el Dashboard.
+**Flujo 3: Temperatura elevada sin activación física**  
+Si la temperatura supera el umbral, pero la humedad está dentro del rango, el dashboard puede mostrar alerta; sin embargo, el actuador permanece apagado porque el deshumedecedor no corrige temperatura.
 
+**Flujo 4: Sincronización de umbrales**  
+El ESP32 consulta periódicamente `/api/v1/edge/thresholds`, permitiendo actualizar límites ambientales sin cambiar el firmware.
+
+### Conclusión del Diseño IoT
+
+TrackSilo permite capturar datos ambientales mediante ESP32 y DHT22, integrarlos con un Edge API y visualizar resultados en el dashboard de CaféLab. El prototipo físico mantiene una interfaz simple: temperatura para monitoreo e historial, humedad para decisión de actuador, y LED azul como simulación del deshumedecedor.
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
@@ -5971,22 +6086,45 @@ El prototipo diseñado en Wokwi cubre y demuestra los siguientes flujos de inter
 
 ### 6.1.1. Software Development Environment Configuration.
 #### Project Management
-1. Trello: Para gestión general los sprints, tareas del equipo, etc.
-  - Link: [Trello](https://trello.com/b/diGtoNBa/sprint-1)
+Para la gestión del proyecto se utilizó Trello, herramienta que permitió organizar las actividades del equipo mediante tableros, listas y tarjetas. Gracias a esto, se pudo planificar el sprint, asignar responsabilidades, hacer seguimiento del avance de cada integrante y mantener una visión clara del estado de las tareas.
 
-#### Product UX/UI Design:
-1. Figma: Para diseños como Wireframes, Mockups, Prototypes, etc.
-  - Link: [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1)
-2. Vertabelo: Para diagramas de base de datos (ERD, diagramas de clases, etc.)
-  - Link: [Vertabelo](https://vertabelo.com/)
+- Trello: https://trello.com/b/diGtoNBa/sprint-1
 
-#### Software Development:
-1. Visual Studio Code: Para el desarrollo de la Landing Page del proyecto.
-  - Link: [LandingPage](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
+#### Product UX/UI Design
+Para el diseño de experiencia e interfaz de usuario se utilizó Figma, herramienta que permitió elaborar wireframes, mock-ups, prototipos y flujos de navegación de la landing page, la aplicación web y la aplicación móvil. Esto facilitó validar visualmente la propuesta antes de su implementación y mantener una referencia clara para el desarrollo.
 
-#### Software Documentation:
-1. Visual Studio Code: Para la documentación de CaféLab se utilizó Visual Studio Code para el desarrollo de los capítulos en formato Markdown.
-  - Link: [Documentation](Documentation)
+Asimismo, se utilizó Vertabelo para el diseño de la base de datos, permitiendo representar las entidades, relaciones y estructura de persistencia necesarias para el sistema.
+
+- Figma: https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1
+- Vertabelo: https://vertabelo.com/
+
+#### Software Development
+Para el desarrollo de software se utilizaron herramientas y tecnologías específicas según cada componente de la solución. Visual Studio Code fue empleado para la landing page, el frontend web y la documentación del informe. Además, se consideran recursos del ecosistema JetBrains, como WebStorm e IntelliJ IDEA, por su soporte para desarrollo frontend, Java, Spring Boot, refactorización, navegación de código y depuración.
+
+Para el frontend se utilizó Angular junto con TypeScript, HTML y CSS, permitiendo construir una aplicación web modular, mantenible y orientada a componentes. Para el backend se utilizó Java con Spring Boot, tecnología que permitió implementar servicios REST, lógica de negocio, autenticación, persistencia y comunicación con la base de datos. Para la aplicación móvil se utilizó Android Studio con Kotlin, permitiendo desarrollar una experiencia nativa para dispositivos Android.
+
+- Visual Studio Code: https://code.visualstudio.com/
+- JetBrains WebStorm: https://www.jetbrains.com/webstorm/
+- JetBrains IntelliJ IDEA: https://www.jetbrains.com/idea/
+- Android Studio: https://developer.android.com/studio
+- Landing Page: https://cafelab-iot-project.github.io/cafeLab-landingPage/
+
+#### IoT Development
+Para el componente IoT se utilizó Wokwi como entorno de simulación del prototipo basado en ESP32 y sensor DHT22. Esta herramienta permitió validar el comportamiento del dispositivo, la lectura de temperatura y humedad, y la lógica de activación de alertas o actuadores antes de una implementación física.
+
+- Wokwi: https://wokwi.com/
+
+#### Software Testing
+Para la definición de pruebas de aceptación se utilizó el lenguaje Gherkin, ya que permite describir escenarios mediante la estructura Given-When-Then. Esto facilita validar que los criterios de aceptación estén alineados con las necesidades del negocio y que puedan ser comprendidos tanto por el equipo técnico como por los stakeholders.
+
+Además, para la validación del backend se considera el uso de herramientas como Postman, permitiendo probar endpoints, revisar respuestas HTTP y verificar la integración entre frontend, backend y servicios externos.
+
+- Postman: https://www.postman.com/
+
+#### Software Documentation
+Para la documentación del proyecto se utilizó Visual Studio Code y Markdown. Esto permitió mantener el informe versionado junto con el repositorio, facilitar la edición colaborativa y organizar capítulos, evidencias, diagramas, enlaces y anexos de manera estructurada.
+
+- Documentation: Documentation
 
 ### 6.1.2. Source Code Management.
 Para todo el desarrollo de CaféLab se usará el flujo de trabajo de Gitflow.
@@ -6030,29 +6168,85 @@ Aplicamos la convención Conventional Commits para redactar mensajes de commit c
 8. perf: Mejoras de rendimiento.
 
 ### 6.1.3. Source Code Style Guide & Conventions.
-Todo el código de la solución deberá ser escrito completamente en inglés para mantener la consistencia internacional y facilitar su mantenimiento.
+Todo el código de la solución deberá ser escrito en inglés para mantener consistencia internacional y facilitar su mantenimiento. Las convenciones se definen según las tecnologías utilizadas en CaféLab: Angular para el frontend web, Java Spring Boot para el backend y Android Studio con Kotlin para la aplicación móvil.
 
 ## HTML
-- Emplear nombres de etiquetas y atributos en minúscula.
-- Cerrar correctamente todas las etiquetas HTML.
-- Especificar siempre los atributos alt, width, y height para imágenes para mejorar la accesibilidad.
-- Evitar espacios innecesarios en los atributos HTML.
+HTML es el lenguaje utilizado para estructurar el contenido de la landing page y las plantillas de la aplicación web, permitiendo organizar textos, imágenes, formularios, botones y demás elementos visuales. Referencia: HTML Style Guide and Coding Conventions, https://www.w3schools.com/html/html5_syntax.asp
+
+- Declarar el tipo de documento en la primera línea con `<!DOCTYPE html>`.
+- Respetar la estructura básica del documento con `<html>`, `<head>` y `<body>`.
+- Declarar el título de la página mediante el elemento `<title>` dentro de `<head>`.
+- Usar nombres de etiquetas y atributos en minúscula.
+- Mantener una indentación coherente para facilitar la lectura de la estructura del documento.
+- Cerrar correctamente todos los elementos que lo requieran, como `<div>`, `<section>`, `<p>` o encabezados.
+- Declarar el atributo `alt` en las imágenes para mejorar la accesibilidad.
+- Incluir metadatos básicos como `charset` y `viewport` para asegurar correcta visualización en distintos dispositivos.
 
 ## CSS
-- Asignar nombres de IDs y clases descriptivos que reflejen el propósito del elemento.
-- Utilizar nombres cortos pero claros para IDs y clases.
-- Aplicar propiedades abreviadas cuando sea posible para optimizar el código.
-- Evitar el uso de unidades después de valores de cero (0).
-- Ordenar las declaraciones CSS en orden alfabético para facilitar su lectura.
+CSS es el lenguaje utilizado para definir la presentación visual del sistema, incluyendo colores, tipografías, espaciados, contenedores, layouts y comportamiento responsive. Referencia: Google HTML/CSS Style Guide, https://google.github.io/styleguide/htmlcssguide.html
 
-## JavaScript
-- Mantener una sintaxis expandida: llaves de apertura en la misma línea de la declaración, cierre en línea nueva.
-- Aplicar lowerCamelCase en el nombramiento de variables y funciones.
-- Usar let y const para declarar variables en lugar de var.
-- Asegurar que los nombres de las funciones sean descriptivos y en lowerCamelCase.
+- Usar indentación consistente en cada bloque de estilos.
+- Nombrar clases e identificadores con términos cortos, descriptivos y en minúscula.
+- Preferir clases reutilizables antes que selectores demasiado específicos.
+- Declarar colores en formato hexadecimal cuando correspondan a valores definidos por la identidad visual del producto.
+- Usar propiedades abreviadas cuando mejoren la legibilidad, como `margin`, `padding` o `border`.
+- Evitar unidades innecesarias después de valores `0`, salvo cuando la propiedad lo requiera.
+- Agregar comentarios únicamente cuando ayuden a entender el propósito de una regla o bloque de estilos.
+- Mantener un diseño responsive para asegurar una visualización correcta en desktop, tablet y dispositivos móviles.
+
+## TypeScript y Angular
+TypeScript es el lenguaje principal del frontend desarrollado en Angular. Permite construir componentes, servicios, rutas y lógica de presentación con tipado estático, reduciendo errores en tiempo de desarrollo. Referencias: Angular Coding Style Guide, https://angular.dev/style-guide; Google TypeScript Style Guide, https://google.github.io/styleguide/tsguide.html
+
+- Organizar el código fuente de Angular dentro de `src`.
+- Separar las funcionalidades por módulos, páginas o features, evitando carpetas genéricas demasiado grandes.
+- Nombrar archivos con palabras separadas por guiones, por ejemplo `coffee-batch-list.component.ts`.
+- Usar `PascalCase` para clases, componentes, interfaces y tipos.
+- Usar `lowerCamelCase` para variables, métodos, funciones y propiedades.
+- Usar `UPPER_SNAKE_CASE` para constantes globales.
+- Declarar tipos explícitos en propiedades, parámetros y valores de retorno cuando mejoren la claridad.
+- Usar `const` para valores que no cambian y `let` solo cuando la variable deba reasignarse.
+- Evitar el uso de `any`; si el tipo no es evidente, definir una interfaz, tipo o DTO.
+- Mantener la lógica compleja fuera de los templates HTML y moverla a métodos o servicios.
+- Nombrar métodos de eventos por la acción que realizan, por ejemplo `saveSupplier()` en lugar de `onClick()`.
+- Ubicar componentes, templates, estilos y pruebas relacionadas en la misma carpeta cuando pertenezcan al mismo concepto.
+- Mantener los servicios orientados a una responsabilidad concreta, como autenticación, proveedores, inventario o comunicación API.
+
+## Java y Spring Boot
+Java es el lenguaje utilizado para el backend de CaféLab mediante Spring Boot, permitiendo exponer servicios REST, aplicar reglas de negocio, gestionar persistencia y conectar la aplicación con la base de datos. Referencias: Google Java Style Guide, https://google.github.io/styleguide/javaguide.html; Spring Boot Structuring Your Code, https://docs.spring.io/spring-boot/reference/using/structuring-your-code.html
+
+- Usar paquetes en minúscula y con estructura basada en dominio o bounded context.
+- Evitar el uso del paquete por defecto; la clase principal debe ubicarse en un paquete raíz.
+- Usar `PascalCase` para clases, interfaces, enums y records.
+- Usar `lowerCamelCase` para atributos, variables y métodos.
+- Usar `UPPER_SNAKE_CASE` para constantes.
+- Nombrar controllers, services, repositories, commands, queries y resources según su responsabilidad.
+- Mantener una clase pública principal por archivo y hacer que el nombre del archivo coincida con el nombre de la clase.
+- Evitar imports con comodines; importar únicamente las clases utilizadas.
+- Utilizar indentación consistente y llaves con estilo K&R.
+- Documentar con Javadoc las clases o métodos públicos cuando su propósito no sea evidente.
+- Mantener los controllers enfocados en recibir solicitudes y delegar la lógica de negocio a servicios de aplicación o dominio.
+- Usar HTTPS y configuración segura para comunicación entre frontend, backend y servicios externos.
+
+## Kotlin y Android
+Kotlin es el lenguaje utilizado para la aplicación móvil desarrollada en Android Studio. Permite implementar interfaces nativas, comunicación con servicios backend y funcionalidades específicas para dispositivos Android. Referencia: Kotlin Style Guide for Android, https://developer.android.com/kotlin/style-guide
+
+- Nombrar archivos Kotlin con el nombre de la clase principal y extensión `.kt`.
+- Usar `PascalCase` para clases, interfaces, objetos y enums.
+- Usar `lowerCamelCase` para variables, funciones y propiedades.
+- Usar `UPPER_SNAKE_CASE` para constantes.
+- Mantener los archivos enfocados en una sola responsabilidad o funcionalidad relacionada.
+- Usar indentación consistente y evitar tabulaciones mezcladas con espacios.
+- Declarar valores inmutables con `val` siempre que no sea necesaria la reasignación.
+- Usar `var` solo cuando el valor deba cambiar durante la ejecución.
+- Evitar código duplicado en Activities, Fragments o ViewModels; extraer lógica compartida a funciones, clases o servicios.
+- Mantener la lógica de UI separada de la lógica de negocio cuando la arquitectura del módulo lo permita.
+- Usar nombres descriptivos para funciones asociadas a acciones del usuario o llamadas al backend.
+- Agregar comentarios solo cuando expliquen una decisión técnica, integración o comportamiento no evidente.
 
 ## Lenguaje Gherkin
-- Redactar títulos descriptivos y concisos para escenarios (Feature, Scenario).
+Gherkin se utilizará para describir escenarios de comportamiento, pruebas de aceptación y criterios funcionales de forma comprensible para el equipo técnico y los stakeholders.
+
+- Redactar títulos descriptivos y concisos para escenarios `Feature` y `Scenario`.
 - Respetar estrictamente la estructura Given-When-Then.
 - Usar un lenguaje orientado al negocio, entendible para todos los stakeholders, evitando detalles técnicos.
 - Implementar Scenario Outline cuando existan múltiples casos similares.
