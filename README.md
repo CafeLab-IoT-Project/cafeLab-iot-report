@@ -432,6 +432,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
       <br>
+      <strong>TP:</strong>
+      Contribuyó al desarrollo integral del sistema IoT mediante la configuración del entorno de desarrollo de software, la gestión del código fuente, la definición de convenciones de programación y la preparación del despliegue del software. Asimismo, participó en el diseño del dispositivo IoT y logró desplegar tanto la landing page como el frontend, demostrando dominio técnico, organización y capacidad para llevar componentes del proyecto a un entorno operativo.
+      <br>
     </td>
     <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
   </tr>
@@ -452,6 +455,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
+      <br>
+      <strong>TP:</strong>
+      Aportó a la organización del trabajo técnico mediante la configuración del entorno de desarrollo, la administración del repositorio y la aplicación de una guía de estilo compartida para mantener consistencia en el código fuente. Además, colaboró en la planificación del despliegue y en la implementación de entregables funcionales, incluyendo el diseño del dispositivo IoT, la landing page desplegada y el frontend desplegado, cumpliendo con los objetivos definidos para la entrega.
       <br>
     </td>
     <td>
