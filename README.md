@@ -86,6 +86,7 @@
 | 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
 | 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
 | 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
+| 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -348,8 +349,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
     - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
     - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
-    - [5.4.2. Applications Mock-ups.](#542-applications-mock-ups)
-    - [5.4.3. Applications User Flow Diagrams.](#543-applications-user-flow-diagrams)
+    - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+    - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
   - [5.6. IoT Device Design.](#56-iot-device-design)
     - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
@@ -5248,14 +5249,579 @@ Los sistemas de navegación de Cafelab permiten al usuario recorrer los diferent
 ## 5.4. Applications UX/UI Design.
 
 ### 5.4.1. Applications Wireframes.
+Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
+
+**Web Application para Desktop Web Browser**
+Sign Up - Bar - US01
+
+![image](https://github.com/user-attachments/assets/d4f02b31-6134-42a4-b40e-6b51220217c1)
+
+Sign Up - Owner - US01
+
+![image](https://github.com/user-attachments/assets/bdcd182b-5895-4f30-bb46-fe0098c2b249)
+
+Message after correct Sign Up - US01
+
+![image](https://github.com/user-attachments/assets/4dbe1ebb-851e-43c2-b26a-ff66c75a116d)
+
+Message after correct Sign Up - US01
+
+![image](https://github.com/user-attachments/assets/6dde8004-ab5b-4f19-86f5-a5d34e1c8474)
+
+Sign In - US01
+
+![image](https://github.com/user-attachments/assets/8f30711a-b26a-46f7-ba04-ef33d2809b58)
+
+Message after incorrect Sign In - US01
+
+![image](https://github.com/user-attachments/assets/1ef88d30-20a0-4942-8144-086ed99dcf67)
+
+Message after correct Sign In - US01
+
+![image](https://github.com/user-attachments/assets/2377381e-629a-45eb-a2d6-1a4c1ebbe3ba)
+
+Select Suscription - US03
+
+![image](https://github.com/user-attachments/assets/b9de893a-696d-404f-bad6-0def9e1b888d)
+
+Payment - US?
+
+![image](https://github.com/user-attachments/assets/16e2e17d-05ad-40ae-8a48-162ecbc0f3bd)
+
+User Profile - US02
+
+![image](https://github.com/user-attachments/assets/5209406b-28b6-4f8c-91fe-cc4a2b168780)
+
+Welcome - US?
+
+![image](https://github.com/user-attachments/assets/14a7cf2c-b48e-496d-8365-605b8b283d60)
+
+Suppliers - US04
+
+![image](https://github.com/user-attachments/assets/ddd53c60-ce21-4cd9-94c5-3840a49763e3)
+
+Supplier Registration - US04
+
+![image](https://github.com/user-attachments/assets/97d1dca7-15cb-491c-b51e-761a29181049)
+
+Supplier Edition - US04
+
+![image](https://github.com/user-attachments/assets/a677207a-6e27-479f-8b7f-10b4fe337cdb)
+
+Supplier Information - US04
+
+![image](https://github.com/user-attachments/assets/b104d522-7a0e-4a60-aaa8-896a923a83a7)
+
+Coffee Lot - US05 y US06
+
+![image](https://github.com/user-attachments/assets/73195746-5583-4862-8eb6-de22d8367a59)
+
+Coffee Lot Registration - US05 y US06
+
+![image](https://github.com/user-attachments/assets/d8ae3e27-7df9-4c8d-9794-bc314c1bbab2)
+
+Coffee Lot Edition - US05 y US06
+
+![image](https://github.com/user-attachments/assets/c3227a83-e312-4e6f-9307-0f1116cab377)
+
+Coffee Lot Information - US04
+
+![image](https://github.com/user-attachments/assets/5497b45b-e00d-4e75-b73e-3231e86edd2c)
+
+Roast Profiles - US07
+
+![image](https://github.com/user-attachments/assets/6965b63d-ccc1-45a0-a033-2c760109e001)
+
+Roast Profiles - US07
+
+![image](https://github.com/user-attachments/assets/0cb820d8-1c97-4dfa-97d1-cb188d16d651)
+
+Roast Profiles Registration - US07
+
+![image](https://github.com/user-attachments/assets/c80e6d39-3f2a-4418-9352-b82161f2c501)
+
+Roast Edition - US07
+
+![image](https://github.com/user-attachments/assets/ce7a9940-5c45-49f1-bb34-4d0a38690703)
+
+Favorite Profiles Filter - US07
+
+![image](https://github.com/user-attachments/assets/ef0c54a7-4d12-4fe3-b2a8-8c7d6811a695)
+
+Visualize a Roast Profile - US07
+
+![image](https://github.com/user-attachments/assets/1d07264a-76cc-4e3b-84d0-729dca75d416)
+
+Roast Comparison - US09
+
+![image](https://github.com/user-attachments/assets/4361a472-496b-44e3-a060-d92a70149fa2)
+
+Cupping Sesions
+
+![image](https://github.com/user-attachments/assets/1798a5bc-d2e0-4fd0-b8df-2155efaa31a9)
+
+Cupping Sessions Filters - US11
+
+![image](https://github.com/user-attachments/assets/267dd974-65ec-4b5a-8119-69d355f89ab0)
+
+Cupping Sessions Registration - US11
+
+![image](https://github.com/user-attachments/assets/f7a4e261-2397-47e3-ae85-a760fa4ae1f7)
+
+Cupping Session Sensory Hexagon - US12
+
+![image](https://github.com/user-attachments/assets/f0aa8cea-52f3-49c0-b7a4-9da6a18159ce)
+
+Compare multiple Cupping Sessions 1 - US12
+
+![image](https://github.com/user-attachments/assets/b5921134-5ab2-49ef-a855-6e5861e51aa3)
+
+Compare multiple Cupping Sessions 2 - US12
+
+![image](https://github.com/user-attachments/assets/ef21b269-003a-49db-8a6d-9cbb229f104e)
+
+Library Defect Consultation - US10
+
+![image](https://github.com/user-attachments/assets/f6c20a8e-85f0-493c-b031-3e8d06d6a0b2)
+
+Defect Information - US10
+
+![image](https://github.com/user-attachments/assets/9430e309-861d-41a0-99a9-88d7e7389155)
+
+Patterns of Roast with Cupping - US13
+
+![image](https://github.com/user-attachments/assets/38b2f140-3f1f-4d09-8ab3-e9bb365d5d49)
+
+Library Relation of Roast with Cupping - US13
+
+![image](https://github.com/user-attachments/assets/de4c4604-3a11-423b-a64a-47bc5851e430)
+
+Portfolio and recipies - US15 and 17
+
+![image](https://github.com/user-attachments/assets/b23119f6-9ea0-479c-af27-a7b1661aa768)
+
+Recipes - US17
+
+![image](https://github.com/user-attachments/assets/83f74403-3095-4148-873f-8ed033cc9716)
+
+Recipe Registration coffee extraction - US15
+
+![image](https://github.com/user-attachments/assets/4d11dd0b-7ed1-40bc-9442-b5ecdd4cb7cf)
+
+Recipe Registration espresso method - US15
+
+![image](https://github.com/user-attachments/assets/950026bd-a81f-4f96-bc5f-770fc80df29d)
+
+Recipe Information coffee extraction - US18
+
+![image](https://github.com/user-attachments/assets/ff9a4474-202a-4c4b-aca5-f6404cbf6099)
+
+Recipe Information espresso method - US18
+
+![image](https://github.com/user-attachments/assets/75f42bda-0bc5-4329-a906-24d4120115f4)
+
+Record Grind Calibration - US16
+
+![image](https://github.com/user-attachments/assets/bc6fc3a5-caf7-44a3-8955-5b4406f3fbbc)
+
+Calibration record
+
+![image](https://github.com/user-attachments/assets/c619df4c-ca31-4f4c-89db-d2d294f07a7f)
+
+edit calibration
+
+![image](https://github.com/user-attachments/assets/97d950ad-70cf-48fd-8b23-eb27eb35c3fb)
+
+Inventary - US19
+
+![image](https://github.com/user-attachments/assets/5dfed7e1-ecb9-49df-b956-a413ced9769a)
+
+Inventary - US19
+
+![image](https://github.com/user-attachments/assets/5222c2dd-e694-4072-8709-8a876c2235b1)
+
+Register Production Cost Management 1 - US20
+
+![image](https://github.com/user-attachments/assets/ba550bab-5dd0-4e0f-abea-8048d1a3f571)
+
+Production Cost Management 2 - US20
+
+![image](https://github.com/user-attachments/assets/9d3971e3-e71f-466a-9fea-eae4a97b7388)
+
+Production Cost Management 3 - US20
+
+![image](https://github.com/user-attachments/assets/f9a08a11-3368-42f7-a59c-2b303b76895e)
+
+Production Cost Management 4 - US20
+
+![image](https://github.com/user-attachments/assets/30d29421-6452-49c7-832b-ef3ec05670c9)
+
+Production Cost Management 5 - US20
+
+![image](https://github.com/user-attachments/assets/b14e3691-0b52-4f36-9b16-00b2651ebeb9)
+
+#### Web Application para Mobile Web Browser
+
+**Sign Up**
+
+![image](public/assets/images/chapter-5/MobileMockups/Signup.png)
+
+**Log In**
+
+![image](public/assets/images/chapter-5/MobileMockups/Login.png)
+
+**Welcome Page**
+
+![image](public/assets/images/chapter-5/MobileMockups/WelcomePage.png)
+
+**Suppliers**
+
+![image](public/assets/images/chapter-5/MobileMockups/Suppliers.png)
+
+**Coffee Lot**
+
+![image](public/assets/images/chapter-5/MobileMockups/Coffeelot.png)
+
+**Roast Profiles and Comparison**
+
+![image](public/assets/images/chapter-5/MobileMockups/Roast.png)
+
+**Cupping Sessions**
+
+![image](public/assets/images/chapter-5/MobileMockups/Cupping.png)
+
+**Recipes**
+
+![image](public/assets/images/chapter-5/MobileMockups/Recipes.png)
+
+**Grind Calibration**
+
+![image](public/assets/images/chapter-5/MobileMockups/Calibration.png)
+
+**Defects Library**
+
+![image](public/assets/images/chapter-5/MobileMockups/Defects.png)
+
+**Patterns of Roast and Cupping**
+
+![image](public/assets/images/chapter-5/MobileMockups/Patterns.png)
+
+**Inventory**
+
+![image](public/assets/images/chapter-5/MobileMockups/Inventory.png)
+
+**Cost Management**
+
+![image](public/assets/images/chapter-5/MobileMockups/Cost.png)
+
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
-### 5.4.2. Applications Mock-ups.
+*User Goal: Registrarse y elegir suscripción*
+ <br>El usuario elegirá si es un barista o un dueño de cafetería, en base a esto el formulario de registro mostrará más o menos campos a completar, una vez registrados podrán elegir el plan que más deseen, luego, procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Register.png)
+ 
+ *User Goal: Iniciar Sesión.*
+ <br>El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería, si ingresa mal sus datos, se le pedirá que los ingrese nuevamente, una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/InicioSesion.png)
+ 
+ *User Goal: Editar su Perfil.*
+ <br>Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Perfil.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Proveedores.*
+ <br>El usuario desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores" el cuál tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
 
-### 5.4.3. Applications User Flow Diagrams.
+ ![image](public/assets/images/chapter-5/Wireflows/Proveedores.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Lotes de Café.*
+ <br>Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados, del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+
+ ![image](public/assets/images/chapter-5/Wireflows/LoteCafe.png)
+ 
+ *User Goal: Registrar, Editar y Visualizar sus perfiles de tueste, también comparar entre dos de ellos.*
+ <br>Desde el apartado de herramientas, selecciona "Perfiles de Tueste", de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/PerfilTueste.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Catas con su hexágono sensorial.*
+ <br>Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas, desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Catas.png)
+ 
+ *User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones.*
+ <br>Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos, si selecciones alguno puede observar sus posibles causas y las soluciones recomendadas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Defectos.png)
+ 
+ *User Goal: Identificar la relación entre el tueste y los sabores del café.*
+ <br>Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Relacion.png)
+ 
+ *User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales.*
+ <br>Desde el apartado de herramientas, selecciona "Recetas", de este modo accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio, puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta, al crear una debería seleccionar si está hecho por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Recetas.png)
+ 
+ *User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado.*
+ <br>Desde el apartado de herramientas, selecciona "Calibración de Molienda", en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Calibracion.png)
+ 
+ *User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante.*
+ <br>Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado, puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Inventario.png)
+ 
+ *User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad.*
+ <br>Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/GestorCostos.png)
+
+### 5.4.3. Applications Mock-ups.
+#### Mock-ups for Desktops
+
+Select Suscription - US03
+![SelectSuscription](public/assets/images/chapter-5/WebAppMockup/SelectSuscriptionUS03.png)
+
+Select Payment - US
+![SelectPayment](public/assets/images/chapter-5/WebAppMockup/SelectPayment.png)
+
+Sing Up - Bar US01
+![Sing Up](public/assets/images/chapter-5/WebAppMockup/SingUpBarUS01.png)
+
+Message after correct Sign Up - US01
+![Message after correct Sign Up](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignUpUS01.png)
+
+Sign In - US01
+![Sign In](public/assets/images/chapter-5/WebAppMockup/SingInUS01.png)
+
+Message after correct Sign In - US01
+![Message after correct Sign Ip](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01.png)
+
+Message after incorrect Sign In - US01
+![Message after incorrect Sign In](public/assets/images/chapter-5/WebAppMockup/MessageafterincorrectSignInUS01.png)
+Sign Up - Owner - US01
+![Sign Up](public/assets/images/chapter-5/WebAppMockup/SingUpOwnerUS01.png)
+Message after correct Sign Up - US01
+![Message after correct Sign Up](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01Owner.png)
+Sing in - Owner
+![Sing in](public/assets/images/chapter-5/WebAppMockup/SingInOwner.png)
+
+Message after incorrect Sign In - US01
+![Message after incorrect Sign In](public/assets/images/chapter-5/WebAppMockup/MessageafterincorrectSignInUS01Owner.png)
+
+Message after correct Sign In - US01
+![Message after correct Sign In](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01Owner.png)
+
+User Profile - US02
+![User Profile](public/assets/images/chapter-5/WebAppMockup/UserProfile.png)
+
+Welcome - US?
+![Welcome](public/assets/images/chapter-5/WebAppMockup/Welcome.png)
+Suppliers - US04
+![Suppliers](public/assets/images/chapter-5/WebAppMockup/Suppliers.png)
+Supplier Registration - US04
+![Supplier Registration](public/assets/images/chapter-5/WebAppMockup/SupplierRegistration.png)
+Supplier Edition - US04
+![Supplier Edition](public/assets/images/chapter-5/WebAppMockup/SupplierEdition.png)
+Supplier Information - US04
+![Supplier Information](public/assets/images/chapter-5/WebAppMockup/SupplierInformation.png)
+
+Coffee Lot - US05 y US06
+![Coffee Lot](public/assets/images/chapter-5/WebAppMockup/CoffeLot.png)
+Coffee Lot Registration - US05 y US06
+![Coffee Lot Registration](public/assets/images/chapter-5/WebAppMockup/CoffeLotRegistration.png)
+Coffee Lot Edition - US05 y US06
+![Coffee Lot Edition](public/assets/images/chapter-5/WebAppMockup/CoffeLotEdition.png)
+Coffee Lot Information - US04
+![Coffee Lot Information](public/assets/images/chapter-5/WebAppMockup/CoffeLotInformation.png)
+
+Roast Profiles - US07
+![Roast Profiles](public/assets/images/chapter-5/WebAppMockup/RoastProfiles.png)
+Roast Profiles - US07
+![Roast Profiles](public/assets/images/chapter-5/WebAppMockup/RoastProfiles2.png)
+Roast Profiles Registration - US07
+![Roast Profiles Registration](public/assets/images/chapter-5/WebAppMockup/RoastProfilesRegistration.png)
+Roast Edition - US07
+![Roast Edition](public/assets/images/chapter-5/WebAppMockup/RoastEdition.png)
+Favorite Profiles Filter - US07
+![Favorite Profiles Filter](public/assets/images/chapter-5/WebAppMockup/FavoriteProfilesFilter.png)
+Visualize a Roast Profile - US07
+![Visualize a Roast Profile](public/assets/images/chapter-5/WebAppMockup/VisualizeraRoastProfile.png)
+Roast Comparison - US09
+![Roast Comparison](public/assets/images/chapter-5/WebAppMockup/RoastComparison.png)
+
+
+Cupping Sessions - US11
+![Cupping Sessions](public/assets/images/chapter-5/WebAppMockup/CuppingSessions.png)
+
+Cupping Sessions Filters - US11
+![Cupping Sessions Filters](public/assets/images/chapter-5/WebAppMockup/CuppingSessionsFilters.png)
+Cupping Sessions Registration - US11
+![Cupping Sessions Registration](public/assets/images/chapter-5/WebAppMockup/CuppingSessionsRegistration.png)
+Cupping Session Sensory Hexagon - US12
+![Cupping Session Sensory Hexagon](public/assets/images/chapter-5/WebAppMockup/CuppingSessionSensoryHexagon.png)
+Compare multiple Cupping Sessions 1 - US12
+![compare multiple Cupping Sessions 1](public/assets/images/chapter-5/WebAppMockup/CompareMultipleCuppingSessions.png)
+Compare multiple Cupping Sessions 2 - US12
+![Compare multiple Cupping Sessions 2](public/assets/images/chapter-5/WebAppMockup/CompareMultipleCuppingSessions2.png)
+
+
+Library Defect Consultation - US10
+![Library Defect Consultation](public/assets/images/chapter-5/WebAppMockup/LibraryDefectConsultation.png)
+Defect Information - US10
+![Defect Information](public/assets/images/chapter-5/WebAppMockup/DefectInformation.png)
+Defect Information - US10
+![Defect Information](public/assets/images/chapter-5/WebAppMockup/DefectInformationb.png)
+
+
+Patterns of Roast with Cupping - US13
+![Patterns of Roast with Cupping](public/assets/images/chapter-5/WebAppMockup/PatternsofRoastWithcupping.png)
+Library Relation of Roast with Cupping - US13
+![Library Relation of Roast with Cupping](public/assets/images/chapter-5/WebAppMockup/LibraryRelationofRoastwithCupping.png)
+
+
+Portfolio and recipies - US15 and 18
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipies.png)
+Portfolio and recipies - US15 and 19
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipiesb.png)
+Portfolio and recipies - US15 and 20
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipiesc.png)
+Recipes - US17
+![Recipes](public/assets/images/chapter-5/WebAppMockup/Recipes.png)
+Recipe Registration - US15
+![Recipe Registration](public/assets/images/chapter-5/WebAppMockup/RecipeRegistration.png)
+Recipe Registration - US15
+![Recipe Registration](public/assets/images/chapter-5/WebAppMockup/RecipeRegistrationb.png)
+Recipe Information coffee extraction - US18
+![Recipe Information coffee extraction](public/assets/images/chapter-5/WebAppMockup/RecipeInformationCoffeeExtraction.png)
+Recipe Information espresso method - US18
+![Recipe Information espresso method](public/assets/images/chapter-5/WebAppMockup/RecipeInformationespressomethod.png)
+
+
+Inventary - US19
+![Inventary](public/assets/images/chapter-5/WebAppMockup/Inventary.png)
+Inventary - US19
+![Inventary ](public/assets/images/chapter-5/WebAppMockup/Inventaryb.png)
+
+Register Production Cost Management 1 - US20
+![Register Production Cost Management 1](public/assets/images/chapter-5/WebAppMockup/RegisterProductionCostManagement.png)
+Production Cost Management 2 - US20
+![Production Cost Management 2](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagement2.png)
+Production Cost Management 3 - US20
+![Production Cost Management 3](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament3.png)
+Production Cost Management 4 - US20
+![Production Cost Management 4](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament4.png)
+Production Cost Management 5 - US20
+![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
+
+#### Mock-ups for Mobiles
+
+ *Register Mobile Mockups and Tools*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Register.png)
+
+  *Sign in Mockups and Profile*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Signin.png)
+ 
+  *Suppliers Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Suppliers.png)
+
+*CoffeeLot Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Coffeelot.png)
+
+*Roast Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Roast.png)
+
+ *Cupping Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Cupping.png)
+
+  *Recipes Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Recipes.png)
+
+  *Patterns Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Patterns.png)
+
+  *Defect Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Defect.png)
+
+  *Calibration Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Calibration.png)
+
+  *Inventory Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Inventory.png)
+
+  *Costs Managament Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Cost.png)
+
+
+### 5.4.4. Applications User Flow Diagrams.
+USER GOAL: Registrar bebida
+Como usuario, puedo ingresar a la herramienta de registrar bebida, una vez dentro se puede agregar recetas de bebidas y portafolios, el cual es usa para almacenar agrupadamente para diferentes fines como participacion en concursos. Al registrar la bebida se puede contar con multiples campos para poder registrar adecuadamente valores que me importan para los detalles.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/BebidasPortafolio.png)
+
+USER GOAL: Calibracion
+Como usuario, puedo registrar las calibraciones registradas en las maquinas y herramientas que uso, de esta forma puedo replicar mis procesos en otros sitios, contando con la opcion de editar si en caso quiero modificar un valor. Esta herramienta tambien contribuye en la movilidad de mis calibraciones.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/Calibracion.png)
+
+USER GOAL: Registrar Lotes de cafe
+Como usuario, puedo registrar los lotes que agregue a la tienda, asi como contar con espacios que me ayuden a tener un resumen general de la informacion de los lotes, ya que puedo agregar varios lotes sin confunsiones sobre su informacion, asi como poder editar campos que considere necesarios.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/LoteCafe.png)
+
+USER GOAL: Registrar Costo por Lotes de cafe
+Como usuario, puedo registrar los costes de cada lote, como la materia prima, la mano de obra involucrada, luego de completar otros costos como transporte y gastos adicionales que se pueden generar ocasionalmente. De esta forma se genra un resumen didactico facil de entender, asi como poder imprimirlo. Esta herrramienta ayuda a mejorar la trazabilidad de los costos y una mejora en la administracion de la empresa.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/RegistroLoteCoste.png)
+
+USER GOAL: Registrar Perfil de Tueste
+Como usuario, puedo registrar perfiles de tueste que logre desarrollar mediante datos que tome en cuenta en el tueste, ademas de contar con una herramienta que genere curvas de tueste del perfil creado, asimismo poder comparar con otros perfiles, con el fin de encontrar patrones y mejorar la calidad sensorial
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/RegitrarPerfilTueste.png)
+
+
+USER GOAL: Registro de Sesion de cata
+Como usuario, puedo registrar sesiones de cata, las cuales puedo vincular a lotes y perfiles, para tener una mejor descripcion de sabores y comparaciones, de esta forma mejorar la calidad del producto final, ademas se puede generar un hexagono sensorial con el que peuda comparar resultados de otras sesiones de cata, finalmente puedo contar con un filtro de busqueda para proximamente buscar de forma rapida y directa.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/SesionCata.png)
 
 ## 5.5. Applications Prototyping.
+
+### Web application prototyping
+
+En el desarrollo de prototipos, se tomo en cuenta los style guides, tanto como para desktop y mobile, asi mismo para sus versiones en landing page y web app. Se tomaron en cuenta lo siguiente: 
+
+#### Facilidad de reconocimiento
+Se cuenta con campos que los usuarios puedan reconocer para completar sus datos, asi como elementos conocidos como iconos e imagenes, de esta forma el usuario reconoce facilmente la seccion donde se encuentra
+#### Diseño responsive
+Se toma un diseño que pueda adaptarse a los dispositivos del usuario, de esta forma puede contar con mayor portabilidad, sin perder los estilos y organizacion de los elementos
+#### Informacion clara
+Los mensajes mostrados son claros, entendibles y universales en la pagina, de esta forma el usuario no tiene que procesar mayo informacion de forma irrelevante para su experiencia en la plataforma
+![Prototipo](public/assets/images/chapter-5/UserFlowDiagram/prototipoCafe.png)
+
+![Prototipo](public/assets/images/chapter-5/MobileMockups/prototipo-mobile.png)
+
+Enlace para acceder al video de [WEB Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+Enlace para acceder al video de [MOBILE Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1) https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1
+
+Enlace del prototipo mobile [Figma mobile---](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1
+
 
 ## 5.6. IoT Device Design.
 
