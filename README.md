@@ -87,6 +87,7 @@
 | 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
 | 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
 | 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
+| 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -385,6 +386,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [Lenguaje Gherkin](#lenguaje-gherkin)
     - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
       - [Landing Page Deployment](#landing-page-deployment)
+      - [Frontend Deployment](#frontend-deployment)
+      - [Backend Deployment](#backend-deployment)
   - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
     - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
@@ -5979,7 +5982,7 @@ El prototipo diseñado en Wokwi cubre y demuestra los siguientes flujos de inter
 
 #### Software Development:
 1. Visual Studio Code: Para el desarrollo de la Landing Page del proyecto.
-  - Link: [LandingPage](https://cafelanding-60903.web.app/)
+  - Link: [LandingPage](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
 
 #### Software Documentation:
 1. Visual Studio Code: Para la documentación de CaféLab se utilizó Visual Studio Code para el desarrollo de los capítulos en formato Markdown.
@@ -6057,31 +6060,45 @@ Todo el código de la solución deberá ser escrito completamente en inglés par
 
 ### 6.1.4. Software Deployment Configuration.
 #### Landing Page Deployment
-Para desplegar la landing page, es necesario contar con una cuenta de GitHub y tener acceso como administrador al repositorio del proyecto. A partir de ahí, se pueden cargar los documentos desde un entorno local al repositorio y proceder con el despliegue. A continuación, se describen los pasos seguidos:
+Para desplegar la landing page se utiliza **GitHub Pages** desde el repositorio del proyecto. El despliegue se realiza desde la rama **main**, configurada como rama de publicación para el sitio.
 
-1. **Creación de ramas**: Se crean ramas específicas para que cada miembro del equipo pueda trabajar en módulos o componentes del proyecto Angular de forma organizada y sin generar conflictos en la rama principal.
-2. **Estructura del proyecto**: Se define una estructura clara:
-   - Carpeta `src/public/components`: para los componentes principales.
-   - Carpeta `public`: para las imágenes y configuración i18n.
-   - Carpeta `src/core/services`: para los servicios para implementar el i18n.
-3. **Subida de archivos al repositorio**:
-   - Instalación de Git.
-   - Configuración del repositorio remoto.
-   - Uso de comandos Git para hacer commit y push de los cambios.
-4. **Configuración para despliegue**:
-   - Instalación de Firebase CLI con el comando **npm install -g firebase-tools**
-   - Nos autenticamos en Firebase con el comando **firebase login**.
-   - Inicialización del proyecto Firebase en el directorio del proyecto Angular con el comando **firebase init**.
-   - Seleccionamos Hosting.
-   - Elegimos el proyecto Firebase creado previamente.
-   - Indicamos como carpeta de despliegue dist/nombre-del-proyecto.
-   - Realizamos el build del proyecto con **ng build** para luego hacer el deploy con **firebase deploy**.
+1. **Acceso al repositorio**: Cada integrante debe contar con una cuenta de GitHub y permisos de colaboración sobre el repositorio de la landing page.
+2. **Integración de cambios**: Los cambios de la landing page se desarrollan en ramas de trabajo y luego se integran a la rama `main` mediante commits y pull requests.
+3. **Configuración de GitHub Pages**:
+   - Se ingresa a la configuración del repositorio en GitHub.
+   - En la sección **Pages**, se selecciona la opción de despliegue desde una rama.
+   - Se define la rama `main` como fuente de publicación.
+   - Se selecciona la carpeta raíz correspondiente para publicar el contenido estático.
+4. **Publicación**: Al actualizar la rama `main`, GitHub Pages genera y publica la nueva versión de la landing page.
+5. **Verificación**: Se revisa el enlace público de GitHub Pages para validar que los estilos, imágenes, navegación y redirecciones funcionen correctamente.
 
-5. **Resolución de conflictos**:
-   - En caso de conflictos, se resuelven con herramientas como Visual Studio Code.
-   - Se verifica que los conflictos hayan sido solucionados correctamente.
+Con este flujo, la landing page queda publicada en GitHub Pages y se mantiene sincronizada con la versión estable integrada en la rama `main`.
 
-Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, permitiendo actualizaciones automáticas tras nuevas versiones y asegurando un entorno estable para el front-end.
+#### Frontend Deployment
+Para el despliegue de la aplicación web desarrollada en **Angular**, también se utiliza **GitHub Pages**. En este caso, el resultado compilado de Angular se publica mediante una rama de despliegue llamada `gh-pages`.
+
+1. **Preparación del proyecto Angular**: Se verifica que el proyecto compile correctamente y que las rutas y assets sean compatibles con GitHub Pages.
+2. **Build de producción**: Se ejecuta el build del frontend para generar los archivos estáticos dentro de la carpeta de distribución del proyecto.
+3. **Publicación en rama de despliegue**:
+   - Se utiliza la rama `gh-pages` para alojar los archivos generados por el build.
+   - GitHub Pages toma esta rama como fuente de publicación del frontend.
+   - Los cambios funcionales continúan gestionándose en las ramas principales de desarrollo, mientras que `gh-pages` conserva el contenido compilado para despliegue.
+4. **Verificación del despliegue**: Se valida el enlace público del frontend para comprobar navegación, carga de assets, rutas de Angular y comunicación esperada con los servicios backend.
+
+Con este flujo, el frontend Angular se despliega como aplicación estática en GitHub Pages, separando el código fuente de la rama utilizada para publicación.
+
+#### Backend Deployment
+Para el backend se utilizará **Azure Web App**, permitiendo desplegar el servicio API en un entorno cloud administrado y accesible para el frontend y los dispositivos IoT.
+
+1. **Preparación del backend**: Se configura el proyecto backend con las variables de entorno necesarias, conexión a base de datos y parámetros de seguridad.
+2. **Creación del recurso en Azure**:
+   - Se crea una Web App en Azure App Service.
+   - Se define el runtime correspondiente al backend del proyecto.
+   - Se configuran las variables de entorno desde el portal de Azure.
+3. **Despliegue del servicio**: El backend se publica en Azure Web App desde el repositorio o mediante el flujo de despliegue configurado por el equipo.
+4. **Validación del API**: Se prueban los endpoints principales para verificar disponibilidad, autenticación, conexión con base de datos y consumo desde el frontend.
+
+Con este flujo, el backend queda alojado en Azure Web App y disponible como servicio central para la aplicación web y el componente IoT.
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
