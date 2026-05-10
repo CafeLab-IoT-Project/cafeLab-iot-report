@@ -84,6 +84,7 @@
 | 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin             | Validación del impact mapping                                                      |
 | 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin             | Actualización del product backlog                                                  |
 | 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo      | Depuración de US y actualización de product backlog                                |
+| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo      | Actualización del sprint backlog y aspect leaders and collaborators                |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -5495,17 +5496,18 @@ Con este flujo, la aplicación Angular queda desplegada en Firebase Hosting, per
 
 En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
 
-Para este Sprint, los aspectos principales corresponden a las User Stories que definen el primer alcance funcional de nuestra landing page: Registro de Proveedores (US01), Creación de Perfil de Tueste (US03), Biblioteca de Defectos de Tueste (US04), Análisis Comparativo de Tuestes (US06), Creación de Recetas de Preparación (US07), Calibración de Molienda (US08) y Control de Inventario Integrado (US11). Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas y la carga de trabajo planificada.
+Para este Sprint, los aspectos principales corresponden a las User Stories que conforman el alcance funcional inicial de la plataforma. De esta manera, el sprint abarca funcionalidades de gestión de proveedores, lotes, perfiles de tueste, catas, recetas, calibraciones, inventario, costos, landing page, autenticación, perfil de usuario y selección de plan. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas, responsabilidades y carga de trabajo planificada.
 
 <table border="1">
 <tr>
-<th>Aspecto / US</th>
+<th>Aspecto / US - TS</th>
 <th>Roman, Natalia (natRC2005)</th>
 <th>Sánchez, Gabriel (yigabriel)</th>
 <th>Esteban, Henry (kalet123-commit)</th>
 <th>Fernández, Fredy (u202320083)</th>
 <th>Donayre, Adrian (adriandonayredev)</th>
 </tr>
+
 <tr>
 <td>Registro de Proveedores (US01)</td>
 <td>C</td>
@@ -5514,6 +5516,16 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>L</td>
 <td>C</td>
 </tr>
+
+<tr>
+<td>Gestión de Lotes de Café Verde (US02)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
 <tr>
 <td>Creación de Perfil de Tueste (US03)</td>
 <td>L</td>
@@ -5522,6 +5534,7 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 <td>C</td>
 </tr>
+
 <tr>
 <td>Biblioteca de Defectos de Tueste (US04)</td>
 <td>C</td>
@@ -5530,14 +5543,25 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 <td>L</td>
 </tr>
+
 <tr>
-<td>Análisis Comparativo de Tuestes (US06)</td>
+<td>Cata Digital Estructurada (US05)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Historial de Catas (US06)</td>
 <td>L</td>
 <td>C</td>
 <td>C</td>
 <td>C</td>
 <td>C</td>
 </tr>
+
 <tr>
 <td>Creación de Recetas de Preparación (US07)</td>
 <td>C</td>
@@ -5546,6 +5570,7 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 <td>C</td>
 </tr>
+
 <tr>
 <td>Calibración de Molienda (US08)</td>
 <td>C</td>
@@ -5554,22 +5579,203 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que d
 <td>C</td>
 <td>C</td>
 </tr>
+
 <tr>
-<td>Control de Inventario Integrado (US11)</td>
+<td>Portafolio de Bebidas (US09)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Control de Inventario Integrado (US10)</td>
 <td>C</td>
 <td>C</td>
 <td>C</td>
 <td>C</td>
 <td>L</td>
 </tr>
+
+<tr>
+<td>Análisis Comparativo de Tuestes (US11)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Visualización de Perfiles Sensoriales (US12)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Gestión de Costos de Producción (US13)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Información del Producto (US14)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Secciones Específicas por Segmento (US15)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Acceso directo a plataforma (US16)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Registro y Autenticación (US17)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Perfil Personalizado (US18)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Selección de Plan (US19)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Proveedores (TS01)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Lotes (TS02)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Perfiles de Tueste (TS03)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Defectos de Tueste (TS04)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Catas (TS05)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Recetas (TS06)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Calibraciones (TS07)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Inventario (TS08)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Usuarios (TS09)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Autenticación (TS10)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
 </table>
 
 #### 6.2.1.3. Sprint Backlog 1.
-Durante el Sprint 1, el equipo se enfocó en construir la primera versión funcional de CaféLab, integrando los elementos principales de presentación, navegación, gestión de información y funcionalidades base del sistema. El objetivo de este sprint fue permitir que nuestros usuarios puedan conocer la propuesta de valor del producto, acceder a la plataforma y utilizar módulos iniciales relacionados con la gestión del café de especialidad.
 
-El alcance del sprint incluyó el desarrollo de la landing page, la implementación de las primeras vistas de la aplicación web, la creación de funcionalidades principales del frontend y la integración inicial con servicios backend. Asimismo, se priorizaron funcionalidades relacionadas con la gestión de proveedores, perfiles de tueste, biblioteca de defectos, análisis comparativo de tuestes, recetas de preparación, calibración de molienda y control de inventario.
+Durante el Sprint 1, el equipo se enfocó en construir la primera versión funcional de CaféLab, integrando los elementos principales de presentación, navegación, gestión de información, autenticación, módulos funcionales y servicios backend de la plataforma. El objetivo de este sprint fue permitir que los usuarios puedan conocer la propuesta de valor del producto, acceder a la aplicación y utilizar las funcionalidades principales relacionadas con la gestión del café de especialidad.
 
-Estas funcionalidades fueron seleccionadas debido a que representan procesos clave para los segmentos objetivo del sistema: baristas profesionales y dueños o administradores de cafeterías de especialidad. Además, permiten preparar la base funcional sobre la cual posteriormente se integrará el componente IoT TrackSilo, encargado del monitoreo de temperatura y humedad en el almacenamiento del café.
+El alcance del sprint incluyó el desarrollo de la landing page, la implementación de vistas principales de la aplicación web, la creación de funcionalidades de gestión, procesos de tueste, catas, recetas, calibraciones, inventario, costos, autenticación y servicios API asociados. En el alcance del Sprint 1 no se incluyen las historias y tareas técnicas relacionadas directamente con el módulo IoT.
 
 <table border="1">
   <thead>
@@ -5585,25 +5791,17 @@ Estas funcionalidades fueron seleccionadas debido a que representan procesos cla
   <tbody>
     <tr>
       <td>US01 - Registro de Proveedores</td>
-      <td>Implementar vista de registro de proveedores</td>
-      <td>Desarrollar la interfaz para registrar proveedores de café, considerando datos necesarios para mantener control de calidad y trazabilidad de origen.</td>
-      <td>4</td>
+      <td>Implementar módulo de proveedores</td>
+      <td>Desarrollar la funcionalidad para registrar y evaluar proveedores de café, manteniendo información clave para el control de calidad y trazabilidad de origen.</td>
+      <td>5</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS01 - POST HTTPS Proveedores</td>
-      <td>Implementar servicio de creación de proveedores</td>
-      <td>Crear el endpoint para registrar nuevos proveedores mediante una API y permitir ampliar la red de suministro.</td>
-      <td>3</td>
-      <td>Fredy Fernández</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>TS02 - GET HTTPS Proveedores</td>
-      <td>Implementar servicio de consulta de proveedores</td>
-      <td>Crear el endpoint para consultar proveedores registrados y mostrar opciones disponibles en la aplicación.</td>
-      <td>2</td>
+      <td>US02 - Gestión de Lotes de Café Verde</td>
+      <td>Implementar módulo de lotes de café verde</td>
+      <td>Desarrollar la funcionalidad para registrar lotes de café verde, asociarlos a proveedores y mantener su trazabilidad dentro del sistema.</td>
+      <td>6</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
@@ -5616,98 +5814,210 @@ Estas funcionalidades fueron seleccionadas debido a que representan procesos cla
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS05 - POST HTTPS Perfiles-Tueste</td>
-      <td>Implementar servicio de creación de perfiles de tueste</td>
-      <td>Crear el endpoint para registrar perfiles de tueste mediante una API y estandarizar procesos dentro de la plataforma.</td>
-      <td>3</td>
+      <td>US04 - Biblioteca de Defectos de Tueste</td>
+      <td>Implementar biblioteca de defectos de tueste</td>
+      <td>Crear una sección para registrar y consultar defectos de tueste, incluyendo descripción, causa probable y acción correctiva.</td>
+      <td>4</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US05 - Cata Digital Estructurada</td>
+      <td>Implementar módulo de catas</td>
+      <td>Desarrollar la funcionalidad para registrar evaluaciones sensoriales estructuradas vinculadas a lotes y tuestes específicos.</td>
+      <td>5</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US06 - Historial de Catas</td>
+      <td>Implementar historial de catas</td>
+      <td>Desarrollar la funcionalidad para consultar catas registradas, aplicar filtros y revisar información histórica de evaluaciones sensoriales.</td>
+      <td>5</td>
       <td>Natalia Roman</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US04 - Biblioteca de Defectos de Tueste</td>
-      <td>Implementar biblioteca de defectos de tueste</td>
-      <td>Crear una sección para consultar defectos comunes de tueste, incluyendo causas probables y recomendaciones para corregir problemas.</td>
-      <td>4</td>
-      <td>Adrian Donayre</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>TS11 - GET HTTPS DefectosTueste</td>
-      <td>Implementar servicio de consulta de defectos de tueste</td>
-      <td>Crear el endpoint para consultar defectos comunes en tueste mediante una API y asistir en el diagnóstico de problemas.</td>
-      <td>2</td>
-      <td>Adrian Donayre</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US06 - Análisis Comparativo de Tuestes</td>
-      <td>Implementar módulo de análisis comparativo de tuestes</td>
-      <td>Desarrollar la funcionalidad para comparar diferentes sesiones de tueste, identificar patrones y apoyar la optimización de resultados.</td>
-      <td>5</td>
-      <td>Sergio Julca</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>TS10 - GET HTTPS Análisis-Tueste</td>
-      <td>Implementar servicio de análisis comparativo de tuestes</td>
-      <td>Crear el endpoint para obtener análisis comparativo de tuestes mediante una API e identificar patrones relevantes.</td>
-      <td>4</td>
-      <td>Sergio Julca</td>
-      <td>Done</td>
-    </tr>
-    <tr>
       <td>US07 - Creación de Recetas de Preparación</td>
-      <td>Implementar módulo de recetas de preparación</td>
-      <td>Desarrollar la funcionalidad para registrar recetas detalladas según método de preparación, parámetros técnicos y tipo de café.</td>
+      <td>Implementar módulo de recetas</td>
+      <td>Desarrollar la funcionalidad para crear recetas de preparación con parámetros como ratio, temperatura, tiempo, molienda y método.</td>
       <td>5</td>
-      <td>Jorge Yum</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>TS09 - POST HTTPS Recetas</td>
-      <td>Implementar servicio de registro de recetas</td>
-      <td>Crear el endpoint para registrar recetas de preparación mediante una API y documentar métodos óptimos.</td>
-      <td>3</td>
-      <td>Jorge Yum</td>
+      <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US08 - Calibración de Molienda</td>
-      <td>Implementar módulo de calibración de molienda</td>
+      <td>Implementar módulo de calibraciones</td>
       <td>Desarrollar la funcionalidad para documentar configuraciones de molienda según equipo, método y parámetros de preparación.</td>
       <td>4</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US09 - Portafolio de Bebidas</td>
+      <td>Implementar portafolio de bebidas</td>
+      <td>Crear una funcionalidad para organizar bebidas y recetas en un portafolio digital consultable por el usuario.</td>
+      <td>5</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US10 - Control de Inventario Integrado</td>
+      <td>Implementar módulo de inventario</td>
+      <td>Desarrollar la funcionalidad para visualizar existencias, registrar consumos y mantener actualizado el inventario de café verde y tostado.</td>
+      <td>6</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS10 - POST HTTPS Calibraciones</td>
-      <td>Implementar servicio de registro de calibraciones</td>
-      <td>Crear el endpoint para registrar calibraciones de molienda mediante una API y mantener consistencia entre preparaciones.</td>
+      <td>US11 - Análisis Comparativo de Tuestes</td>
+      <td>Implementar análisis comparativo de tuestes</td>
+      <td>Desarrollar la funcionalidad para comparar sesiones de tueste y visualizar diferencias entre perfiles registrados.</td>
+      <td>5</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US12 - Visualización de Perfiles Sensoriales</td>
+      <td>Implementar visualización de perfiles sensoriales</td>
+      <td>Desarrollar gráficos de perfil sensorial para interpretar y comparar atributos de catas registradas.</td>
+      <td>5</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US13 - Gestión de Costos de Producción</td>
+      <td>Implementar módulo de costos</td>
+      <td>Desarrollar la funcionalidad para registrar y analizar costos de producción asociados a lotes de café.</td>
+      <td>6</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US14 - Información del Producto</td>
+      <td>Implementar sección informativa de landing page</td>
+      <td>Crear contenido visual e informativo para comunicar la propuesta de valor, beneficios y características principales de CaféLab.</td>
+      <td>4</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US15 - Secciones Específicas por Segmento</td>
+      <td>Implementar secciones para usuarios objetivo</td>
+      <td>Crear secciones diferenciadas para baristas y dueños de cafeterías, mostrando beneficios adaptados a cada perfil.</td>
+      <td>4</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US16 - Acceso directo a plataforma</td>
+      <td>Implementar redirección a la aplicación</td>
+      <td>Agregar accesos desde la landing page hacia la aplicación principal para permitir que el usuario inicie el uso de la plataforma.</td>
       <td>3</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US17 - Registro y Autenticación</td>
+      <td>Implementar flujo de registro e inicio de sesión</td>
+      <td>Desarrollar las vistas y lógica necesarias para que el usuario pueda registrarse, iniciar sesión y acceder de forma segura al sistema.</td>
+      <td>6</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US11 - Control de Inventario Integrado</td>
-      <td>Implementar módulo de inventario integrado</td>
-      <td>Desarrollar la funcionalidad para gestionar el inventario de café verde y tostado, permitiendo visualizar existencias, movimientos recientes y alertas activas.</td>
+      <td>US18 - Perfil Personalizado</td>
+      <td>Implementar perfil de usuario</td>
+      <td>Desarrollar la funcionalidad para configurar y actualizar información básica del perfil profesional del usuario.</td>
+      <td>4</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US19 - Selección de Plan</td>
+      <td>Implementar selección de planes</td>
+      <td>Crear la vista y lógica para que el usuario pueda visualizar planes disponibles y seleccionar el que mejor se adapte a sus necesidades.</td>
       <td>4</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS17 - GET HTTPS Inventario</td>
-      <td>Implementar servicio de consulta de inventario</td>
-      <td>Crear el endpoint para consultar el inventario integrado mediante una API y visualizar las existencias disponibles.</td>
-      <td>3</td>
+      <td>TS01 - API Proveedores</td>
+      <td>Implementar API de proveedores</td>
+      <td>Diseñar e implementar servicios para registrar, consultar, actualizar y eliminar proveedores dentro de la plataforma.</td>
+      <td>5</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS02 - API Lotes</td>
+      <td>Implementar API de lotes</td>
+      <td>Diseñar e implementar servicios para gestionar lotes de café verde, su trazabilidad y cambios de estado.</td>
+      <td>6</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS03 - API Perfiles de Tueste</td>
+      <td>Implementar API de perfiles de tueste</td>
+      <td>Diseñar e implementar servicios para crear, consultar, actualizar y eliminar perfiles de tueste.</td>
+      <td>6</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS04 - API Defectos de Tueste</td>
+      <td>Implementar API de defectos</td>
+      <td>Diseñar e implementar servicios para registrar y consultar defectos de tueste almacenados en la biblioteca.</td>
+      <td>4</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS18 - PATCH HTTPS Inventario</td>
-      <td>Implementar servicio de actualización de inventario</td>
-      <td>Crear el endpoint para actualizar el consumo de inventario mediante una API y mantener las existencias actualizadas.</td>
-      <td>2</td>
+      <td>TS05 - API Catas</td>
+      <td>Implementar API de catas</td>
+      <td>Diseñar e implementar servicios para registrar y consultar evaluaciones sensoriales estructuradas.</td>
+      <td>5</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS06 - API Recetas</td>
+      <td>Implementar API de recetas</td>
+      <td>Diseñar e implementar servicios para registrar, consultar y gestionar recetas de preparación.</td>
+      <td>5</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS07 - API Calibraciones</td>
+      <td>Implementar API de calibraciones</td>
+      <td>Diseñar e implementar servicios para registrar y actualizar calibraciones de molienda.</td>
+      <td>5</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS08 - API Inventario</td>
+      <td>Implementar API de inventario</td>
+      <td>Diseñar e implementar servicios para consultar existencias y registrar consumos de inventario.</td>
+      <td>5</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS09 - API Usuarios</td>
+      <td>Implementar API de usuarios</td>
+      <td>Diseñar e implementar servicios para registrar usuarios y gestionar información básica de acceso.</td>
+      <td>5</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>TS10 - API Autenticación</td>
+      <td>Implementar API de autenticación</td>
+      <td>Diseñar e implementar servicios para validar credenciales, iniciar sesión y permitir acceso seguro mediante autenticación.</td>
+      <td>5</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
