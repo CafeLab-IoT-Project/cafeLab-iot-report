@@ -7328,6 +7328,160 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 
 ![Frontend Test Execution Evidence](public/assets/images/chapter-6/sprint-1/evidence/frontTesting1.png)
 
+### Backend Testing Suite Evidence
+
+Para el repositorio backend se implementó una suite de pruebas automatizadas orientada a validar los Web Services relacionados con las funcionalidades incluidas en el Sprint Backlog. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-backend` del repositorio `cafeLab-backEnd`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git  
+Branch: feature/testing-suite-backend  
+
+La suite incluyó Integration Tests con Spring Boot, JUnit 5 y MockMvc, además de Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Para evitar el uso de la base de datos real, se configuró un perfil de pruebas con H2 Database, permitiendo ejecutar la suite en un entorno controlado y aislado.
+
+La ejecución final de pruebas se realizó con Maven mediante el comando:
+
+`./mvnw clean test`
+
+El resultado final fue de 14 pruebas ejecutadas correctamente.
+
+#### Tabla de commits relacionados al backend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>599fb18</td>
+    <td>test: configure test profile with H2 database</td>
+    <td>Configured a test profile using H2 database to execute backend tests without connecting to the real MySQL database.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>541bf43</td>
+    <td>test: add backend authentication tests for US17</td>
+    <td>Added backend tests for authentication endpoints related to user sign-in and request validation.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>17143ee</td>
+    <td>test: add supplier and coffee lot backend tests</td>
+    <td>Added backend tests for supplier and coffee lot REST controllers using MockMvc.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>42c73cf</td>
+    <td>test: add inventory and production cost backend tests</td>
+    <td>Added backend tests for inventory entries and production cost records REST controllers.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>b2b934b</td>
+    <td>test: add backend BDD feature files for sprint acceptance tests</td>
+    <td>Added Gherkin feature files for backend acceptance test scenarios related to authentication, suppliers, coffee lots, inventory and costing.</td>
+    <td>10/05/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Backend realizadas
+
+#### Integration Tests
+
+Los Integration Tests del backend fueron implementados con Spring Boot, JUnit 5 y MockMvc. Estos tests validan el comportamiento de los controladores REST asociados a las User Stories del Sprint Backlog. Para evitar dependencias con la base de datos real, se configuró un perfil de pruebas con H2 Database.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>AuthenticationControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Valida el comportamiento del endpoint de autenticación, incluyendo solicitudes válidas e inválidas mediante MockMvc.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>SuppliersControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Valida endpoints REST relacionados con proveedores, incluyendo creación, consulta o validación de solicitudes.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>CoffeeLotsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Valida endpoints REST relacionados con lotes de café verde usando datos de prueba.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>InventoryEntriesControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Valida endpoints REST relacionados con entradas o registros de inventario.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>ProductionCostRecordsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Valida endpoints REST relacionados con registros de costos de producción.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación asociados a las User Stories del Sprint, permitiendo expresar el comportamiento esperado del sistema desde una perspectiva funcional.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>authentication-api.feature</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Describe escenarios de aceptación para el flujo de autenticación mediante API.</td>
+  </tr>
+  <tr>
+    <td>supplier-api.feature</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Describe escenarios de aceptación para creación, validación y consulta de proveedores.</td>
+  </tr>
+  <tr>
+    <td>coffee-lot-api.feature</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Describe escenarios de aceptación para gestión de lotes de café verde mediante API.</td>
+  </tr>
+  <tr>
+    <td>inventory-and-costing-api.feature</td>
+    <td>US10 - Control de Inventario Integrado / US13 - Gestión de Costos de Producción</td>
+    <td>Describe escenarios de aceptación para inventario, consumos y costos de producción.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-1/evidence/backTesting1.png)
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
