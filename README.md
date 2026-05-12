@@ -433,9 +433,6 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
-- [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
 
 [Conclusiones](#conclusiones) <br>
 [Bibliografía](#bibliografia) <br>
@@ -7609,6 +7606,8 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 3. Las entrevistas con los siete usuarios reales —baristas profesionales y dueños de cafeterías— confirmaron que el problema de conservación del grano es operativo y no solo percibido, validando la necesidad del componente TrackSilo (ESP32 + DHT22) con umbrales de 18–22°C y 55–65% de humedad. Este hallazgo orientó la definición de las User Stories IoT (US23–US28) y las Technical Stories (TS24–TS28), logrando criterios de aceptación concretos y verificables alineados con las hipótesis del Lean UX Canvas.
 
 4. La aplicación de Domain-Driven Design produjo cinco bounded contexts bien delimitados (IAM, Management, Costing, Procedure e IoT Monitoring) con patrones de integración claros como Anti-Corruption Layer, Customer/Supplier y Conformist. Esta arquitectura garantiza que el componente IoT sea un elemento central del dominio y no un módulo aislado, sentando las bases técnicas para que las siguientes entregas puedan implementar la trazabilidad completa del café desde el almacén hasta la taza.
+
+5. El comienzo de la implementación del producto tanto a nivel web como mobile fue exitoso dado que se lograron desplegar todos los elementos, así como se obtuvieron resultados positivos al realizar pruebas en los mismos. Además, ahora es posible ver la realidad de cómo el usuario usará nuestra aplicación y tendrá acceso a la información transmitida por nuestro componente IoT. Logramos un diseño intuitivo y sencillo de utilizar para cualquier usuario.
 
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
