@@ -7753,6 +7753,14 @@ La documentación generada permite comprobar que los endpoints principales del S
   </tr>
 </table>
 
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicosto1.png" alt="Endpoint de costos">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicosto2.png" alt="Endpoint de costos">
+</p>
+
 <h3>Recipes</h3>
 <table border="1">
   <tr>
