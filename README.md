@@ -7557,7 +7557,7 @@ La documentación generada permite comprobar que los endpoints principales del S
 **Documentación OpenAPI de los servicios backend:**
 
 <figure style="text-align: center;">
-    <img src="public/assets/images/chapter-6/sprint-1/evidence/documentacion-openapi.png" alt="Evidencia openapi">
+    <img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/documentacion-openapi.jpeg" alt="Evidencia openapi">
 </figure>
 
 <h3>Roast Profiles</h3>
