@@ -8383,6 +8383,71 @@ La documentación generada permite comprobar que los endpoints principales del S
 </table>
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+Durante el Sprint 1 se realizaron actividades de despliegue para el landing page, frontend, backend y base de datos. Estas actividades incluyeron la configuración del backend en Azure App Service, la automatización del despliegue mediante GitHub Actions, la habilitación de una base de datos MySQL en Railway y la publicación del frontend y la landing page mediante workflows de GitHub Pages. Con ello, se logró disponer de entornos desplegados para validar los servicios web, la persistencia de datos y el acceso a las interfaces del producto.
+
+<h3>Despliegue de la landing page mediante GitHub Pages</h3>
+<p>
+La landing page fue desplegada mediante GitHub Actions y GitHub Pages. Este despliegue permite contar con una página pública de presentación del producto, orientada a comunicar la propuesta de valor de CaféLab y redirigir a los usuarios hacia la aplicación principal.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-landing.png" alt="Workflow de despliegue de la landing page en GitHub Pages" width="550">
+</p>
+
+<p>
+La imagen evidencia la ejecución exitosa del workflow de despliegue de la landing page. Se observa que el proceso pages build and deployment finalizó correctamente desde la rama main, confirmando que el sitio informativo del producto fue publicado mediante GitHub Pages.
+</p>
+
+<h3>Despliegue del frontend mediante GitHub Actions</h3>
+<p>
+Se configuró el despliegue del frontend de CaféLab mediante GitHub Actions y GitHub Pages. Este flujo permite publicar la aplicación web a partir de los cambios integrados en el repositorio correspondiente.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-frontend.png" alt="Workflow de despliegue del frontend en GitHub Pages" width="550">
+</p>
+
+<p>
+La imagen muestra el historial de ejecuciones del workflow de despliegue del frontend. Se observa que el proceso de build and deployment se ejecutó correctamente, permitiendo publicar la aplicación web desde el repositorio del frontend hacia GitHub Pages.
+</p>
+
+<h3>Despliegue del backend en Azure App Service</h3>
+<p>
+El backend de CaféLab fue preparado para su despliegue mediante la creación de un recurso Azure Web App. En esta configuración se definieron aspectos como la suscripción, el grupo de recursos, el nombre del servicio, el tipo de publicación, el runtime de Java, el sistema operativo y el plan de App Service.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend1.jpg" alt="Configuración de Azure Web App para backend" width="550">
+</p>
+
+<p>
+Después de configurar el recurso de Azure App Service, se validó la ejecución del backend mediante el Log Stream de Azure. Esta vista permite observar en tiempo real los mensajes de arranque y ejecución de la aplicación Spring Boot desplegada.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend3.jpg" alt="Log stream del backend en Azure App Service" width="550">
+</p>
+
+<p>
+Para automatizar el despliegue del backend, se configuró un workflow de GitHub Actions encargado de compilar el proyecto, generar el artefacto de despliegue y publicarlo en Azure App Service. Este proceso permite reducir tareas manuales y mantener un flujo de integración y despliegue más controlado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend2.jpg" alt="Workflow de despliegue del backend en GitHub Actions" width="550">
+</p>
+
+<h3>Base de datos desplegada en Railway</h3>
+<p>
+Como parte del despliegue del sistema, se configuró una base de datos MySQL en Railway para almacenar la información generada por los servicios backend de CaféLab. Esta base de datos se mantiene en estado Online y permite la conexión desde el backend desplegado en Azure, asegurando la persistencia de los datos utilizados por los módulos del sistema.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-bd.jpg" alt="Base de datos MySQL desplegada en Railway" width="550">
+</p>
+
+<p>
+La imagen muestra el servicio MySQL activo en Railway, junto con métricas de operación como versión de la base de datos, conexiones activas, consultas realizadas y estadísticas de lectura y escritura. Esto evidencia que el recurso de base de datos fue creado correctamente y se encuentra disponible para ser consumido por el backend.
+</p>
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 <table border="1">
