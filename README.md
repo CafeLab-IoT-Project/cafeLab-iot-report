@@ -8315,6 +8315,73 @@ La documentación generada permite comprobar que los endpoints principales del S
 <img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiauth2.png" alt="Endpoint de autenticación">
 </p>
 
+<h3>Commits relacionados con la documentación de servicios</h3>
+<table border="1">
+  <tr>
+    <th>Repositorio</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit message</th>
+    <th>Relación con la documentación de servicios</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>b2b934b</td>
+    <td>test: add backend BDD feature files for sprint acceptance tests</td>
+    <td>Agrega escenarios BDD para validar los endpoints principales incluidos en el Sprint.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>42c73cf</td>
+    <td>test: add inventory and production cost backend tests</td>
+    <td>Valida los servicios de inventario y costos de producción documentados en Swagger.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>17143ee</td>
+    <td>test: add supplier and coffee lot backend tests</td>
+    <td>Valida los servicios de proveedores y lotes de café documentados para el Sprint.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>541bf43</td>
+    <td>test: add backend authentication tests for US17</td>
+    <td>Valida los servicios de autenticación utilizados para proteger los endpoints con JWT.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>1155480</td>
+    <td>Add or update the Azure App Service build and deployment workflow config</td>
+    <td>Agrega o actualiza la configuración del workflow de GitHub Actions para construir y desplegar el backend en Azure App Service.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>916f2f9</td>
+    <td>Update Azure workflow for JAR app deployment</td>
+    <td>Actualiza el workflow de Azure para desplegar la aplicación backend como archivo JAR en Azure Web App.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>adea86f</td>
+    <td>change in workflow</td>
+    <td>Realiza ajustes en el workflow de despliegue para corregir o mejorar el proceso de publicación del backend.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>7cbb0d6</td>
+    <td>update</td>
+    <td>Actualiza la configuración final del backend desplegado, permitiendo validar la disponibilidad de Swagger UI y los servicios en Azure.</td>
+  </tr>
+</table>
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
