@@ -90,6 +90,11 @@
 | 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
 | 2.05    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
 | 2.06    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
+| 2.07    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
+| 2.08    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
+| 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
+| 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
+| 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -8531,3 +8536,4 @@ La imagen muestra el servicio MySQL activo en Railway, junto con métricas de op
 - Video de entrevistas en YouTube: [https://youtu.be/eJOE34HVgzc](https://youtu.be/eJOE34HVgzc)
 - Link de landing page: [https://cafelab-iot-project.github.io/cafeLab-landingPage/](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
 - Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
+- Link de backend: [https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
