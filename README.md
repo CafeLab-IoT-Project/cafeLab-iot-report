@@ -7544,6 +7544,768 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 </figure>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+Durante el Sprint 1 se documentaron los servicios backend mediante OpenAPI y Swagger UI. Esta documentación permitió visualizar los endpoints disponibles, sus métodos HTTP, rutas, parámetros, cuerpos de solicitud, códigos de respuesta y ejemplos de ejecución. Asimismo, los servicios fueron validados en sus entornos desplegados, el backend se encuentra alojado en Azure y utiliza una BD MySQL desplegada en Railway.
+
+La documentación generada permite comprobar que los endpoints principales del Sprint se encuentran disponibles y organizados por módulos funcionales. Entre ellos se incluyen servicios relacionados con perfiles de tueste, entradas de inventario, autenticación, proveedores, lotes de café y costos de producción. Desde Swagger UI se realizaron pruebas sobre las rutas expuestas, verificando la disponibilidad del API, el uso de autenticación mediante JWT y la persistencia de información en la BD desplegada.
+
+**URL de Swagger UI desplegado:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+**URL de documentación OpenAPI:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/v3/api-docs
+
+**Repositorio de Web Services:** https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git
+
+**Documentación OpenAPI de los servicios backend:**
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/documentacion-openapi.png" alt="Evidencia openapi">
+</figure>
+
+<h3>Roast Profiles</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Obtiene un perfil de tueste por identificador.</td>
+    <td>Path parameter: roastProfileId. Requiere token JWT.</td>
+    <td>200 OK - Retorna los datos del perfil solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Actualiza un perfil de tueste existente.</td>
+    <td>Path parameter: roastProfileId. Body con los datos actualizados. Requiere token JWT.</td>
+    <td>200 OK - Retorna el perfil actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Elimina un perfil de tueste registrado.</td>
+    <td>Path parameter: roastProfileId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile</td>
+    <td>Lista los perfiles de tueste del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de perfiles de tueste.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/roast-profile</td>
+    <td>Crea un nuevo perfil de tueste.</td>
+    <td>Body con datos del perfil. El lote debe pertenecer al usuario autenticado.</td>
+    <td>201 Created o 200 OK - Retorna el perfil creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/profile/{userId}</td>
+    <td>Lista perfiles de tueste por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los perfiles asociados al usuario.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/lot/{coffeeLotId}</td>
+    <td>Lista perfiles de tueste asociados a un lote.</td>
+    <td>Path parameter: coffeeLotId. El lote debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna los perfiles asociados al lote.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de perfiles de tueste</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiperfiltueste1.png" alt="Endpoint perfil de tueste">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiperfiltueste2.png" alt="Endpoint perfil de tueste">
+</p>
+
+<h3>Inventory Entries</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Obtiene una entrada de inventario por identificador.</td>
+    <td>Path parameter: inventoryEntryId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la entrada de inventario solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Actualiza una entrada de inventario y reajusta el stock del lote.</td>
+    <td>Path parameter: inventoryEntryId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la entrada actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Elimina una entrada de inventario y restaura el stock al lote.</td>
+    <td>Path parameter: inventoryEntryId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries</td>
+    <td>Lista las entradas del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de entradas de inventario.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/inventory-entries</td>
+    <td>Registra un consumo de inventario y descuenta stock del lote.</td>
+    <td>Body con datos del consumo. Requiere token JWT.</td>
+    <td>201 Created o 200 OK - Retorna la entrada registrada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/profile/{userId}</td>
+    <td>Lista entradas de inventario por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna las entradas asociadas al usuario.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/coffee-lot/{coffeeLotId}</td>
+    <td>Lista entradas de inventario asociadas a un lote.</td>
+    <td>Path parameter: coffeeLotId. El lote debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna las entradas asociadas al lote.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de inventario</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiinventario1.png" alt="Endpoint de inventario">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiinventario2.png" alt="Endpoint de inventario">
+</p>
+
+<h3>Production Cost Records</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Obtiene un registro de costo de producción por id.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK - Retorna el registro solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Actualiza un registro de costo de producción.</td>
+    <td>Path parameter: id. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el registro actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Elimina definitivamente un registro de costo de producción.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/production-cost-records</td>
+    <td>Lista los registros de costo del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de registros.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/production-cost-records</td>
+    <td>Crea un nuevo registro de costo de producción.</td>
+    <td>Body con los datos del costo de producción.</td>
+    <td>201 Created o 200 OK - Retorna el registro creado.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/production-cost-records/{id}/annulment</td>
+    <td>Anula un registro sin eliminarlo, manteniéndolo para auditoría.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK - Retorna el registro anulado o confirmación de anulación.</td>
+  </tr>
+</table>
+
+<h3>Recipes</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Obtiene una receta por id.</td>
+    <td>Path parameter: recipeId. Solo permite consultar recetas del perfil autenticado.</td>
+    <td>200 OK - Retorna la receta solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Actualiza una receta existente.</td>
+    <td>Path parameter: recipeId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la receta actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Elimina una receta.</td>
+    <td>Path parameter: recipeId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+    <td>Actualiza un ingrediente de una receta.</td>
+    <td>Path parameters: recipeId e ingredientId. Body con datos del ingrediente.</td>
+    <td>200 OK - Retorna el ingrediente actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+    <td>Elimina un ingrediente de una receta.</td>
+    <td>Path parameters: recipeId e ingredientId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes</td>
+    <td>Lista recetas del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de recetas.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/recipes</td>
+    <td>Crea una nueva receta para el perfil autenticado.</td>
+    <td>Body con datos de la receta. El perfil se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna la receta creada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients</td>
+    <td>Lista los ingredientes de una receta.</td>
+    <td>Path parameter: recipeId.</td>
+    <td>200 OK - Retorna la lista de ingredientes.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients</td>
+    <td>Añade un ingrediente a una receta del perfil.</td>
+    <td>Path parameter: recipeId. Body con datos del ingrediente.</td>
+    <td>201 Created o 200 OK - Retorna el ingrediente agregado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de recetas</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apireceta1.png" alt="Endpoint de receta">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apireceta2.png" alt="Endpoint de receta">
+</p>
+
+<h3>Coffees</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffees</td>
+    <td>Lista todos los cafés registrados.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de cafés.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/coffees</td>
+    <td>Crea un nuevo café.</td>
+    <td>Body con datos del café.</td>
+    <td>201 Created o 200 OK - Retorna el café creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffees/{coffeeId}</td>
+    <td>Obtiene un café por identificador.</td>
+    <td>Path parameter: coffeeId.</td>
+    <td>200 OK - Retorna el café solicitado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de cafés</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicafe1.png" alt="Endpoint de cafés">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicafe2.png" alt="Endpoint de cafés">
+</p>
+
+<h3>Cupping Sessions</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Obtiene una sesión de cata por id.</td>
+    <td>Path parameter: sessionId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la sesión solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Actualiza una sesión de cata.</td>
+    <td>Path parameter: sessionId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la sesión actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Elimina una sesión de cata.</td>
+    <td>Path parameter: sessionId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/cupping-sessions</td>
+    <td>Lista las sesiones de cata del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna las sesiones más recientes primero.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/cupping-sessions</td>
+    <td>Crea una nueva sesión de cata.</td>
+    <td>Body con datos de la sesión de cata.</td>
+    <td>201 Created o 200 OK - Retorna la sesión creada.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de sesiones de cata</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicata1.png" alt="Endpoint de catas">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicata2.png" alt="Endpoint de catas">
+</p>
+
+<h3>Defects</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/defects</td>
+    <td>Lista los defectos registrados por el perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de defectos.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/defects</td>
+    <td>Crea un registro de defecto.</td>
+    <td>Body con datos del defecto. El userId se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna el defecto creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/defects/{defectId}</td>
+    <td>Obtiene un defecto por id.</td>
+    <td>Path parameter: defectId. Solo permite consultar defectos del propio perfil.</td>
+    <td>200 OK - Retorna el defecto solicitado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de defectos</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apidefecto2.png" alt="Endpoint de catas">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apidefecto1.png" alt="Endpoint de catas">
+</p>
+
+<h3>Profiles</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/profiles</td>
+    <td>Obtiene un perfil por email.</td>
+    <td>Query parameter: email. Requiere token JWT según configuración del endpoint.</td>
+    <td>200 OK - Retorna el perfil asociado al email.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/profiles</td>
+    <td>Crea un nuevo perfil de usuario.</td>
+    <td>Body con datos del perfil.</td>
+    <td>201 Created o 200 OK - Retorna el perfil creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/profiles/{userId}</td>
+    <td>Obtiene un perfil por id.</td>
+    <td>Path parameter: userId.</td>
+    <td>200 OK - Retorna el perfil solicitado.</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>/api/v1/profiles/{userId}</td>
+    <td>Actualiza parcialmente un perfil.</td>
+    <td>Path parameter: userId. Body con los campos a modificar.</td>
+    <td>200 OK - Retorna el perfil actualizado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de perfiles</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiprofile1.png" alt="Endpoint de perfiles">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiprofile2.png" alt="Endpoint de perfiles">
+</p>
+
+<h3>Coffee Lots</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Obtiene un lote de café por id.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna el lote solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Actualiza un lote de café.</td>
+    <td>Path parameter: coffeeLotId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el lote actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Elimina un lote de café.</td>
+    <td>Path parameter: coffeeLotId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots</td>
+    <td>Lista los lotes del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de lotes.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/coffee-lots</td>
+    <td>Crea un nuevo lote de café.</td>
+    <td>Body con datos del lote. El proveedor debe pertenecer al usuario autenticado.</td>
+    <td>201 Created o 200 OK - Retorna el lote creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/supplier/{supplierId}</td>
+    <td>Lista lotes asociados a un proveedor.</td>
+    <td>Path parameter: supplierId. El proveedor debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna los lotes del proveedor.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/profile/{userId}</td>
+    <td>Lista lotes por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los lotes asociados al usuario.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de lotes de café</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apilotedecafe1.png" alt="Endpoint de lotes de café">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apilotedecafe2.png" alt="Endpoint de lotes de café">
+</p>
+
+<h3>Portfolios</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Obtiene un portafolio por id.</td>
+    <td>Path parameter: portfolioId. Solo permite consultar portafolios del propio perfil.</td>
+    <td>200 OK - Retorna el portafolio solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Actualiza un portafolio.</td>
+    <td>Path parameter: portfolioId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el portafolio actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Elimina un portafolio.</td>
+    <td>Path parameter: portfolioId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/portfolios</td>
+    <td>Lista los portafolios del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de portafolios.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/portfolios</td>
+    <td>Crea un nuevo portafolio.</td>
+    <td>Body con datos del portafolio. El perfil se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna el portafolio creado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de portafolios</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiportafolio1.png" alt="Endpoint de portafolios">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiportafolio2.png" alt="Endpoint de portafolios">
+</p>
+
+<h3>Suppliers</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Obtiene un proveedor por id.</td>
+    <td>Path parameter: supplierId. Requiere token JWT.</td>
+    <td>200 OK - Retorna el proveedor solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Actualiza la información de un proveedor.</td>
+    <td>Path parameter: supplierId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el proveedor actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Elimina un proveedor.</td>
+    <td>Path parameter: supplierId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers</td>
+    <td>Lista proveedores del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization. No expone una lista global.</td>
+    <td>200 OK - Retorna los proveedores del usuario.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/suppliers</td>
+    <td>Crea un nuevo proveedor.</td>
+    <td>Body con datos del proveedor.</td>
+    <td>201 Created o 200 OK - Retorna el proveedor creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers/profile/{userId}</td>
+    <td>Lista proveedores por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los proveedores asociados al usuario.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de proveedores</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiproveedor1.png" alt="Endpoint de proveedores">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiproveedor2.png" alt="Endpoint de proveedores">
+</p>
+
+<h3>Grind Calibrations</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/calibrations/{calibrationId}</td>
+    <td>Obtiene una calibración por id.</td>
+    <td>Path parameter: calibrationId. Solo permite consultar calibraciones del propio perfil.</td>
+    <td>200 OK - Retorna la calibración solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/calibrations/{calibrationId}</td>
+    <td>Actualiza una calibración de molienda.</td>
+    <td>Path parameter: calibrationId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la calibración actualizada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/calibrations</td>
+    <td>Lista calibraciones del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de calibraciones.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/calibrations</td>
+    <td>Crea una nueva calibración.</td>
+    <td>Body con datos de la calibración. El userId se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna la calibración creada.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de calibraciones</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion1.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion2.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion3.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion4.png" alt="Endpoint de calibraciones">
+</p>
+
+<h3>Authentication</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/authentication/sign-up</td>
+    <td>Registra un nuevo usuario en el sistema.</td>
+    <td>Body con email, password y datos requeridos para el registro.</td>
+    <td>201 Created o 200 OK - Retorna los datos del usuario registrado.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/authentication/sign-in</td>
+    <td>Autentica al usuario mediante email y contraseña.</td>
+    <td>Body con email y password.</td>
+    <td>200 OK - Retorna los datos del usuario autenticado y token JWT.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de autenticación</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiauth1.png" alt="Endpoint de autenticación">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiauth2.png" alt="Endpoint de autenticación">
+</p>
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
