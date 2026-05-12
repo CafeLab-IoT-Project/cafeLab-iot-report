@@ -100,7 +100,7 @@ Link del project report: [https://github.com/CafeLab-IoT-Project](https://github
 Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGISTRO DE VERSIOENS DE INFORME-->
 <table>
   <tr>
-    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la tb1</td>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV1</td>
   </tr>
   <tr>
     <td width="10%"><strong>Integrante</strong></td>
@@ -451,19 +451,22 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   <tr>
     <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
     <td>
-      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó activamente en el equipo aportando liderazgo compartido en distintas etapas del proyecto. Contribuyó en el diseño, registro y análisis de entrevistas, lo que permitió tomar decisiones basadas en datos reales. Así mismo, colaboró en el Big Picture Event Storming para estructurar el dominio y posteriormente desarrolló el bounded context Costing, definiendo su arquitectura y diagramas, asegurando coherencia técnica e integración con el sistema.
       <br>
-      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
-      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
-      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
-      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Participó junto al grupo ofreciendo una guía en cuanto a la dividión de tareas y coorindación de equipo. En particular, se centró en orientar el desarrollo del frontend y asegurarse de que todos comprendieran el propósito de cada parte desarrollada.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
       <br>
       <strong>TP:</strong>
@@ -475,19 +478,22 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   <tr>
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
     <td>
-      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó de un entorno colaborativo mediante la definición del Ubiquitous Language, alineando la comunicación del equipo. Participó en la planificación y ejecución de entrevistas, Event Storming y Candidate Context Discovery, asegurando orden y claridad en cada etapa. En el bounded context de Costing, trabajó de forma estructurada para cumplir los objetivos y entregables del proyecto.
       <br>
-      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
       <br>
-      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
       <br>
-      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
       <br>
-      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Colaboró al animar a sus compañeros a coordinar entre ellos y mantener informado al grupo tanto sobre los avances logrados como sobre los objetivos a cumplir. Se logró un ambiente de comunicación y colaboración dentro del equipo.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
       <br>
       <strong>TP:</strong>
