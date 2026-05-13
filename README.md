@@ -6643,6 +6643,10 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que c
 
 #### 6.2.1.3. Sprint Backlog 1.
 
+<p align="center">
+<img width="500" src="public/assets/images/chapter-6/sprint-1/evidence/sprintbacklog1.png" alt="Sprint backlog 1">
+</p>
+
 Durante el Sprint 1, el equipo se enfocó en construir la primera versión funcional de CaféLab, integrando los elementos principales de presentación, navegación, gestión de información, autenticación, módulos funcionales y servicios backend de la plataforma. El objetivo de este sprint fue permitir que los usuarios puedan conocer la propuesta de valor del producto, acceder a la aplicación y utilizar las funcionalidades principales relacionadas con la gestión del café de especialidad.
 
 El alcance del sprint incluyó el desarrollo de la landing page, la implementación de vistas principales de la aplicación web, la creación de funcionalidades de gestión, procesos de tueste, catas, recetas, calibraciones, inventario, costos, autenticación y servicios API asociados. En el alcance del Sprint 1 no se incluyen las historias y tareas técnicas relacionadas directamente con el módulo IoT.
