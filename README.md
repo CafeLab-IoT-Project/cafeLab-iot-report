@@ -456,6 +456,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó activamente en el equipo aportando liderazgo compartido en distintas etapas del proyecto. Contribuyó en el diseño, registro y análisis de entrevistas, lo que permitió tomar decisiones basadas en datos reales. Así mismo, colaboró en el Big Picture Event Storming para estructurar el dominio y posteriormente desarrolló el bounded context Costing, definiendo su arquitectura y diagramas, asegurando coherencia técnica e integración con el sistema.
       <br>
+      <strong>TB1:</strong>
+      Cumplió este criterio al asumir responsabilidades dentro del equipo en el desarrollo de la Aplicación Mobile y el Diseño mobile FE. Participó en la organización del trabajo del sprint y aportó en la elaboración de secciones clave del capítulo VI, como el Sprint Backlog, las evidencias de desarrollo, testing, ejecución, documentación de servicios y despliegue. Con ello, logró contribuir al liderazgo conjunto del equipo y al cumplimiento de los entregables establecidos.
+      <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
@@ -471,7 +474,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
       <br>
-      <strong>TP:</strong>
+      <strong>TB1:</strong>
       Contribuyó al desarrollo integral del sistema IoT mediante la configuración del entorno de desarrollo de software, la gestión del código fuente, la definición de convenciones de programación y la preparación del despliegue del software. Asimismo, participó en el diseño del dispositivo IoT y logró desplegar tanto la landing page como el frontend, demostrando dominio técnico, organización y capacidad para llevar componentes del proyecto a un entorno operativo.
       <br>
     </td>
@@ -482,6 +485,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td>
       <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó de un entorno colaborativo mediante la definición del Ubiquitous Language, alineando la comunicación del equipo. Participó en la planificación y ejecución de entrevistas, Event Storming y Candidate Context Discovery, asegurando orden y claridad en cada etapa. En el bounded context de Costing, trabajó de forma estructurada para cumplir los objetivos y entregables del proyecto.
+      <br>
+      <strong>TB1:</strong>
+      Cumplió este criterio al colaborar en la planificación y documentación de las tareas del sprint, organizando evidencias relacionadas con la implementación, validación y despliegue del producto. Además, ayudó a establecer metas claras mediante la estructuración del Sprint Backlog y el seguimiento de las actividades desarrolladas. De esta manera, logró aportar a un entorno colaborativo donde el equipo pudo distribuir tareas, revisar avances y cumplir los objetivos del sprint.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
@@ -498,7 +504,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
       <br>
-      <strong>TP:</strong>
+      <strong>TB1:</strong>
       Aportó a la organización del trabajo técnico mediante la configuración del entorno de desarrollo, la administración del repositorio y la aplicación de una guía de estilo compartida para mantener consistencia en el código fuente. Además, colaboró en la planificación del despliegue y en la implementación de entregables funcionales, incluyendo el diseño del dispositivo IoT, la landing page desplegada y el frontend desplegado, cumpliendo con los objetivos definidos para la entrega.
       <br>
     </td>
