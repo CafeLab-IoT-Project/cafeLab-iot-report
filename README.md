@@ -5289,8 +5289,38 @@ Los sistemas de navegación de Cafelab permiten al usuario recorrer los diferent
 ## 5.3. Landing Page UI Design.
 
 ### 5.3.1. Landing Page Wireframe.
+La versión wireframe de nuestra landing page presenta una estructura básica compuesta por diversos elementos fundamentales. En la parte superior se ubica la navegación principal representada mediante bloques simples que indican secciones como Beneficios, Planes, Contáctanos, Iniciar sesión y el selector de idioma. Las visualizaciones de datos se representan mediante áreas designadas para dashboards y gráficos, utilizando rectángulos con líneas básicas en su interior. Asimismo, los planes de suscripción se organizan en una cuadrícula de cuatro tarjetas, cada una como un rectángulo con espacios para encabezados y listas de características. Finalmente, la sección de testimonios se muestra con bloques para imágenes de perfil y áreas de texto para citas.
+
+![Hero](public/assets/images/landing-page-wireframes/1.png)
+![Segmentacion de usuarios](public/assets/images/landing-page-wireframes/2.png)
+![Visualizaciones](public/assets/images/landing-page-wireframes/3.png)
+![Iot](public/assets/images/landing-page-wireframes/4.png)
+![Planes](public/assets/images/landing-page-wireframes/5.png)
+![Testimonios](public/assets/images/landing-page-wireframes/6.png)
+![FAQ](public/assets/images/landing-page-wireframes/7.png)
+![Footer](public/assets/images/landing-page-wireframes/8.png)
+
+**Landing Page para Mobile Web Browser**
+<br>
+
+![MobileWireframes](public/assets/images/landing-page-wireframes/9.png)
+
 
 ### 5.3.2. Landing Page Mock-up.
+Landing Page para Desktop Web Browser En nuestra versión mock-up se evidencia la implementación de los elementos de diseño específicos de Café Lab. Se aplicó la paleta de colores característica, que incluye tonos tierra y marrones cálidos como color primario, junto con verdes oscuros como color secundario, creando una estética que evoca la naturaleza del café y su proceso artesanal. La tipografía seleccionada se implementó de manera consistente en todos los elementos de texto, desde los encabezados principales hasta los párrafos descriptivos y botones de acción.
+
+![Hero](public/assets/images/landing-page-mock-up/1.png)
+![Segmentacion de usuarios](public/assets/images/landing-page-mock-up/2.png)
+![Visualizaciones](public/assets/images/landing-page-mock-up/3.png)
+![Iot](public/assets/images/landing-page-mock-up/4.png)
+![Planes](public/assets/images/landing-page-mock-up/5.png)
+![Testimonios](public/assets/images/landing-page-mock-up/6.png)
+![FAQ](public/assets/images/landing-page-mock-up/7.png)
+![Footer](public/assets/images/landing-page-mock-up/8.png)
+
+**Landing Page para Mobile Web Browser**
+![Inicio, menu, visualizaciones, planes](public/assets/images/landing-page-mock-up/9.png)
+![testimonios, FAQ, footer](public/assets/images/landing-page-mock-up/10.png)
 
 ## 5.4. Applications UX/UI Design.
 
