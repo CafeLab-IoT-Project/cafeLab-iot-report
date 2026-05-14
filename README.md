@@ -14,7 +14,7 @@
 
 
 
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Parcial”</h2>
 
 <p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
 <strong>Nombre del grupo:</strong> Café Metrix<br>
@@ -97,6 +97,8 @@
 | 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
 | 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
 | 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
+| 2.13    | 13/05/2026  | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -464,6 +466,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
+      <strong>TB1:</strong>
+      Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo..
+      <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
@@ -496,6 +501,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
+      <br>
+      <strong>TB1:</strong>
+      Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
@@ -5666,6 +5674,12 @@ Production Cost Management 5 - US20
  
  ![image](public/assets/images/chapter-5/Wireflows/GestorCostos.png)
 
+ *USER GOAL: Modificar temperatura de almacen.*
+ <br> Como usuario, puedo visualizar las condiciones de temperatura del almacen y modificar la temperatura mediante el modulo de monitoreo.
+![Image](public/assets/images/chapter-5/UserFlowDiagram/user-flow-diagram-tracksilo.png)
+
+
+
 ### 5.4.3. Applications Mock-ups.
 #### Mock-ups for Desktops
 
@@ -5793,16 +5807,26 @@ Inventary - US19
 Inventary - US19
 ![Inventary ](public/assets/images/chapter-5/WebAppMockup/Inventaryb.png)
 
-Register Production Cost Management 1 - US20
+Register Production Cost Management 1 - US13
 ![Register Production Cost Management 1](public/assets/images/chapter-5/WebAppMockup/RegisterProductionCostManagement.png)
-Production Cost Management 2 - US20
+Production Cost Management 2 - US13
 ![Production Cost Management 2](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagement2.png)
-Production Cost Management 3 - US20
+Production Cost Management 3 - US13
 ![Production Cost Management 3](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament3.png)
-Production Cost Management 4 - US20
+Production Cost Management 4 - US13
 ![Production Cost Management 4](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament4.png)
-Production Cost Management 5 - US20
+Production Cost Management 5 - US13
 ![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
+
+Visualizar condiciones de ambiente  - US20
+![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ambienteIot.png)
+
+Visualizar alertas por condiciones del ambiente  - US22
+![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/alertasIot.png)
+
+Configurar umbrales de monitoreo  - US23
+![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/umbralesIot.png)
+
 
 #### Mock-ups for Mobiles
 
@@ -5855,6 +5879,13 @@ Production Cost Management 5 - US20
  ![image](public/assets/images/chapter-5/MobileWireframes/Cost.png)
 
 
+  *Monitoring Mockups*
+
+  ![image](public/assets/images/chapter-5/WebAppMockup/optionsMonitoring.png)
+  ![image](public/assets/images/chapter-5/WebAppMockup/AlertsIot-mobile.png)
+  ![image](public/assets/images/chapter-5/WebAppMockup/controlAmbienteIot.png)
+
+
 ### 5.4.4. Applications User Flow Diagrams.
 USER GOAL: Registrar bebida
 Como usuario, puedo ingresar a la herramienta de registrar bebida, una vez dentro se puede agregar recetas de bebidas y portafolios, el cual es usa para almacenar agrupadamente para diferentes fines como participacion en concursos. Al registrar la bebida se puede contar con multiples campos para poder registrar adecuadamente valores que me importan para los detalles.
@@ -5880,6 +5911,11 @@ Como usuario, puedo registrar perfiles de tueste que logre desarrollar mediante 
 USER GOAL: Registro de Sesion de cata
 Como usuario, puedo registrar sesiones de cata, las cuales puedo vincular a lotes y perfiles, para tener una mejor descripcion de sabores y comparaciones, de esta forma mejorar la calidad del producto final, ademas se puede generar un hexagono sensorial con el que peuda comparar resultados de otras sesiones de cata, finalmente puedo contar con un filtro de busqueda para proximamente buscar de forma rapida y directa.
 ![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/SesionCata.png)
+
+USER GOAL: Monitoreo de ambiente
+Como usuario, puedo monitorear las condiciones ambientales de mi almacen, para poder modificar parametros como humedad y temperatura, asimismo puedo recibir alertas sobre condiciones que superen los umbrales.
+![Monitoreo](public/assets/images/chapter-5/UserFlowDiagram/user-flow-mobile.png)
+
 
 ## 5.5. Applications Prototyping.
 
