@@ -95,6 +95,8 @@
 | 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
 | 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
 | 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
+| 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
+| 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -465,6 +467,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
+      <strong>TB1:</strong>
+      Desarrollo los prototipos y diseño, acorde a los requisitos funcionales y la lógica del negocio, alineándose a estándares iot de configuración y monitoreo (Acción y Reacción).
+      <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
@@ -494,6 +499,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
+      <br>
+      <strong>TB1:</strong>
+      Colaboró con las sesiones de feedback y status; recomendando y compartiendo ideas de manera activa para la solución. Asimismo, promovió la comunicación y la escucha  constante.
       <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
