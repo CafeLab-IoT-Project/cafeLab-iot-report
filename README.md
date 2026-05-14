@@ -50,7 +50,7 @@
 </div>
 </div>
 
-<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Abril 2026</p>
+<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Mayo 2026</p>
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
