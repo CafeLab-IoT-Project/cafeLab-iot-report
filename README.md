@@ -163,7 +163,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td></td>
+    <td>En este entregable apoyé al equipo con el sprint backlog, el development evidence for sprint review, el testing suite evidence tanton en frontend como en backend, el execution evidence, el services documentation evidence, el software deployment evidence así como el team collaboration insights.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -477,31 +477,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
       - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
-    - [Frontend Testing Suite Evidence](#frontend-testing-suite-evidence)
-      - [Tabla de commits relacionados al frontend testing](#tabla-de-commits-relacionados-al-frontend-testing)
-      - [Pruebas de Frontend realizadas](#pruebas-de-frontend-realizadas)
-      - [Unit Tests](#unit-tests)
-      - [Integration Tests](#integration-tests)
-      - [Acceptance Tests BDD](#acceptance-tests-bdd)
-      - [Test Execution Evidence](#test-execution-evidence)
-    - [Backend Testing Suite Evidence](#backend-testing-suite-evidence)
-      - [Tabla de commits relacionados al backend testing](#tabla-de-commits-relacionados-al-backend-testing)
-      - [Pruebas de Backend realizadas](#pruebas-de-backend-realizadas)
-      - [Integration Tests](#integration-tests-1)
-      - [Acceptance Tests BDD](#acceptance-tests-bdd-1)
-      - [Test Execution Evidence](#test-execution-evidence-1)
       - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
-      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
-      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
-      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
-      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
-      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
-      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
-      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
-      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
-      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
-      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
-      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
