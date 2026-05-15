@@ -704,7 +704,7 @@ A partir de lo recopilado se propopone una plataforma dual software + iot que au
 
 <td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
 
-Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+Enlace para acceder al Canvas [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
 
 ## 1.3. Segmentos objetivos
 CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
@@ -2912,7 +2912,7 @@ Publica InventoryUpdatedEvent que Costing consume para calcular merma real.
 Valores: LIGHT, MEDIUM, MEDIUM_DARK, DARK.  
 Representa el nivel de tueste del café con sus características sensoriales asociadas.
 
-### 2. BatchStatus (Enum)
+#### 2. BatchStatus (Enum)
 
 Valores: RECEIVED, STORED, ROASTING, FINISHED.  
 Define el ciclo de vida de un lote dentro del sistema.
@@ -5341,7 +5341,7 @@ Landing Page para Desktop Web Browser En nuestra versión mock-up se evidencia l
 ## 5.4. Applications UX/UI Design.
 
 ### 5.4.1. Applications Wireframes.
-Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
+Enlace para acceder al Figma [https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
 
 **Web Application para Desktop Web Browser**
 Sign Up - Bar - US01
@@ -5376,7 +5376,7 @@ Select Suscription - US03
 
 ![image](https://github.com/user-attachments/assets/b9de893a-696d-404f-bad6-0def9e1b888d)
 
-Payment - US?
+Payment - US02
 
 ![image](https://github.com/user-attachments/assets/16e2e17d-05ad-40ae-8a48-162ecbc0f3bd)
 
@@ -5384,7 +5384,7 @@ User Profile - US02
 
 ![image](https://github.com/user-attachments/assets/5209406b-28b6-4f8c-91fe-cc4a2b168780)
 
-Welcome - US?
+Welcome - US02
 
 ![image](https://github.com/user-attachments/assets/14a7cf2c-b48e-496d-8365-605b8b283d60)
 
@@ -5448,7 +5448,7 @@ Roast Comparison - US09
 
 ![image](https://github.com/user-attachments/assets/4361a472-496b-44e3-a060-d92a70149fa2)
 
-Cupping Sesions
+Cupping Sesions - US11
 
 ![image](https://github.com/user-attachments/assets/1798a5bc-d2e0-4fd0-b8df-2155efaa31a9)
 
@@ -5516,11 +5516,11 @@ Record Grind Calibration - US16
 
 ![image](https://github.com/user-attachments/assets/bc6fc3a5-caf7-44a3-8955-5b4406f3fbbc)
 
-Calibration record
+Calibration record - US16
 
 ![image](https://github.com/user-attachments/assets/c619df4c-ca31-4f4c-89db-d2d294f07a7f)
 
-edit calibration
+Edit calibration - US16
 
 ![image](https://github.com/user-attachments/assets/97d950ad-70cf-48fd-8b23-eb27eb35c3fb)
 
@@ -5719,7 +5719,7 @@ Message after correct Sign In - US01
 User Profile - US02
 ![User Profile](public/assets/images/chapter-5/WebAppMockup/UserProfile.png)
 
-Welcome - US?
+Welcome - US02
 ![Welcome](public/assets/images/chapter-5/WebAppMockup/Welcome.png)
 Suppliers - US04
 ![Suppliers](public/assets/images/chapter-5/WebAppMockup/Suppliers.png)
@@ -5933,17 +5933,13 @@ Los mensajes mostrados son claros, entendibles y universales en la pagina, de es
 
 ![Prototipo](public/assets/images/chapter-5/MobileMockups/prototipo-mobile.png)
 
-Enlace para acceder al video de [WEB Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Enlace para acceder al video de WEB Applications Prototyping [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
 
-Enlace para acceder al video de [MOBILE Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Enlace para acceder al video de [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1) https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1
+Enlace del prototipo [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
 
-Enlace del prototipo mobile [Figma mobile---](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1
-
-
-## 5.6. IoT Device Design.
+Enlace del prototipo mobile [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)
 
 ## 5.6. IoT Device Design.
 
