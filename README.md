@@ -14,7 +14,7 @@
 
 
 
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Parcial”</h2>
 
 <p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
 <strong>Nombre del grupo:</strong> Café Metrix<br>
@@ -50,7 +50,7 @@
 </div>
 </div>
 
-<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Abril 2026</p>
+<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Mayo 2026</p>
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
@@ -95,6 +95,10 @@
 | 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
 | 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
 | 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
+| 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
+| 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
+| 2.14    | 13/05/2026  | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -462,6 +466,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
+      <strong>TB1:</strong>
+      Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo..
+      <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
@@ -491,6 +498,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
+      <br>
+      <strong>TB1:</strong>
+      Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
@@ -688,7 +698,7 @@ A partir de lo recopilado se propopone una plataforma dual software + iot que au
 
 <td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
 
-Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+Enlace para acceder al Canvas [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
 
 ## 1.3. Segmentos objetivos
 CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
@@ -2896,7 +2906,7 @@ Publica InventoryUpdatedEvent que Costing consume para calcular merma real.
 Valores: LIGHT, MEDIUM, MEDIUM_DARK, DARK.  
 Representa el nivel de tueste del café con sus características sensoriales asociadas.
 
-### 2. BatchStatus (Enum)
+#### 2. BatchStatus (Enum)
 
 Valores: RECEIVED, STORED, ROASTING, FINISHED.  
 Define el ciclo de vida de un lote dentro del sistema.
@@ -5325,7 +5335,7 @@ Landing Page para Desktop Web Browser En nuestra versión mock-up se evidencia l
 ## 5.4. Applications UX/UI Design.
 
 ### 5.4.1. Applications Wireframes.
-Enlace para acceder al [Figma](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
+Enlace para acceder al Figma [https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
 
 **Web Application para Desktop Web Browser**
 Sign Up - Bar - US01
@@ -5360,7 +5370,7 @@ Select Suscription - US03
 
 ![image](https://github.com/user-attachments/assets/b9de893a-696d-404f-bad6-0def9e1b888d)
 
-Payment - US?
+Payment - US02
 
 ![image](https://github.com/user-attachments/assets/16e2e17d-05ad-40ae-8a48-162ecbc0f3bd)
 
@@ -5368,7 +5378,7 @@ User Profile - US02
 
 ![image](https://github.com/user-attachments/assets/5209406b-28b6-4f8c-91fe-cc4a2b168780)
 
-Welcome - US?
+Welcome - US02
 
 ![image](https://github.com/user-attachments/assets/14a7cf2c-b48e-496d-8365-605b8b283d60)
 
@@ -5432,7 +5442,7 @@ Roast Comparison - US09
 
 ![image](https://github.com/user-attachments/assets/4361a472-496b-44e3-a060-d92a70149fa2)
 
-Cupping Sesions
+Cupping Sesions - US11
 
 ![image](https://github.com/user-attachments/assets/1798a5bc-d2e0-4fd0-b8df-2155efaa31a9)
 
@@ -5500,11 +5510,11 @@ Record Grind Calibration - US16
 
 ![image](https://github.com/user-attachments/assets/bc6fc3a5-caf7-44a3-8955-5b4406f3fbbc)
 
-Calibration record
+Calibration record - US16
 
 ![image](https://github.com/user-attachments/assets/c619df4c-ca31-4f4c-89db-d2d294f07a7f)
 
-edit calibration
+Edit calibration - US16
 
 ![image](https://github.com/user-attachments/assets/97d950ad-70cf-48fd-8b23-eb27eb35c3fb)
 
@@ -5673,6 +5683,12 @@ Iot Monitoring 4 - US20
  
  ![image](public/assets/images/chapter-5/Wireflows/GestorCostos.png)
 
+ *USER GOAL: Modificar temperatura de almacen.*
+ <br> Como usuario, puedo visualizar las condiciones de temperatura del almacen y modificar la temperatura mediante el modulo de monitoreo.
+![Image](public/assets/images/chapter-5/UserFlowDiagram/user-flow-diagram-tracksilo.png)
+
+
+
 ### 5.4.3. Applications Mock-ups.
 #### Mock-ups for Desktops
 
@@ -5712,7 +5728,7 @@ Message after correct Sign In - US01
 User Profile - US02
 ![User Profile](public/assets/images/chapter-5/WebAppMockup/UserProfile.png)
 
-Welcome - US?
+Welcome - US02
 ![Welcome](public/assets/images/chapter-5/WebAppMockup/Welcome.png)
 Suppliers - US04
 ![Suppliers](public/assets/images/chapter-5/WebAppMockup/Suppliers.png)
@@ -5800,24 +5816,16 @@ Inventary - US19
 Inventary - US19
 ![Inventary ](public/assets/images/chapter-5/WebAppMockup/Inventaryb.png)
 
-Register Production Cost Management 1 - US20
+Register Production Cost Management 1 - US13
 ![Register Production Cost Management 1](public/assets/images/chapter-5/WebAppMockup/RegisterProductionCostManagement.png)
-Production Cost Management 2 - US20
+Production Cost Management 2 - US13
 ![Production Cost Management 2](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagement2.png)
-Production Cost Management 3 - US20
+Production Cost Management 3 - US13
 ![Production Cost Management 3](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament3.png)
-Production Cost Management 4 - US20
+Production Cost Management 4 - US13
 ![Production Cost Management 4](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament4.png)
-Production Cost Management 5 - US20
+Production Cost Management 5 - US13
 ![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
-Iot Monitoring 1 - US21 - US24
-![image](public/assets/images/chapter-5/ApplicationWireframes/lotes.png)
-Iot Monitoring 2 - US23
-![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion.png)
-Iot Monitoring 3 - US22
-![image](public/assets/images/chapter-5/ApplicationWireframes/alertas.png)
-Iot Monitoring 4 - US20
-![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas.png)
 
 #### Mock-ups for Mobiles
 
@@ -5874,6 +5882,13 @@ Iot Monitoring 4 - US20
 
 
 
+  *Monitoring Mockups*
+
+  ![image](public/assets/images/chapter-5/WebAppMockup/optionsMonitoring.png)
+  ![image](public/assets/images/chapter-5/WebAppMockup/AlertsIot-mobile.png)
+  ![image](public/assets/images/chapter-5/WebAppMockup/controlAmbienteIot.png)
+
+
 ### 5.4.4. Applications User Flow Diagrams.
 USER GOAL: Registrar bebida
 Como usuario, puedo ingresar a la herramienta de registrar bebida, una vez dentro se puede agregar recetas de bebidas y portafolios, el cual es usa para almacenar agrupadamente para diferentes fines como participacion en concursos. Al registrar la bebida se puede contar con multiples campos para poder registrar adecuadamente valores que me importan para los detalles.
@@ -5900,6 +5915,11 @@ USER GOAL: Registro de Sesion de cata
 Como usuario, puedo registrar sesiones de cata, las cuales puedo vincular a lotes y perfiles, para tener una mejor descripcion de sabores y comparaciones, de esta forma mejorar la calidad del producto final, ademas se puede generar un hexagono sensorial con el que peuda comparar resultados de otras sesiones de cata, finalmente puedo contar con un filtro de busqueda para proximamente buscar de forma rapida y directa.
 ![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/SesionCata.png)
 
+USER GOAL: Monitoreo de ambiente
+Como usuario, puedo monitorear las condiciones ambientales de mi almacen, para poder modificar parametros como humedad y temperatura, asimismo puedo recibir alertas sobre condiciones que superen los umbrales.
+![Monitoreo](public/assets/images/chapter-5/UserFlowDiagram/user-flow-mobile.png)
+
+
 ## 5.5. Applications Prototyping.
 
 ### Web application prototyping
@@ -5916,17 +5936,13 @@ Los mensajes mostrados son claros, entendibles y universales en la pagina, de es
 
 ![Prototipo](public/assets/images/chapter-5/MobileMockups/prototipo-mobile.png)
 
-Enlace para acceder al video de [WEB Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Enlace para acceder al video de WEB Applications Prototyping [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
 
-Enlace para acceder al video de [MOBILE Applications Prototyping](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Enlace para acceder al video de [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-Enlace del prototipo [Figma](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1) https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1
+Enlace del prototipo [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
 
-Enlace del prototipo mobile [Figma mobile---](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1
-
-
-## 5.6. IoT Device Design.
+Enlace del prototipo mobile [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)
 
 ## 5.6. IoT Device Design.
 
@@ -6721,234 +6737,486 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
   </thead>
   <tbody>
     <tr>
-      <td>US01 - Registro de Proveedores</td>
-      <td>Implementar módulo de proveedores</td>
-      <td>Desarrollar la funcionalidad para registrar y evaluar proveedores de café, manteniendo información clave para el control de calidad y trazabilidad de origen.</td>
-      <td>5</td>
+      <td rowspan="2">US01 - Registro de Proveedores</td>
+      <td>Diseñar vista y formulario de registro de proveedor</td>
+      <td>Crear la interfaz de usuario con el formulario para ingresar datos del proveedor (nombre, origen, contacto, certificaciones), incluyendo validaciones de campos obligatorios.</td>
+      <td>2</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US02 - Gestión de Lotes de Café Verde</td>
-      <td>Implementar módulo de lotes de café verde</td>
-      <td>Desarrollar la funcionalidad para registrar lotes de café verde, asociarlos a proveedores y mantener su trazabilidad dentro del sistema.</td>
-      <td>6</td>
+      <td>Integrar servicio de proveedores con la vista</td>
+      <td>Conectar el formulario de registro con la API de proveedores para persistir, editar y consultar los datos desde el backend.</td>
+      <td>3</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US03 - Creación de Perfil de Tueste</td>
-      <td>Implementar módulo de perfiles de tueste</td>
-      <td>Desarrollar la funcionalidad para que el barista registre perfiles de tueste personalizados y documente parámetros técnicos del proceso.</td>
-      <td>5</td>
+      <td rowspan="3">US02 - Gestión de Lotes de Café Verde</td>
+      <td>Implementar vista de listado de lotes de café verde</td>
+      <td>Desarrollar la pantalla que muestra los lotes registrados con su información principal, permitiendo navegación y acceso al detalle de cada uno.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de registro de lote y asociación a proveedor</td>
+      <td>Crear el formulario para registrar un nuevo lote de café verde, incluyendo la selección del proveedor vinculado y los datos de origen y peso.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar cambio de estado y trazabilidad de lote</td>
+      <td>Desarrollar la lógica para gestionar los cambios de estado del lote (recibido, en proceso, finalizado) y registrar el historial de trazabilidad.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US03 - Creación de Perfil de Tueste</td>
+      <td>Diseñar formulario de creación de perfil de tueste</td>
+      <td>Crear la interfaz con campos para nombre del perfil, temperatura, tiempo de desarrollo, nivel de tueste y notas del barista.</td>
+      <td>3</td>
       <td>Natalia Roman</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US04 - Biblioteca de Defectos de Tueste</td>
-      <td>Implementar biblioteca de defectos de tueste</td>
-      <td>Crear una sección para registrar y consultar defectos de tueste, incluyendo descripción, causa probable y acción correctiva.</td>
-      <td>4</td>
+      <td>Integrar parámetros técnicos del perfil con la API</td>
+      <td>Conectar el formulario con el servicio backend para guardar, editar y recuperar perfiles de tueste registrados por el usuario.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US04 - Biblioteca de Defectos de Tueste</td>
+      <td>Implementar listado de defectos de tueste</td>
+      <td>Desarrollar la vista que muestra todos los defectos registrados en la biblioteca, con su nombre, descripción y causa probable.</td>
+      <td>2</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US05 - Cata Digital Estructurada</td>
-      <td>Implementar módulo de catas</td>
-      <td>Desarrollar la funcionalidad para registrar evaluaciones sensoriales estructuradas vinculadas a lotes y tuestes específicos.</td>
-      <td>5</td>
+      <td>Implementar formulario de registro de defecto con acción correctiva</td>
+      <td>Crear el formulario para registrar un nuevo defecto incluyendo descripción detallada, causa probable y acción correctiva recomendada.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US05 - Cata Digital Estructurada</td>
+      <td>Implementar formulario de cata sensorial</td>
+      <td>Desarrollar la vista principal de registro de cata con campos para fecha, barista evaluador y notas generales de la sesión.</td>
+      <td>2</td>
       <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US06 - Historial de Catas</td>
-      <td>Implementar historial de catas</td>
-      <td>Desarrollar la funcionalidad para consultar catas registradas, aplicar filtros y revisar información histórica de evaluaciones sensoriales.</td>
-      <td>5</td>
+      <td>Implementar campos de puntuación y atributos sensoriales</td>
+      <td>Agregar los controles de puntuación para atributos sensoriales como acidez, cuerpo, dulzura, aroma y sabor residual conforme al protocolo SCA.</td>
+      <td>2</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Vincular cata con lote y perfil de tueste</td>
+      <td>Integrar selectores para asociar la cata a un lote de café verde y a un perfil de tueste específico, asegurando la trazabilidad de la evaluación.</td>
+      <td>1</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US06 - Historial de Catas</td>
+      <td>Implementar vista de historial de catas</td>
+      <td>Desarrollar la pantalla que lista todas las catas registradas mostrando fecha, lote evaluado, puntuación total y barista responsable.</td>
+      <td>2</td>
       <td>Natalia Roman</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US07 - Creación de Recetas de Preparación</td>
-      <td>Implementar módulo de recetas</td>
-      <td>Desarrollar la funcionalidad para crear recetas de preparación con parámetros como ratio, temperatura, tiempo, molienda y método.</td>
-      <td>5</td>
+      <td>Implementar filtros y búsqueda en el historial</td>
+      <td>Agregar controles de filtrado por fecha, lote, puntuación y barista, así como una barra de búsqueda para localizar catas específicas rápidamente.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US07 - Creación de Recetas de Preparación</td>
+      <td>Diseñar formulario de receta con parámetros técnicos</td>
+      <td>Crear la interfaz con campos para nombre de la receta, método de preparación, ratio café/agua, temperatura, tiempo de extracción y nivel de molienda.</td>
+      <td>3</td>
       <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US08 - Calibración de Molienda</td>
-      <td>Implementar módulo de calibraciones</td>
-      <td>Desarrollar la funcionalidad para documentar configuraciones de molienda según equipo, método y parámetros de preparación.</td>
-      <td>4</td>
+      <td>Integrar validación y persistencia de recetas</td>
+      <td>Conectar el formulario con la API para guardar y consultar recetas, aplicando validaciones de rango en los parámetros técnicos ingresados.</td>
+      <td>2</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US08 - Calibración de Molienda</td>
+      <td>Implementar formulario de calibración de molienda</td>
+      <td>Crear la interfaz para registrar una calibración con campos de equipo utilizado, ajuste de molino y parámetros de extracción resultantes.</td>
+      <td>2</td>
       <td>Henry Esteban</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US09 - Portafolio de Bebidas</td>
-      <td>Implementar portafolio de bebidas</td>
-      <td>Crear una funcionalidad para organizar bebidas y recetas en un portafolio digital consultable por el usuario.</td>
-      <td>5</td>
-      <td>Gabriel Sánchez</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US10 - Control de Inventario Integrado</td>
-      <td>Implementar módulo de inventario</td>
-      <td>Desarrollar la funcionalidad para visualizar existencias, registrar consumos y mantener actualizado el inventario de café verde y tostado.</td>
-      <td>6</td>
-      <td>Adrian Donayre</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US11 - Análisis Comparativo de Tuestes</td>
-      <td>Implementar análisis comparativo de tuestes</td>
-      <td>Desarrollar la funcionalidad para comparar sesiones de tueste y visualizar diferencias entre perfiles registrados.</td>
-      <td>5</td>
-      <td>Natalia Roman</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US12 - Visualización de Perfiles Sensoriales</td>
-      <td>Implementar visualización de perfiles sensoriales</td>
-      <td>Desarrollar gráficos de perfil sensorial para interpretar y comparar atributos de catas registradas.</td>
-      <td>5</td>
-      <td>Natalia Roman</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US13 - Gestión de Costos de Producción</td>
-      <td>Implementar módulo de costos</td>
-      <td>Desarrollar la funcionalidad para registrar y analizar costos de producción asociados a lotes de café.</td>
-      <td>6</td>
-      <td>Adrian Donayre</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US14 - Información del Producto</td>
-      <td>Implementar sección informativa de landing page</td>
-      <td>Crear contenido visual e informativo para comunicar la propuesta de valor, beneficios y características principales de CaféLab.</td>
-      <td>4</td>
+      <td>Integrar calibración con método y receta de preparación</td>
+      <td>Vincular el registro de calibración al método de preparación y receta correspondiente, permitiendo consultarla en contexto durante la preparación.</td>
+      <td>2</td>
       <td>Henry Esteban</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US15 - Secciones Específicas por Segmento</td>
-      <td>Implementar secciones para usuarios objetivo</td>
-      <td>Crear secciones diferenciadas para baristas y dueños de cafeterías, mostrando beneficios adaptados a cada perfil.</td>
-      <td>4</td>
+      <td rowspan="2">US09 - Portafolio de Bebidas</td>
+      <td>Implementar vista de portafolio de bebidas</td>
+      <td>Desarrollar la pantalla que muestra las bebidas organizadas visualmente en un portafolio digital con imagen, nombre y descripción breve.</td>
+      <td>2</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar detalle de bebida y vinculación con recetas</td>
+      <td>Crear la vista de detalle de cada bebida que muestra su receta asociada, parámetros de preparación y notas de presentación.</td>
+      <td>3</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US10 - Control de Inventario Integrado</td>
+      <td>Implementar vista de existencias de café verde y tostado</td>
+      <td>Desarrollar la pantalla principal de inventario que muestra el stock actual de café verde y tostado con unidades, lote de origen y fecha de ingreso.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de registro de consumos</td>
+      <td>Crear el formulario para registrar el consumo de café indicando cantidad, tipo (verde o tostado), lote afectado y motivo del consumo.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US11 - Análisis Comparativo de Tuestes</td>
+      <td>Implementar selección de perfiles de tueste para comparación</td>
+      <td>Desarrollar la interfaz que permite al usuario seleccionar dos o más perfiles de tueste registrados para iniciar una sesión de comparación.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Visualizar diferencias entre perfiles de tueste seleccionados</td>
+      <td>Mostrar una vista comparativa con tablas o gráficos que resalten las diferencias de temperatura, tiempo, nivel y atributos entre los perfiles elegidos.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US12 - Visualización de Perfiles Sensoriales</td>
+      <td>Implementar componente gráfico de perfil sensorial</td>
+      <td>Desarrollar un gráfico de tipo radar/araña que represente visualmente los atributos sensoriales evaluados en una cata (acidez, cuerpo, aroma, dulzura, sabor).</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar datos de catas en el gráfico y habilitar comparación</td>
+      <td>Conectar el componente gráfico con los datos reales de catas registradas y permitir superponer múltiples perfiles sensoriales en un mismo gráfico.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US13 - Gestión de Costos de Producción</td>
+      <td>Implementar formulario de registro de costos por lote</td>
+      <td>Crear la interfaz para registrar costos asociados a un lote de café, incluyendo materia prima, insumos, mano de obra y energía.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar vista de resumen y análisis de costos</td>
+      <td>Desarrollar la pantalla que consolida y presenta los costos registrados por lote, mostrando totales, porcentajes por categoría y costo por kilogramo producido.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar cálculos automáticos de costo total y relación con lotes</td>
+      <td>Implementar la lógica de cálculo automático del costo total del lote sumando todas las categorías y vinculando el resultado al lote de producción correspondiente.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US14 - Información del Producto</td>
+      <td>Diseñar sección hero y propuesta de valor de la landing page</td>
+      <td>Crear la sección principal de la landing page con encabezado impactante, eslogan del producto, descripción de la propuesta de valor y llamada a la acción.</td>
+      <td>2</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar sección de características y beneficios con diseño visual</td>
+      <td>Desarrollar la sección de características principales con íconos, titulares y descripciones breves de los beneficios más relevantes de CaféLab.</td>
+      <td>2</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US15 - Secciones Específicas por Segmento</td>
+      <td>Implementar sección diferenciada para baristas</td>
+      <td>Crear una sección en la landing page dirigida a baristas, destacando funcionalidades de tueste, catas, recetas y calibración adaptadas a su perfil profesional.</td>
+      <td>2</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar sección diferenciada para dueños de cafeterías</td>
+      <td>Crear una sección orientada a dueños de cafeterías resaltando los beneficios de control de inventario, costos, trazabilidad y análisis de producción.</td>
+      <td>2</td>
       <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>US16 - Acceso directo a plataforma</td>
-      <td>Implementar redirección a la aplicación</td>
-      <td>Agregar accesos desde la landing page hacia la aplicación principal para permitir que el usuario inicie el uso de la plataforma.</td>
+      <td>Implementar botones y redirecciones desde landing page a la aplicación</td>
+      <td>Agregar los botones de llamada a la acción en la landing page (header, hero y footer) que redirigen al usuario al login o registro de la aplicación principal.</td>
       <td>3</td>
       <td>Henry Esteban</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US17 - Registro y Autenticación</td>
-      <td>Implementar flujo de registro e inicio de sesión</td>
-      <td>Desarrollar las vistas y lógica necesarias para que el usuario pueda registrarse, iniciar sesión y acceder de forma segura al sistema.</td>
-      <td>6</td>
+      <td rowspan="3">US17 - Registro y Autenticación</td>
+      <td>Implementar formulario de registro de usuario</td>
+      <td>Desarrollar la vista de registro con campos de nombre, correo electrónico, contraseña y confirmación, incluyendo validaciones en tiempo real.</td>
+      <td>2</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>US18 - Perfil Personalizado</td>
-      <td>Implementar perfil de usuario</td>
-      <td>Desarrollar la funcionalidad para configurar y actualizar información básica del perfil profesional del usuario.</td>
-      <td>4</td>
-      <td>Fredy Fernández</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US19 - Selección de Plan</td>
-      <td>Implementar selección de planes</td>
-      <td>Crear la vista y lógica para que el usuario pueda visualizar planes disponibles y seleccionar el que mejor se adapte a sus necesidades.</td>
-      <td>4</td>
+      <td>Implementar formulario de inicio de sesión</td>
+      <td>Desarrollar la vista de login con campos de correo y contraseña, manejo de errores de credenciales y opción de recordar sesión.</td>
+      <td>2</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS01 - API Proveedores</td>
-      <td>Implementar API de proveedores</td>
-      <td>Diseñar e implementar servicios para registrar, consultar, actualizar y eliminar proveedores dentro de la plataforma.</td>
-      <td>5</td>
+      <td>Implementar lógica de autenticación y protección de rutas</td>
+      <td>Integrar el flujo completo de autenticación con el backend, gestionar el token de sesión en el cliente y proteger las rutas privadas de la aplicación.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US18 - Perfil Personalizado</td>
+      <td>Implementar vista de perfil de usuario</td>
+      <td>Desarrollar la pantalla que muestra la información del perfil profesional del usuario: nombre, rol, foto, especialidad y datos de contacto.</td>
+      <td>2</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS02 - API Lotes</td>
-      <td>Implementar API de lotes</td>
-      <td>Diseñar e implementar servicios para gestionar lotes de café verde, su trazabilidad y cambios de estado.</td>
-      <td>6</td>
+      <td>Implementar formulario de edición de datos del perfil</td>
+      <td>Crear el formulario para que el usuario pueda actualizar su información de perfil, incluyendo carga de foto y validación de campos antes de guardar.</td>
+      <td>2</td>
       <td>Fredy Fernández</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS03 - API Perfiles de Tueste</td>
-      <td>Implementar API de perfiles de tueste</td>
-      <td>Diseñar e implementar servicios para crear, consultar, actualizar y eliminar perfiles de tueste.</td>
-      <td>6</td>
+      <td rowspan="2">US19 - Selección de Plan</td>
+      <td>Implementar vista de planes disponibles con comparativa</td>
+      <td>Crear la pantalla que muestra los planes de suscripción disponibles en tarjetas comparativas con precio, características incluidas y límites de uso.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar lógica de selección y confirmación de plan</td>
+      <td>Desarrollar la acción de seleccionar un plan, mostrar un modal de confirmación con el resumen del plan elegido e integrar la llamada al servicio para registrar la suscripción.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS01 - API Proveedores</td>
+      <td>Diseñar modelo de datos y entidad Proveedor</td>
+      <td>Definir la estructura de la entidad Proveedor con sus atributos, restricciones de base de datos y relaciones con otras entidades del dominio.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de proveedores</td>
+      <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar proveedores, incluyendo manejo de errores y validaciones de entrada.</td>
+      <td>3</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS02 - API Lotes</td>
+      <td>Diseñar modelo de datos y entidad Lote</td>
+      <td>Definir la estructura de la entidad Lote con sus atributos (peso, origen, fecha, estado), relación con Proveedor y restricciones de la base de datos.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de lotes</td>
+      <td>Desarrollar los endpoints REST para registrar, consultar, actualizar y eliminar lotes de café verde con sus validaciones correspondientes.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar lógica de cambio de estado y trazabilidad</td>
+      <td>Desarrollar el endpoint y lógica de negocio para gestionar las transiciones de estado del lote y registrar el historial de cambios para trazabilidad.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS03 - API Perfiles de Tueste</td>
+      <td>Diseñar modelo de datos y entidad Perfil de Tueste</td>
+      <td>Definir la estructura de la entidad con sus atributos técnicos (temperatura, tiempo, nivel de tueste, notas) y relaciones con lotes y catas.</td>
+      <td>2</td>
       <td>Natalia Roman</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS04 - API Defectos de Tueste</td>
-      <td>Implementar API de defectos</td>
-      <td>Diseñar e implementar servicios para registrar y consultar defectos de tueste almacenados en la biblioteca.</td>
-      <td>4</td>
+      <td>Implementar endpoints CRUD de perfiles de tueste</td>
+      <td>Desarrollar los endpoints REST para crear, listar, obtener detalle, actualizar y eliminar perfiles de tueste con validaciones de negocio.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar validaciones y relaciones con lotes de café</td>
+      <td>Agregar validaciones de consistencia entre el perfil de tueste y el lote de café verde asociado, asegurando integridad referencial en el backend.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS04 - API Defectos de Tueste</td>
+      <td>Diseñar modelo de datos y entidad Defecto</td>
+      <td>Definir la estructura de la entidad Defecto con sus atributos (nombre, descripción, causa, acción correctiva) y su pertenencia al contexto de la biblioteca.</td>
+      <td>2</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS05 - API Catas</td>
-      <td>Implementar API de catas</td>
-      <td>Diseñar e implementar servicios para registrar y consultar evaluaciones sensoriales estructuradas.</td>
-      <td>5</td>
+      <td>Implementar endpoints de registro y consulta de defectos</td>
+      <td>Desarrollar los endpoints REST para registrar nuevos defectos en la biblioteca y consultar el catálogo completo con filtros por tipo o causa.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS05 - API Catas</td>
+      <td>Diseñar modelo de datos y entidad Cata</td>
+      <td>Definir la estructura de la entidad Cata con sus atributos sensoriales (acidez, cuerpo, dulzura, aroma, sabor, puntaje total) y relaciones con lote y perfil de tueste.</td>
+      <td>2</td>
       <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS06 - API Recetas</td>
-      <td>Implementar API de recetas</td>
-      <td>Diseñar e implementar servicios para registrar, consultar y gestionar recetas de preparación.</td>
-      <td>5</td>
+      <td>Implementar endpoints de registro y consulta de catas</td>
+      <td>Desarrollar los endpoints REST para crear una cata con sus atributos sensoriales y consultarlas con soporte de filtros por fecha, lote o puntuación.</td>
+      <td>3</td>
       <td>Gabriel Sánchez</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS07 - API Calibraciones</td>
-      <td>Implementar API de calibraciones</td>
-      <td>Diseñar e implementar servicios para registrar y actualizar calibraciones de molienda.</td>
-      <td>5</td>
+      <td rowspan="2">TS06 - API Recetas</td>
+      <td>Diseñar modelo de datos y entidad Receta</td>
+      <td>Definir la estructura de la entidad Receta con atributos (método, ratio, temperatura, tiempo, molienda) y su relación con el portafolio de bebidas.</td>
+      <td>2</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de recetas de preparación</td>
+      <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar recetas, con validaciones de rangos aceptables para cada parámetro técnico.</td>
+      <td>3</td>
+      <td>Gabriel Sánchez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS07 - API Calibraciones</td>
+      <td>Diseñar modelo de datos y entidad Calibración</td>
+      <td>Definir la estructura de la entidad Calibración con atributos (equipo, ajuste de molino, método vinculado, resultado de extracción) y sus relaciones.</td>
+      <td>2</td>
       <td>Henry Esteban</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS08 - API Inventario</td>
-      <td>Implementar API de inventario</td>
-      <td>Diseñar e implementar servicios para consultar existencias y registrar consumos de inventario.</td>
-      <td>5</td>
+      <td>Implementar endpoints de registro y actualización de calibraciones</td>
+      <td>Desarrollar los endpoints REST para registrar nuevas calibraciones y actualizarlas, incluyendo la asociación al método de preparación correspondiente.</td>
+      <td>3</td>
+      <td>Henry Esteban</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS08 - API Inventario</td>
+      <td>Diseñar modelo de datos y entidad Inventario</td>
+      <td>Definir la estructura de la entidad Inventario con atributos de tipo de café, cantidad disponible, unidad de medida y referencia al lote de origen.</td>
+      <td>1</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS09 - API Usuarios</td>
-      <td>Implementar API de usuarios</td>
-      <td>Diseñar e implementar servicios para registrar usuarios y gestionar información básica de acceso.</td>
-      <td>5</td>
+      <td>Implementar endpoints de consulta de existencias</td>
+      <td>Desarrollar los endpoints REST para consultar el stock actual de café verde y tostado, con soporte de filtros por tipo, lote y rango de fechas.</td>
+      <td>2</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
     <tr>
-      <td>TS10 - API Autenticación</td>
-      <td>Implementar API de autenticación</td>
-      <td>Diseñar e implementar servicios para validar credenciales, iniciar sesión y permitir acceso seguro mediante autenticación.</td>
-      <td>5</td>
+      <td>Implementar endpoints de registro de consumos de inventario</td>
+      <td>Desarrollar el endpoint para registrar un consumo de inventario, descounting la cantidad del stock actual y almacenando el motivo y fecha del movimiento.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS09 - API Usuarios</td>
+      <td>Diseñar modelo de datos y entidad Usuario</td>
+      <td>Definir la estructura de la entidad Usuario con sus atributos (nombre, correo, rol, plan de suscripción) y restricciones de unicidad en la base de datos.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro y consulta de usuarios</td>
+      <td>Desarrollar los endpoints REST para registrar nuevos usuarios (con hash de contraseña) y consultar información básica de perfil de acceso.</td>
+      <td>3</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS10 - API Autenticación</td>
+      <td>Implementar servicio de validación de credenciales</td>
+      <td>Desarrollar la lógica de negocio para verificar las credenciales del usuario comparando el correo y el hash de contraseña almacenado en la base de datos.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar generación y validación de tokens de acceso</td>
+      <td>Desarrollar la emisión de JWT al iniciar sesión correctamente y la validación del token en cada solicitud a recursos protegidos del sistema.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar middleware de autenticación para rutas protegidas</td>
+      <td>Crear el middleware que intercepta las solicitudes HTTP, valida el token JWT presente en el encabezado y deniega el acceso si el token es inválido o ha expirado.</td>
+      <td>1</td>
       <td>Adrian Donayre</td>
       <td>Done</td>
     </tr>
