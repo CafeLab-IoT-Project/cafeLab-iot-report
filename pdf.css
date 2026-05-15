@@ -1,0 +1,60 @@
+@media print {
+  h1 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /*
+   * README.md starts with preliminary H1 sections:
+   * 1. Registro de versiones
+   * 2. Project Report Collaboration Insights
+   * 3. Contenido
+   * 4. Student Outcome
+   *
+   * Page breaks begin at the first real chapter heading.
+   */
+  h1:nth-of-type(n + 5) {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  table,
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  th,
+  td {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  figure,
+  img {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  img[src*="userPersonas"] {
+    max-height: 8.25in !important;
+  }
+
+  img[src*="chapter-2"],
+  img[src*="chapter-4"],
+  img[src*="chapter-5"],
+  img[src*="iotmonitoring"],
+  img[src*="impactmapping"] {
+    display: block;
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 8.25in !important;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
