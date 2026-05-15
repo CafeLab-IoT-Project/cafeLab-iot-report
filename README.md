@@ -188,7 +188,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Conclusión</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2">En la entrega TB1, el equipo consolidó una colaboración orientada al diseño, implementación y despliegue de la solución, abarcando principalmente los capítulos V y VI del informe. Cada integrante aportó en la construcción de artefactos UI/UX, prototipos, evidencias de implementación, configuración del entorno, gestión del código fuente, pruebas, documentación de servicios y despliegue de componentes como la landing page, frontend y backend. Esta distribución de responsabilidades permitió evidenciar un trabajo coordinado, con aportes complementarios y alineados al avance funcional de CaféLab.</td>
   </tr>
   <tr>
     <td><strong>Evidencia</strong></td>
