@@ -163,7 +163,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td>En este entregable apoyé al equipo con el sprint backlog, el development evidence for sprint review, el testing suite evidence tanton en frontend como en backend, el execution evidence, el services documentation evidence, el software deployment evidence así como el team collaboration insights.</td>
+    <td>En este entregable apoyé al equipo con el sprint backlog, el development evidence for sprint review, el testing suite evidence tanto en frontend como en backend, el execution evidence, el services documentation evidence, el software deployment evidence así como el team collaboration insights.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
