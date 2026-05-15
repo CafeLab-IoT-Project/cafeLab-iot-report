@@ -5864,6 +5864,21 @@ Production Cost Management 4 - US13
 Production Cost Management 5 - US13
 ![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
 
+Iot Monitoring - US 20 - US 24
+<br>
+Iot Monitoring 1 - US21 - US24
+![image](public/assets/images/chapter-5/ApplicationWireframes/lotes.png)
+
+Iot Monitoring 2 - US23
+![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion.png)
+
+Iot Monitoring 3 - US22
+![image](public/assets/images/chapter-5/ApplicationWireframes/alertas.png)
+
+Iot Monitoring 4 - US20
+![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas.png)
+
+
 #### Mock-ups for Mobiles
 
  *Register Mobile Mockups and Tools*
