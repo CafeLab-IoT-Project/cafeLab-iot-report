@@ -266,7 +266,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4. InventoryEntry](#4-inventoryentry)
     - [Value Objects](#value-objects)
       - [1. RoastLevel (Enum)](#1-roastlevel-enum)
-    - [2. BatchStatus (Enum)](#2-batchstatus-enum)
+      - [2. BatchStatus (Enum)](#2-batchstatus-enum)
       - [3. CoffeeType (Enum)](#3-coffeetype-enum)
       - [4. OriginInfo](#4-origininfo)
       - [5. WeightMeasurement](#5-weightmeasurement)
@@ -328,19 +328,19 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
     - [4.2.5. Bounded Context: IoT Monitoring](#425-bounded-context-iot-monitoring)
       - [4.2.5.1. Domain Layer](#4251-domain-layer)
-        - [Aggregates (`domain/model/aggregates`)](#aggregates-domainmodelaggregates)
-        - [Commands (`domain/model/commands`)](#commands-domainmodelcommands)
-        - [Queries (`domain/model/queries`)](#queries-domainmodelqueries)
-        - [Value Objects (`domain/model/valueobjects`)](#value-objects-domainmodelvalueobjects)
-        - [Services (`domain/services`)](#services-domainservices)
+        - [Aggregates](#aggregates-4)
+        - [Commands](#commands-4)
+        - [Queries](#queries-3)
+        - [Value Objects](#value-objects-3)
+        - [Services](#services)
       - [4.2.5.2. Interface Layer](#4252-interface-layer)
-        - [Controllers (`interfaces.rest`)](#controllers-interfacesrest)
+        - [Controllers](#controllers-4)
       - [4.2.5.3. Application Layer](#4253-application-layer)
-        - [Command Services (`application.internal/commandservices`)](#command-services-applicationinternalcommandservices)
-        - [Query Services (`application.internal/queryservices`)](#query-services-applicationinternalqueryservices)
+        - [Command Services](#command-services-4)
+        - [Query Services](#query-services-3)
       - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-        - [Repositories (`infrastructure/persistence.jpa.repositories`)](#repositories-infrastructurepersistencejparepositories)
-        - [External Services (`infrastructure/external`)](#external-services-infrastructureexternal)
+        - [Repositories](#repositories-3)
+        - [External Services](#external-services-1)
       - [4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams](#4255--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
@@ -376,7 +376,6 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [Diseño responsive](#diseño-responsive)
       - [Informacion clara](#informacion-clara)
   - [5.6. IoT Device Design.](#56-iot-device-design)
-  - [5.6. IoT Device Design.](#56-iot-device-design-1)
     - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
     - [Relación con la Arquitectura de Información](#relación-con-la-arquitectura-de-información)
     - [Guía de Interfaz Física IoT](#guía-de-interfaz-física-iot)
@@ -433,7 +432,31 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
       - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+    - [Frontend Testing Suite Evidence](#frontend-testing-suite-evidence)
+      - [Tabla de commits relacionados al frontend testing](#tabla-de-commits-relacionados-al-frontend-testing)
+      - [Pruebas de Frontend realizadas](#pruebas-de-frontend-realizadas)
+      - [Unit Tests](#unit-tests)
+      - [Integration Tests](#integration-tests)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd)
+      - [Test Execution Evidence](#test-execution-evidence)
+    - [Backend Testing Suite Evidence](#backend-testing-suite-evidence)
+      - [Tabla de commits relacionados al backend testing](#tabla-de-commits-relacionados-al-backend-testing)
+      - [Pruebas de Backend realizadas](#pruebas-de-backend-realizadas)
+      - [Integration Tests](#integration-tests-1)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd-1)
+      - [Test Execution Evidence](#test-execution-evidence-1)
       - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
+      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
+      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
+      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
+      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
+      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
+      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
+      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
+      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
@@ -442,6 +465,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
 
 [Conclusiones](#conclusiones) <br>
 [Bibliografía](#bibliografia) <br>
@@ -4882,7 +4908,7 @@ Este Bounded Context es responsable del monitoreo ambiental del almacén de caf�
 
 El Domain Layer del bounded context IoT Monitoring define las reglas de negocio relacionadas con la conservación ambiental del almacén de café verde. Se organiza en aggregates, commands, queries, value objects e interfaces de servicios de dominio.
  
-##### Aggregates (`domain/model/aggregates`)
+##### Aggregates
  
 **Sensor**
 - Aggregate que representa el dispositivo TrackSilo registrado en el sistema. Es el punto de referencia central del bounded context — todas las lecturas, eventos y umbrales están asociados a un sensor específico.
@@ -4907,7 +4933,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Referencia a `sensorId` como FK al aggregate `Sensor`.
 - El flag `isCurrent` indica cuál es la configuración vigente — cada cambio genera una nueva instancia.
  
-##### Commands (`domain/model/commands`)
+##### Commands
  
 **RegisterSensorReadingCommand**
 - Comando para registrar una nueva lectura de humedad enviada por el Edge.
@@ -4929,7 +4955,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Comando para registrar un nuevo sensor TrackSilo asociado a la cuenta del dueño.
 - Atributos: `userId`, `name`, `location`.
  
-##### Queries (`domain/model/queries`)
+##### Queries
  
 **GetLatestSensorReadingQuery**
 - Query para obtener la lectura de humedad más reciente de un sensor.
@@ -4955,7 +4981,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Query para obtener el sensor registrado asociado a la cuenta de un usuario.
 - Atributos: `userId`.
  
-##### Value Objects (`domain/model/valueobjects`)
+##### Value Objects
  
 **SensorStatus**
 - Representa el estado de conectividad del sensor TrackSilo calculado en base al tiempo transcurrido desde la última lectura recibida.
@@ -4972,7 +4998,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 **ConnectionStatus (Enum)**
 - Enumera los estados de conectividad del sensor: `ONLINE`, `OFFLINE`.
  
-##### Services (`domain/services`)
+##### Services
  
 **SensorCommandService**
 - Interfaz que define el contrato para registrar un nuevo sensor.
@@ -5002,7 +5028,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 La Interface Layer del bounded context IoT Monitoring expone los endpoints REST del sistema. Se organiza en recursos, transformadores, DTOs de control de acceso y controllers.
  
 
-##### Controllers (`interfaces.rest`)
+##### Controllers
  
 **SensorReadingController**
 - Controller del aggregate `SensorReading`. Expone los endpoints REST para el registro de lecturas del sensor enviadas por el Edge y la consulta del historial de humedad.
@@ -5023,7 +5049,7 @@ La Interface Layer del bounded context IoT Monitoring expone los endpoints REST 
 #### 4.2.5.3. Application Layer
 La Application Layer del bounded context IoT Monitoring implementa las interfaces de servicio definidas en el Domain Layer. Se organiza en command services y query services dentro del paquete `application.internal`.
  
-##### Command Services (`application.internal/commandservices`)
+##### Command Services
  
 **SensorCommandServiceImpl**
 - Implementa `SensorCommandService`.
@@ -5042,7 +5068,7 @@ La Application Layer del bounded context IoT Monitoring implementa las interface
 - Valida y persiste los nuevos umbrales de humedad configurados por el dueño, verificando que estén dentro del rango permitido (40%–80% HR). Marca el threshold anterior como no vigente antes de persistir el nuevo.
 - Métodos: `handle(UpdateStorageThresholdsCommand command): Optional<StorageThresholds>`.
  
-##### Query Services (`application.internal/queryservices`)
+##### Query Services
  
 **SensorReadingQueryServiceImpl**
 - Implementa `SensorReadingQueryService`.
@@ -5064,7 +5090,7 @@ La Application Layer del bounded context IoT Monitoring implementa las interface
 #### 4.2.5.4. Infrastructure Layer
 La Infrastructure Layer del bounded context IoT Monitoring provee las implementaciones concretas de persistencia e integración con servicios externos. Un Repository por cada Aggregate del bounded context.
  
-##### Repositories (`infrastructure/persistence.jpa.repositories`)
+##### Repositories
  
 **SensorRepository**
 - Implementa la persistencia del aggregate `Sensor` en MySQL via Spring Data JPA.
@@ -5082,7 +5108,7 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 - Implementa la persistencia del aggregate `StorageThresholds` en MySQL via Spring Data JPA.
 - Métodos: `save(StorageThresholds thresholds)`, `findBySensorIdAndIsCurrentTrue(Long sensorId)`.
  
-##### External Services (`infrastructure/external`)
+##### External Services
  
 **EdgeActuatorClient** (`infrastructure/external.edge`)
 - Envía señales HTTP de activación y desactivación al IoT Edge (Raspberry Pi / PC) para controlar el actuador de deshumidificación.
@@ -5837,6 +5863,21 @@ Production Cost Management 4 - US13
 ![Production Cost Management 4](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament4.png)
 Production Cost Management 5 - US13
 ![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
+
+Iot Monitoring - US 20 - US 24
+<br>
+Iot Monitoring 1 - US21 - US24
+![image](public/assets/images/chapter-5/ApplicationWireframes/lotes.png)
+
+Iot Monitoring 2 - US23
+![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion.png)
+
+Iot Monitoring 3 - US22
+![image](public/assets/images/chapter-5/ApplicationWireframes/alertas.png)
+
+Iot Monitoring 4 - US20
+![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas.png)
+
 
 #### Mock-ups for Mobiles
 
@@ -8840,8 +8881,6 @@ La imagen muestra el servicio MySQL activo en Railway, junto con métricas de op
 ### 6.3.3. Evaluaciones según heurísticas.
 
 ## 6.4. Video About-the-Product.
-
-
 
 # Conclusiones
 
