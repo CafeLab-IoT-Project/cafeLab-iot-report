@@ -5691,8 +5691,13 @@ Iot Monitoring 4 - US20
 
  *USER GOAL: Modificar temperatura de almacen.*
  <br> Como usuario, puedo visualizar las condiciones de temperatura del almacen y modificar la temperatura mediante el modulo de monitoreo.
-![Image](public/assets/images/chapter-5/UserFlowDiagram/user-flow-diagram-tracksilo.png)
 
+![image](public/assets/images/chapter-5/UserFlowDiagram/user-flow-diagram-tracksilo.png)
+
+*USER GOAL: Monitoreo en tiempo real*
+<br> Como usuario, puedo visualizar en tiempo real las condiciones de temperatura y humedad del almacen, así como recibir alertas si alguna de estas condiciones se encuentra fuera del rango recomendado. Además de poder configurar estos valores.
+
+![image](public/assets/images/chapter-5/UserFlowDiagram/MonitoringIot.png)
 
 
 ### 5.4.3. Applications Mock-ups.
