@@ -193,7 +193,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   <tr>
     <td><strong>Evidencia</strong></td>
     <td colspan="2">
-    
+      <p align="center">
+        <img src="public/assets/images/cover/insights/project-report-collaboration-insights-tb1.png" alt="Evidencia de commits del equipo para TB1" width="700">
+      </p>
+    </td>
   </tr>
 </table>
 
