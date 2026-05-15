@@ -14,7 +14,7 @@
 
 
 
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Parcial”</h2>
 
 <p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
 <strong>Nombre del grupo:</strong> Café Metrix<br>
@@ -50,7 +50,7 @@
 </div>
 </div>
 
-<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Abril 2026</p>
+<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Mayo 2026</p>
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
@@ -60,29 +60,45 @@
 <!-- Registro de versiones -->
 # Registro de versiones del informe
 
-| Versión | Fecha       | Autor                                | Descripción de Modificación                                                        |
-|---------|-------------|--------------------------------------|------------------------------------------------------------------------------------|
-| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del documento, estructura del informe y carátula                          |
-| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino            | Creación del registro de versiones y project collaboration insights                |
-| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino            | Refactorización de tabla de contenido y redirecciones                              |
-| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino            | Actualización de lean ux hypothesis statements y canvas                            |
-| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino            | Validación de segmentos objetivos                                                  |
-| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha           | Descripción detallada de la startup y recopilación de perfiles de los integrantes  |
-| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Recopilación de antecendentes y problemáticas                                      |
-| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha           | Optimización de lean ux problem statements y assumptions                           |
-| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Análisis e invetigación de competitividad                                          |
-| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy       | Creación de estrategias y tácticas frente a competidores                           |
-| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo      | Diseño de entrevistas                                                              |
-| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez            | Registro y análisis de entrevistas.                                                |
-| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Actualización de user personas                                                     |
-| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy       | Evaluación de user task matrix                                                     |
-| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Actualización de user journey mapping                                              |
-| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin             | Evaluación del empathy mapping                                                     |
-| 1.16    | 09/04/2026  | Roman, Yum, Donayre                  | Creación de big picture storming                                                   |
-| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo      | Validación del ubiquitous language                                                 |
-| 1.18    | 10/04/2026  | Roman, Yum                           | Revisión de user stories                                                           |
-| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin             | Validación del impact mapping                                                      |
-| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin             | Actualización del product backlog                                                  |
+| Versión | Fecha       | Autor                           | Descripción de Modificación                                                       |
+|---------|-------------|---------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
+| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
+| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
+| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
+| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
+| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
+| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
+| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
+| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
+| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
+| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
+| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
+| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
+| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
+| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
+| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
+| 1.16    | 09/04/2026  | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
+| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
+| 1.18    | 10/04/2026  | Roman, Yum                      | Revisión de user stories                                                          |
+| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
+| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
+| 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
+| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
+| 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
+| 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
+| 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
+| 2.05    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
+| 2.06    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
+| 2.07    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
+| 2.08    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
+| 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
+| 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
+| 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
+| 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
+| 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
+| 2.14    | 13/05/2026  | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -93,7 +109,7 @@ Link del project report: [https://github.com/CafeLab-IoT-Project](https://github
 Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGISTRO DE VERSIOENS DE INFORME-->
 <table>
   <tr>
-    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la tb1</td>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV1</td>
   </tr>
   <tr>
     <td width="10%"><strong>Integrante</strong></td>
@@ -111,7 +127,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
-    <td><strong>Jyum Gonzales, Jorge Suin</strong></td>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
     <td>Me enfoqué en la actualización de la user journey mapping y en la validación del impact mapping. Trabajé en estrecha colaboración con el equipo para asegurar que estas herramientas reflejaran de manera precisa las experiencias y necesidades de nuestros usuarios, lo que nos permitió diseñar soluciones más efectivas.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
   </tr>
@@ -133,6 +149,51 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td><strong>Evidencia</strong></td>
     <td colspan="2">
     <img src="public/assets/images/cover/insights/project-report-collaboration-insights.png" alt="Evidencia de commits del equipo"></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la TB1</td>
+  </tr>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Evidencias</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Roman Cruz, Natalia Bertha</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
+    <td>Desarrollé la sección de IoT Device Design, documentando el diseño del dispositivo TrackSilo, su arquitectura, componentes, flujo de interacción, API Edge y validación del prototipo. Además, actualicé las secciones 6.1.1 a 6.1.4 correspondientes a Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions y Software Deployment Configuration. También realicé y documenté el despliegue del landing page y del frontend, incorporando las evidencias necesarias para sustentar la disponibilidad de los componentes publicados.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td>Participe en el diseño y mejora de la experiencia de usuario y de la plataforma técnica, colaborando con el equipo en la definición style guidelines, de flujos, ejecución de mejoras frontend/backend y comunicación de cambios realizados.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Julca Minaya, Sergio Gino</strong></td>
+    <td>Desarrollé las secciones de prototipado, enfocándome en las funcionalidades y requisitos establecidos por el usuario. Asimismo, prioricé el diseño funcional antes de la arquitectura, con el fin de facilitar una mejor comprensión de la solución por parte del usuario. Trabajé de manera conjunta con el encargado del desarrollo frontend para lograr una interfaz intuitiva, atractiva y fácil de usar.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2">En la entrega TB1, el equipo consolidó una colaboración orientada al diseño, implementación y despliegue de la solución, abarcando principalmente los capítulos V y VI del informe. Cada integrante aportó en la construcción de artefactos UI/UX, prototipos, evidencias de implementación, configuración del entorno, gestión del código fuente, pruebas, documentación de servicios y despliegue de componentes como la landing page, frontend y backend. Esta distribución de responsabilidades permitió evidenciar un trabajo coordinado, con aportes complementarios y alineados al avance funcional de CaféLab.</td>
+  </tr>
+  <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2">
+    
   </tr>
 </table>
 
@@ -250,7 +311,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4. InventoryEntry](#4-inventoryentry)
     - [Value Objects](#value-objects)
       - [1. RoastLevel (Enum)](#1-roastlevel-enum)
-    - [2. BatchStatus (Enum)](#2-batchstatus-enum)
+      - [2. BatchStatus (Enum)](#2-batchstatus-enum)
       - [3. CoffeeType (Enum)](#3-coffeetype-enum)
       - [4. OriginInfo](#4-origininfo)
       - [5. WeightMeasurement](#5-weightmeasurement)
@@ -312,24 +373,145 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
     - [4.2.5. Bounded Context: IoT Monitoring](#425-bounded-context-iot-monitoring)
       - [4.2.5.1. Domain Layer](#4251-domain-layer)
-        - [Aggregates (`domain/model/aggregates`)](#aggregates-domainmodelaggregates)
-        - [Commands (`domain/model/commands`)](#commands-domainmodelcommands)
-        - [Queries (`domain/model/queries`)](#queries-domainmodelqueries)
-        - [Value Objects (`domain/model/valueobjects`)](#value-objects-domainmodelvalueobjects)
-        - [Services (`domain/services`)](#services-domainservices)
+        - [Aggregates](#aggregates-4)
+        - [Commands](#commands-4)
+        - [Queries](#queries-3)
+        - [Value Objects](#value-objects-3)
+        - [Services](#services)
       - [4.2.5.2. Interface Layer](#4252-interface-layer)
-        - [Controllers (`interfaces.rest`)](#controllers-interfacesrest)
+        - [Controllers](#controllers-4)
       - [4.2.5.3. Application Layer](#4253-application-layer)
-        - [Command Services (`application.internal/commandservices`)](#command-services-applicationinternalcommandservices)
-        - [Query Services (`application.internal/queryservices`)](#query-services-applicationinternalqueryservices)
+        - [Command Services](#command-services-4)
+        - [Query Services](#query-services-3)
       - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-        - [Repositories (`infrastructure/persistence.jpa.repositories`)](#repositories-infrastructurepersistencejparepositories)
-        - [External Services (`infrastructure/external`)](#external-services-infrastructureexternal)
+        - [Repositories](#repositories-3)
+        - [External Services](#external-services-1)
       - [4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams](#4255--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
         - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+  - [5.1. Style Guidelines.](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture.](#52-information-architecture)
+    - [5.2.1. Organization Systems.](#521-organization-systems)
+      - [Organización jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
+      - [Organización secuencial (Step-by-step)](#organización-secuencial-step-by-step)
+      - [Organización matricial](#organización-matricial)
+      - [Categorización del contenido](#categorización-del-contenido)
+    - [5.2.2. Labeling Systems.](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems.](#524-searching-systems)
+    - [5.2.5. Navigation Systems.](#525-navigation-systems)
+  - [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+      - [Web Application para Mobile Web Browser](#web-application-para-mobile-webbrowser)
+    - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
+    - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+      - [Mock-ups for Desktops](#mock-ups-for-desktops)
+      - [Mock-ups for Mobiles](#mock-ups-for-mobiles)
+    - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping.](#55-applications-prototyping)
+    - [Web application prototyping](#web-application-prototyping)
+      - [Facilidad de reconocimiento](#facilidad-de-reconocimiento)
+      - [Diseño responsive](#diseño-responsive)
+      - [Informacion clara](#informacion-clara)
+  - [5.6. IoT Device Design.](#56-iot-device-design)
+    - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
+    - [Relación con la Arquitectura de Información](#relación-con-la-arquitectura-de-información)
+    - [Guía de Interfaz Física IoT](#guía-de-interfaz-física-iot)
+    - [Diseño Físico del Dispositivo](#diseño-físico-del-dispositivo)
+    - [Diseño de Circuito](#diseño-de-circuito)
+    - [Prototipo en Wokwi](#prototipo-en-wokwi)
+    - [Flujo Arquitectónico del Prototipo](#flujo-arquitectónico-del-prototipo)
+    - [Edge Prototype API](#edge-prototype-api)
+      - [Endpoints principales](#endpoints-principales)
+      - [Request para actualizar umbrales](#request-para-actualizar-umbrales)
+      - [Request para registrar lectura](#request-para-registrar-lectura)
+      - [Response esperado con humedad elevada](#response-esperado-con-humedad-elevada)
+      - [Response esperado con temperatura elevada, pero humedad normal](#response-esperado-con-temperatura-elevada-pero-humedad-normal)
+    - [Requests de Prueba](#requests-de-prueba)
+      - [Consultar umbrales](#consultar-umbrales)
+      - [Actualizar umbrales](#actualizar-umbrales)
+      - [Registrar lectura con humedad elevada](#registrar-lectura-con-humedad-elevada)
+      - [Registrar lectura con temperatura elevada, pero humedad normal](#registrar-lectura-con-temperatura-elevada-pero-humedad-normal)
+    - [Flujos de Interacción del Prototipo IoT](#flujos-de-interacción-del-prototipo-iot)
+    - [Conclusión del Diseño IoT](#conclusión-del-diseño-iot)
+- [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management.](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [Project Management](#project-management)
+      - [Product UX/UI Design](#product-uxui-design)
+      - [Software Development](#software-development)
+      - [IoT Development](#iot-development)
+      - [Software Testing](#software-testing)
+      - [Software Documentation](#software-documentation)
+    - [6.1.2. Source Code Management.](#612-source-code-management)
+  - [Flujo de trabajo GitFlow:](#flujo-de-trabajo-gitflow)
+      - [Main branch](#main-branch)
+      - [Develop branch](#develop-branch)
+      - [Release branch](#release-branch)
+      - [Feature branch](#feature-branch)
+      - [Hotfix branch](#hotfix-branch)
+  - [Conventional Commits](#conventional-commits)
+  - [Tipos De Conventional Commits](#tipos-de-conventional-commits)
+    - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [TypeScript y Angular](#typescript-y-angular)
+  - [Java y Spring Boot](#java-y-spring-boot)
+  - [Kotlin y Android](#kotlin-y-android)
+  - [Lenguaje Gherkin](#lenguaje-gherkin)
+    - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+      - [Landing Page Deployment](#landing-page-deployment)
+      - [Frontend Deployment](#frontend-deployment)
+      - [Backend Deployment](#backend-deployment)
+  - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators.](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+    - [Frontend Testing Suite Evidence](#frontend-testing-suite-evidence)
+      - [Tabla de commits relacionados al frontend testing](#tabla-de-commits-relacionados-al-frontend-testing)
+      - [Pruebas de Frontend realizadas](#pruebas-de-frontend-realizadas)
+      - [Unit Tests](#unit-tests)
+      - [Integration Tests](#integration-tests)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd)
+      - [Test Execution Evidence](#test-execution-evidence)
+    - [Backend Testing Suite Evidence](#backend-testing-suite-evidence)
+      - [Tabla de commits relacionados al backend testing](#tabla-de-commits-relacionados-al-backend-testing)
+      - [Pruebas de Backend realizadas](#pruebas-de-backend-realizadas)
+      - [Integration Tests](#integration-tests-1)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd-1)
+      - [Test Execution Evidence](#test-execution-evidence-1)
+      - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
+      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
+      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
+      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
+      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
+      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
+      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
+      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
+      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews.](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product.](#64-video-about-the-product)
 - [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -347,20 +529,35 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   <tr>
     <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
     <td>
-      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó activamente en el equipo aportando liderazgo compartido en distintas etapas del proyecto. Contribuyó en el diseño, registro y análisis de entrevistas, lo que permitió tomar decisiones basadas en datos reales. Así mismo, colaboró en el Big Picture Event Storming para estructurar el dominio y posteriormente desarrolló el bounded context Costing, definiendo su arquitectura y diagramas, asegurando coherencia técnica e integración con el sistema.
       <br>
-      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Cumplió este criterio al asumir responsabilidades dentro del equipo en el desarrollo de la Aplicación Mobile y el Diseño mobile FE. Participó en la organización del trabajo del sprint y aportó en la elaboración de secciones clave del capítulo VI, como el Sprint Backlog, las evidencias de desarrollo, testing, ejecución, documentación de servicios y despliegue. Con ello, logró contribuir al liderazgo conjunto del equipo y al cumplimiento de los entregables establecidos.
+      <br>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
-      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo..
+      <br>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
-      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo.
+      <br>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
-      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Participó junto al grupo ofreciendo una guía en cuanto a la dividión de tareas y coorindación de equipo. En particular, se centró en orientar el desarrollo del frontend y asegurarse de que todos comprendieran el propósito de cada parte desarrollada.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
+      <br>
+      <strong>TB1:</strong>
+      Contribuyó al desarrollo integral del sistema IoT mediante la configuración del entorno de desarrollo de software, la gestión del código fuente, la definición de convenciones de programación y la preparación del despliegue del software. Asimismo, participó en el diseño del dispositivo IoT y logró desplegar tanto la landing page como el frontend, demostrando dominio técnico, organización y capacidad para llevar componentes del proyecto a un entorno operativo.
       <br>
     </td>
     <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
@@ -368,20 +565,35 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   <tr>
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
     <td>
-      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>TB1:</strong>
+      <strong>Donayre Alvarez, Adrian Ricardo<br></strong> <strong>AV1:</strong>
       Participó de un entorno colaborativo mediante la definición del Ubiquitous Language, alineando la comunicación del equipo. Participó en la planificación y ejecución de entrevistas, Event Storming y Candidate Context Discovery, asegurando orden y claridad en cada etapa. En el bounded context de Costing, trabajó de forma estructurada para cumplir los objetivos y entregables del proyecto.
       <br>
-      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Cumplió este criterio al colaborar en la planificación y documentación de las tareas del sprint, organizando evidencias relacionadas con la implementación, validación y despliegue del producto. Además, ayudó a establecer metas claras mediante la estructuración del Sprint Backlog y el seguimiento de las actividades desarrolladas. De esta manera, logró aportar a un entorno colaborativo donde el equipo pudo distribuir tareas, revisar avances y cumplir los objetivos del sprint.
+      <br>
+      <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
       <br>
-      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
+      <br>
+      <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
       <br>
-      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
+      <br>
+      <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
       <br>
-      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>TB1:</strong>
+      <strong>TB1:</strong>
+      Colaboró al animar a sus compañeros a coordinar entre ellos y mantener informado al grupo tanto sobre los avances logrados como sobre los objetivos a cumplir. Se logró un ambiente de comunicación y colaboración dentro del equipo.
+      <br>
+      <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
+      <br>
+      <strong>TB1:</strong>
+      Aportó a la organización del trabajo técnico mediante la configuración del entorno de desarrollo, la administración del repositorio y la aplicación de una guía de estilo compartida para mantener consistencia en el código fuente. Además, colaboró en la planificación del despliegue y en la implementación de entregables funcionales, incluyendo el diseño del dispositivo IoT, la landing page desplegada y el frontend desplegado, cumpliendo con los objetivos definidos para la entrega.
       <br>
     </td>
     <td>
@@ -428,7 +640,7 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
   </tr>
   <tr>
   <td><img src="public/assets/images/chapter-1/integrantes/jorge_suin_yum_gonzales.png"alt="Jorge Suin Yum Gonzales" width="200"> </td>
-    <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo con 21 años. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
+    <td>Mi nombre es <strong>Jorge Suin Yum Gonzales</strong>, Soy estudiante del 7° ciclo de la carrera Ingenieria De Software, con 21 años de edad. Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend. Soy una persona responsable y puntual, interesado en tecnologias emergentes y sus aplicaciones, cualidades que aplico al trabajar de manera colaborativa con los integrantes de nuestro equipo.
 </td>
   </tr>
   <tr> 
@@ -445,6 +657,12 @@ Con esto, aseguramos que el proceso será mucho más claro para ambas partes y s
 ## 1.2. Solution Profile
 
 ### 1.2.1 Antecedentes y problemática
+
+Actualmente, múltiples cafeterías de especialidad en Perú enfrentan un problema de falta de organización en sus procesos así como dificultad para monitorear el grano que poseen en conservación. De acuerdo a una investigación realizada por la Pontificia Universidad Católica del Perú, la pérdida de producto causada por un mal seguimiento de los procesos o una conservación deficiente se encuentra entre las principales causas por las que las cafeterías pierden parte de su producto, lo que repercute en dificultades para crecer o, en situaciones más extremas, seguir operando.
+
+Por otro lado, la Universidad Agraria La Molina encontró que, durante la conservación del grano para la elaboración del café de especialidad, los principales factores que desgastan su calidad suelen ser la humedad y la falta de ventilación. En el caso del primer factor, este influye directamente sobre las propiedades físicas, químicas, sensoriales y microbiológicas del café, por lo que al existir demasiada humedad el grano baja su calidad y pierde su sabor característico. En ocasiones, cuando no se toman acciones para reducir la humedad, surge la aparición de hongos, dañando por completo el grano y causando una pérdida alta a la cafetería. En cuanto a la ventilación, es necesario poseer un ambiente preparado para que exista circulación del aire y un deshumedecedor. Ambos son útiles para mantener un ambiente de conservación adecuado, mas, por supuesto, no suficientes, por lo que este debe ser constantemente vigilado y evaluado.
+
+En el estudio de la PUCP, también se encontró que para muchas cafeterías de especialidad era complicado organizar sus procesos tanto internos de registro de inventario como de procesos realizados. La mayoría prefería opciones tradicionales como apuntar con papel y lápiz o simplemente recordar ciertos datos, mas esto ocasiona confusiones más adelante y permite, al no registrarse, que los errores tiendan a repetirse.
 
 **Who (¿Quiénes?):** 
 
@@ -558,7 +776,7 @@ A partir de lo recopilado se propopone una plataforma dual software + iot que au
 
 <td><img src="public/assets/images/chapter-1/lean-ux/lean-ux-canvas.png" alt="LeanUxCanvas"></td>
 
-Enlace para acceder al [Canvas](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
+Enlace para acceder al Canvas [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949).
 
 ## 1.3. Segmentos objetivos
 CafeLab se basa en el dominio del café de especialidad, donde la precisión técnica y la trazabilidad son factores críticos de éxito. De este modo, se han identificado dos perfiles clave que interactúan directamente con el ecosistema IoT propuesto.
@@ -911,8 +1129,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 00:00 - 06:48</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 </table>
@@ -940,8 +1157,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 06:48 - 14:31</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -968,8 +1184,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 14:31 - 20:51</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
 </tr>
 </table>
 
@@ -997,8 +1212,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 20:51 - 27:02</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1025,8 +1239,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 27:02 - 33:21</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1053,8 +1266,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 33:21 - 37:39</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1081,8 +1293,7 @@ Esta información permite definir estrategias orientadas a posicionar CaféLab c
   </tr>
   <tr>
     <td>Timing: 37:39 - 43:11</td>
-    <td>    <a href="https://youtu.be/eJOE34HVgzc">
-        Ver grabación</td>
+    <td>https://youtu.be/eJOE34HVgzc</td>
   </tr>
 </table>
 
@@ -1461,40 +1672,97 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <th>Criterios de Aceptación</th>
 <th>Relacionado con (Epic ID)</th>
 </tr>
+<tr>
+<tr>
+  <td>EP01</td>
+  <td>Gestión de Usuarios y Seguridad</td>
+  <td>Como sistema, necesito tener un control de usuarios seguro y personalizado para proteger la información y ofrecer una experiencia adaptada al perfil.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
 
 <tr>
+  <td>EP02</td>
+  <td>Gestión de Materia Prima</td>
+  <td>Como sistema, necesito ofrecer herramientas para el control, seguimiento y documentación del café verde para garantizar trazabilidad y calidad desde el origen.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP03</td>
+  <td>Gestión de Procesos de Tueste</td>
+  <td>Como sistema, necesito facilitar el registro, análisis y optimización de los procesos de tueste para garantizar resultados consistentes y de alta calidad.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP04</td>
+  <td>Evaluación Sensorial del Café</td>
+  <td>Como sistema, necesito proveer herramientas para la evaluación, registro y análisis sensorial del café para vincular aspectos técnicos con la experiencia final en taza.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP05</td>
+  <td>Gestión de Preparación y Recetas</td>
+  <td>Como sistema, necesito ofrecer herramientas para la gestión de estandarización y de métodos de preparación para garantizar consistencia en la experiencia final.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP06</td>
+  <td>Administración y Reportes</td>
+  <td>Como sistema, necesito proporcionar herramientas de gestión de análisis y reportes que conecten los aspectos técnicos con los operativos y financieros para optimizar la operación integral.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP07</td>
+  <td>Landing Page y Sitio Web Estático</td>
+  <td>Como sistema, necesito proporcionar un sitio web informativo y atractivo que comunique el valor de la plataforma a diferentes segmentos objetivo.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+
+<tr>
+  <td>EP08</td>
+  <td>Monitoreo Ambiental IoT TrackSilo</td>
+  <td>Como sistema, necesito monitorear las condiciones ambientales del almacén de café verde mediante el dispositivo TrackSilo para registrar temperatura, humedad, alertas y acciones de deshumidificación.</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
 <td>US01</td>
 <td>Registro de Proveedores</td>
 <td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
-<td><strong>Escenario 1:</strong> Creación de nuevo proveedor.<br><strong>Dado que</strong> se establece relación con un nuevo proveedor de café<br><strong>Cuando</strong> el usuario ingresa los datos completos (nombre, ubicación, contacto, tipos de café)<br><strong>Entonces</strong> el sistema registra la información y genera un perfil de proveedor.<br><br><strong>Escenario 2:</strong> Evaluación de proveedor.<br><strong>Dado que</strong> se han recibido lotes de un proveedor específico<br><strong>Cuando</strong> el usuario completa el formulario de evaluación con criterios definidos<br><strong>Entonces</strong> el sistema guarda la evaluación en el historial del proveedor.</td>
+<td><strong>Escenario 1:</strong> Creación de nuevo proveedor.<br><strong>Dado que</strong> se establece relación con un nuevo proveedor de café<br><strong>Cuando</strong> el usuario inresa los datos completos (nombre, ubicación, contacto, tipos de café)<br><strong>Entonces</strong> el sistema registra la información y genera un perfil de proveedor.<br><br><strong>Escenario 2:</strong> Evaluación de proveedor.<br><strong>Dado que</strong> se han recibido lotes de un proveedor específico<br><strong>Cuando</strong> el usuario completa el formulario de evaluación con criterios definidos<br><strong>Entonces</strong> el sistema guarda la evaluación en el historial del proveedor.</td>
 <td>EP02</td>
 </tr>
-
 <tr>
 <td>US02</td>
 <td>Gestión de Lotes de Café Verde</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
-<td><strong>Escenario 1:</strong> Ingreso de nuevo lote.<br><strong>Dado que</strong> se recibe un nuevo lote de café verde<br><strong>Cuando</strong> el usuario registra sus características completas (origen, variedad, proceso, altitud, peso)<br><strong>Entonces</strong> el sistema guarda la información para asegurar la trazabilidad para ese lote.<br><br><strong>Escenario 2:</strong> Actualización de estado.<br><strong>Dado que</strong> un lote cambia de condición durante su ciclo de vida<br><strong>Cuando</strong> el usuario actualiza su estado (almacenado, en tueste, agotado)<br><strong>Entonces</strong> el sistema registra la fecha, hora y responsable del cambio de estado.</td>
+<td><strong>Escenario 1:</strong> Ingreso de nuevo lote.<br><strong>Dado que</strong> se recibe un nuevo lote de café verde<br><strong>Cuando</strong> el usuario registra sus características completas (origen, variedad, proceso, altitud, peso)<br><strong>Entonces</strong> el sistema genera un código único de trazabilidad para ese lote.<br><br><strong>Escenario 2:</strong> Registro de consumo del lote.<br><strong>Dado que</strong> un lote de café verde está disponible en inventario<br><strong>Cuando</strong> el usuario registra el consumo de una cantidad de café para su procesamiento<br><strong>Entonces</strong> el sistema descuenta automáticamente el peso consumido del lote y registra el movimiento con fecha.</td>
 <td>EP02</td>
 </tr>
-
 <tr>
 <td>US03</td>
 <td>Creación de Perfil de Tueste</td>
 <td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
 <td><strong>Escenario 1:</strong> Creación manual de perfil.<br><strong>Dado que</strong> el usuario desarrolla un nuevo perfil de tueste<br><strong>Cuando</strong> ingresa todos los parámetros requeridos (temperatura inicial, curva, tiempo, desarrollo)<br><strong>Entonces</strong> el sistema guarda el perfil en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Duplicación y modificación.<br><strong>Dado que</strong> el usuario quiere adaptar un perfil existente<br><strong>Cuando</strong> selecciona la opción "duplicar" y modifica valores específicos<br><strong>Entonces</strong> el sistema crea una nueva variante manteniendo referencia al perfil original.</td>
-
 <td>EP02</td>
 </tr>
-
 <tr>
 <td>US04</td>
 <td>Biblioteca de Defectos de Tueste</td>
-<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
-<td><strong>Escenario 1:</strong> Consulta de defecto.<br><strong>Dado que</strong> el usuario observa anomalías en su café recién tostado<br><strong>Cuando</strong> busca en el sistema por características visuales o descriptivas del problema<br><strong>Entonces</strong> el sistema muestra posibles defectos coincidentes con sus causas y soluciones.<br><br><strong>Escenario 2:</strong> Documentación de soluciones.<br><strong>Dado que</strong> el usuario identifica un defecto específico en su tueste<br><strong>Cuando</strong> accede a la ficha detallada del defecto en la biblioteca<br><strong>Entonces</strong> el sistema presenta causas probables y soluciones recomendadas con ejemplos.</td>
+<td>Como barista profesional, quiero registrar defectos detectados durante el tueste para documentar problemas recurrentes y consultarlos posteriormente</td>
+<td><strong>Escenario 1:</strong> Registro de defecto.<br><strong>Dado que</strong> el usuario detecta un defecto en un lote tostado<br><strong>Cuando</strong> registra en el formulario la información del defecto, incluyendo nombre, descripción, causa probable y acción correctiva<br><strong>Entonces</strong> el sistema guarda el defecto en la biblioteca para su consulta posterior.<br><br><strong>Escenario 2:</strong> Consulta de defectos registrados.<br><strong>Dado que</strong> existen defectos previamente registrados en la biblioteca<br><strong>Cuando</strong> el usuario accede al listado de defectos<br><strong>Entonces</strong> el sistema muestra los defectos registrados con la información escrita por el barista.</td>
 <td>EP03</td>
 </tr>
-
 <tr>
 <td>US05</td>
 <td>Cata Digital Estructurada</td>
@@ -1502,152 +1770,106 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 <td><strong>Escenario 1:</strong> Creación de nueva cata.<br><strong>Dado que</strong> el usuario prueba un café recién tostado<br><strong>Cuando</strong> inicia una nueva sesión de cata vinculada al lote y tueste específicos<br><strong>Entonces</strong> el sistema presenta el formulario completo de evaluación sensorial.<br><br><strong>Escenario 2:</strong> Evaluación por atributos.<br><strong>Dado que</strong> el usuario sigue un protocolo estandarizado de cata<br><strong>Cuando</strong> califica cada atributo sensorial (acidez, cuerpo, dulzor, etc.) en la escala definida<br><strong>Entonces</strong> el sistema genera automáticamente el perfil sensorial completo.</td>
 <td>EP04</td>
 </tr>
-
 <tr>
 <td>US06</td>
-<td>Análisis Comparativo de Tuestes</td>
-<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
-<td><strong>Escenario 1:</strong> Selección de sesiones a comparar.<br><strong>Dado que</strong> el usuario tiene múltiples sesiones de tueste registradas<br><strong>Cuando</strong> selecciona dos o más sesiones para análisis comparativo<br><strong>Entonces</strong> el sistema muestra las curvas superpuestas con códigos de color diferenciados.<br><br><strong>Escenario 2:</strong> Análisis de variables específicas.<br><strong>Dado que</strong> el usuario desea estudiar factores concretos del tueste<br><strong>Cuando</strong> selecciona variables específicas de interés (tiempo desarrollo, temperatura final)<br><strong>Entonces</strong> el sistema muestra su correlación con los resultados sensoriales registrados.</td>
-<td>EP03</td>
+<td>Historial de Catas</td>
+<td>Como barista profesional, quiero acceder al historial de catas por diferentes criterios para analizar tendencias y consistencia</td>
+<td><strong>Escenario 1:</strong> Filtrado por criterios múltiples.<br><strong>Dado que</strong> el usuario busca catas específicas en su historial<br><strong>Cuando</strong> aplica filtros combinados (fecha, origen, variedad, procesamiento)<br><strong>Entonces</strong> el sistema muestra resultados que cumplen todos los criterios establecidos.<br><br><strong>Escenario 2:</strong> Comparación de sesiones de cata.<br><strong>Dado que</strong> el usuario desea analizar diferencias sensoriales entre catas<br><strong>Cuando</strong> selecciona dos sesiones de cata distintas<br><strong>Entonces</strong> el sistema muestra una comparación de sus atributos sensoriales mediante visualizaciones y valores numéricos.</td>
+<td>EP04</td>
 </tr>
-
 <tr>
 <td>US07</td>
 <td>Creación de Recetas de Preparación</td>
 <td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
-<td><strong>Escenario 1:</strong> Creación de receta estándar.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Vinculación a lote específico.<br><strong>Dado que</strong> el usuario optimiza una receta para un café particular<br><strong>Cuando</strong> asocia la receta a un lote específico registrado en el sistema<br><strong>Entonces</strong> el sistema establece la trazabilidad completa desde origen hasta método de preparación.</td>
+<td><strong>Escenario 1:</strong> Creación de receta.<br><strong>Dado que</strong> el usuario desarrolla una nueva receta de preparación<br><strong>Cuando</strong> registra todos los parámetros requeridos (ratio, temperatura, tiempo, molienda, método)<br><strong>Entonces</strong> el sistema guarda la receta completa en su biblioteca personal.<br><br><strong>Escenario 2:</strong> Receta asociada a cata.<br><strong>Dado que</strong> el usuario desea asociar una cata a su receta<br><strong>Cuando</strong> asigna una cata a una receta específica<br><strong>Entonces</strong> el sistema asocia la cata realizada a su receta.</td>
 <td>EP05</td>
 </tr>
-
-
 <tr>
 <td>US08</td>
 <td>Calibración de Molienda</td>
 <td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Referencia visual comparativa.<br><strong>Dado que</strong> el usuario necesita una referencia objetiva de molienda<br><strong>Cuando</strong> adjunta foto de la molienda y registra el tiempo resultante de extracción<br><strong>Entonces</strong> el sistema almacena estos datos como estándar visual para comparaciones futuras.</td>
+<td><strong>Escenario 1:</strong> Registro de nueva calibración.<br><strong>Dado que</strong> el usuario ajusta un molino para un método específico<br><strong>Cuando</strong> documenta la configuración precisa (número, apertura) en el sistema<br><strong>Entonces</strong> la calibración queda registrada con fecha, equipo y método asociados.<br><br><strong>Escenario 2:</strong> Consulta de calibraciones registradas.<br><strong>Dado que</strong> existen calibraciones previamente registradas<br><strong>Cuando</strong> el usuario accede al listado o detalle de una calibración<br><strong>Entonces</strong> el sistema muestra la información completa de la configuración registrada, incluyendo método, equipo, apertura, fecha y observaciones.</td>
 <td>EP05</td>
 </tr>
-
-
 <tr>
 <td>US09</td>
 <td>Portafolio de Bebidas</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
-<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Organización por categorías personalizadas.<br><strong>Dado que</strong> el usuario maneja diversas bebidas en su portafolio<br><strong>Cuando</strong> las clasifica según tipos definidos (espresso, filtrado, signature, estacionales)<br><strong>Entonces</strong> el sistema genera un catálogo organizado y fácilmente consultable.</td>
+<td><strong>Escenario 1:</strong> Creación de ficha de bebida.<br><strong>Dado que</strong> el usuario desarrolla una bebida especial para su menú<br><strong>Cuando</strong> completa la ficha técnica (ingredientes, método, presentación, foto)<br><strong>Entonces</strong> el sistema incorpora la bebida a su portafolio digital profesional.<br><br><strong>Escenario 2:</strong> Gestión de recetas en el portafolio.<br><strong>Dado que</strong> el usuario tiene un portafolio creado<br><strong>Cuando</strong> agrega o elimina recetas dentro del portafolio<br><strong>Entonces</strong> el sistema actualiza el contenido del portafolio mostrando las bebidas disponibles para su consulta.</td>
 <td>EP05</td>
 </tr>
-
 <tr>
 <td>US10</td>
-<td>Visualización de Perfiles Sensoriales</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong> Generación de hexágono sensorial.<br><strong>Dado que</strong> el usuario ha completado una evaluación de cata<br><strong>Cuando</strong> solicita la visualización gráfica de los resultados<br><strong>Entonces</strong> el sistema genera el hexágono con los seis atributos principales evaluados.<br><br><strong>Escenario 2:</strong> Comparación de perfiles.<br><strong>Dado que</strong> el usuario desea contrastar diferentes cafés evaluados<br><strong>Cuando</strong> selecciona múltiples catas para visualización simultánea<br><strong>Entonces</strong> el sistema muestra los hexágonos superpuestos con códigos de color diferenciados.</td>
-<td>EP04</td>
-</tr>
-
-<tr>
-<td>US11</td>
 <td>Control de Inventario Integrado</td>
 <td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
 <td><strong>Escenario 1:</strong> Seguimiento centralizado de stock.<br><strong>Dado que</strong> el usuario maneja múltiples productos y estados del café<br><strong>Cuando</strong> accede al panel central de inventario<br><strong>Entonces</strong> el sistema muestra niveles actuales, movimientos recientes y alertas activas.<br><br><strong>Escenario 2:</strong> Registro de consumo con trazabilidad.<br><strong>Dado que</strong> el usuario utiliza café para producción diaria<br><strong>Cuando</strong> registra el consumo vinculándolo a lotes específicos y productos finales<br><strong>Entonces</strong> el sistema actualiza automáticamente las existencias y mantiene la trazabilidad.</td>
 <td>EP06</td>
 </tr>
-
+<tr>
+<td>US11</td>
+<td>Análisis Comparativo de Tuestes</td>
+<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
+<td><strong>Escenario 1:</strong> Selección de sesiones a comparar.<br><strong>Dado que</strong> el usuario tiene múltiples sesiones de tueste registradas<br><strong>Cuando</strong> selecciona dos o más sesiones para análisis comparativo<br><strong>Entonces</strong> el sistema muestra las curvas superpuestas con códigos de color diferenciados.<br><br><strong>Escenario 2:</strong> Visualización comparativa de perfiles.<br><strong>Dado que</strong> el usuario ha seleccionado múltiples perfiles de tueste<br><strong>Cuando</strong> accede a la vista de comparación<br><strong>Entonces</strong> el sistema presenta las curvas de tueste en un mismo gráfico para facilitar el análisis visual de diferencias.</td>
+<td>EP03</td>
+</tr>
 <tr>
 <td>US12</td>
-<td>Correlación Tueste-Sabor</td>
-<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
-<td><strong>Escenario 1:</strong> Análisis de factor específico.<br><strong>Dado que</strong> el usuario busca entender la influencia de un parámetro técnico<br><strong>Cuando</strong> selecciona una variable concreta de tueste (ej. tiempo de desarrollo)<br><strong>Entonces</strong> el sistema muestra gráficos de correlación con atributos sensoriales registrados.<br><br><strong>Escenario 2:</strong> Identificación de patrones.<br><strong>Dado que</strong> el usuario busca consistencia en resultados sensoriales<br><strong>Cuando</strong> analiza múltiples sesiones que produjeron perfiles similares<br><strong>Entonces</strong> el sistema identifica y destaca patrones comunes en los perfiles de tueste.</td>
+<td>Visualización de Perfiles Sensoriales</td>
+<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
+<td><strong>Escenario 1:</strong> Generación de hexágono sensorial.<br><strong>Dado que</strong> el usuario ha completado una evaluación de cata<br><strong>Cuando</strong> solicita la visualización gráfica de los resultados<br><strong>Entonces</strong> el sistema genera el hexágono con los seis atributos principales evaluados.<br><br><strong>Escenario 2:</strong> Comparación de perfiles.<br><strong>Dado que</strong> el usuario desea contrastar diferentes cafés evaluados<br><strong>Cuando</strong> selecciona múltiples catas para visualización simultánea<br><strong>Entonces</strong> el sistema muestra los hexágonos superpuestos con códigos de color diferenciados.</td>
 <td>EP04</td>
 </tr>
-
-
 <tr>
 <td>US13</td>
-<td>Compartir Recetas</td>
-<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
-<td><strong>Escenario 1:</strong> Compartir con equipo interno.<br><strong>Dado que</strong> el usuario desarrolla una receta exitosa que debe estandarizarse<br><strong>Cuando</strong> la marca como "compartida con equipo" y define permisos<br><strong>Entonces</strong> el sistema la pone a disposición de todos los miembros autorizados.<br><br><strong>Escenario 2:</strong> Sugerencia de mejoras.<br><strong>Dado que</strong> un miembro del equipo prueba una receta compartida<br><strong>Cuando</strong> implementa variaciones y propone ajustes documentados<br><strong>Entonces</strong> el sistema notifica al creador original y registra las sugerencias manteniendo la versión original.</td>
-<td>EP05</td>
+<td>Gestión de Costos de Producción</td>
+<td>Como dueño de cafetería de especialidad, quiero registrar y analizar los costos de producción de cada lote para optimizar mi estructura de precios y rentabilidad</td>
+<td><strong>Escenario 1:</strong> Registro completo de estructura de costos.<br><strong>Dado que</strong> el usuario necesita documentar todos los costos de un lote<br><strong>Cuando</strong> ingresa al módulo de costos y selecciona un lote procesado<br><strong>Entonces</strong> el sistema presenta un formulario con categorías predefinidas para cada tipo de costo (compra, transporte, almacenamiento, mano de obra, procesamiento).<br><br><strong>Escenario 2:</strong> Visualización de indicadores económicos.<br><strong>Dado que</strong> el usuario ha completado el registro de costos<br><strong>Cuando</strong> accede al dashboard económico del lote<br><strong>Entonces</strong> el sistema muestra automáticamente indicadores clave como costo por kilo, costo por taza y margen potencial según precios de mercado.</td>
+<td>EP06</td>
 </tr>
-
 <tr>
 <td>US14</td>
-<td>Análisis de Eficiencia y Rendimiento</td>
-<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
-<td><strong>Escenario 1:</strong> Registro automático de indicadores de rendimiento.<br><strong>Dado que</strong> un lote ha sido procesado completamente<br><strong>Cuando</strong> el usuario finaliza el registro de tueste y producción<br><strong>Entonces</strong> el sistema calcula automáticamente métricas de rendimiento (% de merma, tiempo efectivo, productividad por hora).<br><br><strong>Escenario 2:</strong> Comparativa avanzada entre lotes.<br><strong>Dado que</strong> el usuario busca optimizar su producción<br><strong>Cuando</strong> accede a la herramienta de análisis y selecciona múltiples lotes con atributos similares<br><strong>Entonces</strong> el sistema genera una tabla comparativa que resalta variaciones significativas en rendimiento y señala posibles causas basadas en parámetros registrados.</td>
-<td>EP06</td>
-</tr>
-
-<tr>
-<td>US15</td>
-<td>Reportes de Trazabilidad</td>
-<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
-<td><strong>Escenario 1:</strong> Generación de reporte integral por lote.<br><strong>Dado que</strong> el usuario necesita documentar la trazabilidad completa<br><strong>Cuando</strong> selecciona un lote específico que ha sido procesado<br><strong>Entonces</strong> el sistema genera un informe detallado con toda la cadena documentada desde origen.<br><br><strong>Escenario 2:</strong> Ficha técnica comercial para cliente.<br><strong>Dado que</strong> el usuario necesita comunicar el valor diferencial de su producto<br><strong>Cuando</strong> solicita generar una ficha para un producto específico de su catálogo<br><strong>Entonces</strong> el sistema produce un documento que incluye origen, procesamiento, tueste y perfil sensorial.</td>
-<td>EP06</td>
-</tr>
-
-<tr>
-<td>US16</td>
 <td>Información del Producto</td>
 <td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
 <td><strong>Escenario 1:</strong> Primera visita al sitio.<br><strong>Dado que</strong> el visitante accede por primera vez al sitio web<br><strong>Cuando</strong> carga la página de inicio<br><strong>Entonces</strong> visualiza el mensaje principal (value proposition) y beneficios clave.<br><br><strong>Escenario 2:</strong> Exploración de características.<br><strong>Dado que</strong> el visitante desea conocer las funcionalidades<br><strong>Cuando</strong> navega por la sección de características destacadas<br><strong>Entonces</strong> encuentra información clara con ilustraciones visuales de cada funcionalidad.</td>
 <td>EP07</td>
 </tr>
-
 <tr>
-<td>US17</td>
+<td>US15</td>
 <td>Secciones Específicas por Segmento</td>
 <td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
 <td><strong>Escenario 1:</strong> Sección para baristas.<br><strong>Dado que</strong> el visitante se identifica como barista profesional<br><strong>Cuando</strong> accede a la sección "Para Baristas"<br><strong>Entonces</strong> encuentra contenido adaptado a sus desafíos específicos y testimonios relevantes.<br><br><strong>Escenario 2:</strong> Sección para cafeterías.<br><strong>Dado que</strong> el visitante administra o es dueño de una cafetería<br><strong>Cuando</strong> accede a la sección "Para Cafeterías"<br><strong>Entonces</strong> encuentra contenido enfocado en gestión de negocios, trazabilidad y certificaciones.</td>
 <td>EP07</td>
 </tr>
-
 <tr>
-<td>US18</td>
-<td>Contacto con Equipo</td>
-<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
-<td><strong>Escenario 1:</strong> Envío de consulta.<br><strong>Dado que</strong> el visitante tiene preguntas sobre la plataforma<br><strong>Cuando</strong> completa el formulario de contacto con sus datos y consulta<br><strong>Entonces</strong> el sistema envía la información al equipo y muestra confirmación.<br><br><strong>Escenario 2:</strong> Solicitud de demostración.<br><strong>Dado que</strong> el visitante quiere ver el sistema en funcionamiento<br><strong>Cuando</strong> solicita una demostración personalizada mediante el formulario específico<br><strong>Entonces</strong> el sistema agenda la cita y envía confirmación con los detalles de conexión.</td>
-<td>EP07</td>
-</tr>
-
-<tr>
-<td>US19</td>
+<td>US16</td>
 <td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme a la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td><strong>Escenario 1:</strong> Navegación exitosa<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navega por la landing page y pulsa el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulsa el botón de acceso en la landing page y existe un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
+<td>Como visitante de la landing page, quiero redirigirme hacia la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
+<td><strong>Escenario 1:</strong> Navegación exitosa.<br><strong>Dado que</strong> el visitante quiere empezar a usar el sistema<br><strong>Cuando</strong> navegue por la landing page y pulse el botón de acceso a la plataforma<br><strong>Entonces</strong> será transferido correctamente a la interfaz principal del sistema.<br><br><strong>Escenario 2:</strong> Error de conexión.<br><strong>Dado que</strong> el visitante intenta ingresar al sistema<br><strong>Cuando</strong> pulse el botón de acceso en la landing page y exista un problema de conexión o disponibilidad del servidor<br><strong>Entonces</strong> visualizará una notificación clara explicando el problema.</td>
 <td>EP07</td>
 </tr>
-
 <tr>
-<td>US20</td>
+<td>US17</td>
 <td>Registro y Autenticación (Usuarios)</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
 <td><strong>Escenario 1:</strong> El usuario accede a la pantalla de registro.<br><strong>Dado que</strong> el usuario no tiene una cuenta en el sistema<br><strong>Cuando</strong> visualiza las opciones de registro (correo, Google, Facebook)<br><strong>Entonces</strong> el sistema permite elegir su método preferido y completar el registro.<br><br><strong>Escenario 2:</strong> El usuario inicia sesión.<br><strong>Dado que</strong> el usuario ya tiene una cuenta registrada<br><strong>Cuando</strong> ingresa sus credenciales correctamente<br><strong>Entonces</strong> el sistema le permite acceder a su panel personalizado.<br><br><strong>Escenario 3:</strong> El usuario ingresa credenciales incorrectas.<br><strong>Dado que</strong> el usuario tiene una cuenta<br><strong>Cuando</strong> ingresa datos erróneos<br><strong>Entonces</strong> el sistema muestra un mensaje de error y opciones de recuperación.</td>
 <td>EP01</td>
 </tr>
-
 <tr>
-<td>US21</td>
+<td>US18</td>
 <td>Perfil Personalizado</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
 <td><strong>Escenario 1:</strong> Configuración inicial de perfil.<br><strong>Dado que</strong> el usuario ha completado el registro exitosamente<br><strong>Cuando</strong> accede por primera vez al sistema<br><strong>Entonces</strong> el sistema solicita completar información básica (nombre, rol, experiencia).<br><br><strong>Escenario 2:</strong> Actualización de perfil.<br><strong>Dado que</strong> el usuario desea modificar sus datos personales<br><strong>Cuando</strong> accede a la sección de perfil y realiza cambios<br><strong>Entonces</strong> el sistema guarda la información actualizada correctamente.</td>
 <td>EP01</td>
 </tr>
-
 <tr>
-<td>US22</td>
+<td>US19</td>
 <td>Selección de Plan</td>
 <td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
-<td><strong>Escenario 1:</strong> Visualización de planes.<br><strong>Dado que</strong> el usuario está registrado en el sistema<br><strong>Cuando</strong> accede a la sección de planes disponibles<br><strong>Entonces</strong> el sistema muestra una comparativa detallada de funcionalidades y precios.<br><br><strong>Escenario 2:</strong> Selección de plan gratuito.<br><strong>Dado que</strong> el usuario desea utilizar funcionalidades básicas<br><strong>Cuando</strong> selecciona "Plan Base Cafetal"<br><strong>Entonces</strong> el sistema le otorga acceso inmediato a las funcionalidades correspondientes.</td>
+<td><strong>Escenario 1:</strong> Visualización de planes.<br><strong>Dado que</strong> el usuario está registrado en el sistema<br><strong>Cuando</strong> accede a la sección de planes disponibles<br><strong>Entonces</strong> el sistema muestra una comparativa detallada de funcionalidades y precios.<br><br><strong>Escenario 2:</strong> Selección de plan de suscripción.<br><strong>Dado que</strong> el usuario desea acceder a funcionalidades específicas<br><strong>Cuando</strong> selecciona un plan (barista, dueño de cafetería o plan completo)<br><strong>Entonces</strong> el sistema le otorga acceso a los módulos incluidos según el plan elegido.</td>
 <td>EP01</td>
 </tr>
-
-
-<!-- ==================== EP08 ==================== -->
-
-
 <tr>
-<td>US23</td>
+<td>US20</td>
 <td>Visualización de condiciones del almacén en tiempo real</td>
 <td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde.</td>
 <td>
@@ -1662,9 +1884,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </td>
 <td>EP08</td>
 </tr>
-
 <tr>
-<td>US24</td>
+<td>US21</td>
 <td>Consulta de historial ambiental por lote</td>
 <td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado.</td>
 <td>
@@ -1679,9 +1900,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </td>
 <td>EP08</td>
 </tr>
-
 <tr>
-<td>US25</td>
+<td>US22</td>
 <td>Recepción de alertas por condiciones fuera de rango</td>
 <td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado.</td>
 <td>
@@ -1696,9 +1916,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </td>
 <td>EP08</td>
 </tr>
-
 <tr>
-<td>US26</td>
+<td>US23</td>
 <td>Configuración de umbrales de monitoreo</td>
 <td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades.</td>
 <td>
@@ -1713,9 +1932,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </td>
 <td>EP08</td>
 </tr>
-
 <tr>
-<td>US27</td>
+<td>US24</td>
 <td>Indicador de estado ambiental por lote</td>
 <td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar.</td>
 <td>
@@ -1730,9 +1948,8 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 </td>
 <td>EP08</td>
 </tr>
-
 <tr>
-<td>US28</td>
+<td>US25</td>
 <td>Activación automática del deshumedecedor</td>
 <td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran para no depender de intervención manual.</td>
 <td>
@@ -1750,299 +1967,331 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 
 <tr>
 <td>TS01</td>
-<td>POST HTTPS Proveedores</td>
-<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos completos<br><strong>Entonces</strong> recibo confirmación del proveedor creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito registrar un proveedor con datos incompletos<br><strong>Entonces</strong> recibo un mensaje con los campos requeridos faltantes.</td>
+<td>API HTTPS Proveedores</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar proveedores y permitir su registro, consulta y evaluación</td>
+<td>
+<!--GET-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> consulto proveedores con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los proveedores que cumplen con mi búsqueda.<br><br>
+<!--POST-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> registro un proveedor con datos completos<br>
+<strong>Entonces</strong> recibo confirmación del proveedor creado.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> registro un proveedor con datos incompletos<br>
+<strong>Entonces</strong> recibo un mensaje con los campos faltantes.<br><br>
+<!--PUT-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> actualizo el estado de un proveedor<br>
+<strong>Entonces</strong> recibo el proveedor con su estado actualizado.<br><br>
+<!--DELETE-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de proveedores<br>
+<strong>Cuando</strong> borro un proveedor<br>
+<strong>Entonces</strong> dicho proveedor desaparece de la lista de proveedores.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS02</td>
-<td>GET HTTPS Proveedores</td>
-<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito la lista de proveedores con filtros<br><strong>Entonces</strong> recibo los proveedores que cumplen los criterios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de proveedores<br><strong>Cuando</strong> solicito proveedores con parámetros incorrectos<br><strong>Entonces</strong> recibo un mensaje indicando los parámetros inválidos.</td>
+<td>API HTTPS Lotes</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar lotes de café y su trazabilidad</td>
+<td>
+<!--GET-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> consulto lotes con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los lotes que cumplen con mi búsqueda.<br><br>
+<!--POST-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> registro un lote con datos completos<br>
+<strong>Entonces</strong> recibo confirmación del lote creado.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> registro un lote con un proveedor inexistente<br>
+<strong>Entonces</strong> recibo un mensaje de error.<br><br>
+<!--PUT-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> actualizo el estado de un lote<br>
+<strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br>
+<!--DELETE-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de lotes<br>
+<strong>Cuando</strong> borro un lote<br>
+<strong>Entonces</strong> dicho lote desaparece de la lista de lotes.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS03</td>
-<td>POST HTTPS Lotes</td>
-<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con datos completos<br><strong>Entonces</strong> recibo confirmación del lote creado con su código de trazabilidad.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito registrar un lote con un proveedor inexistente<br><strong>Entonces</strong> recibo un mensaje indicando que el proveedor no existe.</td>
+<td>API HTTPS Perfiles de Tueste</td>
+<td>Como desarrollador, quiero diseñar una API para crear y consultar perfiles de tueste</td>
+<td>
+<!--GET barra de busqueda-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> consulto perfiles de tueste con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los perfiles de tueste que cumplen con mi búsqueda.<br><br>
+<!--GET filtros-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> filtro perfiles de tueste con la opción de filtrar<br>
+<strong>Entonces</strong> recibo los perfiles de tueste que cumplen con mis filtros.<br><br>
+<!--POST-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> creo un perfil con parámetros válidos<br>
+<strong>Entonces</strong> reci perfil creado.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> registro un perfil de tueste con valores fuera de rango<br>
+<strong>Entonces</strong> recibo un mensaje indicando los límites establecidos.
+<!--PUT-->
+<strong>Escenario 5:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> actualizo el estado de un perfile de tueste<br>
+<strong>Entonces</strong> recibo el perfil de tueste con su estado actualizado.<br><br>
+<!--DELETE-->
+<strong>Escenario 6:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br>
+<strong>Cuando</strong> borro un perfil de tueste<br>
+<strong>Entonces</strong> dicho perfil de tueste desaparece de la lista de perfiles de tueste.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS04</td>
-<td>PATCH HTTPS Lotes</td>
-<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito cambiar el estado de un lote a un valor válido<br><strong>Entonces</strong> recibo el lote con su estado actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de lotes<br><strong>Cuando</strong> solicito un cambio de estado no permitido<br><strong>Entonces</strong> recibo un mensaje con los cambios de estado permitidos.</td>
+<td>API HTTPS Defectos de Tueste</td>
+<td>Como desarrollador, quiero diseñar una API para consultar y registrar defectos de tueste</td>
+<td>
+<!--GET barra de busqueda-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> consulto defectos con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo los defectos que cumplen con mi búsqueda.<br><br>
+<!--POST-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> registro un defecto con datos completos<br>
+<strong>Entonces</strong> el sistema guarda el defecto correctamente.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de defectos<br>
+<strong>Cuando</strong> registro un defecto con datos incompletos<br>
+<strong>Entonces</strong> recibo un mensaje indicando los campos faltantes.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS05</td>
-<td>POST HTTPS Perfiles-Tueste</td>
-<td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con parámetros completos<br><strong>Entonces</strong> recibo confirmación del perfil creado en la biblioteca.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles de tueste<br><strong>Cuando</strong> solicito crear un perfil con temperaturas fuera de rango<br><strong>Entonces</strong> recibo un mensaje con los rangos permitidos.</td>
+<td>API HTTPS Catas</td>
+<td>Como desarrollador, quiero diseñar una API para registrar y consultar evaluaciones sensoriales</td>
+<td>
+<!--POST-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> registro una evaluación completa<br>
+<strong>Entonces</strong> el sistema guarda la cata correctamente.<br><br>
+<!--GET filtro-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> filtro catas con la opción de filtrar<br>
+<strong>Entonces</strong> recibo las catas que cumplen con mis filtros.<br><br>
+<!--DELETE-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de catas<br>
+<strong>Cuando</strong> borro una cata<br>
+<strong>Entonces</strong> dicha cata desaparece de la lista de catas.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS06</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
+<td>API HTTPS Recetas</td>
+<td>Como desarrollador, quiero diseñar una API de recetas de preparación para documentar métodos óptimos</td>
+<td>
+<!--GET barra de busqueda-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> busco una receta con la barra de búsqueda<br>
+<strong>Entonces</strong> recibo la receta que cumple con mi criterio de búsqueda.<br><br>
+<!--POST-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> creo una nueva receta de preparación<br>
+<strong>Entonces</strong> el sistema guarda la receta correctamente.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> envío una receta sin la url de su imagen<br>
+<strong>Entonces</strong> recibo un mensaje indicando el campo faltante.<br><br>
+<!--DELETE-->
+<strong>Escenario 4:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de recetas<br>
+<strong>Cuando</strong> borro un ingrediente<br>
+<strong>Entonces</strong> dicho ingrediente desaparece de la lista de ingredientes.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS07</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS08</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS08</td>
-<td>POST HTTPS SesionesTueste</td>
-<td>Como desarrollador, quiero registrar sesiones de tueste mediante una API para documentar cada proceso</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar una sesión con lote y perfil válidos<br><strong>Entonces</strong> recibo confirmación de la sesión iniciada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> solicito iniciar sesión con un lote ya agotado<br><strong>Entonces</strong> recibo un mensaje indicando que el lote no está disponible.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS09</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS09</td>
-<td>PATCH HTTPS SesionesTueste</td>
-<td>Como desarrollador, quiero actualizar lecturas de una sesión de tueste mediante una API para construir la curva real</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío nuevas lecturas de tiempo y temperatura<br><strong>Entonces</strong> recibo confirmación de la lectura registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de sesiones de tueste<br><strong>Cuando</strong> envío lecturas a una sesión ya finalizada<br><strong>Entonces</strong> recibo un mensaje indicando que la sesión está cerrada.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS10</td>
-<td>POST HTTPS Calibraciones</td>
+<td>API HTTPS Calibraciones</td>
 <td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
+<td>
+<!--POST-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una nueva calibración con todos los datos<br>
+<strong>Entonces</strong> el sistema guarda la calibración correctamente.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 3:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> envío una imagen en formato no soportado<br>
+<strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.<br><br>
+<!--PUT-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de calibraciones<br>
+<strong>Cuando</strong> actualizo el estado de una calibración<br>
+<strong>Entonces</strong> recibo la calibración con su estado actualizado.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS08</td>
+<td>API HTTPS Inventario</td>
+<td>Como desarrollador, quiero diseñar una API de inventario integrado para visualizar existencias y registrar consumos</td>
+<td>
+<!--POST-->
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> envío un nuevo registro de consumo con todos los datos<br>
+<strong>Entonces</strong> recibo el historial de consumos actualizado.<br><br>
+<!--POST erroneo-->
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de inventario<br>
+<strong>Cuando</strong> envío un nuevo registro sin la cantidad usada<br>
+<strong>Entonces</strong> recibo un mensaje indicando el campo faltante.
+</td>
+<td>N/A</td>
+</tr>
+
+<tr>
+<td>TS09</td>
+<td>API HTTPS Usuarios</td>
+<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br>
+<strong>Cuando</strong> solicito registrar un usuario con datos válidos<br>
+<strong>Entonces</strong> recibo confirmación de usuario creado con su identificador.<br><br>
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br>
+<strong>Cuando</strong> solicito registrar un usuario con email ya existente<br>
+<strong>Entonces</strong> recibo un mensaje indicando que el email ya está registrado.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS10</td>
-<td>GET HTTPS Análisis-Tueste</td>
-<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar varias sesiones de tueste<br><strong>Entonces</strong> recibo las curvas comparativas y correlaciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito comparar demasiadas sesiones<br><strong>Entonces</strong> recibo un mensaje indicando el límite máximo permitido.</td>
+<td>API HTTPS Autenticación</td>
+<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
+<td>
+<strong>Escenario 1:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de autenticación<br>
+<strong>Cuando</strong> envío credenciales válidas de un usuario<br>
+<strong>Entonces</strong> recibo confirmación de acceso autorizado.<br><br>
+<strong>Escenario 2:</strong><br>
+<strong>Dado que</strong> tengo acceso a la API de autenticación<br>
+<strong>Cuando</strong> envío credenciales incorrectas<br>
+<strong>Entonces</strong> recibo un mensaje indicando error de autenticación.
+</td>
 <td>N/A</td>
 </tr>
 
 <tr>
 <td>TS11</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco defectos con criterios específicos<br><strong>Entonces</strong> recibo los defectos coincidentes y sus soluciones.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de defectos<br><strong>Cuando</strong> busco sin especificar ningún criterio<br><strong>Entonces</strong> recibo un mensaje solicitando al menos un parámetro de búsqueda.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS12</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una evaluación completa de un café<br><strong>Entonces</strong> recibo confirmación de la cata registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de catas<br><strong>Cuando</strong> envío una cata sin identificar el lote o tueste<br><strong>Entonces</strong> recibo un mensaje indicando que se requiere identificar el café.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS13</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil sensorial existente<br><strong>Entonces</strong> recibo los datos para generar el hexágono sensorial.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de perfiles sensoriales<br><strong>Cuando</strong> solicito un perfil que no existe<br><strong>Entonces</strong> recibo un mensaje indicando que el perfil no se encontró.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS14</td>
-<td>GET HTTPS Correlaciones</td>
-<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlaciones entre parámetros específicos<br><strong>Entonces</strong> recibo los datos de correlación estadística.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de análisis<br><strong>Cuando</strong> solicito correlacionar parámetros incompatibles<br><strong>Entonces</strong> recibo un mensaje con los parámetros que pueden correlacionarse.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS15</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta completa de preparación<br><strong>Entonces</strong> recibo confirmación de la receta guardada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de recetas<br><strong>Cuando</strong> envío una receta con método de preparación inválido<br><strong>Entonces</strong> recibo un mensaje con los métodos válidos.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS16</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una nueva calibración con todos los datos<br><strong>Entonces</strong> recibo confirmación de la calibración registrada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de calibraciones<br><strong>Cuando</strong> envío una imagen en formato no soportado<br><strong>Entonces</strong> recibo un mensaje con los formatos de imagen permitidos.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS17</td>
-<td>GET HTTPS Inventario</td>
-<td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito el inventario con filtros específicos<br><strong>Entonces</strong> recibo el listado de existencias actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> solicito información sin tener permisos suficientes<br><strong>Entonces</strong> recibo un mensaje indicando acceso denegado.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS18</td>
-<td>PATCH HTTPS Inventario</td>
-<td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro el consumo de un producto con cantidad válida<br><strong>Entonces</strong> recibo confirmación del inventario actualizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de inventario<br><strong>Cuando</strong> registro un consumo mayor al disponible<br><strong>Entonces</strong> recibo un mensaje indicando stock insuficiente.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS19</td>
-<td>POST HTTPS Contacto</td>
-<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario de contacto completo<br><strong>Entonces</strong> recibo confirmación del mensaje enviado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API pública<br><strong>Cuando</strong> envío un formulario sin email de contacto<br><strong>Entonces</strong> recibo un mensaje indicando que el email es obligatorio.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS20</td>
-<td>POST HTTPS Usuarios</td>
-<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con datos válidos<br><strong>Entonces</strong> recibo confirmación de usuario creado con su identificador.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de registro de usuarios<br><strong>Cuando</strong> solicito registrar un usuario con email ya existente<br><strong>Entonces</strong> recibo un mensaje indicando que el email ya está registrado.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS21</td>
-<td>POST HTTPS Autenticación</td>
-<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales válidas de un usuario<br><strong>Entonces</strong> recibo confirmación de acceso autorizado.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de autenticación<br><strong>Cuando</strong> envío credenciales incorrectas<br><strong>Entonces</strong> recibo un mensaje indicando error de autenticación.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS22</td>
-<td>GET HTTPS Planes</td>
-<td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito la lista de planes disponibles<br><strong>Entonces</strong> recibo todos los planes con sus características y precios.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de planes<br><strong>Cuando</strong> solicito los planes y hay un problema técnico<br><strong>Entonces</strong> recibo un mensaje indicando que el servicio no está disponible.</td>
-<td>N/A</td>
-</tr>
-
-<tr>
-<td>TS23</td>
-<td>POST HTTPS Planes</td>
-<td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
-<td><strong>Escenario 1:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con plan y pago válidos<br><strong>Entonces</strong> recibo confirmación de la suscripción activada.<br><br><strong>Escenario 2:</strong><br><strong>Dado que</strong> tengo acceso a la API de suscripciones<br><strong>Cuando</strong> solicito una suscripción con método de pago rechazado<br><strong>Entonces</strong> recibo un mensaje sobre el problema de pago.</td>
-<td>N/A</td>
-</tr>
-
-
-<!-- ==================== EP09 ==================== -->
-
-
-<tr>
-<td>TS24</td>
-<td>POST API SensorReadings</td>
-<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos.</td>
+<td>API IoT Monitoring</td>
+<td>Como desarrollador, quiero diseñar una API para gestionar el monitoreo ambiental TrackSilo, permitiendo registrar lecturas del sensor, consultar el historial ambiental, validar el estado del dispositivo, registrar eventos del actuador y enviar alertas por condiciones fuera de rango.</td>
 <td>
-<strong>Escenario 1:</strong> Lectura válida registrada.<br>
-<strong>Dado que</strong> el ESP32 tiene acceso al endpoint de lecturas<br>
+<!--POST SensorReadings-->
+<strong>Escenario 1:</strong> Registro de lectura válida del sensor.<br>
+<strong>Dado que</strong> el ESP32 tiene acceso a la API de monitoreo IoT<br>
 <strong>Cuando</strong> envía una lectura con temperatura y humedad dentro de rangos físicamente posibles<br>
-<strong>Entonces</strong> el sistema registra la lectura con timestamp y devuelve confirmación 201.<br><br>
-<strong>Escenario 2:</strong> Lectura con datos inválidos.<br>
+<strong>Entonces</strong> el sistema registra la lectura con timestamp y devuelve confirmación de registro.<br><br>
+
+<!--POST SensorReadings incorrecto-->
+<strong>Escenario 2:</strong> Registro de lectura inválida del sensor.<br>
 <strong>Dado que</strong> el ESP32 envía una lectura con valores fuera de rango físico<br>
-<strong>Cuando</strong> el sistema valida los datos<br>
-<strong>Entonces</strong> devuelve un error 400 indicando los campos inválidos y no almacena la lectura.
-</td>
-<td>EP09</td>
-</tr>
+<strong>Cuando</strong> el sistema valida los datos recibidos<br>
+<strong>Entonces</strong> devuelve un mensaje indicando los campos inválidos y no almacena la lectura.<br><br>
 
-<tr>
-<td>TS25</td>
-<td>GET API SensorReadings</td>
-<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard.</td>
-<td>
-<strong>Escenario 1:</strong> Consulta con rango de fechas.<br>
-<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
+<!--GET SensorReadings-->
+<strong>Escenario 3:</strong> Consulta de historial de lecturas.<br>
+<strong>Dado que</strong> tengo acceso a la API de monitoreo IoT<br>
 <strong>Cuando</strong> solicito lecturas filtrando por fecha de inicio y fin<br>
-<strong>Entonces</strong> recibo el listado paginado de lecturas ordenadas cronológicamente.<br><br>
-<strong>Escenario 2:</strong> Consulta sin parámetros.<br>
-<strong>Dado que</strong> tengo acceso al endpoint de lecturas<br>
+<strong>Entonces</strong> recibo el listado de lecturas de temperatura y humedad ordenadas cronológicamente.<br><br>
+
+<!--GET SensorReadings sin filtros-->
+<strong>Escenario 4:</strong> Consulta de últimas lecturas sin parámetros.<br>
+<strong>Dado que</strong> tengo acceso a la API de monitoreo IoT<br>
 <strong>Cuando</strong> solicito lecturas sin especificar filtros<br>
-<strong>Entonces</strong> recibo las últimas 100 lecturas por defecto.
-</td>
-<td>EP09</td>
-</tr>
+<strong>Entonces</strong> recibo las últimas lecturas registradas por defecto.<br><br>
 
-<tr>
-<td>TS26</td>
-<td>GET API SensorStatus</td>
-<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado.</td>
-<td>
-<strong>Escenario 1:</strong> Sensor activo.<br>
+<!--GET SensorStatus-->
+<strong>Escenario 5:</strong> Consulta de estado del sensor activo.<br>
 <strong>Dado que</strong> el TrackSilo ha enviado al menos una lectura en los últimos 2 minutos<br>
-<strong>Cuando</strong> se consulta el estado del sensor<br>
-<strong>Entonces</strong> el sistema devuelve estado "online" con la última lectura registrada.<br><br>
-<strong>Escenario 2:</strong> Sensor sin respuesta.<br>
+<strong>Cuando</strong> consulto el estado actual del sensor<br>
+<strong>Entonces</strong> el sistema devuelve el estado "online" junto con la última lectura registrada.<br><br>
+
+<!--GET SensorStatus offline-->
+<strong>Escenario 6:</strong> Consulta de estado del sensor sin respuesta.<br>
 <strong>Dado que</strong> el TrackSilo no ha enviado lecturas en más de 2 minutos<br>
-<strong>Cuando</strong> se consulta el estado<br>
-<strong>Entonces</strong> el sistema devuelve estado "offline" con la marca de tiempo de la última lectura recibida.
-</td>
-<td>EP09</td>
-</tr>
+<strong>Cuando</strong> consulto el estado actual del sensor<br>
+<strong>Entonces</strong> el sistema devuelve el estado "offline" junto con la marca de tiempo de la última lectura recibida.<br><br>
 
-<tr>
-<td>TS27</td>
-<td>POST API ActuatorEvents</td>
-<td>Como desarrollador, quiero registrar eventos de activación y desactivación del deshumedecedor mediante una API para mantener el historial de intervenciones del sistema.</td>
-<td>
-<strong>Escenario 1:</strong> Registro de activación.<br>
+<!--POST ActuatorEvents-->
+<strong>Escenario 7:</strong> Registro de activación del actuador.<br>
 <strong>Dado que</strong> el sistema detecta condiciones fuera de rango<br>
-<strong>Cuando</strong> se activa el actuador<br>
-<strong>Entonces</strong> el sistema registra un evento con tipo "ACTIVATE", timestamp y los valores del sensor que lo dispararon, devolviendo 201.<br><br>
-<strong>Escenario 2:</strong> Registro de desactivación.<br>
-<strong>Dado que</strong> el actuador está activo y las condiciones vuelven a rango óptimo<br>
-<strong>Cuando</strong> el sistema desactiva el actuador<br>
-<strong>Entonces</strong> registra un evento "DEACTIVATE" con timestamp y calcula la duración del ciclo de deshumidificación.
-</td>
-<td>EP09</td>
-</tr>
+<strong>Cuando</strong> se activa la señal del deshumedecedor<br>
+<strong>Entonces</strong> el sistema registra un evento de tipo "ACTIVATE" con timestamp y los valores del sensor que lo dispararon.<br><br>
 
-<tr>
-<td>TS28</td>
-<td>POST API AlertNotifications</td>
-<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real.</td>
-<td>
-<strong>Escenario 1:</strong> Notificación enviada correctamente.<br>
+<!--POST ActuatorEvents desactivación-->
+<strong>Escenario 8:</strong> Registro de desactivación del actuador.<br>
+<strong>Dado que</strong> el actuador está activo y las condiciones vuelven al rango óptimo<br>
+<strong>Cuando</strong> el sistema desactiva la señal del deshumedecedor<br>
+<strong>Entonces</strong> registra un evento de tipo "DEACTIVATE" con timestamp y duración del ciclo de deshumidificación.<br><br>
+
+<!--POST AlertNotifications-->
+<strong>Escenario 9:</strong> Envío de alerta por condición fuera de rango.<br>
 <strong>Dado que</strong> el sistema detecta una lectura fuera del umbral configurado<br>
 <strong>Cuando</strong> se activa el servicio de notificaciones<br>
-<strong>Entonces</strong> se envía un email al dueño con el tipo de alerta, valor registrado, umbral superado y timestamp, y se registra el envío en la base de datos.<br><br>
-<strong>Escenario 2:</strong> Error en el envío.<br>
+<strong>Entonces</strong> se envía un email al dueño con el tipo de alerta, valor registrado, umbral superado y timestamp.<br><br>
+
+<!--POST AlertNotifications error-->
+<strong>Escenario 10:</strong> Error en el envío de alerta.<br>
 <strong>Dado que</strong> el servicio de email no está disponible<br>
 <strong>Cuando</strong> el sistema intenta enviar la notificación<br>
-<strong>Entonces</strong> registra el intento fallido y lo encola para reintento en los próximos 5 minutos.
+<strong>Entonces</strong> registra el intento fallido y lo deja pendiente para un próximo reintento.
 </td>
-<td>EP09</td>
+<td>N/A</td>
 </tr>
 
 </table>
@@ -2054,433 +2303,56 @@ Las user stories son una forma de convertir el lenguaje informal de los usuarios
 ![alt text](<public/assets/images/impactmapping/Valeria Ramos.png>)
 
 ## 3.3. Product Backlog
-
-<table border="1">
-<tr>
-<th>#</th>
-<th>User Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Story Points</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>US16</td>
-<td>Información del Producto</td>
-<td>Como visitante de la landing page, quiero encontrar información clara sobre la plataforma para entender sus beneficios y decidir si me interesa</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>US17</td>
-<td>Secciones Específicas por Segmento</td>
-<td>Como visitante de la landing page, quiero encontrar información adaptada a mi perfil profesional para evaluar si la solución responde a mis necesidades específicas</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>US18</td>
-<td>Contacto con Equipo</td>
-<td>Como visitante de la landing page, quiero contactar con el equipo del sistema para resolver dudas específicas antes de registrarme</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td>US19</td>
-<td>Acceso directo a plataforma</td>
-<td>Como visitante de la landing page, quiero redirigirme a la aplicación principal desde la landing page para comenzar a usar el sistema inmediatamente</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td>US20</td>
-<td>Registro y Autenticación (Usuarios)</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrarme y acceder de forma segura para mantener la confidencialidad de mis datos</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td>US21</td>
-<td>Perfil Personalizado</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero configurar mi perfil profesional para personalizar mi experiencia y mostrar mi identidad dentro del sistema</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td>US22</td>
-<td>Selección de Plan</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero elegir entre los diferentes planes disponibles para acceder a las funcionalidades que mejor se adapten a mis necesidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td>US01</td>
-<td>Registro de Proveedores</td>
-<td>Como dueño de cafetería de especialidad, quiero registrar y evaluar a mis proveedores para mantener un control de calidad y trazabilidad de origen</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td>US02</td>
-<td>Gestión de Lotes de Café Verde</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero registrar y hacer seguimiento de cada lote de café verde para mantener control de inventario y trazabilidad</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>10</td>
-<td>US23</td>
-<td>Visualización de condiciones del almacén en tiempo real</td>
-<td>Como dueño de cafetería de especialidad, quiero visualizar la temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>11</td>
-<td>US25</td>
-<td>Recepción de alertas por condiciones fuera de rango</td>
-<td>Como dueño de cafetería de especialidad, quiero recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados para actuar antes de que el café se vea afectado</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>12</td>
-<td>US28</td>
-<td>Activación automática del deshumedecedor</td>
-<td>Como dueño de cafetería de especialidad, quiero que el sistema active automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran para no depender de intervención manual</td>
-<td>8</td>
-</tr>
-
-<tr>
-<td>13</td>
-<td>US26</td>
-<td>Configuración de umbrales de monitoreo</td>
-<td>Como dueño de cafetería de especialidad, quiero configurar los valores de umbral de temperatura y humedad según el tipo de café almacenado para personalizar las alertas a mis necesidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>14</td>
-<td>US24</td>
-<td>Consulta de historial ambiental por lote</td>
-<td>Como dueño de cafetería de especialidad o barista profesional, quiero consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico para entender las condiciones en que estuvo conservado</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>15</td>
-<td>US27</td>
-<td>Indicador de estado ambiental por lote</td>
-<td>Como barista profesional, quiero ver un indicador visual del estado ambiental del lote con el que voy a trabajar para anticipar ajustes en mis parámetros de extracción antes de calibrar</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>16</td>
-<td>US11</td>
-<td>Control de Inventario Integrado</td>
-<td>Como dueño de cafetería de especialidad, quiero gestionar el inventario de café verde y tostado de forma integrada para optimizar recursos y prevenir desabastecimiento</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>17</td>
-<td>US03</td>
-<td>Creación de Perfil de Tueste</td>
-<td>Como barista profesional, quiero crear perfiles de tueste personalizados para documentar y replicar mis mejores resultados</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>18</td>
-<td>US05</td>
-<td>Cata Digital Estructurada</td>
-<td>Como barista profesional, quiero registrar evaluaciones sensoriales estructuradas para documentar las características de cada lote y tueste</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>19</td>
-<td>US07</td>
-<td>Creación de Recetas de Preparación</td>
-<td>Como barista profesional, quiero crear y documentar recetas detalladas para cada método de preparación y tipo de café</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>20</td>
-<td>US14</td>
-<td>Análisis de Eficiencia y Rendimiento</td>
-<td>Como dueño de cafetería de especialidad, quiero monitorear y comparar el rendimiento productivo entre distintos lotes para identificar factores que afectan la eficiencia</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>21</td>
-<td>US12</td>
-<td>Correlación Tueste-Sabor</td>
-<td>Como barista profesional, quiero visualizar la correlación entre parámetros de tueste y resultados sensoriales para optimizar mis perfiles</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>22</td>
-<td>US10</td>
-<td>Visualización de Perfiles Sensoriales</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero visualizar perfiles sensoriales en formato de hexágono o gráfico de radar para interpretar y comparar cualidades</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>23</td>
-<td>US15</td>
-<td>Reportes de Trazabilidad</td>
-<td>Como dueño de cafetería de especialidad, quiero generar reportes de trazabilidad completa para comunicar transparencia y valor agregado</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>24</td>
-<td>US08</td>
-<td>Calibración de Molienda</td>
-<td>Como barista profesional, quiero documentar configuraciones de molienda para diferentes equipos y métodos para mantener consistencia entre preparaciones</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>25</td>
-<td>US06</td>
-<td>Análisis Comparativo de Tuestes</td>
-<td>Como barista profesional, quiero comparar diferentes sesiones de tueste para identificar patrones y optimizar resultados</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>26</td>
-<td>US13</td>
-<td>Compartir Recetas</td>
-<td>Como barista profesional, quiero compartir mis recetas con mi equipo para mantener consistencia en la preparación</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>27</td>
-<td>US04</td>
-<td>Biblioteca de Defectos de Tueste</td>
-<td>Como barista profesional, quiero acceder a una biblioteca de defectos comunes para identificar y corregir problemas en mis tuestes</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>28</td>
-<td>US09</td>
-<td>Portafolio de Bebidas</td>
-<td>Como barista profesional o dueño de cafetería de especialidad, quiero crear un portafolio digital de bebidas y recetas para presentar a clientes o eventos</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>29</td>
-<td>TS20</td>
-<td>POST HTTPS Usuarios</td>
-<td>Como desarrollador, quiero registrar nuevos usuarios mediante una API para permitir el acceso al sistema</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>30</td>
-<td>TS21</td>
-<td>POST HTTPS Autenticación</td>
-<td>Como desarrollador, quiero autenticar usuarios mediante una API para validar credenciales y permitir acceso seguro</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>31</td>
-<td>TS22</td>
-<td>GET HTTPS Planes</td>
-<td>Como desarrollador, quiero obtener información sobre planes disponibles mediante una API para mostrar opciones de suscripción</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>32</td>
-<td>TS23</td>
-<td>POST HTTPS Planes</td>
-<td>Como desarrollador, quiero suscribir usuarios a planes mediante una API para gestionar acceso a funcionalidades</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>33</td>
-<td>TS03</td>
-<td>POST HTTPS Lotes</td>
-<td>Como desarrollador, quiero registrar nuevos lotes de café mediante una API para mantener el inventario actualizado</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>34</td>
-<td>TS04</td>
-<td>PATCH HTTPS Lotes</td>
-<td>Como desarrollador, quiero actualizar el estado de lotes mediante una API para reflejar cambios en el ciclo de vida</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>35</td>
-<td>TS24</td>
-<td>POST API SensorReadings</td>
-<td>Como desarrollador, quiero registrar lecturas del sensor TrackSilo mediante una API REST para almacenar los datos de temperatura y humedad en la base de datos</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>36</td>
-<td>TS25</td>
-<td>GET API SensorReadings</td>
-<td>Como desarrollador, quiero consultar el historial de lecturas del sensor mediante una API REST para construir el gráfico de condiciones ambientales en el dashboard</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>37</td>
-<td>TS26</td>
-<td>GET API SensorStatus</td>
-<td>Como desarrollador, quiero consultar el estado actual del sensor TrackSilo mediante una API para mostrar en el dashboard si el dispositivo está activo o desconectado</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>38</td>
-<td>TS27</td>
-<td>POST API ActuatorEvents</td>
-<td>Como desarrollador, quiero registrar eventos de activación y desactivación del deshumedecedor mediante una API para mantener el historial de intervenciones del sistema</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>39</td>
-<td>TS28</td>
-<td>POST API AlertNotifications</td>
-<td>Como desarrollador, quiero enviar notificaciones por email cuando se superen los umbrales configurados para mantener informado al dueño de la cafetería en tiempo real</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>40</td>
-<td>TS07</td>
-<td>POST HTTPS Catas</td>
-<td>Como desarrollador, quiero registrar evaluaciones sensoriales mediante una API para documentar características del café</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>41</td>
-<td>TS08</td>
-<td>GET HTTPS PerfilesSensoriales</td>
-<td>Como desarrollador, quiero obtener perfiles sensoriales mediante una API para visualizar y comparar cualidades</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>42</td>
-<td>TS05</td>
-<td>POST HTTPS Perfiles-Tueste</td>
-<td>Como desarrollador, quiero crear perfiles de tueste mediante una API para estandarizar procesos</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>43</td>
-<td>TS09</td>
-<td>POST HTTPS Recetas</td>
-<td>Como desarrollador, quiero registrar recetas de preparación mediante una API para documentar métodos óptimos</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>44</td>
-<td>TS17</td>
-<td>GET HTTPS Inventario</td>
-<td>Como desarrollador, quiero consultar el inventario integrado mediante una API para visualizar existencias</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>45</td>
-<td>TS18</td>
-<td>PATCH HTTPS Inventario</td>
-<td>Como desarrollador, quiero actualizar el consumo de inventario mediante una API para mantener existencias actualizadas</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>46</td>
-<td>TS14</td>
-<td>GET HTTPS Correlaciones</td>
-<td>Como desarrollador, quiero obtener correlaciones entre tueste y sabor mediante una API para optimizar procesos</td>
-<td>3</td>
-</tr>
-
-<tr>
-<td>47</td>
-<td>TS10</td>
-<td>GET HTTPS Análisis-Tueste</td>
-<td>Como desarrollador, quiero obtener análisis comparativo de tuestes mediante una API para identificar patrones</td>
-<td>5</td>
-</tr>
-
-<tr>
-<td>48</td>
-<td>TS01</td>
-<td>POST HTTPS Proveedores</td>
-<td>Como desarrollador, quiero registrar nuevos proveedores mediante una API para ampliar la red de suministro</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>49</td>
-<td>TS02</td>
-<td>GET HTTPS Proveedores</td>
-<td>Como desarrollador, quiero consultar proveedores mediante una API para mostrar opciones disponibles</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>50</td>
-<td>TS10</td>
-<td>POST HTTPS Calibraciones</td>
-<td>Como desarrollador, quiero registrar calibraciones de molienda mediante una API para mantener consistencia entre preparaciones</td>
-<td>2</td>
-</tr>
-
-<tr>
-<td>51</td>
-<td>TS11</td>
-<td>GET HTTPS DefectosTueste</td>
-<td>Como desarrollador, quiero consultar defectos comunes en tueste mediante una API para asistir en diagnóstico de problemas</td>
-<td>1</td>
-</tr>
-
-<tr>
-<td>52</td>
-<td>TS19</td>
-<td>POST HTTPS Contacto</td>
-<td>Como desarrollador, quiero procesar formularios de contacto mediante una API para gestionar comunicaciones con visitantes</td>
-<td>1</td>
-</tr>
-
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>#<br>Orden</th>
+      <th>User<br>Story<br>Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story<br>Points<br>(1/2/3/5/8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>US02</td><td>Gestión de Lotes de Café Verde</td><td>Registrar y hacer seguimiento de lotes de café verde para control y trazabilidad.</td><td>8</td></tr>
+    <tr><td>2</td><td>US20</td><td>Visualización de condiciones del almacén en tiempo real</td><td>Visualizar temperatura y humedad del almacén en tiempo real desde el dashboard de CaféLab para tomar decisiones oportunas sobre la conservación del café verde.</td><td>5</td></tr>
+    <tr><td>3</td><td>US22</td><td>Recepción de alertas por condiciones fuera de rango</td><td>Recibir una notificación inmediata cuando la temperatura o humedad del almacén superen los umbrales configurados.</td><td>5</td></tr>
+    <tr><td>4</td><td>US25</td><td>Activación automática del deshumedecedor</td><td>Activar automáticamente la señal de deshumidificación cuando las condiciones del almacén lo requieran.</td><td>8</td></tr>
+    <tr><td>5</td><td>US23</td><td>Configuración de umbrales de monitoreo</td><td>Configurar valores de umbral de temperatura y humedad según el tipo de café almacenado.</td><td>3</td></tr>
+    <tr><td>6</td><td>US21</td><td>Consulta de historial ambiental por lote</td><td>Consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico.</td><td>5</td></tr>
+    <tr><td>7</td><td>US24</td><td>Indicador de estado ambiental por lote</td><td>Ver un indicador visual del estado ambiental del lote para anticipar ajustes en los parámetros de extracción.</td><td>3</td></tr>
+    <tr><td>8</td><td>US10</td><td>Control de Inventario Integrado</td><td>Gestionar inventario de café verde y tostado de forma integrada.</td><td>8</td></tr>
+    <tr><td>9</td><td>US13</td><td>Gestión de Costos de Producción</td><td>Registrar y analizar costos de producción por lote.</td><td>8</td></tr>
+    <tr><td>10</td><td>US17</td><td>Registro y Autenticación</td><td>Registro y acceso seguro al sistema.</td><td>8</td></tr>
+    <tr><td>11</td><td>US01</td><td>Registro de Proveedores</td><td>Registrar y evaluar proveedores.</td><td>5</td></tr>
+    <tr><td>12</td><td>US03</td><td>Perfil de Tueste</td><td>Crear perfiles de tueste personalizados.</td><td>5</td></tr>
+    <tr><td>13</td><td>US05</td><td>Cata Digital</td><td>Registrar evaluaciones sensoriales.</td><td>5</td></tr>
+    <tr><td>14</td><td>US06</td><td>Historial de Catas</td><td>Consultar historial de catas.</td><td>5</td></tr>
+    <tr><td>15</td><td>US07</td><td>Recetas de Preparación</td><td>Crear recetas detalladas.</td><td>5</td></tr>
+    <tr><td>16</td><td>US09</td><td>Portafolio de Bebidas</td><td>Crear portafolio de bebidas.</td><td>5</td></tr>
+    <tr><td>17</td><td>US11</td><td>Análisis de Tuestes</td><td>Comparar sesiones de tueste.</td><td>5</td></tr>
+    <tr><td>18</td><td>US12</td><td>Perfiles Sensoriales</td><td>Visualizar perfiles en gráficos.</td><td>5</td></tr>
+    <tr><td>19</td><td>US18</td><td>Perfil Personalizado</td><td>Configurar perfil del usuario.</td><td>5</td></tr>
+    <tr><td>20</td><td>US19</td><td>Selección de Plan</td><td>Elegir plan de suscripción.</td><td>5</td></tr>
+    <tr><td>21</td><td>US04</td><td>Defectos de Tueste</td><td>Registrar defectos de tueste.</td><td>3</td></tr>
+    <tr><td>22</td><td>US08</td><td>Calibración de Molienda</td><td>Registrar configuraciones de molienda.</td><td>3</td></tr>
+    <tr><td>23</td><td>US14</td><td>Información del Producto</td><td>Mostrar información en landing.</td><td>3</td></tr>
+    <tr><td>24</td><td>US15</td><td>Secciones por Segmento</td><td>Contenido adaptado por perfil.</td><td>3</td></tr>
+    <tr><td>25</td><td>US16</td><td>Acceso a Plataforma</td><td>Redirigir a la aplicación.</td><td>3</td></tr>
+    <tr><td>26</td><td>TS11</td><td>API IoT Monitoring</td><td>API para gestionar el monitoreo ambiental TrackSilo, permitiendo registrar lecturas del sensor, consultar historial ambiental, validar el estado del dispositivo, registrar eventos del actuador y enviar alertas por condiciones fuera de rango.</td><td>8</td></tr>
+    <tr><td>27</td><td>TS02</td><td>API Lotes</td><td>API para gestionar lotes y trazabilidad.</td><td>8</td></tr>
+    <tr><td>28</td><td>TS03</td><td>API Perfiles de Tueste</td><td>API para perfiles de tueste.</td><td>8</td></tr>
+    <tr><td>29</td><td>TS01</td><td>API Proveedores</td><td>API para proveedores.</td><td>5</td></tr>
+    <tr><td>30</td><td>TS05</td><td>API Catas</td><td>API de evaluaciones sensoriales.</td><td>5</td></tr>
+    <tr><td>31</td><td>TS06</td><td>API Recetas</td><td>API de recetas.</td><td>5</td></tr>
+    <tr><td>32</td><td>TS07</td><td>API Calibraciones</td><td>API de calibraciones.</td><td>5</td></tr>
+    <tr><td>33</td><td>TS08</td><td>API Inventario</td><td>API de inventario.</td><td>5</td></tr>
+    <tr><td>34</td><td>TS09</td><td>API Usuarios</td><td>API de registro de usuarios.</td><td>5</td></tr>
+    <tr><td>35</td><td>TS10</td><td>API Autenticación</td><td>API de autenticación.</td><td>5</td></tr>
+    <tr><td>36</td><td>TS04</td><td>API Defectos</td><td>API de defectos de tueste.</td><td>3</td></tr>
+  </tbody>
 </table>
+
 
 # Capítulo IV: Solution Software Design
 
@@ -3112,7 +2984,7 @@ Publica InventoryUpdatedEvent que Costing consume para calcular merma real.
 Valores: LIGHT, MEDIUM, MEDIUM_DARK, DARK.  
 Representa el nivel de tueste del café con sus características sensoriales asociadas.
 
-### 2. BatchStatus (Enum)
+#### 2. BatchStatus (Enum)
 
 Valores: RECEIVED, STORED, ROASTING, FINISHED.  
 Define el ciclo de vida de un lote dentro del sistema.
@@ -5082,7 +4954,7 @@ Este Bounded Context es responsable del monitoreo ambiental del almacén de caf�
 
 El Domain Layer del bounded context IoT Monitoring define las reglas de negocio relacionadas con la conservación ambiental del almacén de café verde. Se organiza en aggregates, commands, queries, value objects e interfaces de servicios de dominio.
  
-##### Aggregates (`domain/model/aggregates`)
+##### Aggregates
  
 **Sensor**
 - Aggregate que representa el dispositivo TrackSilo registrado en el sistema. Es el punto de referencia central del bounded context — todas las lecturas, eventos y umbrales están asociados a un sensor específico.
@@ -5107,7 +4979,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Referencia a `sensorId` como FK al aggregate `Sensor`.
 - El flag `isCurrent` indica cuál es la configuración vigente — cada cambio genera una nueva instancia.
  
-##### Commands (`domain/model/commands`)
+##### Commands
  
 **RegisterSensorReadingCommand**
 - Comando para registrar una nueva lectura de humedad enviada por el Edge.
@@ -5129,7 +5001,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Comando para registrar un nuevo sensor TrackSilo asociado a la cuenta del dueño.
 - Atributos: `userId`, `name`, `location`.
  
-##### Queries (`domain/model/queries`)
+##### Queries
  
 **GetLatestSensorReadingQuery**
 - Query para obtener la lectura de humedad más reciente de un sensor.
@@ -5155,7 +5027,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 - Query para obtener el sensor registrado asociado a la cuenta de un usuario.
 - Atributos: `userId`.
  
-##### Value Objects (`domain/model/valueobjects`)
+##### Value Objects
  
 **SensorStatus**
 - Representa el estado de conectividad del sensor TrackSilo calculado en base al tiempo transcurrido desde la última lectura recibida.
@@ -5172,7 +5044,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 **ConnectionStatus (Enum)**
 - Enumera los estados de conectividad del sensor: `ONLINE`, `OFFLINE`.
  
-##### Services (`domain/services`)
+##### Services
  
 **SensorCommandService**
 - Interfaz que define el contrato para registrar un nuevo sensor.
@@ -5202,7 +5074,7 @@ El Domain Layer del bounded context IoT Monitoring define las reglas de negocio 
 La Interface Layer del bounded context IoT Monitoring expone los endpoints REST del sistema. Se organiza en recursos, transformadores, DTOs de control de acceso y controllers.
  
 
-##### Controllers (`interfaces.rest`)
+##### Controllers
  
 **SensorReadingController**
 - Controller del aggregate `SensorReading`. Expone los endpoints REST para el registro de lecturas del sensor enviadas por el Edge y la consulta del historial de humedad.
@@ -5223,7 +5095,7 @@ La Interface Layer del bounded context IoT Monitoring expone los endpoints REST 
 #### 4.2.5.3. Application Layer
 La Application Layer del bounded context IoT Monitoring implementa las interfaces de servicio definidas en el Domain Layer. Se organiza en command services y query services dentro del paquete `application.internal`.
  
-##### Command Services (`application.internal/commandservices`)
+##### Command Services
  
 **SensorCommandServiceImpl**
 - Implementa `SensorCommandService`.
@@ -5242,7 +5114,7 @@ La Application Layer del bounded context IoT Monitoring implementa las interface
 - Valida y persiste los nuevos umbrales de humedad configurados por el dueño, verificando que estén dentro del rango permitido (40%–80% HR). Marca el threshold anterior como no vigente antes de persistir el nuevo.
 - Métodos: `handle(UpdateStorageThresholdsCommand command): Optional<StorageThresholds>`.
  
-##### Query Services (`application.internal/queryservices`)
+##### Query Services
  
 **SensorReadingQueryServiceImpl**
 - Implementa `SensorReadingQueryService`.
@@ -5264,7 +5136,7 @@ La Application Layer del bounded context IoT Monitoring implementa las interface
 #### 4.2.5.4. Infrastructure Layer
 La Infrastructure Layer del bounded context IoT Monitoring provee las implementaciones concretas de persistencia e integración con servicios externos. Un Repository por cada Aggregate del bounded context.
  
-##### Repositories (`infrastructure/persistence.jpa.repositories`)
+##### Repositories
  
 **SensorRepository**
 - Implementa la persistencia del aggregate `Sensor` en MySQL via Spring Data JPA.
@@ -5282,7 +5154,7 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 - Implementa la persistencia del aggregate `StorageThresholds` en MySQL via Spring Data JPA.
 - Métodos: `save(StorageThresholds thresholds)`, `findBySensorIdAndIsCurrentTrue(Long sensorId)`.
  
-##### External Services (`infrastructure/external`)
+##### External Services
  
 **EdgeActuatorClient** (`infrastructure/external.edge`)
 - Envía señales HTTP de activación y desactivación al IoT Edge (Raspberry Pi / PC) para controlar el actuador de deshumidificación.
@@ -5300,6 +5172,3762 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 ![alt text](public/assets/images/iotmonitoring/database.png)
 
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Style Guidelines.
+
+### 5.1.1. General Style Guidelines.
+
+Los "style guideline" son un conjunto de principios visuales y comunicacionales que permite mantener coherencia y claridad en la interfaz del producto. En el caso de **Cafelab**, esta guía busca comunicar profesionalismo, precisión técnica y una identidad cercana al rubro del café de especialidad.
+
+**Branding:**
+**Nombre de marca:**  
+Cafelab representa un laboratorio digital para baristas y cafeterías de especialidad. El nombre fusiona la precisión técnica ("lab") con la calidez y cultura del café.
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Branding.png" alt="Imagen de logo y variaciones" width="7000">
+
+**Misión:**  
+Brindar herramientas digitales que profesionalicen el trabajo del barista, integrando tecnología con el arte de la preparación del café.
+
+**Visión:**  
+Ser la plataforma líder en documentación, calibración y trazabilidad para negocios de café de especialidad en Latinoamérica.
+
+**Colores:**
+- **Primario:**
+Verde Oliva `#618985`
+- **Secundarios:** 
+Negro Oliva `#414535` 
+León `#C19875`
+- **Terciarios:** 
+Hueso `#f8f7f2`  - Fondo 
+Gris Ceniza `#96BBBB`
+
+Color de Texto: 
+- Sobre fondo oscuro: `#FFFFFF`
+- Sobre fondo claro: `#414535`
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Colors.png" alt="Distribucion de paleta de colores" width="7000">
+
+- Color de Botones: 
+Oscuro:
+`#414535` 
+Claro:
+`#F8F8F8` 
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Buttons.png" alt="Distribucion de botones" width="7000">
+
+**Tipografía:**
+
+La tipografía define la jerarquía visual y la legibilidad de la plataforma. Se han definido los siguientes estilos:
+
+- **Heading 01:** Montserrat SemiBold – 52px
+- **Heading 02:** Montserrat Medium – 36px
+- **Heading 03:** Arial Nova Bold – 24px
+- **Heading 04:** Arial Nova Regular – 18px
+- **Texto principal:** Arial Nova Regular – 16px
+- **Texto técnico:** Roboto Mono – 14px
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Heading.png" alt="Tipografía principal" width="7000">
+
+<img src="public/assets/images/chapter-2/styleGuidelines/Body.png" alt="Tipografía secundaria" width="7000">
+
+**Tono de comunicación:**
+- Profesional pero cercano.
+- Técnico, sin perder accesibilidad.
+- Entusiasta y claro.
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines.
+
+El enfoque de diseño web de Cafelab es limpio, moderno y centrado en la eficiencia operativa. El estilo busca balancear datos técnicos complejos con una experiencia visualmente amigable.
+
+**Tarjetas y visualizaciones:**
+
+- Se usan componentes visuales como "cards" para representar lotes, tuestes, recetas y catas.
+- Visualizaciones clave como curvas de tueste y hexágonos sensoriales están integradas con alto contraste y claridad.
+- Cada módulo se presenta con íconos representativos del proceso (tueste, molienda, método, etc.).
+
+**Botones:**
+
+- Botones primarios: Redondeados, fondo color negro oliva, texto blanco.
+- Botones secundarios: Bordeados, fondo transparente, texto café.
+- Uso de color rojo `#D32F2F` para acciones destructivas (eliminar lote, cancelar proceso).
+
+**Tablas:**
+
+- Las tablas muestran listas de lotes, tuestes, recetas o usuarios.
+- Diseño limpio, encabezados destacados, intercalado de filas para facilitar la lectura.
+- Columnas ordenables y con íconos de filtrado.
+
+**Pantallas emergentes:**
+
+- Pop-ups propios (no de navegador) para confirmación de acciones importantes.
+- Fondo oscuro atenuado y foco visual centrado.
+- Botones de acción y cierre claramente visibles.
+
+Por parte del IOT style guideline, extendemos nuestros lineamientos a dispositivos IoT garantizando una interfaz funcional e intuitiva.
+Desarrollamos los diseños visualmente claro y compacto, siguiente lo planteado en el espacio de la version web.
+
+<img src="public/assets/images/chapter-2/styleGuidelines/StyleGuidelinesIot.png" alt="StyleGuidelinesIot" width="7000">
+
+
+## 5.2. Information Architecture.
+
+La arquitectura de información de Cafelab ha sido diseñada para guiar al usuario de forma lógica, eficiente y contextual a través de todas las funcionalidades de la plataforma. Cada módulo ha sido organizado con el objetivo de representar las etapas del proceso del café desde su estado verde hasta la taza final, pasando por el monitoreo del grano utilizando herramientas IoT. Así, se busca facilitar tanto el registro de información técnica como su posterior análisis para toma de decisiones, con una experiencia fluida, clara y estructurada.
+
+A continuación, se detallan los sistemas de organización, etiquetado, navegación, búsqueda y posicionamiento web considerados para garantizar una experiencia digital de calidad.
+
+### 5.2.1. Organization Systems.
+
+La organización del contenido en Cafelab ha sido diseñada teniendo en cuenta las distintas etapas del proceso del café y la variedad de perfiles de usuario. A lo largo de la plataforma, se utilizan diferentes tipos de organización visual para facilitar el acceso, comprensión y uso eficiente de las herramientas disponibles.
+
+#### Organización jerárquica (Visual Hierarchy)
+
+La estructura jerárquica se aplica principalmente en la Landing Page y en los paneles de administración. En estos espacios, se presenta la información de forma descendente según su relevancia, empezando por los valores de la marca, seguido de los beneficios, funcionalidades clave y finalmente los planes disponibles. Los títulos, botones de llamada a la acción y módulos destacados ocupan mayor espacio visual para guiar la atención del usuario. Este tipo de organización también se implementa en vistas como el perfil del barista o administrador, donde los datos personales y funciones de edición están claramente separados, priorizando la información antes que las acciones.
+
+#### Organización secuencial (Step-by-step)
+
+En procesos técnicos como el registro de una curva de tueste, la calibración de una receta o una sesión de cata, la aplicación guía al usuario paso a paso. El flujo está diseñado para que cada acción derive lógicamente en la siguiente, permitiendo una documentación completa y estructurada. Por ejemplo, en el registro de tueste, el usuario primero indica el lote, luego los parámetros técnicos, seguido por la curva de temperatura y finaliza con la comparación o guardado del perfil. Esta secuencia reduce errores y facilita la repetibilidad de procesos complejos.
+
+#### Organización matricial
+
+El panel de inicio (Dashboard) utiliza una organización matricial que permite al usuario tener una vista general del estado actual de su operación. En esta interfaz, se combinan tarjetas interactivas, indicadores visuales, gráficas e hipervínculos que llevan directamente a los módulos de tueste, cata, recetas o inventario. Esta disposición permite acceder rápidamente a áreas específicas sin necesidad de recorrer un camino lineal. La interfaz es especialmente útil para administradores que requieren monitoreo y toma de decisiones rápidas.
+
+#### Categorización del contenido
+
+Según el tipo de información y su propósito dentro de la plataforma, se aplican distintas formas de categorización:
+
+- **Alfabética:** Utilizada en listados de métodos de preparación, variedades de café o recetas personalizadas. Facilita la localización rápida de elementos en bibliotecas extensas.
+- **Cronológica:** Aplicada en historiales de cata, curvas de tueste y registros de inventario. Esta categorización es esencial para el análisis de evolución de lotes y procesos a lo largo del tiempo.
+- **Por tópicos:** Implementada en la segmentación del contenido educativo, artículos técnicos o secciones informativas dentro del dashboard.
+- **Según audiencia:** La plataforma adapta su contenido de inicio según el tipo de usuario. Por ejemplo, un administrador accede directamente al panel general con estadísticas e inventario, mientras que un barista profesional inicia en la vista de tuestes activos o próximas calibraciones.
+
+Esta combinación de sistemas de organización permite que Cafelab ofrezca una experiencia flexible y funcional, respetando tanto la lógica del proceso cafetalero como las necesidades específicas de sus distintos usuarios.
+
+### 5.2.2. Labeling Systems.
+
+El sistema de etiquetado de Cafelab busca maximizar la claridad y minimizar la carga cognitiva del usuario mediante un lenguaje directo, técnico y específico del rubro cafetalero.
+
+Uso de etiquetas precisas, técnicas y consistentes: "Curva de Tueste", "Perfil Sensorial", "Lote #xxx", "Ratio", "Taza".
+- Etiquetas breves en menús: `Inicio`, `Tueste`, `Cata`, `Recetas`, `Inventario`, `Monitoreo`.
+- Tarjetas y gráficos etiquetados con íconos + texto para facilitar el reconocimiento visual.
+
+### 5.2.3. SEO Tags and Meta Tags
+
+Los meta tags y SEO tags son elementos clave para mejorar el posicionamiento de la aplicación en motores de búsqueda, facilitar la indexación y enriquecer la experiencia en plataformas de redirección o previsualización (como redes sociales y navegadores). En Cafelab, estos elementos están optimizados tanto para la Landing Page como para la Web App una vez iniciada sesión.
+
+**Landing Page:**
+- Etiqueta de título: 
+Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<title>Cafelab – Dominio total sobre tu café</title>
+```
+```html
+<title>Cafelab | Panel de Control</title>
+```
+- Etiqueta configuración de caracteres: 
+Muestra correctamente los caracteres del alfabeto castellano.
+```html
+<meta charset="utf-8">
+```
+- Etiqueta de descripción: 
+Nos sirve para que el motor de búsqueda tenga un resumen del contenido de la página. 
+
+```html
+<meta name="description" content="Plataforma integral para baristas y cafeterías que conecta el café verde con la taza final. Documenta, calibra, monitorea la conservación y escala tu calidad.">
+```
+```html
+<meta name="description" content="Gestión completa de tus tuestes, recetas y procesos desde un solo lugar.">
+
+```
+- Etiqueta de palabras clave: 
+Utilizada para la lectura de los motores de búsqueda en los encabezados de las distintas páginas.
+```html
+<meta name="keywords" content="café de especialidad, barista, tueste, cata, trazabilidad, calibración, cafelab, monitoreo de grano">
+```
+```html
+<meta name="keywords" content="panel de tueste, perfil sensorial, barista app, café verde, recetas de café, conservación del grano">
+```
+-  Etiqueta de autor y derechos de autor: 
+Etiqueta que nos permite registrar la autoría de la página.
+```html
+<meta name="author" content="Equipo Cafelab - CafeMetrix">
+<meta name="copyright" content="cafelab"/>
+```
+
+### 5.2.4. Searching Systems.
+
+Los sistemas de búsqueda de Cafelab están diseñados para que el usuario pueda encontrar información específica de manera ágil, incluso dentro de grandes volúmenes de datos históricos o múltiples lotes activos.
+- Búsqueda por texto: En tuestes, recetas, catas y lotes.
+- Filtros combinables: Método de preparación, origen del grano, fecha, variedad.
+- Resultados con etiquetas visuales (tipo de café, método, fecha) y opciones para ordenar y comparar.
+- Presentación de información en gráficos (historial de humedad y temperatura del grano en conservación).
+
+### 5.2.5. Navigation Systems.
+
+Los sistemas de navegación de Cafelab permiten al usuario recorrer los diferentes módulos y procesos de forma estructurada, intuitiva y adaptativa al dispositivo utilizado.
+
+- Menú lateral fijo (web desktop): Accesos a los principales módulos.
+- Menú hamburguesa (responsive): Versión simplificada para móviles.
+- Barra superior contextual: Con accesos rápidos a perfil, notificaciones, ayuda.
+- Flujo secuencial: Registro paso a paso para tuestes y catas.
+- Breadcrumbs: En vistas de detalle, para mantener contexto.
+- Call To Action claros: “Registrar nuevo tueste”, “Crear receta”, “Ver historial”. "Guardar".
+
+## 5.3. Landing Page UI Design.
+
+### 5.3.1. Landing Page Wireframe.
+La versión wireframe de nuestra landing page presenta una estructura básica compuesta por diversos elementos fundamentales. En la parte superior se ubica la navegación principal representada mediante bloques simples que indican secciones como Beneficios, Planes, Contáctanos, Iniciar sesión y el selector de idioma. Las visualizaciones de datos se representan mediante áreas designadas para dashboards y gráficos, utilizando rectángulos con líneas básicas en su interior. Asimismo, los planes de suscripción se organizan en una cuadrícula de cuatro tarjetas, cada una como un rectángulo con espacios para encabezados y listas de características. Finalmente, la sección de testimonios se muestra con bloques para imágenes de perfil y áreas de texto para citas.
+
+![Hero](public/assets/images/landing-page-wireframes/1.png)
+![Segmentacion de usuarios](public/assets/images/landing-page-wireframes/2.png)
+![Visualizaciones](public/assets/images/landing-page-wireframes/3.png)
+![Iot](public/assets/images/landing-page-wireframes/4.png)
+![Planes](public/assets/images/landing-page-wireframes/5.png)
+![Testimonios](public/assets/images/landing-page-wireframes/6.png)
+![FAQ](public/assets/images/landing-page-wireframes/7.png)
+![Footer](public/assets/images/landing-page-wireframes/8.png)
+
+**Landing Page para Mobile Web Browser**
+<br>
+
+![MobileWireframes](public/assets/images/landing-page-wireframes/9.png)
+
+
+### 5.3.2. Landing Page Mock-up.
+Landing Page para Desktop Web Browser En nuestra versión mock-up se evidencia la implementación de los elementos de diseño específicos de Café Lab. Se aplicó la paleta de colores característica, que incluye tonos tierra y marrones cálidos como color primario, junto con verdes oscuros como color secundario, creando una estética que evoca la naturaleza del café y su proceso artesanal. La tipografía seleccionada se implementó de manera consistente en todos los elementos de texto, desde los encabezados principales hasta los párrafos descriptivos y botones de acción.
+
+![Hero](public/assets/images/landing-page-mock-up/1.png)
+![Segmentacion de usuarios](public/assets/images/landing-page-mock-up/2.png)
+![Visualizaciones](public/assets/images/landing-page-mock-up/3.png)
+![Iot](public/assets/images/landing-page-mock-up/4.png)
+![Planes](public/assets/images/landing-page-mock-up/5.png)
+![Testimonios](public/assets/images/landing-page-mock-up/6.png)
+![FAQ](public/assets/images/landing-page-mock-up/7.png)
+![Footer](public/assets/images/landing-page-mock-up/8.png)
+
+**Landing Page para Mobile Web Browser**
+![Inicio, menu, visualizaciones, planes](public/assets/images/landing-page-mock-up/9.png)
+![testimonios, FAQ, footer](public/assets/images/landing-page-mock-up/10.png)
+
+## 5.4. Applications UX/UI Design.
+
+### 5.4.1. Applications Wireframes.
+Enlace para acceder al Figma [https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1](https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=0-1&t=rINeeT0ZdWiMMppa-1)
+
+**Web Application para Desktop Web Browser**
+Sign Up - Bar - US01
+
+![image](https://github.com/user-attachments/assets/d4f02b31-6134-42a4-b40e-6b51220217c1)
+
+Sign Up - Owner - US01
+
+![image](https://github.com/user-attachments/assets/bdcd182b-5895-4f30-bb46-fe0098c2b249)
+
+Message after correct Sign Up - US01
+
+![image](https://github.com/user-attachments/assets/4dbe1ebb-851e-43c2-b26a-ff66c75a116d)
+
+Message after correct Sign Up - US01
+
+![image](https://github.com/user-attachments/assets/6dde8004-ab5b-4f19-86f5-a5d34e1c8474)
+
+Sign In - US01
+
+![image](https://github.com/user-attachments/assets/8f30711a-b26a-46f7-ba04-ef33d2809b58)
+
+Message after incorrect Sign In - US01
+
+![image](https://github.com/user-attachments/assets/1ef88d30-20a0-4942-8144-086ed99dcf67)
+
+Message after correct Sign In - US01
+
+![image](https://github.com/user-attachments/assets/2377381e-629a-45eb-a2d6-1a4c1ebbe3ba)
+
+Select Suscription - US03
+
+![image](https://github.com/user-attachments/assets/b9de893a-696d-404f-bad6-0def9e1b888d)
+
+Payment - US02
+
+![image](https://github.com/user-attachments/assets/16e2e17d-05ad-40ae-8a48-162ecbc0f3bd)
+
+User Profile - US02
+
+![image](https://github.com/user-attachments/assets/5209406b-28b6-4f8c-91fe-cc4a2b168780)
+
+Welcome - US02
+
+![image](https://github.com/user-attachments/assets/14a7cf2c-b48e-496d-8365-605b8b283d60)
+
+Suppliers - US04
+
+![image](https://github.com/user-attachments/assets/ddd53c60-ce21-4cd9-94c5-3840a49763e3)
+
+Supplier Registration - US04
+
+![image](https://github.com/user-attachments/assets/97d1dca7-15cb-491c-b51e-761a29181049)
+
+Supplier Edition - US04
+
+![image](https://github.com/user-attachments/assets/a677207a-6e27-479f-8b7f-10b4fe337cdb)
+
+Supplier Information - US04
+
+![image](https://github.com/user-attachments/assets/b104d522-7a0e-4a60-aaa8-896a923a83a7)
+
+Coffee Lot - US05 y US06
+
+![image](https://github.com/user-attachments/assets/73195746-5583-4862-8eb6-de22d8367a59)
+
+Coffee Lot Registration - US05 y US06
+
+![image](https://github.com/user-attachments/assets/d8ae3e27-7df9-4c8d-9794-bc314c1bbab2)
+
+Coffee Lot Edition - US05 y US06
+
+![image](https://github.com/user-attachments/assets/c3227a83-e312-4e6f-9307-0f1116cab377)
+
+Coffee Lot Information - US04
+
+![image](https://github.com/user-attachments/assets/5497b45b-e00d-4e75-b73e-3231e86edd2c)
+
+Roast Profiles - US07
+
+![image](https://github.com/user-attachments/assets/6965b63d-ccc1-45a0-a033-2c760109e001)
+
+Roast Profiles - US07
+
+![image](https://github.com/user-attachments/assets/0cb820d8-1c97-4dfa-97d1-cb188d16d651)
+
+Roast Profiles Registration - US07
+
+![image](https://github.com/user-attachments/assets/c80e6d39-3f2a-4418-9352-b82161f2c501)
+
+Roast Edition - US07
+
+![image](https://github.com/user-attachments/assets/ce7a9940-5c45-49f1-bb34-4d0a38690703)
+
+Favorite Profiles Filter - US07
+
+![image](https://github.com/user-attachments/assets/ef0c54a7-4d12-4fe3-b2a8-8c7d6811a695)
+
+Visualize a Roast Profile - US07
+
+![image](https://github.com/user-attachments/assets/1d07264a-76cc-4e3b-84d0-729dca75d416)
+
+Roast Comparison - US09
+
+![image](https://github.com/user-attachments/assets/4361a472-496b-44e3-a060-d92a70149fa2)
+
+Cupping Sesions - US11
+
+![image](https://github.com/user-attachments/assets/1798a5bc-d2e0-4fd0-b8df-2155efaa31a9)
+
+Cupping Sessions Filters - US11
+
+![image](https://github.com/user-attachments/assets/267dd974-65ec-4b5a-8119-69d355f89ab0)
+
+Cupping Sessions Registration - US11
+
+![image](https://github.com/user-attachments/assets/f7a4e261-2397-47e3-ae85-a760fa4ae1f7)
+
+Cupping Session Sensory Hexagon - US12
+
+![image](https://github.com/user-attachments/assets/f0aa8cea-52f3-49c0-b7a4-9da6a18159ce)
+
+Compare multiple Cupping Sessions 1 - US12
+
+![image](https://github.com/user-attachments/assets/b5921134-5ab2-49ef-a855-6e5861e51aa3)
+
+Compare multiple Cupping Sessions 2 - US12
+
+![image](https://github.com/user-attachments/assets/ef21b269-003a-49db-8a6d-9cbb229f104e)
+
+Library Defect Consultation - US10
+
+![image](https://github.com/user-attachments/assets/f6c20a8e-85f0-493c-b031-3e8d06d6a0b2)
+
+Defect Information - US10
+
+![image](https://github.com/user-attachments/assets/9430e309-861d-41a0-99a9-88d7e7389155)
+
+Patterns of Roast with Cupping - US13
+
+![image](https://github.com/user-attachments/assets/38b2f140-3f1f-4d09-8ab3-e9bb365d5d49)
+
+Library Relation of Roast with Cupping - US13
+
+![image](https://github.com/user-attachments/assets/de4c4604-3a11-423b-a64a-47bc5851e430)
+
+Portfolio and recipies - US15 and 17
+
+![image](https://github.com/user-attachments/assets/b23119f6-9ea0-479c-af27-a7b1661aa768)
+
+Recipes - US17
+
+![image](https://github.com/user-attachments/assets/83f74403-3095-4148-873f-8ed033cc9716)
+
+Recipe Registration coffee extraction - US15
+
+![image](https://github.com/user-attachments/assets/4d11dd0b-7ed1-40bc-9442-b5ecdd4cb7cf)
+
+Recipe Registration espresso method - US15
+
+![image](https://github.com/user-attachments/assets/950026bd-a81f-4f96-bc5f-770fc80df29d)
+
+Recipe Information coffee extraction - US18
+
+![image](https://github.com/user-attachments/assets/ff9a4474-202a-4c4b-aca5-f6404cbf6099)
+
+Recipe Information espresso method - US18
+
+![image](https://github.com/user-attachments/assets/75f42bda-0bc5-4329-a906-24d4120115f4)
+
+Record Grind Calibration - US16
+
+![image](https://github.com/user-attachments/assets/bc6fc3a5-caf7-44a3-8955-5b4406f3fbbc)
+
+Calibration record - US16
+
+![image](https://github.com/user-attachments/assets/c619df4c-ca31-4f4c-89db-d2d294f07a7f)
+
+Edit calibration - US16
+
+![image](https://github.com/user-attachments/assets/97d950ad-70cf-48fd-8b23-eb27eb35c3fb)
+
+Inventary - US19
+
+![image](https://github.com/user-attachments/assets/5dfed7e1-ecb9-49df-b956-a413ced9769a)
+
+Inventary - US19
+
+![image](https://github.com/user-attachments/assets/5222c2dd-e694-4072-8709-8a876c2235b1)
+
+Register Production Cost Management 1 - US20
+
+![image](https://github.com/user-attachments/assets/ba550bab-5dd0-4e0f-abea-8048d1a3f571)
+
+Production Cost Management 2 - US20
+
+![image](https://github.com/user-attachments/assets/9d3971e3-e71f-466a-9fea-eae4a97b7388)
+
+Production Cost Management 3 - US20
+
+![image](https://github.com/user-attachments/assets/f9a08a11-3368-42f7-a59c-2b303b76895e)
+
+Production Cost Management 4 - US20
+
+![image](https://github.com/user-attachments/assets/30d29421-6452-49c7-832b-ef3ec05670c9)
+
+Production Cost Management 5 - US20
+
+![image](https://github.com/user-attachments/assets/b14e3691-0b52-4f36-9b16-00b2651ebeb9)
+
+Iot Monitoring 1 - US21 - US24
+![image](public/assets/images/chapter-5/ApplicationWireframes/lotes_wireframe.png)
+
+Iot Monitoring 2 - US23
+![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion_wireframe.png)
+
+Iot Monitoring 3 - US22
+![image](public/assets/images/chapter-5/ApplicationWireframes/alertas_wireframe.png)
+
+Iot Monitoring 4 - US20
+![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas_wireframe.png)
+
+#### Web Application para Mobile Web Browser
+
+**Sign Up**
+
+![image](public/assets/images/chapter-5/MobileMockups/Signup.png)
+
+**Log In**
+
+![image](public/assets/images/chapter-5/MobileMockups/Login.png)
+
+**Welcome Page**
+
+![image](public/assets/images/chapter-5/MobileMockups/WelcomePage.png)
+
+**Suppliers**
+
+![image](public/assets/images/chapter-5/MobileMockups/Suppliers.png)
+
+**Coffee Lot**
+
+![image](public/assets/images/chapter-5/MobileMockups/Coffeelot.png)
+
+**Roast Profiles and Comparison**
+
+![image](public/assets/images/chapter-5/MobileMockups/Roast.png)
+
+**Cupping Sessions**
+
+![image](public/assets/images/chapter-5/MobileMockups/Cupping.png)
+
+**Recipes**
+
+![image](public/assets/images/chapter-5/MobileMockups/Recipes.png)
+
+**Grind Calibration**
+
+![image](public/assets/images/chapter-5/MobileMockups/Calibration.png)
+
+**Defects Library**
+
+![image](public/assets/images/chapter-5/MobileMockups/Defects.png)
+
+**Patterns of Roast and Cupping**
+
+![image](public/assets/images/chapter-5/MobileMockups/Patterns.png)
+
+**Inventory**
+
+![image](public/assets/images/chapter-5/MobileMockups/Inventory.png)
+
+**Cost Management**
+
+![image](public/assets/images/chapter-5/MobileMockups/Cost.png)
+
+**Iot**
+![image](public/assets/images/chapter-5/ApplicationWireframes/iot_wireframe.png)
+
+
+### 5.4.2. Applications Wireflow Diagrams.
+
+*User Goal: Registrarse y elegir suscripción*
+ <br>El usuario elegirá si es un barista o un dueño de cafetería, en base a esto el formulario de registro mostrará más o menos campos a completar, una vez registrados podrán elegir el plan que más deseen, luego, procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Register.png)
+ 
+ *User Goal: Iniciar Sesión.*
+ <br>El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería, si ingresa mal sus datos, se le pedirá que los ingrese nuevamente, una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/InicioSesion.png)
+ 
+ *User Goal: Editar su Perfil.*
+ <br>Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Perfil.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Proveedores.*
+ <br>El usuario desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores" el cuál tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
+
+ ![image](public/assets/images/chapter-5/Wireflows/Proveedores.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Lotes de Café.*
+ <br>Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados, del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+
+ ![image](public/assets/images/chapter-5/Wireflows/LoteCafe.png)
+ 
+ *User Goal: Registrar, Editar y Visualizar sus perfiles de tueste, también comparar entre dos de ellos.*
+ <br>Desde el apartado de herramientas, selecciona "Perfiles de Tueste", de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/PerfilTueste.png)
+ 
+ *User Goal: Registrar, Editar y Observar sus Catas con su hexágono sensorial.*
+ <br>Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas, desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Catas.png)
+ 
+ *User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones.*
+ <br>Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos, si selecciones alguno puede observar sus posibles causas y las soluciones recomendadas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Defectos.png)
+ 
+ *User Goal: Identificar la relación entre el tueste y los sabores del café.*
+ <br>Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Relacion.png)
+ 
+ *User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales.*
+ <br>Desde el apartado de herramientas, selecciona "Recetas", de este modo accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio, puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta, al crear una debería seleccionar si está hecho por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Recetas.png)
+ 
+ *User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado.*
+ <br>Desde el apartado de herramientas, selecciona "Calibración de Molienda", en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Calibracion.png)
+ 
+ *User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante.*
+ <br>Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado, puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/Inventario.png)
+ 
+ *User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad.*
+ <br>Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
+ 
+ ![image](public/assets/images/chapter-5/Wireflows/GestorCostos.png)
+
+ *USER GOAL: Modificar temperatura de almacen.*
+ <br> Como usuario, puedo visualizar las condiciones de temperatura del almacen y modificar la temperatura mediante el modulo de monitoreo.
+
+![image](public/assets/images/chapter-5/UserFlowDiagram/user-flow-diagram-tracksilo.png)
+
+*USER GOAL: Monitoreo en tiempo real*
+<br> Como usuario, puedo visualizar en tiempo real las condiciones de temperatura y humedad del almacen, así como recibir alertas si alguna de estas condiciones se encuentra fuera del rango recomendado. Además de poder configurar estos valores.
+
+![image](public/assets/images/chapter-5/UserFlowDiagram/MonitoringIot.png)
+
+
+### 5.4.3. Applications Mock-ups.
+#### Mock-ups for Desktops
+
+Select Suscription - US03
+![SelectSuscription](public/assets/images/chapter-5/WebAppMockup/SelectSuscriptionUS03.png)
+
+Select Payment - US
+![SelectPayment](public/assets/images/chapter-5/WebAppMockup/SelectPayment.png)
+
+Sing Up - Bar US01
+![Sing Up](public/assets/images/chapter-5/WebAppMockup/SingUpBarUS01.png)
+
+Message after correct Sign Up - US01
+![Message after correct Sign Up](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignUpUS01.png)
+
+Sign In - US01
+![Sign In](public/assets/images/chapter-5/WebAppMockup/SingInUS01.png)
+
+Message after correct Sign In - US01
+![Message after correct Sign Ip](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01.png)
+
+Message after incorrect Sign In - US01
+![Message after incorrect Sign In](public/assets/images/chapter-5/WebAppMockup/MessageafterincorrectSignInUS01.png)
+Sign Up - Owner - US01
+![Sign Up](public/assets/images/chapter-5/WebAppMockup/SingUpOwnerUS01.png)
+Message after correct Sign Up - US01
+![Message after correct Sign Up](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01Owner.png)
+Sing in - Owner
+![Sing in](public/assets/images/chapter-5/WebAppMockup/SingInOwner.png)
+
+Message after incorrect Sign In - US01
+![Message after incorrect Sign In](public/assets/images/chapter-5/WebAppMockup/MessageafterincorrectSignInUS01Owner.png)
+
+Message after correct Sign In - US01
+![Message after correct Sign In](public/assets/images/chapter-5/WebAppMockup/MessageaftercorrectSignInUS01Owner.png)
+
+User Profile - US02
+![User Profile](public/assets/images/chapter-5/WebAppMockup/UserProfile.png)
+
+Welcome - US02
+![Welcome](public/assets/images/chapter-5/WebAppMockup/Welcome.png)
+Suppliers - US04
+![Suppliers](public/assets/images/chapter-5/WebAppMockup/Suppliers.png)
+Supplier Registration - US04
+![Supplier Registration](public/assets/images/chapter-5/WebAppMockup/SupplierRegistration.png)
+Supplier Edition - US04
+![Supplier Edition](public/assets/images/chapter-5/WebAppMockup/SupplierEdition.png)
+Supplier Information - US04
+![Supplier Information](public/assets/images/chapter-5/WebAppMockup/SupplierInformation.png)
+
+Coffee Lot - US05 y US06
+![Coffee Lot](public/assets/images/chapter-5/WebAppMockup/CoffeLot.png)
+Coffee Lot Registration - US05 y US06
+![Coffee Lot Registration](public/assets/images/chapter-5/WebAppMockup/CoffeLotRegistration.png)
+Coffee Lot Edition - US05 y US06
+![Coffee Lot Edition](public/assets/images/chapter-5/WebAppMockup/CoffeLotEdition.png)
+Coffee Lot Information - US04
+![Coffee Lot Information](public/assets/images/chapter-5/WebAppMockup/CoffeLotInformation.png)
+
+Roast Profiles - US07
+![Roast Profiles](public/assets/images/chapter-5/WebAppMockup/RoastProfiles.png)
+Roast Profiles - US07
+![Roast Profiles](public/assets/images/chapter-5/WebAppMockup/RoastProfiles2.png)
+Roast Profiles Registration - US07
+![Roast Profiles Registration](public/assets/images/chapter-5/WebAppMockup/RoastProfilesRegistration.png)
+Roast Edition - US07
+![Roast Edition](public/assets/images/chapter-5/WebAppMockup/RoastEdition.png)
+Favorite Profiles Filter - US07
+![Favorite Profiles Filter](public/assets/images/chapter-5/WebAppMockup/FavoriteProfilesFilter.png)
+Visualize a Roast Profile - US07
+![Visualize a Roast Profile](public/assets/images/chapter-5/WebAppMockup/VisualizeraRoastProfile.png)
+Roast Comparison - US09
+![Roast Comparison](public/assets/images/chapter-5/WebAppMockup/RoastComparison.png)
+
+
+Cupping Sessions - US11
+![Cupping Sessions](public/assets/images/chapter-5/WebAppMockup/CuppingSessions.png)
+
+Cupping Sessions Filters - US11
+![Cupping Sessions Filters](public/assets/images/chapter-5/WebAppMockup/CuppingSessionsFilters.png)
+Cupping Sessions Registration - US11
+![Cupping Sessions Registration](public/assets/images/chapter-5/WebAppMockup/CuppingSessionsRegistration.png)
+Cupping Session Sensory Hexagon - US12
+![Cupping Session Sensory Hexagon](public/assets/images/chapter-5/WebAppMockup/CuppingSessionSensoryHexagon.png)
+Compare multiple Cupping Sessions 1 - US12
+![compare multiple Cupping Sessions 1](public/assets/images/chapter-5/WebAppMockup/CompareMultipleCuppingSessions.png)
+Compare multiple Cupping Sessions 2 - US12
+![Compare multiple Cupping Sessions 2](public/assets/images/chapter-5/WebAppMockup/CompareMultipleCuppingSessions2.png)
+
+
+Library Defect Consultation - US10
+![Library Defect Consultation](public/assets/images/chapter-5/WebAppMockup/LibraryDefectConsultation.png)
+Defect Information - US10
+![Defect Information](public/assets/images/chapter-5/WebAppMockup/DefectInformation.png)
+Defect Information - US10
+![Defect Information](public/assets/images/chapter-5/WebAppMockup/DefectInformationb.png)
+
+
+Patterns of Roast with Cupping - US13
+![Patterns of Roast with Cupping](public/assets/images/chapter-5/WebAppMockup/PatternsofRoastWithcupping.png)
+Library Relation of Roast with Cupping - US13
+![Library Relation of Roast with Cupping](public/assets/images/chapter-5/WebAppMockup/LibraryRelationofRoastwithCupping.png)
+
+
+Portfolio and recipies - US15 and 18
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipies.png)
+Portfolio and recipies - US15 and 19
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipiesb.png)
+Portfolio and recipies - US15 and 20
+![Portfolio and recipies](public/assets/images/chapter-5/WebAppMockup/Portafolioandrecipiesc.png)
+Recipes - US17
+![Recipes](public/assets/images/chapter-5/WebAppMockup/Recipes.png)
+Recipe Registration - US15
+![Recipe Registration](public/assets/images/chapter-5/WebAppMockup/RecipeRegistration.png)
+Recipe Registration - US15
+![Recipe Registration](public/assets/images/chapter-5/WebAppMockup/RecipeRegistrationb.png)
+Recipe Information coffee extraction - US18
+![Recipe Information coffee extraction](public/assets/images/chapter-5/WebAppMockup/RecipeInformationCoffeeExtraction.png)
+Recipe Information espresso method - US18
+![Recipe Information espresso method](public/assets/images/chapter-5/WebAppMockup/RecipeInformationespressomethod.png)
+
+
+Inventary - US19
+![Inventary](public/assets/images/chapter-5/WebAppMockup/Inventary.png)
+Inventary - US19
+![Inventary ](public/assets/images/chapter-5/WebAppMockup/Inventaryb.png)
+
+Register Production Cost Management 1 - US13
+![Register Production Cost Management 1](public/assets/images/chapter-5/WebAppMockup/RegisterProductionCostManagement.png)
+Production Cost Management 2 - US13
+![Production Cost Management 2](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagement2.png)
+Production Cost Management 3 - US13
+![Production Cost Management 3](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament3.png)
+Production Cost Management 4 - US13
+![Production Cost Management 4](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament4.png)
+Production Cost Management 5 - US13
+![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
+
+Iot Monitoring - US 20 - US 24
+<br>
+Iot Monitoring 1 - US21 - US24
+![image](public/assets/images/chapter-5/ApplicationWireframes/lotes.png)
+
+Iot Monitoring 2 - US23
+![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion.png)
+
+Iot Monitoring 3 - US22
+![image](public/assets/images/chapter-5/ApplicationWireframes/alertas.png)
+
+Iot Monitoring 4 - US20
+![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas.png)
+
+
+#### Mock-ups for Mobiles
+
+ *Register Mobile Mockups and Tools*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Register.png)
+
+  *Sign in Mockups and Profile*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Signin.png)
+ 
+  *Suppliers Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Suppliers.png)
+
+*CoffeeLot Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Coffeelot.png)
+
+*Roast Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Roast.png)
+
+ *Cupping Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Cupping.png)
+
+  *Recipes Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Recipes.png)
+
+  *Patterns Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Patterns.png)
+
+  *Defect Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Defect.png)
+
+  *Calibration Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Calibration.png)
+
+  *Inventory Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Inventory.png)
+
+  *Costs Managament Mockups*
+
+ ![image](public/assets/images/chapter-5/MobileWireframes/Cost.png)
+
+  *Iot Mockups*
+ ![image](public/assets/images/chapter-5/MobileWireframes/Iot.png)
+
+
+
+### 5.4.4. Applications User Flow Diagrams.
+USER GOAL: Registrar bebida
+Como usuario, puedo ingresar a la herramienta de registrar bebida, una vez dentro se puede agregar recetas de bebidas y portafolios, el cual es usa para almacenar agrupadamente para diferentes fines como participacion en concursos. Al registrar la bebida se puede contar con multiples campos para poder registrar adecuadamente valores que me importan para los detalles.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/BebidasPortafolio.png)
+
+USER GOAL: Calibracion
+Como usuario, puedo registrar las calibraciones registradas en las maquinas y herramientas que uso, de esta forma puedo replicar mis procesos en otros sitios, contando con la opcion de editar si en caso quiero modificar un valor. Esta herramienta tambien contribuye en la movilidad de mis calibraciones.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/Calibracion.png)
+
+USER GOAL: Registrar Lotes de cafe
+Como usuario, puedo registrar los lotes que agregue a la tienda, asi como contar con espacios que me ayuden a tener un resumen general de la informacion de los lotes, ya que puedo agregar varios lotes sin confunsiones sobre su informacion, asi como poder editar campos que considere necesarios.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/LoteCafe.png)
+
+USER GOAL: Registrar Costo por Lotes de cafe
+Como usuario, puedo registrar los costes de cada lote, como la materia prima, la mano de obra involucrada, luego de completar otros costos como transporte y gastos adicionales que se pueden generar ocasionalmente. De esta forma se genra un resumen didactico facil de entender, asi como poder imprimirlo. Esta herrramienta ayuda a mejorar la trazabilidad de los costos y una mejora en la administracion de la empresa.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/RegistroLoteCoste.png)
+
+USER GOAL: Registrar Perfil de Tueste
+Como usuario, puedo registrar perfiles de tueste que logre desarrollar mediante datos que tome en cuenta en el tueste, ademas de contar con una herramienta que genere curvas de tueste del perfil creado, asimismo poder comparar con otros perfiles, con el fin de encontrar patrones y mejorar la calidad sensorial
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/RegitrarPerfilTueste.png)
+
+
+USER GOAL: Registro de Sesion de cata
+Como usuario, puedo registrar sesiones de cata, las cuales puedo vincular a lotes y perfiles, para tener una mejor descripcion de sabores y comparaciones, de esta forma mejorar la calidad del producto final, ademas se puede generar un hexagono sensorial con el que peuda comparar resultados de otras sesiones de cata, finalmente puedo contar con un filtro de busqueda para proximamente buscar de forma rapida y directa.
+![Registrar Bebida](public/assets/images/chapter-5/UserFlowDiagram/SesionCata.png)
+
+USER GOAL: Monitoreo de ambiente
+Como usuario, puedo monitorear las condiciones ambientales de mi almacen, para poder modificar parametros como humedad y temperatura, asimismo puedo recibir alertas sobre condiciones que superen los umbrales.
+![Monitoreo](public/assets/images/chapter-5/UserFlowDiagram/user-flow-mobile.png)
+
+
+## 5.5. Applications Prototyping.
+
+### Web application prototyping
+
+En el desarrollo de prototipos, se tomo en cuenta los style guides, tanto como para desktop y mobile, asi mismo para sus versiones en landing page y web app. Se tomaron en cuenta lo siguiente: 
+
+#### Facilidad de reconocimiento
+Se cuenta con campos que los usuarios puedan reconocer para completar sus datos, asi como elementos conocidos como iconos e imagenes, de esta forma el usuario reconoce facilmente la seccion donde se encuentra
+#### Diseño responsive
+Se toma un diseño que pueda adaptarse a los dispositivos del usuario, de esta forma puede contar con mayor portabilidad, sin perder los estilos y organizacion de los elementos
+#### Informacion clara
+Los mensajes mostrados son claros, entendibles y universales en la pagina, de esta forma el usuario no tiene que procesar mayo informacion de forma irrelevante para su experiencia en la plataforma
+![Prototipo](public/assets/images/chapter-5/UserFlowDiagram/prototipoCafe.png)
+
+![Prototipo](public/assets/images/chapter-5/MobileMockups/prototipo-mobile.png)
+
+Enlace para acceder al video de WEB Applications Prototyping [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202310210_upc_edu_pe/EQZJw-3YWw5PkjlVXyPWFRkBlS-RTsyw06rtt4pmib3URw?e=twr1MY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
+
+Enlace para acceder al video de [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320083_upc_edu_pe/IQDya6csftSURYVt_qHwS9EKAeSngBlMw03nJiuit-TJd_g?e=mHFKTz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Enlace del prototipo [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?page-id=140%3A178&node-id=642-1700&p=f&viewport=-12071%2C-1480%2C0.28&t=XMc9m3xS3bXemTM3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=642%3A1700&show-proto-sidebar=1)
+
+Enlace del prototipo mobile [https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1](https://www.figma.com/proto/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=3142-5494&p=f&t=ayZsZrMZtSyUBdqa-1&scaling=min-zoom&content-scaling=fixed&page-id=140%3A178&starting-point-node-id=3127%3A5125&show-proto-sidebar=1)
+
+## 5.6. IoT Device Design.
+
+Esta sección presenta el diseño del dispositivo IoT **TrackSilo**, encargado de monitorear las condiciones ambientales del almacenamiento de café verde. El prototipo utiliza un **ESP32**, un sensor **DHT22** para medir temperatura y humedad, y un **LED azul** que simula la activación del deshumedecedor.
+
+El diseño se alinea con la arquitectura IoT de CaféLab: el ESP32 ejecuta una **Embedded Application**, se comunica con un **Edge Prototype API**, y este actúa como capa intermedia antes de la sincronización con el backend cloud y la visualización en la aplicación web/mobile.
+
+### Introducción y Criterios de Diseño
+
+TrackSilo fue diseñado para capturar datos ambientales relevantes para la conservación del café verde. La **temperatura** se utiliza únicamente para monitoreo, historial y visualización en dashboard. La **humedad** es la única variable que puede activar físicamente el actuador, ya que el deshumedecedor solo puede corregir condiciones de humedad elevada.
+
+En el prototipo Wokwi, el ESP32 realiza lecturas cada **5 segundos** y sincroniza umbrales desde el Edge API cada **30 segundos**. En una implementación real, estos intervalos podrían ajustarse a varios minutos según la operación del almacén.
+
+### Relación con la Arquitectura de Información
+
+Cada lectura generada por TrackSilo se representa como un **SensorReading**, compuesto por temperatura, humedad, identificador del dispositivo y fecha de captura. Estos datos alimentan el módulo de **IoT Monitoring**, donde se visualizan condiciones actuales, historial ambiental y estados como `OPTIMAL`, `WARNING` o `DANGER`.
+
+El comando `actuatorCommand` representa la acción física del sistema. Cuando la humedad supera el umbral máximo configurado, el Edge API responde `ACTIVATE`, y el ESP32 enciende el LED azul. Si solo la temperatura está elevada, el estado puede mostrarse como alerta en dashboard, pero el actuador permanece apagado.
+
+### Guía de Interfaz Física IoT
+
+La interfaz física del dispositivo es minimalista. No se incluyen LEDs verde, amarillo o rojo para representar estados ambientales, porque esos estados se muestran en la interfaz web/mobile. El prototipo físico solo representa la activación del deshumedecedor.
+
+| Elemento físico | Estado | Significado |
+|---|---|---|
+| LED azul apagado | Actuador inactivo | El deshumedecedor no está funcionando |
+| LED azul encendido | Actuador activo | El deshumedecedor fue activado por humedad elevada |
+
+### Diseño Físico del Dispositivo
+
+TrackSilo se plantea como un dispositivo compacto para almacenes de café verde. La carcasa protege el ESP32 del polvo, pero permite exposición del sensor DHT22 mediante ranuras de ventilación. El dispositivo no incluye pantalla física, ya que la interpretación de datos se realiza desde el dashboard. En una implementación real, el LED azul sería reemplazado o complementado por un relé conectado al deshumedecedor.
+
+### Diseño de Circuito
+
+El circuito simulado en Wokwi está compuesto por:
+
+| Componente | Función |
+|---|---|
+| ESP32 DevKit | Ejecuta la Embedded Application |
+| DHT22 | Mide temperatura y humedad relativa |
+| LED azul | Simula la activación del deshumedecedor |
+| Resistencia 220Ω | Protege el LED |
+| WiFi | Permite comunicación HTTP con el Edge Prototype API |
+
+**Insertar imagen del circuito aquí:**
+
+![Diagrama de circuito de TrackSilo simulado en Wokwi](public/assets/images/iotmonitoring/wokwi-diagram.png)
+
+### Prototipo en Wokwi
+
+El prototipo del dispositivo TrackSilo puede revisarse en el siguiente enlace:
+
+https://wokwi.com/projects/463670098452378625
+
+El proyecto incluye el código Arduino, el `diagram.json`, el ESP32, el sensor DHT22 y el LED azul que simula el deshumedecedor.
+
+### Flujo Arquitectónico del Prototipo
+
+```text
+DHT22 Sensor
+   ↓
+ESP32 / Embedded Application
+   ↓ HTTP
+Edge Prototype API / Edge Computing
+   ↓
+Cloud RESTful API / CaféLab Backend
+   ↓
+Web & Mobile Dashboard
+```
+
+En una implementación real, el Edge API se ejecutaría localmente en una Raspberry Pi, mini PC o servidor edge dentro del almacén. Para la simulación con Wokwi, el Edge Prototype API fue desplegado temporalmente en Azure App Service para contar con una URL pública accesible.
+
+### Edge Prototype API
+
+El Edge Prototype API permite que el ESP32 consulte umbrales, envíe lecturas ambientales y reciba una respuesta con el estado ambiental y el comando del actuador.
+
+**Base URL:**
+
+```text
+https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net
+```
+
+#### Endpoints principales
+
+| Método | Endpoint | Función |
+|---|---|---|
+| GET | `/` | Verifica que la API esté activa |
+| GET | `/api/v1/edge/thresholds` | Obtiene los umbrales actuales |
+| PUT | `/api/v1/edge/thresholds` | Actualiza umbrales sin modificar el firmware |
+| POST | `/api/v1/edge/readings` | Registra una lectura del ESP32 y devuelve estado/comando |
+| GET | `/api/v1/edge/readings/latest` | Devuelve la última lectura registrada |
+| GET | `/api/v1/edge/readings?limit=10` | Devuelve historial reciente de lecturas |
+
+#### Request para actualizar umbrales
+
+```json
+{
+  "deviceId": "tracksilo-001",
+  "minTemperature": 10,
+  "maxTemperature": 24,
+  "minHumidity": 40,
+  "maxHumidity": 68
+}
+```
+
+#### Request para registrar lectura
+
+```json
+{
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 70.2
+}
+```
+
+#### Response esperado con humedad elevada
+
+```json
+{
+  "readingId": 1,
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 70.2,
+  "status": "DANGER",
+  "actuatorCommand": "ACTIVATE",
+  "recordedAt": "2026-05-10T20:50:29.352572"
+}
+```
+
+#### Response esperado con temperatura elevada, pero humedad normal
+
+```json
+{
+  "readingId": 2,
+  "deviceId": "tracksilo-001",
+  "temperature": 25.5,
+  "humidity": 55.0,
+  "status": "DANGER",
+  "actuatorCommand": "NONE",
+  "recordedAt": "2026-05-10T20:55:00.000000"
+}
+```
+
+### Requests de Prueba
+
+#### Consultar umbrales
+
+```powershell
+Invoke-RestMethod -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/thresholds"
+```
+
+#### Actualizar umbrales
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/thresholds" `
+  -Method Put `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "minTemperature": 10,
+    "maxTemperature": 24,
+    "minHumidity": 40,
+    "maxHumidity": 68
+  }'
+```
+
+#### Registrar lectura con humedad elevada
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/readings" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "temperature": 25.5,
+    "humidity": 70.2
+  }'
+```
+
+#### Registrar lectura con temperatura elevada, pero humedad normal
+
+```powershell
+Invoke-RestMethod `
+  -Uri "https://edgeproto-bxgbauatf0gpchem.canadacentral-01.azurewebsites.net/api/v1/edge/readings" `
+  -Method Post `
+  -ContentType "application/json" `
+  -Body '{
+    "deviceId": "tracksilo-001",
+    "temperature": 25.5,
+    "humidity": 55.0
+  }'
+```
+
+### Flujos de Interacción del Prototipo IoT
+
+**Flujo 1: Monitoreo periódico**  
+El ESP32 lee el DHT22 cada 5 segundos, envía temperatura y humedad al Edge API, y el sistema registra la lectura para visualización en dashboard.
+
+**Flujo 2: Humedad elevada**  
+Si la humedad supera el umbral máximo, el Edge API responde `actuatorCommand = ACTIVATE`. El ESP32 enciende el LED azul, simulando la activación del deshumedecedor.
+
+**Flujo 3: Temperatura elevada sin activación física**  
+Si la temperatura supera el umbral, pero la humedad está dentro del rango, el dashboard puede mostrar alerta; sin embargo, el actuador permanece apagado porque el deshumedecedor no corrige temperatura.
+
+**Flujo 4: Sincronización de umbrales**  
+El ESP32 consulta periódicamente `/api/v1/edge/thresholds`, permitiendo actualizar límites ambientales sin cambiar el firmware.
+
+### Conclusión del Diseño IoT
+
+TrackSilo permite capturar datos ambientales mediante ESP32 y DHT22, integrarlos con un Edge API y visualizar resultados en el dashboard de CaféLab. El prototipo físico mantiene una interfaz simple: temperatura para monitoreo e historial, humedad para decisión de actuador, y LED azul como simulación del deshumedecedor.
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management.
+
+### 6.1.1. Software Development Environment Configuration.
+#### Project Management
+Para la gestión del proyecto se utilizó Trello, herramienta que permitió organizar las actividades del equipo mediante tableros, listas y tarjetas. Gracias a esto, se pudo planificar el sprint, asignar responsabilidades, hacer seguimiento del avance de cada integrante y mantener una visión clara del estado de las tareas.
+
+- Trello: https://trello.com/b/diGtoNBa/sprint-1
+
+#### Product UX/UI Design
+Para el diseño de experiencia e interfaz de usuario se utilizó Figma, herramienta que permitió elaborar wireframes, mock-ups, prototipos y flujos de navegación de la landing page, la aplicación web y la aplicación móvil. Esto facilitó validar visualmente la propuesta antes de su implementación y mantener una referencia clara para el desarrollo.
+
+Asimismo, se utilizó Vertabelo para el diseño de la base de datos, permitiendo representar las entidades, relaciones y estructura de persistencia necesarias para el sistema.
+
+- Figma: https://www.figma.com/design/ac0fpdPl6fqEDpJxCEYlY0/CafeLab?node-id=140-178&t=fprZU86nz2ahB2Bi-1
+- Vertabelo: https://vertabelo.com/
+
+#### Software Development
+Para el desarrollo de software se utilizaron herramientas y tecnologías específicas según cada componente de la solución. Visual Studio Code fue empleado para la landing page, el frontend web y la documentación del informe. Además, se consideran recursos del ecosistema JetBrains, como WebStorm e IntelliJ IDEA, por su soporte para desarrollo frontend, Java, Spring Boot, refactorización, navegación de código y depuración.
+
+Para el frontend se utilizó Angular junto con TypeScript, HTML y CSS, permitiendo construir una aplicación web modular, mantenible y orientada a componentes. Para el backend se utilizó Java con Spring Boot, tecnología que permitió implementar servicios REST, lógica de negocio, autenticación, persistencia y comunicación con la base de datos. Para la aplicación móvil se utilizó Android Studio con Kotlin, permitiendo desarrollar una experiencia nativa para dispositivos Android.
+
+- Visual Studio Code: https://code.visualstudio.com/
+- JetBrains WebStorm: https://www.jetbrains.com/webstorm/
+- JetBrains IntelliJ IDEA: https://www.jetbrains.com/idea/
+- Android Studio: https://developer.android.com/studio
+- Landing Page: https://cafelab-iot-project.github.io/cafeLab-landingPage/
+
+#### IoT Development
+Para el componente IoT se utilizó Wokwi como entorno de simulación del prototipo basado en ESP32 y sensor DHT22. Esta herramienta permitió validar el comportamiento del dispositivo, la lectura de temperatura y humedad, y la lógica de activación de alertas o actuadores antes de una implementación física.
+
+- Wokwi: https://wokwi.com/
+
+#### Software Testing
+Para la definición de pruebas de aceptación se utilizó el lenguaje Gherkin, ya que permite describir escenarios mediante la estructura Given-When-Then. Esto facilita validar que los criterios de aceptación estén alineados con las necesidades del negocio y que puedan ser comprendidos tanto por el equipo técnico como por los stakeholders.
+
+Además, para la validación del backend se considera el uso de herramientas como Postman, permitiendo probar endpoints, revisar respuestas HTTP y verificar la integración entre frontend, backend y servicios externos.
+
+- Postman: https://www.postman.com/
+
+#### Software Documentation
+Para la documentación del proyecto se utilizó Visual Studio Code y Markdown. Esto permitió mantener el informe versionado junto con el repositorio, facilitar la edición colaborativa y organizar capítulos, evidencias, diagramas, enlaces y anexos de manera estructurada.
+
+- Documentation: Documentation
+
+### 6.1.2. Source Code Management.
+Para todo el desarrollo de CaféLab se usará el flujo de trabajo de Gitflow.
+
+## Flujo de trabajo GitFlow:
+El flujo de trabajo Git Flow fue planteado por Vincent Driessen en "A successful Git branching model".
+
+#### Main branch
+La rama principal (main) es donde se mantiene el código más estable y desplegado.
+
+#### Develop branch
+La rama develop actúa como el área principal donde se integran los últimos avances y correcciones antes de hacerles merge a master.
+
+#### Release branch
+Las ramas release facilitan la preparación para una nueva versión del producto. Nos permiten aplicar correcciones menores en caso de imprevistos mientras develop sigue recibiendo nuevas funcionalidades.
+- Deriva de: develop
+- Se fusiona en: develop y master
+
+#### Feature branch
+Las ramas feature son utilizadas para desarrollar nuevas funcionalidades o mejoras específicas. Cada característica se desarrolla de forma aislada hasta estar lista para integrarse.
+- Deriva de: develop
+- Se fusiona de regreso a: develop
+
+#### Hotfix branch
+Las ramas hotfix se crean para corregir errores críticos detectados en producción, asegurando una reacción rápida sin interrumpir el trabajo de desarrollo continuo.
+- Deriva de: master.
+- Se fusiona en: master y develop.
+
+## Conventional Commits
+Aplicamos la convención Conventional Commits para redactar mensajes de commit claros, consistentes y semánticos. Esta práctica facilita el rastreo de cambios, la generación automática de registros de cambios y mejora la colaboración en equipo.
+
+## Tipos De Conventional Commits
+
+1. feat: Para introducir una nueva funcionalidad.
+2. fix: Para corregir un error existente.
+3. docs: Cambios relacionados a la documentación.
+4. style: Modificaciones de formato que no afectan el comportamiento del código.
+5. refactor: Reestructuraciones internas sin cambios funcionales o correcciones de errores.
+6. test: Agregado o modificación de pruebas.
+7. chore: Tareas de mantenimiento o cambios que no afectan el código de producción.
+8. perf: Mejoras de rendimiento.
+
+### 6.1.3. Source Code Style Guide & Conventions.
+Todo el código de la solución deberá ser escrito en inglés para mantener consistencia internacional y facilitar su mantenimiento. Las convenciones se definen según las tecnologías utilizadas en CaféLab: Angular para el frontend web, Java Spring Boot para el backend y Android Studio con Kotlin para la aplicación móvil.
+
+## HTML
+HTML es el lenguaje utilizado para estructurar el contenido de la landing page y las plantillas de la aplicación web, permitiendo organizar textos, imágenes, formularios, botones y demás elementos visuales. Referencia: HTML Style Guide and Coding Conventions, https://www.w3schools.com/html/html5_syntax.asp
+
+- Declarar el tipo de documento en la primera línea con `<!DOCTYPE html>`.
+- Respetar la estructura básica del documento con `<html>`, `<head>` y `<body>`.
+- Declarar el título de la página mediante el elemento `<title>` dentro de `<head>`.
+- Usar nombres de etiquetas y atributos en minúscula.
+- Mantener una indentación coherente para facilitar la lectura de la estructura del documento.
+- Cerrar correctamente todos los elementos que lo requieran, como `<div>`, `<section>`, `<p>` o encabezados.
+- Declarar el atributo `alt` en las imágenes para mejorar la accesibilidad.
+- Incluir metadatos básicos como `charset` y `viewport` para asegurar correcta visualización en distintos dispositivos.
+
+## CSS
+CSS es el lenguaje utilizado para definir la presentación visual del sistema, incluyendo colores, tipografías, espaciados, contenedores, layouts y comportamiento responsive. Referencia: Google HTML/CSS Style Guide, https://google.github.io/styleguide/htmlcssguide.html
+
+- Usar indentación consistente en cada bloque de estilos.
+- Nombrar clases e identificadores con términos cortos, descriptivos y en minúscula.
+- Preferir clases reutilizables antes que selectores demasiado específicos.
+- Declarar colores en formato hexadecimal cuando correspondan a valores definidos por la identidad visual del producto.
+- Usar propiedades abreviadas cuando mejoren la legibilidad, como `margin`, `padding` o `border`.
+- Evitar unidades innecesarias después de valores `0`, salvo cuando la propiedad lo requiera.
+- Agregar comentarios únicamente cuando ayuden a entender el propósito de una regla o bloque de estilos.
+- Mantener un diseño responsive para asegurar una visualización correcta en desktop, tablet y dispositivos móviles.
+
+## TypeScript y Angular
+TypeScript es el lenguaje principal del frontend desarrollado en Angular. Permite construir componentes, servicios, rutas y lógica de presentación con tipado estático, reduciendo errores en tiempo de desarrollo. Referencias: Angular Coding Style Guide, https://angular.dev/style-guide; Google TypeScript Style Guide, https://google.github.io/styleguide/tsguide.html
+
+- Organizar el código fuente de Angular dentro de `src`.
+- Separar las funcionalidades por módulos, páginas o features, evitando carpetas genéricas demasiado grandes.
+- Nombrar archivos con palabras separadas por guiones, por ejemplo `coffee-batch-list.component.ts`.
+- Usar `PascalCase` para clases, componentes, interfaces y tipos.
+- Usar `lowerCamelCase` para variables, métodos, funciones y propiedades.
+- Usar `UPPER_SNAKE_CASE` para constantes globales.
+- Declarar tipos explícitos en propiedades, parámetros y valores de retorno cuando mejoren la claridad.
+- Usar `const` para valores que no cambian y `let` solo cuando la variable deba reasignarse.
+- Evitar el uso de `any`; si el tipo no es evidente, definir una interfaz, tipo o DTO.
+- Mantener la lógica compleja fuera de los templates HTML y moverla a métodos o servicios.
+- Nombrar métodos de eventos por la acción que realizan, por ejemplo `saveSupplier()` en lugar de `onClick()`.
+- Ubicar componentes, templates, estilos y pruebas relacionadas en la misma carpeta cuando pertenezcan al mismo concepto.
+- Mantener los servicios orientados a una responsabilidad concreta, como autenticación, proveedores, inventario o comunicación API.
+
+## Java y Spring Boot
+Java es el lenguaje utilizado para el backend de CaféLab mediante Spring Boot, permitiendo exponer servicios REST, aplicar reglas de negocio, gestionar persistencia y conectar la aplicación con la base de datos. Referencias: Google Java Style Guide, https://google.github.io/styleguide/javaguide.html; Spring Boot Structuring Your Code, https://docs.spring.io/spring-boot/reference/using/structuring-your-code.html
+
+- Usar paquetes en minúscula y con estructura basada en dominio o bounded context.
+- Evitar el uso del paquete por defecto; la clase principal debe ubicarse en un paquete raíz.
+- Usar `PascalCase` para clases, interfaces, enums y records.
+- Usar `lowerCamelCase` para atributos, variables y métodos.
+- Usar `UPPER_SNAKE_CASE` para constantes.
+- Nombrar controllers, services, repositories, commands, queries y resources según su responsabilidad.
+- Mantener una clase pública principal por archivo y hacer que el nombre del archivo coincida con el nombre de la clase.
+- Evitar imports con comodines; importar únicamente las clases utilizadas.
+- Utilizar indentación consistente y llaves con estilo K&R.
+- Documentar con Javadoc las clases o métodos públicos cuando su propósito no sea evidente.
+- Mantener los controllers enfocados en recibir solicitudes y delegar la lógica de negocio a servicios de aplicación o dominio.
+- Usar HTTPS y configuración segura para comunicación entre frontend, backend y servicios externos.
+
+## Kotlin y Android
+Kotlin es el lenguaje utilizado para la aplicación móvil desarrollada en Android Studio. Permite implementar interfaces nativas, comunicación con servicios backend y funcionalidades específicas para dispositivos Android. Referencia: Kotlin Style Guide for Android, https://developer.android.com/kotlin/style-guide
+
+- Nombrar archivos Kotlin con el nombre de la clase principal y extensión `.kt`.
+- Usar `PascalCase` para clases, interfaces, objetos y enums.
+- Usar `lowerCamelCase` para variables, funciones y propiedades.
+- Usar `UPPER_SNAKE_CASE` para constantes.
+- Mantener los archivos enfocados en una sola responsabilidad o funcionalidad relacionada.
+- Usar indentación consistente y evitar tabulaciones mezcladas con espacios.
+- Declarar valores inmutables con `val` siempre que no sea necesaria la reasignación.
+- Usar `var` solo cuando el valor deba cambiar durante la ejecución.
+- Evitar código duplicado en Activities, Fragments o ViewModels; extraer lógica compartida a funciones, clases o servicios.
+- Mantener la lógica de UI separada de la lógica de negocio cuando la arquitectura del módulo lo permita.
+- Usar nombres descriptivos para funciones asociadas a acciones del usuario o llamadas al backend.
+- Agregar comentarios solo cuando expliquen una decisión técnica, integración o comportamiento no evidente.
+
+## Lenguaje Gherkin
+Gherkin se utilizará para describir escenarios de comportamiento, pruebas de aceptación y criterios funcionales de forma comprensible para el equipo técnico y los stakeholders.
+
+- Redactar títulos descriptivos y concisos para escenarios `Feature` y `Scenario`.
+- Respetar estrictamente la estructura Given-When-Then.
+- Usar un lenguaje orientado al negocio, entendible para todos los stakeholders, evitando detalles técnicos.
+- Implementar Scenario Outline cuando existan múltiples casos similares.
+- Agregar comentarios cuando se requiera contexto o explicaciones adicionales.
+
+### 6.1.4. Software Deployment Configuration.
+#### Landing Page Deployment
+Para desplegar la landing page se utiliza **GitHub Pages** desde el repositorio del proyecto. El despliegue se realiza desde la rama **main**, configurada como rama de publicación para el sitio.
+
+1. **Acceso al repositorio**: Cada integrante debe contar con una cuenta de GitHub y permisos de colaboración sobre el repositorio de la landing page.
+2. **Integración de cambios**: Los cambios de la landing page se desarrollan en ramas de trabajo y luego se integran a la rama `main` mediante commits y pull requests.
+3. **Configuración de GitHub Pages**:
+   - Se ingresa a la configuración del repositorio en GitHub.
+   - En la sección **Pages**, se selecciona la opción de despliegue desde una rama.
+   - Se define la rama `main` como fuente de publicación.
+   - Se selecciona la carpeta raíz correspondiente para publicar el contenido estático.
+4. **Publicación**: Al actualizar la rama `main`, GitHub Pages genera y publica la nueva versión de la landing page.
+5. **Verificación**: Se revisa el enlace público de GitHub Pages para validar que los estilos, imágenes, navegación y redirecciones funcionen correctamente.
+
+Con este flujo, la landing page queda publicada en GitHub Pages y se mantiene sincronizada con la versión estable integrada en la rama `main`.
+
+#### Frontend Deployment
+Para el despliegue de la aplicación web desarrollada en **Angular**, también se utiliza **GitHub Pages**. En este caso, el resultado compilado de Angular se publica mediante una rama de despliegue llamada `gh-pages`.
+
+1. **Preparación del proyecto Angular**: Se verifica que el proyecto compile correctamente y que las rutas y assets sean compatibles con GitHub Pages.
+2. **Build de producción**: Se ejecuta el build del frontend para generar los archivos estáticos dentro de la carpeta de distribución del proyecto.
+3. **Publicación en rama de despliegue**:
+   - Se utiliza la rama `gh-pages` para alojar los archivos generados por el build.
+   - GitHub Pages toma esta rama como fuente de publicación del frontend.
+   - Los cambios funcionales continúan gestionándose en las ramas principales de desarrollo, mientras que `gh-pages` conserva el contenido compilado para despliegue.
+4. **Verificación del despliegue**: Se valida el enlace público del frontend para comprobar navegación, carga de assets, rutas de Angular y comunicación esperada con los servicios backend.
+
+Con este flujo, el frontend Angular se despliega como aplicación estática en GitHub Pages, separando el código fuente de la rama utilizada para publicación.
+
+#### Backend Deployment
+Para el backend se utilizará **Azure Web App**, permitiendo desplegar el servicio API en un entorno cloud administrado y accesible para el frontend y los dispositivos IoT.
+
+1. **Preparación del backend**: Se configura el proyecto backend con las variables de entorno necesarias, conexión a base de datos y parámetros de seguridad.
+2. **Creación del recurso en Azure**:
+   - Se crea una Web App en Azure App Service.
+   - Se define el runtime correspondiente al backend del proyecto.
+   - Se configuran las variables de entorno desde el portal de Azure.
+3. **Despliegue del servicio**: El backend se publica en Azure Web App desde el repositorio o mediante el flujo de despliegue configurado por el equipo.
+4. **Validación del API**: Se prueban los endpoints principales para verificar disponibilidad, autenticación, conexión con base de datos y consumo desde el frontend.
+
+Con este flujo, el backend queda alojado en Azure Web App y disponible como servicio central para la aplicación web y el componente IoT.
+
+## 6.2. Landing Page, Services & Applications Implementation.
+
+### 6.2.1. Sprint 1
+
+#### 6.2.1.1. Sprint Planning 1.
+
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>05/05/2026</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Natalia Roman</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Review Summary</th>
+            <td>
+                Se completaron las actividades de preparación inicial, como la definición del alcance, la formación del equipo y la configuración de las herramientas. Se resalta que el equipo mostró compromiso y buena organización en la etapa previa al inicio formal del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 0 Retrospective Summary</th>
+            <td>
+                El equipo destacó la claridad en los roles y la importancia de la comunicación continua. Se identificó como mejora futura documentar los acuerdos tomados y realizar reuniones breves de seguimiento semanalmente.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 1 Goal</th>
+            <td>Implementar una landing page que refleje la propuesta de valor de Café Metrix así como la primera versión del frontend y backend logrando proporcionar al usuario acceso a las primeras funciones</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Velocity</th>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+
+#### 6.2.1.2. Aspect Leaders and Collaborators.
+
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX), un artefacto clave que define la estructura de responsabilidades para el Sprint actual. Esta matriz identifica claramente quién asume el rol de líder y quiénes actúan como colaboradores en cada aspecto del proyecto, facilitando una comunicación efectiva y una distribución equitativa del trabajo.
+
+Para este Sprint, los aspectos principales corresponden a las User Stories que conforman el alcance funcional inicial de la plataforma. De esta manera, el sprint abarca funcionalidades de gestión de proveedores, lotes, perfiles de tueste, catas, recetas, calibraciones, inventario, costos, landing page, autenticación, perfil de usuario y selección de plan. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas, responsabilidades y carga de trabajo planificada.
+
+<table border="1">
+<tr>
+<th>Aspecto / US - TS</th>
+<th>Roman, Natalia (natRC2005)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
+<th>Fernández, Fredy (u202320083)</th>
+<th>Donayre, Adrian (adriandonayredev)</th>
+</tr>
+
+<tr>
+<td>Registro de Proveedores (US01)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Gestión de Lotes de Café Verde (US02)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Creación de Perfil de Tueste (US03)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Biblioteca de Defectos de Tueste (US04)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Cata Digital Estructurada (US05)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Historial de Catas (US06)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Creación de Recetas de Preparación (US07)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Calibración de Molienda (US08)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Portafolio de Bebidas (US09)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Control de Inventario Integrado (US10)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Análisis Comparativo de Tuestes (US11)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Visualización de Perfiles Sensoriales (US12)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Gestión de Costos de Producción (US13)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Información del Producto (US14)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Secciones Específicas por Segmento (US15)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Acceso directo a plataforma (US16)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Registro y Autenticación (US17)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Perfil Personalizado (US18)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Selección de Plan (US19)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Proveedores (TS01)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Lotes (TS02)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Perfiles de Tueste (TS03)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Defectos de Tueste (TS04)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Catas (TS05)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Recetas (TS06)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Calibraciones (TS07)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API Inventario (TS08)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Usuarios (TS09)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>API Autenticación (TS10)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+</table>
+
+#### 6.2.1.3. Sprint Backlog 1.
+
+<p align="center">
+<img width="500" src="public/assets/images/chapter-6/sprint-1/evidence/sprintbacklog1.png" alt="Sprint backlog 1">
+</p>
+
+Durante el Sprint 1, el equipo se enfocó en construir la primera versión funcional de CaféLab, integrando los elementos principales de presentación, navegación, gestión de información, autenticación, módulos funcionales y servicios backend de la plataforma. El objetivo de este sprint fue permitir que los usuarios puedan conocer la propuesta de valor del producto, acceder a la aplicación y utilizar las funcionalidades principales relacionadas con la gestión del café de especialidad.
+
+El alcance del sprint incluyó el desarrollo de la landing page, la implementación de vistas principales de la aplicación web, la creación de funcionalidades de gestión, procesos de tueste, catas, recetas, calibraciones, inventario, costos, autenticación y servicios API asociados. En el alcance del Sprint 1 no se incluyen las historias y tareas técnicas relacionadas directamente con el módulo IoT.
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>User Story / Technical Story</th>
+      <th>Work-Item / Task</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">US01 - Registro de Proveedores</td>
+      <td>Diseñar vista y formulario de registro de proveedor</td>
+      <td>Crear la interfaz de usuario con el formulario para ingresar datos del proveedor (nombre, origen, contacto, certificaciones), incluyendo validaciones de campos obligatorios.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar servicio de proveedores con la vista</td>
+      <td>Conectar el formulario de registro con la API de proveedores para persistir, editar y consultar los datos desde el backend.</td>
+      <td>3</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US02 - Gestión de Lotes de Café Verde</td>
+      <td>Implementar vista de listado de lotes de café verde</td>
+      <td>Desarrollar la pantalla que muestra los lotes registrados con su información principal, permitiendo navegación y acceso al detalle de cada uno.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de registro de lote y asociación a proveedor</td>
+      <td>Crear el formulario para registrar un nuevo lote de café verde, incluyendo la selección del proveedor vinculado y los datos de origen y peso.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar cambio de estado y trazabilidad de lote</td>
+      <td>Desarrollar la lógica para gestionar los cambios de estado del lote (recibido, en proceso, finalizado) y registrar el historial de trazabilidad.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US03 - Creación de Perfil de Tueste</td>
+      <td>Diseñar formulario de creación de perfil de tueste</td>
+      <td>Crear la interfaz con campos para nombre del perfil, temperatura, tiempo de desarrollo, nivel de tueste y notas del barista.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar parámetros técnicos del perfil con la API</td>
+      <td>Conectar el formulario con el servicio backend para guardar, editar y recuperar perfiles de tueste registrados por el usuario.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US04 - Biblioteca de Defectos de Tueste</td>
+      <td>Implementar listado de defectos de tueste</td>
+      <td>Desarrollar la vista que muestra todos los defectos registrados en la biblioteca, con su nombre, descripción y causa probable.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de registro de defecto con acción correctiva</td>
+      <td>Crear el formulario para registrar un nuevo defecto incluyendo descripción detallada, causa probable y acción correctiva recomendada.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US05 - Cata Digital Estructurada</td>
+      <td>Implementar formulario de cata sensorial</td>
+      <td>Desarrollar la vista principal de registro de cata con campos para fecha, barista evaluador y notas generales de la sesión.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar campos de puntuación y atributos sensoriales</td>
+      <td>Agregar los controles de puntuación para atributos sensoriales como acidez, cuerpo, dulzura, aroma y sabor residual conforme al protocolo SCA.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Vincular cata con lote y perfil de tueste</td>
+      <td>Integrar selectores para asociar la cata a un lote de café verde y a un perfil de tueste específico, asegurando la trazabilidad de la evaluación.</td>
+      <td>1</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US06 - Historial de Catas</td>
+      <td>Implementar vista de historial de catas</td>
+      <td>Desarrollar la pantalla que lista todas las catas registradas mostrando fecha, lote evaluado, puntuación total y barista responsable.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar filtros y búsqueda en el historial</td>
+      <td>Agregar controles de filtrado por fecha, lote, puntuación y barista, así como una barra de búsqueda para localizar catas específicas rápidamente.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US07 - Creación de Recetas de Preparación</td>
+      <td>Diseñar formulario de receta con parámetros técnicos</td>
+      <td>Crear la interfaz con campos para nombre de la receta, método de preparación, ratio café/agua, temperatura, tiempo de extracción y nivel de molienda.</td>
+      <td>3</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar validación y persistencia de recetas</td>
+      <td>Conectar el formulario con la API para guardar y consultar recetas, aplicando validaciones de rango en los parámetros técnicos ingresados.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US08 - Calibración de Molienda</td>
+      <td>Implementar formulario de calibración de molienda</td>
+      <td>Crear la interfaz para registrar una calibración con campos de equipo utilizado, ajuste de molino y parámetros de extracción resultantes.</td>
+      <td>2</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar calibración con método y receta de preparación</td>
+      <td>Vincular el registro de calibración al método de preparación y receta correspondiente, permitiendo consultarla en contexto durante la preparación.</td>
+      <td>2</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US09 - Portafolio de Bebidas</td>
+      <td>Implementar vista de portafolio de bebidas</td>
+      <td>Desarrollar la pantalla que muestra las bebidas organizadas visualmente en un portafolio digital con imagen, nombre y descripción breve.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar detalle de bebida y vinculación con recetas</td>
+      <td>Crear la vista de detalle de cada bebida que muestra su receta asociada, parámetros de preparación y notas de presentación.</td>
+      <td>3</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US10 - Control de Inventario Integrado</td>
+      <td>Implementar vista de existencias de café verde y tostado</td>
+      <td>Desarrollar la pantalla principal de inventario que muestra el stock actual de café verde y tostado con unidades, lote de origen y fecha de ingreso.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de registro de consumos</td>
+      <td>Crear el formulario para registrar el consumo de café indicando cantidad, tipo (verde o tostado), lote afectado y motivo del consumo.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US11 - Análisis Comparativo de Tuestes</td>
+      <td>Implementar selección de perfiles de tueste para comparación</td>
+      <td>Desarrollar la interfaz que permite al usuario seleccionar dos o más perfiles de tueste registrados para iniciar una sesión de comparación.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Visualizar diferencias entre perfiles de tueste seleccionados</td>
+      <td>Mostrar una vista comparativa con tablas o gráficos que resalten las diferencias de temperatura, tiempo, nivel y atributos entre los perfiles elegidos.</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US12 - Visualización de Perfiles Sensoriales</td>
+      <td>Implementar componente gráfico de perfil sensorial</td>
+      <td>Desarrollar un gráfico de tipo radar/araña que represente visualmente los atributos sensoriales evaluados en una cata (acidez, cuerpo, aroma, dulzura, sabor).</td>
+      <td>3</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar datos de catas en el gráfico y habilitar comparación</td>
+      <td>Conectar el componente gráfico con los datos reales de catas registradas y permitir superponer múltiples perfiles sensoriales en un mismo gráfico.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US13 - Gestión de Costos de Producción</td>
+      <td>Implementar formulario de registro de costos por lote</td>
+      <td>Crear la interfaz para registrar costos asociados a un lote de café, incluyendo materia prima, insumos, mano de obra y energía.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar vista de resumen y análisis de costos</td>
+      <td>Desarrollar la pantalla que consolida y presenta los costos registrados por lote, mostrando totales, porcentajes por categoría y costo por kilogramo producido.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Integrar cálculos automáticos de costo total y relación con lotes</td>
+      <td>Implementar la lógica de cálculo automático del costo total del lote sumando todas las categorías y vinculando el resultado al lote de producción correspondiente.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US14 - Información del Producto</td>
+      <td>Diseñar sección hero y propuesta de valor de la landing page</td>
+      <td>Crear la sección principal de la landing page con encabezado impactante, eslogan del producto, descripción de la propuesta de valor y llamada a la acción.</td>
+      <td>2</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar sección de características y beneficios con diseño visual</td>
+      <td>Desarrollar la sección de características principales con íconos, titulares y descripciones breves de los beneficios más relevantes de CaféLab.</td>
+      <td>2</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US15 - Secciones Específicas por Segmento</td>
+      <td>Implementar sección diferenciada para baristas</td>
+      <td>Crear una sección en la landing page dirigida a baristas, destacando funcionalidades de tueste, catas, recetas y calibración adaptadas a su perfil profesional.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar sección diferenciada para dueños de cafeterías</td>
+      <td>Crear una sección orientada a dueños de cafeterías resaltando los beneficios de control de inventario, costos, trazabilidad y análisis de producción.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US16 - Acceso directo a plataforma</td>
+      <td>Implementar botones y redirecciones desde landing page a la aplicación</td>
+      <td>Agregar los botones de llamada a la acción en la landing page (header, hero y footer) que redirigen al usuario al login o registro de la aplicación principal.</td>
+      <td>3</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">US17 - Registro y Autenticación</td>
+      <td>Implementar formulario de registro de usuario</td>
+      <td>Desarrollar la vista de registro con campos de nombre, correo electrónico, contraseña y confirmación, incluyendo validaciones en tiempo real.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de inicio de sesión</td>
+      <td>Desarrollar la vista de login con campos de correo y contraseña, manejo de errores de credenciales y opción de recordar sesión.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar lógica de autenticación y protección de rutas</td>
+      <td>Integrar el flujo completo de autenticación con el backend, gestionar el token de sesión en el cliente y proteger las rutas privadas de la aplicación.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US18 - Perfil Personalizado</td>
+      <td>Implementar vista de perfil de usuario</td>
+      <td>Desarrollar la pantalla que muestra la información del perfil profesional del usuario: nombre, rol, foto, especialidad y datos de contacto.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar formulario de edición de datos del perfil</td>
+      <td>Crear el formulario para que el usuario pueda actualizar su información de perfil, incluyendo carga de foto y validación de campos antes de guardar.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US19 - Selección de Plan</td>
+      <td>Implementar vista de planes disponibles con comparativa</td>
+      <td>Crear la pantalla que muestra los planes de suscripción disponibles en tarjetas comparativas con precio, características incluidas y límites de uso.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar lógica de selección y confirmación de plan</td>
+      <td>Desarrollar la acción de seleccionar un plan, mostrar un modal de confirmación con el resumen del plan elegido e integrar la llamada al servicio para registrar la suscripción.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS01 - API Proveedores</td>
+      <td>Diseñar modelo de datos y entidad Proveedor</td>
+      <td>Definir la estructura de la entidad Proveedor con sus atributos, restricciones de base de datos y relaciones con otras entidades del dominio.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de proveedores</td>
+      <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar proveedores, incluyendo manejo de errores y validaciones de entrada.</td>
+      <td>3</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS02 - API Lotes</td>
+      <td>Diseñar modelo de datos y entidad Lote</td>
+      <td>Definir la estructura de la entidad Lote con sus atributos (peso, origen, fecha, estado), relación con Proveedor y restricciones de la base de datos.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de lotes</td>
+      <td>Desarrollar los endpoints REST para registrar, consultar, actualizar y eliminar lotes de café verde con sus validaciones correspondientes.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar lógica de cambio de estado y trazabilidad</td>
+      <td>Desarrollar el endpoint y lógica de negocio para gestionar las transiciones de estado del lote y registrar el historial de cambios para trazabilidad.</td>
+      <td>2</td>
+      <td>Fredy Fernández</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS03 - API Perfiles de Tueste</td>
+      <td>Diseñar modelo de datos y entidad Perfil de Tueste</td>
+      <td>Definir la estructura de la entidad con sus atributos técnicos (temperatura, tiempo, nivel de tueste, notas) y relaciones con lotes y catas.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de perfiles de tueste</td>
+      <td>Desarrollar los endpoints REST para crear, listar, obtener detalle, actualizar y eliminar perfiles de tueste con validaciones de negocio.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar validaciones y relaciones con lotes de café</td>
+      <td>Agregar validaciones de consistencia entre el perfil de tueste y el lote de café verde asociado, asegurando integridad referencial en el backend.</td>
+      <td>2</td>
+      <td>Natalia Roman</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS04 - API Defectos de Tueste</td>
+      <td>Diseñar modelo de datos y entidad Defecto</td>
+      <td>Definir la estructura de la entidad Defecto con sus atributos (nombre, descripción, causa, acción correctiva) y su pertenencia al contexto de la biblioteca.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro y consulta de defectos</td>
+      <td>Desarrollar los endpoints REST para registrar nuevos defectos en la biblioteca y consultar el catálogo completo con filtros por tipo o causa.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS05 - API Catas</td>
+      <td>Diseñar modelo de datos y entidad Cata</td>
+      <td>Definir la estructura de la entidad Cata con sus atributos sensoriales (acidez, cuerpo, dulzura, aroma, sabor, puntaje total) y relaciones con lote y perfil de tueste.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro y consulta de catas</td>
+      <td>Desarrollar los endpoints REST para crear una cata con sus atributos sensoriales y consultarlas con soporte de filtros por fecha, lote o puntuación.</td>
+      <td>3</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS06 - API Recetas</td>
+      <td>Diseñar modelo de datos y entidad Receta</td>
+      <td>Definir la estructura de la entidad Receta con atributos (método, ratio, temperatura, tiempo, molienda) y su relación con el portafolio de bebidas.</td>
+      <td>2</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints CRUD de recetas de preparación</td>
+      <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar recetas, con validaciones de rangos aceptables para cada parámetro técnico.</td>
+      <td>3</td>
+      <td>Jorge Yum</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS07 - API Calibraciones</td>
+      <td>Diseñar modelo de datos y entidad Calibración</td>
+      <td>Definir la estructura de la entidad Calibración con atributos (equipo, ajuste de molino, método vinculado, resultado de extracción) y sus relaciones.</td>
+      <td>2</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro y actualización de calibraciones</td>
+      <td>Desarrollar los endpoints REST para registrar nuevas calibraciones y actualizarlas, incluyendo la asociación al método de preparación correspondiente.</td>
+      <td>3</td>
+      <td>Sergio Julca</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS08 - API Inventario</td>
+      <td>Diseñar modelo de datos y entidad Inventario</td>
+      <td>Definir la estructura de la entidad Inventario con atributos de tipo de café, cantidad disponible, unidad de medida y referencia al lote de origen.</td>
+      <td>1</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de consulta de existencias</td>
+      <td>Desarrollar los endpoints REST para consultar el stock actual de café verde y tostado, con soporte de filtros por tipo, lote y rango de fechas.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro de consumos de inventario</td>
+      <td>Desarrollar el endpoint para registrar un consumo de inventario, descounting la cantidad del stock actual y almacenando el motivo y fecha del movimiento.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TS09 - API Usuarios</td>
+      <td>Diseñar modelo de datos y entidad Usuario</td>
+      <td>Definir la estructura de la entidad Usuario con sus atributos (nombre, correo, rol, plan de suscripción) y restricciones de unicidad en la base de datos.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar endpoints de registro y consulta de usuarios</td>
+      <td>Desarrollar los endpoints REST para registrar nuevos usuarios (con hash de contraseña) y consultar información básica de perfil de acceso.</td>
+      <td>3</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TS10 - API Autenticación</td>
+      <td>Implementar servicio de validación de credenciales</td>
+      <td>Desarrollar la lógica de negocio para verificar las credenciales del usuario comparando el correo y el hash de contraseña almacenado en la base de datos.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar generación y validación de tokens de acceso</td>
+      <td>Desarrollar la emisión de JWT al iniciar sesión correctamente y la validación del token en cada solicitud a recursos protegidos del sistema.</td>
+      <td>2</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Implementar middleware de autenticación para rutas protegidas</td>
+      <td>Crear el middleware que intercepta las solicitudes HTTP, valida el token JWT presente en el encabezado y deniega el acceso si el token es inválido o ha expirado.</td>
+      <td>1</td>
+      <td>Adrian Donayre</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+#### 6.2.1.4. Development Evidence for Sprint Review.
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committer on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>08e0410</td>
+    <td>fix: replace absolute asset paths with relative paths for GitHub Pages</td>
+    <td>fix: replace absolute asset paths with relative paths for GitHub Pages</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>e8934d2</td>
+    <td>fix: asset paths</td>
+    <td>fix: asset paths</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>99aae21</td>
+    <td>fix</td>
+    <td>fix</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>70a32b8</td>
+    <td>fix: add write permissions to github pages workflow</td>
+    <td>fix: add write permissions to github pages workflow</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>cb9535f</td>
+    <td>feat: added github pages workflow</td>
+    <td>feat: added github pages workflow</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>2de468f</td>
+    <td>change in backend api</td>
+    <td>change in backend api</td>
+    <td>Apr 11, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>6cd3ab4</td>
+    <td>Update README.md</td>
+    <td>Update README.md</td>
+    <td>May 6, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>9e9462e</td>
+    <td>fix security</td>
+    <td>fix security</td>
+    <td>May 5, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>c2262e5</td>
+    <td>docs: change interviews links</td>
+    <td>docs: change interviews links</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>28931b2</td>
+    <td>docs: Style Guidelines</td>
+    <td>docs: Style Guidelines</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>ae0c401</td>
+    <td>docs: Jorge Sudent Outcome</td>
+    <td>docs: Jorge Sudent Outcome</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>9740f0e</td>
+    <td>docs: update sprint backlog</td>
+    <td>docs: update sprint backlog</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>5cbc141</td>
+    <td>docs(chapter 3): update user stories and product backlog</td>
+    <td>docs(chapter 3): update user stories and product backlog</td>
+    <td>May 9, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>149804c</td>
+    <td>add antescedentes</td>
+    <td>add antescedentes</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>0ac8a05</td>
+    <td>docs: context diagram</td>
+    <td>docs: context diagram</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>ce28b36</td>
+    <td>Update Jorge Suin Yum Gonzales' introduction</td>
+    <td>Update Jorge Suin Yum Gonzales' introduction</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>d64ee93</td>
+    <td>docs(sprint 1): add sprint backlog</td>
+    <td>docs(sprint 1): add sprint backlog</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>debe1dc</td>
+    <td>docs: update sprint section links in index</td>
+    <td>docs: update sprint section links in index</td>
+    <td>May 8, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>2102512</td>
+    <td>add Aspect Leaders and Collaborators for sprint 1</td>
+    <td>add Aspect Leaders and Collaborators for sprint 1</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>831ee3d</td>
+    <td>add Sprint Planning 1</td>
+    <td>add Sprint Planning 1</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>3800286</td>
+    <td>add Navigation Systems</td>
+    <td>add Navigation Systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>875ec4e</td>
+    <td>add Searching Systems</td>
+    <td>add Searching Systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>b053daf</td>
+    <td>add SEO Tags and Meta Tags</td>
+    <td>add SEO Tags and Meta Tags</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>3171239</td>
+    <td>add Labelling systems</td>
+    <td>add Labelling systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>9b740eb</td>
+    <td>add organization systems</td>
+    <td>add organization systems</td>
+    <td>May 7, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>5228d28</td>
+    <td>docs: Links de deployment de landing page y frontend en anexos</td>
+    <td>docs: Links de deployment de landing page y frontend en anexos</td>
+    <td>May 6, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-iot-report</td>
+    <td>develop</td>
+    <td>d51e64f</td>
+    <td>iot mock up</td>
+    <td>iot mock up</td>
+    <td>May 6, 2026</td>
+  </tr>
+</table>
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+### Frontend Testing Suite Evidence
+
+Para el repositorio frontend se implementó una suite de pruebas automatizadas orientada a validar las funcionalidades incluidas en el Sprint Backlog. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-frontend` del repositorio `cafeLab-frontend`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-frontend.git  
+Branch: feature/testing-suite-frontend  
+
+La suite incluyó Unit Tests, Component Tests, Integration Tests con servicios mockeados y Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Los tests fueron ejecutados localmente con Angular/Karma usando el comando:
+
+`npm test -- --watch=false`
+
+Para evitar dependencias con el backend desplegado, las pruebas frontend utilizaron mocks de servicios. De esta forma, se validó el comportamiento de los componentes, formularios, renderizado de información e interacción esperada sin realizar llamadas reales a servicios externos.
+
+El resultado final de la ejecución fue de 59 pruebas exitosas.
+
+#### Tabla de commits relacionados al frontend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>a1de5eb</td>
+    <td>test: add login form tests for US17</td>
+    <td>Added frontend tests for login form validation and mocked authentication behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>fbf8316</td>
+    <td>test: add plan selection tests for US19</td>
+    <td>Added tests for plan rendering and plan selection using mocked user service.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>3d6cd82</td>
+    <td>test: add supplier management tests for US01</td>
+    <td>Added tests for supplier page and supplier list behavior using mocked data.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>a634b61</td>
+    <td>test: add coffee lot tests for US02</td>
+    <td>Added tests for coffee lot page and lot list component behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>892e149</td>
+    <td>test: add recipe creation tests for US07</td>
+    <td>Added tests for recipe creation dialog and recipe list behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>f60cdaa</td>
+    <td>test: add calibration tests for US08</td>
+    <td>Added tests for calibration creation and calibration page behavior.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>bd58b04</td>
+    <td>test: add inventory tests for US10</td>
+    <td>Added tests for inventory view, consumption table and consumption registration dialog.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>03dc69e</td>
+    <td>test: add production cost tests for US13</td>
+    <td>Added tests for production cost management, lot selection, direct costs, indirect costs and metrics card components.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend</td>
+    <td>32bcf98</td>
+    <td>test: add BDD feature files for sprint acceptance tests</td>
+    <td>Added Gherkin feature files for authentication, suppliers, coffee lots, inventory and costing acceptance scenarios.</td>
+    <td>10/05/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Frontend realizadas
+
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre componentes individuales del frontend para validar comportamientos específicos, como creación de componentes, validación de formularios, renderizado de datos y actualización de estados internos.
+
+#### Integration Tests
+
+Los Integration Tests frontend validaron la interacción entre componentes y servicios mockeados. Estos tests simularon respuestas mediante mocks para comprobar que la interfaz reacciona correctamente ante los datos esperados.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>login-form.component.spec.ts</td>
+    <td>Unit Test / Integration Test</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Valida la creación del formulario de login, campos obligatorios, email inválido y autenticación mediante servicio mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>select-plan.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US19 - Selección de Plan</td>
+    <td>Valida la visualización de planes y la selección de un plan mediante servicio mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>supplier-list.component.spec.ts / supply-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Valida la visualización de proveedores y la interacción con datos mockeados sin consumir el backend real.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>lot-list.component.spec.ts / lots.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Valida la vista de lotes de café y el renderizado de información mockeada.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>add-recipe-dialog.component.spec.ts / recipe-list.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US07 - Creación de Recetas</td>
+    <td>Valida el comportamiento de creación y listado de recetas dentro del frontend.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>add-new-calibration.component.spec.ts / add-calibration-page.component.spec.ts</td>
+    <td>Unit Test / Component Test</td>
+    <td>US08 - Calibración de Molienda</td>
+    <td>Valida el comportamiento de los componentes relacionados con el registro de calibraciones.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>inventary.component.spec.ts / consumption-table.component.spec.ts / register-consumption-dialog.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Valida la vista de inventario, tabla de consumos y diálogo de registro de consumo con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>production-cost-management.component.spec.ts / step-direct-costs.component.spec.ts / step-indirect-costs.component.spec.ts / step-lot-selection.component.spec.ts / metrics-card.component.spec.ts</td>
+    <td>Unit Test / Component Test / Integration Test</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Valida los componentes de gestión de costos, selección de lote, costos directos, costos indirectos y métricas.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog. Su propósito es representar, en lenguaje comprensible para el equipo, el comportamiento esperado de las funcionalidades principales del Sprint.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>authentication.feature</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Describe escenarios de aceptación para inicio de sesión, validación de credenciales y comportamiento esperado del flujo de autenticación.</td>
+  </tr>
+  <tr>
+    <td>supplier-management.feature</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Describe escenarios de aceptación para visualización y gestión de proveedores.</td>
+  </tr>
+  <tr>
+    <td>coffee-lot-management.feature</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Describe escenarios de aceptación para consulta y gestión de lotes de café verde.</td>
+  </tr>
+  <tr>
+    <td>inventory-management.feature</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Describe escenarios de aceptación para visualización de inventario y registro de consumos.</td>
+  </tr>
+  <tr>
+    <td>costing-management.feature</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Describe escenarios de aceptación para selección de lote, registro de costos y visualización de métricas.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Frontend Test Execution Evidence](public/assets/images/chapter-6/sprint-1/evidence/frontTesting1.png)
+
+### Backend Testing Suite Evidence
+
+Para el repositorio backend se implementó una suite de pruebas automatizadas orientada a validar los Web Services relacionados con las funcionalidades incluidas en el Sprint Backlog. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-backend` del repositorio `cafeLab-backEnd`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git  
+Branch: feature/testing-suite-backend  
+
+La suite incluyó Integration Tests con Spring Boot, JUnit 5 y MockMvc, además de Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Para evitar el uso de la base de datos real, se configuró un perfil de pruebas con H2 Database, permitiendo ejecutar la suite en un entorno controlado y aislado.
+
+La ejecución final de pruebas se realizó con Maven mediante el comando:
+
+`./mvnw clean test`
+
+El resultado final fue de 14 pruebas ejecutadas correctamente.
+
+#### Tabla de commits relacionados al backend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>599fb18</td>
+    <td>test: configure test profile with H2 database</td>
+    <td>Configured a test profile using H2 database to execute backend tests without connecting to the real MySQL database.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>541bf43</td>
+    <td>test: add backend authentication tests for US17</td>
+    <td>Added backend tests for authentication endpoints related to user sign-in and request validation.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>17143ee</td>
+    <td>test: add supplier and coffee lot backend tests</td>
+    <td>Added backend tests for supplier and coffee lot REST controllers using MockMvc.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>42c73cf</td>
+    <td>test: add inventory and production cost backend tests</td>
+    <td>Added backend tests for inventory entries and production cost records REST controllers.</td>
+    <td>10/05/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>b2b934b</td>
+    <td>test: add backend BDD feature files for sprint acceptance tests</td>
+    <td>Added Gherkin feature files for backend acceptance test scenarios related to authentication, suppliers, coffee lots, inventory and costing.</td>
+    <td>10/05/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Backend realizadas
+
+#### Integration Tests
+
+Los Integration Tests del backend fueron implementados con Spring Boot, JUnit 5 y MockMvc. Estos tests validan el comportamiento de los controladores REST asociados a las User Stories del Sprint Backlog. Para evitar dependencias con la base de datos real, se configuró un perfil de pruebas con H2 Database.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>AuthenticationControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Valida el comportamiento del endpoint de autenticación, incluyendo solicitudes válidas e inválidas mediante MockMvc.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>SuppliersControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Valida endpoints REST relacionados con proveedores, incluyendo creación, consulta o validación de solicitudes.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>CoffeeLotsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Valida endpoints REST relacionados con lotes de café verde usando datos de prueba.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>InventoryEntriesControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US10 - Control de Inventario Integrado</td>
+    <td>Valida endpoints REST relacionados con entradas o registros de inventario.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>ProductionCostRecordsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US13 - Gestión de Costos de Producción</td>
+    <td>Valida endpoints REST relacionados con registros de costos de producción.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación asociados a las User Stories del Sprint, permitiendo expresar el comportamiento esperado del sistema desde una perspectiva funcional.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>authentication-api.feature</td>
+    <td>US17 - Registro y Autenticación</td>
+    <td>Describe escenarios de aceptación para el flujo de autenticación mediante API.</td>
+  </tr>
+  <tr>
+    <td>supplier-api.feature</td>
+    <td>US01 - Registro de Proveedores</td>
+    <td>Describe escenarios de aceptación para creación, validación y consulta de proveedores.</td>
+  </tr>
+  <tr>
+    <td>coffee-lot-api.feature</td>
+    <td>US02 - Gestión de Lotes de Café Verde</td>
+    <td>Describe escenarios de aceptación para gestión de lotes de café verde mediante API.</td>
+  </tr>
+  <tr>
+    <td>inventory-and-costing-api.feature</td>
+    <td>US10 - Control de Inventario Integrado / US13 - Gestión de Costos de Producción</td>
+    <td>Describe escenarios de aceptación para inventario, consumos y costos de producción.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-1/evidence/backTesting1.png)
+
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+
+#### Landing page: Sección diferenciación de segmentos objetivo
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing1.png" alt="Evidencia 1">
+</figure>
+
+#### Landing page: Sección módulos a ofrecer
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing2.png" alt="Evidencia 2">
+</figure>
+
+#### Landing page: Sección elección de suscripción
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/landing3.png" alt="Evidencia 3">
+</figure>
+
+#### Frontend: Sección dashboard de dueño
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/front1.png" alt="Evidencia 4">
+</figure>
+
+#### Frontend: Sección proveedores
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/front2.png" alt="Evidencia 5">
+</figure>
+
+#### Frontend: Sección registro de nuevo proveedor
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/front3.png" alt="Evidencia 6">
+</figure>
+
+#### Frontend: Sección iniciar sesión
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/front4.png" alt="Evidencia 7">
+</figure>
+
+#### Backend: Registro de un proveedor
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back1.jpeg" alt="Evidencia 8">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back2.jpeg" alt="Evidencia 9">
+</figure>
+
+#### Backend: Registro de un lote de café
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back3.jpeg" alt="Evidencia 10">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-1/evidence/back4.jpeg" alt="Evidencia 11">
+</figure>
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+Durante el Sprint 1 se documentaron los servicios backend mediante OpenAPI y Swagger UI. Esta documentación permitió visualizar los endpoints disponibles, sus métodos HTTP, rutas, parámetros, cuerpos de solicitud, códigos de respuesta y ejemplos de ejecución. Asimismo, los servicios fueron validados en sus entornos desplegados, el backend se encuentra alojado en Azure y utiliza una BD MySQL desplegada en Railway.
+
+La documentación generada permite comprobar que los endpoints principales del Sprint se encuentran disponibles y organizados por módulos funcionales. Entre ellos se incluyen servicios relacionados con perfiles de tueste, entradas de inventario, autenticación, proveedores, lotes de café y costos de producción. Desde Swagger UI se realizaron pruebas sobre las rutas expuestas, verificando la disponibilidad del API, el uso de autenticación mediante JWT y la persistencia de información en la BD desplegada.
+
+**URL de Swagger UI desplegado:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+**URL de documentación OpenAPI:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/v3/api-docs
+
+**Repositorio de Web Services:** https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git
+
+**Documentación OpenAPI de los servicios backend:**
+
+<figure style="text-align: center;">
+    <img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/documentacion-openapi.jpeg" alt="Evidencia openapi">
+</figure>
+
+<h3>Roast Profiles</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Obtiene un perfil de tueste por identificador.</td>
+    <td>Path parameter: roastProfileId. Requiere token JWT.</td>
+    <td>200 OK - Retorna los datos del perfil solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Actualiza un perfil de tueste existente.</td>
+    <td>Path parameter: roastProfileId. Body con los datos actualizados. Requiere token JWT.</td>
+    <td>200 OK - Retorna el perfil actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/roast-profile/{roastProfileId}</td>
+    <td>Elimina un perfil de tueste registrado.</td>
+    <td>Path parameter: roastProfileId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile</td>
+    <td>Lista los perfiles de tueste del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de perfiles de tueste.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/roast-profile</td>
+    <td>Crea un nuevo perfil de tueste.</td>
+    <td>Body con datos del perfil. El lote debe pertenecer al usuario autenticado.</td>
+    <td>201 Created o 200 OK - Retorna el perfil creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/profile/{userId}</td>
+    <td>Lista perfiles de tueste por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los perfiles asociados al usuario.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/roast-profile/lot/{coffeeLotId}</td>
+    <td>Lista perfiles de tueste asociados a un lote.</td>
+    <td>Path parameter: coffeeLotId. El lote debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna los perfiles asociados al lote.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de perfiles de tueste</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiperfiltueste1.png" alt="Endpoint perfil de tueste">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiperfiltueste2.png" alt="Endpoint perfil de tueste">
+</p>
+
+<h3>Inventory Entries</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Obtiene una entrada de inventario por identificador.</td>
+    <td>Path parameter: inventoryEntryId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la entrada de inventario solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Actualiza una entrada de inventario y reajusta el stock del lote.</td>
+    <td>Path parameter: inventoryEntryId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la entrada actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/inventory-entries/{inventoryEntryId}</td>
+    <td>Elimina una entrada de inventario y restaura el stock al lote.</td>
+    <td>Path parameter: inventoryEntryId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries</td>
+    <td>Lista las entradas del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de entradas de inventario.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/inventory-entries</td>
+    <td>Registra un consumo de inventario y descuenta stock del lote.</td>
+    <td>Body con datos del consumo. Requiere token JWT.</td>
+    <td>201 Created o 200 OK - Retorna la entrada registrada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/profile/{userId}</td>
+    <td>Lista entradas de inventario por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna las entradas asociadas al usuario.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/inventory-entries/coffee-lot/{coffeeLotId}</td>
+    <td>Lista entradas de inventario asociadas a un lote.</td>
+    <td>Path parameter: coffeeLotId. El lote debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna las entradas asociadas al lote.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de inventario</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiinventario1.png" alt="Endpoint de inventario">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiinventario2.png" alt="Endpoint de inventario">
+</p>
+
+<h3>Production Cost Records</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Obtiene un registro de costo de producción por id.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK - Retorna el registro solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Actualiza un registro de costo de producción.</td>
+    <td>Path parameter: id. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el registro actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/production-cost-records/{id}</td>
+    <td>Elimina definitivamente un registro de costo de producción.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/production-cost-records</td>
+    <td>Lista los registros de costo del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de registros.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/production-cost-records</td>
+    <td>Crea un nuevo registro de costo de producción.</td>
+    <td>Body con los datos del costo de producción.</td>
+    <td>201 Created o 200 OK - Retorna el registro creado.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/production-cost-records/{id}/annulment</td>
+    <td>Anula un registro sin eliminarlo, manteniéndolo para auditoría.</td>
+    <td>Path parameter: id. Requiere token JWT.</td>
+    <td>200 OK - Retorna el registro anulado o confirmación de anulación.</td>
+  </tr>
+</table>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicosto1.png" alt="Endpoint de costos">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicosto2.png" alt="Endpoint de costos">
+</p>
+
+<h3>Recipes</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Obtiene una receta por id.</td>
+    <td>Path parameter: recipeId. Solo permite consultar recetas del perfil autenticado.</td>
+    <td>200 OK - Retorna la receta solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Actualiza una receta existente.</td>
+    <td>Path parameter: recipeId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la receta actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/recipes/{recipeId}</td>
+    <td>Elimina una receta.</td>
+    <td>Path parameter: recipeId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+    <td>Actualiza un ingrediente de una receta.</td>
+    <td>Path parameters: recipeId e ingredientId. Body con datos del ingrediente.</td>
+    <td>200 OK - Retorna el ingrediente actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients/{ingredientId}</td>
+    <td>Elimina un ingrediente de una receta.</td>
+    <td>Path parameters: recipeId e ingredientId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes</td>
+    <td>Lista recetas del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de recetas.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/recipes</td>
+    <td>Crea una nueva receta para el perfil autenticado.</td>
+    <td>Body con datos de la receta. El perfil se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna la receta creada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients</td>
+    <td>Lista los ingredientes de una receta.</td>
+    <td>Path parameter: recipeId.</td>
+    <td>200 OK - Retorna la lista de ingredientes.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/recipes/{recipeId}/ingredients</td>
+    <td>Añade un ingrediente a una receta del perfil.</td>
+    <td>Path parameter: recipeId. Body con datos del ingrediente.</td>
+    <td>201 Created o 200 OK - Retorna el ingrediente agregado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de recetas</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apireceta1.png" alt="Endpoint de receta">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apireceta2.png" alt="Endpoint de receta">
+</p>
+
+<h3>Coffees</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffees</td>
+    <td>Lista todos los cafés registrados.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de cafés.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/coffees</td>
+    <td>Crea un nuevo café.</td>
+    <td>Body con datos del café.</td>
+    <td>201 Created o 200 OK - Retorna el café creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffees/{coffeeId}</td>
+    <td>Obtiene un café por identificador.</td>
+    <td>Path parameter: coffeeId.</td>
+    <td>200 OK - Retorna el café solicitado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de cafés</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicafe1.png" alt="Endpoint de cafés">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicafe2.png" alt="Endpoint de cafés">
+</p>
+
+<h3>Cupping Sessions</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Obtiene una sesión de cata por id.</td>
+    <td>Path parameter: sessionId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la sesión solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Actualiza una sesión de cata.</td>
+    <td>Path parameter: sessionId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la sesión actualizada.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/cupping-sessions/{sessionId}</td>
+    <td>Elimina una sesión de cata.</td>
+    <td>Path parameter: sessionId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/cupping-sessions</td>
+    <td>Lista las sesiones de cata del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna las sesiones más recientes primero.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/cupping-sessions</td>
+    <td>Crea una nueva sesión de cata.</td>
+    <td>Body con datos de la sesión de cata.</td>
+    <td>201 Created o 200 OK - Retorna la sesión creada.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de sesiones de cata</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicata1.png" alt="Endpoint de catas">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicata2.png" alt="Endpoint de catas">
+</p>
+
+<h3>Defects</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/defects</td>
+    <td>Lista los defectos registrados por el perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de defectos.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/defects</td>
+    <td>Crea un registro de defecto.</td>
+    <td>Body con datos del defecto. El userId se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna el defecto creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/defects/{defectId}</td>
+    <td>Obtiene un defecto por id.</td>
+    <td>Path parameter: defectId. Solo permite consultar defectos del propio perfil.</td>
+    <td>200 OK - Retorna el defecto solicitado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de defectos</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apidefecto2.png" alt="Endpoint de catas">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apidefecto1.png" alt="Endpoint de catas">
+</p>
+
+<h3>Profiles</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/profiles</td>
+    <td>Obtiene un perfil por email.</td>
+    <td>Query parameter: email. Requiere token JWT según configuración del endpoint.</td>
+    <td>200 OK - Retorna el perfil asociado al email.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/profiles</td>
+    <td>Crea un nuevo perfil de usuario.</td>
+    <td>Body con datos del perfil.</td>
+    <td>201 Created o 200 OK - Retorna el perfil creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/profiles/{userId}</td>
+    <td>Obtiene un perfil por id.</td>
+    <td>Path parameter: userId.</td>
+    <td>200 OK - Retorna el perfil solicitado.</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>/api/v1/profiles/{userId}</td>
+    <td>Actualiza parcialmente un perfil.</td>
+    <td>Path parameter: userId. Body con los campos a modificar.</td>
+    <td>200 OK - Retorna el perfil actualizado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de perfiles</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiprofile1.png" alt="Endpoint de perfiles">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiprofile2.png" alt="Endpoint de perfiles">
+</p>
+
+<h3>Coffee Lots</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Obtiene un lote de café por id.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna el lote solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Actualiza un lote de café.</td>
+    <td>Path parameter: coffeeLotId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el lote actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/coffee-lots/{coffeeLotId}</td>
+    <td>Elimina un lote de café.</td>
+    <td>Path parameter: coffeeLotId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots</td>
+    <td>Lista los lotes del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de lotes.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/coffee-lots</td>
+    <td>Crea un nuevo lote de café.</td>
+    <td>Body con datos del lote. El proveedor debe pertenecer al usuario autenticado.</td>
+    <td>201 Created o 200 OK - Retorna el lote creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/supplier/{supplierId}</td>
+    <td>Lista lotes asociados a un proveedor.</td>
+    <td>Path parameter: supplierId. El proveedor debe pertenecer al usuario autenticado.</td>
+    <td>200 OK - Retorna los lotes del proveedor.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/coffee-lots/profile/{userId}</td>
+    <td>Lista lotes por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los lotes asociados al usuario.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de lotes de café</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apilotedecafe1.png" alt="Endpoint de lotes de café">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apilotedecafe2.png" alt="Endpoint de lotes de café">
+</p>
+
+<h3>Portfolios</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Obtiene un portafolio por id.</td>
+    <td>Path parameter: portfolioId. Solo permite consultar portafolios del propio perfil.</td>
+    <td>200 OK - Retorna el portafolio solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Actualiza un portafolio.</td>
+    <td>Path parameter: portfolioId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el portafolio actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/portfolios/{portfolioId}</td>
+    <td>Elimina un portafolio.</td>
+    <td>Path parameter: portfolioId.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/portfolios</td>
+    <td>Lista los portafolios del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de portafolios.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/portfolios</td>
+    <td>Crea un nuevo portafolio.</td>
+    <td>Body con datos del portafolio. El perfil se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna el portafolio creado.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de portafolios</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiportafolio1.png" alt="Endpoint de portafolios">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiportafolio2.png" alt="Endpoint de portafolios">
+</p>
+
+<h3>Suppliers</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Obtiene un proveedor por id.</td>
+    <td>Path parameter: supplierId. Requiere token JWT.</td>
+    <td>200 OK - Retorna el proveedor solicitado.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Actualiza la información de un proveedor.</td>
+    <td>Path parameter: supplierId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna el proveedor actualizado.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/v1/suppliers/{supplierId}</td>
+    <td>Elimina un proveedor.</td>
+    <td>Path parameter: supplierId. Requiere token JWT.</td>
+    <td>200 OK o 204 No Content - Confirma la eliminación.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers</td>
+    <td>Lista proveedores del usuario autenticado.</td>
+    <td>Requiere token JWT en Authorization. No expone una lista global.</td>
+    <td>200 OK - Retorna los proveedores del usuario.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/suppliers</td>
+    <td>Crea un nuevo proveedor.</td>
+    <td>Body con datos del proveedor.</td>
+    <td>201 Created o 200 OK - Retorna el proveedor creado.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/suppliers/profile/{userId}</td>
+    <td>Lista proveedores por userId.</td>
+    <td>Path parameter: userId. Solo permite consultar el propio perfil.</td>
+    <td>200 OK - Retorna los proveedores asociados al usuario.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de proveedores</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiproveedor1.png" alt="Endpoint de proveedores">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiproveedor2.png" alt="Endpoint de proveedores">
+</p>
+
+<h3>Grind Calibrations</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/calibrations/{calibrationId}</td>
+    <td>Obtiene una calibración por id.</td>
+    <td>Path parameter: calibrationId. Solo permite consultar calibraciones del propio perfil.</td>
+    <td>200 OK - Retorna la calibración solicitada.</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/calibrations/{calibrationId}</td>
+    <td>Actualiza una calibración de molienda.</td>
+    <td>Path parameter: calibrationId. Body con datos actualizados.</td>
+    <td>200 OK - Retorna la calibración actualizada.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/calibrations</td>
+    <td>Lista calibraciones del perfil autenticado.</td>
+    <td>Requiere token JWT en Authorization.</td>
+    <td>200 OK - Retorna la lista de calibraciones.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/calibrations</td>
+    <td>Crea una nueva calibración.</td>
+    <td>Body con datos de la calibración. El userId se obtiene desde el JWT.</td>
+    <td>201 Created o 200 OK - Retorna la calibración creada.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de calibraciones</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion1.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion2.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion3.png" alt="Endpoint de calibraciones">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apicalibracion4.png" alt="Endpoint de calibraciones">
+</p>
+
+<h3>Authentication</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/authentication/sign-up</td>
+    <td>Registra un nuevo usuario en el sistema.</td>
+    <td>Body con email, password y datos requeridos para el registro.</td>
+    <td>201 Created o 200 OK - Retorna los datos del usuario registrado.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/authentication/sign-in</td>
+    <td>Autentica al usuario mediante email y contraseña.</td>
+    <td>Body con email y password.</td>
+    <td>200 OK - Retorna los datos del usuario autenticado y token JWT.</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de autenticación</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiauth1.png" alt="Endpoint de autenticación">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-1/evidence/apiauth2.png" alt="Endpoint de autenticación">
+</p>
+
+<h3>Commits relacionados con la documentación de servicios</h3>
+<table border="1">
+  <tr>
+    <th>Repositorio</th>
+    <th>Branch</th>
+    <th>Commit ID</th>
+    <th>Commit message</th>
+    <th>Relación con la documentación de servicios</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>b2b934b</td>
+    <td>test: add backend BDD feature files for sprint acceptance tests</td>
+    <td>Agrega escenarios BDD para validar los endpoints principales incluidos en el Sprint.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>42c73cf</td>
+    <td>test: add inventory and production cost backend tests</td>
+    <td>Valida los servicios de inventario y costos de producción documentados en Swagger.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>17143ee</td>
+    <td>test: add supplier and coffee lot backend tests</td>
+    <td>Valida los servicios de proveedores y lotes de café documentados para el Sprint.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend</td>
+    <td>541bf43</td>
+    <td>test: add backend authentication tests for US17</td>
+    <td>Valida los servicios de autenticación utilizados para proteger los endpoints con JWT.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>1155480</td>
+    <td>Add or update the Azure App Service build and deployment workflow config</td>
+    <td>Agrega o actualiza la configuración del workflow de GitHub Actions para construir y desplegar el backend en Azure App Service.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>916f2f9</td>
+    <td>Update Azure workflow for JAR app deployment</td>
+    <td>Actualiza el workflow de Azure para desplegar la aplicación backend como archivo JAR en Azure Web App.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>adea86f</td>
+    <td>change in workflow</td>
+    <td>Realiza ajustes en el workflow de despliegue para corregir o mejorar el proceso de publicación del backend.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>main</td>
+    <td>7cbb0d6</td>
+    <td>update</td>
+    <td>Actualiza la configuración final del backend desplegado, permitiendo validar la disponibilidad de Swagger UI y los servicios en Azure.</td>
+  </tr>
+</table>
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+Durante el Sprint 1 se realizaron actividades de despliegue para el landing page, frontend, backend y base de datos. Estas actividades incluyeron la configuración del backend en Azure App Service, la automatización del despliegue mediante GitHub Actions, la habilitación de una base de datos MySQL en Railway y la publicación del frontend y la landing page mediante workflows de GitHub Pages. Con ello, se logró disponer de entornos desplegados para validar los servicios web, la persistencia de datos y el acceso a las interfaces del producto.
+
+<h3>Despliegue de la landing page mediante GitHub Pages</h3>
+<p>
+La landing page fue desplegada mediante GitHub Actions y GitHub Pages. Este despliegue permite contar con una página pública de presentación del producto, orientada a comunicar la propuesta de valor de CaféLab y redirigir a los usuarios hacia la aplicación principal.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-landing.png" alt="Workflow de despliegue de la landing page en GitHub Pages" width="550">
+</p>
+
+<p>
+La imagen evidencia la ejecución exitosa del workflow de despliegue de la landing page. Se observa que el proceso pages build and deployment finalizó correctamente desde la rama main, confirmando que el sitio informativo del producto fue publicado mediante GitHub Pages.
+</p>
+
+<h3>Despliegue del frontend mediante GitHub Actions</h3>
+<p>
+Se configuró el despliegue del frontend de CaféLab mediante GitHub Actions y GitHub Pages. Este flujo permite publicar la aplicación web a partir de los cambios integrados en el repositorio correspondiente.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-frontend.png" alt="Workflow de despliegue del frontend en GitHub Pages" width="550">
+</p>
+
+<p>
+La imagen muestra el historial de ejecuciones del workflow de despliegue del frontend. Se observa que el proceso de build and deployment se ejecutó correctamente, permitiendo publicar la aplicación web desde el repositorio del frontend hacia GitHub Pages.
+</p>
+
+<h3>Despliegue del backend en Azure App Service</h3>
+<p>
+El backend de CaféLab fue preparado para su despliegue mediante la creación de un recurso Azure Web App. En esta configuración se definieron aspectos como la suscripción, el grupo de recursos, el nombre del servicio, el tipo de publicación, el runtime de Java, el sistema operativo y el plan de App Service.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend1.jpg" alt="Configuración de Azure Web App para backend" width="550">
+</p>
+
+<p>
+Después de configurar el recurso de Azure App Service, se validó la ejecución del backend mediante el Log Stream de Azure. Esta vista permite observar en tiempo real los mensajes de arranque y ejecución de la aplicación Spring Boot desplegada.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend3.jpg" alt="Log stream del backend en Azure App Service" width="550">
+</p>
+
+<p>
+Para automatizar el despliegue del backend, se configuró un workflow de GitHub Actions encargado de compilar el proyecto, generar el artefacto de despliegue y publicarlo en Azure App Service. Este proceso permite reducir tareas manuales y mantener un flujo de integración y despliegue más controlado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-backend2.jpg" alt="Workflow de despliegue del backend en GitHub Actions" width="550">
+</p>
+
+<h3>Base de datos desplegada en Railway</h3>
+<p>
+Como parte del despliegue del sistema, se configuró una base de datos MySQL en Railway para almacenar la información generada por los servicios backend de CaféLab. Esta base de datos se mantiene en estado Online y permite la conexión desde el backend desplegado en Azure, asegurando la persistencia de los datos utilizados por los módulos del sistema.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-1/evidence/dep-evi-bd.jpg" alt="Base de datos MySQL desplegada en Railway" width="550">
+</p>
+
+<p>
+La imagen muestra el servicio MySQL activo en Railway, junto con métricas de operación como versión de la base de datos, conexiones activas, consultas realizadas y estadísticas de lectura y escritura. Esto evidencia que el recurso de base de datos fue creado correctamente y se encuentra disponible para ser consumido por el backend.
+</p>
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Sergio Gino Julca Minaya</td>
+    <td>
+      Desarrolló y actualizó secciones relacionadas con el diseño UI/UX del proyecto, incluyendo Landing Page Wireframe, Landing Page Mock-up, Applications Wireframes, Applications Wireflow Diagrams, Applications Mock-ups y Applications User Flow Diagrams. Además, colaboró en la incorporación de pantallas de visualización de datos y control IoT dentro de los artefactos de diseño.
+    </td>
+  </tr>
+  <tr>
+    <td>Jorge Suin Yum Gonzales</td>
+    <td>
+      Actualizó la sección de Software Configuration Management, incluyendo Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions y Software Deployment Configuration. También participó en el diseño del dispositivo IoT, actualización de collaboration con screenshots de GitHub, despliegue de landing page, despliegue de frontend y documentación de enlaces de deployment en anexos.
+    </td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>
+      Actualizó las secciones del Sprint 1, incluyendo Sprint Backlog 1, Development Evidence for Sprint Review, Testing Suite Evidence, Execution Evidence, Services Documentation Evidence, Software Deployment Evidence y Team Collaboration Insights. Además, trabajó en la modificación de la landing page, el diseño mobile frontend y la actualización de user stories, technical stories y product backlog del informe.
+    </td>
+  </tr>
+  <tr>
+    <td>Natalia Bertha Roman Cruz</td>
+    <td>
+      Actualizó secciones de Information Architecture, incluyendo Organization Systems, Labeling Systems, SEO Tags and Meta Tags, Searching Systems y Navigation Systems. También participó en Sprint Planning 1, Aspect Leaders and Collaborators, antecedentes, lectura de APIs, conclusiones y recomendaciones del informe.
+    </td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>
+      Actualizó las secciones de Style Guidelines, incluyendo General Style Guidelines y Web, Mobile and IoT Style Guidelines. Además, colaboró en Applications UX/UI Design, Applications Wireframes, Applications Wireflow Diagrams, Applications Mock-ups, Applications User Flow Diagrams, Applications Prototyping y revisión/modificación del frontend.
+    </td>
+  </tr>
+</table>
+
+## 6.3. Validation Interviews.
+
+### 6.3.1. Diseño de Entrevistas.
+
+### 6.3.2. Registro de Entrevistas.
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+## 6.4. Video About-the-Product.
+
 # Conclusiones
 
 1. Al haber realizado la primera entrega podemos concluir que el emplear la técnica Lean UX nos ayudó a poder comprender mejor el problema que estamos tratando así como a las personas afectadas, lo que desean y como podemos ofrecérselos utilizando herramientas tecnológicas. Además, nos brindó claridad como equipo y nos hizo abordar los puntos más críticos considerando diferentes perspectivas.
@@ -5310,6 +8938,16 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 
 4. La aplicación de Domain-Driven Design produjo cinco bounded contexts bien delimitados (IAM, Management, Costing, Procedure e IoT Monitoring) con patrones de integración claros como Anti-Corruption Layer, Customer/Supplier y Conformist. Esta arquitectura garantiza que el componente IoT sea un elemento central del dominio y no un módulo aislado, sentando las bases técnicas para que las siguientes entregas puedan implementar la trazabilidad completa del café desde el almacén hasta la taza.
 
+5. El comienzo de la implementación del producto tanto a nivel web como mobile fue exitoso dado que se lograron desplegar todos los elementos, así como se obtuvieron resultados positivos al realizar pruebas en los mismos. Además, ahora es posible ver la realidad de cómo el usuario usará nuestra aplicación y tendrá acceso a la información transmitida por nuestro componente IoT. Logramos un diseño intuitivo y sencillo de utilizar para cualquier usuario.
+
+# Recomendaciones
+
+1. Como primera recomendación podemos mencionar el continuar investigando sobre la integración de dispositivos IoT en aplicaciones como la que estamos desarrollando, con el objetivo de mejorar la misma y que esta sea más eficiente para el monitoreo del grano, teniendo una comunicación constante y sin caídas hacia el usuario.
+
+2. Podemos recomendar iniciar pruebas con el dispositivo IoT real una vez está totalmente diseñado, de forma en que el grupo logre tener suficiente tiempo como para detectar los errores y volver a integrar las veces que sea necesario, así como lo mejor en el camino. Al mismo tiempo, el actuar con tiempo suificiente nos permitiría realizar pruebas con usuarios reales. Así, obtendríamos feedback de primera mano que nos ayudaría a orientar mejor nuestar siguiente versión.
+
+3. Recomendamos establecer una estrategia de pruebas de usabilidad continua desde las etapas tempranas del desarrollo, involucrando a baristas y dueños de cafeterías en sesiones periódicas de validación. Contar con retroalimentación real y frecuente permitirá identificar posibles problemas o disgustos en la experiencia de uso, priorizar mejoras de interfaz y asegurar que las funcionalidades implementadas respondan verdaderamente a los flujos de trabajo del usuario final, evitando así el tener que volver a trabajar en alguna función y el costo que esto implica en iteraciones futuras.
+
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
 - **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
@@ -5319,6 +8957,8 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 - **Evans, E.** (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Domain Language.[https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf](https://fabiofumarola.github.io/nosql/readingMaterial/Evans03.pdf)
 - **Teams, A** (s, f.).  Angular material. Angular Material. [https://material.angular.dev/](https://material.angular.dev/)
 - **Vernon, V.** (2016). Domain-Driven Design Distilled. [https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
+- **Díaz Simeón, D. C.** (2018). *Tipo de empaque y contenido de humedad en la conservación de la calidad de cafés especiales*. [https://alicia.concytec.gob.pe/vufind/Record/UNAL_fa17113e622fcf6a28b499b2607970a9](https://alicia.concytec.gob.pe/vufind/Record/UNAL_fa17113e622fcf6a28b499b2607970a9)
+- **Vera Aguilar, A. M.** (2019). *Estudio de prefactibilidad de una empresa productora de bebidas listas para tomar a base de café peruano en Lima Metropolitana*. [https://tesis.pucp.edu.pe/items/0ec378d5-27b4-46a0-89e1-470591f7003a](https://tesis.pucp.edu.pe/items/0ec378d5-27b4-46a0-89e1-470591f7003a)
 
 # Anexos
 
@@ -5326,6 +8966,6 @@ La Infrastructure Layer del bounded context IoT Monitoring provee las implementa
 - Organización del proyecto en GitHub: [https://github.com/CafeLab-IoT-Project](https://github.com/CafeLab-IoT-Project)
 - Lean UX Canvas en Mural: [https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949](https://app.mural.co/t/workspace06322/m/workspace06322/1746663843706/9d4cdde362fcb2e2e7ab63b79b9f4cbbbb9cf6c0?sender=udb49d0aae562d2e192373949)
 - Video de entrevistas en YouTube: [https://youtu.be/eJOE34HVgzc](https://youtu.be/eJOE34HVgzc)
-- Video de presentación en MicrosoftStream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210838_upc_edu_pe/IQDI9_AGxPTfTpv1d379RsU7Aer0uiZ6_G6R8RSC4L1-mb4?e=rpyqKp](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210838_upc_edu_pe/IQDI9_AGxPTfTpv1d379RsU7Aer0uiZ6_G6R8RSC4L1-mb4?e=rpyqKp)
-
-
+- Link de landing page: [https://cafelab-iot-project.github.io/cafeLab-landingPage/](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
+- Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
+- Link de backend: [https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
