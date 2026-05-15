@@ -6905,14 +6905,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar formulario de calibración de molienda</td>
       <td>Crear la interfaz para registrar una calibración con campos de equipo utilizado, ajuste de molino y parámetros de extracción resultantes.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Integrar calibración con método y receta de preparación</td>
       <td>Vincular el registro de calibración al método de preparación y receta correspondiente, permitiendo consultarla en contexto durante la preparación.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7002,14 +7002,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar sección hero y propuesta de valor de la landing page</td>
       <td>Crear la sección principal de la landing page con encabezado impactante, eslogan del producto, descripción de la propuesta de valor y llamada a la acción.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar sección de características y beneficios con diseño visual</td>
       <td>Desarrollar la sección de características principales con íconos, titulares y descripciones breves de los beneficios más relevantes de CaféLab.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7032,7 +7032,7 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar botones y redirecciones desde landing page a la aplicación</td>
       <td>Agregar los botones de llamada a la acción en la landing page (header, hero y footer) que redirigen al usuario al login o registro de la aplicación principal.</td>
       <td>3</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7196,14 +7196,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Calibración</td>
       <td>Definir la estructura de la entidad Calibración con atributos (equipo, ajuste de molino, método vinculado, resultado de extracción) y sus relaciones.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints de registro y actualización de calibraciones</td>
       <td>Desarrollar los endpoints REST para registrar nuevas calibraciones y actualizarlas, incluyendo la asociación al método de preparación correspondiente.</td>
       <td>3</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
