@@ -5864,6 +5864,21 @@ Production Cost Management 4 - US13
 Production Cost Management 5 - US13
 ![Production Cost Management 5](public/assets/images/chapter-5/WebAppMockup/ProductionCostManagament5.png)
 
+Iot Monitoring - US 20 - US 24
+<br>
+Iot Monitoring 1 - US21 - US24
+![image](public/assets/images/chapter-5/ApplicationWireframes/lotes.png)
+
+Iot Monitoring 2 - US23
+![image](public/assets/images/chapter-5/ApplicationWireframes/configuracion.png)
+
+Iot Monitoring 3 - US22
+![image](public/assets/images/chapter-5/ApplicationWireframes/alertas.png)
+
+Iot Monitoring 4 - US20
+![image](public/assets/images/chapter-5/ApplicationWireframes/analiticas.png)
+
+
 #### Mock-ups for Mobiles
 
  *Register Mobile Mockups and Tools*
@@ -6433,7 +6448,7 @@ Con este flujo, el backend queda alojado en Azure Web App y disponible como serv
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Natalia Roman, Fredy Fernández, Kalet Esteban, Gabriel Sánchez, Adrian Donayre</td>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
         </tr>
         <tr>
             <th>Sprint 0 Review Summary</th>
@@ -6475,8 +6490,8 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que c
 <tr>
 <th>Aspecto / US - TS</th>
 <th>Roman, Natalia (natRC2005)</th>
-<th>Sánchez, Gabriel (yigabriel)</th>
-<th>Esteban, Henry (kalet123-commit)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
 <th>Fernández, Fredy (u202320083)</th>
 <th>Donayre, Adrian (adriandonayredev)</th>
 </tr>
@@ -6838,21 +6853,21 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar formulario de cata sensorial</td>
       <td>Desarrollar la vista principal de registro de cata con campos para fecha, barista evaluador y notas generales de la sesión.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar campos de puntuación y atributos sensoriales</td>
       <td>Agregar los controles de puntuación para atributos sensoriales como acidez, cuerpo, dulzura, aroma y sabor residual conforme al protocolo SCA.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Vincular cata con lote y perfil de tueste</td>
       <td>Integrar selectores para asociar la cata a un lote de café verde y a un perfil de tueste específico, asegurando la trazabilidad de la evaluación.</td>
       <td>1</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6875,14 +6890,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar formulario de receta con parámetros técnicos</td>
       <td>Crear la interfaz con campos para nombre de la receta, método de preparación, ratio café/agua, temperatura, tiempo de extracción y nivel de molienda.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Integrar validación y persistencia de recetas</td>
       <td>Conectar el formulario con la API para guardar y consultar recetas, aplicando validaciones de rango en los parámetros técnicos ingresados.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6890,14 +6905,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar formulario de calibración de molienda</td>
       <td>Crear la interfaz para registrar una calibración con campos de equipo utilizado, ajuste de molino y parámetros de extracción resultantes.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Integrar calibración con método y receta de preparación</td>
       <td>Vincular el registro de calibración al método de preparación y receta correspondiente, permitiendo consultarla en contexto durante la preparación.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6905,14 +6920,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar vista de portafolio de bebidas</td>
       <td>Desarrollar la pantalla que muestra las bebidas organizadas visualmente en un portafolio digital con imagen, nombre y descripción breve.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar detalle de bebida y vinculación con recetas</td>
       <td>Crear la vista de detalle de cada bebida que muestra su receta asociada, parámetros de preparación y notas de presentación.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6987,14 +7002,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar sección hero y propuesta de valor de la landing page</td>
       <td>Crear la sección principal de la landing page con encabezado impactante, eslogan del producto, descripción de la propuesta de valor y llamada a la acción.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar sección de características y beneficios con diseño visual</td>
       <td>Desarrollar la sección de características principales con íconos, titulares y descripciones breves de los beneficios más relevantes de CaféLab.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7002,14 +7017,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar sección diferenciada para baristas</td>
       <td>Crear una sección en la landing page dirigida a baristas, destacando funcionalidades de tueste, catas, recetas y calibración adaptadas a su perfil profesional.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar sección diferenciada para dueños de cafeterías</td>
       <td>Crear una sección orientada a dueños de cafeterías resaltando los beneficios de control de inventario, costos, trazabilidad y análisis de producción.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7017,7 +7032,7 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar botones y redirecciones desde landing page a la aplicación</td>
       <td>Agregar los botones de llamada a la acción en la landing page (header, hero y footer) que redirigen al usuario al login o registro de la aplicación principal.</td>
       <td>3</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7151,14 +7166,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Cata</td>
       <td>Definir la estructura de la entidad Cata con sus atributos sensoriales (acidez, cuerpo, dulzura, aroma, sabor, puntaje total) y relaciones con lote y perfil de tueste.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints de registro y consulta de catas</td>
       <td>Desarrollar los endpoints REST para crear una cata con sus atributos sensoriales y consultarlas con soporte de filtros por fecha, lote o puntuación.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7166,14 +7181,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Receta</td>
       <td>Definir la estructura de la entidad Receta con atributos (método, ratio, temperatura, tiempo, molienda) y su relación con el portafolio de bebidas.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints CRUD de recetas de preparación</td>
       <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar recetas, con validaciones de rangos aceptables para cada parámetro técnico.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7181,14 +7196,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Calibración</td>
       <td>Definir la estructura de la entidad Calibración con atributos (equipo, ajuste de molino, método vinculado, resultado de extracción) y sus relaciones.</td>
       <td>2</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints de registro y actualización de calibraciones</td>
       <td>Desarrollar los endpoints REST para registrar nuevas calibraciones y actualizarlas, incluyendo la asociación al método de preparación correspondiente.</td>
       <td>3</td>
-      <td>Henry Esteban</td>
+      <td>Sergio Julca</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -8878,6 +8893,14 @@ La imagen muestra el servicio MySQL activo en Railway, junto con métricas de op
 4. La aplicación de Domain-Driven Design produjo cinco bounded contexts bien delimitados (IAM, Management, Costing, Procedure e IoT Monitoring) con patrones de integración claros como Anti-Corruption Layer, Customer/Supplier y Conformist. Esta arquitectura garantiza que el componente IoT sea un elemento central del dominio y no un módulo aislado, sentando las bases técnicas para que las siguientes entregas puedan implementar la trazabilidad completa del café desde el almacén hasta la taza.
 
 5. El comienzo de la implementación del producto tanto a nivel web como mobile fue exitoso dado que se lograron desplegar todos los elementos, así como se obtuvieron resultados positivos al realizar pruebas en los mismos. Además, ahora es posible ver la realidad de cómo el usuario usará nuestra aplicación y tendrá acceso a la información transmitida por nuestro componente IoT. Logramos un diseño intuitivo y sencillo de utilizar para cualquier usuario.
+
+# Recomendaciones
+
+1. Como primera recomendación podemos mencionar el continuar investigando sobre la integración de dispositivos IoT en aplicaciones como la que estamos desarrollando, con el objetivo de mejorar la misma y que esta sea más eficiente para el monitoreo del grano, teniendo una comunicación constante y sin caídas hacia el usuario.
+
+2. Podemos recomendar iniciar pruebas con el dispositivo IoT real una vez está totalmente diseñado, de forma en que el grupo logre tener suficiente tiempo como para detectar los errores y volver a integrar las veces que sea necesario, así como lo mejor en el camino. Al mismo tiempo, el actuar con tiempo suificiente nos permitiría realizar pruebas con usuarios reales. Así, obtendríamos feedback de primera mano que nos ayudaría a orientar mejor nuestar siguiente versión.
+
+3. Recomendamos establecer una estrategia de pruebas de usabilidad continua desde las etapas tempranas del desarrollo, involucrando a baristas y dueños de cafeterías en sesiones periódicas de validación. Contar con retroalimentación real y frecuente permitirá identificar posibles problemas o disgustos en la experiencia de uso, priorizar mejoras de interfaz y asegurar que las funcionalidades implementadas respondan verdaderamente a los flujos de trabajo del usuario final, evitando así el tener que volver a trabajar en alguna función y el costo que esto implica en iteraciones futuras.
 
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
