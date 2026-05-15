@@ -183,7 +183,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
-    <td></td>
+    <td>Desarrollé las secciones de prototipado, enfocándome en las funcionalidades y requisitos establecidos por el usuario. Asimismo, prioricé el diseño funcional antes de la arquitectura, con el fin de facilitar una mejor comprensión de la solución por parte del usuario. Trabajé de manera conjunta con el encargado del desarrollo frontend para lograr una interfaz intuitiva, atractiva y fácil de usar.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
