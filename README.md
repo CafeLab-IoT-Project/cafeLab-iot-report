@@ -168,7 +168,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Roman Cruz, Natalia Bertha</strong></td>
-    <td></td>
+    <td>Desarrollé y actualicé las secciones 5.2.1 a 5.2.5 correspondientes a Information Architecture, incluyendo Organization Systems, Labeling Systems, SEO Tags and Meta Tags, Searching Systems y Navigation Systems. Además, participé en la elaboración de Sprint Planning 1 y Aspect Leaders and Collaborators, contribuyendo a la organización de responsabilidades del equipo durante la entrega. Finalmente, colaboré en la redacción de las conclusiones del informe, alineándolas con el avance logrado en diseño, implementación y despliegue.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
