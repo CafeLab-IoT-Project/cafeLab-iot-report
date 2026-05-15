@@ -6407,7 +6407,7 @@ Con este flujo, el backend queda alojado en Azure Web App y disponible como serv
         </tr>
         <tr>
             <th>Attendees (to planning meeting)</th>
-            <td>Natalia Roman, Fredy Fernández, Kalet Esteban, Gabriel Sánchez, Adrian Donayre</td>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
         </tr>
         <tr>
             <th>Sprint 0 Review Summary</th>
@@ -6449,8 +6449,8 @@ Para este Sprint, los aspectos principales corresponden a las User Stories que c
 <tr>
 <th>Aspecto / US - TS</th>
 <th>Roman, Natalia (natRC2005)</th>
-<th>Sánchez, Gabriel (yigabriel)</th>
-<th>Esteban, Henry (kalet123-commit)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
 <th>Fernández, Fredy (u202320083)</th>
 <th>Donayre, Adrian (adriandonayredev)</th>
 </tr>
@@ -6812,21 +6812,21 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar formulario de cata sensorial</td>
       <td>Desarrollar la vista principal de registro de cata con campos para fecha, barista evaluador y notas generales de la sesión.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar campos de puntuación y atributos sensoriales</td>
       <td>Agregar los controles de puntuación para atributos sensoriales como acidez, cuerpo, dulzura, aroma y sabor residual conforme al protocolo SCA.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Vincular cata con lote y perfil de tueste</td>
       <td>Integrar selectores para asociar la cata a un lote de café verde y a un perfil de tueste específico, asegurando la trazabilidad de la evaluación.</td>
       <td>1</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6849,14 +6849,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar formulario de receta con parámetros técnicos</td>
       <td>Crear la interfaz con campos para nombre de la receta, método de preparación, ratio café/agua, temperatura, tiempo de extracción y nivel de molienda.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Integrar validación y persistencia de recetas</td>
       <td>Conectar el formulario con la API para guardar y consultar recetas, aplicando validaciones de rango en los parámetros técnicos ingresados.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6879,14 +6879,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar vista de portafolio de bebidas</td>
       <td>Desarrollar la pantalla que muestra las bebidas organizadas visualmente en un portafolio digital con imagen, nombre y descripción breve.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar detalle de bebida y vinculación con recetas</td>
       <td>Crear la vista de detalle de cada bebida que muestra su receta asociada, parámetros de preparación y notas de presentación.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -6976,14 +6976,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Implementar sección diferenciada para baristas</td>
       <td>Crear una sección en la landing page dirigida a baristas, destacando funcionalidades de tueste, catas, recetas y calibración adaptadas a su perfil profesional.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar sección diferenciada para dueños de cafeterías</td>
       <td>Crear una sección orientada a dueños de cafeterías resaltando los beneficios de control de inventario, costos, trazabilidad y análisis de producción.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7125,14 +7125,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Cata</td>
       <td>Definir la estructura de la entidad Cata con sus atributos sensoriales (acidez, cuerpo, dulzura, aroma, sabor, puntaje total) y relaciones con lote y perfil de tueste.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints de registro y consulta de catas</td>
       <td>Desarrollar los endpoints REST para crear una cata con sus atributos sensoriales y consultarlas con soporte de filtros por fecha, lote o puntuación.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
@@ -7140,14 +7140,14 @@ El alcance del sprint incluyó el desarrollo de la landing page, la implementaci
       <td>Diseñar modelo de datos y entidad Receta</td>
       <td>Definir la estructura de la entidad Receta con atributos (método, ratio, temperatura, tiempo, molienda) y su relación con el portafolio de bebidas.</td>
       <td>2</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
       <td>Implementar endpoints CRUD de recetas de preparación</td>
       <td>Desarrollar los endpoints REST para crear, consultar, actualizar y eliminar recetas, con validaciones de rangos aceptables para cada parámetro técnico.</td>
       <td>3</td>
-      <td>Gabriel Sánchez</td>
+      <td>Jorge Yum</td>
       <td>Done</td>
     </tr>
     <tr>
