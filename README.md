@@ -472,6 +472,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
+      <strong>TB1:</strong>
+      Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo.
+      <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
@@ -504,6 +507,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
+      <br>
+      <strong>TB1:</strong>
+      Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
       <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
@@ -5880,13 +5886,6 @@ Production Cost Management 5 - US13
   *Iot Mockups*
  ![image](public/assets/images/chapter-5/MobileWireframes/Iot.png)
 
-
-
-  *Monitoring Mockups*
-
-  ![image](public/assets/images/chapter-5/WebAppMockup/optionsMonitoring.png)
-  ![image](public/assets/images/chapter-5/WebAppMockup/AlertsIot-mobile.png)
-  ![image](public/assets/images/chapter-5/WebAppMockup/controlAmbienteIot.png)
 
 
 ### 5.4.4. Applications User Flow Diagrams.
