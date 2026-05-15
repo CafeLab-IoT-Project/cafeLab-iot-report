@@ -127,7 +127,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
-    <td><strong>Jyum Gonzales, Jorge Suin</strong></td>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
     <td>Me enfoqué en la actualización de la user journey mapping y en la validación del impact mapping. Trabajé en estrecha colaboración con el equipo para asegurar que estas herramientas reflejaran de manera precisa las experiencias y necesidades de nuestros usuarios, lo que nos permitió diseñar soluciones más efectivas.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
   </tr>
