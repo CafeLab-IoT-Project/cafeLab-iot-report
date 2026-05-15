@@ -178,7 +178,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td></td>
+    <td>Participe en el diseño y mejora de la experiencia de usuario y de la plataforma técnica, colaborando con el equipo en la definición style guidelines, de flujos, ejecución de mejoras frontend/backend y comunicación de cambios realizados.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
