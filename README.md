@@ -173,7 +173,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Yum Gonzales, Jorge Suin</strong></td>
-    <td></td>
+    <td>Desarrollé la sección de IoT Device Design, documentando el diseño del dispositivo TrackSilo, su arquitectura, componentes, flujo de interacción, API Edge y validación del prototipo. Además, actualicé las secciones 6.1.1 a 6.1.4 correspondientes a Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions y Software Deployment Configuration. También realicé y documenté el despliegue del landing page y del frontend, incorporando las evidencias necesarias para sustentar la disponibilidad de los componentes publicados.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
