@@ -5880,7 +5880,7 @@ El diseño se alinea con la arquitectura IoT de CaféLab: el ESP32 ejecuta una *
 
 TrackSilo fue diseñado para capturar datos ambientales relevantes para la conservación del café verde. La **temperatura** se utiliza únicamente para monitoreo, historial y visualización en dashboard. La **humedad** es la única variable que puede activar físicamente el actuador, ya que el deshumedecedor solo puede corregir condiciones de humedad elevada.
 
-En el prototipo Wokwi, el ESP32 realiza lecturas cada **5 segundos** y sincroniza umbrales desde el Edge API cada **30 segundos**. En una implementación real, estos intervalos podrían ajustarse a varios minutos según la operación del almacén.
+En el prototipo Wokwi, el ESP32 realiza lecturas cada **5 segundos** y envía los datos al Edge API. La evaluación de umbrales se realiza en el Edge API, que responde al dispositivo con el comando del actuador.
 
 ### Relación con la Arquitectura de Información
 
@@ -5943,7 +5943,7 @@ En una implementación real, el Edge API se ejecutaría localmente en una Raspbe
 
 ### Edge Prototype API
 
-El Edge Prototype API permite que el ESP32 consulte umbrales, envíe lecturas ambientales y reciba una respuesta con el estado ambiental y el comando del actuador.
+El Edge Prototype API permite que el ESP32 envíe lecturas ambientales y reciba una respuesta con el estado ambiental y el comando del actuador. Los umbrales se configuran en el Edge API/backend y se aplican a las lecturas recibidas, sin que el dispositivo deba almacenarlos o sincronizarlos.
 
 **Base URL:**
 
@@ -6067,16 +6067,22 @@ Invoke-RestMethod `
 ### Flujos de Interacción del Prototipo IoT
 
 **Flujo 1: Monitoreo periódico**  
-El ESP32 lee el DHT22 cada 5 segundos, envía temperatura y humedad al Edge API, y el sistema registra la lectura para visualización en dashboard.
+El ESP32 lee el sensor DHT22 cada 5 segundos y envía temperatura y humedad al Edge API. El Edge API registra la lectura y la deja disponible para su visualización en el dashboard.
 
 **Flujo 2: Humedad elevada**  
-Si la humedad supera el umbral máximo, el Edge API responde `actuatorCommand = ACTIVATE`. El ESP32 enciende el LED azul, simulando la activación del deshumedecedor.
+Cuando la humedad supera el umbral máximo configurado, el Edge API responde con `actuatorCommand = ACTIVATE`. El ESP32 recibe el comando y enciende el LED azul, simulando la activación del deshumedecedor.
 
 **Flujo 3: Temperatura elevada sin activación física**  
-Si la temperatura supera el umbral, pero la humedad está dentro del rango, el dashboard puede mostrar alerta; sin embargo, el actuador permanece apagado porque el deshumedecedor no corrige temperatura.
+Cuando la temperatura supera el umbral configurado, pero la humedad se mantiene dentro del rango permitido, el Edge API registra la condición como alerta para el dashboard. El actuador permanece apagado porque el deshumedecedor no corrige temperatura.
 
-**Flujo 4: Sincronización de umbrales**  
-El ESP32 consulta periódicamente `/api/v1/edge/thresholds`, permitiendo actualizar límites ambientales sin cambiar el firmware.
+**Flujo 4: Condiciones dentro del rango óptimo**  
+Cuando temperatura y humedad se encuentran dentro de los rangos configurados, el Edge API responde con `actuatorCommand = NONE`. El ESP32 mantiene el LED azul apagado y la lectura queda registrada como condición normal.
+
+**Flujo 5: Desactivación del actuador**  
+Cuando el actuador se encuentra activo y la humedad vuelve al rango permitido durante el tiempo definido por la regla de control, el Edge API responde con `actuatorCommand = DEACTIVATE` o `NONE`. El ESP32 apaga el LED azul y el sistema registra el cierre del evento de deshumidificación.
+
+**Flujo 6: Configuración de umbrales desde el sistema**  
+El usuario configura los umbrales de temperatura y humedad desde la aplicación. Estos valores se guardan en el Edge API/backend y se aplican a las siguientes lecturas recibidas. El ESP32 no sincroniza ni almacena umbrales; solo envía datos del sensor y ejecuta el comando recibido.
 
 ### Conclusión del Diseño IoT
 
