@@ -343,6 +343,16 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.2.2. Sprint 2](#622-sprint-2)
+      - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+      - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+      - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+      - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+      - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+      - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+      - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+      - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+      - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews.](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -8758,6 +8768,162 @@ La imagen muestra el servicio MySQL activo en Railway, junto con métricas de op
     </td>
   </tr>
 </table>
+
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2.
+
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>01/06/2026</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Natalia Roman</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Review Summary</th>
+            <td>
+                Durante el primer sprint se lograron completar todas las actividades planteadas, llegando a una implementación casi completa del backend´omitiendo solo las actividades relacionadas a la implementación IoT. En cuanto al frontend, se completó la implementación de la landing page y de la aplicación web, así como se inició con la conexión de los endpoints en la aplicación móvil, todo alineado hacia los objetivos del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Retrospective Summary</th>
+            <td>
+                Durante la elaboración del primer sprint, el equipo destacó por su comunicación efectiva y por su alto nivel de compromiso en cuanto a la calidad en el desarrollo de su trabajo, la exposición y reporte de avances entre compañeros y el cumpliento en los tiempos planteados como equipo. Así, se puede mencionar que la coordinación del equipo ayudó a llegar a un resultado óptimo según lo esperado.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 2 Goal</th>
+            <td>Implementar la totalidad de funcionalidades planteadas para la aplicación destacando la efectividad en el uso y conexión del elemento IoT para monitoreo.</td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Velocity</th>
+            <td>29</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>29</td>
+        </tr>
+    </tbody>
+</table>
+
+#### 6.2.2.2. Aspect Leaders and Collaborators.
+
+Para este Sprint, se está considerando la elaboración de las User Stories y Technical Story relacionadas al módulo de IoT Monitoring, cuyo alcance abarca la visualización en tiempo real de las condiciones del almacén, la consulta del historial ambiental por lote, la recepción de alertas cuando los valores leídos sobrepasen los umbrales, la configuración de estos umbrales y demás funcionalidades que serán posibles gracias a la integración de elementos IoT. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas, responsabilidades e intereses.
+
+<table border="1">
+<tr>
+<th>Aspecto / US - TS</th>
+<th>Roman, Natalia (natRC2005)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
+<th>Fernández, Fredy (u202320083)</th>
+<th>Donayre, Adrian (adriandonayredev)</th>
+</tr>
+
+<tr>
+<td>Visualización de condiciones del almacén en tiempo real (US20)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Consulta de historial ambiental por lote (US21)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Recepción de alertas por condiciones fuera de rango (US22)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Configuración de umbrales de monitoreo (US23)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Indicador de estado ambiental por lote (US24)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Activación automática del deshumedecedor (US25)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API IoT Monitoring (TS11)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+</table>
+
+#### 6.2.2.3. Sprint Backlog 2.
+
+#### 6.2.2.4. Development Evidence for Sprint Review.
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 ## 6.3. Validation Interviews.
 
