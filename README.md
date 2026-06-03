@@ -60,44 +60,45 @@
 <!-- Registro de versiones -->
 # Registro de versiones del informe
 
-| Versión | Fecha       | Autor                           | Descripción de Modificación                                                       |
-|---------|-------------|---------------------------------|-----------------------------------------------------------------------------------|
-| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
-| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
-| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
-| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
-| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
-| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
-| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
-| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
-| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
-| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
-| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
-| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
-| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
-| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
-| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
-| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
-| 1.16    | 09/04/2026  | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
-| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
-| 1.18    | 10/04/2026  | Roman, Yum                      | Revisión de user stories                                                          |
-| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
-| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
-| 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
-| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
-| 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
-| 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
-| 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
-| 2.05    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
-| 2.06    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
-| 2.07    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
-| 2.08    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
-| 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
-| 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
-| 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
-| 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
-| 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
-| 2.14    | 13/05/2026  | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+| Versión | Fecha      | Autor                           | Descripción de Modificación                                                       |
+|---------|------------|---------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 01/04/2026 | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
+| 1.1     | 01/04/2026 | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
+| 1.2     | 02/04/2026 | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
+| 1.3     | 02/04/2026 | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
+| 1.4     | 03/04/2026 | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
+| 1.5     | 03/04/2026 | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
+| 1.6     | 04/04/2026 | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
+| 1.7     | 04/04/2026 | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
+| 1.8     | 05/04/2026 | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
+| 1.9     | 05/04/2026 | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
+| 1.10    | 06/04/2026 | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
+| 1.11    | 06/04/2026 | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
+| 1.12    | 07/04/2026 | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
+| 1.13    | 07/04/2026 | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
+| 1.14    | 08/04/2026 | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
+| 1.15    | 08/04/2026 | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
+| 1.16    | 09/04/2026 | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
+| 1.17    | 09/04/2026 | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
+| 1.18    | 10/04/2026 | Roman, Yum                      | Revisión de user stories                                                          |
+| 1.19    | 10/04/2026 | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
+| 1.20    | 11/04/2026 | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
+| 2.00    | 09/05/2026 | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
+| 2.01    | 09/05/2026 | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
+| 2.02    | 09/05/2026 | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
+| 2.03    | 09/05/2026 | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
+| 2.04    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
+| 2.05    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
+| 2.06    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
+| 2.07    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
+| 2.08    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
+| 2.09    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
+| 2.10    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
+| 2.11    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
+| 2.12    | 13/05/2026 | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
+| 2.13    | 13/05/2026 | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
+| 2.14    | 13/05/2026 | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+| 2.15    | 03/06/2026 | Fernandez Camayo, Carlos Fredy  | Diseño de entrevistas de validacion                                               |
 
 
 # Project Report Collaboration Insights
@@ -8928,6 +8929,130 @@ Para este Sprint, se está considerando la elaboración de las User Stories y Te
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
+
+En esta sección se detallan los objetivos de los usuarios pertenecientes a los segmentos objetivo, mediante la definición de estos user goals se obtienen los resultados más cercanos a la experiencia del usuario en la navegación y recorrido ideal en la plataforma para lograr sus objetivos, ya sean baristas o dueños/administradores de cafeterías. Este diseño de entrevistas corresponde a la continuación del proyecto anterior enfocado en frontend y backend, ampliado en la presente entrega con la integración del módulo IoT TrackSilo para el monitoreo ambiental del almacén de café verde.
+
+**User Goal: Registrarse y elegir suscripción (Barista y dueño/administrador de cafetería)**
+
+El usuario elegirá si es un barista o un dueño de cafetería; en base a esto, el formulario de registro mostrará más o menos campos a completar. Una vez registrados, podrán elegir el plan que más deseen y luego procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+
+**User Goal: Iniciar sesión (Barista y dueño/administrador de cafetería)**
+
+El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería. Si ingresa mal sus datos, se le pedirá que los ingrese nuevamente; una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+
+**User Goal: Editar su perfil (Barista y dueño/administrador de cafetería)**
+
+Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+
+**User Goal: Registrar, editar y observar sus proveedores (Barista y dueño/administrador de cafetería)**
+
+El usuario, desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores", la cual tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
+
+**User Goal: Registrar, editar y observar sus lotes de café (Barista y dueño/administrador de cafetería)**
+
+Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados; del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+
+**User Goal: Registrar, editar y visualizar sus perfiles de tueste, también comparar entre dos de ellos (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Perfiles de Tueste"; de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+
+**User Goal: Registrar, editar y observar sus catas con su hexágono sensorial (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas. Desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+
+**User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos; si selecciona alguno puede observar sus posibles causas y las soluciones recomendadas.
+
+**User Goal: Identificar la relación entre el tueste y los sabores del café (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+
+**User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Recetas", accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio. Puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta; al crear una debería seleccionar si está hecha por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
+
+**User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Calibración de Molienda"; en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
+
+**User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado; puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
+
+**User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
+
+**User Goal: Visualizar y ajustar las condiciones de temperatura del almacén (Barista y dueño/administrador de cafetería)**
+
+Desde el módulo de Monitoreo, el usuario puede visualizar las condiciones de temperatura del almacén y modificar la temperatura mediante el panel de monitoreo, tal como se define en los wireflows de la sección 5.4.2.
+
+**User Goal: Monitorear en tiempo real las condiciones ambientales del almacén (Dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Monitoreo", accediendo al dashboard donde puede visualizar en tiempo real la temperatura y humedad del almacén mediante el dispositivo TrackSilo, consultar el estado de conectividad del sensor, recibir alertas cuando alguna condición se encuentre fuera del rango recomendado y configurar los umbrales de monitoreo según el tipo de café almacenado (US20, US22, US23).
+
+**User Goal: Consultar el historial ambiental y el estado de conservación de los lotes (Barista y dueño/administrador de cafetería)**
+
+Desde la pantalla de un lote o el módulo de Monitoreo, el usuario puede consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico, visualizar un gráfico con los valores en el tiempo y observar un indicador del estado ambiental (óptimo, alerta o peligro) para anticipar ajustes en sus procesos de tueste, calibración o extracción (US21, US24).
+
+**User Goal: Monitoreo de ambiente desde dispositivos móviles (Barista y dueño/administrador de cafetería)**
+
+Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supervisar las condiciones ambientales del almacén, modificar parámetros como humedad y temperatura, y recibir alertas cuando las condiciones superen los umbrales configurados.
+
+---
+
+**Segmento #1: Dueños/Administradores de Cafeterías de Especialidad**
+
+*(Funciones: Proveedores, Lotes de Café, Perfiles de Tuestes, Inventario, Gestión de Costos, Monitoreo)*
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió en cada una de esas secciones?
+
+3. De las tareas realizadas, ¿cuál te aportó mayor valor para la gestión de tu cafetería?
+
+4. ¿Qué paso o flujo te sorprendió positivamente (por su rapidez, claridad o utilidad)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de la navegación para acceder a Proveedores, Lotes, Perfiles, Inventario, Costos y Monitoreo?
+
+6. ¿Viste algún elemento visual (íconos, botones, textos) que te distrajera o no resultara claro?
+
+7. ¿Qué aspectos de la interfaz del módulo de Monitoreo (dashboard, alertas, configuración de umbrales) te resultaron más claros, útiles o agradables visualmente?
+
+8. ¿De qué manera consideras que el módulo IoT podría ayudarte en la gestión diaria de la conservación del café verde en tu cafetería?
+
+9. Si pudieras añadir o mejorar una sola función en estas seis áreas, ¿cuál sería y por qué?
+
+10. ¿Recomendarías CaféLab a otros dueños o administradores de cafeterías? ¿Qué ventaja destacarías para convencerlos?
+
+---
+
+**Segmento #2: Baristas Profesionales**
+
+*(Funciones: Sesiones de Cata, Librería de Defectos, Correlación Tueste-Sabor, Calibración de Molienda, Recetas, Monitoreo)*
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió al interactuar con esas secciones?
+
+3. De las seis funciones, ¿cuál te pareció la que aporta más valor a tu trabajo diario como barista?
+
+4. ¿Qué parte del flujo te sorprendió positivamente (por ejemplo, la rapidez en cargar resultados de cata o la claridad de la librería)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de navegación en todas las funciones?
+
+6. ¿Observaste algún elemento visual que distraiga o no te quedara claro?
+
+7. ¿Qué aspectos de la interfaz del módulo de Monitoreo (indicador de estado por lote, historial ambiental) te resultaron más claros, útiles o agradables visualmente?
+
+8. ¿De qué manera consideras que el módulo IoT podría ayudarte a mejorar la consistencia en tus procesos de preparación y calibración?
+
+9. Del 1 al 10, ¿qué tan útil te resultó la plataforma para optimizar tus procesos de preparación y cata?
+
+10. Si pudieras añadir o mejorar una sola función orientada a baristas, ¿cuál sería y por qué?
+
+11. ¿Recomendarías CaféLab a otros baristas profesionales? ¿Qué aspecto destacarías para convencerlos?
 
 ### 6.3.2. Registro de Entrevistas.
 
