@@ -201,6 +201,50 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV2</td>
+  </tr>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Evidencias</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Roman Cruz, Natalia Bertha</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
+    <td>Desarrollé la capa Edge de la arquitectura IoT de CaféLab, encargada de la comunicación entre el dispositivo TrackSilo y el backend. Asimismo, elaboré el Software Deployment Evidence del Sprint 2 y desarrollé el workflow de GitHub Actions que construye y publica automáticamente el APK de la aplicación móvil.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Julca Minaya, Sergio Gino</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2"></td>
+  </tr>
+</table>
+
 
 <!--ÍNDICE-->
 # Contenido 
@@ -574,6 +618,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Contribuyó al desarrollo integral del sistema IoT mediante la configuración del entorno de desarrollo de software, la gestión del código fuente, la definición de convenciones de programación y la preparación del despliegue del software. Asimismo, participó en el diseño del dispositivo IoT y logró desplegar tanto la landing page como el frontend, demostrando dominio técnico, organización y capacidad para llevar componentes del proyecto a un entorno operativo.
       <br>
+      <strong>AV2:</strong>
+      Asumió el liderazgo técnico de la capa Edge de la arquitectura IoT, diseñando e implementando el componente intermedio que conecta el dispositivo TrackSilo con el backend de CaféLab. Además, lideró la elaboración del Software Deployment Evidence del Sprint 2 y desarrolló el workflow de GitHub Actions que genera y publica automáticamente el APK de la aplicación móvil. Coordinó estos avances con el equipo para mantener coherencia entre el diseño IoT, la implementación y el despliegue, aportando liderazgo conjunto en los componentes más técnicos de la solución.
+      <br>
     </td>
     <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
   </tr>
@@ -609,6 +656,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Aportó a la organización del trabajo técnico mediante la configuración del entorno de desarrollo, la administración del repositorio y la aplicación de una guía de estilo compartida para mantener consistencia en el código fuente. Además, colaboró en la planificación del despliegue y en la implementación de entregables funcionales, incluyendo el diseño del dispositivo IoT, la landing page desplegada y el frontend desplegado, cumpliendo con los objetivos definidos para la entrega.
+      <br>
+      <strong>AV2:</strong>
+      Contribuyó a un entorno colaborativo planificando y documentando las tareas relacionadas con la capa Edge y el despliegue móvil del Sprint 2. Estableció objetivos claros para la automatización del build del APK mediante GitHub Actions y los cumplió al dejar el flujo operativo y replicable, además de organizar las evidencias de Software Deployment. De esta manera, facilitó que el equipo pudiera integrar el componente IoT y la aplicación móvil de forma ordenada y alineada con las metas de la entrega.
       <br>
     </td>
     <td>
@@ -9153,6 +9203,10 @@ Como resultado del workflow, se generó una release del proyecto móvil con el A
 
 <p>
 La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Latest</strong>, junto con el archivo <code>app-release.apk</code> como asset descargable. De esta manera, el Sprint 2 incorpora una evidencia de despliegue móvil equivalente al deployment evidence del Sprint 1, pero orientada a la generación y publicación de la aplicación Android.
+</p>
+
+<p>
+<strong>Página de releases del APK:</strong> <a href="https://github.com/CafeLab-IoT-Project/cafelab_iot_mobile/releases">https://github.com/CafeLab-IoT-Project/cafelab_iot_mobile/releases</a>
 </p>
 
 
