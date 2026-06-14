@@ -227,7 +227,20 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+      - [Competitive Analysis](#competitive-analysis)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+      - [Afrontando las fortalezas de nuestros competidores:](#afrontando-las-fortalezas-de-nuestros-competidores)
+      - [Estrategias](#estrategias)
+      - [Tácticas](#tácticas)
+      - [Afrontando las debilidades de nuestros competidores:](#afrontando-las-debilidades-de-nuestros-competidores)
+      - [Estrategias](#estrategias-1)
+      - [Tácticas](#tácticas-1)
+      - [Afrontando las oportunidades de nuestros competidores:](#afrontando-las-oportunidades-de-nuestros-competidores)
+      - [Estrategias](#estrategias-2)
+      - [Tácticas](#tácticas-2)
+      - [Afrontando las amenazas de nuestros competidores:](#afrontando-las-amenazas-de-nuestros-competidores)
+      - [Estrategias](#estrategias-3)
+      - [Tácticas](#tácticas-3)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
       - [Preguntas dirigidas a baristas profesionales:](#preguntas-dirigidas-a-baristas-profesionales)
@@ -239,6 +252,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
+      - [User Task Matrix](#user-task-matrix)
     - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
@@ -256,6 +270,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
       - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
     - [4.1.2. Context Mapping](#412-context-mapping)
+      - [Opción 1](#opción-1)
+      - [Opción 2](#opción-2)
+      - [Opción 3](#opción-3)
+      - [Elección 3](#elección-3)
     - [4.1.3. Software Architecture](#413-software-architecture)
       - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
       - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
@@ -264,45 +282,114 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
     - [4.2.1. Bounded Context: IAM](#421-bounded-context-iam)
       - [4.2.1.1. Domain Layer](#4211-domain-layer)
+        - [Aggregates](#aggregates)
+        - [User](#user)
+        - [Commands](#commands)
+        - [Domain services](#domain-services)
+        - [Exceptions](#exceptions)
       - [4.2.1.2. Interface Layer](#4212-interface-layer)
+        - [Controllers](#controllers)
+        - [Resources](#resources)
+        - [Transformers](#transformers)
       - [4.2.1.3. Application Layer](#4213-application-layer)
+        - [Command services](#command-services)
+        - [Outbound service ports](#outbound-service-ports)
+        - [Event handlers](#event-handlers)
       - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+        - [Persistence](#persistence)
+        - [Hashing](#hashing)
+        - [Tokens JWT](#tokens-jwt)
+        - [Authorization (Spring Security)](#authorization-spring-security)
+        - [Support cross-context](#support-cross-context)
       - [4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams](#4215--bounded-context-software-architecture-component-level-diagrams)
+        - [Component View: CaféLab – IAM](#component-view-cafélab--iam)
       - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
         - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
     - [4.2.2. Bounded Context: Management](#422-bounded-context-management)
       - [4.2.2.1. Domain Layer](#4221-domain-layer)
+  - [Aggregates](#aggregates-1)
+      - [1. Supplier](#1-supplier)
+      - [2. CoffeeBatch](#2-coffeebatch)
+      - [3. RoastProfile](#3-roastprofile)
+      - [4. InventoryEntry](#4-inventoryentry)
+    - [Value Objects](#value-objects)
+      - [1. RoastLevel (Enum)](#1-roastlevel-enum)
+      - [2. BatchStatus (Enum)](#2-batchstatus-enum)
+      - [3. CoffeeType (Enum)](#3-coffeetype-enum)
+      - [4. OriginInfo](#4-origininfo)
+      - [5. WeightMeasurement](#5-weightmeasurement)
+          - [Commands](#commands-1)
+          - [Queries](#queries)
       - [4.2.2.2. Interface Layer](#4222-interface-layer)
+        - [Controllers](#controllers-1)
+          - [1. SuppliersController](#1-supplierscontroller)
+          - [2. CoffeeBatchesController](#2-coffeebatchescontroller)
+          - [3. RoastProfilesController](#3-roastprofilescontroller)
+          - [4. InventoryController](#4-inventorycontroller)
       - [4.2.2.3. Application Layer](#4223-application-layer)
+          - [Command Services](#command-services-1)
+          - [Query Services](#query-services)
       - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+          - [Repositories](#repositories)
       - [4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams](#4225--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
         - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
     - [4.2.3. Bounded Context: Costing](#423-bounded-context-costing)
       - [4.2.3.1. Domain Layer](#4231-domain-layer)
+        - [Aggregates](#aggregates-2)
+        - [Value Objects](#value-objects-1)
+        - [Commands](#commands-2)
+        - [Queries](#queries-1)
       - [4.2.3.2. Interface Layer](#4232-interface-layer)
+        - [Controllers](#controllers-2)
+        - [Resources](#resources-1)
+        - [Transformers](#transformers-1)
       - [4.2.3.3. Application Layer](#4233-application-layer)
+        - [Command Services](#command-services-2)
+        - [Query Services](#query-services-1)
       - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+        - [Repositories](#repositories-1)
+        - [External Services](#external-services)
       - [4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams](#4235--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
         - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
     - [4.2.4. Bounded Context: Procedure](#424-bounded-context-procedure)
       - [4.2.4.1. Domain Layer](#4241-domain-layer)
+        - [Aggregates](#aggregates-3)
+        - [Value Objects](#value-objects-2)
+        - [Commands](#commands-3)
+        - [Queries](#queries-2)
       - [4.2.4.2. Interface Layer](#4242-interface-layer)
+        - [Controllers](#controllers-3)
+        - [Resources](#resources-2)
+        - [Transformers](#transformers-2)
       - [4.2.4.3. Application Layer](#4243-application-layer)
+        - [Command Services](#command-services-3)
+        - [Query Services](#query-services-2)
       - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+        - [Repositories](#repositories-2)
       - [4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams](#4245--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
     - [4.2.5. Bounded Context: IoT Monitoring](#425-bounded-context-iot-monitoring)
       - [4.2.5.1. Domain Layer](#4251-domain-layer)
+        - [Aggregates](#aggregates-4)
+        - [Commands](#commands-4)
+        - [Queries](#queries-3)
+        - [Value Objects](#value-objects-3)
+        - [Services](#services)
       - [4.2.5.2. Interface Layer](#4252-interface-layer)
+        - [Controllers](#controllers-4)
       - [4.2.5.3. Application Layer](#4253-application-layer)
+        - [Command Services](#command-services-4)
+        - [Query Services](#query-services-3)
       - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+        - [Repositories](#repositories-3)
+        - [External Services](#external-services-1)
       - [4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams](#4255--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
@@ -313,6 +400,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
   - [5.2. Information Architecture.](#52-information-architecture)
     - [5.2.1. Organization Systems.](#521-organization-systems)
+      - [Organización jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
+      - [Organización secuencial (Step-by-step)](#organización-secuencial-step-by-step)
+      - [Organización matricial](#organización-matricial)
+      - [Categorización del contenido](#categorización-del-contenido)
     - [5.2.2. Labeling Systems.](#522-labeling-systems)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
     - [5.2.4. Searching Systems.](#524-searching-systems)
@@ -322,17 +413,67 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
     - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+      - [Web Application para Mobile Web Browser](#web-application-para-mobile-webbrowser)
     - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
     - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+      - [Mock-ups for Desktops](#mock-ups-for-desktops)
+      - [Mock-ups for Mobiles](#mock-ups-for-mobiles)
     - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
+    - [Web application prototyping](#web-application-prototyping)
+      - [Facilidad de reconocimiento](#facilidad-de-reconocimiento)
+      - [Diseño responsive](#diseño-responsive)
+      - [Informacion clara](#informacion-clara)
   - [5.6. IoT Device Design.](#56-iot-device-design)
+    - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
+    - [Relación con la Arquitectura de Información](#relación-con-la-arquitectura-de-información)
+    - [Guía de Interfaz Física IoT](#guía-de-interfaz-física-iot)
+    - [Diseño Físico del Dispositivo](#diseño-físico-del-dispositivo)
+    - [Diseño de Circuito](#diseño-de-circuito)
+    - [Prototipo en Wokwi](#prototipo-en-wokwi)
+    - [Flujo Arquitectónico del Prototipo](#flujo-arquitectónico-del-prototipo)
+    - [Edge Prototype API](#edge-prototype-api)
+      - [Endpoints principales](#endpoints-principales)
+      - [Request para actualizar umbrales](#request-para-actualizar-umbrales)
+      - [Request para registrar lectura](#request-para-registrar-lectura)
+      - [Response esperado con humedad elevada](#response-esperado-con-humedad-elevada)
+      - [Response esperado con temperatura elevada, pero humedad normal](#response-esperado-con-temperatura-elevada-pero-humedad-normal)
+    - [Requests de Prueba](#requests-de-prueba)
+      - [Consultar umbrales](#consultar-umbrales)
+      - [Actualizar umbrales](#actualizar-umbrales)
+      - [Registrar lectura con humedad elevada](#registrar-lectura-con-humedad-elevada)
+      - [Registrar lectura con temperatura elevada, pero humedad normal](#registrar-lectura-con-temperatura-elevada-pero-humedad-normal)
+    - [Flujos de Interacción del Prototipo IoT](#flujos-de-interacción-del-prototipo-iot)
+    - [Conclusión del Diseño IoT](#conclusión-del-diseño-iot)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management.](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [Project Management](#project-management)
+      - [Product UX/UI Design](#product-uxui-design)
+      - [Software Development](#software-development)
+      - [IoT Development](#iot-development)
+      - [Software Testing](#software-testing)
+      - [Software Documentation](#software-documentation)
     - [6.1.2. Source Code Management.](#612-source-code-management)
+  - [Flujo de trabajo GitFlow:](#flujo-de-trabajo-gitflow)
+      - [Main branch](#main-branch)
+      - [Develop branch](#develop-branch)
+      - [Release branch](#release-branch)
+      - [Feature branch](#feature-branch)
+      - [Hotfix branch](#hotfix-branch)
+  - [Conventional Commits](#conventional-commits)
+  - [Tipos De Conventional Commits](#tipos-de-conventional-commits)
     - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [TypeScript y Angular](#typescript-y-angular)
+  - [Java y Spring Boot](#java-y-spring-boot)
+  - [Kotlin y Android](#kotlin-y-android)
+  - [Lenguaje Gherkin](#lenguaje-gherkin)
     - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+      - [Landing Page Deployment](#landing-page-deployment)
+      - [Frontend Deployment](#frontend-deployment)
+      - [Backend Deployment](#backend-deployment)
   - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
       - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
@@ -340,7 +481,31 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
       - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+    - [Frontend Testing Suite Evidence](#frontend-testing-suite-evidence)
+      - [Tabla de commits relacionados al frontend testing](#tabla-de-commits-relacionados-al-frontend-testing)
+      - [Pruebas de Frontend realizadas](#pruebas-de-frontend-realizadas)
+      - [Unit Tests](#unit-tests)
+      - [Integration Tests](#integration-tests)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd)
+      - [Test Execution Evidence](#test-execution-evidence)
+    - [Backend Testing Suite Evidence](#backend-testing-suite-evidence)
+      - [Tabla de commits relacionados al backend testing](#tabla-de-commits-relacionados-al-backend-testing)
+      - [Pruebas de Backend realizadas](#pruebas-de-backend-realizadas)
+      - [Integration Tests](#integration-tests-1)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd-1)
+      - [Test Execution Evidence](#test-execution-evidence-1)
       - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
+      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
+      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
+      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
+      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
+      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
+      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
+      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
+      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
@@ -359,6 +524,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
 
 [Conclusiones](#conclusiones) <br>
 [Recomendaciones](#recomendaciones) <br>
@@ -8923,6 +9092,70 @@ Para este Sprint, se está considerando la elaboración de las User Stories y Te
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 2 se incorporó el despliegue de la aplicación móvil de CaféLab mediante un workflow de GitHub Actions. 
+
+<h3>Configuración del workflow de build y release del APK</h3>
+<p>
+Para automatizar el despliegue móvil, se configuró el workflow <strong>Build & Release APK</strong> dentro del repositorio <code>cafelab_iot_mobile</code>. Este flujo se ejecuta ante cambios en la rama <code>main</code> o de forma manual mediante <code>workflow_dispatch</code>. La configuración prepara el entorno con Java y Flutter, instala dependencias, genera el APK en modo release y crea una publicación en GitHub Releases.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow code.png" alt="Configuración del workflow Build and Release APK" width="650">
+</p>
+
+<p>
+La imagen evidencia la definición del archivo <code>build-apk.yml</code>, donde se especifican los permisos necesarios para crear releases, la instalación de Flutter, la ejecución de <code>flutter pub get</code>, la construcción del APK mediante <code>flutter build apk --release</code> y la carga del archivo <code>app-release.apk</code> como artefacto final.
+</p>
+
+<h3>Ejecución del workflow en GitHub Actions</h3>
+<p>
+Una vez configurado el flujo, se ejecutó el workflow desde GitHub Actions para validar que el proceso de construcción y publicación pudiera completarse correctamente desde el repositorio móvil. Esta ejecución permite comprobar que el despliegue no depende de acciones manuales locales y que el APK puede generarse en un entorno controlado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow.png" alt="Inicio de ejecución del workflow de build y release del APK" width="650">
+</p>
+
+<p>
+La imagen muestra el inicio del check asociado al workflow <strong>Build & Release APK</strong>, confirmando que GitHub detectó la ejecución del proceso de despliegue móvil.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow running.png" alt="Workflow de build del APK en ejecución" width="650">
+</p>
+
+<p>
+Durante la ejecución se observa la preparación del entorno, la descarga de Flutter, la instalación de dependencias del proyecto y el avance del job de build. Esto evidencia que la aplicación móvil fue construida dentro de GitHub Actions y no únicamente desde un entorno local de desarrollo.
+</p>
+
+<h3>Validación del build del APK</h3>
+<p>
+Finalizada la ejecución, GitHub Actions reportó el estado exitoso del job de construcción. Esta validación confirma que el código fuente de la aplicación móvil compila correctamente y que el workflow puede generar el artefacto de despliegue esperado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/build workflow.png" alt="Build exitoso del workflow de APK" width="650">
+</p>
+
+<p>
+La imagen evidencia que el workflow <strong>build-apk.yml</strong> terminó con estado <strong>Success</strong>, después de ejecutar el job de build. Con ello se valida que el proceso automatizado queda disponible para futuras versiones de la aplicación móvil.
+</p>
+
+<h3>Publicación del APK en GitHub Releases</h3>
+<p>
+Como resultado del workflow, se generó una release del proyecto móvil con el APK listo para descarga. Esta publicación permite distribuir la aplicación Android generada durante el Sprint 2 y contar con una versión identificable para revisión, instalación y pruebas.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/release latest.png" alt="Release publicada con APK de la aplicación móvil" width="650">
+</p>
+
+<p>
+La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Latest</strong>, junto con el archivo <code>app-release.apk</code> como asset descargable. De esta manera, el Sprint 2 incorpora una evidencia de despliegue móvil equivalente al deployment evidence del Sprint 1, pero orientada a la generación y publicación de la aplicación Android.
+</p>
+
+
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
