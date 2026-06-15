@@ -99,7 +99,8 @@
 | 2.13    | 13/05/2026 | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
 | 2.14    | 13/05/2026 | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
 | 2.15    | 03/06/2026 | Fernandez Camayo, Carlos Fredy  | Diseño de entrevistas de validacion                                               |
-
+| 2.16    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Sprint Backlog 2                                                      |
+| 2.17    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 2                              | 
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -9132,6 +9133,11 @@ Para este Sprint, se está considerando la elaboración de las User Stories y Te
 </table>
 
 #### 6.2.2.3. Sprint Backlog 2.
+
+<p align="center">
+<img width="500" src="public/assets/images/chapter-6/sprint-2/evidence/sprintbacklog2.png" alt="Sprint backlog 2">
+</p>
+
 Durante el Sprint 2, el equipo priorizó la integración del módulo de monitoreo ambiental IoT TrackSilo con la plataforma CaféLab. El objetivo principal fue validar el flujo completo desde el dispositivo físico ESP32 con sensor DHT22 hasta la visualización de lecturas y alertas en la aplicación, pasando por una capa Edge local encargada de recibir, procesar y sincronizar la información con el backend.
 
 El Sprint Backlog se organizó alrededor de las user stories y technical stories vinculadas al monitoreo ambiental de lotes, configuración de umbrales, registro de lecturas, estado ambiental y activación simulada de actuadores. Estas tareas permitieron comprobar que el sistema puede detectar condiciones fuera de rango y representarlas mediante LEDs físicos, funcionando como simulación de mecanismos de regulación ambiental.
