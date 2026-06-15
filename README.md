@@ -9229,6 +9229,400 @@ El Sprint Backlog se organizó alrededor de las user stories y technical stories
 </table>
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committer on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>e285f2f</td>
+    <td>fix: parameters labels</td>
+    <td>fix: parameters labels</td>
+    <td>Jun 14, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>a87adb2</td>
+    <td>monitoring</td>
+    <td>monitoring</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>ca1418f</td>
+    <td>monitoring configuration</td>
+    <td>monitoring configuration</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>ae955a6</td>
+    <td>Merge pull request #3 from CafeLab-IoT-Project/develop</td>
+    <td>Merge pull request #3 from CafeLab-IoT-Project/develop</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>2e01f00</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>c72bca4</td>
+    <td>feat: iot module</td>
+    <td>feat: iot module</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>3c5de65</td>
+    <td>feat:monitoring module and mock data for analytics</td>
+    <td>feat:monitoring module and mock data for analytics</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+    <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>9063329</td>
+    <td>tracksilo</td>
+    <td>tracksilo</td>
+    <td>Jun 14, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>7396a6d</td>
+    <td>feat(firmware): descubrimiento del edge por servicio mDNS + device_id override</td>
+    <td>feat(firmware): descubrimiento del edge por servicio mDNS + device_id override</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>3ba27fc</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>7e01347</td>
+    <td>feat: auto-enrolamiento de IoT y onboarding por web (sin reflasheo)</td>
+    <td>feat: auto-enrolamiento de IoT y onboarding por web (sin reflasheo)</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>dcb61da</td>
+    <td>chore: stop tracking edge_clean.db (runtime state, ya en .gitignore)</td>
+    <td>chore: stop tracking edge_clean.db (runtime state, ya en .gitignore)</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>5450ce9</td>
+    <td>gitignore</td>
+    <td>gitignore</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>114caec</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>e132256</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>9425a9b</td>
+    <td>docs</td>
+    <td>docs</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>141a00e</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>c9b4fb9</td>
+    <td>feature: get all devices</td>
+    <td>feature: get all devices</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>bb6ac4f</td>
+    <td>deploy</td>
+    <td>deploy</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>cb35b06</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>5b7cd78</td>
+    <td>wifi portal</td>
+    <td>wifi portal</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>3ff8971</td>
+    <td>generacion de guia de deploy, intentar</td>
+    <td>generacion de guia de deploy, intentar</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>dc584f0</td>
+    <td>documentation</td>
+    <td>documentation</td>
+    <td>May 31, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>d497451</td>
+    <td>edge finished</td>
+    <td>edge finished</td>
+    <td>May 31, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>d9cd08a</td>
+    <td>avance de repositorio de IAM</td>
+    <td>avance de repositorio de IAM</td>
+    <td>May 30, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>69929b4</td>
+    <td>update on iam, check interfaces</td>
+    <td>update on iam, check interfaces</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>40ed439</td>
+    <td>iam bc created</td>
+    <td>iam bc created</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>cbb1fa2</td>
+    <td>first requirements</td>
+    <td>first requirements</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>e0ff35c</td>
+    <td>Initial commit</td>
+    <td>Initial commit</td>
+    <td>May 29, 2026</td>
+  </tr>
+    <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>f210176</td>
+    <td>build workflow</td>
+    <td>build workflow</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>f327947</td>
+    <td>Merge pull request #9 from CafeLab-IoT-Project/develop</td>
+    <td>Merge pull request #9 from CafeLab-IoT-Project/develop</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8f54f59</td>
+    <td>Merge pull request #8 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Merge pull request #8 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>fd5e697</td>
+    <td>fix imports</td>
+    <td>fix imports</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>b4c8ced</td>
+    <td>Merge pull request #7 from CafeLab-IoT-Project/feature/cuppingsessions</td>
+    <td>Merge pull request #7 from CafeLab-IoT-Project/feature/cuppingsessions</td>
+    <td>Jun 3, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>3abffec</td>
+    <td>feat: add cupping sessions screens</td>
+    <td>feat: add cupping sessions screens</td>
+    <td>Jun 3, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>5ecb33c</td>
+    <td>Merge pull request #6 from CafeLab-IoT-Project/feature/management</td>
+    <td>Merge pull request #6 from CafeLab-IoT-Project/feature/management</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>9e5dec6</td>
+    <td>feat: add inventory screens</td>
+    <td>feat: add inventory screens</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>1794db3</td>
+    <td>Merge pull request #5 from CafeLab-IoT-Project/feature/production</td>
+    <td>Merge pull request #5 from CafeLab-IoT-Project/feature/production</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>494d242</td>
+    <td>feat: add roast profiles screens</td>
+    <td>feat: add roast profiles screens</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8212c21</td>
+    <td>Merge pull request #4 from CafeLab-IoT-Project/feature/production</td>
+    <td>Merge pull request #4 from CafeLab-IoT-Project/feature/production</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>767b549</td>
+    <td>feat: add defect library, calibrations and cost management from feature/cost-management</td>
+    <td>feat: add defect library, calibrations and cost management from feature/cost-management</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8f03ad8</td>
+    <td>feat: add coffee lots screens</td>
+    <td>feat: add coffee lots screens</td>
+    <td>May 26, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>866a635</td>
+    <td>feat: add suppliers screens</td>
+    <td>feat: add suppliers screens</td>
+    <td>May 26, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>be01d73</td>
+    <td>merge develop to this branch</td>
+    <td>merge develop to this branch</td>
+    <td>May 26, 2026</td>
+  </tr>
+    <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>ee53ce4</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>c22b05d</td>
+    <td>Merge branch 'develop'</td>
+    <td>Merge branch 'develop'</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>abb6f17</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/iot-monitoring</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/iot-monitoring</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>aad1095</td>
+    <td>feature: add iot monitoring bc.</td>
+    <td>feature: add iot monitoring bc.</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+</table>
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
