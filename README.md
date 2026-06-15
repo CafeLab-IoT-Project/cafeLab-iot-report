@@ -14,7 +14,7 @@
 
 
 
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Parcial”</h2>
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
 
 <p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
 <strong>Nombre del grupo:</strong> Café Metrix<br>
@@ -100,7 +100,8 @@
 | 2.14    | 13/05/2026 | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
 | 2.15    | 03/06/2026 | Fernandez Camayo, Carlos Fredy  | Diseño de entrevistas de validacion                                               |
 | 2.16    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Sprint Backlog 2                                                      |
-| 2.17    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 2                              | 
+| 2.17    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 2                              |
+| 2.18    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Testing Suite Evidence for Sprint Review 2                            | 
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -9637,6 +9638,300 @@ El Sprint Backlog se organizó alrededor de las user stories y technical stories
 </table>
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+### Frontend Testing Suite Evidence
+
+Para el repositorio frontend se implementó una suite de pruebas automatizadas orientada a validar las funcionalidades del módulo IoT Monitoring incluidas en el Sprint Backlog 2. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-frontend-sprint2` del repositorio `cafeLab-frontend`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-frontend.git  
+Branch: feature/testing-suite-frontend-sprint2  
+
+La suite incluyó Unit Tests, Component Tests, Integration Tests con servicios mockeados y Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Los tests fueron ejecutados localmente con Angular/Karma usando el comando:
+
+`npx ng test --watch=false --browsers=ChromeHeadless --include='**/monitoring/**/*.spec.ts'`
+
+Para evitar dependencias con el backend desplegado, las pruebas frontend utilizaron mocks de servicios como `MonitoredLotApi`, `TelemetryRecordApi`, `EnvironmentThresholdApi` y `MonitoringAlertApi`. De esta forma, se validó el comportamiento de los componentes del módulo de monitoreo, la evaluación de estados ambientales, la configuración de umbrales y la visualización de alertas sin realizar llamadas reales a servicios externos.
+
+El resultado final de la ejecución fue de 27 pruebas exitosas.
+
+#### Tabla de commits relacionados al frontend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>4def2a8</td>
+    <td>test: add monitoring status unit tests for US24 and US25</td>
+    <td>Added unit and component tests for environmental status evaluation and actuator messaging.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>9688958</td>
+    <td>test: add monitoring dashboard tests for US20</td>
+    <td>Added frontend tests for the monitoring hub and real-time lot dashboard using mocked services.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>dd3b2c3</td>
+    <td>test: add monitoring configuration tests for US23</td>
+    <td>Added frontend tests for threshold configuration validation and persistence with mocked APIs.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>bcff514</td>
+    <td>test: add monitoring analytics and alerts tests for US21 and US24</td>
+    <td>Added frontend tests for environmental history analytics and alert filtering using mocked services.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>4f6e121</td>
+    <td>test: add frontend BDD feature files for IoT monitoring acceptance tests</td>
+    <td>Added Gherkin feature files for dashboard, analytics, configuration and environmental status scenarios.</td>
+    <td>15/06/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Frontend realizadas
+
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre utilidades y componentes individuales del módulo de monitoreo para validar comportamientos específicos, como evaluación de estados ambientales, mensajes de actuadores simulados y renderizado de tarjetas de lote.
+
+#### Integration Tests
+
+Los Integration Tests frontend validaron la interacción entre vistas del módulo IoT y servicios mockeados. Estos tests simularon respuestas de telemetría, umbrales y alertas para comprobar que la interfaz reacciona correctamente ante los datos esperados.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>monitoring-status.util.spec.ts</td>
+    <td>Unit Test</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Valida la evaluación de estados optimal, warning y critical, así como la detección de variables fuera de rango para actuadores simulados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-page.component.spec.ts</td>
+    <td>Component Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Valida la creación del hub de monitoreo y la navegación hacia las secciones de lotes, configuración, alertas y analíticas.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-lots-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Valida la carga de lotes monitoreados, contadores de alertas, cobertura de telemetría y filtrado por búsqueda con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-lot-card.component.spec.ts</td>
+    <td>Component Test</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Valida el mapeo de etiquetas de estado y mensajes de actuadores de temperatura y humedad en la tarjeta de lote.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-configuration-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Valida la carga de lotes, validación de rangos de temperatura y humedad, y persistencia de umbrales mediante servicios mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-analytics-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US21 - Consulta de historial ambiental por lote / US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida el cálculo de promedios, series de tendencia y puntaje de salud ambiental a partir de historial mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-alerts-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida la carga de alertas, filtrado por severidad y marcado de alertas como leídas con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog 2 del módulo IoT Monitoring.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>monitoring-dashboard.feature</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Describe escenarios de aceptación para visualización de lotes monitoreados y filtrado en el dashboard de monitoreo.</td>
+  </tr>
+  <tr>
+    <td>monitoring-analytics.feature</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Describe escenarios de aceptación para consulta de promedios y tendencias históricas de temperatura y humedad.</td>
+  </tr>
+  <tr>
+    <td>monitoring-configuration.feature</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Describe escenarios de aceptación para guardado y validación de umbrales ambientales por lote.</td>
+  </tr>
+  <tr>
+    <td>monitoring-status.feature</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Describe escenarios de aceptación para indicadores de estado ambiental y activación simulada de actuadores.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Frontend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-front.png)
+
+### Backend Testing Suite Evidence
+
+Para el repositorio backend se implementó una suite de pruebas automatizadas orientada a validar los Web Services del módulo IoT Monitoring relacionados con las funcionalidades incluidas en el Sprint Backlog 2. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-backend-sprint2` del repositorio `cafeLab-backEnd`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git  
+Branch: feature/testing-suite-backend-sprint2  
+
+La suite incluyó Integration Tests con Spring Boot, JUnit 5 y MockMvc, además de Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Para evitar el uso de la base de datos real, se utilizó el perfil de pruebas con H2 Database configurado en `application-test.properties`, permitiendo ejecutar la suite en un entorno controlado y aislado.
+
+La ejecución final de pruebas se realizó con Maven mediante el comando:
+
+`./mvnw clean test`
+
+El resultado final fue de 9 pruebas ejecutadas correctamente.
+
+#### Tabla de commits relacionados al backend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>850949e</td>
+    <td>test: add telemetry records backend tests for US20 and US21</td>
+    <td>Added integration tests for telemetry ingestion and history endpoints using MockMvc and H2.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>0a37352</td>
+    <td>test: add environment thresholds backend tests for US23 and US24</td>
+    <td>Added integration tests for threshold creation, retrieval and update endpoints using MockMvc.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>bad91d6</td>
+    <td>test: add backend BDD feature files for IoT monitoring acceptance tests</td>
+    <td>Added Gherkin feature files for telemetry, environmental history, thresholds and status scenarios.</td>
+    <td>15/06/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Backend realizadas
+
+#### Integration Tests
+
+Los Integration Tests del backend fueron implementados con Spring Boot, JUnit 5 y MockMvc. Estos tests validan el comportamiento de los controladores REST asociados a las User Stories del módulo IoT Monitoring. Para evitar dependencias con la base de datos real, se configuró un perfil de pruebas con H2 Database.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>TelemetryRecordsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real / US21 - Consulta de historial ambiental por lote</td>
+    <td>Valida el registro de lecturas de telemetría y la consulta del historial ambiental por lote mediante MockMvc.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>EnvironmentThresholdsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida la creación, consulta y actualización de umbrales ambientales por lote, incluyendo respuestas 404 cuando no existen.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación asociados a las User Stories del Sprint 2, permitiendo expresar el comportamiento esperado de los Web Services IoT desde una perspectiva funcional.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>telemetry-api.feature</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Describe escenarios de aceptación para registro y consulta de lecturas de telemetría en tiempo real.</td>
+  </tr>
+  <tr>
+    <td>environmental-history-api.feature</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Describe escenarios de aceptación para consulta del historial ambiental por lote mediante API.</td>
+  </tr>
+  <tr>
+    <td>environment-thresholds-api.feature</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Describe escenarios de aceptación para creación, consulta y actualización de umbrales ambientales.</td>
+  </tr>
+  <tr>
+    <td>environmental-status-api.feature</td>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Describe escenarios de aceptación para evaluación de estado ambiental con lecturas y umbrales consistentes.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back1.png)
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back2.png)
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back3.png)
+
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
