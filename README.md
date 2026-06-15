@@ -9132,6 +9132,101 @@ Para este Sprint, se está considerando la elaboración de las User Stories y Te
 </table>
 
 #### 6.2.2.3. Sprint Backlog 2.
+Durante el Sprint 2, el equipo priorizó la integración del módulo de monitoreo ambiental IoT TrackSilo con la plataforma CaféLab. El objetivo principal fue validar el flujo completo desde el dispositivo físico ESP32 con sensor DHT22 hasta la visualización de lecturas y alertas en la aplicación, pasando por una capa Edge local encargada de recibir, procesar y sincronizar la información con el backend.
+
+El Sprint Backlog se organizó alrededor de las user stories y technical stories vinculadas al monitoreo ambiental de lotes, configuración de umbrales, registro de lecturas, estado ambiental y activación simulada de actuadores. Estas tareas permitieron comprobar que el sistema puede detectar condiciones fuera de rango y representarlas mediante LEDs físicos, funcionando como simulación de mecanismos de regulación ambiental.
+
+<table border="1">
+  <tr>
+    <th>User Story / Technical Story</th>
+    <th>Work-Item / Task</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Integrar lecturas del dispositivo IoT con el dashboard</td>
+    <td>Mostrar temperatura y humedad actuales del lote asociado, junto con su estado ambiental según los datos enviados por TrackSilo.</td>
+    <td>4</td>
+    <td>Fredy Fernández</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Validar historial de lecturas ambientales</td>
+    <td>Registrar lecturas enviadas por el ESP32 y permitir su consulta desde el Edge para evidenciar el comportamiento ambiental del lote en el tiempo.</td>
+    <td>3</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Vincular umbrales del lote con el Edge</td>
+    <td>Asociar un lote del backend desplegado al dispositivo detectado en el onboarding para aplicar rangos de temperatura y humedad durante la evaluación ambiental.</td>
+    <td>4</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Mostrar estado ambiental del lote</td>
+    <td>Representar el estado del lote mediante indicadores visuales como normal, alerta, riesgo o crítico, de acuerdo con las lecturas recibidas.</td>
+    <td>3</td>
+    <td>Sergio Julca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US25 - Activación automática del deshumedecedor</td>
+    <td>Simular activación de actuadores mediante LEDs</td>
+    <td>Activar el LED de humedad en GPIO 18 y el LED de temperatura en GPIO 19 cuando el Edge indique que las variables están fuera de rango.</td>
+    <td>4</td>
+    <td>Adrian Donayre</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Validar comunicación ESP32 - Edge</td>
+    <td>Configurar el firmware del ESP32 para enviar lecturas de temperatura y humedad al endpoint de lecturas del Edge usando la IP local de la PC y autenticación mediante API key.</td>
+    <td>5</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Implementar auto-enrollment del dispositivo</td>
+    <td>Permitir que el ESP32 se anuncie ante el Edge, obtenga una API key y la recupere desde NVS en reinicios posteriores.</td>
+    <td>4</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Configurar WiFiManager para conexión a red local</td>
+    <td>Usar el portal TrackSilo-Setup para registrar las credenciales WiFi del dispositivo y conectarlo a la misma red que el Edge.</td>
+    <td>3</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Validar onboarding del Edge</td>
+    <td>Vincular la cuenta del backend desplegado, detectar el dispositivo IoT, asignarlo a un lote y comprobar la llegada de lecturas.</td>
+    <td>4</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+</table>
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
 
