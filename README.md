@@ -101,7 +101,9 @@
 | 2.15    | 03/06/2026 | Fernandez Camayo, Carlos Fredy  | Diseño de entrevistas de validacion                                               |
 | 2.16    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Sprint Backlog 2                                                      |
 | 2.17    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 2                              |
-| 2.18    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Testing Suite Evidence for Sprint Review 2                            | 
+| 2.18    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Testing Suite Evidence for Sprint Review 2                            |
+| 2.19    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 2                                |
+| 2.20    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Services Documentation Evidence for Sprint Review 2                   | 
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -229,7 +231,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td></td>
+    <td>Elabore las evidencias de Testing Suite, Execution Evidence y Services Documentation del Sprint 2 (secciones 6.2.2.5, 6.2.2.6 y 6.2.2.7). Ademas, implemente la suite de pruebas automatizadas en frontend y backend, participe en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en el frontend web y mobile, documentando los resultados obtenidos.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -605,6 +607,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo..
       <br>
+      <strong>AV2:</strong>
+      Cumpli este criterio documentando las evidencias de Testing Suite, Execution Evidence y Services Documentation del Sprint 2. Ademas, implemente y ejecute pruebas automatizadas en frontend y backend para validar el modulo IoT Monitoring, colabore en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en el frontend web y mobile, coordinando con el equipo la verificacion de los resultados obtenidos.
+      <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
@@ -646,6 +651,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
+      <br>
+      <strong>AV2:</strong>
+      Contribui a un entorno colaborativo organizando y documentando las evidencias de pruebas, ejecucion y documentacion de servicios del Sprint 2 (secciones 6.2.2.5, 6.2.2.6 y 6.2.2.7). Ademas, participe en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en frontend web y mobile, planificando y ejecutando las pruebas automatizadas del modulo en frontend y backend, comunicando los resultados al equipo para alinear la documentacion con la implementacion desplegada.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
@@ -9935,7 +9943,160 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
+Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web de CaféLab.
+
+#### Frontend: Hub de monitoreo
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front1.png" alt="Hub de monitoreo">
+</figure>
+
+#### Frontend: Visualización de lotes monitoreados en tiempo real
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front2.png" alt="Lotes monitoreados en tiempo real">
+</figure>
+
+#### Frontend: Configuración de umbrales ambientales
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front3.png" alt="Configuración de umbrales ambientales">
+</figure>
+
+#### Frontend: Historial y analíticas ambientales por lote
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front4.png" alt="Historial y analíticas ambientales por lote">
+</figure>
+
+#### Frontend: Alertas ambientales
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front5.png" alt="Alertas ambientales">
+</figure>
+
+#### Backend: Endpoints IoT Monitoring en Swagger UI
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back1.png" alt="Endpoints IoT Monitoring en Swagger UI">
+</figure>
+
+#### Backend: Registro de lectura de telemetría
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back2.png" alt="Registro de lectura de telemetría">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back3.png" alt="Visualización del registro en la base de datos">
+</figure>
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back4.png" alt="Visualización del registro en la base de datos">
+</figure>
+
+#### Edge e IoT: Onboarding, lecturas del dispositivo y activación de actuadores
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge1.jpeg" alt="Onboarding, lecturas del dispositivo y activación de actuadores">
+</figure>
+
+
+
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 2 se documentaron los Web Services del módulo IoT Monitoring mediante OpenAPI y Swagger UI. Esta documentación permitió visualizar los endpoints relacionados con telemetría ambiental y configuración de umbrales, incluyendo sus métodos HTTP, rutas, parámetros, cuerpos de solicitud, códigos de respuesta y ejemplos de ejecución. Los servicios fueron validados en el entorno desplegado, el backend se encuentra alojado en Azure y utiliza una BD MySQL desplegada en Railway.
+
+La documentación generada permite comprobar que los endpoints del Sprint 2 se encuentran disponibles y organizados por módulos funcionales. Entre ellos se incluyen los servicios de **Telemetry Records** y **Environment Thresholds**, utilizados para registrar lecturas del dispositivo TrackSilo, consultar el historial ambiental por lote y administrar los umbrales de temperatura y humedad. Desde Swagger UI se realizaron pruebas sobre las rutas expuestas, verificando la disponibilidad del API, el uso de autenticación mediante JWT y la persistencia de información en la BD desplegada.
+
+**URL de Swagger UI desplegado:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+**URL de documentación OpenAPI:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/v3/api-docs
+
+**Repositorio de Web Services:** https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git
+
+**Documentación OpenAPI de los servicios IoT Monitoring:**
+
+<figure style="text-align: center;">
+    <img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/docs-openapi-iot.png" alt="Documentación OpenAPI IoT Monitoring">
+</figure>
+
+<h3>Telemetry Records</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/telemetry-records</td>
+    <td>Registra una lectura de telemetría ambiental para un lote.</td>
+    <td>Body JSON: coffeeLotId, temperature, humidity, timestamp. Requiere token JWT.</td>
+    <td>201 Created - Retorna el registro de telemetría creado.</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/telemetry-records/coffee-lot/{coffeeLotId}</td>
+    <td>Consulta el historial de lecturas ambientales de un lote.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la lista de lecturas registradas para el lote.</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de telemetría</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apitelemetria1.png" alt="Endpoint POST de telemetría">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apitelemetria2.png" alt="Endpoint GET de historial de telemetría">
+</p>
+
+<h3>Environment Thresholds</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/environment-thresholds</td>
+    <td>Crea la configuración de umbrales ambientales para un lote.</td>
+    <td>Body JSON: coffeeLotId, minTemperature, maxTemperature, minHumidity, maxHumidity, syncIntervalSeconds. Requiere token JWT.</td>
+    <td>201 Created - Retorna la configuración de umbrales creada.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/environment-thresholds/coffee-lot/{coffeeLotId}</td>
+    <td>Consulta los umbrales ambientales configurados para un lote.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la configuración de umbrales del lote.</td>
+    <td>US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/environment-thresholds/coffee-lot/{coffeeLotId}</td>
+    <td>Actualiza los umbrales ambientales de un lote existente.</td>
+    <td>Path parameter: coffeeLotId. Body JSON con los nuevos rangos de temperatura, humedad y syncIntervalSeconds.</td>
+    <td>200 OK - Retorna la configuración de umbrales actualizada.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de umbrales ambientales</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apiumbrales1.png" alt="Endpoint de creación y consulta de umbrales">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apiumbrales2.png" alt="Endpoint de actualización de umbrales">
+</p>
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
