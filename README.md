@@ -213,7 +213,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
-    <td></td>
+    <td>Participé en la documentación del Sprint 2, elaborando el Sprint Backlog y el Development Evidence for Sprint Review. Además, validé la integración del dispositivo IoT TrackSilo con el Edge local, comprobando la lectura de temperatura y humedad, el envío de datos al backend, la asociación con lotes y la activación simulada de actuadores mediante LEDs para humedad y temperatura.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -595,6 +595,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Cumplió este criterio al asumir responsabilidades dentro del equipo en el desarrollo de la Aplicación Mobile y el Diseño mobile FE. Participó en la organización del trabajo del sprint y aportó en la elaboración de secciones clave del capítulo VI, como el Sprint Backlog, las evidencias de desarrollo, testing, ejecución, documentación de servicios y despliegue. Con ello, logró contribuir al liderazgo conjunto del equipo y al cumplimiento de los entregables establecidos.
       <br>
+      <strong>AV2:</strong>
+      Cumplió este criterio elaborando el Sprint Backlog y organizando las evidencias de desarrollo del proyecto. Además, aportó validación del flujo IoT, coordinando la integración entre el dispositivo, la capa Edge, el backend desplegado y el dashboard de monitoreo. Con ello, logró contribuir al avance conjunto del equipo, asegurando que la funcionalidad de monitoreo ambiental se evidenciara de forma clara y alineada con los objetivos del sprint.
+      <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
@@ -633,6 +636,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Cumplió este criterio al colaborar en la planificación y documentación de las tareas del sprint, organizando evidencias relacionadas con la implementación, validación y despliegue del producto. Además, ayudó a establecer metas claras mediante la estructuración del Sprint Backlog y el seguimiento de las actividades desarrolladas. De esta manera, logró aportar a un entorno colaborativo donde el equipo pudo distribuir tareas, revisar avances y cumplir los objetivos del sprint.
+      <br>
+      <strong>AV2:</strong>
+      Cumplió este criterio definiendo tareas vinculadas al desarrollo y validación del módulo IoT. Además, organizó las evidencias del avance realizado y verificó el cumplimiento de objetivos técnicos, como la conexión del dispositivo TrackSilo con el Edge, el registro de lecturas ambientales y la simulación de actuadores mediante LEDs. De esta manera, contribuyó a un entorno de trabajo ordenado, colaborativo y orientado al cumplimiento de los entregables del equipo.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
