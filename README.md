@@ -14,7 +14,7 @@
 
 
 
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Parcial”</h2>
+<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
 
 <p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
 <strong>Nombre del grupo:</strong> Café Metrix<br>
@@ -60,45 +60,51 @@
 <!-- Registro de versiones -->
 # Registro de versiones del informe
 
-| Versión | Fecha       | Autor                           | Descripción de Modificación                                                       |
-|---------|-------------|---------------------------------|-----------------------------------------------------------------------------------|
-| 1.0     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
-| 1.1     | 01/04/2026  | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
-| 1.2     | 02/04/2026  | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
-| 1.3     | 02/04/2026  | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
-| 1.4     | 03/04/2026  | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
-| 1.5     | 03/04/2026  | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
-| 1.6     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
-| 1.7     | 04/04/2026  | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
-| 1.8     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
-| 1.9     | 05/04/2026  | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
-| 1.10    | 06/04/2026  | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
-| 1.11    | 06/04/2026  | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
-| 1.12    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
-| 1.13    | 07/04/2026  | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
-| 1.14    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
-| 1.15    | 08/04/2026  | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
-| 1.16    | 09/04/2026  | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
-| 1.17    | 09/04/2026  | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
-| 1.18    | 10/04/2026  | Roman, Yum                      | Revisión de user stories                                                          |
-| 1.19    | 10/04/2026  | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
-| 1.20    | 11/04/2026  | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
-| 2.00    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
-| 2.01    | 09/05/2026  | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
-| 2.02    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
-| 2.03    | 09/05/2026  | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
-| 2.04    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
-| 2.05    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
-| 2.06    | 10/05/2026  | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
-| 2.07    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
-| 2.08    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
-| 2.09    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
-| 2.10    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
-| 2.11    | 12/05/2026  | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
-| 2.12    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
-| 2.13    | 13/05/2026  | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
-| 2.14    | 13/05/2026  | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
-
+| Versión | Fecha      | Autor                           | Descripción de Modificación                                                       |
+|---------|------------|---------------------------------|-----------------------------------------------------------------------------------|
+| 1.0     | 01/04/2026 | Julca Minaya, Sergio Gino       | Creación del documento, estructura del informe y carátula                         |
+| 1.1     | 01/04/2026 | Julca Minaya, Sergio Gino       | Creación del registro de versiones y project collaboration insights               |
+| 1.2     | 02/04/2026 | Julca Minaya, Sergio Gino       | Refactorización de tabla de contenido y redirecciones                             |
+| 1.3     | 02/04/2026 | Julca Minaya, Sergio Gino       | Actualización de lean ux hypothesis statements y canvas                           |
+| 1.4     | 03/04/2026 | Julca Minaya, Sergio Gino       | Validación de segmentos objetivos                                                 |
+| 1.5     | 03/04/2026 | Roman Cruz, Natalia Bertha      | Descripción detallada de la startup y recopilación de perfiles de los integrantes |
+| 1.6     | 04/04/2026 | Roman Cruz, Natalia Bertha      | Recopilación de antecendentes y problemáticas                                     |
+| 1.7     | 04/04/2026 | Roman Cruz, Natalia Bertha      | Optimización de lean ux problem statements y assumptions                          |
+| 1.8     | 05/04/2026 | Fernandez Camayo, Carlos Fredy  | Análisis e invetigación de competitividad                                         |
+| 1.9     | 05/04/2026 | Fernandez Camayo, Carlos Fredy  | Creación de estrategias y tácticas frente a competidores                          |
+| 1.10    | 06/04/2026 | Donayre Alvarez, Adrian Ricardo | Diseño de entrevistas                                                             |
+| 1.11    | 06/04/2026 | Donayre, Julca, Fernandez       | Registro y análisis de entrevistas.                                               |
+| 1.12    | 07/04/2026 | Fernandez Camayo, Carlos Fredy  | Actualización de user personas                                                    |
+| 1.13    | 07/04/2026 | Fernandez Camayo, Carlos Fredy  | Evaluación de user task matrix                                                    |
+| 1.14    | 08/04/2026 | Yum Gonzales, Jorge Suin        | Actualización de user journey mapping                                             |
+| 1.15    | 08/04/2026 | Yum Gonzales, Jorge Suin        | Evaluación del empathy mapping                                                    |
+| 1.16    | 09/04/2026 | Roman, Yum, Donayre             | Creación de big picture storming                                                  |
+| 1.17    | 09/04/2026 | Donayre Alvarez, Adrian Ricardo | Validación del ubiquitous language                                                |
+| 1.18    | 10/04/2026 | Roman, Yum                      | Revisión de user stories                                                          |
+| 1.19    | 10/04/2026 | Yum Gonzales, Jorge Suin        | Validación del impact mapping                                                     |
+| 1.20    | 11/04/2026 | Yum Gonzales, Jorge Suin        | Actualización del product backlog                                                 |
+| 2.00    | 09/05/2026 | Donayre Alvarez, Adrian Ricardo | Depuración de US y actualización de product backlog                               |
+| 2.01    | 09/05/2026 | Donayre Alvarez, Adrian Ricardo | Actualización del sprint backlog y aspect leaders and collaborators               |
+| 2.02    | 09/05/2026 | Fernandez Camayo, Carlos Fredy  | Style Guidelines                                                                  |
+| 2.03    | 09/05/2026 | Fernandez Camayo, Carlos Fredy  | Capturas de cap 5 y video de prototipo mobile                                     |
+| 2.04    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de configuración de deployment                                      |
+| 2.05    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de source code style guide y conventions                            |
+| 2.06    | 10/05/2026 | Yum Gonzales, Jorge Suin        | Actualización de configuración del entorno de desarrollo                          |
+| 2.07    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review                                |
+| 2.08    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Testing Suite Evidence for Sprint Review                              |
+| 2.09    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Execution Evidence for Sprint Review                                  |
+| 2.10    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Services Documentation Evidence for Sprint Review                     |
+| 2.11    | 12/05/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Software Deployment Evidence for Sprint Review                        |
+| 2.12    | 13/05/2026 | Julca Minaya, Sergio Gino       | Creación de mockups y wireframes de landing page y web app con secciones de iot   |
+| 2.13    | 13/05/2026 | Julca Minaya, Sergio Gino       | Creación de userflows y wireflows diagrams                                        |
+| 2.14    | 13/05/2026 | Fernandez Camayo, Carlos Fredy  | Evidencia de userflows y wireflows diagrams iot module                            |
+| 2.15    | 03/06/2026 | Fernandez Camayo, Carlos Fredy  | Diseño de entrevistas de validacion                                               |
+| 2.16    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Sprint Backlog 2                                                      |
+| 2.17    | 14/06/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 2                              |
+| 2.18    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Testing Suite Evidence for Sprint Review 2                            |
+| 2.19    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 2                                |
+| 2.20    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Services Documentation Evidence for Sprint Review 2                   | 
+| 2.21    | 16/06/2026 | Yum Gonzales, Jorge Suin        | Creación de Software Deployment Evidence for Sprint Review 2                      |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -200,6 +206,50 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV2</td>
+  </tr>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Evidencias</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Participé en la documentación del Sprint 2, elaborando el Sprint Backlog y el Development Evidence for Sprint Review. Además, validé la integración del dispositivo IoT TrackSilo con el Edge local, comprobando la lectura de temperatura y humedad, el envío de datos al backend, la asociación con lotes y la activación simulada de actuadores mediante LEDs para humedad y temperatura.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Roman Cruz, Natalia Bertha</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
+    <td>Desarrollé la capa Edge de la arquitectura IoT de CaféLab, encargada de la comunicación entre el dispositivo TrackSilo y el backend. Asimismo, elaboré el Software Deployment Evidence del Sprint 2 y desarrollé el workflow de GitHub Actions que construye y publica automáticamente el APK de la aplicación móvil.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td>Elabore las evidencias de Testing Suite, Execution Evidence y Services Documentation del Sprint 2 (secciones 6.2.2.5, 6.2.2.6 y 6.2.2.7). Ademas, implemente la suite de pruebas automatizadas en frontend y backend, participe en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en el frontend web y mobile, documentando los resultados obtenidos.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Julca Minaya, Sergio Gino</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2"></td>
+  </tr>
+</table>
+
 
 <!--ÍNDICE-->
 # Contenido 
@@ -226,7 +276,20 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+      - [Competitive Analysis](#competitive-analysis)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+      - [Afrontando las fortalezas de nuestros competidores:](#afrontando-las-fortalezas-de-nuestros-competidores)
+      - [Estrategias](#estrategias)
+      - [Tácticas](#tácticas)
+      - [Afrontando las debilidades de nuestros competidores:](#afrontando-las-debilidades-de-nuestros-competidores)
+      - [Estrategias](#estrategias-1)
+      - [Tácticas](#tácticas-1)
+      - [Afrontando las oportunidades de nuestros competidores:](#afrontando-las-oportunidades-de-nuestros-competidores)
+      - [Estrategias](#estrategias-2)
+      - [Tácticas](#tácticas-2)
+      - [Afrontando las amenazas de nuestros competidores:](#afrontando-las-amenazas-de-nuestros-competidores)
+      - [Estrategias](#estrategias-3)
+      - [Tácticas](#tácticas-3)
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
       - [Preguntas dirigidas a baristas profesionales:](#preguntas-dirigidas-a-baristas-profesionales)
@@ -238,6 +301,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
+      - [User Task Matrix](#user-task-matrix)
     - [2.3.3 User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
@@ -255,6 +319,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
       - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
     - [4.1.2. Context Mapping](#412-context-mapping)
+      - [Opción 1](#opción-1)
+      - [Opción 2](#opción-2)
+      - [Opción 3](#opción-3)
+      - [Elección 3](#elección-3)
     - [4.1.3. Software Architecture](#413-software-architecture)
       - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
       - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
@@ -263,45 +331,114 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
     - [4.2.1. Bounded Context: IAM](#421-bounded-context-iam)
       - [4.2.1.1. Domain Layer](#4211-domain-layer)
+        - [Aggregates](#aggregates)
+        - [User](#user)
+        - [Commands](#commands)
+        - [Domain services](#domain-services)
+        - [Exceptions](#exceptions)
       - [4.2.1.2. Interface Layer](#4212-interface-layer)
+        - [Controllers](#controllers)
+        - [Resources](#resources)
+        - [Transformers](#transformers)
       - [4.2.1.3. Application Layer](#4213-application-layer)
+        - [Command services](#command-services)
+        - [Outbound service ports](#outbound-service-ports)
+        - [Event handlers](#event-handlers)
       - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+        - [Persistence](#persistence)
+        - [Hashing](#hashing)
+        - [Tokens JWT](#tokens-jwt)
+        - [Authorization (Spring Security)](#authorization-spring-security)
+        - [Support cross-context](#support-cross-context)
       - [4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams](#4215--bounded-context-software-architecture-component-level-diagrams)
+        - [Component View: CaféLab – IAM](#component-view-cafélab--iam)
       - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
         - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
     - [4.2.2. Bounded Context: Management](#422-bounded-context-management)
       - [4.2.2.1. Domain Layer](#4221-domain-layer)
+  - [Aggregates](#aggregates-1)
+      - [1. Supplier](#1-supplier)
+      - [2. CoffeeBatch](#2-coffeebatch)
+      - [3. RoastProfile](#3-roastprofile)
+      - [4. InventoryEntry](#4-inventoryentry)
+    - [Value Objects](#value-objects)
+      - [1. RoastLevel (Enum)](#1-roastlevel-enum)
+      - [2. BatchStatus (Enum)](#2-batchstatus-enum)
+      - [3. CoffeeType (Enum)](#3-coffeetype-enum)
+      - [4. OriginInfo](#4-origininfo)
+      - [5. WeightMeasurement](#5-weightmeasurement)
+          - [Commands](#commands-1)
+          - [Queries](#queries)
       - [4.2.2.2. Interface Layer](#4222-interface-layer)
+        - [Controllers](#controllers-1)
+          - [1. SuppliersController](#1-supplierscontroller)
+          - [2. CoffeeBatchesController](#2-coffeebatchescontroller)
+          - [3. RoastProfilesController](#3-roastprofilescontroller)
+          - [4. InventoryController](#4-inventorycontroller)
       - [4.2.2.3. Application Layer](#4223-application-layer)
+          - [Command Services](#command-services-1)
+          - [Query Services](#query-services)
       - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+          - [Repositories](#repositories)
       - [4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams](#4225--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
         - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
     - [4.2.3. Bounded Context: Costing](#423-bounded-context-costing)
       - [4.2.3.1. Domain Layer](#4231-domain-layer)
+        - [Aggregates](#aggregates-2)
+        - [Value Objects](#value-objects-1)
+        - [Commands](#commands-2)
+        - [Queries](#queries-1)
       - [4.2.3.2. Interface Layer](#4232-interface-layer)
+        - [Controllers](#controllers-2)
+        - [Resources](#resources-1)
+        - [Transformers](#transformers-1)
       - [4.2.3.3. Application Layer](#4233-application-layer)
+        - [Command Services](#command-services-2)
+        - [Query Services](#query-services-1)
       - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+        - [Repositories](#repositories-1)
+        - [External Services](#external-services)
       - [4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams](#4235--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
         - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
     - [4.2.4. Bounded Context: Procedure](#424-bounded-context-procedure)
       - [4.2.4.1. Domain Layer](#4241-domain-layer)
+        - [Aggregates](#aggregates-3)
+        - [Value Objects](#value-objects-2)
+        - [Commands](#commands-3)
+        - [Queries](#queries-2)
       - [4.2.4.2. Interface Layer](#4242-interface-layer)
+        - [Controllers](#controllers-3)
+        - [Resources](#resources-2)
+        - [Transformers](#transformers-2)
       - [4.2.4.3. Application Layer](#4243-application-layer)
+        - [Command Services](#command-services-3)
+        - [Query Services](#query-services-2)
       - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+        - [Repositories](#repositories-2)
       - [4.2.4.5.  Bounded Context Software Architecture Component Level Diagrams](#4245--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
     - [4.2.5. Bounded Context: IoT Monitoring](#425-bounded-context-iot-monitoring)
       - [4.2.5.1. Domain Layer](#4251-domain-layer)
+        - [Aggregates](#aggregates-4)
+        - [Commands](#commands-4)
+        - [Queries](#queries-3)
+        - [Value Objects](#value-objects-3)
+        - [Services](#services)
       - [4.2.5.2. Interface Layer](#4252-interface-layer)
+        - [Controllers](#controllers-4)
       - [4.2.5.3. Application Layer](#4253-application-layer)
+        - [Command Services](#command-services-4)
+        - [Query Services](#query-services-3)
       - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+        - [Repositories](#repositories-3)
+        - [External Services](#external-services-1)
       - [4.2.5.5.  Bounded Context Software Architecture Component Level Diagrams](#4255--bounded-context-software-architecture-component-level-diagrams)
       - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
@@ -312,6 +449,10 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
   - [5.2. Information Architecture.](#52-information-architecture)
     - [5.2.1. Organization Systems.](#521-organization-systems)
+      - [Organización jerárquica (Visual Hierarchy)](#organización-jerárquica-visual-hierarchy)
+      - [Organización secuencial (Step-by-step)](#organización-secuencial-step-by-step)
+      - [Organización matricial](#organización-matricial)
+      - [Categorización del contenido](#categorización-del-contenido)
     - [5.2.2. Labeling Systems.](#522-labeling-systems)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
     - [5.2.4. Searching Systems.](#524-searching-systems)
@@ -321,17 +462,67 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
     - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+      - [Web Application para Mobile Web Browser](#web-application-para-mobile-webbrowser)
     - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
     - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+      - [Mock-ups for Desktops](#mock-ups-for-desktops)
+      - [Mock-ups for Mobiles](#mock-ups-for-mobiles)
     - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
+    - [Web application prototyping](#web-application-prototyping)
+      - [Facilidad de reconocimiento](#facilidad-de-reconocimiento)
+      - [Diseño responsive](#diseño-responsive)
+      - [Informacion clara](#informacion-clara)
   - [5.6. IoT Device Design.](#56-iot-device-design)
+    - [Introducción y Criterios de Diseño](#introducción-y-criterios-de-diseño)
+    - [Relación con la Arquitectura de Información](#relación-con-la-arquitectura-de-información)
+    - [Guía de Interfaz Física IoT](#guía-de-interfaz-física-iot)
+    - [Diseño Físico del Dispositivo](#diseño-físico-del-dispositivo)
+    - [Diseño de Circuito](#diseño-de-circuito)
+    - [Prototipo en Wokwi](#prototipo-en-wokwi)
+    - [Flujo Arquitectónico del Prototipo](#flujo-arquitectónico-del-prototipo)
+    - [Edge Prototype API](#edge-prototype-api)
+      - [Endpoints principales](#endpoints-principales)
+      - [Request para actualizar umbrales](#request-para-actualizar-umbrales)
+      - [Request para registrar lectura](#request-para-registrar-lectura)
+      - [Response esperado con humedad elevada](#response-esperado-con-humedad-elevada)
+      - [Response esperado con temperatura elevada, pero humedad normal](#response-esperado-con-temperatura-elevada-pero-humedad-normal)
+    - [Requests de Prueba](#requests-de-prueba)
+      - [Consultar umbrales](#consultar-umbrales)
+      - [Actualizar umbrales](#actualizar-umbrales)
+      - [Registrar lectura con humedad elevada](#registrar-lectura-con-humedad-elevada)
+      - [Registrar lectura con temperatura elevada, pero humedad normal](#registrar-lectura-con-temperatura-elevada-pero-humedad-normal)
+    - [Flujos de Interacción del Prototipo IoT](#flujos-de-interacción-del-prototipo-iot)
+    - [Conclusión del Diseño IoT](#conclusión-del-diseño-iot)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management.](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration.](#611-software-development-environment-configuration)
+      - [Project Management](#project-management)
+      - [Product UX/UI Design](#product-uxui-design)
+      - [Software Development](#software-development)
+      - [IoT Development](#iot-development)
+      - [Software Testing](#software-testing)
+      - [Software Documentation](#software-documentation)
     - [6.1.2. Source Code Management.](#612-source-code-management)
+  - [Flujo de trabajo GitFlow:](#flujo-de-trabajo-gitflow)
+      - [Main branch](#main-branch)
+      - [Develop branch](#develop-branch)
+      - [Release branch](#release-branch)
+      - [Feature branch](#feature-branch)
+      - [Hotfix branch](#hotfix-branch)
+  - [Conventional Commits](#conventional-commits)
+  - [Tipos De Conventional Commits](#tipos-de-conventional-commits)
     - [6.1.3. Source Code Style Guide \& Conventions.](#613-source-code-style-guide--conventions)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [TypeScript y Angular](#typescript-y-angular)
+  - [Java y Spring Boot](#java-y-spring-boot)
+  - [Kotlin y Android](#kotlin-y-android)
+  - [Lenguaje Gherkin](#lenguaje-gherkin)
     - [6.1.4. Software Deployment Configuration.](#614-software-deployment-configuration)
+      - [Landing Page Deployment](#landing-page-deployment)
+      - [Frontend Deployment](#frontend-deployment)
+      - [Backend Deployment](#backend-deployment)
   - [6.2. Landing Page, Services \& Applications Implementation.](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
       - [6.2.1.1. Sprint Planning 1.](#6211-sprint-planning-1)
@@ -339,15 +530,53 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.1.3. Sprint Backlog 1.](#6213-sprint-backlog-1)
       - [6.2.1.4. Development Evidence for Sprint Review.](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review.](#6215-testing-suite-evidence-for-sprint-review)
+    - [Frontend Testing Suite Evidence](#frontend-testing-suite-evidence)
+      - [Tabla de commits relacionados al frontend testing](#tabla-de-commits-relacionados-al-frontend-testing)
+      - [Pruebas de Frontend realizadas](#pruebas-de-frontend-realizadas)
+      - [Unit Tests](#unit-tests)
+      - [Integration Tests](#integration-tests)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd)
+      - [Test Execution Evidence](#test-execution-evidence)
+    - [Backend Testing Suite Evidence](#backend-testing-suite-evidence)
+      - [Tabla de commits relacionados al backend testing](#tabla-de-commits-relacionados-al-backend-testing)
+      - [Pruebas de Backend realizadas](#pruebas-de-backend-realizadas)
+      - [Integration Tests](#integration-tests-1)
+      - [Acceptance Tests BDD](#acceptance-tests-bdd-1)
+      - [Test Execution Evidence](#test-execution-evidence-1)
       - [6.2.1.6. Execution Evidence for Sprint Review.](#6216-execution-evidence-for-sprint-review)
+      - [Landing page: Sección diferenciación de segmentos objetivo](#landing-page-sección-diferenciación-de-segmentos-objetivo)
+      - [Landing page: Sección módulos a ofrecer](#landing-page-sección-módulos-a-ofrecer)
+      - [Landing page: Sección elección de suscripción](#landing-page-sección-elección-de-suscripción)
+      - [Frontend: Sección dashboard de dueño](#frontend-sección-dashboard-de-dueño)
+      - [Frontend: Sección proveedores](#frontend-sección-proveedores)
+      - [Frontend: Sección registro de nuevo proveedor](#frontend-sección-registro-de-nuevo-proveedor)
+      - [Frontend: Sección iniciar sesión](#frontend-sección-iniciar-sesión)
+      - [Backend: Registro de un proveedor](#backend-registro-de-un-proveedor)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos)
+      - [Backend: Registro de un lote de café](#backend-registro-de-un-lote-de-café)
+      - [Backend: Visualización del registro en la base de datos](#backend-visualización-del-registro-en-la-base-de-datos-1)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review.](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review.](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint.](#6219-team-collaboration-insights-during-sprint)
+    - [6.2.2. Sprint 2](#622-sprint-2)
+      - [6.2.2.1. Sprint Planning 2.](#6221-sprint-planning-2)
+      - [6.2.2.2. Aspect Leaders and Collaborators.](#6222-aspect-leaders-and-collaborators)
+      - [6.2.2.3. Sprint Backlog 2.](#6223-sprint-backlog-2)
+      - [6.2.2.4. Development Evidence for Sprint Review.](#6224-development-evidence-for-sprint-review)
+      - [6.2.2.5. Testing Suite Evidence for Sprint Review.](#6225-testing-suite-evidence-for-sprint-review)
+      - [6.2.2.6. Execution Evidence for Sprint Review.](#6226-execution-evidence-for-sprint-review)
+      - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
+      - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
+      - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews.](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
 
 [Conclusiones](#conclusiones) <br>
 [Recomendaciones](#recomendaciones) <br>
@@ -370,11 +599,17 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Cumplió este criterio al asumir responsabilidades dentro del equipo en el desarrollo de la Aplicación Mobile y el Diseño mobile FE. Participó en la organización del trabajo del sprint y aportó en la elaboración de secciones clave del capítulo VI, como el Sprint Backlog, las evidencias de desarrollo, testing, ejecución, documentación de servicios y despliegue. Con ello, logró contribuir al liderazgo conjunto del equipo y al cumplimiento de los entregables establecidos.
       <br>
+      <strong>AV2:</strong>
+      Cumplió este criterio elaborando el Sprint Backlog y organizando las evidencias de desarrollo del proyecto. Además, aportó validación del flujo IoT, coordinando la integración entre el dispositivo, la capa Edge, el backend desplegado y el dashboard de monitoreo. Con ello, logró contribuir al avance conjunto del equipo, asegurando que la funcionalidad de monitoreo ambiental se evidenciara de forma clara y alineada con los objetivos del sprint.
+      <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
       <strong>TB1:</strong>
       Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo..
+      <br>
+      <strong>AV2:</strong>
+      Cumpli este criterio documentando las evidencias de Testing Suite, Execution Evidence y Services Documentation del Sprint 2. Ademas, implemente y ejecute pruebas automatizadas en frontend y backend para validar el modulo IoT Monitoring, colabore en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en el frontend web y mobile, coordinando con el equipo la verificacion de los resultados obtenidos.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
@@ -394,6 +629,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Contribuyó al desarrollo integral del sistema IoT mediante la configuración del entorno de desarrollo de software, la gestión del código fuente, la definición de convenciones de programación y la preparación del despliegue del software. Asimismo, participó en el diseño del dispositivo IoT y logró desplegar tanto la landing page como el frontend, demostrando dominio técnico, organización y capacidad para llevar componentes del proyecto a un entorno operativo.
       <br>
+      <strong>AV2:</strong>
+      Asumió el liderazgo técnico de la capa Edge de la arquitectura IoT, diseñando e implementando el componente intermedio que conecta el dispositivo TrackSilo con el backend de CaféLab. Además, lideró la elaboración del Software Deployment Evidence del Sprint 2 y desarrolló el workflow de GitHub Actions que genera y publica automáticamente el APK de la aplicación móvil. Coordinó estos avances con el equipo para mantener coherencia entre el diseño IoT, la implementación y el despliegue, aportando liderazgo conjunto en los componentes más técnicos de la solución.
+      <br>
     </td>
     <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
   </tr>
@@ -406,11 +644,17 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Cumplió este criterio al colaborar en la planificación y documentación de las tareas del sprint, organizando evidencias relacionadas con la implementación, validación y despliegue del producto. Además, ayudó a establecer metas claras mediante la estructuración del Sprint Backlog y el seguimiento de las actividades desarrolladas. De esta manera, logró aportar a un entorno colaborativo donde el equipo pudo distribuir tareas, revisar avances y cumplir los objetivos del sprint.
       <br>
+      <strong>AV2:</strong>
+      Cumplió este criterio definiendo tareas vinculadas al desarrollo y validación del módulo IoT. Además, organizó las evidencias del avance realizado y verificó el cumplimiento de objetivos técnicos, como la conexión del dispositivo TrackSilo con el Edge, el registro de lecturas ambientales y la simulación de actuadores mediante LEDs. De esta manera, contribuyó a un entorno de trabajo ordenado, colaborativo y orientado al cumplimiento de los entregables del equipo.
+      <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
       <br>
       <strong>TB1:</strong>
       Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
+      <br>
+      <strong>AV2:</strong>
+      Contribui a un entorno colaborativo organizando y documentando las evidencias de pruebas, ejecucion y documentacion de servicios del Sprint 2 (secciones 6.2.2.5, 6.2.2.6 y 6.2.2.7). Ademas, participe en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en frontend web y mobile, planificando y ejecutando las pruebas automatizadas del modulo en frontend y backend, comunicando los resultados al equipo para alinear la documentacion con la implementacion desplegada.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
@@ -429,6 +673,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Aportó a la organización del trabajo técnico mediante la configuración del entorno de desarrollo, la administración del repositorio y la aplicación de una guía de estilo compartida para mantener consistencia en el código fuente. Además, colaboró en la planificación del despliegue y en la implementación de entregables funcionales, incluyendo el diseño del dispositivo IoT, la landing page desplegada y el frontend desplegado, cumpliendo con los objetivos definidos para la entrega.
+      <br>
+      <strong>AV2:</strong>
+      Contribuyó a un entorno colaborativo planificando y documentando las tareas relacionadas con la capa Edge y el despliegue móvil del Sprint 2. Estableció objetivos claros para la automatización del build del APK mediante GitHub Actions y los cumplió al dejar el flujo operativo y replicable, además de organizar las evidencias de Software Deployment. De esta manera, facilitó que el equipo pudiera integrar el componente IoT y la aplicación móvil de forma ordenada y alineada con las metas de la entrega.
       <br>
     </td>
     <td>
@@ -8759,11 +9006,1422 @@ La imagen muestra el servicio MySQL activo en Railway, junto con métricas de op
   </tr>
 </table>
 
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2.
+
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>01/06/2026</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Natalia Roman</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Review Summary</th>
+            <td>
+                Durante el primer sprint se lograron completar todas las actividades planteadas, llegando a una implementación casi completa del backend´omitiendo solo las actividades relacionadas a la implementación IoT. En cuanto al frontend, se completó la implementación de la landing page y de la aplicación web, así como se inició con la conexión de los endpoints en la aplicación móvil, todo alineado hacia los objetivos del proyecto.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 1 Retrospective Summary</th>
+            <td>
+                Durante la elaboración del primer sprint, el equipo destacó por su comunicación efectiva y por su alto nivel de compromiso en cuanto a la calidad en el desarrollo de su trabajo, la exposición y reporte de avances entre compañeros y el cumpliento en los tiempos planteados como equipo. Así, se puede mencionar que la coordinación del equipo ayudó a llegar a un resultado óptimo según lo esperado.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 2 Goal</th>
+            <td>Implementar la totalidad de funcionalidades planteadas para la aplicación destacando la efectividad en el uso y conexión del elemento IoT para monitoreo.</td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Velocity</th>
+            <td>29</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>29</td>
+        </tr>
+    </tbody>
+</table>
+
+#### 6.2.2.2. Aspect Leaders and Collaborators.
+
+Para este Sprint, se está considerando la elaboración de las User Stories y Technical Story relacionadas al módulo de IoT Monitoring, cuyo alcance abarca la visualización en tiempo real de las condiciones del almacén, la consulta del historial ambiental por lote, la recepción de alertas cuando los valores leídos sobrepasen los umbrales, la configuración de estos umbrales y demás funcionalidades que serán posibles gracias a la integración de elementos IoT. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas, responsabilidades e intereses.
+
+<table border="1">
+<tr>
+<th>Aspecto / US - TS</th>
+<th>Roman, Natalia (natRC2005)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
+<th>Fernández, Fredy (u202320083)</th>
+<th>Donayre, Adrian (adriandonayredev)</th>
+</tr>
+
+<tr>
+<td>Visualización de condiciones del almacén en tiempo real (US20)</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Consulta de historial ambiental por lote (US21)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Recepción de alertas por condiciones fuera de rango (US22)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+<tr>
+<td>Configuración de umbrales de monitoreo (US23)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Indicador de estado ambiental por lote (US24)</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Activación automática del deshumedecedor (US25)</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>API IoT Monitoring (TS11)</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+</table>
+
+#### 6.2.2.3. Sprint Backlog 2.
+
+<p align="center">
+<img width="500" src="public/assets/images/chapter-6/sprint-2/evidence/sprintbacklog2.png" alt="Sprint backlog 2">
+</p>
+
+Durante el Sprint 2, el equipo priorizó la integración del módulo de monitoreo ambiental IoT TrackSilo con la plataforma CaféLab. El objetivo principal fue validar el flujo completo desde el dispositivo físico ESP32 con sensor DHT22 hasta la visualización de lecturas y alertas en la aplicación, pasando por una capa Edge local encargada de recibir, procesar y sincronizar la información con el backend.
+
+El Sprint Backlog se organizó alrededor de las user stories y technical stories vinculadas al monitoreo ambiental de lotes, configuración de umbrales, registro de lecturas, estado ambiental y activación simulada de actuadores. Estas tareas permitieron comprobar que el sistema puede detectar condiciones fuera de rango y representarlas mediante LEDs físicos, funcionando como simulación de mecanismos de regulación ambiental.
+
+<table border="1">
+  <tr>
+    <th>User Story / Technical Story</th>
+    <th>Work-Item / Task</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Integrar lecturas del dispositivo IoT con el dashboard</td>
+    <td>Mostrar temperatura y humedad actuales del lote asociado, junto con su estado ambiental según los datos enviados por TrackSilo.</td>
+    <td>4</td>
+    <td>Fredy Fernández</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Validar historial de lecturas ambientales</td>
+    <td>Registrar lecturas enviadas por el ESP32 y permitir su consulta desde el Edge para evidenciar el comportamiento ambiental del lote en el tiempo.</td>
+    <td>3</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Vincular umbrales del lote con el Edge</td>
+    <td>Asociar un lote del backend desplegado al dispositivo detectado en el onboarding para aplicar rangos de temperatura y humedad durante la evaluación ambiental.</td>
+    <td>4</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Mostrar estado ambiental del lote</td>
+    <td>Representar el estado del lote mediante indicadores visuales como normal, alerta, riesgo o crítico, de acuerdo con las lecturas recibidas.</td>
+    <td>3</td>
+    <td>Sergio Julca</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US25 - Activación automática del deshumedecedor</td>
+    <td>Simular activación de actuadores mediante LEDs</td>
+    <td>Activar el LED de humedad en GPIO 18 y el LED de temperatura en GPIO 19 cuando el Edge indique que las variables están fuera de rango.</td>
+    <td>4</td>
+    <td>Adrian Donayre</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Validar comunicación ESP32 - Edge</td>
+    <td>Configurar el firmware del ESP32 para enviar lecturas de temperatura y humedad al endpoint de lecturas del Edge usando la IP local de la PC y autenticación mediante API key.</td>
+    <td>5</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Implementar auto-enrollment del dispositivo</td>
+    <td>Permitir que el ESP32 se anuncie ante el Edge, obtenga una API key y la recupere desde NVS en reinicios posteriores.</td>
+    <td>4</td>
+    <td>Jorge Yum</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Configurar WiFiManager para conexión a red local</td>
+    <td>Usar el portal TrackSilo-Setup para registrar las credenciales WiFi del dispositivo y conectarlo a la misma red que el Edge.</td>
+    <td>3</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Validar onboarding del Edge</td>
+    <td>Vincular la cuenta del backend desplegado, detectar el dispositivo IoT, asignarlo a un lote y comprobar la llegada de lecturas.</td>
+    <td>4</td>
+    <td>Natalia Roman</td>
+    <td>Done</td>
+  </tr>
+</table>
+
+#### 6.2.2.4. Development Evidence for Sprint Review.
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committer on (Date)</th>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>e285f2f</td>
+    <td>fix: parameters labels</td>
+    <td>fix: parameters labels</td>
+    <td>Jun 14, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>a87adb2</td>
+    <td>monitoring</td>
+    <td>monitoring</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>ca1418f</td>
+    <td>monitoring configuration</td>
+    <td>monitoring configuration</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>ae955a6</td>
+    <td>Merge pull request #3 from CafeLab-IoT-Project/develop</td>
+    <td>Merge pull request #3 from CafeLab-IoT-Project/develop</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>2e01f00</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>c72bca4</td>
+    <td>feat: iot module</td>
+    <td>feat: iot module</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-frontend</td>
+    <td>main</td>
+    <td>3c5de65</td>
+    <td>feat:monitoring module and mock data for analytics</td>
+    <td>feat:monitoring module and mock data for analytics</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+    <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>9063329</td>
+    <td>tracksilo</td>
+    <td>tracksilo</td>
+    <td>Jun 14, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>7396a6d</td>
+    <td>feat(firmware): descubrimiento del edge por servicio mDNS + device_id override</td>
+    <td>feat(firmware): descubrimiento del edge por servicio mDNS + device_id override</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>3ba27fc</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>7e01347</td>
+    <td>feat: auto-enrolamiento de IoT y onboarding por web (sin reflasheo)</td>
+    <td>feat: auto-enrolamiento de IoT y onboarding por web (sin reflasheo)</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>dcb61da</td>
+    <td>chore: stop tracking edge_clean.db (runtime state, ya en .gitignore)</td>
+    <td>chore: stop tracking edge_clean.db (runtime state, ya en .gitignore)</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>5450ce9</td>
+    <td>gitignore</td>
+    <td>gitignore</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>114caec</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>e132256</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>9425a9b</td>
+    <td>docs</td>
+    <td>docs</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>141a00e</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Merge branch 'main' of https://github.com/CafeLab-IoT-Project/edge-clean</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>c9b4fb9</td>
+    <td>feature: get all devices</td>
+    <td>feature: get all devices</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>bb6ac4f</td>
+    <td>deploy</td>
+    <td>deploy</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>cb35b06</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>5b7cd78</td>
+    <td>wifi portal</td>
+    <td>wifi portal</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>3ff8971</td>
+    <td>generacion de guia de deploy, intentar</td>
+    <td>generacion de guia de deploy, intentar</td>
+    <td>Jun 6, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>dc584f0</td>
+    <td>documentation</td>
+    <td>documentation</td>
+    <td>May 31, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>d497451</td>
+    <td>edge finished</td>
+    <td>edge finished</td>
+    <td>May 31, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>d9cd08a</td>
+    <td>avance de repositorio de IAM</td>
+    <td>avance de repositorio de IAM</td>
+    <td>May 30, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>69929b4</td>
+    <td>update on iam, check interfaces</td>
+    <td>update on iam, check interfaces</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>40ed439</td>
+    <td>iam bc created</td>
+    <td>iam bc created</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>cbb1fa2</td>
+    <td>first requirements</td>
+    <td>first requirements</td>
+    <td>May 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>e0ff35c</td>
+    <td>Initial commit</td>
+    <td>Initial commit</td>
+    <td>May 29, 2026</td>
+  </tr>
+    <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>f210176</td>
+    <td>build workflow</td>
+    <td>build workflow</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>f327947</td>
+    <td>Merge pull request #9 from CafeLab-IoT-Project/develop</td>
+    <td>Merge pull request #9 from CafeLab-IoT-Project/develop</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8f54f59</td>
+    <td>Merge pull request #8 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Merge pull request #8 from CafeLab-IoT-Project/feature/monitoring</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>fd5e697</td>
+    <td>fix imports</td>
+    <td>fix imports</td>
+    <td>Jun 12, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>b4c8ced</td>
+    <td>Merge pull request #7 from CafeLab-IoT-Project/feature/cuppingsessions</td>
+    <td>Merge pull request #7 from CafeLab-IoT-Project/feature/cuppingsessions</td>
+    <td>Jun 3, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>3abffec</td>
+    <td>feat: add cupping sessions screens</td>
+    <td>feat: add cupping sessions screens</td>
+    <td>Jun 3, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>5ecb33c</td>
+    <td>Merge pull request #6 from CafeLab-IoT-Project/feature/management</td>
+    <td>Merge pull request #6 from CafeLab-IoT-Project/feature/management</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>9e5dec6</td>
+    <td>feat: add inventory screens</td>
+    <td>feat: add inventory screens</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>1794db3</td>
+    <td>Merge pull request #5 from CafeLab-IoT-Project/feature/production</td>
+    <td>Merge pull request #5 from CafeLab-IoT-Project/feature/production</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>494d242</td>
+    <td>feat: add roast profiles screens</td>
+    <td>feat: add roast profiles screens</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8212c21</td>
+    <td>Merge pull request #4 from CafeLab-IoT-Project/feature/production</td>
+    <td>Merge pull request #4 from CafeLab-IoT-Project/feature/production</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>767b549</td>
+    <td>feat: add defect library, calibrations and cost management from feature/cost-management</td>
+    <td>feat: add defect library, calibrations and cost management from feature/cost-management</td>
+    <td>Jun 2, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>8f03ad8</td>
+    <td>feat: add coffee lots screens</td>
+    <td>feat: add coffee lots screens</td>
+    <td>May 26, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>866a635</td>
+    <td>feat: add suppliers screens</td>
+    <td>feat: add suppliers screens</td>
+    <td>May 26, 2026</td>
+  </tr>
+  <tr>
+    <td>cafelab_iot_mobile</td>
+    <td>main</td>
+    <td>be01d73</td>
+    <td>merge develop to this branch</td>
+    <td>merge develop to this branch</td>
+    <td>May 26, 2026</td>
+  </tr>
+    <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>ee53ce4</td>
+    <td>update</td>
+    <td>update</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>c22b05d</td>
+    <td>Merge branch 'develop'</td>
+    <td>Merge branch 'develop'</td>
+    <td>Jun 13, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>abb6f17</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/iot-monitoring</td>
+    <td>Merge pull request #2 from CafeLab-IoT-Project/feature/iot-monitoring</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+  <tr>
+    <td>cafeLab-backEnd</td>
+    <td>main</td>
+    <td>aad1095</td>
+    <td>feature: add iot monitoring bc.</td>
+    <td>feature: add iot monitoring bc.</td>
+    <td>Jun 5, 2026</td>
+  </tr>
+</table>
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+### Frontend Testing Suite Evidence
+
+Para el repositorio frontend se implementó una suite de pruebas automatizadas orientada a validar las funcionalidades del módulo IoT Monitoring incluidas en el Sprint Backlog 2. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-frontend-sprint2` del repositorio `cafeLab-frontend`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-frontend.git  
+Branch: feature/testing-suite-frontend-sprint2  
+
+La suite incluyó Unit Tests, Component Tests, Integration Tests con servicios mockeados y Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Los tests fueron ejecutados localmente con Angular/Karma usando el comando:
+
+`npx ng test --watch=false --browsers=ChromeHeadless --include='**/monitoring/**/*.spec.ts'`
+
+Para evitar dependencias con el backend desplegado, las pruebas frontend utilizaron mocks de servicios como `MonitoredLotApi`, `TelemetryRecordApi`, `EnvironmentThresholdApi` y `MonitoringAlertApi`. De esta forma, se validó el comportamiento de los componentes del módulo de monitoreo, la evaluación de estados ambientales, la configuración de umbrales y la visualización de alertas sin realizar llamadas reales a servicios externos.
+
+El resultado final de la ejecución fue de 27 pruebas exitosas.
+
+#### Tabla de commits relacionados al frontend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>4def2a8</td>
+    <td>test: add monitoring status unit tests for US24 and US25</td>
+    <td>Added unit and component tests for environmental status evaluation and actuator messaging.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>9688958</td>
+    <td>test: add monitoring dashboard tests for US20</td>
+    <td>Added frontend tests for the monitoring hub and real-time lot dashboard using mocked services.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>dd3b2c3</td>
+    <td>test: add monitoring configuration tests for US23</td>
+    <td>Added frontend tests for threshold configuration validation and persistence with mocked APIs.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>bcff514</td>
+    <td>test: add monitoring analytics and alerts tests for US21 and US24</td>
+    <td>Added frontend tests for environmental history analytics and alert filtering using mocked services.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-frontend</td>
+    <td>feature/testing-suite-frontend-sprint2</td>
+    <td>4f6e121</td>
+    <td>test: add frontend BDD feature files for IoT monitoring acceptance tests</td>
+    <td>Added Gherkin feature files for dashboard, analytics, configuration and environmental status scenarios.</td>
+    <td>15/06/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Frontend realizadas
+
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre utilidades y componentes individuales del módulo de monitoreo para validar comportamientos específicos, como evaluación de estados ambientales, mensajes de actuadores simulados y renderizado de tarjetas de lote.
+
+#### Integration Tests
+
+Los Integration Tests frontend validaron la interacción entre vistas del módulo IoT y servicios mockeados. Estos tests simularon respuestas de telemetría, umbrales y alertas para comprobar que la interfaz reacciona correctamente ante los datos esperados.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>monitoring-status.util.spec.ts</td>
+    <td>Unit Test</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Valida la evaluación de estados optimal, warning y critical, así como la detección de variables fuera de rango para actuadores simulados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-page.component.spec.ts</td>
+    <td>Component Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Valida la creación del hub de monitoreo y la navegación hacia las secciones de lotes, configuración, alertas y analíticas.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-lots-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Valida la carga de lotes monitoreados, contadores de alertas, cobertura de telemetría y filtrado por búsqueda con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-lot-card.component.spec.ts</td>
+    <td>Component Test</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Valida el mapeo de etiquetas de estado y mensajes de actuadores de temperatura y humedad en la tarjeta de lote.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-configuration-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Valida la carga de lotes, validación de rangos de temperatura y humedad, y persistencia de umbrales mediante servicios mockeados.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-analytics-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US21 - Consulta de historial ambiental por lote / US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida el cálculo de promedios, series de tendencia y puntaje de salud ambiental a partir de historial mockeado.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>monitoring-alerts-page.component.spec.ts</td>
+    <td>Component Test / Integration Test</td>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida la carga de alertas, filtrado por severidad y marcado de alertas como leídas con datos mockeados.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación relacionados con las User Stories del Sprint Backlog 2 del módulo IoT Monitoring.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>monitoring-dashboard.feature</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Describe escenarios de aceptación para visualización de lotes monitoreados y filtrado en el dashboard de monitoreo.</td>
+  </tr>
+  <tr>
+    <td>monitoring-analytics.feature</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Describe escenarios de aceptación para consulta de promedios y tendencias históricas de temperatura y humedad.</td>
+  </tr>
+  <tr>
+    <td>monitoring-configuration.feature</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Describe escenarios de aceptación para guardado y validación de umbrales ambientales por lote.</td>
+  </tr>
+  <tr>
+    <td>monitoring-status.feature</td>
+    <td>US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumidificador</td>
+    <td>Describe escenarios de aceptación para indicadores de estado ambiental y activación simulada de actuadores.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Frontend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-front.png)
+
+### Backend Testing Suite Evidence
+
+Para el repositorio backend se implementó una suite de pruebas automatizadas orientada a validar los Web Services del módulo IoT Monitoring relacionados con las funcionalidades incluidas en el Sprint Backlog 2. Las pruebas fueron desarrolladas en la rama `feature/testing-suite-backend-sprint2` del repositorio `cafeLab-backEnd`.
+
+Repository: https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git  
+Branch: feature/testing-suite-backend-sprint2  
+
+La suite incluyó Integration Tests con Spring Boot, JUnit 5 y MockMvc, además de Acceptance Tests documentados mediante archivos `.feature` en lenguaje Gherkin. Para evitar el uso de la base de datos real, se utilizó el perfil de pruebas con H2 Database configurado en `application-test.properties`, permitiendo ejecutar la suite en un entorno controlado y aislado.
+
+La ejecución final de pruebas se realizó con Maven mediante el comando:
+
+`./mvnw clean test`
+
+El resultado final fue de 9 pruebas ejecutadas correctamente.
+
+#### Tabla de commits relacionados al backend testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>850949e</td>
+    <td>test: add telemetry records backend tests for US20 and US21</td>
+    <td>Added integration tests for telemetry ingestion and history endpoints using MockMvc and H2.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>0a37352</td>
+    <td>test: add environment thresholds backend tests for US23 and US24</td>
+    <td>Added integration tests for threshold creation, retrieval and update endpoints using MockMvc.</td>
+    <td>15/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/cafeLab-backEnd</td>
+    <td>feature/testing-suite-backend-sprint2</td>
+    <td>bad91d6</td>
+    <td>test: add backend BDD feature files for IoT monitoring acceptance tests</td>
+    <td>Added Gherkin feature files for telemetry, environmental history, thresholds and status scenarios.</td>
+    <td>15/06/2026</td>
+  </tr>
+</table>
+
+#### Pruebas de Backend realizadas
+
+#### Integration Tests
+
+Los Integration Tests del backend fueron implementados con Spring Boot, JUnit 5 y MockMvc. Estos tests validan el comportamiento de los controladores REST asociados a las User Stories del módulo IoT Monitoring. Para evitar dependencias con la base de datos real, se configuró un perfil de pruebas con H2 Database.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>TelemetryRecordsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real / US21 - Consulta de historial ambiental por lote</td>
+    <td>Valida el registro de lecturas de telemetría y la consulta del historial ambiental por lote mediante MockMvc.</td>
+    <td>Passed</td>
+  </tr>
+  <tr>
+    <td>EnvironmentThresholdsControllerTest.java</td>
+    <td>Integration Test</td>
+    <td>US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote</td>
+    <td>Valida la creación, consulta y actualización de umbrales ambientales por lote, incluyendo respuestas 404 cuando no existen.</td>
+    <td>Passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin. Estos archivos describen escenarios de aceptación asociados a las User Stories del Sprint 2, permitiendo expresar el comportamiento esperado de los Web Services IoT desde una perspectiva funcional.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>telemetry-api.feature</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Describe escenarios de aceptación para registro y consulta de lecturas de telemetría en tiempo real.</td>
+  </tr>
+  <tr>
+    <td>environmental-history-api.feature</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Describe escenarios de aceptación para consulta del historial ambiental por lote mediante API.</td>
+  </tr>
+  <tr>
+    <td>environment-thresholds-api.feature</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+    <td>Describe escenarios de aceptación para creación, consulta y actualización de umbrales ambientales.</td>
+  </tr>
+  <tr>
+    <td>environmental-status-api.feature</td>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Describe escenarios de aceptación para evaluación de estado ambiental con lecturas y umbrales consistentes.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back1.png)
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back2.png)
+![Backend Test Execution Evidence](public/assets/images/chapter-6/sprint-2/test-evidence/test-back3.png)
+
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web de CaféLab.
+
+#### Frontend: Hub de monitoreo
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front1.png" alt="Hub de monitoreo">
+</figure>
+
+#### Frontend: Visualización de lotes monitoreados en tiempo real
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front2.png" alt="Lotes monitoreados en tiempo real">
+</figure>
+
+#### Frontend: Configuración de umbrales ambientales
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front3.png" alt="Configuración de umbrales ambientales">
+</figure>
+
+#### Frontend: Historial y analíticas ambientales por lote
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front4.png" alt="Historial y analíticas ambientales por lote">
+</figure>
+
+#### Frontend: Alertas ambientales
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front5.png" alt="Alertas ambientales">
+</figure>
+
+#### Backend: Endpoints IoT Monitoring en Swagger UI
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back1.png" alt="Endpoints IoT Monitoring en Swagger UI">
+</figure>
+
+#### Backend: Registro de lectura de telemetría
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back2.png" alt="Registro de lectura de telemetría">
+</figure>
+
+#### Backend: Visualización del registro en la base de datos
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back3.png" alt="Visualización del registro en la base de datos">
+</figure>
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back4.png" alt="Visualización del registro en la base de datos">
+</figure>
+
+#### Edge e IoT: Onboarding, lecturas del dispositivo y activación de actuadores
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge1.jpeg" alt="Onboarding, lecturas del dispositivo y activación de actuadores">
+</figure>
+
+
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 2 se documentaron los Web Services del módulo IoT Monitoring mediante OpenAPI y Swagger UI. Esta documentación permitió visualizar los endpoints relacionados con telemetría ambiental y configuración de umbrales, incluyendo sus métodos HTTP, rutas, parámetros, cuerpos de solicitud, códigos de respuesta y ejemplos de ejecución. Los servicios fueron validados en el entorno desplegado, el backend se encuentra alojado en Azure y utiliza una BD MySQL desplegada en Railway.
+
+La documentación generada permite comprobar que los endpoints del Sprint 2 se encuentran disponibles y organizados por módulos funcionales. Entre ellos se incluyen los servicios de **Telemetry Records** y **Environment Thresholds**, utilizados para registrar lecturas del dispositivo TrackSilo, consultar el historial ambiental por lote y administrar los umbrales de temperatura y humedad. Desde Swagger UI se realizaron pruebas sobre las rutas expuestas, verificando la disponibilidad del API, el uso de autenticación mediante JWT y la persistencia de información en la BD desplegada.
+
+**URL de Swagger UI desplegado:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+
+**URL de documentación OpenAPI:** https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/v3/api-docs
+
+**Repositorio de Web Services:** https://github.com/CafeLab-IoT-Project/cafeLab-backEnd.git
+
+**Documentación OpenAPI de los servicios IoT Monitoring:**
+
+<figure style="text-align: center;">
+    <img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/docs-openapi-iot.png" alt="Documentación OpenAPI IoT Monitoring">
+</figure>
+
+<h3>Telemetry Records</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/telemetry-records</td>
+    <td>Registra una lectura de telemetría ambiental para un lote.</td>
+    <td>Body JSON: coffeeLotId, temperature, humidity, timestamp. Requiere token JWT.</td>
+    <td>201 Created - Retorna el registro de telemetría creado.</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/telemetry-records/coffee-lot/{coffeeLotId}</td>
+    <td>Consulta el historial de lecturas ambientales de un lote.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la lista de lecturas registradas para el lote.</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de telemetría</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apitelemetria1.png" alt="Endpoint POST de telemetría">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apitelemetria2.png" alt="Endpoint GET de historial de telemetría">
+</p>
+
+<h3>Environment Thresholds</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/environment-thresholds</td>
+    <td>Crea la configuración de umbrales ambientales para un lote.</td>
+    <td>Body JSON: coffeeLotId, minTemperature, maxTemperature, minHumidity, maxHumidity, syncIntervalSeconds. Requiere token JWT.</td>
+    <td>201 Created - Retorna la configuración de umbrales creada.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/environment-thresholds/coffee-lot/{coffeeLotId}</td>
+    <td>Consulta los umbrales ambientales configurados para un lote.</td>
+    <td>Path parameter: coffeeLotId. Requiere token JWT.</td>
+    <td>200 OK - Retorna la configuración de umbrales del lote.</td>
+    <td>US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/environment-thresholds/coffee-lot/{coffeeLotId}</td>
+    <td>Actualiza los umbrales ambientales de un lote existente.</td>
+    <td>Path parameter: coffeeLotId. Body JSON con los nuevos rangos de temperatura, humedad y syncIntervalSeconds.</td>
+    <td>200 OK - Retorna la configuración de umbrales actualizada.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoints de umbrales ambientales</strong></p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apiumbrales1.png" alt="Endpoint de creación y consulta de umbrales">
+</p>
+
+<p align="center">
+<img width="350" src="public/assets/images/chapter-6/sprint-2/evidence/apiumbrales2.png" alt="Endpoint de actualización de umbrales">
+</p>
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 2 se incorporó el despliegue de la aplicación móvil de CaféLab mediante un workflow de GitHub Actions. 
+
+<h3>Configuración del workflow de build y release del APK</h3>
+<p>
+Para automatizar el despliegue móvil, se configuró el workflow <strong>Build & Release APK</strong> dentro del repositorio <code>cafelab_iot_mobile</code>. Este flujo se ejecuta ante cambios en la rama <code>main</code> o de forma manual mediante <code>workflow_dispatch</code>. La configuración prepara el entorno con Java y Flutter, instala dependencias, genera el APK en modo release y crea una publicación en GitHub Releases.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow code.png" alt="Configuración del workflow Build and Release APK" width="650">
+</p>
+
+<p>
+La imagen evidencia la definición del archivo <code>build-apk.yml</code>, donde se especifican los permisos necesarios para crear releases, la instalación de Flutter, la ejecución de <code>flutter pub get</code>, la construcción del APK mediante <code>flutter build apk --release</code> y la carga del archivo <code>app-release.apk</code> como artefacto final.
+</p>
+
+<h3>Ejecución del workflow en GitHub Actions</h3>
+<p>
+Una vez configurado el flujo, se ejecutó el workflow desde GitHub Actions para validar que el proceso de construcción y publicación pudiera completarse correctamente desde el repositorio móvil. Esta ejecución permite comprobar que el despliegue no depende de acciones manuales locales y que el APK puede generarse en un entorno controlado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow.png" alt="Inicio de ejecución del workflow de build y release del APK" width="650">
+</p>
+
+<p>
+La imagen muestra el inicio del check asociado al workflow <strong>Build & Release APK</strong>, confirmando que GitHub detectó la ejecución del proceso de despliegue móvil.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/workflow running.png" alt="Workflow de build del APK en ejecución" width="650">
+</p>
+
+<p>
+Durante la ejecución se observa la preparación del entorno, la descarga de Flutter, la instalación de dependencias del proyecto y el avance del job de build. Esto evidencia que la aplicación móvil fue construida dentro de GitHub Actions y no únicamente desde un entorno local de desarrollo.
+</p>
+
+<h3>Validación del build del APK</h3>
+<p>
+Finalizada la ejecución, GitHub Actions reportó el estado exitoso del job de construcción. Esta validación confirma que el código fuente de la aplicación móvil compila correctamente y que el workflow puede generar el artefacto de despliegue esperado.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/build workflow.png" alt="Build exitoso del workflow de APK" width="650">
+</p>
+
+<p>
+La imagen evidencia que el workflow <strong>build-apk.yml</strong> terminó con estado <strong>Success</strong>, después de ejecutar el job de build. Con ello se valida que el proceso automatizado queda disponible para futuras versiones de la aplicación móvil.
+</p>
+
+<h3>Publicación del APK en GitHub Releases</h3>
+<p>
+Como resultado del workflow, se generó una release del proyecto móvil con el APK listo para descarga. Esta publicación permite distribuir la aplicación Android generada durante el Sprint 2 y contar con una versión identificable para revisión, instalación y pruebas.
+</p>
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-2/evidence/release latest.png" alt="Release publicada con APK de la aplicación móvil" width="650">
+</p>
+
+<p>
+La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Latest</strong>, junto con el archivo <code>app-release.apk</code> como asset descargable. De esta manera, el Sprint 2 incorpora una evidencia de despliegue móvil equivalente al deployment evidence del Sprint 1, pero orientada a la generación y publicación de la aplicación Android.
+</p>
+
+<p>
+<strong>Página de releases del APK:</strong> <a href="https://github.com/CafeLab-IoT-Project/cafelab_iot_mobile/releases">https://github.com/CafeLab-IoT-Project/cafelab_iot_mobile/releases</a>
+</p>
+
+
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
+
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
 
+En esta sección se detallan los objetivos de los usuarios pertenecientes a los segmentos objetivo, mediante la definición de estos user goals se obtienen los resultados más cercanos a la experiencia del usuario en la navegación y recorrido ideal en la plataforma para lograr sus objetivos, ya sean baristas o dueños/administradores de cafeterías. Este diseño de entrevistas corresponde a la continuación del proyecto anterior enfocado en frontend y backend, ampliado en la presente entrega con la integración del módulo IoT TrackSilo para el monitoreo ambiental del almacén de café verde.
+
+**User Goal: Registrarse y elegir suscripción (Barista y dueño/administrador de cafetería)**
+
+El usuario elegirá si es un barista o un dueño de cafetería; en base a esto, el formulario de registro mostrará más o menos campos a completar. Una vez registrados, podrán elegir el plan que más deseen y luego procederán a la pantalla de pago. Confirmado el pago, podrán acceder a las herramientas disponibles según su plan.
+
+**User Goal: Iniciar sesión (Barista y dueño/administrador de cafetería)**
+
+El usuario de la aplicación ya cuenta con una cuenta, sea de barista o dueño de cafetería. Si ingresa mal sus datos, se le pedirá que los ingrese nuevamente; una vez los datos sean correctos, podrá acceder a las herramientas según su plan.
+
+**User Goal: Editar su perfil (Barista y dueño/administrador de cafetería)**
+
+Una vez el usuario haya entrado a la app web, puede ver su perfil mediante el botón de "Perfil", de este modo puede editar los datos que le gusten.
+
+**User Goal: Registrar, editar y observar sus proveedores (Barista y dueño/administrador de cafetería)**
+
+El usuario, desde la pantalla de inicio donde aparecen las herramientas, selecciona "Proveedores" accediendo a la pantalla de "Proveedores", la cual tiene las funciones de registrar proveedores, editar los que ya están registrados y observar los datos del proveedor que gusten.
+
+**User Goal: Registrar, editar y observar sus lotes de café (Barista y dueño/administrador de cafetería)**
+
+Desde el inicio, el usuario selecciona la herramienta de "Lotes de Café" accediendo a una lista con sus lotes registrados; del mismo modo puede registrar nuevos lotes de café, editar los existentes o simplemente ver la información de alguno que elija.
+
+**User Goal: Registrar, editar y visualizar sus perfiles de tueste, también comparar entre dos de ellos (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Perfiles de Tueste"; de este modo puede observar en una tabla sus perfiles registrados, así como registrar uno nuevo, editar un existente, visualizar los datos y curva de tueste del que seleccione y también comparar las curvas de tueste entre dos perfiles.
+
+**User Goal: Registrar, editar y observar sus catas con su hexágono sensorial (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Catas", accediendo a la tabla que contiene sus catas registradas. Desde esta pantalla puede registrar una cata, editar una existente, visualizar sus catas registradas junto con su hexágono sensorial si lo requiere. Por otro lado, también puede comparar los hexágonos sensoriales entre dos catas.
+
+**User Goal: Observar la biblioteca de defectos, con posibles causas y soluciones (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Biblioteca de defectos", teniendo una lista con los defectos; si selecciona alguno puede observar sus posibles causas y las soluciones recomendadas.
+
+**User Goal: Identificar la relación entre el tueste y los sabores del café (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona la "Relación tueste - sabor", donde puede seleccionar las catas que se visualizarán en el gráfico mostrando la concentración de tuestes exitosos de color morado, en términos de temperatura y tiempo. También desde este apartado, pueden acceder a la biblioteca que muestra las variables en el tostado que pueden influir en la taza final de café.
+
+**User Goal: Poder registrar, editar y visualizar sus recetas, así como portafolios con las recetas especiales (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Recetas", accediendo a una pantalla que le muestra los portafolios que tiene y las recetas que están fuera de este portafolio. Puede crear un nuevo portafolio o visualizar los ya creados con sus recetas asociadas, también puede asignar nuevas recetas a un portafolio. Puede crear una receta; al crear una debería seleccionar si está hecha por extracción o por método de espresso. Por otro lado, al visualizar las recetas hechas se le mostrará toda la información asociada.
+
+**User Goal: Tener un registro de las calibraciones de sus moliendas para un mejor resultado (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Calibración de Molienda"; en este apartado puede registrar o editar las calibraciones de las moliendas, de este modo teniendo un acabado igual para sus recetas.
+
+**User Goal: Tener un adecuado manejo de su inventario, pudiendo registrar lotes y visualizar información importante (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Inventario", en el cual se puede observar la cantidad restante del lote seleccionado; puede registrar el consumo que se haga para las recetas, de esta forma teniendo un buen manejo de su inventario y stock.
+
+**User Goal: Poder gestionar sus costos de una manera eficiente, para optimizar sus ganancias y rentabilidad (Barista y dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Gestión de Costos", accediendo al proceso en el que puede registrar todos sus costos, como de materia prima, mano de obra, costos de transporte, etc., de este modo calculará su margen potencial y el precio sugerido por kg.
+
+**User Goal: Visualizar y ajustar las condiciones de temperatura del almacén (Barista y dueño/administrador de cafetería)**
+
+Desde el módulo de Monitoreo, el usuario puede visualizar las condiciones de temperatura del almacén y modificar la temperatura mediante el panel de monitoreo, tal como se define en los wireflows de la sección 5.4.2.
+
+**User Goal: Monitorear en tiempo real las condiciones ambientales del almacén (Dueño/administrador de cafetería)**
+
+Desde el apartado de herramientas, selecciona "Monitoreo", accediendo al dashboard donde puede visualizar en tiempo real la temperatura y humedad del almacén mediante el dispositivo TrackSilo, consultar el estado de conectividad del sensor, recibir alertas cuando alguna condición se encuentre fuera del rango recomendado y configurar los umbrales de monitoreo según el tipo de café almacenado (US20, US22, US23).
+
+**User Goal: Consultar el historial ambiental y el estado de conservación de los lotes (Barista y dueño/administrador de cafetería)**
+
+Desde la pantalla de un lote o el módulo de Monitoreo, el usuario puede consultar el historial de temperatura y humedad registrado durante el almacenamiento de un lote específico, visualizar un gráfico con los valores en el tiempo y observar un indicador del estado ambiental (óptimo, alerta o peligro) para anticipar ajustes en sus procesos de tueste, calibración o extracción (US21, US24).
+
+**User Goal: Monitoreo de ambiente desde dispositivos móviles (Barista y dueño/administrador de cafetería)**
+
+Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supervisar las condiciones ambientales del almacén, modificar parámetros como humedad y temperatura, y recibir alertas cuando las condiciones superen los umbrales configurados.
+
+---
+
+**Segmento #1: Dueños/Administradores de Cafeterías de Especialidad**
+
+*(Funciones: Proveedores, Lotes de Café, Perfiles de Tuestes, Inventario, Gestión de Costos, Monitoreo)*
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió en cada una de esas secciones?
+
+3. De las tareas realizadas, ¿cuál te aportó mayor valor para la gestión de tu cafetería?
+
+4. ¿Qué paso o flujo te sorprendió positivamente (por su rapidez, claridad o utilidad)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de la navegación para acceder a Proveedores, Lotes, Perfiles, Inventario, Costos y Monitoreo?
+
+6. ¿Viste algún elemento visual (íconos, botones, textos) que te distrajera o no resultara claro?
+
+7. ¿Qué aspectos de la interfaz del módulo de Monitoreo (dashboard, alertas, configuración de umbrales) te resultaron más claros, útiles o agradables visualmente?
+
+8. ¿De qué manera consideras que el módulo IoT podría ayudarte en la gestión diaria de la conservación del café verde en tu cafetería?
+
+9. Si pudieras añadir o mejorar una sola función en estas seis áreas, ¿cuál sería y por qué?
+
+10. ¿Recomendarías CaféLab a otros dueños o administradores de cafeterías? ¿Qué ventaja destacarías para convencerlos?
+
+---
+
+**Segmento #2: Baristas Profesionales**
+
+*(Funciones: Sesiones de Cata, Librería de Defectos, Correlación Tueste-Sabor, Calibración de Molienda, Recetas, Monitoreo)*
+
+1. ¿Cómo describirías tu experiencia general con la aplicación web?
+
+2. ¿Hubo algo que no encontraste o que te confundió al interactuar con esas secciones?
+
+3. De las seis funciones, ¿cuál te pareció la que aporta más valor a tu trabajo diario como barista?
+
+4. ¿Qué parte del flujo te sorprendió positivamente (por ejemplo, la rapidez en cargar resultados de cata o la claridad de la librería)?
+
+5. En una escala del 1 al 5, ¿cómo calificarías la intuitividad de navegación en todas las funciones?
+
+6. ¿Observaste algún elemento visual que distraiga o no te quedara claro?
+
+7. ¿Qué aspectos de la interfaz del módulo de Monitoreo (indicador de estado por lote, historial ambiental) te resultaron más claros, útiles o agradables visualmente?
+
+8. ¿De qué manera consideras que el módulo IoT podría ayudarte a mejorar la consistencia en tus procesos de preparación y calibración?
+
+9. Del 1 al 10, ¿qué tan útil te resultó la plataforma para optimizar tus procesos de preparación y cata?
+
+10. Si pudieras añadir o mejorar una sola función orientada a baristas, ¿cuál sería y por qué?
+
+11. ¿Recomendarías CaféLab a otros baristas profesionales? ¿Qué aspecto destacarías para convencerlos?
+
 ### 6.3.2. Registro de Entrevistas.
+#### Entrevistas a dueños o administradores de cafeterías de especialidad
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 1</td>
+    <td>Cesar Costa</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\Interview-owner1.png" alt="Foto de Cesar Costa"></td>
+    <td>Tuvo una experiencia muy positiva con Cafelab, destacando especialmente la funcionalidad de perfiles de tueste como el aspecto más valioso, ya que le permite ser más exacto en la preparación del café y prever estadísticas clave. Dio una calificación perfecta (5/5) en navegación e interacción, y afirmó que recomendaría la aplicación a otros dueños. Aprecia su capacidad para gestionar integralmente el negocio, no solo las ventas, y valora las gráficas comparativas de tueste, así como la sección de soporte. Señaló la utilidad de visualizar diferencias de temperatura y tiempo como un beneficio clave.
+
+</td>
+  </tr>
+  <tr>
+    <td>Timing:00:09-04:25</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
+
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 2</td>
+    <td>Raul Donayre</td>
+  </tr>
+  <tr>
+  <td><img src="public\assets\images\interview-validation\interview-owner2.png" alt="Foto de Raul Donayre"></td>
+    <td>Consideró que la aplicación es muy intuitiva, ágil y le permite obtener resultados rápidamente con menos esfuerzo operativo. Valoró especialmente el registro detallado de proveedores, granos y lotes, y la posibilidad de comparar perfiles de tueste. Describió la herramienta como un “paquete muy completo” y la recomendaría por su capacidad de centralizar información previamente dispersa.</td>
+  </tr>
+  <tr>
+    <td>Timing:04:25-08:56</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
+
+
+<table border="1">
+  <tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 3</td>
+    <td>Gelimer Carranza</td>
+  </tr>
+  <tr>
+   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Gelimer Carranza"></td>
+    <td>Resaltó la fluidez de la experiencia y la coherencia visual de la interfaz, otorgando un 4/5 en intuitividad. Destacó la gestión de costos como la función de mayor valor, y se sorprendió positivamente por el manejo de inventarios y alertas automáticas. Aprecia la integración de todas las funciones en un solo sistema. Como puntos de mejora, sugirió aumentar la visibilidad de los íconos de edición, marcar claramente los campos obligatorios, diferenciar mejor los botones de editar y clonar, y añadir un registro de cambios para mayor control interno.
+</td>
+  </tr>
+  <tr>
+    <td>Timing:08:56-20:04</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
+
+
+#### Entrevistas a baristas de cafeterías de especialidad
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 4</td>
+    <td>Ranferi Valdivia</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista1.png" alt="Foto de Ranferi Valdivia"></td>
+    <td>Tuvo una excelente primera impresión de la aplicación, describiéndola como ordenada y bien organizada. Valoró la disponibilidad del sistema en español e inglés, otorgando una calificación de 4/5 en intuitividad y recomendándola con firmeza a otros baristas. Resaltó la utilidad de contar con herramientas centralizadas para estandarizar procedimientos antes realizados manualmente y destacó las gráficas de tueste como recurso clave para optimizar temperaturas y tiempos. Aunque al inicio tuvo cierta dificultad para ubicar algunas secciones, encontró el sistema útil para la profesionalización del trabajo del barista.</td>
+  </tr>
+  <tr>
+    <td>Timing:23:11-28:04</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 5</td>
+    <td>Patricia Alvarez</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista2.png" alt="Foto de Patricia Alvarez"></td>
+    <td> Describió Cafelab como una aplicación amigable, práctica y suficiente para registrar la información necesaria en su día a día. Le dio una calificación perfecta de 10/10 en optimización de procesos, reconociendo su utilidad directa para la eficiencia del trabajo operativo.</td>
+  </tr>
+  <tr>
+    <td>Timing:28:04-35:06</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
+
+<table border="1">
+<tr>
+    <th>Campo</th>
+    <th>Información</th>
+  </tr>
+  <tr>
+    <td>Entrevistado 6</td>
+    <td>Fabricio Lopez</td>
+  </tr>
+  <tr>
+    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Fabricio Lopez"></td>
+    <td>Elogió la interfaz intuitiva, el diseño claro y la fluidez general del sistema. Calificó la navegación con un 4/5 y la optimización de procesos con un 9.5/10. Considera las sesiones de cata como la función más valiosa y destacó lo fácil que es gestionar recetas y centralizar notas, lo que le permite ahorrar tiempo en documentación. Propuso mejorar la biblioteca de defectos agregando filtros por intensidad y categoría, hacer más distinguibles los íconos de clonar, y añadió la sugerencia de integrar un temporizador en las sesiones de cata.</td>
+  </tr>
+  <tr>
+    <td>Timing:35:06-37:20</td>
+    <td>https://youtu.be/ne3O3qO5GcE</td>
+  </tr>
+</table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
 
