@@ -246,7 +246,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Evidencia</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2"><img src="public/assets/images/cover/insights/project-report-collaboration-insights-av2.png" alt="Insights">  </td>
   </tr>
 </table>
 
