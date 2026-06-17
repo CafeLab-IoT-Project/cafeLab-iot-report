@@ -104,6 +104,7 @@
 | 2.18    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Testing Suite Evidence for Sprint Review 2                            |
 | 2.19    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 2                                |
 | 2.20    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Services Documentation Evidence for Sprint Review 2                   | 
+| 2.21    | 16/06/2026 | Yum Gonzales, Jorge Suin        | Creación de Software Deployment Evidence for Sprint Review 2                      |
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
