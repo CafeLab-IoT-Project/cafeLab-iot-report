@@ -9944,7 +9944,7 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
-Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web de CaféLab.
+Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web y móvil de CaféLab.
 
 #### Frontend: Hub de monitoreo
 <figure style="text-align: center;">
@@ -9969,6 +9969,38 @@ Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprob
 #### Frontend: Alertas ambientales
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front5.png" alt="Alertas ambientales">
+</figure>
+
+#### Mobile: Selección de lote para monitoreo IoT
+
+Desde la aplicación móvil de CaféLab, el usuario accede al módulo de Monitoreo desde el dashboard principal y selecciona uno de sus lotes de café activos para visualizar lecturas en vivo o configurar parámetros ambientales.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile1.png" alt="Selección de lote para monitoreo IoT en la aplicación móvil">
+</figure>
+
+#### Mobile: Visualización de condiciones ambientales en tiempo real
+
+La aplicación móvil muestra la temperatura y humedad actuales del lote seleccionado, actualizando las lecturas de forma periódica. Esta funcionalidad está vinculada a la US20 y permite consultar las condiciones del almacén desde un dispositivo Android.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile2.png" alt="Visualización de condiciones ambientales en tiempo real en mobile">
+</figure>
+
+#### Mobile: Menú de configuración de parámetros ambientales
+
+Desde el dashboard de monitoreo, el usuario puede acceder al menú de configuración para elegir qué variable ambiental desea ajustar: límites de temperatura o límites de humedad. Esta pantalla forma parte del flujo de configuración de umbrales, relacionado con la US23.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile3.png" alt="Menú de configuración de parámetros ambientales en mobile">
+</figure>
+
+#### Mobile: Ajuste de umbrales de temperatura o humedad
+
+La aplicación móvil permite establecer y guardar los rangos mínimos y máximos de temperatura o humedad para el lote monitoreado. La configuración se persiste mediante los endpoints de Environment Thresholds del backend, completando la evidencia de la US23 en la versión mobile.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile4.png" alt="Ajuste de umbrales de temperatura o humedad en mobile">
 </figure>
 
 #### Backend: Endpoints IoT Monitoring en Swagger UI
