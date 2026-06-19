@@ -10027,6 +10027,13 @@ La aplicación móvil permite establecer y guardar los rangos mínimos y máximo
     <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge1.jpeg" alt="Onboarding, lecturas del dispositivo y activación de actuadores">
 </figure>
 
+#### Edge e IoT: Configuración del edge y asignación de dispositivo a lote
+
+La capa Edge permite vincular la cuenta del backend desplegado, detectar dispositivos IoT en la red local y asignarlos a un lote de café para sincronizar sus lecturas ambientales con la plataforma CaféLab.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge2.png" alt="Configuración del edge y asignación de dispositivo TrackSilo a lote">
+</figure>
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
