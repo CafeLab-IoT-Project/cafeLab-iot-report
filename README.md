@@ -10354,7 +10354,7 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
     <td>Gelimer Carranza</td>
   </tr>
   <tr>
-   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Gelimer Carranza"></td>
+   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Gelimer Carranza" style="width: 5000px; height: 200px;"></td>
     <td>Resaltó la fluidez de la experiencia y la coherencia visual de la interfaz, otorgando un 4/5 en intuitividad. Destacó la gestión de costos como la función de mayor valor, y se sorprendió positivamente por el manejo de inventarios y alertas automáticas. Aprecia la integración de todas las funciones en un solo sistema. Como puntos de mejora, sugirió aumentar la visibilidad de los íconos de edición, marcar claramente los campos obligatorios, diferenciar mejor los botones de editar y clonar, y añadir un registro de cambios para mayor control interno.
 </td>
   </tr>
@@ -10414,7 +10414,7 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
     <td>Fabricio Lopez</td>
   </tr>
   <tr>
-    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Fabricio Lopez"></td>
+    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Fabricio Lopez" style="width: 5000px; height: 200px;"></td>
     <td>Elogió la interfaz intuitiva, el diseño claro y la fluidez general del sistema. Calificó la navegación con un 4/5 y la optimización de procesos con un 9.5/10. Considera las sesiones de cata como la función más valiosa y destacó lo fácil que es gestionar recetas y centralizar notas, lo que le permite ahorrar tiempo en documentación. Propuso mejorar la biblioteca de defectos agregando filtros por intensidad y categoría, hacer más distinguibles los íconos de clonar, y añadió la sugerencia de integrar un temporizador en las sesiones de cata.</td>
   </tr>
   <tr>
