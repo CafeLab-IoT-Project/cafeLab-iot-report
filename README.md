@@ -10478,6 +10478,10 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 5. El comienzo de la implementación del producto tanto a nivel web como mobile fue exitoso dado que se lograron desplegar todos los elementos, así como se obtuvieron resultados positivos al realizar pruebas en los mismos. Además, ahora es posible ver la realidad de cómo el usuario usará nuestra aplicación y tendrá acceso a la información transmitida por nuestro componente IoT. Logramos un diseño intuitivo y sencillo de utilizar para cualquier usuario.
 
+6. Después de haber implementado el dispositivo IoT, podemos concluir que el uso del Raspberry Pi como nodo edge y de la capa Edge implementada fueron necesarios para alcanzar un resultado óptimo para el dispositivo. El ESP32 resultó eficiente para capturar lecturas del sensor DHT22 y ejecutar reacciones a través de los actuadores. En cuanto al Raspberry Pi, logramos que se encargue eficientemente de evaluar los umbrales y gestionar el historial ambiental, así como de hospedar localmente el Edge API, recibir las lecturas por HTTP y responder con el estado ambiental.
+
+7. La arquitectura edge computing implementada demostró ser beneficiosa al permitir una rápida respuesta ante condiciones fuera de rango en la red local del almacén, desacoplar la lógica de negocio del hardware embebido mediante la actualización de umbrales desde la aplicación y actuar como puente entre el dispositivo físico y el backend. De esta forma, fue posible visualizar y probar el flujo completo desde la lectura del sensor hasta la visualización de la le lectura en el dashboard.
+
 # Recomendaciones
 
 1. Como primera recomendación podemos mencionar el continuar investigando sobre la integración de dispositivos IoT en aplicaciones como la que estamos desarrollando, con el objetivo de mejorar la misma y que esta sea más eficiente para el monitoreo del grano, teniendo una comunicación constante y sin caídas hacia el usuario.
@@ -10485,6 +10489,8 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 2. Podemos recomendar iniciar pruebas con el dispositivo IoT real una vez está totalmente diseñado, de forma en que el grupo logre tener suficiente tiempo como para detectar los errores y volver a integrar las veces que sea necesario, así como lo mejor en el camino. Al mismo tiempo, el actuar con tiempo suificiente nos permitiría realizar pruebas con usuarios reales. Así, obtendríamos feedback de primera mano que nos ayudaría a orientar mejor nuestar siguiente versión.
 
 3. Recomendamos establecer una estrategia de pruebas de usabilidad continua desde las etapas tempranas del desarrollo, involucrando a baristas y dueños de cafeterías en sesiones periódicas de validación. Contar con retroalimentación real y frecuente permitirá identificar posibles problemas o disgustos en la experiencia de uso, priorizar mejoras de interfaz y asegurar que las funcionalidades implementadas respondan verdaderamente a los flujos de trabajo del usuario final, evitando así el tener que volver a trabajar en alguna función y el costo que esto implica en iteraciones futuras.
+
+4. Nos gustaría recomendar que se cuente con una pantalla física en cada lote que permita el reseteo del dispositivo así como el control de los actuadores, de forma en que el usuario pueda tener una mayor disposición sobre las condiciones bajo las que están los lotes. Asismimo, sugerimos que este control también se encuentre disponible tanto en la versión móvil como web de la aplicación.
 
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
