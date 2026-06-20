@@ -222,7 +222,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Roman Cruz, Natalia Bertha</strong></td>
-    <td></td>
+    <td>Documenté el Sprint Planning 2 y los Aspect Leaders and Collaborators del Sprint 2 (secciones 6.2.2.1 y 6.2.2.2), organizando las responsabilidades del equipo durante la entrega. Además, realicé la lectura de las APIs e integré el IoT Monitoring como nuevo Bounded Context, y colaboré junto al equipo en la creación del prototipo. Finalmente, redacté las Conclusiones y Recomendaciones del informe, alineándolas con el avance logrado en la integración del componente IoT.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -237,12 +237,12 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
-    <td></td>
+    <td>Elaboré el Team Collaboration Insights during Sprint del Sprint 2 (sección 6.2.2.9) y las Evaluaciones según heurísticas (sección 6.3.3). Asimismo, participé en el diseño del frontend de la aplicación móvil junto con Adrián y Fredy, y colaboré con el equipo en la creación del prototipo de la solución.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Conclusión</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2">En la entrega AV2, el equipo consolidó la integración del componente IoT como eje central de la solución, completando la documentación del Sprint 2 a lo largo del Capítulo VI. El trabajo se centró en la integración del dispositivo TrackSilo con la capa Edge y el backend, la implementación de la suite de pruebas automatizadas en frontend y backend, las evidencias de ejecución y documentación de servicios del módulo de monitoreo, el despliegue automatizado de la aplicación móvil mediante GitHub Actions y el desarrollo de la UI de monitoreo en las versiones web y mobile. Asimismo, se realizaron las entrevistas de validación con baristas y dueños de cafeterías, obteniendo retroalimentación real sobre la experiencia de uso. Esta distribución de responsabilidades evidenció un trabajo coordinado y complementario, alineado al avance funcional de CaféLab y al cierre de los objetivos planteados para esta entrega.</td>
   </tr>
   <tr>
     <td><strong>Evidencia</strong></td>
