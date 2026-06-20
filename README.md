@@ -10463,6 +10463,104 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 </table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: sans-serif; font-size: 14px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid black; padding: 12px; text-align: left; }
+  th { background-color: white; font-weight: bold; }
+  h2, h3 { color: black; }
+</style>
+</head>
+<body>
+
+<h2>Formato para Evaluación de User Experience según Heurísticas</h2>
+
+<h3>Información General</h3>
+<table>
+  <tr><th><strong>CARRERA</strong></th><td>Ingeniería de Software</td></tr>
+  <tr><th><strong>CURSO</strong></th><td>Desarrollo de Soluciones IoT</td></tr>
+  <tr><th><strong>SECCIÓN</strong></th><td>6776</td></tr>
+  <tr><th><strong>PROFESORES</strong></th><td>Marco Antonio Leon Baca</td></tr>
+  <tr><th><strong>AUDITOR</strong></th><td>Café Metrix</td></tr>
+  <tr><th><strong>CLIENTE(S)</strong></th><td>
+    <ul>
+      <li>Cesar Costa - Dueño de Cafetería</li>
+      <li>Raul Donayre - Administrador de Cafetería</li>
+      <li>Gelimer Carranza - Administrador de Cafetería</li>
+      <li>Ranferi Valdivia - Barista Profesional</li>
+      <li>Patricia Alvarez - Barista Profesional</li>
+      <li>Fabricio Lopez - Barista Profesional</li>
+    </ul>
+  </td></tr>
+</table>
+
+<p><strong>SITE o APP A EVALUAR:</strong> CafeLab IoT Mobile - Web (Monitoreo)</p>
+
+<h3>TAREAS A EVALUAR:</h3>
+<ol>
+  <li>Monitoreo en tiempo real: Visualización del estado del lote.</li>
+  <li>Consulta de tendencia: Análisis de la gráfica de telemetría.</li>
+  <li>Configuración de umbrales: Ajuste de límites críticos de temperatura y humedad.</li>
+  <li>Gestión de alertas: Visualización y validación de alertas críticas.</li>
+  <li>Sincronización: Ejecución del proceso de actualización desde el sensor.</li>
+</ol>
+
+<p><em>No están incluidas en esta versión de la evaluación:</em></p>
+<ol>
+  <li>Registro de defectos</li>
+  <li>Historial de catas</li>
+  <li>Gestión de preparaciones</li>
+</ol>
+
+<h3>ESCALA DE SEVERIDAD:</h3>
+<table>
+  <tr><th>Nivel</th><th>Descripción</th></tr>
+  <tr><td>1</td><td>Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td></tr>
+  <tr><td>2</td><td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release.</td></tr>
+  <tr><td>3</td><td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td></tr>
+  <tr><td>4</td><td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td></tr>
+</table>
+
+<h3>TABLA RESUMEN:</h3>
+<table>
+  <tr><th>#</th><th>Problema</th><th>Escala de severidad</th><th>Heurística/Principio violada(o)</th></tr>
+  <tr><td>1</td><td>Ausencia de feedback visual durante la sincronización inicial del dispositivo IoT.</td><td>2</td><td>Usability: Visibilidad del estado del sistema</td></tr>
+  <tr><td>2</td><td>Saturación visual de datos históricos en el renderizado del gráfico de telemetría.</td><td>2</td><td>Diseño estético y minimalista</td></tr>
+  <tr><td>3</td><td>Falta de diferenciación semántica y visual en el sistema de alertas críticas.</td><td>1</td><td>Reconocimiento y recuperación</td></tr>
+  <tr><td>4</td><td>Rutas de navegación poco intuitivas para nuevos usuarios durante la gestión de lotes.</td><td>2</td><td>Information Architecture: Learnability</td></tr>
+</table>
+
+<h3>DESCRIPCIÓN DE PROBLEMAS:</h3>
+
+<p><strong>PROBLEMA #1: Ausencia de feedback visual durante la sincronización inicial.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Usabilidad - Visibilidad del estado del sistema<br>
+<strong>Descripción:</strong> Al realizar la conexión inicial del lote, el sistema no informaba al usuario sobre el progreso de la consulta al sensor. Esto generaba incertidumbre, llevando al usuario a intentar recargar la página innecesariamente. (Incluir captura de pantalla del estado inactivo).<br>
+<strong>Recomendación:</strong> Implementar un componente visual (loading spinner) que notifique explícitamente que la sincronización con el sensor se encuentra en proceso.</p>
+
+<p><strong>PROBLEMA #2: Saturación visual de datos históricos en el gráfico.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Diseño estético y minimalista<br>
+<strong>Descripción:</strong> El gráfico renderizaba todo el historial acumulado, lo que resultaba en una visualización desordenada y dificultaba la identificación de la tendencia actual. El exceso de puntos de datos impactaba negativamente en la performance de renderizado en móvil.<br>
+<strong>Recomendación:</strong> Acotar la vista a una ventana deslizante de las últimas 15 lecturas, proporcionando una interfaz limpia y enfocada en datos relevantes.</p>
+
+<p><strong>PROBLEMA #3: Falta de diferenciación semántica en alertas críticas.</strong><br>
+<strong>Severidad:</strong> 1<br>
+<strong>Heurística violada:</strong> Reconocimiento y recuperación<br>
+<strong>Problema:</strong> Originalmente, las alertas de temperatura y humedad compartían la misma nomenclatura, obligando al usuario a abrir el detalle para identificar el origen del problema, incrementando la carga cognitiva.<br>
+<strong>Recomendación:</strong> Implementar una codificación por colores (naranja para temperatura, celeste para humedad), permitiendo al usuario reconocer el evento sin necesidad de interacción adicional.</p>
+
+<p><strong>PROBLEMA #4: Rutas de navegación poco intuitivas.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Information Architecture - Learnability<br>
+<strong>Problema:</strong> La estructura jerárquica para llegar al dashboard de un lote específico requería múltiples pasos manuales, lo cual resultaba confuso para los baristas profesionales que requerían acceso rápido a la información en entornos de alta demanda.<br>
+<strong>Recomendación:</strong> Optimizar el mapa de sitio reduciendo la profundidad de la navegación, asegurando que el acceso al monitoreo sea directo desde el inicio de la sesión.</p>
+
+</body>
+</html>
 
 ## 6.4. Video About-the-Product.
 
