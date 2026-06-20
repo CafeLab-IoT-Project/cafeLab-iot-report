@@ -623,6 +623,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Participó junto al grupo ofreciendo una guía en cuanto a la dividión de tareas y coorindación de equipo. En particular, se centró en orientar el desarrollo del frontend y asegurarse de que todos comprendieran el propósito de cada parte desarrollada.
       <br>
+      <strong>AV2:</strong>
+      Participó junto al equipo aportando liderazgo para la división de las tareas así como en cuanto al rumbo que se deseaba tomar, coordinando reuniones de equipo para compartir ideas, avances y preocupaciones. Aportó especialmente durante las pruebas con el dispositivo IoT y la aplicación móvil.
+      <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
       <br>
@@ -667,6 +670,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Colaboró al animar a sus compañeros a coordinar entre ellos y mantener informado al grupo tanto sobre los avances logrados como sobre los objetivos a cumplir. Se logró un ambiente de comunicación y colaboración dentro del equipo.
+      <br>
+      <strong>AV2:</strong>
+      Contribuyó en la coordinación y planteamiento de las tareas a cumplir elaborando el sprint backlog y las fechas tentativas de entrega considerando un tiempo prudente para las pruebas con la aplicación web, aplicación móvil y dispositivo IoT completados. Además, animó a todo el equipo a tener reuniones para considerar ideas adicionales y plantear un objetivo claro en cuanto al deseo de resultado final.
       <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
