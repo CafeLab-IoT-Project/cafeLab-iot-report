@@ -10607,6 +10607,8 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 ## 6.4. Video About-the-Product.
 
+- Video About-the-Product: [https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing](https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing)
+
 # Conclusiones
 
 1. Al haber realizado la primera entrega podemos concluir que el emplear la técnica Lean UX nos ayudó a poder comprender mejor el problema que estamos tratando así como a las personas afectadas, lo que desean y como podemos ofrecérselos utilizando herramientas tecnológicas. Además, nos brindó claridad como equipo y nos hizo abordar los puntos más críticos considerando diferentes perspectivas.
@@ -10654,3 +10656,4 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 - Link de landing page: [https://cafelab-iot-project.github.io/cafeLab-landingPage/](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
 - Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
 - Link de backend: [https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
+- Video About-the-Product: [https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing](https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing)
