@@ -10209,6 +10209,43 @@ La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Lat
 
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Sergio Gino Julca Minaya</td>
+    <td>
+      Encargado del desarrollo mobile. Diseñó e implementó los endpoints de IoT Monitoring en el backend para su posterior consumo en los entornos web y mobile, aplicando patrones de arquitectura y de diseño. Asimismo, realizó el desarrollo utilizando Domain Driven Design y Clean Architecture. Finalmente, elaboró las gráficas de analíticas y monitoreo continuo en mobile. En el informe se encargó de tópicos principales como: Team Collaboration Insights y evaluaciones según heurísticas.
+    </td>
+  </tr>
+  <tr>
+    <td>Jorge Suin Yum Gonzales</td>
+    <td>
+      Encargado del edge. Diseñó e implementó los endpoints para la actualización y lectura de datos. Asimismo, aplicó patrones de seguridad para la conexión de dispositivos externos a la aplicación y patrones aprendidos en clase, además de encargarse de cotizar los artefactos a utilizar. Finalmente, apoyó en el desarrollo backend de los módulos production, preparation y defects. En el informe se encargó de tópicos principales como: Software Development Evidence for Sprint Review y video about the product.
+    </td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>
+      Encargado de la configuración de los artefactos a través del Arduino IDE para la conexión de sensores y actuadores mediante la programación del ESP32, aplicando patrones aprendidos en clase. Finalmente, apoyó en el desarrollo del backend para los módulos de calibrations, coffees y management. En el informe se encargó de tópicos principales como: Sprint Backlog 2 y Development Evidence for Sprint Review.
+    </td>
+  </tr>
+  <tr>
+    <td>Natalia Bertha Roman Cruz</td>
+    <td>
+      Lideró el grupo y participó activamente en cada una de las secciones. Implementó ideas y aplicó patrones de diseño y arquitectura en el desarrollo del frontend, además de colaborar en la implementación de los endpoints del backend relacionados a los módulos de preparing, profile e IAM. En el informe se encargó de tópicos principales como: Sprint Planning 2, aspect leaders and collaborators, conclusiones y recomendaciones.
+    </td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>
+      Encargado del desarrollo web. Diseñó las secciones de monitoreo, alertas y analíticas del módulo IoT Monitoring. Asimismo, desarrolló los módulos de cupping sessions, production y shared. En el informe se encargó de tópicos principales como: Testing Suite Evidence, evidences for Sprint Review y diseño de entrevistas.
+    </td>
+  </tr>
+</table>
+
 
 ## 6.3. Validation Interviews.
 
