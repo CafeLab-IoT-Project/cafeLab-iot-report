@@ -222,7 +222,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Roman Cruz, Natalia Bertha</strong></td>
-    <td></td>
+    <td>Documenté el Sprint Planning 2 y los Aspect Leaders and Collaborators del Sprint 2 (secciones 6.2.2.1 y 6.2.2.2), organizando las responsabilidades del equipo durante la entrega. Además, realicé la lectura de las APIs e integré el IoT Monitoring como nuevo Bounded Context, y colaboré junto al equipo en la creación del prototipo. Finalmente, redacté las Conclusiones y Recomendaciones del informe, alineándolas con el avance logrado en la integración del componente IoT.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -237,16 +237,16 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
-    <td></td>
+    <td>Elaboré el Team Collaboration Insights during Sprint del Sprint 2 (sección 6.2.2.9) y las Evaluaciones según heurísticas (sección 6.3.3). Asimismo, participé en el diseño del frontend de la aplicación móvil junto con Adrián y Fredy, y colaboré con el equipo en la creación del prototipo de la solución.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Conclusión</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2">En la entrega AV2, el equipo consolidó la integración del componente IoT como eje central de la solución, completando la documentación del Sprint 2 a lo largo del Capítulo VI. El trabajo se centró en la integración del dispositivo TrackSilo con la capa Edge y el backend, la implementación de la suite de pruebas automatizadas en frontend y backend, las evidencias de ejecución y documentación de servicios del módulo de monitoreo, el despliegue automatizado de la aplicación móvil mediante GitHub Actions y el desarrollo de la UI de monitoreo en las versiones web y mobile. Asimismo, se realizaron las entrevistas de validación con baristas y dueños de cafeterías, obteniendo retroalimentación real sobre la experiencia de uso. Esta distribución de responsabilidades evidenció un trabajo coordinado y complementario, alineado al avance funcional de CaféLab y al cierre de los objetivos planteados para esta entrega.</td>
   </tr>
   <tr>
     <td><strong>Evidencia</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2"><img src="public/assets/images/cover/insights/project-report-collaboration-insights-av2.png" alt="Insights">  </td>
   </tr>
 </table>
 
@@ -623,6 +623,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Participó junto al grupo ofreciendo una guía en cuanto a la dividión de tareas y coorindación de equipo. En particular, se centró en orientar el desarrollo del frontend y asegurarse de que todos comprendieran el propósito de cada parte desarrollada.
       <br>
+      <strong>AV2:</strong>
+      Participó junto al equipo aportando liderazgo para la división de las tareas así como en cuanto al rumbo que se deseaba tomar, coordinando reuniones de equipo para compartir ideas, avances y preocupaciones. Aportó especialmente durante las pruebas con el dispositivo IoT y la aplicación móvil.
+      <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Participó activamente en la definición de artefactos clave del proyecto, como el User Journey Mapping, Empathy Mapping e Impact Mapping, aportando una visión estructurada de las necesidades del usuario y del alcance de la solución. Además, asumió liderazgo técnico en el desarrollo del bounded context de IoT Monitoring y en la elaboración de diagramas de arquitectura, coordinando su trabajo con el equipo para mantener coherencia entre análisis, requisitos y diseño.
       <br>
@@ -667,6 +670,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Colaboró al animar a sus compañeros a coordinar entre ellos y mantener informado al grupo tanto sobre los avances logrados como sobre los objetivos a cumplir. Se logró un ambiente de comunicación y colaboración dentro del equipo.
+      <br>
+      <strong>AV2:</strong>
+      Contribuyó en la coordinación y planteamiento de las tareas a cumplir elaborando el sprint backlog y las fechas tentativas de entrega considerando un tiempo prudente para las pruebas con la aplicación web, aplicación móvil y dispositivo IoT completados. Además, animó a todo el equipo a tener reuniones para considerar ideas adicionales y plantear un objetivo claro en cuanto al deseo de resultado final.
       <br>
       <strong>Yum Gonzales, Jorge Suin<br></strong> <strong>AV1:</strong>
       Contribuyó a la planificación y consolidación del proyecto mediante la elaboración del Product Backlog y la definición de entregables de arquitectura, asegurando que las tareas estuvieran alineadas con los objetivos del producto. Su participación en actividades de análisis centradas en el usuario y en el diseño técnico permitió mantener un flujo de trabajo colaborativo, orientado al cumplimiento de metas y a la integración de aportes entre distintas secciones del informe.
@@ -9944,7 +9950,7 @@ Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos e
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
-Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web de CaféLab.
+Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprobando el flujo desde el dispositivo TrackSilo y la capa Edge hasta la visualización de lecturas, umbrales, estados ambientales y alertas en la aplicación web y móvil de CaféLab.
 
 #### Frontend: Hub de monitoreo
 <figure style="text-align: center;">
@@ -9971,6 +9977,38 @@ Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprob
     <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-front5.png" alt="Alertas ambientales">
 </figure>
 
+#### Mobile: Selección de lote para monitoreo IoT
+
+Desde la aplicación móvil de CaféLab, el usuario accede al módulo de Monitoreo desde el dashboard principal y selecciona uno de sus lotes de café activos para visualizar lecturas en vivo o configurar parámetros ambientales.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile1.png" alt="Selección de lote para monitoreo IoT en la aplicación móvil">
+</figure>
+
+#### Mobile: Visualización de condiciones ambientales en tiempo real
+
+La aplicación móvil muestra la temperatura y humedad actuales del lote seleccionado, actualizando las lecturas de forma periódica. Esta funcionalidad está vinculada a la US20 y permite consultar las condiciones del almacén desde un dispositivo Android.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile2.png" alt="Visualización de condiciones ambientales en tiempo real en mobile">
+</figure>
+
+#### Mobile: Menú de configuración de parámetros ambientales
+
+Desde el dashboard de monitoreo, el usuario puede acceder al menú de configuración para elegir qué variable ambiental desea ajustar: límites de temperatura o límites de humedad. Esta pantalla forma parte del flujo de configuración de umbrales, relacionado con la US23.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile3.png" alt="Menú de configuración de parámetros ambientales en mobile">
+</figure>
+
+#### Mobile: Ajuste de umbrales de temperatura o humedad
+
+La aplicación móvil permite establecer y guardar los rangos mínimos y máximos de temperatura o humedad para el lote monitoreado. La configuración se persiste mediante los endpoints de Environment Thresholds del backend, completando la evidencia de la US23 en la versión mobile.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-mobile4.png" alt="Ajuste de umbrales de temperatura o humedad en mobile">
+</figure>
+
 #### Backend: Endpoints IoT Monitoring en Swagger UI
 <figure style="text-align: center;">
     <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-back1.png" alt="Endpoints IoT Monitoring en Swagger UI">
@@ -9995,6 +10033,13 @@ Durante el Sprint 2 se validó la ejecución del módulo IoT Monitoring, comprob
     <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge1.jpeg" alt="Onboarding, lecturas del dispositivo y activación de actuadores">
 </figure>
 
+#### Edge e IoT: Configuración del edge y asignación de dispositivo a lote
+
+La capa Edge permite vincular la cuenta del backend desplegado, detectar dispositivos IoT en la red local y asignarlos a un lote de café para sincronizar sus lecturas ambientales con la plataforma CaféLab.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-2/evidence/exec-edge2.png" alt="Configuración del edge y asignación de dispositivo TrackSilo a lote">
+</figure>
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
@@ -10170,6 +10215,43 @@ La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Lat
 
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Sergio Gino Julca Minaya</td>
+    <td>
+      Encargado del desarrollo mobile. Diseñó e implementó los endpoints de IoT Monitoring en el backend para su posterior consumo en los entornos web y mobile, aplicando patrones de arquitectura y de diseño. Asimismo, realizó el desarrollo utilizando Domain Driven Design y Clean Architecture. Finalmente, elaboró las gráficas de analíticas y monitoreo continuo en mobile. En el informe se encargó de tópicos principales como: Team Collaboration Insights y evaluaciones según heurísticas.
+    </td>
+  </tr>
+  <tr>
+    <td>Jorge Suin Yum Gonzales</td>
+    <td>
+      Encargado del edge. Diseñó e implementó los endpoints para la actualización y lectura de datos. Asimismo, aplicó patrones de seguridad para la conexión de dispositivos externos a la aplicación y patrones aprendidos en clase, además de encargarse de cotizar los artefactos a utilizar. Finalmente, apoyó en el desarrollo backend de los módulos production, preparation y defects. En el informe se encargó de tópicos principales como: Software Development Evidence for Sprint Review y video about the product.
+    </td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>
+      Encargado de la configuración de los artefactos a través del Arduino IDE para la conexión de sensores y actuadores mediante la programación del ESP32, aplicando patrones aprendidos en clase. Finalmente, apoyó en el desarrollo del backend para los módulos de calibrations, coffees y management. En el informe se encargó de tópicos principales como: Sprint Backlog 2 y Development Evidence for Sprint Review.
+    </td>
+  </tr>
+  <tr>
+    <td>Natalia Bertha Roman Cruz</td>
+    <td>
+      Lideró el grupo y participó activamente en cada una de las secciones. Implementó ideas y aplicó patrones de diseño y arquitectura en el desarrollo del frontend, además de colaborar en la implementación de los endpoints del backend relacionados a los módulos de preparing, profile e IAM. En el informe se encargó de tópicos principales como: Sprint Planning 2, aspect leaders and collaborators, conclusiones y recomendaciones.
+    </td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>
+      Encargado del desarrollo web. Diseñó las secciones de monitoreo, alertas y analíticas del módulo IoT Monitoring. Asimismo, desarrolló los módulos de cupping sessions, production y shared. En el informe se encargó de tópicos principales como: Testing Suite Evidence, evidences for Sprint Review y diseño de entrevistas.
+    </td>
+  </tr>
+</table>
+
 
 ## 6.3. Validation Interviews.
 
@@ -10354,7 +10436,7 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
     <td>Gelimer Carranza</td>
   </tr>
   <tr>
-   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Gelimer Carranza"></td>
+   <td><img src="public\assets\images\interview-validation\interview-owner3.png" alt="Foto de Gelimer Carranza" style="width: 5000px; height: 200px;"></td>
     <td>Resaltó la fluidez de la experiencia y la coherencia visual de la interfaz, otorgando un 4/5 en intuitividad. Destacó la gestión de costos como la función de mayor valor, y se sorprendió positivamente por el manejo de inventarios y alertas automáticas. Aprecia la integración de todas las funciones en un solo sistema. Como puntos de mejora, sugirió aumentar la visibilidad de los íconos de edición, marcar claramente los campos obligatorios, diferenciar mejor los botones de editar y clonar, y añadir un registro de cambios para mayor control interno.
 </td>
   </tr>
@@ -10414,7 +10496,7 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
     <td>Fabricio Lopez</td>
   </tr>
   <tr>
-    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Fabricio Lopez"></td>
+    <td><img src="public\assets\images\interview-validation\interview-barista3.png" alt="Foto de Fabricio Lopez" style="width: 5000px; height: 200px;"></td>
     <td>Elogió la interfaz intuitiva, el diseño claro y la fluidez general del sistema. Calificó la navegación con un 4/5 y la optimización de procesos con un 9.5/10. Considera las sesiones de cata como la función más valiosa y destacó lo fácil que es gestionar recetas y centralizar notas, lo que le permite ahorrar tiempo en documentación. Propuso mejorar la biblioteca de defectos agregando filtros por intensidad y categoría, hacer más distinguibles los íconos de clonar, y añadió la sugerencia de integrar un temporizador en las sesiones de cata.</td>
   </tr>
   <tr>
@@ -10424,8 +10506,108 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 </table>
 
 ### 6.3.3. Evaluaciones según heurísticas.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: sans-serif; font-size: 14px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th, td { border: 1px solid black; padding: 12px; text-align: left; }
+  th { background-color: white; font-weight: bold; }
+  h2, h3 { color: black; }
+</style>
+</head>
+<body>
+
+<h2>Formato para Evaluación de User Experience según Heurísticas</h2>
+
+<h3>Información General</h3>
+<table>
+  <tr><th><strong>CARRERA</strong></th><td>Ingeniería de Software</td></tr>
+  <tr><th><strong>CURSO</strong></th><td>Desarrollo de Soluciones IoT</td></tr>
+  <tr><th><strong>SECCIÓN</strong></th><td>6776</td></tr>
+  <tr><th><strong>PROFESORES</strong></th><td>Marco Antonio Leon Baca</td></tr>
+  <tr><th><strong>AUDITOR</strong></th><td>Café Metrix</td></tr>
+  <tr><th><strong>CLIENTE(S)</strong></th><td>
+    <ul>
+      <li>Cesar Costa - Dueño de Cafetería</li>
+      <li>Raul Donayre - Administrador de Cafetería</li>
+      <li>Gelimer Carranza - Administrador de Cafetería</li>
+      <li>Ranferi Valdivia - Barista Profesional</li>
+      <li>Patricia Alvarez - Barista Profesional</li>
+      <li>Fabricio Lopez - Barista Profesional</li>
+    </ul>
+  </td></tr>
+</table>
+
+<p><strong>SITE o APP A EVALUAR:</strong> CafeLab IoT Mobile - Web (Monitoreo)</p>
+
+<h3>TAREAS A EVALUAR:</h3>
+<ol>
+  <li>Monitoreo en tiempo real: Visualización del estado del lote.</li>
+  <li>Consulta de tendencia: Análisis de la gráfica de telemetría.</li>
+  <li>Configuración de umbrales: Ajuste de límites críticos de temperatura y humedad.</li>
+  <li>Gestión de alertas: Visualización y validación de alertas críticas.</li>
+  <li>Sincronización: Ejecución del proceso de actualización desde el sensor.</li>
+</ol>
+
+<p><em>No están incluidas en esta versión de la evaluación:</em></p>
+<ol>
+  <li>Registro de defectos</li>
+  <li>Historial de catas</li>
+  <li>Gestión de preparaciones</li>
+</ol>
+
+<h3>ESCALA DE SEVERIDAD:</h3>
+<table>
+  <tr><th>Nivel</th><th>Descripción</th></tr>
+  <tr><td>1</td><td>Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td></tr>
+  <tr><td>2</td><td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release.</td></tr>
+  <tr><td>3</td><td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.</td></tr>
+  <tr><td>4</td><td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td></tr>
+</table>
+
+<h3>TABLA RESUMEN:</h3>
+<table>
+  <tr><th>#</th><th>Problema</th><th>Escala de severidad</th><th>Heurística/Principio violada(o)</th></tr>
+  <tr><td>1</td><td>Ausencia de feedback visual durante la sincronización inicial del dispositivo IoT.</td><td>2</td><td>Usability: Visibilidad del estado del sistema</td></tr>
+  <tr><td>2</td><td>Saturación visual de datos históricos en el renderizado del gráfico de telemetría.</td><td>2</td><td>Diseño estético y minimalista</td></tr>
+  <tr><td>3</td><td>Falta de diferenciación semántica y visual en el sistema de alertas críticas.</td><td>1</td><td>Reconocimiento y recuperación</td></tr>
+  <tr><td>4</td><td>Rutas de navegación poco intuitivas para nuevos usuarios durante la gestión de lotes.</td><td>2</td><td>Information Architecture: Learnability</td></tr>
+</table>
+
+<h3>DESCRIPCIÓN DE PROBLEMAS:</h3>
+
+<p><strong>PROBLEMA #1: Ausencia de feedback visual durante la sincronización inicial.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Usabilidad - Visibilidad del estado del sistema<br>
+<strong>Descripción:</strong> Al realizar la conexión inicial del lote, el sistema no informaba al usuario sobre el progreso de la consulta al sensor. Esto generaba incertidumbre, llevando al usuario a intentar recargar la página innecesariamente. (Incluir captura de pantalla del estado inactivo).<br>
+<strong>Recomendación:</strong> Implementar un componente visual (loading spinner) que notifique explícitamente que la sincronización con el sensor se encuentra en proceso.</p>
+
+<p><strong>PROBLEMA #2: Saturación visual de datos históricos en el gráfico.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Diseño estético y minimalista<br>
+<strong>Descripción:</strong> El gráfico renderizaba todo el historial acumulado, lo que resultaba en una visualización desordenada y dificultaba la identificación de la tendencia actual. El exceso de puntos de datos impactaba negativamente en la performance de renderizado en móvil.<br>
+<strong>Recomendación:</strong> Acotar la vista a una ventana deslizante de las últimas 15 lecturas, proporcionando una interfaz limpia y enfocada en datos relevantes.</p>
+
+<p><strong>PROBLEMA #3: Falta de diferenciación semántica en alertas críticas.</strong><br>
+<strong>Severidad:</strong> 1<br>
+<strong>Heurística violada:</strong> Reconocimiento y recuperación<br>
+<strong>Problema:</strong> Originalmente, las alertas de temperatura y humedad compartían la misma nomenclatura, obligando al usuario a abrir el detalle para identificar el origen del problema, incrementando la carga cognitiva.<br>
+<strong>Recomendación:</strong> Implementar una codificación por colores (naranja para temperatura, celeste para humedad), permitiendo al usuario reconocer el evento sin necesidad de interacción adicional.</p>
+
+<p><strong>PROBLEMA #4: Rutas de navegación poco intuitivas.</strong><br>
+<strong>Severidad:</strong> 2<br>
+<strong>Heurística violada:</strong> Information Architecture - Learnability<br>
+<strong>Problema:</strong> La estructura jerárquica para llegar al dashboard de un lote específico requería múltiples pasos manuales, lo cual resultaba confuso para los baristas profesionales que requerían acceso rápido a la información en entornos de alta demanda.<br>
+<strong>Recomendación:</strong> Optimizar el mapa de sitio reduciendo la profundidad de la navegación, asegurando que el acceso al monitoreo sea directo desde el inicio de la sesión.</p>
+
+</body>
+</html>
 
 ## 6.4. Video About-the-Product.
+
+- Video About-the-Product: [https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing](https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing)
 
 # Conclusiones
 
@@ -10439,6 +10621,10 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 5. El comienzo de la implementación del producto tanto a nivel web como mobile fue exitoso dado que se lograron desplegar todos los elementos, así como se obtuvieron resultados positivos al realizar pruebas en los mismos. Además, ahora es posible ver la realidad de cómo el usuario usará nuestra aplicación y tendrá acceso a la información transmitida por nuestro componente IoT. Logramos un diseño intuitivo y sencillo de utilizar para cualquier usuario.
 
+6. Después de haber implementado el dispositivo IoT, podemos concluir que el uso del Raspberry Pi como nodo edge y de la capa Edge implementada fueron necesarios para alcanzar un resultado óptimo para el dispositivo. El ESP32 resultó eficiente para capturar lecturas del sensor DHT22 y ejecutar reacciones a través de los actuadores. En cuanto al Raspberry Pi, logramos que se encargue eficientemente de evaluar los umbrales y gestionar el historial ambiental, así como de hospedar localmente el Edge API, recibir las lecturas por HTTP y responder con el estado ambiental.
+
+7. La arquitectura edge computing implementada demostró ser beneficiosa al permitir una rápida respuesta ante condiciones fuera de rango en la red local del almacén, desacoplar la lógica de negocio del hardware embebido mediante la actualización de umbrales desde la aplicación y actuar como puente entre el dispositivo físico y el backend. De esta forma, fue posible visualizar y probar el flujo completo desde la lectura del sensor hasta la visualización de la le lectura en el dashboard.
+
 # Recomendaciones
 
 1. Como primera recomendación podemos mencionar el continuar investigando sobre la integración de dispositivos IoT en aplicaciones como la que estamos desarrollando, con el objetivo de mejorar la misma y que esta sea más eficiente para el monitoreo del grano, teniendo una comunicación constante y sin caídas hacia el usuario.
@@ -10446,6 +10632,8 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 2. Podemos recomendar iniciar pruebas con el dispositivo IoT real una vez está totalmente diseñado, de forma en que el grupo logre tener suficiente tiempo como para detectar los errores y volver a integrar las veces que sea necesario, así como lo mejor en el camino. Al mismo tiempo, el actuar con tiempo suificiente nos permitiría realizar pruebas con usuarios reales. Así, obtendríamos feedback de primera mano que nos ayudaría a orientar mejor nuestar siguiente versión.
 
 3. Recomendamos establecer una estrategia de pruebas de usabilidad continua desde las etapas tempranas del desarrollo, involucrando a baristas y dueños de cafeterías en sesiones periódicas de validación. Contar con retroalimentación real y frecuente permitirá identificar posibles problemas o disgustos en la experiencia de uso, priorizar mejoras de interfaz y asegurar que las funcionalidades implementadas respondan verdaderamente a los flujos de trabajo del usuario final, evitando así el tener que volver a trabajar en alguna función y el costo que esto implica en iteraciones futuras.
+
+4. Nos gustaría recomendar que se cuente con una pantalla física en cada lote que permita el reseteo del dispositivo así como el control de los actuadores, de forma en que el usuario pueda tener una mayor disposición sobre las condiciones bajo las que están los lotes. Asismimo, sugerimos que este control también se encuentre disponible tanto en la versión móvil como web de la aplicación.
 
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
@@ -10468,3 +10656,4 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 - Link de landing page: [https://cafelab-iot-project.github.io/cafeLab-landingPage/](https://cafelab-iot-project.github.io/cafeLab-landingPage/)
 - Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
 - Link de backend: [https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
+- Video About-the-Product: [https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing](https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing)
