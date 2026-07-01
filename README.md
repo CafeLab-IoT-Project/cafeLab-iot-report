@@ -395,6 +395,16 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       - [6.2.2.7. Services Documentation Evidence for Sprint Review.](#6227-services-documentation-evidence-for-sprint-review)
       - [6.2.2.8. Software Deployment Evidence for Sprint Review.](#6228-software-deployment-evidence-for-sprint-review)
       - [6.2.2.9. Team Collaboration Insights during Sprint.](#6229-team-collaboration-insights-during-sprint)
+    - [6.2.3. Sprint 3](#623-sprint-3)
+      - [6.2.3.1. Sprint Planning 3.](#6231-sprint-planning-3)
+      - [6.2.3.2. Aspect Leaders and Collaborators.](#6232-aspect-leaders-and-collaborators)
+      - [6.2.3.3. Sprint Backlog 3.](#6233-sprint-backlog-3)
+      - [6.2.3.4. Development Evidence for Sprint Review.](#6234-development-evidence-for-sprint-review)
+      - [6.2.3.5. Testing Suite Evidence for Sprint Review.](#6235-testing-suite-evidence-for-sprint-review)
+      - [6.2.3.6. Execution Evidence for Sprint Review.](#6236-execution-evidence-for-sprint-review)
+      - [6.2.3.7. Services Documentation Evidence for Sprint Review.](#6237-services-documentation-evidence-for-sprint-review)
+      - [6.2.3.8. Software Deployment Evidence for Sprint Review.](#6238-software-deployment-evidence-for-sprint-review)
+      - [6.2.3.9. Team Collaboration Insights during Sprint.](#6239-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews.](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas.](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
@@ -454,6 +464,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>AV2:</strong>
       Asumió el liderazgo técnico de la capa Edge de la arquitectura IoT, diseñando e implementando el componente intermedio que conecta el dispositivo TrackSilo con el backend de CaféLab. Además, lideró la elaboración del Software Deployment Evidence del Sprint 2 y desarrolló el workflow de GitHub Actions que genera y publica automáticamente el APK de la aplicación móvil. Coordinó estos avances con el equipo para mantener coherencia entre el diseño IoT, la implementación y el despliegue, aportando liderazgo conjunto en los componentes más técnicos de la solución.
       <br>
+      <strong>TF:</strong>
+      Lideró la elaboración de las secciones Testing Suite Evidence for Sprint Review y Software Deployment Evidence for Sprint Review del Sprint 3, enfocadas en validar y documentar la capa Edge de CaféLab. Para ello, organizó la evidencia de pruebas automatizadas con pytest y escenarios BDD, registró los commits asociados al repositorio edge-clean y consolidó la documentación de despliegue del Edge en Raspberry Pi mediante systemd, mDNS/Avahi y portal WiFi. Con estas actividades, aportó liderazgo técnico en la validación y despliegue del componente IoT que conecta TrackSilo con la plataforma.
+      <br>
     </td>
     <td>Los integrantes demostraron liderazgo constante, en cada tarea y responsabilidad. Del mismo modo, mostraron compromiso con los objetivos del equipo y comunicación constante para lograr una excelente retroalimentación y mejora continua. Afectando positivamente el desempeño del equipo.</td>
   </tr>
@@ -501,6 +514,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>AV2:</strong>
       Contribuyó a un entorno colaborativo planificando y documentando las tareas relacionadas con la capa Edge y el despliegue móvil del Sprint 2. Estableció objetivos claros para la automatización del build del APK mediante GitHub Actions y los cumplió al dejar el flujo operativo y replicable, además de organizar las evidencias de Software Deployment. De esta manera, facilitó que el equipo pudiera integrar el componente IoT y la aplicación móvil de forma ordenada y alineada con las metas de la entrega.
+      <br>
+      <strong>TF:</strong>
+      Contribuyó a la planificación y cumplimiento de objetivos del Sprint 3 mediante la documentación de Testing Suite Evidence for Sprint Review y Software Deployment Evidence for Sprint Review. Coordinó la estructura de la evidencia de pruebas del Edge, incluyendo unit tests, integration tests, acceptance tests BDD y test execution evidence, y organizó la información de despliegue basada en la guía del repositorio edge-clean. De esta forma, ayudó a mantener un entorno de trabajo ordenado, verificable y alineado con la meta de dejar el Edge validado y desplegable.
       <br>
     </td>
     <td>
@@ -10070,6 +10086,313 @@ La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Lat
     </td>
   </tr>
 </table>
+
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3.
+
+#### 6.2.3.2. Aspect Leaders and Collaborators.
+
+#### 6.2.3.3. Sprint Backlog 3.
+
+#### 6.2.3.4. Development Evidence for Sprint Review.
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review.
+
+### Edge Testing Suite Evidence
+
+Para el repositorio Edge se implementó una suite de pruebas automatizadas orientada a validar el comportamiento del servicio local encargado de conectar el dispositivo IoT TrackSilo con la plataforma CaféLab. Esta suite permite comprobar la lógica de dominio del edge, el contrato HTTP de la API Flask, el proceso de autenticación de dispositivos, el registro de lecturas ambientales, la evaluación de umbrales, la respuesta de actuadores y la sincronización de telemetría con el backend.
+
+Repository: https://github.com/CafeLab-IoT-Project/edge-clean.git  
+Branch: main  
+
+La suite fue desarrollada con `pytest` y organizada por capas para separar las reglas de negocio puras, las pruebas de endpoints HTTP y la orquestación de sincronización con el backend. Para evitar dependencias con servicios externos, las pruebas utilizan una base SQLite temporal por cada ejecución, fixtures compartidas y clientes mockeados o fakes para simular respuestas del backend.
+
+Los tests fueron ejecutados localmente desde la raíz del repositorio Edge usando el comando:
+
+`python -m pytest`
+
+También se documentaron comandos alternativos para ejecución compacta, detallada, por archivo, por test específico o por filtro de nombre, como:
+
+`python -m pytest -q`  
+`python -m pytest -v`  
+`python -m pytest tests/test_edge_api.py`  
+`python -m pytest -k "sync or account"`
+
+#### Tabla de commits relacionados al edge testing
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committed on (Date)</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>c88baed</td>
+    <td>test: added unit and integral tests</td>
+    <td>Added the Edge pytest suite, including unit tests for domain rules, integration/API tests for Flask endpoints, onboarding tests, synchronization tests with backend fakes, pytest configuration, development dependencies and testing documentation.</td>
+    <td>30/06/2026</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>dc1642f</td>
+    <td>requirements + acceptance tests</td>
+    <td>Added the pytest-bdd dependency and acceptance tests for the Edge service, including Gherkin scenarios for local actuator control and offline telemetry buffering.</td>
+    <td>30/06/2026</td>
+  </tr>
+</table>
+
+#### Unit Tests
+
+Los Unit Tests fueron aplicados sobre la capa de dominio del Edge para validar reglas puras sin depender de Flask, SQLite ni servicios externos. Estas pruebas comprueban la normalización de lecturas, los rangos físicos aceptados por el sensor, la validación de umbrales y la evaluación del estado ambiental que luego consume la API del Edge.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story / Technical Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>test_domain_services.py</td>
+    <td>Unit Test</td>
+    <td>TS11 - API IoT Monitoring / US22 - Recepción de alertas por condiciones fuera de rango / US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumedecedor</td>
+    <td>Valida la lógica de dominio del Edge sin usar base de datos ni endpoints HTTP. Comprueba que las lecturas del TrackSilo normalicen valores numéricos y timestamps a UTC, rechacen temperaturas fuera del rango físico del sensor (-40°C a 80°C) y humedades fuera del rango 0% a 100%. También valida que los umbrales no acepten mínimos mayores que máximos ni valores fuera de los rangos físicos permitidos. Finalmente, verifica la evaluación de estados <code>OPTIMAL</code>, <code>WARNING</code> y <code>DANGER</code>, la decisión del <code>actuatorCommand</code> y las banderas independientes <code>humidityAlert</code> y <code>temperatureAlert</code>.</td>
+    <td>passed</td>
+  </tr>
+</table>
+
+#### Integration Tests
+
+Los Integration Tests fueron aplicados sobre los endpoints Flask y los servicios de aplicación del Edge usando una base SQLite temporal por prueba. Estas pruebas validan el contrato HTTP del Edge API, el onboarding de cuenta, la autenticación local de dispositivos y la sincronización con el backend mediante fakes, evitando llamadas reales a servicios externos.
+
+<table border="1">
+  <tr>
+    <th>Test File</th>
+    <th>Test Type</th>
+    <th>Related User Story / Technical Story</th>
+    <th>Description</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>test_edge_api.py</td>
+    <td>Integration Test / API Test</td>
+    <td>TS11 - API IoT Monitoring / US20 - Visualización de condiciones del almacén en tiempo real / US21 - Consulta de historial ambiental por lote / US23 - Configuración de umbrales de monitoreo / US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumedecedor</td>
+    <td>Valida el contrato HTTP de la API Flask del Edge mediante <code>app.test_client()</code>. Comprueba el health check del servicio, la exigencia de credenciales <code>deviceId</code> y <code>X-API-Key</code>, el registro de lecturas ambientales, la respuesta con estado <code>DANGER</code> ante humedad elevada, la generación de eventos de actuador, la consulta de última lectura, la validación de límites al listar lecturas recientes, la detección de sensor <code>OFFLINE</code>, la entrega de umbrales por defecto, la protección del endpoint de sincronización y el auto-enrollment idempotente del dispositivo.</td>
+    <td>passed</td>
+  </tr>
+  <tr>
+    <td>test_account_onboarding.py</td>
+    <td>Integration Test / API Test</td>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Valida el flujo de onboarding de cuenta del Edge mediante los endpoints <code>GET /api/v1/edge/account</code> y <code>POST /api/v1/edge/account</code>. Comprueba que el Edge reporte estado no configurado cuando no existe cuenta vinculada, que guarde una cuenta válida después de simular un <code>sign_in</code> exitoso, que nunca exponga la contraseña en la respuesta, que rechace solicitudes sin email o password, que responda <code>401</code> ante credenciales inválidas y que responda <code>502</code> cuando el backend no está disponible.</td>
+    <td>passed</td>
+  </tr>
+  <tr>
+    <td>test_sync_services.py</td>
+    <td>Integration Test / Application Test</td>
+    <td>TS11 - API IoT Monitoring / US20 - Visualización de condiciones del almacén en tiempo real / US21 - Consulta de historial ambiental por lote / US23 - Configuración de umbrales de monitoreo</td>
+    <td>Valida la orquestación de sincronización Edge -> Backend sin salir a la red. Usa clientes fake para comprobar que las lecturas pendientes se publiquen al backend cuando el dispositivo tiene un <code>lot_id</code> numérico asociado, que las lecturas de dispositivos sin lote permanezcan pendientes en el outbox, que los rechazos 4xx del backend se marquen como procesados para no bloquear la cola, y que el pull de umbrales aplique localmente los valores recibidos del backend respetando el intervalo mínimo de sincronización.</td>
+    <td>passed</td>
+  </tr>
+</table>
+
+#### Acceptance Tests BDD
+
+Los Acceptance Tests fueron documentados mediante archivos `.feature` escritos en lenguaje Gherkin y ejecutados con `pytest-bdd`. Estos escenarios describen el comportamiento esperado del Edge desde una perspectiva funcional, reutilizando el stack real de Flask y SQLite mediante fixtures de prueba, pero sin depender de un backend externo real.
+
+<table border="1">
+  <tr>
+    <th>Feature File</th>
+    <th>Related User Story / Technical Story</th>
+    <th>Acceptance Scope</th>
+  </tr>
+  <tr>
+    <td>actuator_control.feature</td>
+    <td>TS11 - API IoT Monitoring / US22 - Recepción de alertas por condiciones fuera de rango / US24 - Indicador de estado ambiental por lote / US25 - Activación automática del deshumedecedor</td>
+    <td>Describe escenarios de aceptación para el control local de actuadores del Edge. Valida que una lectura con humedad superior al umbral máximo retorne estado <code>DANGER</code>, active la alerta de humedad, mantenga apagada la alerta de temperatura y registre un evento <code>ACTIVATE</code>. También valida que una temperatura elevada no active el actuador de humedad, aunque sí marque alerta de temperatura, y que una lectura dentro de rango retorne estado <code>OPTIMAL</code> sin alertas ni eventos de actuador.</td>
+  </tr>
+  <tr>
+    <td>offline_buffering.feature</td>
+    <td>TS11 - API IoT Monitoring / US20 - Visualización de condiciones del almacén en tiempo real / US21 - Consulta de historial ambiental por lote</td>
+    <td>Describe el comportamiento de aceptación del patrón outbox del Edge. Valida que una lectura enviada por un dispositivo autenticado se almacene localmente aunque el dispositivo todavía no esté asignado a un lote de café, que al ejecutar una sincronización manual no se envíen lecturas al backend cuando no existe mapeo de lote, y que la lectura permanezca pendiente para una futura reconciliación.</td>
+  </tr>
+</table>
+
+#### Test Execution Evidence
+
+La suite completa del Edge fue ejecutada localmente con `pytest` usando salida detallada para evidenciar el resultado de cada escenario automatizado:
+
+`python -m pytest -v --color=no`
+
+El resultado de la ejecución fue de **40 tests exitosos**, incluyendo pruebas unitarias, pruebas de integración/API, pruebas de sincronización y escenarios BDD ejecutados con `pytest-bdd`.
+
+<p align="center">
+  <img src="public/assets/images/chapter-6/sprint-3/test-evidence/edge-pytest-execution.png" alt="Edge pytest execution evidence" width="750">
+</p>
+
+#### 6.2.3.6. Execution Evidence for Sprint Review.
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review.
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3 se documentó el despliegue del componente Edge de CaféLab, encargado de ejecutar localmente la API intermedia entre el dispositivo TrackSilo y el backend de la plataforma. El despliegue está orientado a una Raspberry Pi dentro de la red local del almacén, permitiendo que el ESP32 envíe lecturas por HTTP, que el Edge evalúe umbrales en tiempo real y que posteriormente sincronice la telemetría con el backend cuando exista conectividad.
+
+<h3>Repositorio y artefactos de despliegue</h3>
+
+<table border="1">
+  <tr>
+    <th>Artifact</th>
+    <th>Location</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>Edge source repository</td>
+    <td><a href="https://github.com/CafeLab-IoT-Project/edge-clean.git">https://github.com/CafeLab-IoT-Project/edge-clean.git</a></td>
+    <td>Repositorio del servicio Edge implementado con Python, Flask, Peewee y SQLite.</td>
+  </tr>
+  <tr>
+    <td>Deployment guide</td>
+    <td><code>deploy/GUIA-DESPLIEGUE.md</code></td>
+    <td>Runbook para preparar Raspberry Pi, instalar dependencias, ejecutar el Edge, configurar mDNS, registrar el servicio systemd, configurar portal WiFi y validar el flujo end-to-end.</td>
+  </tr>
+  <tr>
+    <td>Edge systemd service</td>
+    <td><code>deploy/raspberrypi/cafelab-edge.service</code></td>
+    <td>Define la ejecución del Edge como servicio Linux, incluyendo host, puerto, modo debug, logs y reinicio automático ante fallos.</td>
+  </tr>
+  <tr>
+    <td>mDNS / Avahi service</td>
+    <td><code>deploy/raspberrypi/avahi-cafelab-edge.service</code></td>
+    <td>Publica el Edge en la red local como servicio <code>_cafelab._tcp</code> y <code>_http._tcp</code> en el puerto 5000 para que el ESP32 pueda descubrirlo sin depender de una IP fija.</td>
+  </tr>
+  <tr>
+    <td>WiFi provisioning service</td>
+    <td><code>deploy/raspberrypi/cafelab-wifi-portal.service</code> / <code>deploy/raspberrypi/cafelab-wifi-portal.sh</code></td>
+    <td>Configura un portal cautivo con SSID <code>CafeLab-Setup</code> cuando la Raspberry Pi no tiene WiFi activo, permitiendo provisionar la red local desde un dispositivo móvil.</td>
+  </tr>
+</table>
+
+<h3>Configuración de ejecución del Edge</h3>
+
+El archivo <code>cafelab-edge.service</code> configura el servicio para escuchar en todas las interfaces de red mediante <code>EDGE_HOST=0.0.0.0</code> y el puerto <code>EDGE_PORT=5000</code>. Esta configuración es necesaria para que el ESP32 pueda alcanzar el Edge desde la red local. Además, desactiva el modo debug para ejecución como servicio y envía los logs al journal de systemd.
+
+<table border="1">
+  <tr>
+    <th>Variable / Setting</th>
+    <th>Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>WorkingDirectory</code></td>
+    <td><code>/home/pi/edge-clean</code></td>
+    <td>Ruta esperada del repositorio Edge dentro de la Raspberry Pi.</td>
+  </tr>
+  <tr>
+    <td><code>EDGE_HOST</code></td>
+    <td><code>0.0.0.0</code></td>
+    <td>Permite recibir requests desde otros dispositivos de la red local, incluyendo el ESP32.</td>
+  </tr>
+  <tr>
+    <td><code>EDGE_PORT</code></td>
+    <td><code>5000</code></td>
+    <td>Puerto HTTP expuesto por la API Flask del Edge.</td>
+  </tr>
+  <tr>
+    <td><code>EDGE_DEBUG</code></td>
+    <td><code>0</code></td>
+    <td>Desactiva debug/reloader durante la ejecución administrada por systemd.</td>
+  </tr>
+  <tr>
+    <td><code>PYTHONUNBUFFERED</code></td>
+    <td><code>1</code></td>
+    <td>Permite observar logs del Edge en vivo desde el journal.</td>
+  </tr>
+  <tr>
+    <td><code>EDGE_LOG_LEVEL</code></td>
+    <td><code>INFO</code></td>
+    <td>Nivel de logging para eventos del Edge, incluyendo sincronización y requests.</td>
+  </tr>
+  <tr>
+    <td><code>BACKEND_BASE_URL</code>, <code>BACKEND_SERVICE_EMAIL</code>, <code>BACKEND_SERVICE_PASSWORD</code></td>
+    <td>Optional</td>
+    <td>Variables opcionales para habilitar sincronización automática Edge -> Backend usando una cuenta de servicio.</td>
+  </tr>
+</table>
+
+<h3>Proceso de instalación y ejecución</h3>
+
+El despliegue definido en la guía del Edge sigue un flujo incremental: preparar la Raspberry Pi, clonar o copiar el repositorio, crear un entorno virtual, instalar dependencias, validar la API localmente, habilitar descubrimiento mDNS y registrar el servicio systemd para arranque automático.
+
+```bash
+cd ~
+git clone https://github.com/CafeLab-IoT-Project/edge-clean.git edge-clean
+cd ~/edge-clean
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+La validación inicial del servicio se realiza con el endpoint raíz:
+
+```bash
+curl http://localhost:5000/
+```
+
+Respuesta esperada:
+
+```json
+{"status":"ok","service":"edge-clean"}
+```
+
+Para exponer el Edge como servicio de arranque automático en Raspberry Pi, la guía indica copiar el archivo systemd, recargar demonios y habilitar el servicio:
+
+```bash
+sudo cp ~/edge-clean/deploy/raspberrypi/cafelab-edge.service /etc/systemd/system/cafelab-edge.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now cafelab-edge.service
+systemctl status cafelab-edge.service
+```
+
+<h3>Descubrimiento en red local</h3>
+
+Para evitar depender de una IP fija, el despliegue incluye un servicio Avahi que publica el Edge en la red local usando el tipo <code>_cafelab._tcp</code> sobre el puerto <code>5000</code>. Este mecanismo permite que el firmware del ESP32 busque el servicio <code>cafelab</code> y encuentre la Raspberry Pi automáticamente.
+
+```bash
+sudo cp ~/edge-clean/deploy/raspberrypi/avahi-cafelab-edge.service /etc/avahi/services/cafelab-edge.service
+sudo systemctl restart avahi-daemon
+```
+
+La disponibilidad puede validarse desde otra máquina de la misma red mediante:
+
+```bash
+curl http://cafelab-edge.local:5000/
+```
+
+<h3>Portal WiFi para provisioning</h3>
+
+El despliegue también contempla el servicio <code>cafelab-wifi-portal.service</code>, el cual ejecuta <code>cafelab-wifi-portal.sh</code>. Este script revisa si la Raspberry Pi ya tiene una conexión WiFi activa; si no la tiene, inicia un portal cautivo mediante <code>wifi-connect</code> con el SSID <code>CafeLab-Setup</code>. Esto permite configurar la red del Edge desde un celular sin intervención técnica directa.
+
+```bash
+sudo cp ~/edge-clean/deploy/raspberrypi/cafelab-wifi-portal.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/cafelab-wifi-portal.sh
+sudo cp ~/edge-clean/deploy/raspberrypi/cafelab-wifi-portal.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable cafelab-wifi-portal.service
+```
+
+Con esta configuración, el componente Edge queda preparado para ejecutarse localmente, recibir lecturas del ESP32 por HTTP, responder comandos de actuador en tiempo real y sincronizar información con el backend de CaféLab cuando el dispositivo se encuentre vinculado a una cuenta y a un lote de café.
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint.
 
 
 ## 6.3. Validation Interviews.
