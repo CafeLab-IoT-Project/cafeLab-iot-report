@@ -10196,6 +10196,10 @@ Para este Sprint, se está considerando la implementación de una única pantall
 #### 6.2.3.3. Sprint Backlog 3.
 Durante el Sprint 3, el equipo se enfocó en mejorar la interfaz del Edge para visualizar en tiempo real el comportamiento del sistema IoT. El objetivo fue representar de forma clara cómo las lecturas capturadas por el dispositivo TrackSilo viajan hacia la capa Edge y cómo esta información se sincroniza posteriormente con el backend desplegado y las aplicaciones web y móvil. Asimismo, se buscó facilitar la validación del flujo técnico mediante una pantalla visible desde Raspberry Pi.
 
+<p align="center">
+<img width="500" src="public/assets/images/chapter-6/sprint-3/sprintbacklog3.png" alt="Sprint backlog 3">
+</p>
+
 <table border="1">
   <tr>
     <th>User Story / Technical Story</th>
