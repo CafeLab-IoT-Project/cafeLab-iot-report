@@ -475,6 +475,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>AV2:</strong>
       Cumplió este criterio elaborando el Sprint Backlog y organizando las evidencias de desarrollo del proyecto. Además, aportó validación del flujo IoT, coordinando la integración entre el dispositivo, la capa Edge, el backend desplegado y el dashboard de monitoreo. Con ello, logró contribuir al avance conjunto del equipo, asegurando que la funcionalidad de monitoreo ambiental se evidenciara de forma clara y alineada con los objetivos del sprint.
       <br>
+      <strong>TB2:</strong>
+      Asumió la elaboración del Sprint Backlog y del Development Evidence for Sprint Review. Además, organizó evidencias de desarrollo relacionadas con la mejora del Edge, considerando commits, pruebas unitarias e integrales además de documentación técnica del dashboard. Con ello, aportó al avance coordinado del equipo y al cumplimiento de los objetivos técnicos definidos para el sprint.
+      <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       Me encargue de labores de colaboracion, asimismo realice el analisis competitivo donde pude reconocer factores diferenciadores, ademas de realizar entrevistas y conocer sobre las necesidades de los usuarios, ademas de participar en desarrollo del grafico de User Persona, User task Matrix y desarrollar el espacio de Context mapping. Por ultimo colabore en la segmentacion e identificacion de alcances del bounded context IAM.
       <br>
@@ -508,7 +511,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>AV2:</strong>
       Asumió el liderazgo técnico de la capa Edge de la arquitectura IoT, diseñando e implementando el componente intermedio que conecta el dispositivo TrackSilo con el backend de CaféLab. Además, lideró la elaboración del Software Deployment Evidence del Sprint 2 y desarrolló el workflow de GitHub Actions que genera y publica automáticamente el APK de la aplicación móvil. Coordinó estos avances con el equipo para mantener coherencia entre el diseño IoT, la implementación y el despliegue, aportando liderazgo conjunto en los componentes más técnicos de la solución.
       <br>
-      <strong>TF:</strong>
+      <strong>TB2:</strong>
       Lideró la elaboración de las secciones Testing Suite Evidence for Sprint Review y Software Deployment Evidence for Sprint Review del Sprint 3, enfocadas en validar y documentar la capa Edge de CaféLab. Para ello, organizó la evidencia de pruebas automatizadas con pytest y escenarios BDD, registró los commits asociados al repositorio edge-clean y consolidó la documentación de despliegue del Edge en Raspberry Pi mediante systemd, mDNS/Avahi y portal WiFi. Con estas actividades, aportó liderazgo técnico en la validación y despliegue del componente IoT que conecta TrackSilo con la plataforma.
       <br>
     </td>
@@ -525,6 +528,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>AV2:</strong>
       Cumplió este criterio definiendo tareas vinculadas al desarrollo y validación del módulo IoT. Además, organizó las evidencias del avance realizado y verificó el cumplimiento de objetivos técnicos, como la conexión del dispositivo TrackSilo con el Edge, el registro de lecturas ambientales y la simulación de actuadores mediante LEDs. De esta manera, contribuyó a un entorno de trabajo ordenado, colaborativo y orientado al cumplimiento de los entregables del equipo.
+      <br>
+      <strong>TB2:</strong>
+      Estructuró tareas orientadas a la mejora del Edge, la validación del dashboard y la documentación del flujo de comunicación IoT. Asimismo, recopiló evidencias de commits y pruebas realizadas, permitiendo que el equipo contara con una documentación clara del avance logrado. De esta manera, contribuyó a un entorno de trabajo ordenado, colaborativo y enfocado en cumplir los objetivos de cierre del proyecto.
       <br>
       <strong>Fernandez Camayo, Carlos Fredy<br></strong> <strong>AV1:</strong>
       La realizacion de actividades como analisis competitivo requirio de coordinacion para identificacion de competidores, asimismo coordinacion con los usuarios entrevistados con preguntas objetivas, los resultados de las entrevistas influenciaron en la adecuada realizacion del User Persona, identifiacion de User Task Matrix y formulacion del Context Mapping. Ademas de desarrollar correctamente los alcances del bounded context IAM.
@@ -559,7 +565,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>AV2:</strong>
       Contribuyó a un entorno colaborativo planificando y documentando las tareas relacionadas con la capa Edge y el despliegue móvil del Sprint 2. Estableció objetivos claros para la automatización del build del APK mediante GitHub Actions y los cumplió al dejar el flujo operativo y replicable, además de organizar las evidencias de Software Deployment. De esta manera, facilitó que el equipo pudiera integrar el componente IoT y la aplicación móvil de forma ordenada y alineada con las metas de la entrega.
       <br>
-      <strong>TF:</strong>
+      <strong>TB2:</strong>
       Contribuyó a la planificación y cumplimiento de objetivos del Sprint 3 mediante la documentación de Testing Suite Evidence for Sprint Review y Software Deployment Evidence for Sprint Review. Coordinó la estructura de la evidencia de pruebas del Edge, incluyendo unit tests, integration tests, acceptance tests BDD y test execution evidence, y organizó la información de despliegue basada en la guía del repositorio edge-clean. De esta forma, ayudó a mantener un entorno de trabajo ordenado, verificable y alineado con la meta de dejar el Edge validado y desplegable.
       <br>
     </td>
