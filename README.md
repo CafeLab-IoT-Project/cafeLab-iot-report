@@ -1,56 +1,107 @@
 ﻿<p align="center">
-<img style="width:10%;" src="public/assets/images/cover/logo/logo_upc.png" alt="Logo UPC">
+  <img style="width:8%;" src="public/assets/images/cover/logo/logo_upc.png" alt="Logo UPC">
 </p>
 
-<p align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
-<strong>Facultad de Ingeniería</strong></p>
+<p align="center">
+  Universidad Peruana de Ciencias Aplicadas
+</p>
 
-<p align="left" style="margin:1.25em auto 0;max-width:34em;padding:0 1em;">
-<strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IOT<br>
-<strong>NRC:</strong> 6776 <br>
+<p align="center">
+  Carrera de Ingeniería de Software
+</p>
+
 <br>
-<strong>Nombre del profesor:</strong> Marco Antonio León Baca
+
+<p align="center">
+  <strong style="font-size:1.25em;">1ASI0572</strong>
 </p>
 
-
-
-<h2 align="center" style="font-weight:bold;font-size:1.35em;margin:3em 0;">“Informe del Trabajo Final”</h2>
-
-<p align="left" style="margin:0 auto;max-width:34em;padding:0 1em;">
-<strong>Nombre del grupo:</strong> Café Metrix<br>
-<strong>Nombre del producto:</strong> Café Lab
+<p align="center">
+  <strong style="font-size:1.25em;">Desarrollo de Soluciones IoT</strong>
 </p>
 
-<p align="center" style="margin-top:4em;"><strong>Integrantes:</strong></p>
+<p align="center">
+  NRC
+</p>
 
-<div style="max-width:34em;margin:0.5em auto 0;border:1px solid #bbb;box-sizing:border-box;">
-<div style="display:flex;font-weight:bold;border-bottom:1px solid #bbb;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">Código</span>
-<span align="center" style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Apellidos y Nombres</span>
-</div>
-<div style="display:flex;border-bottom:1px solid #bbb;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202310187</span>
-<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Donayre Alvarez, Adrian Ricardo</span>
-</div>
-<div style="display:flex;border-bottom:1px solid #bbb;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202320083</span>
-<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Fernandez Camayo, Carlos Fredy</span>
-</div>
-<div style="display:flex;border-bottom:1px solid #bbb;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202318274</span>
-<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Julca Minaya, Sergio Gino</span>
-</div>
-<div style="display:flex;border-bottom:1px solid #bbb;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202310148</span>
-<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Roman Cruz, Natalia Bertha</span>
-</div>
-<div style="display:flex;">
-<span style="flex:0 0 9.5em;text-align:center;padding:0.45em 0.5em;border-right:1px solid #bbb;box-sizing:border-box;">U202210838</span>
-<span style="flex:1;min-width:0;padding:0.45em 0.6em;box-sizing:border-box;">Yum Gonzales, Jorge Suin</span>
-</div>
-</div>
+<p align="center">
+  <strong style="font-size:1.2em;">6776</strong>
+</p>
 
-<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Julio 2026</p>
+<p align="center">
+  <strong style="font-size:1.35em;">Informe del Trabajo Final</strong>
+</p>
+
+<p align="center">
+  Docente
+</p>
+
+<p align="center">
+  <strong style="font-size:1.2em;">León Baca, Marco Antonio</strong>
+</p>
+
+<br>
+
+<p align="center">
+  Equipo
+</p>
+
+<p align="center">
+  <strong style="font-size:1.25em;">Café Metrix</strong>
+</p>
+
+<br>
+
+<p align="center">
+  Proyecto
+</p>
+
+<p align="center">
+  <strong style="font-size:1.25em;">Café Lab</strong>
+</p>
+
+<br>
+
+<p align="center">
+  <strong style="font-size:1.15em;">Integrantes</strong>
+</p>
+
+<table align="center" style="border-collapse:collapse; border:none;">
+  <tr>
+    <th align="left" style="border:none; padding:0.3em 1.5em 0.3em 0;">
+      <strong style="font-size:1.1em;">Código</strong>
+    </th>
+    <th align="left" style="border:none; padding:0.3em 0;">
+      <strong style="font-size:1.1em;">Apellidos y Nombres</strong>
+    </th>
+  </tr>
+  <tr>
+    <td style="border:none; padding:0.3em 1.5em 0.3em 0;">U202310187</td>
+    <td style="border:none; padding:0.3em 0;">Donayre Alvarez, Adrian Ricardo</td>
+  </tr>
+  <tr>
+    <td style="border:none; padding:0.3em 1.5em 0.3em 0;">U202320083</td>
+    <td style="border:none; padding:0.3em 0;">Fernandez Camayo, Carlos Fredy</td>
+  </tr>
+  <tr>
+    <td style="border:none; padding:0.3em 1.5em 0.3em 0;">U202318274</td>
+    <td style="border:none; padding:0.3em 0;">Julca Minaya, Sergio Gino</td>
+  </tr>
+  <tr>
+    <td style="border:none; padding:0.3em 1.5em 0.3em 0;">U202310148</td>
+    <td style="border:none; padding:0.3em 0;">Roman Cruz, Natalia Bertha</td>
+  </tr>
+  <tr>
+    <td style="border:none; padding:0.3em 1.5em 0.3em 0;">U202210838</td>
+    <td style="border:none; padding:0.3em 0;">Yum Gonzales, Jorge Suin</td>
+  </tr>
+</table>
+
+<br><br><br><br>
+
+<p align="center">
+  <strong style="font-size:1.2em;">Periodo 202610</strong>
+</p>
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
