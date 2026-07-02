@@ -250,6 +250,50 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la TB2</td>
+  </tr>
+  <tr>
+    <td width="10%"><strong>Integrante</strong></td>
+    <td width="50%"><strong>Descripción de actividades</strong></td>
+    <td width="40%"><strong>Evidencias</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Donayre Alvarez, Adrian Ricardo</strong></td>
+    <td>Participé en la documentación del Sprint 3, elaborando el Sprint Backlog y el Development Evidence for Sprint Review. Además, contribuí a la validación de la mejora de la interfaz del Edge, enfocada en visualizar en tiempo real el recorrido de la información desde el dispositivo TrackSilo hacia el Edge y desde el Edge hacia el backend desplegado. Asimismo, apoyé en la revisión de evidencias relacionadas con el dashboard, eventos, pruebas unitarias e integrales, y la visualización del sistema desde la Raspberry Pi.</td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-adrian.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Roman Cruz, Natalia Bertha</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Yum Gonzales, Jorge Suin</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Julca Minaya, Sergio Gino</strong></td>
+    <td></td>
+    <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
+  </tr>
+  <tr>
+    <td><strong>Conclusión</strong></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td><strong>Evidencia</strong></td>
+    <td colspan="2"><img src="public/assets/images/cover/insights/project-report-collaboration-insights-av2.png" alt="Insights">  </td>
+  </tr>
+</table>
+
 
 <!--ÍNDICE-->
 # Contenido 
