@@ -10261,6 +10261,75 @@ Durante el Sprint 3, el equipo se enfocó en mejorar la interfaz del Edge para v
 
 #### 6.2.3.4. Development Evidence for Sprint Review.
 
+En esta sección se presentan las evidencias de desarrollo correspondientes al Sprint 3. Durante este sprint, el equipo mejoró la interfaz del Edge para visualizar de manera más clara el recorrido de la información generada por el dispositivo TrackSilo. La mejora permitió observar en tiempo real la recepción de lecturas ambientales, el envío de requests desde el dispositivo hacia el Edge y la sincronización posterior con el backend desplegado. Además, se adaptó la vista para ser utilizada desde una pantalla conectada a Raspberry Pi, facilitando la supervisión local del sistema IoT.
+
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Committer on (Date)</th>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>dc1642f</td>
+    <td>requirements + acceptance tests</td>
+    <td>requirements + acceptance tests</td>
+    <td>Jun 30, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>c88baed</td>
+    <td>test: added unit and integral tests</td>
+    <td>test: added unit and integral tests</td>
+    <td>Jun 30, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>0d4ce1e</td>
+    <td>readme dashboard</td>
+    <td>readme dashboard</td>
+    <td>Jun 29, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>2d5d35d</td>
+    <td>dashboard update</td>
+    <td>dashboard update</td>
+    <td>Jun 26, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>4ef89b3</td>
+    <td>dashboard update</td>
+    <td>dashboard update</td>
+    <td>Jun 26, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>6736bf6</td>
+    <td>eventos</td>
+    <td>eventos</td>
+    <td>Jun 26, 2026</td>
+  </tr>
+  <tr>
+    <td>edge-clean</td>
+    <td>main</td>
+    <td>83fed58</td>
+    <td>dashboard</td>
+    <td>dashboard</td>
+    <td>Jun 26, 2026</td>
+  </tr>
+</table>
+
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review.
 
 ### Edge Testing Suite Evidence
