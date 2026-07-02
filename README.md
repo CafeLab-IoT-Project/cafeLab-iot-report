@@ -50,7 +50,7 @@
 </div>
 </div>
 
-<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Junio 2026</p>
+<p align="center" style="margin-top:2em;font-weight:bold;">Lima – Julio 2026</p>
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
@@ -10194,6 +10194,66 @@ Para este Sprint, se está considerando la implementación de una única pantall
 </table>
 
 #### 6.2.3.3. Sprint Backlog 3.
+Durante el Sprint 3, el equipo se enfocó en mejorar la interfaz del Edge para visualizar en tiempo real el comportamiento del sistema IoT. El objetivo fue representar de forma clara cómo las lecturas capturadas por el dispositivo TrackSilo viajan hacia la capa Edge y cómo esta información se sincroniza posteriormente con el backend desplegado y las aplicaciones web y móvil. Asimismo, se buscó facilitar la validación del flujo técnico mediante una pantalla visible desde Raspberry Pi.
+
+<table border="1">
+  <tr>
+    <th>User Story / Technical Story</th>
+    <th>Work-Item / Task</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Visualización de lecturas TrackSilo en tiempo real</td>
+    <td>Implementar una vista en el Edge que muestre las lecturas recientes de temperatura y humedad enviadas por el dispositivo TrackSilo.</td>
+    <td>4</td>
+    <td>Yum, Jorge</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>TS11 - API IoT Monitoring</td>
+    <td>Visualización del envío de requests en tiempo real</td>
+    <td>Representar en la interfaz del Edge el flujo de requests generados desde el dispositivo IoT hacia el Edge y desde el Edge hacia el backend desplegado.</td>
+    <td>4</td>
+    <td>Roman, Natalia</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+    <td>Vista de monitoreo desde pantalla de Raspberry Pi</td>
+    <td>Adaptar la interfaz del Edge para que pueda visualizarse desde una pantalla conectada a Raspberry Pi, facilitando la supervisión local del estado ambiental del lote.</td>
+    <td>4</td>
+    <td>Donayre, Adrian</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+    <td>Mostrar lecturas recientes del dispositivo</td>
+    <td>Agregar una sección que permita consultar las últimas lecturas recibidas por el Edge, incluyendo temperatura, humedad, fecha de registro y estado de alerta.</td>
+    <td>3</td>
+    <td>Julca, Sergio</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+    <td>Mostrar estado de comunicación del flujo IoT</td>
+    <td>Incorporar indicadores visuales para mostrar si el dispositivo está conectado, si el Edge recibió la lectura y si la sincronización con el backend fue exitosa.</td>
+    <td>3</td>
+    <td>Fernández, Fredy</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US25 - Activación automática del deshumedecedor</td>
+    <td>Representar actuadores simulados en la interfaz</td>
+    <td>Mostrar en la interfaz del Edge si las alertas de humedad o temperatura activaron actuadores simulados mediante LEDs.</td>
+    <td>3</td>
+    <td>Donayre, Adrian</td>
+    <td>Done</td>
+  </tr>
+</table>
 
 #### 6.2.3.4. Development Evidence for Sprint Review.
 
