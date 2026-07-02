@@ -10091,7 +10091,107 @@ La evidencia muestra la release <strong>v0.1.0</strong> marcada como <strong>Lat
 
 #### 6.2.3.1. Sprint Planning 3.
 
+<table border="1" cellpadding="6" cellspacing="0">
+    <tbody>
+        <tr>
+            <th>Sprint #</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Planning Background</th>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>29/06/2026</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>09:00 AM</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Reunión virtual mediante la aplicación Discord</td>
+        </tr>
+        <tr>
+            <th>Prepared By</th>
+            <td>Natalia Roman</td>
+        </tr>
+        <tr>
+            <th>Attendees (to planning meeting)</th>
+            <td>Natalia Roman, Fredy Fernández, Sergio Julca, Jorge Yum, Adrian Donayre</td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Review Summary</th>
+            <td>
+                Durante el segundo sprint, se lograrón completar y mejorar todas las funcionalidades pendientes de implementación, así como se logró el 100% del desarrollo y conexión con el dispositivo IoT Trasksilo, el cual logró pasar todas las pruebas planteadas y operó conformé a lo planeado tanto con la aplicación web como con la aplicación móvil.
+            </td>
+        </tr>
+        <tr>
+            <th>Sprint 2 Retrospective Summary</th>
+            <td>
+                Durante la elaboración del segundo sprint, el equipo destacó por mantener una comunicación efectiva, apoyarse entre compañeros y buscar lograr una alta calidad en los entregables planteados. Asimismo, se puede mencionar que todos los integrantes trabajaron a una alta velocidad con el objetivo de tener el producto listo lo antes posible y poder realizar más pruebas con el mismo.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Sprint Goal & User Stories</th>
+        </tr>
+        <tr>
+            <th>Sprint 3 Goal</th>
+            <td>Implementar una herramienta que evidencia el viaje de los datos desde el dispositivo Tracksilo hasta las aplicaciones para el usuario.</td>
+        </tr>
+        <tr>
+            <th>Sprint 3 Velocity</th>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th>Sum of Story Points</th>
+            <td>12</td>
+        </tr>
+    </tbody>
+</table>
+
 #### 6.2.3.2. Aspect Leaders and Collaborators.
+
+Para este Sprint, se está considerando la implementación de una única pantalla que pueda mostrar en tiempo real la lectura de los datos por parte de los sensores y el como la información viaja entre el dispositivo Tracksilo y las aplicaciones web y móvil. Cada miembro del equipo ha sido asignado estratégicamente como líder (L) o colaborador (C) según sus fortalezas, responsabilidades e intereses.
+
+<table border="1">
+<tr>
+<th>Aspecto / US - TS</th>
+<th>Roman, Natalia (natRC2005)</th>
+<th>Yum, Jorge (jsyumg)</th>
+<th>Julca, Sergio (sergioJM05)</th>
+<th>Fernández, Fredy (u202320083)</th>
+<th>Donayre, Adrian (adriandonayredev)</th>
+</tr>
+
+<tr>
+<td>Visualización de lecturas del dispositivo Tracksilo en tiempo real</td>
+<td>C</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Visualización de envío de requests en tiempo real</td>
+<td>L</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>Vista desde pantalla de Raspberry Pi</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>L</td>
+</tr>
+
+</table>
 
 #### 6.2.3.3. Sprint Backlog 3.
 
