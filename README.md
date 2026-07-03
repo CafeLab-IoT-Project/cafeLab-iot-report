@@ -156,6 +156,9 @@
 | 2.19    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 2                                |
 | 2.20    | 15/06/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Services Documentation Evidence for Sprint Review 2                   | 
 | 2.21    | 16/06/2026 | Yum Gonzales, Jorge Suin        | Creación de Software Deployment Evidence for Sprint Review 2                      |
+| 3.01    | 02/07/2026 | Julca Minaya, Sergio Gino       | Creación de Services Documentation Evidence for Sprint Review 3                   |
+| 3.02    | 02/07/2026 | Julca Minaya, Sergio Gino       | Team Collaboration Insights during Sprint 3                                       |
+
 
 # Project Report Collaboration Insights
 En esta sección se presenta la url del project report de GitHub en la organización del equipo. Asimismo, se evidencia el registro de commits y colaboración en github para cada desarrollo planteado en su respectivo repositorio; donde cada integrante demuestra su participación activa en el presente proyecto.
@@ -544,6 +547,12 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>TB1:</strong>
       Cumpli con el desarrollo de prototipos UI y en la colaboracion del desarrollo de wireframes y user Flows, asimismo en mejora continua del frontend y backend previa coordinacion de tareas y desiciones en el equipo.
       <br>
+      <strong>AV2:</strong>
+      Asumió el diseño e implementación de los endpoints de IoT Monitoring en el backend, aplicando Domain Driven Design y Clean Architecture para garantizar su correcto consumo desde los entornos web y mobile. Además, lideró la elaboración de las gráficas de analíticas y monitoreo continuo en la aplicación móvil, coordinando con el equipo la integración de estos componentes con el módulo de telemetría del dispositivo TrackSilo.
+      <br>
+      <strong>TB2:</strong>
+      Lideró la elaboración de pruebas automatizadas del Edge para las evidencias asegurando que la lógica de dominio, los endpoints Flask y la sincronización con el backend quedaran validados antes del cierre del proyecto. Coordinó con el equipo la representación de los indicadores de estado de comunicación del flujo IoT, aportando liderazgo técnico en la etapa final de validación del componente IoT.
+      <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Participó junto al grupo ofreciendo liderazgo para la coordinación tanto de las tareas a realizar para esta entrega como para definir la visión que se tomaría en el desarrollo. Asimismo, ofreció apoyo a sus compañeros y guió las reuniones colaborativas de equipo buscando escuchar las ideas y aportes de todos.
       <br>
@@ -597,6 +606,12 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>TB1:</strong>
       Colabore adecuadamente con el cumplimiento de actividades, asimismo comunique efectivamente sobre los cambios realizados en elementos UI y plataforma frontend/backend.
+      <br>
+      <strong>AV2:</strong>
+      Planificó y ejecutó el desarrollo de los endpoints de IoT Monitoring de forma alineada con las necesidades del frontend web y mobile, coordinando con el equipo los contratos de datos necesarios para la visualización de analíticas. Contribuyó a un entorno de trabajo colaborativo comunicando los avances del backend a los responsables de las aplicaciones cliente, asegurando el cumplimiento de los objetivos técnicos del Sprint 2.
+      <br>
+      <strong>TB2:</strong>
+      Organizó y documentó la evidencia de pruebas del Edge para el cierre del proyecto, estructurando la suite entre unit tests, integration tests y acceptance tests BDD, y comunicó al equipo el resultado de la ejecución (40 tests exitosos) para validar que el flujo de datos del Sprint 3 cumplía con lo planificado. De esta manera, contribuyó a un entorno ordenado y orientado al cumplimiento de los objetivos de cierre del equipo.
       <br>
       <strong>Roman Cruz, Natalia Bertha<br></strong> <strong>AV1:</strong>
       Colaboró con el liderazgo del grupo y repartición de tareas así como orientación para la realización de las mismas. Además, participó en actividades como el event storming y discusiones del grupo para la formación de los disgramas de forma ordenada y clara. Particularmente, se centró en gran parte del desarrollo de la aplicación de la metodología Lean UX, los diagramas de contexto y landscape, y el Bounded Context Procedures.
