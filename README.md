@@ -158,6 +158,7 @@
 | 2.21    | 16/06/2026 | Yum Gonzales, Jorge Suin        | Creación de Software Deployment Evidence for Sprint Review 2                      |
 | 3.01    | 02/07/2026 | Julca Minaya, Sergio Gino       | Creación de Services Documentation Evidence for Sprint Review 3                   |
 | 3.02    | 02/07/2026 | Julca Minaya, Sergio Gino       | Team Collaboration Insights during Sprint 3                                       |
+| 3.03    | 03/07/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 3                              |
 
 
 # Project Report Collaboration Insights
@@ -330,7 +331,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Fernandez Camayo, Carlos Fredy</strong></td>
-    <td></td>
+    <td>Elaboré la documentación del Execution Evidence for Sprint Review del Sprint 3 (sección 6.2.3.6), consolidando las capturas del Live Dashboard del Edge, el flujo de lecturas en tiempo real, los indicadores de estado del flujo IoT, el historial de lecturas recientes, la sincronización Edge hacia el backend y la activación de actuadores simulados. Además, colaboré en la validación del recorrido de datos desde TrackSilo hacia el Edge y el backend desplegado mediante pruebas con Postman, apoyando el cierre documental del sprint.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-fredy.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -541,6 +542,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <strong>AV2:</strong>
       Cumpli este criterio documentando las evidencias de Testing Suite, Execution Evidence y Services Documentation del Sprint 2. Ademas, implemente y ejecute pruebas automatizadas en frontend y backend para validar el modulo IoT Monitoring, colabore en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en el frontend web y mobile, coordinando con el equipo la verificacion de los resultados obtenidos.
       <br>
+      <strong>TB2:</strong>
+      Cumpli este criterio documentando el Execution Evidence for Sprint Review del Sprint 3 (seccion 6.2.3.6), organizando las evidencias de ejecucion del Live Dashboard del Edge y coordinando con el equipo la validacion del flujo IoT completo. Ademas, colabore en la representacion de los indicadores de estado de comunicacion y en la evidencia de actuadores simulados, contribuyendo al cierre documental del proyecto.
+      <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Desempeñó un papel clave en el tracking de las tareas para el equipo generando gran impacto, asegurando que todos comprendieran sus roles y mantuvieran el enfoque en las tareas asignadas.
       <br>
@@ -600,6 +604,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
       <br>
       <strong>AV2:</strong>
       Contribui a un entorno colaborativo organizando y documentando las evidencias de pruebas, ejecucion y documentacion de servicios del Sprint 2 (secciones 6.2.2.5, 6.2.2.6 y 6.2.2.7). Ademas, participe en el diseño de entrevistas de validacion y en la UI del modulo de monitoreo en frontend web y mobile, planificando y ejecutando las pruebas automatizadas del modulo en frontend y backend, comunicando los resultados al equipo para alinear la documentacion con la implementacion desplegada.
+      <br>
+      <strong>TB2:</strong>
+      Contribui a un entorno colaborativo documentando las evidencias de ejecucion del Sprint 3 (seccion 6.2.3.6) y comunicando al equipo los resultados obtenidos de las pruebas con Postman y las capturas del dashboard del Edge. Planifique y ejecute la elaboracion de la seccion en coordinacion con los integrantes responsables del Edge, asegurando que la documentacion reflejara el avance real del sprint y el cumplimiento de los objetivos de cierre del equipo.
       <br>
       <strong>Julca Minaya, Sergio Gino<br></strong> <strong>AV1:</strong>
       Promovió un ambiente de trabajo positivo y colaborativo, fomentando la participación activa de todos los miembros del equipo, lo que contribuyó a una planificación efectiva y al cumplimiento de los objetivos establecidos.
