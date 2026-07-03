@@ -11499,6 +11499,14 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 4. Nos gustaría recomendar que se cuente con una pantalla física en cada lote que permita el reseteo del dispositivo así como el control de los actuadores, de forma en que el usuario pueda tener una mayor disposición sobre las condiciones bajo las que están los lotes. Asismimo, sugerimos que este control también se encuentre disponible tanto en la versión móvil como web de la aplicación.
 
+5. Con el cierre del Sprint 3 y la evidencia del recorrido completo de datos (TrackSilo → Edge API → backend → aplicaciones), recomendamos consolidar el despliegue del Edge en la Raspberry Pi dentro de un almacén real, validando de forma prolongada la sincronización, el historial ambiental por lote y los indicadores de estado del flujo IoT documentados en la sección 6.2.3.6. Esto permitiría contrastar en campo los criterios de éxito planteados en las Hypothesis Statements del Lean UX Canvas.
+
+6. Asimismo, sugerimos atender las mejoras identificadas en la evaluación heurística del módulo de Monitoreo (sección 6.3.3), como la incorporación de un indicador de carga durante la sincronización inicial, la limitación del gráfico de telemetría a lecturas recientes, la diferenciación visual de alertas por temperatura y humedad, y la reducción de pasos para acceder al dashboard de un lote específico.
+
+7. Recomendamos incorporar la retroalimentación obtenida en las entrevistas de validación (sección 6.3.2), tales como la mayor visibilidad de íconos de edición y clonado, el marcado de campos obligatorios, filtros en la biblioteca de defectos y un temporizador en sesiones de cata, de modo que las siguientes versiones de la aplicación web y móvil respondan de forma más directa a las necesidades expresadas por baristas y dueños de cafeterías.
+
+8. Finalmente, como parte del roadmap de los productos digitales de CaféLab, proponemos avanzar hacia notificaciones push para alertas críticas de IoT, soporte para múltiples dispositivos TrackSilo en una misma cafetería, la integración de un actuador físico de deshumidificación en lugar de la simulación actual mediante LED, y un módulo analítico que relacione las condiciones ambientales del almacén con los resultados de tueste y cata, cerrando así el gap entre conservación del grano y calidad en taza identificado desde el inicio del proyecto.
+
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
 - **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
