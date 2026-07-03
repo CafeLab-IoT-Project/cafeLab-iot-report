@@ -10576,6 +10576,289 @@ El resultado de la ejecución fue de **40 tests exitosos**, incluyendo pruebas u
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
 
+Durante el Sprint 3, la documentación de servicios se enfocó en el Edge API del componente TrackSilo, encargado de recibir las lecturas del dispositivo, evaluar umbrales y exponer el flujo de datos en tiempo real hacia la vista implementada en este Sprint. A diferencia de los Web Services del backend (documentados vía OpenAPI/Swagger), el Edge API se documenta de forma manual en el README del repositorio, dado que Flask no genera una especificación OpenAPI de forma automática en este proyecto; no obstante, se mantiene el mismo nivel de detalle sobre método HTTP, ruta, autenticación, parámetros de entrada y respuesta esperada.
+
+La documentación generada permite comprobar que los endpoints del Edge se encuentran disponibles y organizados por módulos funcionales: **IAM** (registro y autenticación de dispositivos), **IoT Monitoring** (umbrales, lecturas, estado del sensor, eventos de actuador y sincronización con el backend) y **Live Dashboard** (vista en tiempo real incorporada en este Sprint para evidenciar el recorrido de los datos desde TrackSilo hasta las aplicaciones). Las pruebas de interacción se realizaron sobre una instancia local del Edge (`http://127.0.0.1:5000`) utilizando el dispositivo de desarrollo `tracksilo-001`.
+
+**Repositorio del Edge:** https://github.com/CafeLab-IoT-Project/edge-clean.git
+
+**Documentación de endpoints (README):** https://github.com/CafeLab-IoT-Project/edge-clean/blob/main/README.md
+
+<figure style="text-align: center;">
+    <img width="350" src="public/assets/images/chapter-6/sprint-3/evidence/documentacion-edge-readme.png" alt="Documentación de endpoints en el README del Edge">
+</figure>
+
+<h3>IAM (Device Enrollment & Authentication)</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/iam/devices</td>
+    <td>Registra un nuevo dispositivo IoT y genera su API key.</td>
+    <td>Body JSON: deviceId, lotId (opcional).</td>
+    <td>201 Created - Retorna deviceId, lotId, createdAt y apiKey.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/iam/devices/announce</td>
+    <td>Auto-enrollment (phone-home): el dispositivo se anuncia por su deviceId y recibe su API key si es la primera vez.</td>
+    <td>Body JSON: deviceId.</td>
+    <td>200 OK - Retorna el dispositivo, su apiKey y si ya está asignado a un lote.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/iam/authentication</td>
+    <td>Valida las credenciales (deviceId + X-API-Key) de un dispositivo.</td>
+    <td>Header: X-API-Key. Body JSON: deviceId.</td>
+    <td>200 OK - authenticated: true / 401 - credenciales inválidas.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/iam/devices</td>
+    <td>Lista todos los dispositivos registrados.</td>
+    <td>Sin parámetros.</td>
+    <td>200 OK - Retorna la lista de dispositivos con su apiKey y lote asignado.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de registro de dispositivo (Postman)</strong></p>
+<p align="center">
+<img width="600" src="public/assets/images/chapter-6/sprint-3/evidence/apiiam1.png" alt="Registro de dispositivo IoT vía POST /api/v1/iam/devices">
+</p>
+
+<h3>IoT Monitoring - Thresholds, Readings & Sensor Status</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/thresholds</td>
+    <td>Obtiene los umbrales de temperatura y humedad configurados para un dispositivo.</td>
+    <td>Query parameter: deviceId.</td>
+    <td>200 OK - Retorna minTemperature, maxTemperature, minHumidity, maxHumidity.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/v1/edge/thresholds</td>
+    <td>Actualiza los umbrales de un dispositivo.</td>
+    <td>Header: X-API-Key. Body JSON: deviceId, minTemperature, maxTemperature, minHumidity, maxHumidity.</td>
+    <td>200 OK - Retorna los umbrales actualizados / 401 dispositivo no encontrado.</td>
+    <td>US23 - Configuración de umbrales de monitoreo</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/edge/readings</td>
+    <td>Registra una lectura de temperatura/humedad y evalúa el estado ambiental.</td>
+    <td>Header: X-API-Key. Body JSON: deviceId, temperature, humidity, recordedAt (opcional).</td>
+    <td>201 Created - Retorna status (OPTIMAL/WARNING/DANGER), actuatorCommand, humidityAlert y temperatureAlert.</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real / US25 - Activación automática del deshumedecedor</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/readings/latest</td>
+    <td>Consulta la última lectura registrada del dispositivo.</td>
+    <td>Query parameter: deviceId.</td>
+    <td>200 OK - Retorna la última lectura y su estado / 404 si no hay lecturas.</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/readings</td>
+    <td>Lista las lecturas recientes de un dispositivo.</td>
+    <td>Query parameters: deviceId, limit (1-100, default 10).</td>
+    <td>200 OK - Retorna la lista de lecturas ordenadas.</td>
+    <td>US21 - Consulta de historial ambiental por lote</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/sensor-status</td>
+    <td>Consulta si el sensor está ONLINE u OFFLINE según la última lectura recibida.</td>
+    <td>Query parameter: deviceId.</td>
+    <td>200 OK - Retorna connectionStatus y lastSeenAt.</td>
+    <td>US24 - Indicador de estado ambiental por lote</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/actuator-events</td>
+    <td>Lista los eventos recientes generados por el actuador simulado.</td>
+    <td>Query parameters: deviceId, limit (1-100, default 10).</td>
+    <td>200 OK - Retorna la lista de eventos (ACTIVATE / DEACTIVATE) con su timestamp.</td>
+    <td>US25 - Activación automática del deshumedecedor</td>
+  </tr>
+</table>
+
+<p><strong>Interacción con endpoint de registro de lectura (Postman)</strong></p>
+<p align="center">
+<img width="600" src="public/assets/images/chapter-6/sprint-3/evidence/apilecturas1.png" alt="Registro de lectura y evaluación de estado ambiental vía POST /api/v1/edge/readings">
+</p>
+
+<p><strong>Interacción con endpoint de consulta de umbrales (Postman)</strong></p>
+<p align="center">
+<img width="600" src="public/assets/images/chapter-6/sprint-3/evidence/apilecturas2.png" alt="Consulta de umbrales vía GET /api/v1/edge/thresholds">
+</p>
+
+<h3>IoT Monitoring - Synchronization</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/edge/sync</td>
+    <td>Fuerza la sincronización de lecturas pendientes hacia el backend y actualiza los umbrales locales.</td>
+    <td>Header: X-API-Key.</td>
+    <td>200 OK - Retorna readingsPushed, readingsSkipped, thresholdsUpdated y readingsPending / 502 si el backend no responde.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/sync/status</td>
+    <td>Consulta el estado del worker de sincronización en segundo plano.</td>
+    <td>Sin parámetros.</td>
+    <td>200 OK - Retorna pendingReadings, syncEnabled, workerRunning e intervalSeconds.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+</table>
+
+<h3>Account Onboarding</h3>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/account</td>
+    <td>Indica si el Edge ya tiene una cuenta CaféLab vinculada.</td>
+    <td>Sin parámetros.</td>
+    <td>200 OK - configured: false, o configured: true con email y backendUrl (nunca expone el password).</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/v1/edge/account</td>
+    <td>Vincula el Edge a una cuenta de servicio validando las credenciales contra el backend.</td>
+    <td>Body JSON: email, password, backendUrl (opcional).</td>
+    <td>200 OK - configured: true / 401 credenciales inválidas / 502 backend no disponible.</td>
+    <td>TS11 - API IoT Monitoring</td>
+  </tr>
+</table>
+
+<h3>Live Dashboard (nueva funcionalidad del Sprint 3)</h3>
+<p>
+Estos endpoints son el resultado directo del Sprint Goal 3: exponer el recorrido de los datos desde TrackSilo hasta las aplicaciones mediante una vista en tiempo real. La validación de este Sprint se realizó sobre una instancia local del Edge (<code>http://127.0.0.1:5000</code>); queda pendiente para una futura entrega repetir la validación desplegando el Edge físicamente en la Raspberry Pi.
+</p>
+<table border="1">
+  <tr>
+    <th>Método HTTP</th>
+    <th>Endpoint</th>
+    <th>Acción implementada</th>
+    <th>Parámetros / Request</th>
+    <th>Response esperado</th>
+    <th>User Story relacionada</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/dashboard</td>
+    <td>Retorna un snapshot del estado actual del dispositivo activo: última lectura, estado de conexión y umbrales vigentes.</td>
+    <td>Query parameter: deviceId (opcional).</td>
+    <td>200 OK - Retorna hasDevice, deviceId, lotId, connectionStatus, lastSeenAt, reading y thresholds.</td>
+    <td>TS11 - API IoT Monitoring / US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/v1/edge/dashboard/stream</td>
+    <td>Expone un stream Server-Sent Events (SSE) que empuja en vivo las lecturas, cambios de umbral y el flujo de requests entre TrackSilo, Edge y backend.</td>
+    <td>Query parameter: deviceId (opcional). Content-Type: text/event-stream.</td>
+    <td>200 OK - Emite eventos snapshot y flow en tiempo real; envía keepalive cada 15s.</td>
+    <td>TS11 - API IoT Monitoring / US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/dashboard</td>
+    <td>Sirve la página web del dashboard.</td>
+    <td>Sin parámetros.</td>
+    <td>200 OK - Retorna el HTML del dashboard en vivo.</td>
+    <td>US20 - Visualización de condiciones del almacén en tiempo real</td>
+  </tr>
+</table>
+
+<p><strong>Vista del dashboard en tiempo real (entorno local de desarrollo)</strong></p>
+<p align="center">
+<img width="600" src="public/assets/images/chapter-6/sprint-3/evidence/dashboard-local.png" alt="Dashboard en tiempo real ejecutado en entorno local">
+</p>
+
+<p><strong>Actualización del dashboard sin recarga manual, tras registrar una nueva lectura vía Postman</strong></p>
+<p align="center">
+<img width="600" src="public/assets/images/chapter-6/sprint-3/evidence/dashboard-stream-flow.png" alt="Actualización en vivo del dashboard vía stream SSE">
+</p>
+
+<h3>Commits relacionados con la documentación de servicios</h3>
+<table border="1">
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit message</th>
+    <th>Relación con la documentación de servicios</th>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>0d4ce1e</td>
+    <td>readme dashboard</td>
+    <td>Documenta en el README los endpoints del Live Dashboard (/api/v1/edge/dashboard y /api/v1/edge/dashboard/stream) incorporados en el Sprint 3.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>2d5d35d</td>
+    <td>dashboard update</td>
+    <td>Actualiza la implementación del dashboard en vivo, reflejando los cambios documentados sobre el snapshot y el stream SSE.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>83fed58</td>
+    <td>dashboard</td>
+    <td>Incorpora los endpoints del Live Dashboard descritos en esta sección.</td>
+  </tr>
+  <tr>
+    <td>CafeLab-IoT-Project/edge-clean</td>
+    <td>main</td>
+    <td>c88baed</td>
+    <td>test: added unit and integral tests</td>
+    <td>Agrega las pruebas de integración (test_edge_api.py) que validan el contrato HTTP de los endpoints documentados en esta sección.</td>
+  </tr>
+</table>
+
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review.
 
 Durante el Sprint 3 se documentó el despliegue del componente Edge de CaféLab, encargado de ejecutar localmente la API intermedia entre el dispositivo TrackSilo y el backend de la plataforma. El despliegue está orientado a una Raspberry Pi dentro de la red local del almacén, permitiendo que el ESP32 envíe lecturas por HTTP, que el Edge evalúe umbrales en tiempo real y que posteriormente sincronice la telemetría con el backend cuando exista conectividad.
@@ -10727,6 +11010,42 @@ sudo systemctl enable cafelab-wifi-portal.service
 Con esta configuración, el componente Edge queda preparado para ejecutarse localmente, recibir lecturas del ESP32 por HTTP, responder comandos de actuador en tiempo real y sincronizar información con el backend de CaféLab cuando el dispositivo se encuentre vinculado a una cuenta y a un lote de café.
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint.
+<table border="1">
+  <tr>
+    <th>Alumno</th>
+    <th>Actividad</th>
+  </tr>
+  <tr>
+    <td>Jorge Suin Yum Gonzales</td>
+    <td>
+      Lideró la visualización de lecturas del dispositivo TrackSilo en tiempo real, implementando el endpoint <code>GET /api/v1/edge/dashboard</code> y el snapshot que consolida la última lectura, el estado de conexión y los umbrales vigentes del lote monitoreado. En el informe se encargó de tópicos principales como: Development Evidence for Sprint Review y Services Documentation Evidence.
+    </td>
+  </tr>
+  <tr>
+    <td>Natalia Bertha Roman Cruz</td>
+    <td>
+      Lideró la visualización del envío de requests en tiempo real, implementando el stream Server-Sent Events (<code>GET /api/v1/edge/dashboard/stream</code>) que evidencia el recorrido de los datos desde TrackSilo hacia el Edge y desde el Edge hacia el backend. Coordinó al equipo durante el Sprint. En el informe se encargó de tópicos principales como: Sprint Planning 3, Aspect Leaders and Collaborators y Team Collaboration Insights.
+    </td>
+  </tr>
+  <tr>
+    <td>Adrian Ricardo Donayre Alvarez</td>
+    <td>
+      Lideró la adaptación de la vista de monitoreo para su visualización desde una pantalla conectada a Raspberry Pi, incluyendo la configuración del servicio <code>cafelab-edge.service</code>, la publicación mDNS/Avahi y el portal WiFi de aprovisionamiento. En el informe se encargó de tópicos principales como: Sprint Backlog 3 y Software Deployment Evidence for Sprint Review.
+    </td>
+  </tr>
+  <tr>
+    <td>Sergio Gino Julca Minaya</td>
+    <td>
+      Colaboró en la representación de los indicadores de estado de comunicación del flujo IoT (dispositivo conectado, lectura recibida por el Edge, sincronización con backend) y en el desarrollo de la suite de pruebas del Edge (unit, integration y acceptance tests con pytest-bdd). En el informe se encargó de tópicos principales como: Testing Suite Evidence for Sprint Review.
+    </td>
+  </tr>
+  <tr>
+    <td>Carlos Fredy Fernandez Camayo</td>
+    <td>
+      Colaboró en la representación de actuadores simulados en la interfaz del Edge (alertas de humedad y temperatura mediante LEDs) y en la validación del flujo completo lectura → evaluación de umbrales → comando de actuador. En el informe se encargó de tópicos principales como: Execution Evidence for Sprint Review.
+    </td>
+  </tr>
+</table>
 
 
 ## 6.3. Validation Interviews.
