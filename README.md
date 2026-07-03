@@ -335,7 +335,7 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
-    <td></td>
+    <td>Elaboré la documentación del Testing Suite Evidence for Sprint Review del Sprint 3 (sección 6.2.3.5), consolidando las pruebas unitarias, de integración y de aceptación (BDD con pytest-bdd) ejecutadas sobre el Edge. Además, colaboré en la representación de los indicadores de estado de comunicación del flujo IoT (dispositivo conectado, lectura recibida por el Edge y sincronización con el backend), y redacté el Team Collaboration Insights during Sprint del Sprint 3 (sección 6.2.3.9).</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
