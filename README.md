@@ -10589,6 +10589,65 @@ El resultado de la ejecución fue de **40 tests exitosos**, incluyendo pruebas u
 
 #### 6.2.3.6. Execution Evidence for Sprint Review.
 
+Durante el Sprint 3 se validó la ejecución del Live Dashboard del Edge, comprobando el flujo completo desde el dispositivo TrackSilo hasta la visualización en tiempo real de lecturas ambientales, el recorrido de requests hacia el Edge y la sincronización posterior con el backend desplegado. Asimismo, se verificaron los indicadores de estado del flujo IoT, la consulta de lecturas recientes, la representación de actuadores simulados y la adaptación de la interfaz para su despliegue en Raspberry Pi en modo headless.
+
+#### Edge: Dashboard en vivo con lecturas ambientales en tiempo real
+
+La vista principal del Edge (`GET /dashboard`) consolida la temperatura y humedad actuales del dispositivo activo, el estado de conexión (ONLINE/OFFLINE), los umbrales vigentes y el panel de entrada de requests desde TrackSilo hacia Flask. Esta evidencia corresponde a la US20 y a la tarea de visualización de lecturas TrackSilo en tiempo real del Sprint Backlog 3.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/dashboard-local.png" alt="Dashboard del Edge con lecturas ambientales en tiempo real">
+</figure>
+
+#### Edge: Flujo de requests en tiempo real mediante Server-Sent Events
+
+Mediante el stream SSE (`GET /api/v1/edge/dashboard/stream`), la interfaz actualiza sin recarga manual el panel **ENTRADA AL EDGE** cada vez que el dispositivo o Postman registra una nueva lectura. Se observa el request `POST /api/v1/edge/readings`, la respuesta con estado ambiental (`OPTIMAL`, `WARNING` o `DANGER`) y el comando de actuador asociado. Esta evidencia corresponde a la visualización del envío de requests en tiempo real liderada en el Sprint 3.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/dashboard-stream-flow.png" alt="Actualización en vivo del flujo de requests vía stream SSE">
+</figure>
+
+#### Edge: Indicadores de estado de comunicación del flujo IoT
+
+El Live Dashboard del Edge consolida en una sola vista el estado global del flujo IoT: el indicador **ONLINE** en la cabecera confirma conectividad del dispositivo `tracksilo-001`, el panel **ENTRADA AL EDGE** evidencia la recepción de lecturas en el Edge y el panel **SYNC WORKER** indica que la sincronización con el backend está activa. Esta evidencia corresponde a la US24 y valida de forma integrada que las tres etapas del recorrido de datos se encuentran operativas.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/exec-edge-status.png" alt="Vista integrada del estado de comunicación del flujo IoT en el dashboard del Edge">
+</figure>
+
+#### Edge: Lecturas recientes del dispositivo
+
+El endpoint `GET /api/v1/edge/readings` permite consultar las últimas lecturas recibidas por el Edge, incluyendo temperatura, humedad, `recordedAt` y `status` (`OPTIMAL`, `WARNING` o `DANGER`), junto con las banderas `humidityAlert` y `temperatureAlert`. Esta evidencia corresponde a la US21 y a la tarea *Mostrar lecturas recientes del dispositivo* del Sprint Backlog 3.
+
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/exec-edge-readings.png" alt="Historial de lecturas recientes del dispositivo TrackSilo vía GET /api/v1/edge/readings">
+</figure>
+
+#### Edge: Sincronización Edge hacia backend (Sync Worker)
+
+Tras registrar una lectura con `POST /api/v1/edge/readings`, el worker de sincronización empuja los datos pendientes hacia el backend desplegado. El panel **SYNC WORKER** del dashboard muestra en detalle esa segunda etapa del flujo: la llamada `POST /api/v1/telemetry-records` con `coffeeLotId`, temperatura, humedad y timestamp, respondiendo con `201` y `status: SUCCESS`; y la consulta `GET /api/v1/environment-thresholds` para alinear los umbrales locales con el backend. Esta evidencia corresponde a la meta del Sprint 3 de evidenciar el recorrido Edge → backend, complementando la recepción de lecturas mostrada en el panel **ENTRADA AL EDGE**.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/exec-edge-sync.png" alt="Detalle del panel Sync Worker con POST telemetry-records y sincronización de umbrales">
+</figure>
+
+#### Edge e IoT: Vista del Edge en Raspberry Pi (modo headless)
+
+La interfaz del Live Dashboard fue adaptada para ejecutarse en la Raspberry Pi del proyecto, aunque el equipo de laboratorio no cuenta con pantalla HDMI conectada. En este escenario **headless**, el Edge corre como servicio `cafelab-edge.service` y el dashboard queda disponible en la red local mediante mDNS en `http://cafelab-edge.local:5000/dashboard` (o `http://<IP-de-la-Pi>:5000/dashboard`), accesible desde un navegador en otro dispositivo de la misma red WiFi. Esta configuración cumple el objetivo de supervisión local del lote definido en la US20 y en la tarea *Vista de monitoreo desde pantalla de Raspberry Pi* del Sprint Backlog 3, sin requerir monitor físico en la Pi.
+
+La evidencia de despliegue del servicio en Raspberry Pi —systemd, mDNS/Avahi, portal WiFi y validación del flujo— se documenta en la [sección 6.2.3.8](#6238-software-deployment-evidence-for-sprint-review). La ejecución del dashboard en tiempo real se validó en entorno de desarrollo local (`http://127.0.0.1:5000/dashboard`) con la misma build del repositorio `edge-clean`, evidenciada en las capturas anteriores de esta sección.
+
+
+
+#### Edge e IoT: Activación de actuadores simulados mediante LEDs
+
+Cuando la humedad o temperatura superan los umbrales configurados, el Edge evalúa la lectura y responde con `actuatorCommand: ACTIVATE` y `humidityAlert: true`, activando el actuador simulado de deshumidificación (LED en pin 18 del ESP32 en implementación física). La evidencia muestra el historial de lecturas vía `GET /api/v1/edge/readings`, donde la lectura con `readingId` 9 registra estado **DANGER**, comando **ACTIVATE** y alerta de humedad activa, validando el flujo lectura → evaluación de umbrales → comando de actuador vinculado a la US25.
+
+<figure style="text-align: center;">
+    <img src="public/assets/images/chapter-6/sprint-3/evidence/exec-edge-actuators.png" alt="Activación de actuadores simulados: respuesta DANGER y actuatorCommand ACTIVATE">
+</figure>
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
 
 Durante el Sprint 3, la documentación de servicios se enfocó en el Edge API del componente TrackSilo, encargado de recibir las lecturas del dispositivo, evaluar umbrales y exponer el flujo de datos en tiempo real hacia la vista implementada en este Sprint. A diferencia de los Web Services del backend (documentados vía OpenAPI/Swagger), el Edge API se documenta de forma manual en el README del repositorio, dado que Flask no genera una especificación OpenAPI de forma automática en este proyecto; no obstante, se mantiene el mismo nivel de detalle sobre método HTTP, ruta, autenticación, parámetros de entrada y respuesta esperada.
