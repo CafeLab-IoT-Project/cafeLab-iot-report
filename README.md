@@ -11495,6 +11495,8 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 7. La arquitectura edge computing implementada demostró ser beneficiosa al permitir una rápida respuesta ante condiciones fuera de rango en la red local del almacén, desacoplar la lógica de negocio del hardware embebido mediante la actualización de umbrales desde la aplicación y actuar como puente entre el dispositivo físico y el backend. De esta forma, fue posible visualizar y probar el flujo completo desde la lectura del sensor hasta la visualización de la le lectura en el dashboard.
 
+8. Tras validar el recorrido completo de la información IoT, podemos concluir que el flujo de datos entre los sensores y la aplicación del cliente funciona de forma bidireccional y coherente con la arquitectura planteada para CaféLab. En el sentido ascendente, el DHT22 y el ESP32 envían lecturas al Edge en la Raspberry Pi, que evalúa los umbrales, sincroniza con el backend y permite visualizar en tiempo real el estado ambiental, el historial por lote y las alertas en las apps web y móvil. En el sentido descendente, la configuración de umbrales y la asociación de lotes realizadas desde la aplicación se propagan al backend y al Edge, donde se aplican a lecturas futuras y generan los comandos que el ESP32 ejecuta sobre los actuadores, sin modificar su firmware.
+
 # Recomendaciones
 
 1. Como primera recomendación podemos mencionar el continuar investigando sobre la integración de dispositivos IoT en aplicaciones como la que estamos desarrollando, con el objetivo de mejorar la misma y que esta sea más eficiente para el monitoreo del grano, teniendo una comunicación constante y sin caídas hacia el usuario.
