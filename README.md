@@ -174,6 +174,8 @@ Link del project report: [https://github.com/CafeLab-IoT-Project](https://github
 
 <!--Explicacion por integrante acerca de como se ha desarrollado las actividades de elaboración de informe, capturas de imagen analitico y commits en el informe
 Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGISTRO DE VERSIOENS DE INFORME-->
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
+
 <table>
   <tr>
     <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV1</td>
@@ -218,6 +220,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <img src="public/assets/images/cover/insights/project-report-collaboration-insights.png" alt="Evidencia de commits del equipo"></td>
   </tr>
 </table>
+
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
 
 <table>
   <tr>
@@ -267,6 +271,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
 </table>
 
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
+
 <table>
   <tr>
     <td colSpan="3" align="center" style="font-weight: bold; font-size: 20px;">Evidencias y comentarios de la AV2</td>
@@ -310,6 +316,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     <td colspan="2"><img src="public/assets/images/cover/insights/project-report-collaboration-insights-av2.png" alt="Insights">  </td>
   </tr>
 </table>
+
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
 
 <table>
   <tr>
@@ -359,6 +367,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
 </table>
 
+
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
 
 <!--ÍNDICE-->
 # Contenido 
@@ -520,6 +530,8 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
 
+
+<div style="page-break-after:always;break-after:page;">&nbsp;</div>
 
 # Student Outcome
 <table>
