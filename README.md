@@ -159,6 +159,12 @@
 | 3.01    | 02/07/2026 | Julca Minaya, Sergio Gino       | Creación de Services Documentation Evidence for Sprint Review 3                   |
 | 3.02    | 02/07/2026 | Julca Minaya, Sergio Gino       | Team Collaboration Insights during Sprint 3                                       |
 | 3.03    | 03/07/2026 | Fernandez Camayo, Carlos Fredy  | Creación de Execution Evidence for Sprint Review 3                              |
+| 3.04    | 04/07/2026 | Roman Cruz, Natalia Bertha      | Creación de Sprint Planning 3                                                     |
+| 3.05    | 04/07/2026 | Roman Cruz, Natalia Bertha      | Creación de Aspect Leaders and Collaborators del Sprint 3                         |
+| 3.06    | 04/07/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Sprint Backlog 3                                                      |
+| 3.07    | 04/07/2026 | Donayre Alvarez, Adrian Ricardo | Creación de Development Evidence for Sprint Review 3                              |
+| 3.08    | 04/07/2026 | Yum Gonzales, Jorge Suin        | Creación de Testing Suite Evidence for Sprint Review 3                            |
+| 3.09    | 04/07/2026 | Yum Gonzales, Jorge Suin        | Creación de Software Deployment Evidence for Sprint Review 3                      |
 
 
 # Project Report Collaboration Insights
@@ -321,12 +327,12 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Roman Cruz, Natalia Bertha</strong></td>
-    <td></td>
+    <td>Elaboré la documentación del Sprint Planning 3 (sección 6.2.3.1), definiendo el contexto de planificación, participantes, objetivo del sprint, velocidad y alcance de trabajo. Además, organicé la sección Aspect Leaders and Collaborators del Sprint 3 (sección 6.2.3.2), asignando líderes y colaboradores para la visualización de lecturas en tiempo real, el envío de requests y la vista desde Raspberry Pi, con el fin de evidenciar una distribución clara de responsabilidades del equipo.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-nat.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Yum Gonzales, Jorge Suin</strong></td>
-    <td></td>
+    <td>Elaboré la documentación del Testing Suite Evidence for Sprint Review del Sprint 3 (sección 6.2.3.5), consolidando las pruebas unitarias, de integración y de aceptación ejecutadas sobre el Edge. Asimismo, desarrollé la sección Software Deployment Evidence for Sprint Review del Sprint 3 (sección 6.2.3.8), documentando el despliegue del componente Edge en Raspberry Pi, la configuración del servicio, mDNS/Avahi, portal WiFi y validación del flujo de comunicación IoT.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-jorge.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
@@ -336,16 +342,20 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
   </tr>
   <tr>
     <td><strong>Julca Minaya, Sergio Gino</strong></td>
-    <td>Elaboré la documentación del Testing Suite Evidence for Sprint Review del Sprint 3 (sección 6.2.3.5), consolidando las pruebas unitarias, de integración y de aceptación (BDD con pytest-bdd) ejecutadas sobre el Edge. Además, colaboré en la representación de los indicadores de estado de comunicación del flujo IoT (dispositivo conectado, lectura recibida por el Edge y sincronización con el backend), y redacté el Team Collaboration Insights during Sprint del Sprint 3 (sección 6.2.3.9).</td>
+    <td>Elaboré la documentación del Services Documentation Evidence for Sprint Review del Sprint 3 (sección 6.2.3.7), describiendo los servicios del Edge API, los endpoints del Live Dashboard, el stream de eventos y las rutas relacionadas con lecturas, sincronización y actuadores. Además, redacté el Team Collaboration Insights during Sprint del Sprint 3 (sección 6.2.3.9), sintetizando los aportes de cada integrante y el trabajo coordinado realizado para validar el flujo IoT completo.</td>
     <td><img src="public/assets/images/cover/insights/perfil-github-sergio.png" alt="Perfil de GitHub"></td>
   </tr>
   <tr>
     <td><strong>Conclusión</strong></td>
-    <td colspan="2"></td>
+    <td colspan="2">En la entrega TB2, el equipo consolidó el cierre del Sprint 3 mediante la documentación y validación del flujo completo del componente IoT TrackSilo, desde la captura de lecturas ambientales hasta su procesamiento en el Edge, sincronización con el backend y visualización en tiempo real. Las responsabilidades se distribuyeron entre la planificación del sprint, la definición de líderes y colaboradores, el Sprint Backlog, las evidencias de desarrollo, pruebas, ejecución, documentación de servicios, despliegue y colaboración del equipo. Esta organización permitió evidenciar un trabajo coordinado y complementario, orientado a demostrar el funcionamiento del Edge, la trazabilidad de los datos y la preparación del sistema para su ejecución en Raspberry Pi.</td>
   </tr>
   <tr>
     <td><strong>Evidencia</strong></td>
-    <td colspan="2"><img src="public/assets/images/cover/insights/project-report-collaboration-insights-av2.png" alt="Insights">  </td>
+    <td colspan="2">
+      <p align="center">
+        <img src="public/assets/images/cover/insights/project-report-collaboration-insights-tb2.png" alt="Evidencia de commits del equipo para TB2" width="700">
+      </p>
+    </td>
   </tr>
 </table>
 
