@@ -529,6 +529,9 @@ Expansión con descripciones y evidencias en cada entrega COHERENCIA CON EL REGI
     - [6.3.2. Registro de Entrevistas.](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según heurísticas.](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product.](#64-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Recomendaciones](#recomendaciones)
+- [Video About-the-Team](#video-about-the-team)
 
 
 <div style="page-break-after:always;break-after:page;">&nbsp;</div>
