@@ -11537,6 +11537,10 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 
 8. Finalmente, como parte del roadmap de los productos digitales de CaféLab, proponemos avanzar hacia notificaciones push para alertas críticas de IoT, soporte para múltiples dispositivos TrackSilo en una misma cafetería, la integración de un actuador físico de deshumidificación en lugar de la simulación actual mediante LED, y un módulo analítico que relacione las condiciones ambientales del almacén con los resultados de tueste y cata, cerrando así el gap entre conservación del grano y calidad en taza identificado desde el inicio del proyecto.
 
+# Video About-the-Team
+![Evidencia del video About-the-Team](public/assets/images/cover/insights/video-about-the-team.png)
+- Video About-the-Team: [https://drive.google.com/file/d/1GrNvvs6ez7ec6ZMM9ESLFBz0_a7dahV4/view?usp=sharing](https://drive.google.com/file/d/1GrNvvs6ez7ec6ZMM9ESLFBz0_a7dahV4/view?usp=sharing)
+
 # Bibliografía
 - **Specialty Coffee Association (SCA).** (2022). *Annual Report: Certification and Professional Development Statistics*. [https://sca.coffee](https://sca.coffee)
 - **Euromonitor International.** (2023). *Coffee Shops Market in Latin America*. [https://www.euromonitor.com](https://www.euromonitor.com)
@@ -11559,3 +11563,4 @@ Desde la aplicación mobile, el usuario accede al módulo de Monitoreo para supe
 - Link de frontend Web: [https://cafelab-iot-project.github.io/cafeLab-frontend/](https://cafelab-iot-project.github.io/cafeLab-frontend/)
 - Link de backend: [https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://cafelabbackend-gmg8egarcxadh4ec.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
 - Video About-the-Product: [https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing](https://drive.google.com/file/d/1YMILm30z-Oc0aPeIW6NtNdTM4I00iNDz/view?usp=sharing)
+- Video About-the-Team: [https://drive.google.com/file/d/1GrNvvs6ez7ec6ZMM9ESLFBz0_a7dahV4/view?usp=sharing](https://drive.google.com/file/d/1GrNvvs6ez7ec6ZMM9ESLFBz0_a7dahV4/view?usp=sharing)
